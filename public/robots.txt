@@ -1,0 +1,25 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://gh-epaviste.fr/sitemap.xml
+
+# Disallow admin pages
+Disallow: /admin/
+
+# Disallow API routes
+Disallow: /api/
+
+# Allow important pages
+Allow: /
+Allow: /services
+Allow: /services/guide
+Allow: /vehicules
+Allow: /formulaire
+Allow: /contact
+Allow: /faq
+Allow: /mentions-legales
+Allow: /confidentialite
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
