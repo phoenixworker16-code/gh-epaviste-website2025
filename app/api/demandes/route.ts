@@ -1,5 +1,10 @@
 // app/api/demandes/route.ts
 
+// Configurations pour forcer l'exécution Serverless (Node.js) sur Vercel,
+// ce qui est ESSENTIEL pour la compatibilité avec le client Prisma et résoudre l'erreur de build.
+export const runtime = 'nodejs';
+export const dynamic = 'force-dynamic';
+
 // Remplacement: Importe directement l'instance singleton depuis lib/prisma.ts
 import prisma from '@/lib/prisma';
 import { sendDemandeEmail, buildAdminEmailHTML, buildClientEmailHTML } from '@/lib/mail';
