@@ -96,7 +96,7 @@ export default function RootLayout({
                 NOS VÉHICULES
               </Link>
               <Link href="/formulaire" className="text-black hover:text-yellow-500 font-medium transition-colors">
-                FORMULAIRE D'ENLÈVEMENT
+                FORMULAIRE D&apos;ENLÈVEMENT
               </Link>
               <Link href="/contact" className="text-black hover:text-yellow-500 font-medium transition-colors">
                 CONTACT

@@ -3,10 +3,10 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Car, Euro, Shield, CheckCircle, Phone, Mail, Clock, MapPin, Star, Truck, Bike } from "lucide-react"
+import { Car, Euro, Shield, CheckCircle, Phone, Clock, MapPin, Star, Truck, Bike } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
-import BreadcrumbNav from "@/components/breadcrumb-nav"
+import { BreadcrumbNav } from "@/components/breadcrumb-nav"
 import ScrollToTop from "@/components/scroll-to-top"
 
 export default function VehiculesPage() {
@@ -40,7 +40,7 @@ export default function VehiculesPage() {
     {
       icon: Clock,
       title: "Rachat Immédiat",
-      description: "Paiement comptant dès l'accord trouvé"
+      description: "Paiement comptant dès l&apos;accord trouvé"
     },
     {
       icon: Shield,
@@ -50,13 +50,13 @@ export default function VehiculesPage() {
     {
       icon: CheckCircle,
       title: "Service Professionnel",
-      description: "Plus de 10 ans d'expérience dans l'automobile"
+      description: "Plus de 10 ans d&apos;expérience dans l&apos;automobile"
     }
   ]
 
   return (
     <div className="min-h-screen bg-white">
-      <BreadcrumbNav />
+      <BreadcrumbNav items={[{ label: "Accueil", href: "/" }, { label: "Véhicules" }]} />
       
       <main>
         {/* Hero Section */}
@@ -79,7 +79,7 @@ export default function VehiculesPage() {
                 Nous Rachetons Votre Auto au Meilleur Prix
               </h1>
               <p className="text-xl md:text-2xl mb-8 text-gray-200 max-w-3xl mx-auto">
-                Spécialistes de l'achat de véhicules d'occasion, nous proposons des solutions rapides et avantageuses pour la vente de votre automobile.
+                Spécialistes de l&apos;achat de véhicules d&apos;occasion, nous proposons des solutions rapides et avantageuses pour la vente de votre automobile.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link href="/contact">
@@ -112,9 +112,9 @@ export default function VehiculesPage() {
                 <span className="text-yellow-500">Notre Expertise</span> en Achat de Véhicules
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed">
-                Chez GH Épaviste, nous ne nous contentons pas d'enlever les épaves. Nous sommes également des professionnels 
-                de l'achat de véhicules d'occasion. Que votre voiture soit en parfait état, qu'elle nécessite des réparations 
-                ou qu'elle soit accidentée, nous étudions toutes les propositions.
+                Chez GH Épaviste, nous ne nous contentons pas d&apos;enlever les épaves. Nous sommes également des professionnels 
+                de l&apos;achat de véhicules d&apos;occasion. Que votre voiture soit en parfait état, qu&apos;elle nécessite des réparations 
+                ou qu&apos;elle soit accidentée, nous étudions toutes les propositions.
               </p>
             </div>
 
@@ -173,7 +173,7 @@ export default function VehiculesPage() {
                     Nous Achetons Tous Types de Véhicules
                   </h3>
                   <p className="text-gray-700 text-lg mb-6">
-                    Peu importe l'état, l'âge ou la marque de votre véhicule, nous sommes intéressés. 
+                    Peu importe l&apos;état, l&apos;âge ou la marque de votre véhicule, nous sommes intéressés. 
                     Nos experts évaluent chaque véhicule selon ses spécificités et vous proposent 
                     le meilleur prix du marché.
                   </p>
@@ -228,7 +228,7 @@ export default function VehiculesPage() {
                   </div>
                   <h3 className="text-xl font-bold mb-3 text-black">Évaluation</h3>
                   <p className="text-gray-600">
-                    Nos experts évaluent votre véhicule et vous proposent un prix d'achat compétitif.
+                    Nos experts évaluent votre véhicule et vous proposent un prix d&apos;achat compétitif.
                   </p>
                 </div>
                 
@@ -251,17 +251,17 @@ export default function VehiculesPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-3xl md:text-4xl font-bold mb-8 text-black">
-                <span className="text-yellow-500">Zone d'Intervention</span>
+                <span className="text-yellow-500">Zone d&apos;Intervention</span>
               </h2>
               
               <Card className="border-2 border-yellow-200">
                 <CardContent className="p-8">
                   <MapPin className="w-12 h-12 text-yellow-500 mx-auto mb-4" />
                   <h3 className="text-2xl font-bold text-black mb-4">
-                    Toute l'Île-de-France
+                    Toute l&apos;Île-de-France
                   </h3>
                   <p className="text-gray-700 text-lg mb-6">
-                    Nous intervenons dans tous les départements franciliens pour l'achat de votre véhicule.
+                    Nous intervenons dans tous les départements franciliens pour l&apos;achat de votre véhicule.
                   </p>
                   
                   <div className="grid md:grid-cols-2 gap-6 text-left">
@@ -280,7 +280,7 @@ export default function VehiculesPage() {
                         <li>• Hauts-de-Seine (92)</li>
                         <li>• Seine-Saint-Denis (93)</li>
                         <li>• Val-de-Marne (94)</li>
-                        <li>• Val-d'Oise (95)</li>
+                        <li>• Val-d&apos;Oise (95)</li>
                       </ul>
                     </div>
                   </div>

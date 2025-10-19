@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Truck, Shield, Clock, Leaf, Euro, Phone, ChevronDown, Car, Bike, MapPin, CheckCircle } from "lucide-react"
+import { Truck, Shield, Clock, Leaf, Euro, Phone, ChevronDown, Car, Bike, CheckCircle } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import ScrollToTop from "@/components/ScrollToTop"
@@ -31,7 +31,7 @@ export default function HomePage() {
               <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
                 <span className="text-yellow-500">GH Épaviste Agréé</span>
                 <br />
-                Enlèvement Gratuit & Rapide d'Épaves en Île-de-France
+                Enlèvement Gratuit & Rapide d&apos;Épaves en Île-de-France
               </h1>
               <p className="text-xl md:text-2xl mb-8 text-gray-200 max-w-2xl mx-auto">
                 Votre solution agréée VHU pour un débarras sans frais, partout en Île-de-France.
@@ -75,7 +75,7 @@ export default function HomePage() {
                     <Clock className="w-8 h-8 text-black" />
                   </div>
                   <h3 className="text-xl font-bold mb-3 text-black">Intervention Rapide</h3>
-                  <p className="text-gray-600">Prise en charge sous 24h, intervention d'urgence possible.</p>
+                  <p className="text-gray-600">Prise en charge sous 24h, intervention d&apos;urgence possible.</p>
                 </CardContent>
               </Card>
 
@@ -105,7 +105,7 @@ export default function HomePage() {
                   <div className="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Leaf className="w-8 h-8 text-black" />
                   </div>
-                  <h3 className="text-xl font-bold mb-3 text-black">Respect de l'Environnement</h3>
+                  <h3 className="text-xl font-bold mb-3 text-black">Respect de l&apos;Environnement</h3>
                   <p className="text-gray-600">Recyclage écologique conforme aux normes environnementales.</p>
                 </CardContent>
               </Card>
@@ -172,7 +172,7 @@ export default function HomePage() {
                   <span className="text-3xl font-bold text-black">2</span>
                 </div>
                 <h3 className="text-xl font-bold mb-4">Prise de Rendez-vous Rapide</h3>
-                <p className="text-gray-300">Nous vous contactons sous 2h pour planifier l'intervention</p>
+                <p className="text-gray-300">Nous vous contactons sous 2h pour planifier l&apos;intervention</p>
               </div>
 
               <div className="text-center">
@@ -203,7 +203,7 @@ export default function HomePage() {
                       "Hauts-de-Seine (92)",
                       "Seine-Saint-Denis (93)",
                       "Val-de-Marne (94)",
-                      "Val-d'Oise (95)",
+                      "Val-d&apos;Oise (95)",
                     ].map((dept, index) => (
                       <div key={index} className="flex items-center space-x-2">
                         <CheckCircle className="w-5 h-5 text-yellow-500" />
@@ -244,7 +244,7 @@ export default function HomePage() {
                     </div>
                     <h3 className="text-xl font-bold mb-3 text-black">Achat de Véhicules</h3>
                     <p className="text-gray-600 mb-4">
-                      Nous achetons également des véhicules d'occasion en bon état ou à réparer.
+                      Nous achetons également des véhicules d&apos;occasion en bon état ou à réparer.
                     </p>
                     <Link href="/contact">
                       <Button className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold">
@@ -261,7 +261,7 @@ export default function HomePage() {
                     </div>
                     <h3 className="text-xl font-bold mb-3 text-black">Vente de Véhicules</h3>
                     <p className="text-gray-600 mb-4">
-                      Découvrez notre sélection de véhicules d'occasion contrôlés et garantis.
+                      Découvrez notre sélection de véhicules d&apos;occasion contrôlés et garantis.
                     </p>
                     <Link href="/vehicules">
                       <Button className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold">
@@ -315,9 +315,9 @@ export default function HomePage() {
                 loading="lazy"
               />
               <p className="text-gray-400 mb-4">
-                Épaviste agréé VHU pour l'enlèvement gratuit d'épaves en Île-de-France.
+                Épaviste agréé VHU pour l&apos;enlèvement gratuit d&apos;épaves en Île-de-France.
               </p>
-              <p className="text-yellow-500 font-bold">Enlèvement d'épaves gratuit 24/7 en Île-de-France</p>
+              <p className="text-yellow-500 font-bold">Enlèvement d&apos;épaves gratuit 24/7 en Île-de-France</p>
             </div>
 
             <div>

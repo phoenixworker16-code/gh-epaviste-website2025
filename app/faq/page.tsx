@@ -1,12 +1,12 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { HelpCircle } from "lucide-react"
-import BreadcrumbNav from "@/components/breadcrumb-nav"
+import { BreadcrumbNav } from "@/components/breadcrumb-nav"
 import ScrollToTop from "@/components/scroll-to-top"
 
 export default function FaqPage() {
   return (
     <div className="min-h-screen bg-gray-50">
-      <BreadcrumbNav />
+      <BreadcrumbNav items={[{ label: "Accueil", href: "/" }, { label: "FAQ" }]} />
 
       <main className="py-12 pb-24" id="main-content">
         <div className="container mx-auto px-4 max-w-4xl">

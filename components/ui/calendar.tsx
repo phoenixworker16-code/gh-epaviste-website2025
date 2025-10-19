@@ -64,9 +64,11 @@ function Calendar({
       }}
       // Custom components for DayPicker (e.g., icons for navigation)
       components={{
-        // `IconLeft` and `IconRight` only need to return the icon component
-        IconLeft: () => <ChevronLeft className="h-4 w-4" />,
-        IconRight: () => <ChevronRight className="h-4 w-4" />,
+        // Use correct component names for react-day-picker
+        Chevron: ({ orientation, ...props }) => {
+          const Icon = orientation === 'left' ? ChevronLeft : ChevronRight
+          return <Icon className="h-4 w-4" {...props} />
+        },
       }}
       {...props} // Pass any remaining props to DayPicker (e.g., mode, selected, onSelect, etc.)
     />

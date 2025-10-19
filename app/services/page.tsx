@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Truck, Shield, Phone, Car, CheckCircle, FileText, MapPin } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import BreadcrumbNav from "@/components/breadcrumb-nav";
+import { BreadcrumbNav } from "@/components/breadcrumb-nav";
 import ScrollToTop from "@/components/scroll-to-top";
 import { StructuredData } from "@/components/structured-data";
 import { Metadata } from "next";
@@ -34,7 +34,7 @@ export default function ServicesPage() {
           url: "https://gh-epaviste.fr/services"
         }}
       />
-      <BreadcrumbNav aria-label="Chemin de navigation" />
+      <BreadcrumbNav items={[{ label: "Accueil", href: "/" }, { label: "Services" }]} aria-label="Chemin de navigation" />
 
       <main id="main-content">
         {/* Hero Services */}

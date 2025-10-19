@@ -2,6 +2,7 @@
 
 import Image from "next/image"
 import { useState } from "react"
+import styles from "./optimized-image.module.css"
 
 interface OptimizedImageProps {
   src: string
@@ -43,18 +44,21 @@ export default function OptimizedImage({
   }
 
   return (
-    <div className={`relative overflow-hidden ${className}`}>
+    <div 
+      className={`${styles.container} ${className}`}
+      style={{
+        '--container-width': `${width}px`,
+        '--container-height': `${height}px`
+      } as React.CSSProperties}
+    >
       {isLoading && (
-        <div
-          className="absolute inset-0 bg-gray-200 animate-pulse flex items-center justify-center"
-          style={{ width, height }}
-        >
+        <div className="absolute inset-0 bg-gray-200 animate-pulse flex items-center justify-center">
           <div className="text-gray-400 text-sm">Chargement...</div>
         </div>
       )}
 
       {hasError ? (
-        <div className="bg-gray-100 flex items-center justify-center border border-gray-200" style={{ width, height }}>
+        <div className="bg-gray-100 flex items-center justify-center border border-gray-200 w-full h-full">
           <div className="text-gray-500 text-center p-4">
             <div className="text-2xl mb-2">📷</div>
             <div className="text-sm">Image non disponible</div>

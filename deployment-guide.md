@@ -5,6 +5,7 @@
 ### 1. Configuration de l'environnement
 
 1. **Copier le fichier d'environnement de production :**
+
    ```bash
    cp .env.production .env
    ```
@@ -24,11 +25,13 @@ npm run build
 ### 3. Configuration OVH
 
 #### A. Hébergement Web Pro/Performance
+
 1. Uploader les fichiers dans le dossier `www`
 2. Configurer Node.js dans l'espace client OVH
 3. Définir le point d'entrée : `server.js`
 
 #### B. VPS/Serveur dédié
+
 1. Installer Node.js 18+ et npm
 2. Cloner le repository
 3. Installer les dépendances : `npm install`
@@ -38,6 +41,7 @@ npm run build
 ### 4. Configuration DNS
 
 Dans l'espace client OVH, configurer :
+
 - **A** : `@` → IP du serveur
 - **CNAME** : `www` → `gh-epaviste.fr`
 
@@ -49,6 +53,7 @@ Activer le certificat SSL Let's Encrypt dans l'espace client OVH.
 
 1. Créer une base PostgreSQL dans l'espace client OVH
 2. Exécuter les migrations Prisma :
+
    ```bash
    npx prisma migrate deploy
    ```
@@ -56,17 +61,20 @@ Activer le certificat SSL Let's Encrypt dans l'espace client OVH.
 ### 7. Optimisations post-déploiement
 
 #### Cache et Performance
+
 - Activer la compression gzip/brotli
 - Configurer les headers de cache (déjà dans next.config.mjs)
 - Utiliser un CDN si nécessaire
 
 #### SEO
+
 - Vérifier le sitemap : `https://gh-epaviste.fr/sitemap.xml`
 - Vérifier robots.txt : `https://gh-epaviste.fr/robots.txt`
 - Soumettre le site à Google Search Console
 - Configurer Google Analytics
 
 #### Monitoring
+
 - Configurer les logs d'erreur
 - Mettre en place un monitoring de disponibilité
 - Sauvegardes automatiques de la base de données

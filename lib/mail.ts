@@ -1,11 +1,29 @@
-// @ts-ignore
+// @ts-expect-error - nodemailer types may not be available
 import nodemailer from 'nodemailer'
+
+interface DemandeData {
+  nom: string
+  prenom: string
+  telephone: string
+  email: string | null
+  adresse: string
+  codePostal: string
+  ville: string
+  typeVehicule: string
+  marque: string | null
+  modele: string | null
+  annee: string | null
+  etatVehicule: string
+  description: string | null
+  dateCreation: Date | string
+}
 
 function normalizeRecipients(to: string | string[]): string {
   return Array.isArray(to) ? to.join(', ') : to
 }
 
-export function buildAdminEmailHTML(d: any) {
+export function buildAdminEmailHTML(d: DemandeData) {
+  const dateStr = d.dateCreation instanceof Date ? d.dateCreation.toLocaleString('fr-FR') : d.dateCreation
   return `
   <div style="font-family: Arial, sans-serif; color:#111;">
     <h2 style="margin:0 0 12px;">Nouvelle demande d'enlèvement</h2>
@@ -20,7 +38,7 @@ export function buildAdminEmailHTML(d: any) {
       <p><strong>Marque/Modèle/Année:</strong> ${d.marque ?? '—'} / ${d.modele ?? '—'} / ${d.annee ?? '—'}</p>
       <p><strong>État:</strong> ${d.etatVehicule}</p>
       <p><strong>Description:</strong> ${d.description ?? '—'}</p>
-      <p><strong>Date de création:</strong> ${d.dateCreation}</p>
+      <p><strong>Date de création:</strong> ${dateStr}</p>
     </div>
     <p style="margin-top:12px;">Merci de contacter le client sous 2 heures pour organiser l'intervention.</p>
     <hr style="margin:14px 0; border:none; border-top:1px solid #e5e5e5;" />
@@ -29,7 +47,8 @@ export function buildAdminEmailHTML(d: any) {
   `
 }
 
-export function buildClientEmailHTML(d: any) {
+export function buildClientEmailHTML(d: DemandeData) {
+  const dateStr = d.dateCreation instanceof Date ? d.dateCreation.toLocaleString('fr-FR') : d.dateCreation
   return `
   <div style="font-family: Arial, sans-serif; color:#111;">
     <h2 style="margin:0 0 12px;">Confirmation de votre demande d'enlèvement</h2>
@@ -42,7 +61,7 @@ export function buildClientEmailHTML(d: any) {
       <p><strong>Véhicule:</strong> ${d.typeVehicule} — ${d.marque ?? '—'} / ${d.modele ?? '—'} / ${d.annee ?? '—'}</p>
       <p><strong>État:</strong> ${d.etatVehicule}</p>
       <p><strong>Description:</strong> ${d.description ?? '—'}</p>
-      <p><strong>Date de création:</strong> ${d.dateCreation}</p>
+      <p><strong>Date de création:</strong> ${dateStr}</p>
     </div>
     <p style="margin-top:12px;">Nous restons disponibles si vous avez des questions.</p>
     <hr style="margin:14px 0; border:none; border-top:1px solid #e5e5e5;" />

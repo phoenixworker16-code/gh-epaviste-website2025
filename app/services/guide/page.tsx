@@ -58,7 +58,7 @@ export default function GuideEpavePage() {
             </p>
             <ul className="list-disc list-inside ml-4 mt-2 text-black">
               <li>
-                <strong>Carte grise du véhicule</strong> : non barrée, ou barrée avec la mention "Vendu le [date] pour destruction" ou "Cédé le [date] pour destruction", et signée. Si vous n&apos;avez plus la carte grise, contactez-nous.
+                <strong>Carte grise du véhicule</strong> : non barrée, ou barrée avec la mention &quot;Vendu le [date] pour destruction&quot; ou &quot;Cédé le [date] pour destruction&quot;, et signée. Si vous n&apos;avez plus la carte grise, contactez-nous.
               </li>
               <li>
                 <strong>Certificat de non-gage</strong> : à obtenir gratuitement sur&nbsp;

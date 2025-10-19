@@ -2,13 +2,13 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Phone, Mail, MapPin, Clock, CheckCircle } from "lucide-react";
 import Link from "next/link";
-import BreadcrumbNav from "@/components/breadcrumb-nav";
+import { BreadcrumbNav } from "@/components/breadcrumb-nav";
 import ScrollToTop from "@/components/scroll-to-top";
 
 export default function ContactPage() {
   return (
     <div className="min-h-screen bg-gray-50">
-      <BreadcrumbNav />
+      <BreadcrumbNav items={[{ label: "Accueil", href: "/" }, { label: "Contact" }]} />
 
       <main className="py-12 pb-24" id="main-content">
         <div className="container mx-auto px-4 max-w-6xl">
