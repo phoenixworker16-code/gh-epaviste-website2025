@@ -8,13 +8,21 @@ declare global {
   var prisma: PrismaClient | undefined
 }
 
-const prisma = global.prisma || new PrismaClient({
-  // Optionnel: pour le débogage en développement, si vous voulez voir les requêtes SQL
-  // log: ['query'], 
-})
+// Évite l'initialisation pendant le build
+let prisma: PrismaClient
 
-if (process.env.NODE_ENV !== 'production') {
-  global.prisma = prisma
+if (process.env.NEXT_PHASE === 'phase-production-build') {
+  // Pendant le build, créer un mock
+  prisma = {} as PrismaClient
+} else {
+  prisma = global.prisma || new PrismaClient({
+    // Optionnel: pour le débogage en développement, si vous voulez voir les requêtes SQL
+    // log: ['query'], 
+  })
+  
+  if (process.env.NODE_ENV !== 'production') {
+    global.prisma = prisma
+  }
 }
 
 export default prisma
