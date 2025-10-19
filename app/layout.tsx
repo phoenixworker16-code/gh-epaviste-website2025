@@ -6,6 +6,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { Phone } from "lucide-react"
 import { StructuredData } from "@/components/structured-data"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -113,6 +114,7 @@ export default function RootLayout({
         </header>
         {/* Contenu de la page */}
         {children}
+        <SpeedInsights />
       </body>
     </html>
   )
