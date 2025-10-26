@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation"
 import { 
   Users, CheckCircle, XCircle, Clock, Download, FileText, 
   Settings, User, Search, MoreVertical, Eye,
-  Calendar, MapPin, Phone, Mail, Trash2
+  Calendar, MapPin, Phone, Mail, Trash2, BarChart3, TrendingUp
 } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
@@ -45,7 +45,6 @@ export default function AdminDashboard() {
   const [searchTerm, setSearchTerm] = useState("")
   const [statusFilter, setStatusFilter] = useState("all")
   const [selectedDemande, setSelectedDemande] = useState<Demande | null>(null)
-  const [showProfile, setShowProfile] = useState(false)
   const router = useRouter()
 
   useEffect(() => {
@@ -74,7 +73,7 @@ export default function AdminDashboard() {
         setDemandes(demandesWithStatus)
       }
     } catch (error) {
-      // Erreur silencieuse
+      console.error('Erreur fetch demandes:', error)
     }
   }
 
@@ -92,7 +91,7 @@ export default function AdminDashboard() {
         ))
       }
     } catch (error) {
-      // Erreur silencieuse
+      console.error('Erreur update statut:', error)
     }
   }
 
@@ -107,7 +106,7 @@ export default function AdminDashboard() {
           setDemandes(prev => prev.filter(d => d.id !== id))
         }
       } catch (error) {
-        // Erreur silencieuse
+        console.error('Erreur delete demande:', error)
       }
     }
   }
@@ -130,9 +129,8 @@ export default function AdminDashboard() {
     a.click()
   }
 
-  const downloadPDFReport = async () => {
-    try {
-      const { generatePDFReport } = await import('@/lib/pdf-generator-client')
+  const downloadPDFReport = () => {
+    import('@/lib/pdf-generator-client').then(({ generatePDFReport }) => {
       const demandesForPDF = demandes.map(d => ({
         id: d.id,
         nom: d.nom,
@@ -152,16 +150,15 @@ export default function AdminDashboard() {
         montant: undefined
       }))
       
-      await generatePDFReport(demandesForPDF, 'RAPPORT GÉNÉRAL GH ÉPAVISTE')
-    } catch (error) {
-      console.error('Erreur téléchargement PDF:', error)
-      alert('Erreur lors de la génération du rapport PDF')
-    }
+      generatePDFReport(demandesForPDF, 'RAPPORT GÉNÉRAL GH ÉPAVISTE')
+    }).catch(error => {
+      console.error('Erreur import PDF:', error)
+      alert('Erreur lors du chargement du générateur PDF')
+    })
   }
 
-  const downloadSinglePDFReport = async (demande: Demande) => {
-    try {
-      const { generateSinglePDFReport } = await import('@/lib/pdf-generator-client')
+  const downloadSinglePDFReport = (demande: Demande) => {
+    import('@/lib/pdf-generator-client').then(({ generateSinglePDFReport }) => {
       const demandeForPDF = {
         id: demande.id,
         nom: demande.nom,
@@ -181,11 +178,11 @@ export default function AdminDashboard() {
         montant: undefined
       }
       
-      await generateSinglePDFReport(demandeForPDF)
-    } catch (error) {
-      console.error('Erreur téléchargement PDF demande:', error)
-      alert('Erreur lors de la génération du rapport PDF')
-    }
+      generateSinglePDFReport(demandeForPDF)
+    }).catch(error => {
+      console.error('Erreur import PDF:', error)
+      alert('Erreur lors du chargement du générateur PDF')
+    })
   }
 
   const handleLogout = () => {
@@ -199,6 +196,15 @@ export default function AdminDashboard() {
     const matchesStatus = statusFilter === "all" || d.statut === statusFilter
     return matchesSearch && matchesStatus
   })
+
+  const stats = {
+    total: demandes.length,
+    enAttente: demandes.filter(d => d.statut === 'en_attente').length,
+    acceptees: demandes.filter(d => d.statut === 'acceptee').length,
+    enCours: demandes.filter(d => d.statut === 'en_cours').length,
+    terminees: demandes.filter(d => d.statut === 'terminee').length,
+    rejetees: demandes.filter(d => d.statut === 'rejetee').length
+  }
 
   if (isLoading) {
     return (
@@ -234,7 +240,7 @@ export default function AdminDashboard() {
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent>
-                <DropdownMenuItem onClick={() => setShowProfile(true)}>
+                <DropdownMenuItem>
                   <User className="w-4 h-4 mr-2" />
                   Profil
                 </DropdownMenuItem>
@@ -252,11 +258,105 @@ export default function AdminDashboard() {
       </header>
 
       <div className="p-6">
-        <Tabs defaultValue="demandes" className="space-y-6">
-          <TabsList className="grid w-full grid-cols-2">
+        <Tabs defaultValue="overview" className="space-y-6">
+          <TabsList className="grid w-full grid-cols-4">
+            <TabsTrigger value="overview">Vue d'ensemble</TabsTrigger>
             <TabsTrigger value="demandes">Gestion des demandes</TabsTrigger>
+            <TabsTrigger value="analytics">Analyses</TabsTrigger>
             <TabsTrigger value="reports">Rapports</TabsTrigger>
           </TabsList>
+
+          <TabsContent value="overview" className="space-y-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <Card className="hover:shadow-lg hover:scale-105 transition-all duration-300 cursor-pointer">
+                <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+                  <CardTitle className="text-sm font-medium">Total Demandes</CardTitle>
+                  <Users className="h-8 w-8 text-blue-500" />
+                </CardHeader>
+                <CardContent>
+                  <div className="text-3xl font-bold text-blue-600">{stats.total}</div>
+                  <p className="text-xs text-muted-foreground mt-1">Toutes les demandes</p>
+                </CardContent>
+              </Card>
+              
+              <Card className="hover:shadow-lg hover:scale-105 transition-all duration-300 cursor-pointer">
+                <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+                  <CardTitle className="text-sm font-medium">En Attente</CardTitle>
+                  <Clock className="h-8 w-8 text-orange-500" />
+                </CardHeader>
+                <CardContent>
+                  <div className="text-3xl font-bold text-orange-600">{stats.enAttente}</div>
+                  <p className="text-xs text-muted-foreground mt-1">À traiter</p>
+                </CardContent>
+              </Card>
+              
+              <Card className="hover:shadow-lg hover:scale-105 transition-all duration-300 cursor-pointer">
+                <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+                  <CardTitle className="text-sm font-medium">Acceptées</CardTitle>
+                  <CheckCircle className="h-8 w-8 text-green-500" />
+                </CardHeader>
+                <CardContent>
+                  <div className="text-3xl font-bold text-green-600">{stats.acceptees}</div>
+                  <p className="text-xs text-muted-foreground mt-1">Validées</p>
+                </CardContent>
+              </Card>
+              
+              <Card className="hover:shadow-lg hover:scale-105 transition-all duration-300 cursor-pointer">
+                <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+                  <CardTitle className="text-sm font-medium">Terminées</CardTitle>
+                  <TrendingUp className="h-8 w-8 text-purple-500" />
+                </CardHeader>
+                <CardContent>
+                  <div className="text-3xl font-bold text-purple-600">{stats.terminees}</div>
+                  <p className="text-xs text-muted-foreground mt-1">Complétées</p>
+                </CardContent>
+              </Card>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              <Card>
+                <CardHeader>
+                  <CardTitle>Demandes Récentes</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-4">
+                    {demandes.slice(0, 5).map((demande) => (
+                      <div key={demande.id} className="flex items-center justify-between">
+                        <div>
+                          <p className="font-medium">{demande.prenom} {demande.nom}</p>
+                          <p className="text-sm text-gray-500">{demande.ville}</p>
+                        </div>
+                        <Badge variant={
+                          demande.statut === 'acceptee' ? 'default' :
+                          demande.statut === 'rejetee' ? 'destructive' :
+                          demande.statut === 'terminee' ? 'secondary' :
+                          'outline'
+                        }>
+                          {demande.statut.replace('_', ' ')}
+                        </Badge>
+                      </div>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <CardTitle>Actions Rapides</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <Button onClick={downloadPDFReport} className="w-full">
+                    <FileText className="w-4 h-4 mr-2" />
+                    Générer Rapport PDF
+                  </Button>
+                  <Button onClick={exportToCSV} variant="outline" className="w-full">
+                    <Download className="w-4 h-4 mr-2" />
+                    Exporter CSV
+                  </Button>
+                </CardContent>
+              </Card>
+            </div>
+          </TabsContent>
 
           <TabsContent value="demandes" className="space-y-6">
             <div className="flex justify-between items-center">
@@ -413,6 +513,62 @@ export default function AdminDashboard() {
             </Card>
           </TabsContent>
 
+          <TabsContent value="analytics" className="space-y-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <Card>
+                <CardHeader>
+                  <CardTitle>Répartition par Statut</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-3">
+                    <div className="flex justify-between items-center">
+                      <span>En attente</span>
+                      <span className="font-bold">{stats.enAttente}</span>
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <span>Acceptées</span>
+                      <span className="font-bold">{stats.acceptees}</span>
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <span>En cours</span>
+                      <span className="font-bold">{stats.enCours}</span>
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <span>Terminées</span>
+                      <span className="font-bold">{stats.terminees}</span>
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <span>Rejetées</span>
+                      <span className="font-bold">{stats.rejetees}</span>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <CardTitle>Performance</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-3">
+                    <div className="flex justify-between items-center">
+                      <span>Taux d'acceptation</span>
+                      <span className="font-bold">
+                        {stats.total > 0 ? Math.round((stats.acceptees / stats.total) * 100) : 0}%
+                      </span>
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <span>Taux de completion</span>
+                      <span className="font-bold">
+                        {stats.total > 0 ? Math.round((stats.terminees / stats.total) * 100) : 0}%
+                      </span>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </TabsContent>
+
           <TabsContent value="reports" className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <Card>
@@ -453,15 +609,15 @@ export default function AdminDashboard() {
                   <div className="space-y-2">
                     <div className="flex justify-between">
                       <span className="text-sm">Total:</span>
-                      <span className="font-medium">{demandes.length}</span>
+                      <span className="font-medium">{stats.total}</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-sm">En attente:</span>
-                      <span className="font-medium">{demandes.filter(d => d.statut === 'en_attente').length}</span>
+                      <span className="font-medium">{stats.enAttente}</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-sm">Acceptées:</span>
-                      <span className="font-medium">{demandes.filter(d => d.statut === 'acceptee').length}</span>
+                      <span className="font-medium">{stats.acceptees}</span>
                     </div>
                   </div>
                 </CardContent>
