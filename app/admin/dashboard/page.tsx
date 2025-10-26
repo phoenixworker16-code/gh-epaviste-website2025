@@ -143,45 +143,36 @@ export default function AdminDashboard() {
   }
 
   const generateReport = () => {
-    const report = {
-      date: new Date().toLocaleDateString('fr-FR'),
-      totalDemandes: demandes.length,
-      enAttente: demandes.filter(d => d.statut === 'en_attente').length,
-      acceptees: demandes.filter(d => d.statut === 'acceptee').length,
-      rejetees: demandes.filter(d => d.statut === 'rejetee').length,
-      terminées: demandes.filter(d => d.statut === 'terminee').length,
-      parVille: demandes.reduce((acc, d) => {
+    const now = new Date()
+    const reportText = `=== RAPPORT GH ÉPAVISTE ===\n` +
+      `Généré le: ${now.toLocaleDateString('fr-FR')} à ${now.toLocaleTimeString('fr-FR')}\n\n` +
+      `STATISTIQUES GÉNÉRALES:\n` +
+      `• Total des demandes: ${demandes.length}\n` +
+      `• En attente: ${demandes.filter(d => d.statut === 'en_attente').length}\n` +
+      `• Acceptées: ${demandes.filter(d => d.statut === 'acceptee').length}\n` +
+      `• En cours: ${demandes.filter(d => d.statut === 'en_cours').length}\n` +
+      `• Terminées: ${demandes.filter(d => d.statut === 'terminee').length}\n` +
+      `• Rejetées: ${demandes.filter(d => d.statut === 'rejetee').length}\n\n` +
+      `RÉPARTITION PAR VILLE:\n` +
+      Object.entries(demandes.reduce((acc, d) => {
         acc[d.ville] = (acc[d.ville] || 0) + 1
         return acc
-      }, {} as Record<string, number>)
-    }
+      }, {} as Record<string, number>))
+        .sort(([,a], [,b]) => b - a)
+        .map(([ville, count]) => `• ${ville}: ${count} demande${count > 1 ? 's' : ''}\n`)
+        .join('') +
+      `\nTAUX DE CONVERSION:\n` +
+      `• Taux d'acceptation: ${Math.round((demandes.filter(d => d.statut === 'acceptee').length / demandes.length) * 100)}%\n` +
+      `• Taux de finalisation: ${Math.round((demandes.filter(d => d.statut === 'terminee').length / demandes.length) * 100)}%`
     
-    const reportText = `RAPPORT GH ÉPAVISTE - ${report.date}
-
-` +
-      `STATISTIQUES GÉNÉRALES:
-` +
-      `- Total des demandes: ${report.totalDemandes}
-` +
-      `- En attente: ${report.enAttente}
-` +
-      `- Acceptées: ${report.acceptees}
-` +
-      `- Rejetées: ${report.rejetees}
-` +
-      `- Terminées: ${report.terminées}
-
-` +
-      `RÉPARTITION PAR VILLE:
-` +
-      Object.entries(report.parVille).map(([ville, count]) => `- ${ville}: ${count} demandes`).join('\n')
-    
-    const blob = new Blob([reportText], { type: 'text/plain' })
+    const blob = new Blob([reportText], { type: 'text/plain;charset=utf-8' })
     const url = window.URL.createObjectURL(blob)
     const a = document.createElement('a')
     a.href = url
-    a.download = `rapport_gh_epaviste_${new Date().toISOString().split('T')[0]}.txt`
+    a.download = `rapport_gh_epaviste_${now.toISOString().split('T')[0]}.txt`
+    document.body.appendChild(a)
     a.click()
+    document.body.removeChild(a)
     window.URL.revokeObjectURL(url)
   }
 
@@ -423,7 +414,7 @@ export default function AdminDashboard() {
                 </Button>
                 <Button onClick={generateReport} variant="outline">
                   <FileText className="w-4 h-4 mr-2" />
-                  Générer rapport
+                  Télécharger rapport
                 </Button>
               </div>
             </div>
@@ -627,7 +618,7 @@ export default function AdminDashboard() {
                   </p>
                   <Button onClick={generateReport} className="w-full">
                     <FileText className="w-4 h-4 mr-2" />
-                    Générer
+                    Télécharger rapport
                   </Button>
                 </CardContent>
               </Card>
