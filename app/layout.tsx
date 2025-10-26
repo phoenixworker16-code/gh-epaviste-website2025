@@ -9,12 +9,7 @@ import { StructuredData } from "@/components/structured-data"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Analytics } from "@vercel/analytics/react"
 
-const inter = Inter({
-  subsets: ["latin"],
-  display: "swap",
-  preload: true,
-  variable: "--font-inter",
-})
+const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "GH Épaviste - Enlèvement Gratuit d'Épaves en Île-de-France",
@@ -70,7 +65,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="fr" className={inter.variable}>
+    <html lang="fr">
       <body className={`${inter.className} antialiased`}>
         <StructuredData type="Organization" />
         <StructuredData type="LocalBusiness" />
