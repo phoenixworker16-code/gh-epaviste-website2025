@@ -7,6 +7,7 @@ import {
   Settings, User, Search, MoreVertical, Eye,
   Calendar, MapPin, Phone, Mail, Trash2
 } from "lucide-react"
+import { PDFGenerator } from "@/lib/pdf-generator"
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
@@ -137,25 +138,51 @@ export default function AdminDashboard() {
   }
 
   const downloadReport = () => {
-    const date = new Date()
-    const content = `RAPPORT GH ÉPAVISTE - ${date.toLocaleDateString('fr-FR')}
+    const pdfGenerator = new PDFGenerator()
+    const demandesForPDF = demandes.map(d => ({
+      id: d.id,
+      nom: d.nom,
+      prenom: d.prenom,
+      telephone: d.telephone,
+      email: d.email || '',
+      adresse: `${d.adresse}, ${d.ville} ${d.codePostal}`,
+      marque: d.marque || '',
+      modele: d.modele || '',
+      annee: d.annee || '',
+      carburant: 'Non spécifié',
+      etat: d.etatVehicule,
+      description: d.description || '',
+      statut: d.statut.replace('_', ' '),
+      dateCreation: d.dateCreation,
+      dateIntervention: undefined,
+      montant: undefined
+    }))
+    
+    pdfGenerator.generateMultipleReport(demandesForPDF, 'RAPPORT GÉNÉRAL GH ÉPAVISTE')
+  }
 
-STATISTIQUES:
-- Total: ${demandes.length}
-- En attente: ${demandes.filter(d => d.statut === 'en_attente').length}
-- Acceptées: ${demandes.filter(d => d.statut === 'acceptee').length}
-- Terminées: ${demandes.filter(d => d.statut === 'terminee').length}
-
-TAUX:
-- Acceptation: ${demandes.length > 0 ? Math.round((demandes.filter(d => d.statut === 'acceptee').length / demandes.length) * 100) : 0}%`
-
-    const element = document.createElement('a')
-    element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(content))
-    element.setAttribute('download', `rapport_${date.toISOString().split('T')[0]}.txt`)
-    element.style.display = 'none'
-    document.body.appendChild(element)
-    element.click()
-    document.body.removeChild(element)
+  const downloadSingleReport = (demande: Demande) => {
+    const pdfGenerator = new PDFGenerator()
+    const demandeForPDF = {
+      id: demande.id,
+      nom: demande.nom,
+      prenom: demande.prenom,
+      telephone: demande.telephone,
+      email: demande.email || '',
+      adresse: `${demande.adresse}, ${demande.ville} ${demande.codePostal}`,
+      marque: demande.marque || '',
+      modele: demande.modele || '',
+      annee: demande.annee || '',
+      carburant: 'Non spécifié',
+      etat: demande.etatVehicule,
+      description: demande.description || '',
+      statut: demande.statut.replace('_', ' '),
+      dateCreation: demande.dateCreation,
+      dateIntervention: undefined,
+      montant: undefined
+    }
+    
+    pdfGenerator.generateSingleReport(demandeForPDF)
   }
 
   const handleLogout = () => {
@@ -262,7 +289,7 @@ TAUX:
                 </Button>
                 <Button onClick={downloadReport} variant="outline">
                   <FileText className="w-4 h-4 mr-2" />
-                  Télécharger rapport
+                  Rapport PDF
                 </Button>
               </div>
             </div>
@@ -346,6 +373,10 @@ TAUX:
                               <Eye className="w-4 h-4 mr-2" />
                               Voir détails
                             </DropdownMenuItem>
+                            <DropdownMenuItem onClick={() => downloadSingleReport(demande)}>
+                              <FileText className="w-4 h-4 mr-2" />
+                              Rapport PDF
+                            </DropdownMenuItem>
                             <DropdownMenuItem onClick={() => updateDemandeStatus(demande.id, 'acceptee')}>
                               <CheckCircle className="w-4 h-4 mr-2" />
                               Accepter
@@ -383,15 +414,15 @@ TAUX:
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <Card>
                 <CardHeader>
-                  <CardTitle>Rapport mensuel</CardTitle>
+                  <CardTitle>Rapport PDF</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-gray-600 mb-4">
-                    Télécharger un rapport des activités
+                    Générer un rapport PDF professionnel avec logo et statistiques
                   </p>
                   <Button onClick={downloadReport} className="w-full">
                     <FileText className="w-4 h-4 mr-2" />
-                    Télécharger
+                    Générer PDF
                   </Button>
                 </CardContent>
               </Card>
