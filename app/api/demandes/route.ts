@@ -4,7 +4,8 @@
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
 
-import prisma from '@/lib/prisma';
+// Version temporaire sans Prisma
+// import prisma from '@/lib/prisma';
 // import { sendDemandeEmail, buildAdminEmailHTML, buildClientEmailHTML } from '@/lib/mail';
 // import { verifyRecaptchaToken } from '@/lib/recaptcha';
 
@@ -22,25 +23,32 @@ export async function POST(request: Request) {
       });
     }
 
-    // Création de la demande en base de données
-    const demande = await prisma.demande.create({
-      data: {
-        nom: body.nom,
-        prenom: body.prenom,
-        telephone: body.telephone,
-        email: body.email || null,
-        adresse: body.adresse,
-        ville: body.ville,
-        codePostal: body.codePostal,
-        typeVehicule: body.typeVehicule,
-        marque: body.marque || null,
-        modele: body.modele || null,
-        annee: body.annee || null,
-        etatVehicule: body.etatVehicule,
-        description: body.description || null,
-        statut: 'en_attente'
-      }
-    });
+    // Simulation d'une demande créée
+    const demande = {
+      id: Date.now(),
+      nom: body.nom,
+      prenom: body.prenom,
+      telephone: body.telephone,
+      email: body.email || null,
+      adresse: body.adresse,
+      ville: body.ville,
+      codePostal: body.codePostal,
+      typeVehicule: body.typeVehicule,
+      marque: body.marque || null,
+      modele: body.modele || null,
+      annee: body.annee || null,
+      etatVehicule: body.etatVehicule,
+      description: body.description || null,
+      dateCreation: new Date().toISOString(),
+      statut: 'en_attente'
+    };
+    
+    // Stockage temporaire en localStorage côté client
+    if (typeof window !== 'undefined') {
+      const existingDemandes = JSON.parse(localStorage.getItem('demandes') || '[]')
+      existingDemandes.push(demande)
+      localStorage.setItem('demandes', JSON.stringify(existingDemandes))
+    }
 
     // Retourne une réponse de succès
     return new Response(JSON.stringify({ 
@@ -69,9 +77,27 @@ export async function POST(request: Request) {
 // Récupération des demandes (dashboard admin)
 export async function GET() {
   try {
-    const demandes = await prisma.demande.findMany({
-      orderBy: { dateCreation: 'desc' }
-    })
+    // Simulation de demandes pour test
+    const demandes = [
+      {
+        id: 1,
+        nom: 'Test',
+        prenom: 'Utilisateur',
+        telephone: '0123456789',
+        email: 'test@example.com',
+        adresse: '123 Rue Test',
+        ville: 'Paris',
+        codePostal: '75001',
+        typeVehicule: 'voiture',
+        marque: 'Renault',
+        modele: 'Clio',
+        annee: '2010',
+        etatVehicule: 'non-roulant',
+        description: 'Véhicule de test',
+        dateCreation: new Date().toISOString(),
+        statut: 'en_attente'
+      }
+    ]
     
     return new Response(JSON.stringify(demandes), {
       status: 200,
