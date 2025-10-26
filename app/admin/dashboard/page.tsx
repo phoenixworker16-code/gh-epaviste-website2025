@@ -7,7 +7,6 @@ import {
   Settings, User, Search, MoreVertical, Eye,
   Calendar, MapPin, Phone, Mail, Trash2
 } from "lucide-react"
-import { PDFGenerator } from "@/lib/pdf-generator"
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
@@ -91,12 +90,9 @@ export default function AdminDashboard() {
         setDemandes(prev => prev.map(d => 
           d.id === id ? { ...d, statut: newStatus as any } : d
         ))
-        alert(`Demande ${newStatus.replace('_', ' ')} avec succès !`)
-      } else {
-        alert('Erreur lors de la mise à jour')
       }
     } catch (error) {
-      alert('Erreur lors de la mise à jour')
+      // Erreur silencieuse
     }
   }
 
@@ -109,12 +105,9 @@ export default function AdminDashboard() {
         
         if (response.ok) {
           setDemandes(prev => prev.filter(d => d.id !== id))
-          alert('Demande supprimée avec succès !')
-        } else {
-          alert('Erreur lors de la suppression')
         }
       } catch (error) {
-        alert('Erreur lors de la suppression')
+        // Erreur silencieuse
       }
     }
   }
@@ -127,7 +120,7 @@ export default function AdminDashboard() {
         d.id, d.nom, d.prenom, d.telephone, d.email || "", 
         d.ville, d.typeVehicule, d.statut, d.dateCreation
       ].join(","))
-    ].join("\n")
+    ].join("\\n")
     
     const blob = new Blob([csvContent], { type: "text/csv" })
     const url = window.URL.createObjectURL(blob)
@@ -137,52 +130,62 @@ export default function AdminDashboard() {
     a.click()
   }
 
-  const downloadReport = () => {
-    const pdfGenerator = new PDFGenerator()
-    const demandesForPDF = demandes.map(d => ({
-      id: d.id,
-      nom: d.nom,
-      prenom: d.prenom,
-      telephone: d.telephone,
-      email: d.email || '',
-      adresse: `${d.adresse}, ${d.ville} ${d.codePostal}`,
-      marque: d.marque || '',
-      modele: d.modele || '',
-      annee: d.annee || '',
-      carburant: 'Non spécifié',
-      etat: d.etatVehicule,
-      description: d.description || '',
-      statut: d.statut.replace('_', ' '),
-      dateCreation: d.dateCreation,
-      dateIntervention: undefined,
-      montant: undefined
-    }))
-    
-    pdfGenerator.generateMultipleReport(demandesForPDF, 'RAPPORT GÉNÉRAL GH ÉPAVISTE')
+  const downloadPDFReport = async () => {
+    try {
+      const { generatePDFReport } = await import('@/lib/pdf-generator-client')
+      const demandesForPDF = demandes.map(d => ({
+        id: d.id,
+        nom: d.nom,
+        prenom: d.prenom,
+        telephone: d.telephone,
+        email: d.email || '',
+        adresse: `${d.adresse}, ${d.ville} ${d.codePostal}`,
+        marque: d.marque || '',
+        modele: d.modele || '',
+        annee: d.annee || '',
+        carburant: 'Non spécifié',
+        etat: d.etatVehicule,
+        description: d.description || '',
+        statut: d.statut,
+        dateCreation: d.dateCreation,
+        dateIntervention: undefined,
+        montant: undefined
+      }))
+      
+      await generatePDFReport(demandesForPDF, 'RAPPORT GÉNÉRAL GH ÉPAVISTE')
+    } catch (error) {
+      console.error('Erreur téléchargement PDF:', error)
+      alert('Erreur lors de la génération du rapport PDF')
+    }
   }
 
-  const downloadSingleReport = (demande: Demande) => {
-    const pdfGenerator = new PDFGenerator()
-    const demandeForPDF = {
-      id: demande.id,
-      nom: demande.nom,
-      prenom: demande.prenom,
-      telephone: demande.telephone,
-      email: demande.email || '',
-      adresse: `${demande.adresse}, ${demande.ville} ${demande.codePostal}`,
-      marque: demande.marque || '',
-      modele: demande.modele || '',
-      annee: demande.annee || '',
-      carburant: 'Non spécifié',
-      etat: demande.etatVehicule,
-      description: demande.description || '',
-      statut: demande.statut.replace('_', ' '),
-      dateCreation: demande.dateCreation,
-      dateIntervention: undefined,
-      montant: undefined
+  const downloadSinglePDFReport = async (demande: Demande) => {
+    try {
+      const { generateSinglePDFReport } = await import('@/lib/pdf-generator-client')
+      const demandeForPDF = {
+        id: demande.id,
+        nom: demande.nom,
+        prenom: demande.prenom,
+        telephone: demande.telephone,
+        email: demande.email || '',
+        adresse: `${demande.adresse}, ${demande.ville} ${demande.codePostal}`,
+        marque: demande.marque || '',
+        modele: demande.modele || '',
+        annee: demande.annee || '',
+        carburant: 'Non spécifié',
+        etat: demande.etatVehicule,
+        description: demande.description || '',
+        statut: demande.statut,
+        dateCreation: demande.dateCreation,
+        dateIntervention: undefined,
+        montant: undefined
+      }
+      
+      await generateSinglePDFReport(demandeForPDF)
+    } catch (error) {
+      console.error('Erreur téléchargement PDF demande:', error)
+      alert('Erreur lors de la génération du rapport PDF')
     }
-    
-    pdfGenerator.generateSingleReport(demandeForPDF)
   }
 
   const handleLogout = () => {
@@ -287,7 +290,7 @@ export default function AdminDashboard() {
                   <Download className="w-4 h-4 mr-2" />
                   Exporter CSV
                 </Button>
-                <Button onClick={downloadReport} variant="outline">
+                <Button onClick={downloadPDFReport} variant="outline">
                   <FileText className="w-4 h-4 mr-2" />
                   Rapport PDF
                 </Button>
@@ -373,7 +376,7 @@ export default function AdminDashboard() {
                               <Eye className="w-4 h-4 mr-2" />
                               Voir détails
                             </DropdownMenuItem>
-                            <DropdownMenuItem onClick={() => downloadSingleReport(demande)}>
+                            <DropdownMenuItem onClick={() => downloadSinglePDFReport(demande)}>
                               <FileText className="w-4 h-4 mr-2" />
                               Rapport PDF
                             </DropdownMenuItem>
@@ -420,7 +423,7 @@ export default function AdminDashboard() {
                   <p className="text-sm text-gray-600 mb-4">
                     Générer un rapport PDF professionnel avec logo et statistiques
                   </p>
-                  <Button onClick={downloadReport} className="w-full">
+                  <Button onClick={downloadPDFReport} className="w-full">
                     <FileText className="w-4 h-4 mr-2" />
                     Générer PDF
                   </Button>
