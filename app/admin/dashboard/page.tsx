@@ -143,37 +143,35 @@ export default function AdminDashboard() {
   }
 
   const generateReport = () => {
-    const now = new Date()
-    const reportText = `=== RAPPORT GH ÉPAVISTE ===\n` +
-      `Généré le: ${now.toLocaleDateString('fr-FR')} à ${now.toLocaleTimeString('fr-FR')}\n\n` +
-      `STATISTIQUES GÉNÉRALES:\n` +
-      `• Total des demandes: ${demandes.length}\n` +
-      `• En attente: ${demandes.filter(d => d.statut === 'en_attente').length}\n` +
-      `• Acceptées: ${demandes.filter(d => d.statut === 'acceptee').length}\n` +
-      `• En cours: ${demandes.filter(d => d.statut === 'en_cours').length}\n` +
-      `• Terminées: ${demandes.filter(d => d.statut === 'terminee').length}\n` +
-      `• Rejetées: ${demandes.filter(d => d.statut === 'rejetee').length}\n\n` +
-      `RÉPARTITION PAR VILLE:\n` +
-      Object.entries(demandes.reduce((acc, d) => {
-        acc[d.ville] = (acc[d.ville] || 0) + 1
-        return acc
-      }, {} as Record<string, number>))
-        .sort(([,a], [,b]) => b - a)
-        .map(([ville, count]) => `• ${ville}: ${count} demande${count > 1 ? 's' : ''}\n`)
-        .join('') +
-      `\nTAUX DE CONVERSION:\n` +
-      `• Taux d'acceptation: ${Math.round((demandes.filter(d => d.statut === 'acceptee').length / demandes.length) * 100)}%\n` +
-      `• Taux de finalisation: ${Math.round((demandes.filter(d => d.statut === 'terminee').length / demandes.length) * 100)}%`
-    
-    const blob = new Blob([reportText], { type: 'text/plain;charset=utf-8' })
-    const url = window.URL.createObjectURL(blob)
-    const a = document.createElement('a')
-    a.href = url
-    a.download = `rapport_gh_epaviste_${now.toISOString().split('T')[0]}.txt`
-    document.body.appendChild(a)
-    a.click()
-    document.body.removeChild(a)
-    window.URL.revokeObjectURL(url)
+    try {
+      const now = new Date()
+      const reportContent = [
+        '=== RAPPORT GH ÉPAVISTE ===',
+        `Généré le: ${now.toLocaleDateString('fr-FR')} à ${now.toLocaleTimeString('fr-FR')}`,
+        '',
+        'STATISTIQUES GÉNÉRALES:',
+        `• Total des demandes: ${demandes.length}`,
+        `• En attente: ${demandes.filter(d => d.statut === 'en_attente').length}`,
+        `• Acceptées: ${demandes.filter(d => d.statut === 'acceptee').length}`,
+        `• En cours: ${demandes.filter(d => d.statut === 'en_cours').length}`,
+        `• Terminées: ${demandes.filter(d => d.statut === 'terminee').length}`,
+        `• Rejetées: ${demandes.filter(d => d.statut === 'rejetee').length}`,
+        '',
+        'TAUX DE CONVERSION:',
+        `• Taux d'acceptation: ${demandes.length > 0 ? Math.round((demandes.filter(d => d.statut === 'acceptee').length / demandes.length) * 100) : 0}%`,
+        `• Taux de finalisation: ${demandes.length > 0 ? Math.round((demandes.filter(d => d.statut === 'terminee').length / demandes.length) * 100) : 0}%`
+      ].join('\n')
+      
+      const blob = new Blob([reportContent], { type: 'text/plain;charset=utf-8' })
+      const url = URL.createObjectURL(blob)
+      const link = document.createElement('a')
+      link.href = url
+      link.download = `rapport_gh_epaviste_${now.toISOString().split('T')[0]}.txt`
+      link.click()
+      URL.revokeObjectURL(url)
+    } catch (error) {
+      alert('Erreur lors de la génération du rapport')
+    }
   }
 
   const handleLogout = () => {
