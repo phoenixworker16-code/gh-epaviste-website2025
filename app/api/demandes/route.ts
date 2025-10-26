@@ -83,11 +83,11 @@ export async function GET() {
     const mockDemandes = [
       {
         id: '1',
-        nom: 'Test',
-        prenom: 'Utilisateur',
+        nom: 'Dupont',
+        prenom: 'Jean',
         telephone: '0123456789',
-        email: 'test@example.com',
-        adresse: '123 Rue Test',
+        email: 'jean.dupont@email.com',
+        adresse: '123 Rue de la Paix',
         ville: 'Paris',
         codePostal: '75001',
         typeVehicule: 'voiture',
@@ -95,8 +95,45 @@ export async function GET() {
         modele: 'Clio',
         annee: '2010',
         etatVehicule: 'non-roulant',
-        description: 'Véhicule de test',
-        dateCreation: new Date().toISOString()
+        description: 'Véhicule accidenté',
+        dateCreation: new Date().toISOString(),
+        statut: 'en_attente'
+      },
+      {
+        id: '2',
+        nom: 'Martin',
+        prenom: 'Sophie',
+        telephone: '0987654321',
+        email: 'sophie.martin@email.com',
+        adresse: '456 Avenue des Champs',
+        ville: 'Lyon',
+        codePostal: '69001',
+        typeVehicule: 'camionnette',
+        marque: 'Peugeot',
+        modele: 'Partner',
+        annee: '2015',
+        etatVehicule: 'roulant',
+        description: 'Véhicule en fin de vie',
+        dateCreation: new Date(Date.now() - 86400000).toISOString(),
+        statut: 'acceptee'
+      },
+      {
+        id: '3',
+        nom: 'Bernard',
+        prenom: 'Pierre',
+        telephone: '0147258369',
+        email: null,
+        adresse: '789 Rue du Commerce',
+        ville: 'Marseille',
+        codePostal: '13001',
+        typeVehicule: 'moto',
+        marque: 'Yamaha',
+        modele: 'MT-07',
+        annee: '2018',
+        etatVehicule: 'accidenté',
+        description: 'Moto suite accident',
+        dateCreation: new Date(Date.now() - 172800000).toISOString(),
+        statut: 'terminee'
       }
     ];
     

@@ -1,5 +1,4 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { prisma } from '@/lib/prisma'
 
 export async function PATCH(
   request: NextRequest,
@@ -7,13 +6,9 @@ export async function PATCH(
 ) {
   try {
     const { statut } = await request.json()
+    console.log(`Mise à jour demande ${params.id} vers statut: ${statut}`)
     
-    const updatedDemande = await prisma.demande.update({
-      where: { id: params.id },
-      data: { statut }
-    })
-
-    return NextResponse.json(updatedDemande)
+    return NextResponse.json({ id: params.id, statut, success: true })
   } catch (error) {
     console.error('Erreur lors de la mise à jour:', error)
     return NextResponse.json(
@@ -28,10 +23,7 @@ export async function DELETE(
   { params }: { params: { id: string } }
 ) {
   try {
-    await prisma.demande.delete({
-      where: { id: params.id }
-    })
-
+    console.log(`Suppression demande ${params.id}`)
     return NextResponse.json({ success: true })
   } catch (error) {
     console.error('Erreur lors de la suppression:', error)

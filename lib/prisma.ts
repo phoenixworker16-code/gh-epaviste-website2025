@@ -1,6 +1,6 @@
 // lib/prisma.ts
 
-import { PrismaClient } from '@prisma/client'
+import { PrismaClient } from './generated/prisma'
 
 // Nécessaire pour éviter de créer de nouvelles instances à chaque Hot Reload en Dev
 declare global {

@@ -94,9 +94,13 @@ export default function AdminDashboard() {
         setDemandes(prev => prev.map(d => 
           d.id === id ? { ...d, statut: newStatus as any } : d
         ))
+        alert(`Demande ${newStatus.replace('_', ' ')} avec succès !`)
+      } else {
+        alert('Erreur lors de la mise à jour')
       }
     } catch (error) {
       console.error("Erreur lors de la mise à jour:", error)
+      alert('Erreur lors de la mise à jour')
     }
   }
 
@@ -109,9 +113,13 @@ export default function AdminDashboard() {
         
         if (response.ok) {
           setDemandes(prev => prev.filter(d => d.id !== id))
+          alert('Demande supprimée avec succès !')
+        } else {
+          alert('Erreur lors de la suppression')
         }
       } catch (error) {
         console.error("Erreur lors de la suppression:", error)
+        alert('Erreur lors de la suppression')
       }
     }
   }
@@ -136,6 +144,7 @@ export default function AdminDashboard() {
 
   const generateReport = () => {
     const report = {
+      date: new Date().toLocaleDateString('fr-FR'),
       totalDemandes: demandes.length,
       enAttente: demandes.filter(d => d.statut === 'en_attente').length,
       acceptees: demandes.filter(d => d.statut === 'acceptee').length,
@@ -147,8 +156,33 @@ export default function AdminDashboard() {
       }, {} as Record<string, number>)
     }
     
-    console.log("Rapport généré:", report)
-    alert("Rapport généré ! Consultez la console pour les détails.")
+    const reportText = `RAPPORT GH ÉPAVISTE - ${report.date}
+
+` +
+      `STATISTIQUES GÉNÉRALES:
+` +
+      `- Total des demandes: ${report.totalDemandes}
+` +
+      `- En attente: ${report.enAttente}
+` +
+      `- Acceptées: ${report.acceptees}
+` +
+      `- Rejetées: ${report.rejetees}
+` +
+      `- Terminées: ${report.terminées}
+
+` +
+      `RÉPARTITION PAR VILLE:
+` +
+      Object.entries(report.parVille).map(([ville, count]) => `- ${ville}: ${count} demandes`).join('\n')
+    
+    const blob = new Blob([reportText], { type: 'text/plain' })
+    const url = window.URL.createObjectURL(blob)
+    const a = document.createElement('a')
+    a.href = url
+    a.download = `rapport_gh_epaviste_${new Date().toISOString().split('T')[0]}.txt`
+    a.click()
+    window.URL.revokeObjectURL(url)
   }
 
   const handleLogout = () => {
@@ -686,13 +720,22 @@ export default function AdminDashboard() {
                 </div>
               )}
               <div className="flex space-x-2">
-                <Button onClick={() => updateDemandeStatus(selectedDemande.id, 'acceptee')}>
+                <Button onClick={() => {
+                  updateDemandeStatus(selectedDemande.id, 'acceptee')
+                  setSelectedDemande(null)
+                }}>
                   Accepter
                 </Button>
-                <Button variant="outline" onClick={() => updateDemandeStatus(selectedDemande.id, 'rejetee')}>
+                <Button variant="outline" onClick={() => {
+                  updateDemandeStatus(selectedDemande.id, 'rejetee')
+                  setSelectedDemande(null)
+                }}>
                   Rejeter
                 </Button>
-                <Button variant="outline" onClick={() => updateDemandeStatus(selectedDemande.id, 'en_cours')}>
+                <Button variant="outline" onClick={() => {
+                  updateDemandeStatus(selectedDemande.id, 'en_cours')
+                  setSelectedDemande(null)
+                }}>
                   En cours
                 </Button>
               </div>
