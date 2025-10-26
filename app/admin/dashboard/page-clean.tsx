@@ -38,8 +38,6 @@ interface Demande {
   statut: 'en_attente' | 'acceptee' | 'rejetee' | 'en_cours' | 'terminee'
 }
 
-const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#8884D8']
-
 export default function AdminDashboard() {
   const [demandes, setDemandes] = useState<Demande[]>([])
   const [isAuthenticated, setIsAuthenticated] = useState(false)
@@ -174,29 +172,6 @@ TAUX:
     return matchesSearch && matchesStatus
   })
 
-  const statusData = [
-    { name: 'En attente', value: demandes.filter(d => d.statut === 'en_attente').length, color: '#FFBB28' },
-    { name: 'Acceptées', value: demandes.filter(d => d.statut === 'acceptee').length, color: '#00C49F' },
-    { name: 'En cours', value: demandes.filter(d => d.statut === 'en_cours').length, color: '#0088FE' },
-    { name: 'Terminées', value: demandes.filter(d => d.statut === 'terminee').length, color: '#8884D8' },
-    { name: 'Rejetées', value: demandes.filter(d => d.statut === 'rejetee').length, color: '#FF8042' }
-  ]
-
-  const monthlyData = demandes.reduce((acc, d) => {
-    const month = new Date(d.dateCreation).toLocaleDateString('fr-FR', { month: 'short' })
-    acc[month] = (acc[month] || 0) + 1
-    return acc
-  }, {} as Record<string, number>)
-
-  const chartData = Object.entries(monthlyData).map(([month, count]) => ({ month, count }))
-
-  const vehicleTypeData = demandes.reduce((acc, d) => {
-    acc[d.typeVehicule] = (acc[d.typeVehicule] || 0) + 1
-    return acc
-  }, {} as Record<string, number>)
-
-  const vehicleChartData = Object.entries(vehicleTypeData).map(([type, count]) => ({ type, count }))
-
   if (isLoading) {
     return (
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
@@ -249,122 +224,11 @@ TAUX:
       </header>
 
       <div className="p-6">
-        <Tabs defaultValue="overview" className="space-y-6">
-          <TabsList className="grid w-full grid-cols-4">
-            <TabsTrigger value="overview">Vue d'ensemble</TabsTrigger>
+        <Tabs defaultValue="demandes" className="space-y-6">
+          <TabsList className="grid w-full grid-cols-2">
             <TabsTrigger value="demandes">Gestion des demandes</TabsTrigger>
-            <TabsTrigger value="analytics">Analyses</TabsTrigger>
             <TabsTrigger value="reports">Rapports</TabsTrigger>
           </TabsList>
-
-          <TabsContent value="overview" className="space-y-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <Card>
-                <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                  <CardTitle className="text-sm font-medium">Total Demandes</CardTitle>
-                  <Users className="h-4 w-4 text-muted-foreground" />
-                </CardHeader>
-                <CardContent>
-                  <div className="text-2xl font-bold">{demandes.length}</div>
-                  <p className="text-xs text-muted-foreground">+12% ce mois</p>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                  <CardTitle className="text-sm font-medium">En attente</CardTitle>
-                  <Clock className="h-4 w-4 text-yellow-500" />
-                </CardHeader>
-                <CardContent>
-                  <div className="text-2xl font-bold">{demandes.filter(d => d.statut === 'en_attente').length}</div>
-                  <p className="text-xs text-muted-foreground">Nécessitent une action</p>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                  <CardTitle className="text-sm font-medium">Acceptées</CardTitle>
-                  <CheckCircle className="h-4 w-4 text-green-500" />
-                </CardHeader>
-                <CardContent>
-                  <div className="text-2xl font-bold">{demandes.filter(d => d.statut === 'acceptee').length}</div>
-                  <p className="text-xs text-muted-foreground">Taux: {Math.round((demandes.filter(d => d.statut === 'acceptee').length / demandes.length) * 100)}%</p>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                  <CardTitle className="text-sm font-medium">Terminées</CardTitle>
-                  <TrendingUp className="h-4 w-4 text-blue-500" />
-                </CardHeader>
-                <CardContent>
-                  <div className="text-2xl font-bold">{demandes.filter(d => d.statut === 'terminee').length}</div>
-                  <p className="text-xs text-muted-foreground">Missions accomplies</p>
-                </CardContent>
-              </Card>
-            </div>
-
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-              <Card>
-                <CardHeader>
-                  <CardTitle>Répartition par statut</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-3">
-                    {statusData.map((item, index) => (
-                      <div key={index} className="flex items-center justify-between">
-                        <div className="flex items-center space-x-2">
-                          <div 
-                            className="w-4 h-4 rounded-full" 
-                            style={{ backgroundColor: item.color }}
-                          />
-                          <span className="text-sm">{item.name}</span>
-                        </div>
-                        <div className="flex items-center space-x-2">
-                          <div className="w-32 bg-gray-200 rounded-full h-2">
-                            <div 
-                              className="h-2 rounded-full" 
-                              style={{ 
-                                backgroundColor: item.color,
-                                width: `${(item.value / Math.max(...statusData.map(d => d.value))) * 100}%`
-                              }}
-                            />
-                          </div>
-                          <span className="text-sm font-medium w-8">{item.value}</span>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardHeader>
-                  <CardTitle>Évolution mensuelle</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-4">
-                    {chartData.map((item, index) => (
-                      <div key={index} className="flex items-center justify-between">
-                        <span className="text-sm font-medium w-12">{item.month}</span>
-                        <div className="flex-1 mx-4">
-                          <div className="w-full bg-gray-200 rounded-full h-3">
-                            <div 
-                              className="bg-blue-500 h-3 rounded-full transition-all duration-300" 
-                              style={{ 
-                                width: `${(item.count / Math.max(...chartData.map(d => d.count))) * 100}%`
-                              }}
-                            />
-                          </div>
-                        </div>
-                        <span className="text-sm font-bold w-8">{item.count}</span>
-                      </div>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-          </TabsContent>
 
           <TabsContent value="demandes" className="space-y-6">
             <div className="flex justify-between items-center">
@@ -422,9 +286,7 @@ TAUX:
                   {filteredDemandes.map((demande) => (
                     <TableRow key={demande.id}>
                       <TableCell>
-                        <div>
-                          <div className="font-medium">{demande.prenom} {demande.nom}</div>
-                        </div>
+                        <div className="font-medium">{demande.prenom} {demande.nom}</div>
                       </TableCell>
                       <TableCell>
                         <div className="space-y-1">
@@ -519,103 +381,30 @@ TAUX:
             </Card>
           </TabsContent>
 
-          <TabsContent value="analytics" className="space-y-6">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-              <Card>
-                <CardHeader>
-                  <CardTitle>Types de véhicules</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-4">
-                    {vehicleChartData.map((item, index) => (
-                      <div key={index} className="flex items-center justify-between">
-                        <span className="text-sm font-medium capitalize">{item.type}</span>
-                        <div className="flex items-center space-x-2">
-                          <div className="w-32 bg-gray-200 rounded-full h-4">
-                            <div 
-                              className="bg-purple-500 h-4 rounded-full transition-all duration-300" 
-                              style={{ 
-                                width: `${(item.count / Math.max(...vehicleChartData.map(d => d.count))) * 100}%`
-                              }}
-                            />
-                          </div>
-                          <span className="text-sm font-bold w-8">{item.count}</span>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardHeader>
-                  <CardTitle>Statistiques détaillées</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="grid grid-cols-2 gap-4">
-                    <div className="text-center p-4 bg-blue-50 rounded-lg">
-                      <div className="text-2xl font-bold text-blue-600">{demandes.length}</div>
-                      <div className="text-sm text-blue-600">Total demandes</div>
-                    </div>
-                    <div className="text-center p-4 bg-green-50 rounded-lg">
-                      <div className="text-2xl font-bold text-green-600">
-                        {Math.round((demandes.filter(d => d.statut === 'acceptee').length / demandes.length) * 100)}%
-                      </div>
-                      <div className="text-sm text-green-600">Taux acceptation</div>
-                    </div>
-                    <div className="text-center p-4 bg-yellow-50 rounded-lg">
-                      <div className="text-2xl font-bold text-yellow-600">{demandes.filter(d => d.statut === 'en_attente').length}</div>
-                      <div className="text-sm text-yellow-600">En attente</div>
-                    </div>
-                    <div className="text-center p-4 bg-purple-50 rounded-lg">
-                      <div className="text-2xl font-bold text-purple-600">{demandes.filter(d => d.statut === 'terminee').length}</div>
-                      <div className="text-sm text-purple-600">Terminées</div>
-                    </div>
-                  </div>
-                  <div className="mt-6 space-y-3">
-                    <h4 className="font-medium">Villes les plus actives</h4>
-                    {Object.entries(demandes.reduce((acc, d) => {
-                      acc[d.ville] = (acc[d.ville] || 0) + 1
-                      return acc
-                    }, {} as Record<string, number>))
-                    .sort(([,a], [,b]) => b - a)
-                    .slice(0, 5)
-                    .map(([ville, count]) => (
-                      <div key={ville} className="flex justify-between items-center">
-                        <span className="text-sm">{ville}</span>
-                        <span className="text-sm font-medium">{count} demandes</span>
-                      </div>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-          </TabsContent>
-
           <TabsContent value="reports" className="space-y-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <Card>
                 <CardHeader>
                   <CardTitle>Rapport mensuel</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-gray-600 mb-4">
-                    Générer un rapport détaillé des activités du mois
+                    Télécharger un rapport des activités
                   </p>
-                  <Button onClick={generateReport} className="w-full">
+                  <Button onClick={downloadReport} className="w-full">
                     <FileText className="w-4 h-4 mr-2" />
-                    Télécharger rapport
+                    Télécharger
                   </Button>
                 </CardContent>
               </Card>
 
               <Card>
                 <CardHeader>
-                  <CardTitle>Export données</CardTitle>
+                  <CardTitle>Export CSV</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-gray-600 mb-4">
-                    Exporter toutes les demandes au format CSV
+                    Exporter les données au format CSV
                   </p>
                   <Button onClick={exportToCSV} variant="outline" className="w-full">
                     <Download className="w-4 h-4 mr-2" />
@@ -631,18 +420,16 @@ TAUX:
                 <CardContent>
                   <div className="space-y-2">
                     <div className="flex justify-between">
-                      <span className="text-sm">Taux d'acceptation:</span>
-                      <span className="font-medium">
-                        {Math.round((demandes.filter(d => d.statut === 'acceptee').length / demandes.length) * 100)}%
-                      </span>
+                      <span className="text-sm">Total:</span>
+                      <span className="font-medium">{demandes.length}</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-sm">Temps moyen:</span>
-                      <span className="font-medium">2.5 jours</span>
+                      <span className="text-sm">En attente:</span>
+                      <span className="font-medium">{demandes.filter(d => d.statut === 'en_attente').length}</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-sm">Satisfaction:</span>
-                      <span className="font-medium">4.8/5</span>
+                      <span className="text-sm">Acceptées:</span>
+                      <span className="font-medium">{demandes.filter(d => d.statut === 'acceptee').length}</span>
                     </div>
                   </div>
                 </CardContent>
@@ -676,26 +463,7 @@ TAUX:
                   <h4 className="font-medium">Adresse</h4>
                   <p>{selectedDemande.adresse}, {selectedDemande.ville} {selectedDemande.codePostal}</p>
                 </div>
-                <div>
-                  <h4 className="font-medium">Véhicule</h4>
-                  <p className="capitalize">{selectedDemande.typeVehicule}</p>
-                  {selectedDemande.marque && (
-                    <p className="text-sm text-gray-600">
-                      {selectedDemande.marque} {selectedDemande.modele} {selectedDemande.annee}
-                    </p>
-                  )}
-                </div>
-                <div>
-                  <h4 className="font-medium">État</h4>
-                  <p className="capitalize">{selectedDemande.etatVehicule}</p>
-                </div>
               </div>
-              {selectedDemande.description && (
-                <div>
-                  <h4 className="font-medium">Description</h4>
-                  <p className="text-sm bg-gray-50 p-3 rounded">{selectedDemande.description}</p>
-                </div>
-              )}
               <div className="flex space-x-2">
                 <Button onClick={() => {
                   updateDemandeStatus(selectedDemande.id, 'acceptee')
@@ -709,48 +477,9 @@ TAUX:
                 }}>
                   Rejeter
                 </Button>
-                <Button variant="outline" onClick={() => {
-                  updateDemandeStatus(selectedDemande.id, 'en_cours')
-                  setSelectedDemande(null)
-                }}>
-                  En cours
-                </Button>
               </div>
             </div>
           )}
-        </DialogContent>
-      </Dialog>
-
-      <Dialog open={showProfile} onOpenChange={setShowProfile}>
-        <DialogContent>
-          <DialogHeader>
-            <DialogTitle>Profil Administrateur</DialogTitle>
-          </DialogHeader>
-          <div className="space-y-4">
-            <div className="flex items-center space-x-4">
-              <div className="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center">
-                <User className="w-8 h-8 text-gray-500" />
-              </div>
-              <div>
-                <h3 className="font-medium">Administrateur</h3>
-                <p className="text-sm text-gray-500">admin@gh-epaviste.com</p>
-              </div>
-            </div>
-            <div className="space-y-2">
-              <div>
-                <label className="text-sm font-medium">Nom d'utilisateur</label>
-                <Input value="admin" disabled />
-              </div>
-              <div>
-                <label className="text-sm font-medium">Rôle</label>
-                <Input value="Administrateur" disabled />
-              </div>
-              <div>
-                <label className="text-sm font-medium">Dernière connexion</label>
-                <Input value={new Date().toLocaleString('fr-FR')} disabled />
-              </div>
-            </div>
-          </div>
         </DialogContent>
       </Dialog>
     </div>
