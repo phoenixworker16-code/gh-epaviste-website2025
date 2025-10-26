@@ -137,17 +137,7 @@ export default function AdminLogin() {
               </Button>
             </form>
 
-            <div className="mt-6 p-4 bg-yellow-50 rounded-lg">
-              <h3 className="font-bold text-black mb-2">Identifiants par défaut (pour test) :</h3>
-              <p className="text-sm text-gray-700">
-                <strong>Utilisateur :</strong> <code>admin</code>
-                <br />
-                <strong>Mot de passe :</strong> <code>GH2024Admin!</code>
-              </p>
-              <p className="text-xs text-gray-500 mt-2">
-                ⚠️ En <strong>production</strong>, ces identifiants doivent être remplacés par un système d&apos;authentification sécurisé basé sur un <strong>backend</strong>.
-              </p>
-            </div>
+
           </CardContent>
         </Card>
       </div>

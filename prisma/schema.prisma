@@ -25,6 +25,6 @@ model Demande {
   etatVehicule   String
   description    String?
   dateCreation   DateTime @default(now())
-  statut         String   @default("Nouvelle")
+  statut         String   @default("en_attente")
   dateIntervention DateTime?
 }
