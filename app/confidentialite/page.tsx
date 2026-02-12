@@ -43,7 +43,7 @@ export default function ConfidentialitePage() {
                       </p>
                       <p>
                         <strong>Téléphone :</strong>{" "}
-                        <a href="tel:+33659128819" className="text-gray-700 hover:underline">
+                        <a href="tel:+33753120793" className="text-gray-700 hover:underline">
                           +33 6 59 12 88 19
                         </a>
                       </p>
@@ -142,7 +142,7 @@ export default function ConfidentialitePage() {
                     <li className="flex items-start space-x-3">
                       <div className="w-2 h-2 bg-yellow-500 rounded-full mt-2" aria-hidden="true"></div>
                       <p className="text-gray-700">
-                        <strong>L&apos;obligation légale</strong> : pour respecter la réglementation VHU.
+                        <strong>L&apos;obligation légale</strong> : pour respecter la réglementation .
                       </p>
                     </li>
                     <li className="flex items-start space-x-3">
@@ -169,7 +169,7 @@ export default function ConfidentialitePage() {
                         <strong>Données de facturation :</strong> 10 ans (obligation légale).
                       </li>
                       <li>
-                        <strong>Certificats de destruction :</strong> 3 ans (obligation réglementaire VHU).
+                        <strong>Certificats de destruction :</strong> 3 ans (obligation réglementaire ).
                       </li>
                     </ul>
                   </div>
@@ -245,7 +245,7 @@ export default function ConfidentialitePage() {
                     <ul className="space-y-2">
                       <li>
                         <strong>Par téléphone :</strong>{" "}
-                        <a href="tel:+33659128819" className="text-yellow-600 hover:text-yellow-700" aria-label="Appeler au +33 6 59 12 88 19">
+                        <a href="tel:+33753120793" className="text-yellow-600 hover:text-yellow-700" aria-label="Appeler au +33 6 59 12 88 19">
                           +33 6 59 12 88 19
                         </a>
                       </li>

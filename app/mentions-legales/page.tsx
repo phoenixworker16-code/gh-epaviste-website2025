@@ -33,7 +33,7 @@ export default function MentionsLegalesPage() {
                     </p>
                     <p>
                       <strong>Téléphone :</strong>{" "}
-                      <a href="tel:+33659128819" className="text-gray-700 hover:text-yellow-600">
+                      <a href="tel:+33753120793" className="text-gray-700 hover:text-yellow-600">
                         +33 6 59 12 88 19
                       </a>
                     </p>
@@ -184,7 +184,7 @@ export default function MentionsLegalesPage() {
                     <ul className="mt-2 space-y-1">
                       <li>
                         • Par téléphone :{" "}
-                        <a href="tel:+33659128819" className="text-yellow-600 hover:text-yellow-700" aria-label="Appeler au +33 6 59 12 88 19">
+                        <a href="tel:+33753120793" className="text-yellow-600 hover:text-yellow-700" aria-label="Appeler au +33 6 59 12 88 19">
                           +33 6 59 12 88 19
                         </a>
                       </li>

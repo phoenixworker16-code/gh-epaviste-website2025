@@ -18,6 +18,9 @@ export const metadata: Metadata = {
   description:
     "Service d'enlèvement gratuit et rapide d'épaves en Île-de-France. Intervention 24/7.",
   keywords: "épaviste, enlèvement épave, gratuit, Île-de-France",
+  icons: {
+    icon: "/images/gh-logo.png",
+  },
 }
 
 export default function RootLayout({
