@@ -39,7 +39,7 @@ export default function FaqPage() {
                   <p className="text-gray-700">
                     Contactez-nous par téléphone au{" "}
                     <a href="tel:+33659128819" className="text-yellow-500 hover:text-yellow-600 font-bold">
-                      +33 6 59 12 88 19
+                      00 33 7 53 12 07 93
                     </a>
                     {" "}ou via notre <a href="/formulaire" className="text-yellow-500 hover:text-yellow-600 font-bold">formulaire de contact</a>.
                   </p>

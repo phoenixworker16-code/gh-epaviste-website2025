@@ -44,7 +44,7 @@ export default function ConfidentialitePage() {
                       <p>
                         <strong>Téléphone :</strong>{" "}
                         <a href="tel:+33753120793" className="text-gray-700 hover:underline">
-                          +33 6 59 12 88 19
+                          00 33 7 53 12 07 93
                         </a>
                       </p>
                       <p>
@@ -245,8 +245,8 @@ export default function ConfidentialitePage() {
                     <ul className="space-y-2">
                       <li>
                         <strong>Par téléphone :</strong>{" "}
-                        <a href="tel:+33753120793" className="text-yellow-600 hover:text-yellow-700" aria-label="Appeler au +33 6 59 12 88 19">
-                          +33 6 59 12 88 19
+                        <a href="tel:+33753120793" className="text-yellow-600 hover:text-yellow-700" aria-label="Appeler au 00 33 7 53 12 07 93">
+                          00 33 7 53 12 07 93
                         </a>
                       </li>
                       <li>
