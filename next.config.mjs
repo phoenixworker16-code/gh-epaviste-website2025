@@ -1,9 +1,6 @@
 /** @type {import('next').NextConfig} */
 const isProd = process.env.NODE_ENV === 'production'
 const nextConfig = {
-  // Configuration pour la production
-  output: 'standalone',
-  
   // Optimisations d'images
   images: {
     formats: ['image/webp', 'image/avif'],
@@ -14,11 +11,6 @@ const nextConfig = {
 
   // Compression uniquement en production
   compress: isProd,
-
-  // Désactiver le prerendering des pages d'erreur
-  generateBuildId: async () => {
-    return 'build-' + Date.now()
-  },
 
   // Headers de sécurité et performance
   async headers() {
