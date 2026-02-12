@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "prisma generate && next build",
+    "build": "next build",
     "dev": "next dev",
     "dev:3010": "next dev -p 3010",
     "lint": "next lint",
@@ -14,8 +14,7 @@
     "db:generate": "npx prisma generate",
     "deploy": "npm run build:production && npm run db:migrate",
     "analyze": "cross-env ANALYZE=true next build",
-    "type-check": "tsc --noEmit",
-    "postinstall": "prisma generate"
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
