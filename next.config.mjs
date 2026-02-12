@@ -15,6 +15,11 @@ const nextConfig = {
   // Compression uniquement en production
   compress: isProd,
 
+  // Désactiver le prerendering des pages d'erreur
+  generateBuildId: async () => {
+    return 'build-' + Date.now()
+  },
+
   // Headers de sécurité et performance
   async headers() {
     return [
