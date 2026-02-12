@@ -7,14 +7,7 @@
     "dev": "next dev",
     "dev:3010": "next dev -p 3010",
     "lint": "next lint",
-    "start": "next start",
-    "build:production": "NODE_ENV=production next build",
-    "start:production": "NODE_ENV=production next start",
-    "db:migrate": "npx prisma migrate deploy",
-    "db:generate": "npx prisma generate",
-    "deploy": "npm run build:production && npm run db:migrate",
-    "analyze": "cross-env ANALYZE=true next build",
-    "type-check": "tsc --noEmit"
+    "start": "next start"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
