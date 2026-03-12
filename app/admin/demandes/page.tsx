@@ -148,15 +148,9 @@ export default function AdminDemandes() {
       prenom: "Utilisateur",
       telephone: "0123456789",
       email: "test@example.com",
-      adresse: "123 Rue Test",
+      plaqueImmatriculation: "AA-123-BB",
       ville: "Paris",
       codePostal: "75001",
-      typeVehicule: "voiture",
-      marque: "Test",
-      modele: "Model",
-      annee: "2020",
-      etatVehicule: "accidente",
-      description: "Demande de test",
       dateCreation: new Date().toISOString(),
       statut: "Nouvelle",
       dateIntervention: null,
@@ -298,9 +292,9 @@ export default function AdminDemandes() {
       doc.setFont("helvetica", "normal")
       doc.text(`Téléphone: ${demande.telephone}`, 25, yPosition)
       yPosition += 5
-      doc.text(`Adresse: ${demande.adresse}, ${demande.ville} ${demande.codePostal}`, 25, yPosition)
+      doc.text(`Localisation: ${demande.ville} ${demande.codePostal}`, 25, yPosition)
       yPosition += 5
-      doc.text(`Véhicule: ${demande.typeVehicule} - ${demande.marque} ${demande.modele}`, 25, yPosition)
+      doc.text(`Immatriculation: ${demande.plaqueImmatriculation}`, 25, yPosition)
       yPosition += 5
       doc.text(`Statut: ${demande.statut}`, 25, yPosition)
       yPosition += 5
@@ -597,7 +591,7 @@ export default function AdminDemandes() {
                             <div className="flex items-center space-x-2">
                               <MapPin className="w-4 h-4 text-yellow-500" />
                               <span className={`${isDarkMode ? 'text-gray-300' : 'text-gray-700'}`}>
-                                {demande.adresse}, {demande.ville} {demande.codePostal}
+                                {demande.ville} {demande.codePostal}
                               </span>
                             </div>
                           </div>
@@ -606,13 +600,9 @@ export default function AdminDemandes() {
                             <div className="flex items-center space-x-2">
                               <Car className="w-4 h-4 text-yellow-500" />
                               <span className={`${isDarkMode ? 'text-gray-300' : 'text-gray-700'}`}>
-                                {demande.typeVehicule} - {demande.marque} {demande.modele}
+                                Plaque: {demande.plaqueImmatriculation}
                               </span>
                             </div>
-                            {demande.annee && <div className={`${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>Année: {demande.annee}</div>}
-                            <Badge variant="outline" className="text-xs">
-                              {demande.etatVehicule}
-                            </Badge>
                           </div>
                         </div>
 
@@ -676,37 +666,16 @@ export default function AdminDemandes() {
                                       <strong>Email:</strong> {demande.email || "Non renseigné"}
                                     </p>
                                     <p className={isDarkMode ? 'text-gray-300' : ''}>
-                                      <strong>Adresse:</strong> {demande.adresse}
-                                    </p>
-                                    <p className={isDarkMode ? 'text-gray-300' : ''}>
-                                      <strong>Ville:</strong> {demande.ville} {demande.codePostal}
+                                      <strong>Localisation:</strong> {demande.ville} {demande.codePostal}
                                     </p>
                                   </div>
                                   <div>
                                     <h4 className={`font-bold ${isDarkMode ? 'text-white' : 'text-black'}`}>Informations Véhicule</h4>
                                     <p className={isDarkMode ? 'text-gray-300' : ''}>
-                                      <strong>Type:</strong> {demande.typeVehicule}
-                                    </p>
-                                    <p className={isDarkMode ? 'text-gray-300' : ''}>
-                                      <strong>Marque:</strong> {demande.marque || "Non renseigné"}
-                                    </p>
-                                    <p className={isDarkMode ? 'text-gray-300' : ''}>
-                                      <strong>Modèle:</strong> {demande.modele || "Non renseigné"}
-                                    </p>
-                                    <p className={isDarkMode ? 'text-gray-300' : ''}>
-                                      <strong>Année:</strong> {demande.annee || "Non renseigné"}
-                                    </p>
-                                    <p className={isDarkMode ? 'text-gray-300' : ''}>
-                                      <strong>État:</strong> {demande.etatVehicule}
+                                      <strong>Immatriculation:</strong> {demande.plaqueImmatriculation}
                                     </p>
                                   </div>
                                 </div>
-                                {demande.description && (
-                                  <div>
-                                    <h4 className={`font-bold ${isDarkMode ? 'text-white' : 'text-black'}`}>Description</h4>
-                                    <p className={`p-3 rounded ${isDarkMode ? 'bg-gray-700 text-gray-300' : 'bg-gray-50'}`}>{demande.description}</p>
-                                  </div>
-                                )}
                                 <div>
                                   <h4 className={`font-bold ${isDarkMode ? 'text-white' : 'text-black'}`}>Informations Demande</h4>
                                   <p className={isDarkMode ? 'text-gray-300' : ''}>

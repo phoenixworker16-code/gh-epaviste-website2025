@@ -38,20 +38,56 @@ export default function ServicesPage() {
 
       <main id="main-content">
         {/* Hero Services */}
-        <section className="py-16 bg-black text-white" aria-labelledby="hero-services-heading">
-          <div className="container mx-auto px-4 text-center">
-            <h1 id="hero-services-heading" className="text-4xl md:text-5xl font-bold mb-6">
-              Nos <span className="text-yellow-500">Services</span> d&apos;Enlèvement
-            </h1>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
-              GH Épaviste vous propose une gamme complète de services pour l&apos;enlèvement gratuit de tous types de
-              véhicules en Île-de-France.
-            </p>
-            <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold" asChild>
-              <Link href="/formulaire" aria-label="Demander un enlèvement gratuit de votre épave">
-                DEMANDER UN ENLÈVEMENT
-              </Link>
-            </Button>
+        <section className="relative w-full bg-gradient-to-r from-[#000000] via-[#0d1017] to-transparent text-white overflow-hidden border-b border-gray-800" aria-labelledby="hero-services-heading">
+          {/* Côté DROIT : Image Complète en fond sur la moitié droite */}
+          <div className="absolute inset-y-0 right-0 w-full lg:w-1/2 z-0 hidden lg:block">
+            <Image
+              src="/images/services.jpg"
+              alt="Dépanneur professionnel complètement visible et son camion remorquage en intervention"
+              fill
+              className="object-cover object-[80%_center]"
+              priority
+            />
+            {/* Dégradé de fondu sur la gauche de l'image (bords) */}
+            <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-[#0d1017] to-transparent pointer-events-none"></div>
+          </div>
+
+          <div className="container relative mx-auto px-6 lg:px-12 xl:px-20 z-10 flex flex-col lg:flex-row min-h-[85vh] lg:min-h-[600px]">
+            {/* Côté GAUCHE : Texte */}
+            <div className="w-full lg:w-1/2 flex flex-col items-start justify-center py-16 lg:py-24 text-left lg:pr-16">
+              <div className="border-l-4 border-yellow-500 pl-6 mb-8">
+                <h1 id="hero-services-heading" className="text-5xl lg:text-6xl xl:text-[4.5rem] font-sans font-bold text-white leading-tight tracking-tight">
+                  Nos Services <br className="hidden sm:block" /> d&apos;Enlèvement
+                </h1>
+              </div>
+
+              <p className="text-xl xl:text-2xl text-gray-300 mb-10 max-w-lg leading-relaxed font-light">
+                GH Épaviste vous propose une gamme complète de services pour l&apos;enlèvement gratuit de tous types de véhicules en Île-de-France.
+              </p>
+
+              <div className="mt-4">
+                <Button
+                  size="lg"
+                  className="bg-yellow-500 hover:bg-yellow-400 text-black font-bold text-lg px-8 py-6 rounded-lg shadow-lg shadow-yellow-500/25 hover:shadow-yellow-500/40 transition-all duration-300 hover:-translate-y-1"
+                  asChild
+                >
+                  <Link href="/formulaire" aria-label="Demander un enlèvement gratuit de votre épave">
+                    DEMANDER UN ENLÈVEMENT
+                  </Link>
+                </Button>
+              </div>
+            </div>
+
+            {/* Version mobile de l'image */}
+            <div className="w-full relative h-[400px] lg:hidden mt-8 mb-12 rounded-2xl overflow-hidden ring-1 ring-white/10 shadow-2xl">
+              <Image
+                src="/images/services.jpg"
+                alt="Dépanneur professionnel complètement visible et son camion remorquage en intervention"
+                fill
+                className="object-cover object-[80%_center]"
+                priority
+              />
+            </div>
           </div>
         </section>
 

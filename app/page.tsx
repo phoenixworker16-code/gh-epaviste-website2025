@@ -10,41 +10,69 @@ export default function HomePage() {
   return (
     <>
       {/* NE PAS METTRE DE HEADER ICI - IL EST DÉJÀ DANS LE LAYOUT */}
-      
+
       <main>
         {/* Hero Section */}
-        <section className="relative bg-black text-white py-20 lg:py-32 overflow-hidden">
-          <div className="absolute inset-0 bg-black/40 z-10"></div>
+        <section className="relative bg-black text-white overflow-hidden min-h-[700px] lg:min-h-[750px] flex items-center">
+          {/* Gradient overlay: dark on the left for text, transparent on the right to show the truck */}
+          <div className="absolute inset-0 z-10 hero-gradient"></div>
           <Image
-            src="/images/tow-truck-hero.jpg"
-            alt="Dépanneuse GH Épaviste transportant un véhicule accidenté"
+            src="/images/epaviste-enlevement-epave-ile-de-france.jpg"
+            alt="Camion épaviste enlevant une voiture pour enlèvement d'épave gratuit en Île-de-France"
+            title="Service d'épaviste agréé pour enlèvement d'épave gratuit"
             fill
-            className="object-cover object-center"
+            className="object-cover object-right-bottom"
             priority
-            quality={85}
+            quality={90}
             sizes="100vw"
             placeholder="blur"
             blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
           />
-          <div className="container mx-auto px-4 relative z-20 flex items-center justify-center min-h-[600px]">
-            <div className="max-w-4xl text-center">
-              <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-                <span className="text-yellow-500">GH Épaviste Agréé</span>
-                <br />
-                Enlèvement Gratuit & Rapide d'Épaves en Île-de-France
+          <div className="container mx-auto px-4 relative z-20 py-20 lg:py-28 flex items-center">
+            {/* Conteneur principal redimensionné et décalé vers la gauche */}
+            <div className="max-w-2xl lg:max-w-2xl xl:max-w-3xl pr-0 md:pr-4">
+
+              {/* Title */}
+              <h1 className="hero-animate-2 font-bold mb-8 drop-shadow-xl">
+                <span className="block text-yellow-500 text-5xl md:text-6xl mb-4">GH Épaviste Agréé</span>
+                <span className="block text-white text-2xl sm:text-3xl md:text-3xl lg:text-[2.2rem] xl:text-[2.5rem] leading-tight lg:whitespace-nowrap">
+                  Enlèvement Gratuit d&apos;Épaves <span className="whitespace-nowrap">en Île-de-France</span>
+                </span>
               </h1>
-              <p className="text-xl md:text-2xl mb-8 text-gray-200 max-w-2xl mx-auto">
-                Votre solution pour un débarras sans frais, partout en Île-de-France.
-              </p>
-              <Link href="/formulaire">
-                <Button
-                  size="lg"
-                  className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold text-lg px-8 py-4 mb-4"
-                >
-                  DEMANDER UN ENLÈVEMENT GRATUIT
-                </Button>
-              </Link>
-              <p className="text-sm text-gray-300">Intervention 24/7 sur demande</p>
+
+              {/* Arguments rapides */}
+              <div className="hero-animate-4 flex flex-row items-center justify-between w-full max-w-[95%] sm:max-w-full gap-2 sm:gap-6 mb-12">
+                <div className="flex flex-col sm:flex-row items-center gap-2 text-gray-100 flex-1 justify-center sm:justify-start">
+                  <span className="flex items-center justify-center bg-yellow-500/20 rounded-full p-2">
+                    <CheckCircle className="w-5 h-5 text-yellow-500 flex-shrink-0" />
+                  </span>
+                  <span className="text-xs sm:text-sm md:text-base font-bold text-center sm:text-left">Enlèvement 100% gratuit</span>
+                </div>
+                <div className="flex flex-col sm:flex-row items-center gap-2 text-gray-100 flex-1 justify-center">
+                  <span className="flex items-center justify-center bg-yellow-500/20 rounded-full p-2">
+                    <CheckCircle className="w-5 h-5 text-yellow-500 flex-shrink-0" />
+                  </span>
+                  <span className="text-xs sm:text-sm md:text-base font-bold text-center sm:text-left">Intervention rapide</span>
+                </div>
+                <div className="flex flex-col sm:flex-row items-center gap-2 text-gray-100 flex-1 justify-center sm:justify-end">
+                  <span className="flex items-center justify-center bg-yellow-500/20 rounded-full p-2">
+                    <CheckCircle className="w-5 h-5 text-yellow-500 flex-shrink-0" />
+                  </span>
+                  <span className="text-xs sm:text-sm md:text-base font-bold text-center sm:text-left">Toute l&apos;Île-de-France</span>
+                </div>
+              </div>
+
+              {/* CTA Buttons */}
+              <div className="hero-animate-5 flex flex-col sm:flex-row gap-4">
+                <Link href="/formulaire">
+                  <Button
+                    size="lg"
+                    className="bg-yellow-500 hover:bg-yellow-400 text-black font-bold text-lg px-8 py-6 rounded-lg shadow-lg shadow-yellow-500/25 hover:shadow-yellow-500/40 transition-all duration-300 hover:-translate-y-1"
+                  >
+                    DEMANDER UN ENLÈVEMENT GRATUIT
+                  </Button>
+                </Link>
+              </div>
             </div>
           </div>
           <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce z-30">
@@ -220,48 +248,64 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Achat/Vente de Véhicules */}
-        <section className="py-16 bg-white">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-black">
-              <span className="text-yellow-500">Achat & Vente</span> de Véhicules
-            </h2>
-            <div className="max-w-4xl mx-auto">
-              <div className="grid md:grid-cols-2 gap-8">
-                <Card className="border-2 border-yellow-200">
-                  <CardContent className="p-6 text-center">
-                    <div className="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <Euro className="w-8 h-8 text-black" />
-                    </div>
-                    <h3 className="text-xl font-bold mb-3 text-black">Achat de Véhicules</h3>
-                    <p className="text-gray-600 mb-4">
-                      Nous achetons également des véhicules d'occasion en bon état ou à réparer.
-                    </p>
-                    <Link href="/contact">
-                      <Button className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold">
-                        Vendre Mon Véhicule
-                      </Button>
-                    </Link>
-                  </CardContent>
-                </Card>
+        {/* Achat/Vente de Véhicules - Premium Split-Screen */}
+        <section className="relative w-full bg-gradient-to-r from-[#000000] via-[#0d1017] to-transparent text-white overflow-hidden border-t-4 border-yellow-500" aria-labelledby="achat-vente-heading">
+          {/* Côté DROIT : Image Complète en fond sur la moitié droite */}
+          <div className="absolute inset-y-0 right-0 w-full lg:w-1/2 z-0 hidden lg:block">
+            <Image
+              src="/images/rachat-vehicule.jpg"
+              alt="Rachat et Vente de véhicules d'occasion - Échange avec un client"
+              fill
+              className="object-cover object-[80%_center]"
+              priority
+            />
+            {/* Dégradé de fondu sur la gauche de l'image (bords) */}
+            <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-[#0d1017] to-transparent pointer-events-none"></div>
+          </div>
 
-                <Card className="border-2 border-yellow-200">
-                  <CardContent className="p-6 text-center">
-                    <div className="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <Car className="w-8 h-8 text-black" />
-                    </div>
-                    <h3 className="text-xl font-bold mb-3 text-black">Vente de Véhicules</h3>
-                    <p className="text-gray-600 mb-4">
-                      Découvrez notre sélection de véhicules d'occasion contrôlés et garantis.
-                    </p>
-                    <Link href="/vehicules">
-                      <Button className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold">
-                        Voir Nos Véhicules
-                      </Button>
-                    </Link>
-                  </CardContent>
-                </Card>
+          <div className="container relative mx-auto px-6 lg:px-12 xl:px-20 z-10 flex flex-col lg:flex-row min-h-[85vh] lg:min-h-[600px]">
+            {/* Côté GAUCHE : Texte */}
+            <div className="w-full lg:w-1/2 flex flex-col items-start justify-center py-16 lg:py-24 text-left lg:pr-16">
+              <div className="border-l-4 border-yellow-500 pl-6 mb-8">
+                <h2 id="achat-vente-heading" className="text-5xl lg:text-5xl xl:text-[4rem] font-sans font-bold text-white leading-[1.1] tracking-tight">
+                  <span className="text-yellow-500">Rachat</span> & Vente <br className="hidden sm:block" /> de Véhicules
+                </h2>
               </div>
+
+              <p className="text-xl xl:text-2xl text-gray-300 mb-10 max-w-lg leading-relaxed font-light">
+                Nous achetons vos véhicules d&apos;occasion en bon état ou à réparer, et proposons une sélection de voitures contrôlées et garanties.
+              </p>
+
+              <div className="flex flex-col sm:flex-row gap-4 mt-4 w-full sm:w-auto">
+                <Link href="/contact" className="w-full sm:w-auto">
+                  <Button
+                    size="lg"
+                    className="bg-yellow-500 hover:bg-yellow-400 text-black font-bold text-lg px-8 py-6 rounded-lg shadow-lg shadow-yellow-500/25 hover:shadow-yellow-500/40 transition-all duration-300 w-full"
+                  >
+                    Vendre Mon Véhicule
+                  </Button>
+                </Link>
+                <Link href="/vehicules" className="w-full sm:w-auto">
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    className="border-black text-black hover:bg-black hover:text-white font-bold text-lg px-8 py-6 rounded-lg transition-all duration-300 w-full"
+                  >
+                    Voir Nos Véhicules
+                  </Button>
+                </Link>
+              </div>
+            </div>
+
+            {/* Version mobile de l'image */}
+            <div className="w-full relative h-[400px] lg:hidden mt-8 mb-12 rounded-2xl overflow-hidden ring-1 ring-white/10 shadow-2xl">
+              <Image
+                src="/images/rachat-vehicule.jpg"
+                alt="Rachat et Vente de véhicules d'occasion - Échange avec un client"
+                fill
+                className="object-cover object-[80%_center]"
+                priority
+              />
             </div>
           </div>
         </section>
@@ -292,98 +336,120 @@ export default function HomePage() {
         </section>
       </main>
 
-      {/* Footer */}
-      <footer className="bg-black text-white py-12">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-8">
-            <div>
+      {/* Footer Premium */}
+      <footer className="bg-[#0a0a0a] text-white pt-20 pb-10 border-t border-gray-800 relative overflow-hidden">
+        {/* Lueur de fond décorative subtile */}
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-[1px] bg-gradient-to-r from-transparent via-yellow-500/50 to-transparent"></div>
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[300px] bg-yellow-500/5 blur-[120px] rounded-full pointer-events-none"></div>
+
+        <div className="container mx-auto px-6 relative z-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8 mb-16">
+            
+            {/* Colonne 1 : Marque (Prend 4 colonnes sur 12) */}
+            <div className="lg:col-span-4">
               <Image
                 src="/images/gh-logo-white.png"
-                alt="GH Épaviste"
-                width={220}
-                height={120}
-                className="h-24 w-auto mb-4"
+                alt="GH Épaviste Agréé"
+                width={200}
+                height={100}
+                className="h-20 w-auto mb-6 drop-shadow-lg"
                 loading="lazy"
               />
-              <p className="text-gray-400 mb-4">
-                GH Épaviste - Enlèvement Gratuit & Rapide d'Épaves en Île-de-France
+              <p className="text-gray-400 mb-6 leading-relaxed max-w-sm">
+                Spécialiste de l&apos;enlèvement d&apos;épaves gratuit en Île-de-France. 
+                Une intervention rapide, un service professionnel, et un recyclage respectueux de l&apos;environnement.
               </p>
-              <p className="text-yellow-500 font-bold">Enlèvement d'épaves gratuit 24/7 en Île-de-France</p>
             </div>
 
-            <div>
-              <h3 className="text-lg font-bold mb-4 text-yellow-500">Liens Rapides</h3>
-              <ul className="space-y-2">
-                <li>
-                  <Link href="/services" className="text-gray-400 hover:text-yellow-500 transition-colors">
-                    Services
-                  </Link>
+            {/* Colonne 2 : Liens Rapides (Prend 3 colonnes sur 12) */}
+            <div className="lg:col-span-3">
+              <h3 className="text-xl font-bold mb-6 text-white flex items-center gap-2">
+                <span className="w-1.5 h-6 bg-yellow-500 rounded-sm"></span>
+                Navigation
+              </h3>
+              <ul className="space-y-3">
+                {[
+                  { name: "Accueil", href: "/" },
+                  { name: "Nos Services", href: "/services" },
+                  { name: "Véhicules Occasion", href: "/vehicules" },
+                  { name: "Guide d'Enlèvement", href: "/services/guide" },
+                  { name: "Formulaire en Ligne", href: "/formulaire" },
+                  { name: "Foire Aux Questions", href: "/faq" }
+                ].map((link, idx) => (
+                  <li key={idx}>
+                    <Link href={link.href} className="text-gray-400 hover:text-yellow-500 transition-all duration-300 flex items-center group">
+                      <span className="w-0 overflow-hidden text-yellow-500 transition-all duration-300 group-hover:w-4 group-hover:mr-2">
+                        ▸
+                      </span>
+                      {link.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Colonne 3 : Contact & Horaires (Prend 3 colonnes sur 12) */}
+            <div className="lg:col-span-3">
+              <h3 className="text-xl font-bold mb-6 text-white flex items-center gap-2">
+                <span className="w-1.5 h-6 bg-yellow-500 rounded-sm"></span>
+                Contact & Horaires
+              </h3>
+              <ul className="space-y-4 text-gray-400">
+                <li className="flex items-start gap-3 hover:text-white transition-colors">
+                  <Phone className="w-5 h-5 text-yellow-500 mt-0.5 flex-shrink-0" />
+                  <div>
+                    <a href="tel:+33753120793" className="block font-bold text-lg text-white hover:text-yellow-500 transition-colors">
+                      07 53 12 07 93
+                    </a>
+                    <span className="text-sm">Disponible 24h/24 et 7j/7</span>
+                  </div>
                 </li>
-                <li>
-                  <Link href="/vehicules" className="text-gray-400 hover:text-yellow-500 transition-colors">
-                    Nos Véhicules
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/services/guide" className="text-gray-400 hover:text-[#f6ba06] transition-colors">
-                    Guide étape par étape
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/formulaire" className="text-gray-400 hover:text-yellow-500 transition-colors">
-                    Formulaire
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/contact" className="text-gray-400 hover:text-yellow-500 transition-colors">
-                    Contact
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/faq" className="text-gray-400 hover:text-yellow-500 transition-colors">
-                    FAQ
-                  </Link>
+                <li className="flex items-start gap-3 hover:text-white transition-colors">
+                  <MapPin className="w-5 h-5 text-yellow-500 mt-0.5 flex-shrink-0" />
+                  <span>Intervention Gratuite sur<br/>toute l&apos;Île-de-France (75, 77, 78, 91, 92, 93, 94, 95)</span>
                 </li>
               </ul>
             </div>
 
-            <div>
-              <h3 className="text-lg font-bold mb-4 text-yellow-500">Contact</h3>
-              <ul className="space-y-2 text-gray-400">
+            {/* Colonne 4 : Légal (Prend 2 colonnes sur 12) */}
+            <div className="lg:col-span-2">
+              <h3 className="text-xl font-bold mb-6 text-white flex items-center gap-2">
+                <span className="w-1.5 h-6 bg-yellow-500 rounded-sm"></span>
+                Légal
+              </h3>
+              <ul className="space-y-3">
                 <li>
-                  📞{" "}
-                  <a href="tel:+33753120793" className="hover:text-yellow-500">
-                    00 33 7 53 12 07 93
-                  </a>
-                </li>
-                <li>✉️ contact@gh-epaviste.fr</li>
-                <li>📍 Île-de-France</li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-bold mb-4 text-yellow-500">Légal</h3>
-              <ul className="space-y-2">
-                <li>
-                  <Link href="/mentions-legales" className="text-gray-400 hover:text-yellow-500 transition-colors">
+                  <Link href="/mentions-legales" className="text-gray-400 hover:text-white transition-colors underline-offset-4 hover:underline">
                     Mentions Légales
                   </Link>
                 </li>
                 <li>
-                  <Link href="/confidentialite" className="text-gray-400 hover:text-yellow-500 transition-colors">
+                  <Link href="/confidentialite" className="text-gray-400 hover:text-white transition-colors underline-offset-4 hover:underline">
                     Politique de Confidentialité
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/contact" className="text-gray-400 hover:text-white transition-colors underline-offset-4 hover:underline">
+                    Nous Contacter
                   </Link>
                 </li>
               </ul>
             </div>
+            
           </div>
 
-          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2025 GH Épaviste. Tous droits réservés. Powered By PhOeNiX</p>
+          {/* Ligne Séparatrice & Copyright */}
+          <div className="border-t border-gray-800/60 pt-8 mt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
+            <p className="text-gray-500 text-sm">
+              &copy; {new Date().getFullYear()} GH Épaviste. Tous droits réservés.
+            </p>
+            <p className="text-gray-600 text-sm font-medium">
+              Powered By <span className="text-yellow-600">PhOeNiX</span>
+            </p>
           </div>
         </div>
       </footer>
-      
+
       <ScrollToTop />
     </>
   )

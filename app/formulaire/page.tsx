@@ -5,10 +5,8 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Textarea } from "@/components/ui/textarea";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { CheckCircle, Phone, Mail, MapPin } from "lucide-react";
+import { CheckCircle, Phone, Mail, MapPin, User, Car, MapPinned } from "lucide-react";
 import Link from "next/link";
 import BreadcrumbNav from "@/components/breadcrumb-nav";
 import ScrollToTop from "@/components/scroll-to-top";
@@ -16,19 +14,13 @@ import { StorageManager } from "@/lib/storage-manager";
 
 export default function FormulaireEnlevement() {
   const [formData, setFormData] = useState({
-    nom: "",
     prenom: "",
+    nom: "",
     telephone: "",
     email: "",
-    adresse: "",
+    plaqueImmatriculation: "",
     ville: "",
     codePostal: "",
-    typeVehicule: "",
-    marque: "",
-    modele: "",
-    annee: "",
-    etatVehicule: "",
-    description: "",
   });
 
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -36,19 +28,13 @@ export default function FormulaireEnlevement() {
 
   const resetFormData = () => {
     setFormData({
-      nom: "",
       prenom: "",
+      nom: "",
       telephone: "",
       email: "",
-      adresse: "",
+      plaqueImmatriculation: "",
       ville: "",
       codePostal: "",
-      typeVehicule: "",
-      marque: "",
-      modele: "",
-      annee: "",
-      etatVehicule: "",
-      description: "",
     });
   };
 
@@ -131,233 +117,147 @@ export default function FormulaireEnlevement() {
               Demande d&apos;Enlèvement d&apos;Épave <span className="text-yellow-500">Gratuit</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Remplissez ce formulaire et nous vous contacterons dans les plus brefs délais pour organiser l&apos;enlèvement
-              de votre véhicule.
+              Remplissez ce formulaire rapide et nous vous contacterons dans les plus brefs délais.
             </p>
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8">
             <section className="lg:col-span-2" aria-labelledby="formulaire-enlèvement-heading">
               <Card>
-                <CardHeader>
-                  <CardTitle id="formulaire-enlèvement-heading" className="text-2xl text-black">Informations de Contact et Véhicule</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <form onSubmit={handleSubmit} className="space-y-6">
-                    <h2 className="text-xl font-bold text-black mt-4 mb-2">Vos coordonnées</h2>
-                    <div className="grid md:grid-cols-2 gap-4">
-                      <div>
-                        <Label htmlFor="prenom" className="text-black font-medium">
-                          Prénom <span className="text-red-500">*</span>
-                        </Label>
-                        <Input
-                          id="prenom"
-                          value={formData.prenom}
-                          onChange={(e) => handleChange("prenom", e.target.value)}
-                          className="mt-1 focus:border-yellow-500 focus:ring-yellow-500"
-                          required
-                          disabled={isSubmitting}
-                        />
-                      </div>
-                      <div>
-                        <Label htmlFor="nom" className="text-black font-medium">
-                          Nom <span className="text-red-500">*</span>
-                        </Label>
-                        <Input
-                          id="nom"
-                          value={formData.nom}
-                          onChange={(e) => handleChange("nom", e.target.value)}
-                          className="mt-1 focus:border-yellow-500 focus:ring-yellow-500"
-                          required
-                          disabled={isSubmitting}
-                        />
-                      </div>
-                    </div>
-
-                    <div className="grid md:grid-cols-2 gap-4">
-                      <div>
-                        <Label htmlFor="telephone" className="text-black font-medium">
-                          Téléphone <span className="text-red-500">*</span>
-                        </Label>
-                        <Input
-                          id="telephone"
-                          type="tel"
-                          value={formData.telephone}
-                          onChange={(e) => handleChange("telephone", e.target.value)}
-                          className="mt-1 focus:border-yellow-500 focus:ring-yellow-500"
-                          required
-                          disabled={isSubmitting}
-                        />
-                      </div>
-                      <div>
-                        <Label htmlFor="email" className="text-black font-medium">
-                          Email (facultatif)
-                        </Label>
-                        <Input
-                          id="email"
-                          type="email"
-                          value={formData.email}
-                          onChange={(e) => handleChange("email", e.target.value)}
-                          className="mt-1 focus:border-yellow-500 focus:ring-yellow-500"
-                          disabled={isSubmitting}
-                        />
-                      </div>
-                    </div>
-
+                <CardContent className="p-6 md:p-8">
+                  <form onSubmit={handleSubmit} className="space-y-8">
+                    {/* Section: Informations personnelles */}
                     <div>
-                      <Label htmlFor="adresse" className="text-black font-medium">
-                        Adresse du véhicule <span className="text-red-500">*</span>
-                      </Label>
-                      <Input
-                        id="adresse"
-                        value={formData.adresse}
-                        onChange={(e) => handleChange("adresse", e.target.value)}
-                        className="mt-1 focus:border-yellow-500 focus:ring-yellow-500"
-                        placeholder="Numéro et nom de rue"
-                        required
-                        disabled={isSubmitting}
-                      />
+                      <div className="flex items-center gap-2 mb-5">
+                        <div className="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center">
+                          <User className="w-4 h-4 text-black" />
+                        </div>
+                        <h2 className="text-lg font-bold text-black">Informations personnelles</h2>
+                      </div>
+                      <div className="grid md:grid-cols-2 gap-4">
+                        <div>
+                          <Label htmlFor="prenom" className="text-black font-medium">
+                            Prénom <span className="text-red-500">*</span>
+                          </Label>
+                          <Input
+                            id="prenom"
+                            value={formData.prenom}
+                            onChange={(e) => handleChange("prenom", e.target.value)}
+                            className="mt-1 focus:border-yellow-500 focus:ring-yellow-500"
+                            placeholder="Votre prénom"
+                            required
+                            disabled={isSubmitting}
+                          />
+                        </div>
+                        <div>
+                          <Label htmlFor="nom" className="text-black font-medium">
+                            Nom <span className="text-red-500">*</span>
+                          </Label>
+                          <Input
+                            id="nom"
+                            value={formData.nom}
+                            onChange={(e) => handleChange("nom", e.target.value)}
+                            className="mt-1 focus:border-yellow-500 focus:ring-yellow-500"
+                            placeholder="Votre nom"
+                            required
+                            disabled={isSubmitting}
+                          />
+                        </div>
+                      </div>
+                      <div className="grid md:grid-cols-2 gap-4 mt-4">
+                        <div>
+                          <Label htmlFor="telephone" className="text-black font-medium">
+                            Téléphone <span className="text-red-500">*</span>
+                          </Label>
+                          <Input
+                            id="telephone"
+                            type="tel"
+                            value={formData.telephone}
+                            onChange={(e) => handleChange("telephone", e.target.value)}
+                            className="mt-1 focus:border-yellow-500 focus:ring-yellow-500"
+                            placeholder="06 12 34 56 78"
+                            required
+                            disabled={isSubmitting}
+                          />
+                        </div>
+                        <div>
+                          <Label htmlFor="email" className="text-black font-medium">
+                            E-mail
+                          </Label>
+                          <Input
+                            id="email"
+                            type="email"
+                            value={formData.email}
+                            onChange={(e) => handleChange("email", e.target.value)}
+                            className="mt-1 focus:border-yellow-500 focus:ring-yellow-500"
+                            placeholder="votre@email.com"
+                            disabled={isSubmitting}
+                          />
+                        </div>
+                      </div>
                     </div>
 
-                    <div className="grid md:grid-cols-2 gap-4">
+                    {/* Séparateur */}
+                    <hr className="border-gray-200" />
+
+                    {/* Section: Informations & Localisation du véhicule */}
+                    <div>
+                      <div className="flex items-center gap-2 mb-5">
+                        <div className="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center">
+                          <Car className="w-4 h-4 text-black" />
+                        </div>
+                        <h2 className="text-lg font-bold text-black">Informations & Localisation du véhicule</h2>
+                      </div>
                       <div>
-                        <Label htmlFor="ville" className="text-black font-medium">
-                          Ville <span className="text-red-500">*</span>
+                        <Label htmlFor="plaqueImmatriculation" className="text-black font-medium">
+                          Plaque d&apos;immatriculation <span className="text-red-500">*</span>
                         </Label>
                         <Input
-                          id="ville"
-                          value={formData.ville}
-                          onChange={(e) => handleChange("ville", e.target.value)}
+                          id="plaqueImmatriculation"
+                          value={formData.plaqueImmatriculation}
+                          onChange={(e) => handleChange("plaqueImmatriculation", e.target.value)}
                           className="mt-1 focus:border-yellow-500 focus:ring-yellow-500"
+                          placeholder="AA-123-BB"
                           required
                           disabled={isSubmitting}
                         />
                       </div>
-                      <div>
-                        <Label htmlFor="codePostal" className="text-black font-medium">
-                          Code Postal <span className="text-red-500">*</span>
-                        </Label>
-                        <Input
-                          id="codePostal"
-                          value={formData.codePostal}
-                          onChange={(e) => handleChange("codePostal", e.target.value)}
-                          className="mt-1 focus:border-yellow-500 focus:ring-yellow-500"
-                          required
-                          disabled={isSubmitting}
-                        />
+                      <div className="grid md:grid-cols-2 gap-4 mt-4">
+                        <div>
+                          <Label htmlFor="ville" className="text-black font-medium">
+                            Ville <span className="text-red-500">*</span>
+                          </Label>
+                          <Input
+                            id="ville"
+                            value={formData.ville}
+                            onChange={(e) => handleChange("ville", e.target.value)}
+                            className="mt-1 focus:border-yellow-500 focus:ring-yellow-500"
+                            placeholder="Ex: Paris, Créteil..."
+                            required
+                            disabled={isSubmitting}
+                          />
+                        </div>
+                        <div>
+                          <Label htmlFor="codePostal" className="text-black font-medium">
+                            Code postal <span className="text-red-500">*</span>
+                          </Label>
+                          <Input
+                            id="codePostal"
+                            value={formData.codePostal}
+                            onChange={(e) => handleChange("codePostal", e.target.value)}
+                            className="mt-1 focus:border-yellow-500 focus:ring-yellow-500"
+                            placeholder="75001"
+                            required
+                            disabled={isSubmitting}
+                          />
+                        </div>
                       </div>
-                    </div>
-
-                    <hr className="my-8" />
-
-                    <h2 className="text-xl font-bold text-black mb-2">Informations du Véhicule</h2>
-
-                    <div>
-                      <Label htmlFor="typeVehicule" className="text-black font-medium">
-                        Type de véhicule <span className="text-red-500">*</span>
-                      </Label>
-                      <Select
-                        onValueChange={(value) => handleChange("typeVehicule", value)}
-                        disabled={isSubmitting}
-                        value={formData.typeVehicule}
-                      >
-                        <SelectTrigger id="typeVehicule" className="mt-1 focus:border-yellow-500 focus:ring-yellow-500">
-                          <SelectValue placeholder="Sélectionnez le type" />
-                        </SelectTrigger>
-                        <SelectContent>
-                          <SelectItem value="voiture">Voiture</SelectItem>
-                          <SelectItem value="moto">Moto/Scooter</SelectItem>
-                          <SelectItem value="utilitaire">Utilitaire</SelectItem>
-                          <SelectItem value="4x4">4x4/Pick-up</SelectItem>
-                          <SelectItem value="autre">Autre</SelectItem>
-                        </SelectContent>
-                      </Select>
-                    </div>
-
-                    <div className="grid md:grid-cols-3 gap-4">
-                      <div>
-                        <Label htmlFor="marque" className="text-black font-medium">
-                          Marque (facultatif)
-                        </Label>
-                        <Input
-                          id="marque"
-                          value={formData.marque}
-                          onChange={(e) => handleChange("marque", e.target.value)}
-                          className="mt-1 focus:border-yellow-500 focus:ring-yellow-500"
-                          placeholder="ex: Renault"
-                          disabled={isSubmitting}
-                        />
-                      </div>
-                      <div>
-                        <Label htmlFor="modele" className="text-black font-medium">
-                          Modèle (facultatif)
-                        </Label>
-                        <Input
-                          id="modele"
-                          value={formData.modele}
-                          onChange={(e) => handleChange("modele", e.target.value)}
-                          className="mt-1 focus:border-yellow-500 focus:ring-yellow-500"
-                          placeholder="ex: Clio"
-                          disabled={isSubmitting}
-                        />
-                      </div>
-                      <div>
-                        <Label htmlFor="annee" className="text-black font-medium">
-                          Année (facultatif)
-                        </Label>
-                        <Input
-                          id="annee"
-                          type="number"
-                          value={formData.annee}
-                          onChange={(e) => handleChange("annee", e.target.value)}
-                          className="mt-1 focus:border-yellow-500 focus:ring-yellow-500"
-                          placeholder="ex: 2010"
-                          disabled={isSubmitting}
-                        />
-                      </div>
-                    </div>
-
-                    <div>
-                      <Label htmlFor="etatVehicule" className="text-black font-medium">
-                        État du véhicule <span className="text-red-500">*</span>
-                      </Label>
-                      <Select
-                        onValueChange={(value) => handleChange("etatVehicule", value)}
-                        disabled={isSubmitting}
-                        value={formData.etatVehicule}
-                      >
-                        <SelectTrigger id="etatVehicule" className="mt-1 focus:border-yellow-500 focus:ring-yellow-500">
-                          <SelectValue placeholder="Sélectionnez l&apos;état" />
-                        </SelectTrigger>
-                        <SelectContent>
-                          <SelectItem value="roulant">Roulant</SelectItem>
-                          <SelectItem value="non-roulant">Non roulant</SelectItem>
-                          <SelectItem value="accidente">Accidenté</SelectItem>
-                          <SelectItem value="brule">Brûlé</SelectItem>
-                          <SelectItem value="abandonne">Abandonné</SelectItem>
-                        </SelectContent>
-                      </Select>
-                    </div>
-
-                    <div>
-                      <Label htmlFor="description" className="text-black font-medium">
-                        Description complémentaire (facultatif)
-                      </Label>
-                      <Textarea
-                        id="description"
-                        value={formData.description}
-                        onChange={(e) => handleChange("description", e.target.value)}
-                        className="mt-1 focus:border-yellow-500 focus:ring-yellow-500"
-                        placeholder="Décrivez l&apos;état du véhicule, son accessibilité, etc."
-                        rows={4}
-                        disabled={isSubmitting}
-                      />
                     </div>
 
                     <Button
                       type="submit"
                       size="lg"
-                      className="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-bold text-lg py-4"
+                      className="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-bold text-lg py-6 rounded-lg shadow-lg shadow-yellow-500/20 hover:shadow-yellow-500/30 transition-all"
                       disabled={isSubmitting}
                       aria-live="polite"
                       aria-label={isSubmitting ? "Envoi de votre demande en cours" : "Envoyer votre demande d'enlèvement"}

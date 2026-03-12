@@ -14,10 +14,10 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "GH Épaviste - Enlèvement Gratuit d'Épaves en Île-de-France",
+  title: "Épaviste Agréé Île-de-France | Enlèvement d'Épave Gratuit 24h/24",
   description:
-    "Service d'enlèvement gratuit et rapide d'épaves en Île-de-France. Intervention 24/7.",
-  keywords: "épaviste, enlèvement épave, gratuit, Île-de-France",
+    "Épaviste agréé en Île-de-France. Enlèvement d'épave gratuit avec intervention rapide 24h/24 et 7j/7. Service professionnel et déplacement dans toute la région.",
+  keywords: "épaviste, enlèvement épave, gratuit, Île-de-France, épaviste agréé, épaviste Paris, épaviste 75, enlèvement épave 77, épaviste gratuit, enlèvement d'épave gratuit, épaviste Île-de-France, enlèvement véhicule hors d'usage, épaviste rapide, épaviste intervention 24h, épaviste 93, épaviste 94, épaviste 92, épaviste 91, épaviste 95, épaviste 78",
   icons: {
     icon: "/images/gh-logo.png",
   },

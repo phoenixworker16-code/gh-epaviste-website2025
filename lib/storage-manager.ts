@@ -6,20 +6,20 @@ export interface Demande {
   prenom: string;
   telephone: string;
   email: string;
-  adresse: string;
+  plaqueImmatriculation: string;
   ville: string;
   codePostal: string;
-  typeVehicule: string;
-  marque: string;
-  modele: string;
-  annee: string;
-  etatVehicule: string;
-  description: string;
   dateCreation: string;
   statut: "Nouvelle" | "En cours" | "Planifiée" | "Terminée" | "Annulée";
   dateIntervention?: string | null;
-  // Ajoutez ici d'autres propriétés si votre objet Demande en a réellement
-  // [key: string]: any; // Décommenter si votre Demande peut avoir des propriétés arbitraires non définies ci-dessus
+  // Champs anciens conservés en optionnel pour la compatibilité avec les données existantes
+  adresse?: string;
+  typeVehicule?: string;
+  marque?: string;
+  modele?: string;
+  annee?: string;
+  etatVehicule?: string;
+  description?: string;
 }
 
 /**
