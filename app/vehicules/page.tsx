@@ -81,20 +81,20 @@ export default function VehiculesPage() {
               <p className="text-xl md:text-2xl mb-8 text-gray-200 max-w-3xl mx-auto">
                 Spécialistes de l'achat de véhicules d'occasion, nous proposons des solutions rapides et avantageuses pour la vente de votre automobile.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link href="/contact">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <Link href="/contact" className="w-full sm:w-auto">
                   <Button
                     size="lg"
-                    className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold text-lg px-8 py-4"
+                    className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold text-lg w-full"
                   >
                     OBTENIR UNE ESTIMATION
                   </Button>
                 </Link>
-                <Link href="tel:+33753120793">
+                <Link href="tel:+33753120793" className="w-full sm:w-auto">
                   <Button
                     size="lg"
                     variant="outline"
-                    className="border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-black font-bold text-lg px-8 py-4"
+                    className="border-yellow-500 text-yellow-500 hover:bg-yellow-500 bg-transparent hover:text-black font-bold text-lg w-full flex items-center justify-center"
                   >
                     APPELER MAINTENANT
                   </Button>
@@ -299,20 +299,20 @@ export default function VehiculesPage() {
             <p className="text-xl text-black mb-8 max-w-2xl mx-auto">
               Obtenez une estimation gratuite et sans engagement de votre véhicule dès maintenant.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <Link href="/contact" className="w-full sm:w-auto">
                 <Button
                   size="lg"
-                  className="bg-black hover:bg-gray-800 text-yellow-500 font-bold text-lg px-8 py-4"
+                  className="bg-black hover:bg-gray-800 text-yellow-500 font-bold text-lg w-full"
                 >
                   DEMANDER UNE ESTIMATION
                 </Button>
               </Link>
-              <Link href="tel:+33753120793">
+              <Link href="tel:+33753120793" className="w-full sm:w-auto">
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-black text-black hover:bg-black hover:text-yellow-500 font-bold text-lg px-8 py-4"
+                  className="border-black text-black bg-transparent hover:bg-black hover:text-yellow-500 font-bold text-lg w-full flex items-center justify-center"
                 >
                   <Phone className="w-5 h-5 mr-2" />
                   00 33 7 53 12 07 93

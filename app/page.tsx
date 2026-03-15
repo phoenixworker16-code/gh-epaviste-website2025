@@ -64,10 +64,10 @@ export default function HomePage() {
 
               {/* CTA Buttons */}
               <div className="hero-animate-5 flex flex-col sm:flex-row gap-4">
-                <Link href="/formulaire">
+                <Link href="/formulaire" className="w-full sm:w-auto">
                   <Button
                     size="lg"
-                    className="bg-yellow-500 hover:bg-yellow-400 text-black font-bold text-lg px-8 py-6 rounded-lg shadow-lg shadow-yellow-500/25 hover:shadow-yellow-500/40 transition-all duration-300 hover:-translate-y-1"
+                    className="bg-yellow-500 hover:bg-yellow-400 text-black font-bold text-lg rounded-lg shadow-lg shadow-yellow-500/25 hover:shadow-yellow-500/40 transition-all duration-300 hover:-translate-y-1 w-full sm:w-auto"
                   >
                     DEMANDER UN ENLÈVEMENT GRATUIT
                   </Button>
@@ -280,7 +280,7 @@ export default function HomePage() {
                 <Link href="/contact" className="w-full sm:w-auto">
                   <Button
                     size="lg"
-                    className="bg-yellow-500 hover:bg-yellow-400 text-black font-bold text-lg px-8 py-6 rounded-lg shadow-lg shadow-yellow-500/25 hover:shadow-yellow-500/40 transition-all duration-300 w-full"
+                    className="bg-yellow-500 hover:bg-yellow-400 text-black font-bold text-lg rounded-lg shadow-lg shadow-yellow-500/25 hover:shadow-yellow-500/40 transition-all duration-300 w-full"
                   >
                     Vendre Mon Véhicule
                   </Button>
@@ -289,7 +289,7 @@ export default function HomePage() {
                   <Button
                     size="lg"
                     variant="outline"
-                    className="border-black text-black hover:bg-black hover:text-white font-bold text-lg px-8 py-6 rounded-lg transition-all duration-300 w-full"
+                    className="border-black text-black hover:bg-black hover:text-white font-bold text-lg rounded-lg transition-all duration-300 w-full"
                   >
                     Voir Nos Véhicules
                   </Button>
@@ -317,19 +317,22 @@ export default function HomePage() {
             <p className="text-xl mb-8 text-black/80 max-w-2xl mx-auto">
               Contactez-nous dès maintenant pour un enlèvement gratuit et rapide
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/formulaire">
-                <Button size="lg" className="bg-black hover:bg-gray-800 text-white font-bold">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <Link href="/formulaire" className="w-full sm:w-auto">
+                <Button size="lg" className="bg-black hover:bg-gray-800 text-white font-bold w-full sm:w-auto text-base sm:text-lg">
                   DEMANDER UN ENLÈVEMENT
                 </Button>
               </Link>
               <Button
                 size="lg"
                 variant="outline"
-                className="border-black text-black hover:bg-black hover:text-white font-bold"
+                className="border-black text-black bg-transparent hover:bg-black hover:text-white font-bold w-full sm:w-auto text-base sm:text-lg"
+                asChild
               >
-                <Phone className="w-4 h-4 mr-2" />
-                <a href="tel:+33753120793">APPELER MAINTENANT</a>
+                <a href="tel:+33753120793" className="flex items-center justify-center">
+                  <Phone className="w-5 h-5 mr-2" />
+                  APPELER MAINTENANT
+                </a>
               </Button>
             </div>
           </div>
