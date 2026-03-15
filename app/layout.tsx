@@ -141,27 +141,27 @@ export default function RootLayout({
               />
             </div>
             <nav className="hidden md:flex items-center space-x-8">
-              <Link href="/" className="text-black hover:text-yellow-500 font-medium transition-colors">
+              <Link href="/" className="text-black hover:text-yellow-500 font-medium transition-colors p-2 min-h-[44px] flex items-center">
                 ACCUEIL
               </Link>
-              <Link href="/services" className="text-black hover:text-yellow-500 font-medium transition-colors">
+              <Link href="/services" className="text-black hover:text-yellow-500 font-medium transition-colors p-2 min-h-[44px] flex items-center">
                 SERVICES
               </Link>
-              <Link href="/vehicules" className="text-black hover:text-yellow-500 font-medium transition-colors">
+              <Link href="/vehicules" className="text-black hover:text-yellow-500 font-medium transition-colors p-2 min-h-[44px] flex items-center">
                 NOS VÉHICULES
               </Link>
-              <Link href="/formulaire" className="text-black hover:text-yellow-500 font-medium transition-colors">
+              <Link href="/formulaire" className="text-black hover:text-yellow-500 font-medium transition-colors p-2 min-h-[44px] flex items-center">
                 FORMULAIRE D'ENLÈVEMENT
               </Link>
-              <Link href="/contact" className="text-black hover:text-yellow-500 font-medium transition-colors">
+              <Link href="/contact" className="text-black hover:text-yellow-500 font-medium transition-colors p-2 min-h-[44px] flex items-center">
                 CONTACT
               </Link>
-              <Link href="/services/guide" className="text-black hover:text-yellow-500 font-medium transition-colors">
+              <Link href="/services/guide" className="text-black hover:text-yellow-500 font-medium transition-colors p-2 min-h-[44px] flex items-center">
                 GUIDE
               </Link>
             </nav>
             <div className="flex items-center gap-3">
-              <Link href="tel:+33753120793" className="hidden md:flex bg-yellow-500 hover:bg-yellow-600 text-black font-bold px-4 py-2 rounded items-center transition">
+              <Link href="tel:+33753120793" className="hidden md:flex bg-yellow-500 hover:bg-yellow-600 text-black font-bold px-4 py-2 min-h-[44px] rounded items-center transition">
                 <Phone className="w-4 h-4 mr-2" />
                 APPELER MAINTENANT
               </Link>

@@ -47,7 +47,7 @@ export default function SiteFooter() {
                 <li key={idx}>
                   <Link
                     href={link.href}
-                    className="text-gray-400 hover:text-yellow-500 transition-all duration-300 flex items-center group"
+                    className="py-2 text-gray-400 hover:text-yellow-500 transition-all duration-300 flex items-center group min-h-[44px]"
                   >
                     <span className="w-0 overflow-hidden text-yellow-500 transition-all duration-300 group-hover:w-4 group-hover:mr-2">
                       ▸
@@ -71,7 +71,7 @@ export default function SiteFooter() {
                 <div>
                   <a
                     href="tel:+33753120793"
-                    className="block font-bold text-lg text-white hover:text-yellow-500 transition-colors"
+                    className="block font-bold text-lg text-white hover:text-yellow-500 transition-colors min-h-[44px] flex items-center"
                   >
                     07 53 12 07 93
                   </a>
@@ -98,7 +98,7 @@ export default function SiteFooter() {
               <li>
                 <Link
                   href="/mentions-legales"
-                  className="text-gray-400 hover:text-white transition-colors underline-offset-4 hover:underline"
+                  className="py-2 inline-flex items-center min-h-[44px] text-gray-400 hover:text-white transition-colors underline-offset-4 hover:underline"
                 >
                   Mentions Légales
                 </Link>
@@ -106,7 +106,7 @@ export default function SiteFooter() {
               <li>
                 <Link
                   href="/confidentialite"
-                  className="text-gray-400 hover:text-white transition-colors underline-offset-4 hover:underline"
+                  className="py-2 inline-flex items-center min-h-[44px] text-gray-400 hover:text-white transition-colors underline-offset-4 hover:underline"
                 >
                   Politique de Confidentialité
                 </Link>
@@ -114,7 +114,7 @@ export default function SiteFooter() {
               <li>
                 <Link
                   href="/contact"
-                  className="text-gray-400 hover:text-white transition-colors underline-offset-4 hover:underline"
+                  className="py-2 inline-flex items-center min-h-[44px] text-gray-400 hover:text-white transition-colors underline-offset-4 hover:underline"
                 >
                   Nous Contacter
                 </Link>

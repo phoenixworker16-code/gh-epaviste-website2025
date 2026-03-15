@@ -26,7 +26,7 @@ export default function MobileNav() {
         aria-label={isOpen ? "Fermer le menu" : "Ouvrir le menu"}
         aria-expanded={isOpen}
         aria-controls="mobile-menu"
-        className="p-2 rounded-lg text-black hover:bg-gray-100 transition-colors focus:outline-none focus:ring-2 focus:ring-yellow-500"
+        className="p-2 min-h-[44px] min-w-[44px] flex items-center justify-center rounded-lg text-black hover:bg-gray-100 transition-colors focus:outline-none focus:ring-2 focus:ring-yellow-500"
       >
         {isOpen ? (
           <X className="w-6 h-6" aria-hidden="true" />
@@ -58,7 +58,7 @@ export default function MobileNav() {
               <button
                 onClick={closeMenu}
                 aria-label="Fermer le menu"
-                className="p-2 rounded-lg text-black hover:bg-gray-100 transition-colors"
+                className="p-2 min-h-[44px] min-w-[44px] flex items-center justify-center rounded-lg text-black hover:bg-gray-100 transition-colors"
               >
                 <X className="w-5 h-5" aria-hidden="true" />
               </button>
