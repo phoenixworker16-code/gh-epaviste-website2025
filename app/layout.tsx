@@ -5,6 +5,8 @@ import "./globals.css"
 import Image from "next/image"
 import Link from "next/link"
 import { Phone } from "lucide-react"
+import SiteFooter from "@/components/site-footer"
+import MobileNav from "@/components/mobile-nav"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -158,13 +160,17 @@ export default function RootLayout({
                 GUIDE
               </Link>
             </nav>
-            <Link href="tel:+33753120793" className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold px-4 py-2 rounded flex items-center transition">
-              <Phone className="w-4 h-4 mr-2" />
-              APPELER MAINTENANT
-            </Link>
+            <div className="flex items-center gap-3">
+              <Link href="tel:+33753120793" className="hidden md:flex bg-yellow-500 hover:bg-yellow-600 text-black font-bold px-4 py-2 rounded items-center transition">
+                <Phone className="w-4 h-4 mr-2" />
+                APPELER MAINTENANT
+              </Link>
+              <MobileNav />
+            </div>
           </div>
         </header>
         {children}
+        <SiteFooter />
       </body>
     </html>
   )

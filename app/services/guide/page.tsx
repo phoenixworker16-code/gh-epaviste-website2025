@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Phone, Mail } from "lucide-react";
+import { Phone } from "lucide-react";
 import Image from "next/image";
 import ScrollToTop from "@/components/scroll-to-top";
 
@@ -10,7 +10,7 @@ export const metadata = {
 
 export default function GuideEpavePage() {
   return (
-    <div className="min-h-screen bg-white flex flex-col">
+    <div className="min-h-screen bg-white">
       {/* Logo noir en haut */}
       <div className="flex justify-center py-8">
         <Image
@@ -86,36 +86,6 @@ export default function GuideEpavePage() {
           </li>
         </ol>
       </main>
-
-      {/* Footer personnalisé */}
-      <footer className="bg-black text-white py-12 mt-16">
-        <div className="container mx-auto px-4 flex flex-col items-center">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-yellow-500 text-center">
-            Besoin d&apos;aide ou d&apos;un renseignement&nbsp;?
-          </h2>
-          <div className="flex flex-col sm:flex-row gap-4 mb-4">
-            <a
-              href="tel:+33753120793"
-              className="flex items-center bg-yellow-500 hover:bg-yellow-600 text-black font-bold px-6 py-3 rounded transition-colors text-lg"
-              aria-label="Appeler GH Épaviste au 00 33 7 53 12 07 93"
-            >
-              <Phone className="w-5 h-5 mr-2" aria-hidden="true" />
-              00 33 7 53 12 07 93
-            </a>
-            <Link
-              href="/formulaire"
-              className="flex items-center bg-white hover:bg-gray-100 text-black font-bold px-6 py-3 rounded transition-colors text-lg"
-              aria-label="Aller au formulaire de contact"
-            >
-              <Mail className="w-5 h-5 mr-2 text-yellow-500" aria-hidden="true" />
-              Formulaire de contact
-            </Link>
-          </div>
-          <p className="text-gray-400 text-center mt-4">
-            Notre équipe vous répond 7j/7 de 8h à 22h.
-          </p>
-        </div>
-      </footer>
 
       <ScrollToTop />
     </div>
