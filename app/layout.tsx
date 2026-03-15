@@ -1,5 +1,5 @@
 import type React from "react"
-import type { Metadata } from "next"
+import type { Metadata, Viewport } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
 import Image from "next/image"
@@ -78,6 +78,9 @@ export const metadata: Metadata = {
     icon: "/images/gh-logo.png",
     apple: "/images/gh-logo.png",
   },
+}
+
+export const viewport: Viewport = {
   themeColor: "#f6ba06",
 }
 
