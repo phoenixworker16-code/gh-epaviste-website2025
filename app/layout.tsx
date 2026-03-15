@@ -14,13 +14,69 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "Épaviste Agréé Île-de-France | Enlèvement d'Épave Gratuit 24h/24",
+  // ─── Titre & Description ───────────────────────────────
+  title: {
+    default: "GH Épaviste Agréé | Enlèvement d'Épave Gratuit en Île-de-France",
+    template: "%s | GH Épaviste Agréé Île-de-France",
+  },
   description:
-    "Épaviste agréé en Île-de-France. Enlèvement d'épave gratuit avec intervention rapide 24h/24 et 7j/7. Service professionnel et déplacement dans toute la région.",
-  keywords: "épaviste, enlèvement épave, gratuit, Île-de-France, épaviste agréé, épaviste Paris, épaviste 75, enlèvement épave 77, épaviste gratuit, enlèvement d'épave gratuit, épaviste Île-de-France, enlèvement véhicule hors d'usage, épaviste rapide, épaviste intervention 24h, épaviste 93, épaviste 94, épaviste 92, épaviste 91, épaviste 95, épaviste 78",
+    "Épaviste agréé en Île-de-France. Enlèvement gratuit de votre épave avec intervention rapide 24h/24 et 7j/7 dans les 75, 77, 78, 91, 92, 93, 94 et 95. Contactez-nous maintenant au 07 53 12 07 93.",
+  keywords:
+    "épaviste, enlèvement épave, gratuit, Île-de-France, épaviste agréé, épaviste Paris, épaviste 75, enlèvement épave 77, épaviste gratuit, enlèvement d'épave gratuit, épaviste Île-de-France, enlèvement véhicule hors d'usage, épaviste rapide, épaviste intervention 24h, épaviste 93, épaviste 94, épaviste 92, épaviste 91, épaviste 95, épaviste 78",
+
+  // ─── URL Canonique ────────────────────────────────────
+  metadataBase: new URL("https://gh-epaviste.fr"),
+  alternates: {
+    canonical: "/",
+  },
+
+  // ─── Robots (Indexation) ───────────────────────────────
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+
+  // ─── Open Graph (Facebook, WhatsApp, LinkedIn) ─────────
+  openGraph: {
+    type: "website",
+    locale: "fr_FR",
+    url: "https://gh-epaviste.fr",
+    siteName: "GH Épaviste",
+    title: "GH Épaviste Agréé | Enlèvement d'Épave Gratuit en Île-de-France",
+    description:
+      "Épaviste agréé en Île-de-France. Enlèvement gratuit de votre épave avec intervention rapide 24h/24 et 7j/7. Appelez le 07 53 12 07 93.",
+    images: [
+      {
+        url: "/images/epaviste-enlevement-epave-ile-de-france.jpg",
+        width: 1200,
+        height: 630,
+        alt: "GH Épaviste - Camion d'enlèvement d'épave en Île-de-France",
+      },
+    ],
+  },
+
+  // ─── Twitter Card (X / Twitter) ───────────────────────
+  twitter: {
+    card: "summary_large_image",
+    title: "GH Épaviste | Enlèvement d'Épave Gratuit Île-de-France",
+    description:
+      "Votre épave enlevée gratuitement en Île-de-France. Intervention rapide 24h/24. Service professionnel et certifié.",
+    images: ["/images/epaviste-enlevement-epave-ile-de-france.jpg"],
+  },
+
+  // ─── Icônes & Thème ──────────────────────────────────
   icons: {
     icon: "/images/gh-logo.png",
+    apple: "/images/gh-logo.png",
   },
+  themeColor: "#f6ba06",
 }
 
 export default function RootLayout({
@@ -28,9 +84,48 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "https://gh-epaviste.fr/#business",
+    "name": "GH Épaviste",
+    "description": "Épaviste agréé en Île-de-France. Enlèvement gratuit de votre épave avec intervention rapide 24h/24 et 7j/7.",
+    "url": "https://gh-epaviste.fr",
+    "telephone": "+33753120793",
+    "priceRange": "Gratuit",
+    "image": "https://gh-epaviste.fr/images/gh-logo.png",
+    "logo": "https://gh-epaviste.fr/images/gh-logo.png",
+    "areaServed": [
+      { "@type": "AdministrativeArea", "name": "Paris (75)" },
+      { "@type": "AdministrativeArea", "name": "Seine-et-Marne (77)" },
+      { "@type": "AdministrativeArea", "name": "Yvelines (78)" },
+      { "@type": "AdministrativeArea", "name": "Essonne (91)" },
+      { "@type": "AdministrativeArea", "name": "Hauts-de-Seine (92)" },
+      { "@type": "AdministrativeArea", "name": "Seine-Saint-Denis (93)" },
+      { "@type": "AdministrativeArea", "name": "Val-de-Marne (94)" },
+      { "@type": "AdministrativeArea", "name": "Val-d'Oise (95)" }
+    ],
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "00:00",
+      "closes": "23:59"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+33753120793",
+      "contactType": "customer service",
+      "availableLanguage": "French"
+    }
+  }
+
   return (
     <html lang="fr" className={inter.variable}>
       <body className={`${inter.className} antialiased`}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <header className="bg-white border-b border-gray-200 sticky top-0 z-50">
           <div className="container mx-auto px-4 py-4 flex items-center justify-between">
             <div className="flex items-center">
