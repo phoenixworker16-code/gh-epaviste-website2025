@@ -23,6 +23,7 @@ export default function HomePage() {
             fill
             className="object-cover object-right-bottom"
             priority
+            fetchPriority="high"
             quality={90}
             sizes="100vw"
             placeholder="blur"

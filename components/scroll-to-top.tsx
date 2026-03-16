@@ -34,8 +34,10 @@ export default function ScrollToTop() {
           onClick={scrollToTop}
           className="fixed bottom-8 right-8 z-50 bg-yellow-500 hover:bg-yellow-600 text-black p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110"
           size="icon"
+          aria-label="Retourner en haut de la page"
+          title="Retourner en haut de la page"
         >
-          <ChevronUp className="w-6 h-6" />
+          <ChevronUp className="w-6 h-6" aria-hidden="true" />
         </Button>
       )}
     </>
