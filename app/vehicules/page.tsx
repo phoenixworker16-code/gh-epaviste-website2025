@@ -303,7 +303,7 @@ export default function VehiculesPage() {
               <Link href="/contact" className="w-full sm:w-auto">
                 <Button
                   size="lg"
-                  className="bg-black hover:bg-gray-800 text-yellow-500 font-bold text-lg w-full"
+                  className="bg-black hover:bg-gray-800 text-white font-bold text-lg w-full"
                 >
                   DEMANDER UNE ESTIMATION
                 </Button>
@@ -311,8 +311,7 @@ export default function VehiculesPage() {
               <Link href="tel:+33753120793" className="w-full sm:w-auto">
                 <Button
                   size="lg"
-                  variant="outline"
-                  className="border-black text-black bg-transparent hover:bg-black hover:text-yellow-500 font-bold text-lg w-full flex items-center justify-center"
+                  className="bg-black hover:bg-gray-800 text-yellow-500 font-bold text-lg w-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all"
                 >
                   <Phone className="w-5 h-5 mr-2" />
                   00 33 7 53 12 07 93

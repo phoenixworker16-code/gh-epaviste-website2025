@@ -326,8 +326,7 @@ export default function HomePage() {
               </Link>
               <Button
                 size="lg"
-                variant="outline"
-                className="border-black text-black bg-transparent hover:bg-black hover:text-white font-bold w-full sm:w-auto text-base sm:text-lg"
+                className="bg-black hover:bg-gray-800 text-yellow-500 font-bold w-full sm:w-auto text-base sm:text-lg shadow-lg hover:shadow-xl transition-all"
                 asChild
               >
                 <a href="tel:+33753120793" className="flex items-center justify-center">
