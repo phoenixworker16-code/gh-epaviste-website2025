@@ -7,6 +7,7 @@ import Link from "next/link"
 import { Phone } from "lucide-react"
 import SiteFooter from "@/components/site-footer"
 import MobileNav from "@/components/mobile-nav"
+import Script from "next/script"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -126,6 +127,26 @@ export default function RootLayout({
 
   return (
     <html lang="fr" className={inter.variable}>
+      <head>
+        <Script
+          strategy="afterInteractive"
+          src={`https://www.googletagmanager.com/gtag/js?id=G-0SF8DFE0VW`}
+        />
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-0SF8DFE0VW', {
+                page_path: window.location.pathname,
+              });
+            `,
+          }}
+        />
+      </head>
       <body className={`${inter.className} antialiased`}>
         <script
           type="application/ld+json"
