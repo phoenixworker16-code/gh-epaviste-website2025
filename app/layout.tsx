@@ -128,21 +128,15 @@ export default function RootLayout({
   return (
     <html lang="fr" className={inter.variable}>
       <head>
-        <Script
-          strategy="afterInteractive"
-          src={`https://www.googletagmanager.com/gtag/js?id=G-0SF8DFE0VW`}
-        />
-        <Script
-          id="google-analytics"
-          strategy="afterInteractive"
+        {/* Google tag (gtag.js) */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-0SF8DFE0VW"></script>
+        <script
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-0SF8DFE0VW', {
-                page_path: window.location.pathname,
-              });
+              gtag('config', 'G-0SF8DFE0VW');
             `,
           }}
         />
