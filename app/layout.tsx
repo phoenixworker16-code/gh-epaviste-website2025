@@ -128,18 +128,6 @@ export default function RootLayout({
   return (
     <html lang="fr" className={inter.variable}>
       <head>
-        {/* Google tag (gtag.js) */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-0SF8DFE0VW"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-0SF8DFE0VW');
-            `,
-          }}
-        />
       </head>
       <body className={`${inter.className} antialiased`}>
         <script
@@ -189,6 +177,18 @@ export default function RootLayout({
         </header>
         {children}
         <SiteFooter />
+        <Script
+          strategy="lazyOnload"
+          src={`https://www.googletagmanager.com/gtag/js?id=G-0SF8DFE0VW`}
+        />
+        <Script id="google-analytics" strategy="lazyOnload">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-0SF8DFE0VW');
+          `}
+        </Script>
       </body>
     </html>
   )
