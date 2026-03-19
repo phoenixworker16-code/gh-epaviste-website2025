@@ -258,7 +258,7 @@ export default function HomePage() {
               alt="Rachat et Vente de véhicules d'occasion - Échange avec un client"
               fill
               className="object-cover object-[80%_center]"
-              priority
+              loading="lazy"
             />
             {/* Dégradé de fondu sur la gauche de l'image (bords) */}
             <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-[#0d1017] to-transparent pointer-events-none"></div>
@@ -305,7 +305,7 @@ export default function HomePage() {
                 alt="Rachat et Vente de véhicules d'occasion - Échange avec un client"
                 fill
                 className="object-cover object-[80%_center]"
-                priority
+                loading="lazy"
               />
             </div>
           </div>

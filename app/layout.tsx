@@ -7,7 +7,7 @@ import Link from "next/link"
 import { Phone } from "lucide-react"
 import SiteFooter from "@/components/site-footer"
 import MobileNav from "@/components/mobile-nav"
-import Script from "next/script"
+import { GoogleAnalytics } from "@next/third-parties/google"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -177,18 +177,7 @@ export default function RootLayout({
         </header>
         {children}
         <SiteFooter />
-        <Script
-          strategy="lazyOnload"
-          src={`https://www.googletagmanager.com/gtag/js?id=G-0SF8DFE0VW`}
-        />
-        <Script id="google-analytics" strategy="lazyOnload">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-0SF8DFE0VW');
-          `}
-        </Script>
+        <GoogleAnalytics gaId="G-0SF8DFE0VW" />
       </body>
     </html>
   )
