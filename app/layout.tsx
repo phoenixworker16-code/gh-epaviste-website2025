@@ -7,7 +7,7 @@ import Link from "next/link"
 import { Phone } from "lucide-react"
 import SiteFooter from "@/components/site-footer"
 import MobileNav from "@/components/mobile-nav"
-import { GoogleAnalytics } from "@next/third-parties/google"
+import AnalyticsLoader from "@/components/analytics-loader"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -182,7 +182,7 @@ export default function RootLayout({
         </header>
         {children}
         <SiteFooter />
-        <GoogleAnalytics gaId="G-0SF8DFE0VW" />
+        <AnalyticsLoader gaId="G-0SF8DFE0VW" />
       </body>
     </html>
   )
