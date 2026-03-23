@@ -24,7 +24,7 @@ export default function HomePage() {
             className="object-cover object-right-bottom"
             priority
             fetchPriority="high"
-            quality={90}
+            quality={75}
             sizes="100vw"
             placeholder="blur"
             blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
@@ -239,6 +239,7 @@ export default function HomePage() {
                     width={220}
                     height={220}
                     className="mx-auto mb-4 rounded shadow"
+                    loading="lazy"
                   />
                   <p className="text-gray-600 text-lg">
                     Que vous soyez à Paris, Versailles, Évry ou Melun, notre équipe intervient rapidement et sans frais.
@@ -259,6 +260,7 @@ export default function HomePage() {
               fill
               className="object-cover object-[80%_center]"
               loading="lazy"
+              sizes="50vw"
             />
             {/* Dégradé de fondu sur la gauche de l'image (bords) */}
             <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-[#0d1017] to-transparent pointer-events-none"></div>
@@ -306,6 +308,7 @@ export default function HomePage() {
                 fill
                 className="object-cover object-[80%_center]"
                 loading="lazy"
+                sizes="100vw"
               />
             </div>
           </div>

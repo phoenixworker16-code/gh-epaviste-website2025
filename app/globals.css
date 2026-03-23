@@ -60,23 +60,21 @@
   }
 }
 
-/* Staggered hero animations */
-@keyframes heroFadeIn {
+/* Staggered hero animations — no opacity:0 to avoid "hidden content" penalty */
+@keyframes heroSlideIn {
   from {
-    opacity: 0;
-    transform: translateY(24px);
+    transform: translateY(12px);
   }
   to {
-    opacity: 1;
     transform: translateY(0);
   }
 }
 
-.hero-animate-1 { animation: heroFadeIn 0.7s ease-out 0.1s both; }
-.hero-animate-2 { animation: heroFadeIn 0.7s ease-out 0.25s both; }
-.hero-animate-3 { animation: heroFadeIn 0.7s ease-out 0.4s both; }
-.hero-animate-4 { animation: heroFadeIn 0.7s ease-out 0.55s both; }
-.hero-animate-5 { animation: heroFadeIn 0.7s ease-out 0.7s both; }
+.hero-animate-1 { animation: heroSlideIn 0.5s ease-out 0.05s both; }
+.hero-animate-2 { animation: heroSlideIn 0.5s ease-out 0.1s both; }
+.hero-animate-3 { animation: heroSlideIn 0.5s ease-out 0.15s both; }
+.hero-animate-4 { animation: heroSlideIn 0.5s ease-out 0.2s both; }
+.hero-animate-5 { animation: heroSlideIn 0.5s ease-out 0.25s both; }
 
 /* Scrollbar personnalisée */
 ::-webkit-scrollbar {
