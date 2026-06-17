@@ -18,6 +18,24 @@ const nextConfig = {
     contentDispositionType: "attachment",
   },
 
+  // ─── Optimisations expérimentales ───────────────────────────
+  experimental: {
+    // Optimise et inline le CSS critique → réduit le CSS bloquant le rendu
+    optimizeCss: true,
+    // Tree-shaking des imports lourds → réduit le JS inutilisé
+    optimizePackageImports: [
+      "lucide-react",
+      "@radix-ui/react-accordion",
+      "@radix-ui/react-dialog",
+      "@radix-ui/react-dropdown-menu",
+      "@radix-ui/react-tabs",
+      "@radix-ui/react-toast",
+      "@radix-ui/react-tooltip",
+      "recharts",
+      "date-fns",
+    ],
+  },
+
   // ─── Headers Cache + Sécurité ────────────────────────────────────
   async headers() {
     return [

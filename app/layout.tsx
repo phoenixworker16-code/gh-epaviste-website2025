@@ -135,13 +135,9 @@ export default function RootLayout({
   return (
     <html lang="fr" className={inter.variable}>
       <head>
-        {/* ── Preload LCP image (hero truck) ─────────────────────────────── */}
-        <link
-          rel="preload"
-          as="image"
-          href="/images/epaviste-enlevement-epave-ile-de-france.jpg"
-          fetchPriority="high"
-        />
+        {/* ── Preconnect polices Google (réduit latence fonts) ─────────── */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         {/* ── Preconnect analytics ────────────────────────────────────────── */}
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="preconnect" href="https://www.google-analytics.com" />
