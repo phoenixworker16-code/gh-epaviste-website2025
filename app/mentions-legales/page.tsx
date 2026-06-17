@@ -2,6 +2,27 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Link from "next/link";
 import BreadcrumbNav from "@/components/breadcrumb-nav";
 import ScrollToTop from "@/components/scroll-to-top";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Mentions Légales | GH Épaviste",
+  description: "Consultez les mentions légales de GH Épaviste. Informations sur l'éditeur du site, l'hébergement et la propriété intellectuelle.",
+  alternates: { canonical: "https://gh-epaviste.fr/mentions-legales" },
+  robots: { index: false, follow: true },
+  openGraph: {
+    title: "Mentions Légales | GH Épaviste",
+    description: "Mentions légales et informations éditoriales pour le site de GH Épaviste.",
+    url: "https://gh-epaviste.fr/mentions-legales",
+    type: "website",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Mentions Légales GH Épaviste" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mentions Légales | GH Épaviste",
+    description: "Mentions légales et informations éditoriales pour le site de GH Épaviste.",
+    images: ["/og-image.jpg"],
+  },
+}
 
 export default function MentionsLegalesPage() {
   return (
@@ -52,23 +73,16 @@ export default function MentionsLegalesPage() {
                   </div>
                 </section>
 
-                <section aria-labelledby="agrement-vhu">
-                  <h2 id="agrement-vhu" className="text-2xl font-bold text-black mb-4">
-                    2. Agrément VHU
+                <section aria-labelledby="prise-en-charge-vhu">
+                  <h2 id="prise-en-charge-vhu" className="text-2xl font-bold text-black mb-4">
+                    2. Prise en charge des Véhicules Hors d&apos;Usage (VHU)
                   </h2>
                   <p className="text-gray-700">
-                    GH Épaviste est agréé pour la prise en charge des Véhicules Hors d&apos;Usage (VHU) conformément à la
-                    réglementation en vigueur.
+                    GH Épaviste assure la collecte et le transport de véhicules hors d&apos;usage (VHU) en Île-de-France. Les véhicules collectés sont remis à des centres partenaires agréés pour la dépollution, le recyclage et la destruction, conformément à la réglementation en vigueur.
                   </p>
-                  <div className="bg-gray-100 p-4 rounded-lg mt-4">
-                    <p>
-                      <strong>Numéro d&apos;agrément VHU :</strong> [À compléter]
-                    </p>
-                    <p>
-                      <strong>Préfecture de délivrance :</strong> [À compléter]
-                    </p>
-                    <p>
-                      <strong>Date de délivrance :</strong> [À compléter]
+                  <div className="bg-yellow-50 p-4 rounded-lg mt-4">
+                    <p className="text-gray-700 text-sm">
+                      <strong>Traitement responsable :</strong> Chaque véhicule est pris en charge par des filières spécialisées conformément aux exigences environnementales en vigueur.
                     </p>
                   </div>
                 </section>

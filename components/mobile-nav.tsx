@@ -9,6 +9,8 @@ const navLinks = [
   { href: "/services", label: "Services" },
   { href: "/vehicules", label: "Nos Véhicules" },
   { href: "/formulaire", label: "Formulaire d'Enlèvement" },
+  { href: "/blog", label: "Blog & Conseils" },
+  { href: "/a-propos", label: "À Propos" },
   { href: "/contact", label: "Contact" },
   { href: "/services/guide", label: "Guide" },
 ]

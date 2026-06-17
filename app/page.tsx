@@ -35,7 +35,7 @@ export default function HomePage() {
 
               {/* Title */}
               <h1 className="hero-animate-2 font-bold mb-8 drop-shadow-xl">
-                <span className="block text-yellow-500 text-5xl md:text-6xl mb-4">GH Épaviste Agréé</span>
+                <span className="block text-yellow-500 text-5xl md:text-6xl mb-4">GH Épaviste</span>
                 <span className="block text-white text-2xl sm:text-3xl md:text-3xl lg:text-[2.2rem] xl:text-[2.5rem] leading-tight lg:whitespace-nowrap">
                   Enlèvement Gratuit d&apos;Épaves <span className="whitespace-nowrap">en Île-de-France</span>
                 </span>
@@ -208,26 +208,30 @@ export default function HomePage() {
 
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-black">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-black">
               <span className="text-yellow-500">Intervention Gratuite</span> Partout en Île-de-France
             </h2>
+            <p className="text-center text-gray-600 max-w-2xl mx-auto mb-10 text-base">
+              À la recherche d'un <strong>épaviste en Île-de-France</strong> ? Notre entreprise est spécialisée dans l'<strong>enlèvement d'épave gratuit</strong> et l'<strong>enlèvement de voiture hors d'usage</strong>. Nous intervenons rapidement pour prendre en charge votre véhicule et le confier aux filières spécialisées de recyclage, dans le respect de la réglementation en vigueur.
+            </p>
             <div className="max-w-4xl mx-auto">
               <div className="grid md:grid-cols-2 gap-8 items-center">
                 <div>
+                  <h3 className="font-bold text-black text-lg mb-4 text-center md:text-left">Zones d'enlèvement d'épaves :</h3>
                   <div className="grid grid-cols-2 gap-4">
                     {[
-                      "Paris (75)",
-                      "Seine-et-Marne (77)",
-                      "Yvelines (78)",
-                      "Essonne (91)",
-                      "Hauts-de-Seine (92)",
-                      "Seine-Saint-Denis (93)",
-                      "Val-de-Marne (94)",
-                      "Val-d'Oise (95)",
+                      "Épaviste Paris (75)",
+                      "Épaviste 77 (Seine-et-Marne)",
+                      "Épaviste 78 (Yvelines)",
+                      "Épaviste 91 (Essonne)",
+                      "Épaviste 92 (Hauts-de-Seine)",
+                      "Épaviste 93 (Seine-Saint-Denis)",
+                      "Épaviste 94 (Val-de-Marne)",
+                      "Épaviste 95 (Val-d'Oise)",
                     ].map((dept, index) => (
                       <div key={index} className="flex items-center space-x-2">
-                        <CheckCircle className="w-5 h-5 text-yellow-500" />
-                        <span className="text-black font-medium">{dept}</span>
+                        <CheckCircle className="w-5 h-5 text-yellow-500 flex-shrink-0" />
+                        <span className="text-black font-medium text-sm">{dept}</span>
                       </div>
                     ))}
                   </div>
@@ -235,14 +239,14 @@ export default function HomePage() {
                 <div className="text-center">
                   <Image
                     src="/images/carte-idf.png"
-                    alt="Carte Île-de-France"
+                    alt="Carte d'intervention d'un épaviste agréé en Île-de-France pour enlèvement d'épave gratuit"
                     width={220}
                     height={220}
                     className="mx-auto mb-4 rounded shadow"
                     loading="lazy"
                   />
-                  <p className="text-gray-600 text-lg">
-                    Que vous soyez à Paris, Versailles, Évry ou Melun, notre équipe intervient rapidement et sans frais.
+                  <p className="text-gray-600 text-base leading-relaxed">
+                    Que vous cherchiez un <strong>épaviste à Paris</strong>, un <strong>épaviste dans le 77</strong>, le <strong>78</strong>, le <strong>91</strong>, le <strong>92</strong>, le <strong>93</strong>, le <strong>94</strong> ou le <strong>95</strong>, notre équipe d'enlèvement d'épave gratuit se déplace sous 24h.
                   </p>
                 </div>
               </div>

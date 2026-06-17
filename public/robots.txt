@@ -1,26 +1,11 @@
-# ─────────────────────────────────────────────
-#   GH Épaviste – robots.txt
-#   https://gh-epaviste.fr
-# ─────────────────────────────────────────────
-
-# Autoriser tous les moteurs de recherche
 User-agent: *
 Allow: /
-
-# Pages publiques prioritaires
-Allow: /services
-Allow: /services/guide
-Allow: /vehicules
-Allow: /formulaire
-Allow: /contact
-Allow: /faq
-Allow: /mentions-legales
-Allow: /confidentialite
-
-# Bloquer les zones privées / techniques
-Disallow: /admin/
 Disallow: /api/
 Disallow: /_next/
+Disallow: /static/
 
-# Sitemap dynamique
+# Sitemap
 Sitemap: https://gh-epaviste.fr/sitemap.xml
+
+# Crawl-delay (optionnel, limite les robots agressifs)
+Crawl-delay: 1

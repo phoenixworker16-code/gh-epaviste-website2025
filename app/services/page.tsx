@@ -13,10 +13,19 @@ export const metadata: Metadata = {
   title: "Services d'Enlèvement d'Épaves - GH Épaviste Île-de-France",
   description: "Découvrez nos services d'enlèvement gratuit d'épaves en Île-de-France : voitures, motos, utilitaires. Intervention rapide 24/7.",
   keywords: "services épaviste, enlèvement épave gratuit, Île-de-France",
+  robots: { index: true, follow: true },
   openGraph: {
     title: "Services d'Enlèvement d'Épaves - GH Épaviste",
-    description: "Services professionnels d'enlèvement gratuit d'épaves en Île-de-France. Agréé VHU, intervention rapide.",
+    description: "Services professionnels d'enlèvement gratuit d'épaves en Île-de-France. Intervention rapide 24/7 dans tous les départements.",
     url: "https://gh-epaviste.fr/services",
+    type: "website",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Services d'Enlèvement d'Épaves" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Services d'Enlèvement d'Épaves - GH Épaviste",
+    description: "Services professionnels d'enlèvement gratuit d'épaves en Île-de-France. Intervention rapide 24/7 dans tous les départements.",
+    images: ["/og-image.jpg"],
   },
   alternates: {
     canonical: "https://gh-epaviste.fr/services",
@@ -245,10 +254,13 @@ export default function ServicesPage() {
           </div>
         </section>
 
-        {/* Zone d&apos;Intervention */}
+        {/* Zone d'Intervention */}
         <section className="py-16 bg-gray-50" aria-labelledby="intervention-zone-heading">
           <div className="container mx-auto px-4">
-            <h2 id="intervention-zone-heading" className="text-3xl font-bold text-center mb-12 text-black">Zone d&apos;Intervention</h2>
+            <h2 id="intervention-zone-heading" className="text-3xl font-bold text-center mb-4 text-black">Zone d'Intervention</h2>
+            <p className="text-center text-gray-600 max-w-2xl mx-auto mb-10 text-base">
+              Besoin d'un <strong>épaviste en Île-de-France</strong> ? Nous assurons l'<strong>enlèvement d'épave gratuit</strong> et l'<strong>enlèvement de voiture hors d'usage</strong> (VHU) sous 24h. Nous intervenons dans tous les départements d'Île-de-France et confions chaque véhicule aux filières spécialisées de traitement conformément à la réglementation.
+            </p>
             <div className="max-w-4xl mx-auto">
               <Card>
                 <CardHeader>
@@ -258,27 +270,27 @@ export default function ServicesPage() {
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <div className="grid md:grid-cols-4 gap-4 mb-6" role="list" aria-label="Liste des départements de l&apos;Île-de-France couverts">
+                  <div className="grid md:grid-cols-4 gap-4 mb-6" role="list" aria-label="Liste des départements de l'Île-de-France couverts">
                     {[
-                      { code: "75", name: "Paris" },
-                      { code: "77", name: "Seine-et-Marne" },
-                      { code: "78", name: "Yvelines" },
-                      { code: "91", name: "Essonne" },
-                      { code: "92", name: "Hauts-de-Seine" },
-                      { code: "93", name: "Seine-Saint-Denis" },
-                      { code: "94", name: "Val-de-Marne" },
-                      { code: "95", name: "Val-d'Oise" },
+                      { code: "75", name: "Épaviste Paris" },
+                      { code: "77", name: "Épaviste 77" },
+                      { code: "78", name: "Épaviste 78" },
+                      { code: "91", name: "Épaviste 91" },
+                      { code: "92", name: "Épaviste 92" },
+                      { code: "93", name: "Épaviste 93" },
+                      { code: "94", name: "Épaviste 94" },
+                      { code: "95", name: "Épaviste 95" },
                     ].map((dept) => (
                       <div key={dept.code} className="text-center p-3 bg-yellow-50 rounded-lg" role="listitem">
                         <div className="text-2xl font-bold text-yellow-600">{dept.code}</div>
-                        <div className="text-sm text-gray-700">{dept.name}</div>
+                        <div className="text-sm text-gray-700 font-semibold">{dept.name}</div>
                       </div>
                     ))}
                   </div>
                   <div className="text-center">
                     <p className="text-gray-600 mb-4">
-                      Intervention rapide et gratuite dans <strong>toute l&apos;Île-de-France</strong>, y compris les zones urbaines denses,
-                      périurbaines et rurales.
+                      Intervention rapide et gratuite dans <strong>toute l'Île-de-France</strong>, y compris les zones urbaines denses,
+                      périurbaines et rurales. Nous gérons l'intégralité du processus d'enlèvement de votre véhicule hors d'usage (VHU).
                     </p>
                     <div className="flex justify-center flex-wrap gap-2">
                       <Badge className="bg-green-100 text-green-800">Zones Urbaines</Badge>

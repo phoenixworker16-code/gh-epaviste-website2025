@@ -2,10 +2,26 @@ import Link from "next/link";
 import { Phone } from "lucide-react";
 import Image from "next/image";
 import ScrollToTop from "@/components/scroll-to-top";
+import { Metadata } from "next";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Comment faire enlever votre épave ? | GH Épaviste",
   description: "Guide étape par étape pour l'enlèvement gratuit de votre épave par GH Épaviste en Île-de-France.",
+  alternates: { canonical: "https://gh-epaviste.fr/services/guide" },
+  robots: { index: true, follow: true },
+  openGraph: {
+    title: "Comment faire enlever votre épave ? | GH Épaviste",
+    description: "Guide étape par étape pour l'enlèvement gratuit de votre épave par GH Épaviste en Île-de-France.",
+    url: "https://gh-epaviste.fr/services/guide",
+    type: "website",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Comment faire enlever votre épave" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Comment faire enlever votre épave ? | GH Épaviste",
+    description: "Guide étape par étape pour l'enlèvement gratuit de votre épave par GH Épaviste en Île-de-France.",
+    images: ["/og-image.jpg"],
+  },
 };
 
 export default function GuideEpavePage() {

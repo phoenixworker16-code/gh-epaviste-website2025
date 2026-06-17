@@ -8,6 +8,7 @@ import { Phone } from "lucide-react"
 import SiteFooter from "@/components/site-footer"
 import MobileNav from "@/components/mobile-nav"
 import AnalyticsLoader from "@/components/analytics-loader"
+import WhatsAppFloat from "@/components/whatsapp-float"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -19,13 +20,13 @@ const inter = Inter({
 export const metadata: Metadata = {
   // ─── Titre & Description ───────────────────────────────
   title: {
-    default: "GH Épaviste Agréé | Enlèvement d'Épave Gratuit en Île-de-France",
-    template: "%s | GH Épaviste Agréé Île-de-France",
+    default: "GH Épaviste | Enlèvement d'Épave Gratuit en Île-de-France",
+    template: "%s | GH Épaviste Île-de-France",
   },
   description:
-    "Épaviste agréé en Île-de-France. Enlèvement gratuit de votre épave avec intervention rapide 24h/24 et 7j/7 dans les 75, 77, 78, 91, 92, 93, 94 et 95. Contactez-nous maintenant au 07 53 12 07 93.",
+    "Épaviste professionnel en Île-de-France. Enlèvement gratuit de votre épave avec intervention rapide 24h/24 et 7j/7 dans les 75, 77, 78, 91, 92, 93, 94 et 95. Contactez-nous maintenant au 07 53 12 07 93.",
   keywords:
-    "épaviste, enlèvement épave, gratuit, Île-de-France, épaviste agréé, épaviste Paris, épaviste 75, enlèvement épave 77, épaviste gratuit, enlèvement d'épave gratuit, épaviste Île-de-France, enlèvement véhicule hors d'usage, épaviste rapide, épaviste intervention 24h, épaviste 93, épaviste 94, épaviste 92, épaviste 91, épaviste 95, épaviste 78",
+    "épaviste, enlèvement épave, gratuit, Île-de-France, épaviste Paris, épaviste 75, enlèvement épave 77, épaviste gratuit, enlèvement d'épave gratuit, épaviste Île-de-France, enlèvement véhicule hors d'usage, épaviste rapide, épaviste intervention 24h, épaviste 93, épaviste 94, épaviste 92, épaviste 91, épaviste 95, épaviste 78",
 
   // ─── URL Canonique ────────────────────────────────────
   metadataBase: new URL("https://gh-epaviste.fr"),
@@ -52,15 +53,15 @@ export const metadata: Metadata = {
     locale: "fr_FR",
     url: "https://gh-epaviste.fr",
     siteName: "GH Épaviste",
-    title: "GH Épaviste Agréé | Enlèvement d'Épave Gratuit en Île-de-France",
+    title: "GH Épaviste | Enlèvement d'Épave Gratuit en Île-de-France",
     description:
-      "Épaviste agréé en Île-de-France. Enlèvement gratuit de votre épave avec intervention rapide 24h/24 et 7j/7. Appelez le 07 53 12 07 93.",
+      "Service professionnel d'enlèvement d'épaves en Île-de-France. Enlèvement gratuit de votre épave avec intervention rapide 24h/24 et 7j/7. Appelez le 07 53 12 07 93.",
     images: [
       {
-        url: "/images/epaviste-enlevement-epave-ile-de-france.jpg",
+        url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "GH Épaviste - Camion d'enlèvement d'épave en Île-de-France",
+        alt: "GH Épaviste - Enlèvement d'épave gratuit en Île-de-France",
       },
     ],
   },
@@ -70,14 +71,19 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "GH Épaviste | Enlèvement d'Épave Gratuit Île-de-France",
     description:
-      "Votre épave enlevée gratuitement en Île-de-France. Intervention rapide 24h/24. Service professionnel et certifié.",
-    images: ["/images/epaviste-enlevement-epave-ile-de-france.jpg"],
+      "Votre épave enlevée gratuitement en Île-de-France. Intervention rapide 24h/24. Service professionnel.",
+    images: ["/og-image.jpg"],
   },
 
   // ─── Icônes & Thème ──────────────────────────────────
   icons: {
     icon: "/images/gh-logo.png",
     apple: "/images/gh-logo.png",
+  },
+
+  // ─── Google Search Console Verification ────────────────
+  verification: {
+    google: "VOTRE_CODE_VERIFICATION_GOOGLE",
   },
 }
 
@@ -95,7 +101,7 @@ export default function RootLayout({
     "@type": "LocalBusiness",
     "@id": "https://gh-epaviste.fr/#business",
     "name": "GH Épaviste",
-    "description": "Épaviste agréé en Île-de-France. Enlèvement gratuit de votre épave avec intervention rapide 24h/24 et 7j/7.",
+    "description": "Service professionnel d'enlèvement d'épaves en Île-de-France. Enlèvement gratuit avec intervention rapide 24h/24 et 7j/7.",
     "url": "https://gh-epaviste.fr",
     "telephone": "+33753120793",
     "priceRange": "Gratuit",
@@ -164,11 +170,14 @@ export default function RootLayout({
               <Link href="/formulaire" className="text-black hover:text-yellow-500 font-medium transition-colors p-2 min-h-[44px] flex items-center">
                 FORMULAIRE D'ENLÈVEMENT
               </Link>
+              <Link href="/blog" className="text-black hover:text-yellow-500 font-medium transition-colors p-2 min-h-[44px] flex items-center">
+                BLOG
+              </Link>
+              <Link href="/a-propos" className="text-black hover:text-yellow-500 font-medium transition-colors p-2 min-h-[44px] flex items-center">
+                À PROPOS
+              </Link>
               <Link href="/contact" className="text-black hover:text-yellow-500 font-medium transition-colors p-2 min-h-[44px] flex items-center">
                 CONTACT
-              </Link>
-              <Link href="/services/guide" className="text-black hover:text-yellow-500 font-medium transition-colors p-2 min-h-[44px] flex items-center">
-                GUIDE
               </Link>
             </nav>
             <div className="flex items-center gap-3">
@@ -181,6 +190,7 @@ export default function RootLayout({
           </div>
         </header>
         {children}
+        <WhatsAppFloat />
         <SiteFooter />
         <AnalyticsLoader gaId="G-0SF8DFE0VW" />
       </body>

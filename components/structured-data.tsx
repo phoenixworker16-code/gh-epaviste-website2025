@@ -17,9 +17,9 @@ export function StructuredData({ type, data }: StructuredDataProps) {
           ...baseData,
           '@type': 'LocalBusiness',
           name: 'GH Épaviste',
-          description: 'Service d\'enlèvement gratuit et rapide d\'épaves agréé VHU en Île-de-France. Intervention 24/7, certificat de destruction fourni.',
+          description: 'Service professionnel d\'enlèvement gratuit et rapide d\'épaves en Île-de-France. Intervention 24/7, prise en charge conforme à la réglementation.',
           url: 'https://gh-epaviste.fr',
-          telephone: '+33123456789',
+          telephone: '+33753120793',
           email: 'contact@gh-epaviste.fr',
           address: {
             '@type': 'PostalAddress',
@@ -48,7 +48,7 @@ export function StructuredData({ type, data }: StructuredDataProps) {
                 itemOffered: {
                   '@type': 'Service',
                   name: 'Enlèvement gratuit d\'épaves',
-                  description: 'Service d\'enlèvement gratuit d\'épaves automobiles avec certificat de destruction VHU'
+                  description: 'Service d\'enlèvement gratuit d\'épaves automobiles avec prise en charge conforme à la réglementation'
                 }
               }
             ]
@@ -61,13 +61,13 @@ export function StructuredData({ type, data }: StructuredDataProps) {
           ...baseData,
           '@type': 'Service',
           name: 'Enlèvement d\'épaves automobiles',
-          description: 'Service professionnel d\'enlèvement gratuit d\'épaves avec certificat de destruction VHU',
+          description: 'Service professionnel d\'enlèvement gratuit d\'épaves avec prise en charge conforme à la réglementation',
           provider: {
             '@type': 'LocalBusiness',
             name: 'GH Épaviste'
           },
           areaServed: 'Île-de-France',
-          serviceType: 'Épaviste agréé VHU',
+          serviceType: 'Service d\'enlèvement d\'épaves automobiles',
           ...data
         }
 
@@ -96,7 +96,7 @@ export function StructuredData({ type, data }: StructuredDataProps) {
           logo: 'https://gh-epaviste.fr/images/gh-logo.png',
           contactPoint: {
             '@type': 'ContactPoint',
-            telephone: '+33123456789',
+            telephone: '+33753120793',
             contactType: 'customer service',
             availableLanguage: 'French'
           },

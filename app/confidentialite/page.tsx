@@ -2,6 +2,27 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Shield, Eye, Lock } from "lucide-react"
 import BreadcrumbNav from "@/components/breadcrumb-nav"
 import ScrollToTop from "@/components/scroll-to-top"
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Politique de Confidentialité | GH Épaviste",
+  description: "Consultez la politique de confidentialité de GH Épaviste. Découvrez comment nous protégeons et traitons vos données personnelles.",
+  alternates: { canonical: "https://gh-epaviste.fr/confidentialite" },
+  robots: { index: false, follow: true },
+  openGraph: {
+    title: "Politique de Confidentialité | GH Épaviste",
+    description: "Protection et traitement de vos données personnelles par GH Épaviste.",
+    url: "https://gh-epaviste.fr/confidentialite",
+    type: "website",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Politique de Confidentialité GH Épaviste" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Politique de Confidentialité | GH Épaviste",
+    description: "Protection et traitement de vos données personnelles par GH Épaviste.",
+    images: ["/og-image.jpg"],
+  },
+}
 
 export default function ConfidentialitePage() {
   return (

@@ -2,6 +2,27 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { HelpCircle } from "lucide-react"
 import BreadcrumbNav from "@/components/breadcrumb-nav"
 import ScrollToTop from "@/components/scroll-to-top"
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Foire Aux Questions (FAQ) | GH Épaviste",
+  description: "Toutes les réponses à vos questions sur l'enlèvement d'épave gratuit en Île-de-France. Procédures, documents, gratuité, etc.",
+  alternates: { canonical: "https://gh-epaviste.fr/faq" },
+  robots: { index: true, follow: true },
+  openGraph: {
+    title: "Foire Aux Questions (FAQ) | GH Épaviste",
+    description: "Toutes les réponses à vos questions sur l'enlèvement d'épave gratuit en Île-de-France. Procédures, documents, gratuité, etc.",
+    url: "https://gh-epaviste.fr/faq",
+    type: "website",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "FAQ GH Épaviste" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Foire Aux Questions (FAQ) | GH Épaviste",
+    description: "Toutes les réponses à vos questions sur l'enlèvement d'épave gratuit en Île-de-France. Procédures, documents, gratuité, etc.",
+    images: ["/og-image.jpg"],
+  },
+}
 
 export default function FaqPage() {
   return (
@@ -38,8 +59,8 @@ export default function FaqPage() {
                   <h2 className="text-2xl font-bold text-black mb-4">3. Comment prendre rendez-vous&nbsp;?</h2>
                   <p className="text-gray-700">
                     Contactez-nous par téléphone au{" "}
-                    <a href="tel:+33659128819" className="text-yellow-500 hover:text-yellow-600 font-bold">
-                      00 33 7 53 12 07 93
+                    <a href="tel:+33753120793" className="text-yellow-500 hover:text-yellow-600 font-bold">
+                      07 53 12 07 93
                     </a>
                     {" "}ou via notre <a href="/formulaire" className="text-yellow-500 hover:text-yellow-600 font-bold">formulaire de contact</a>.
                   </p>
@@ -51,9 +72,9 @@ export default function FaqPage() {
                   </p>
                 </section>
                 <section>
-                  <h2 className="text-2xl font-bold text-black mb-4">5. Que devient mon véhicule après l’enlèvement&nbsp;?</h2>
+                  <h2 className="text-2xl font-bold text-black mb-4">5. Que devient mon véhicule après l'enlèvement&nbsp;?</h2>
                   <p className="text-gray-700">
-                    Votre véhicule est pris en charge dans un centre VHU agréé pour dépollution, recyclage et destruction dans le respect de la réglementation.
+                    Votre véhicule est orienté vers les filières spécialisées de traitement et de recyclage, conformément à la réglementation en vigueur.
                   </p>
                 </section>
                 <section>
