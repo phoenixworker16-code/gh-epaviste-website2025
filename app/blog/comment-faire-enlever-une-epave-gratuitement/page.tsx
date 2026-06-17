@@ -43,7 +43,7 @@ export default function ArticleEnleverEpaveGratuitement() {
             <ArrowLeft className="w-4 h-4" /> Retour au blog
           </Link>
           <h1 className="text-4xl font-bold text-white mb-4">Comment faire enlever une épave gratuitement ?</h1>
-          <p className="text-gray-300">Guide pratique · 5 min de lecture</p>
+          <p className="text-gray-200">Guide pratique · 5 min de lecture</p>
         </div>
       </div>
       <div className="container mx-auto px-4 max-w-3xl py-12">

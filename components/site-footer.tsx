@@ -175,10 +175,10 @@ export default function SiteFooter() {
 
         {/* Ligne Séparatrice & Copyright */}
         <div className="border-t border-gray-800/60 pt-4 mt-6 flex flex-col md:flex-row justify-between items-center gap-2 text-center md:text-left">
-          <p className="text-gray-500 text-xs">
+          <p className="text-gray-400 text-xs">
             &copy; {new Date().getFullYear()} GH Épaviste. Tous droits réservés.
           </p>
-          <p className="text-gray-600 text-xs font-medium">
+          <p className="text-gray-500 text-xs font-medium">
             Powered By <span className="text-yellow-600">PhOeNiX</span>
           </p>
         </div>

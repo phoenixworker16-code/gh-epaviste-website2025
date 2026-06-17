@@ -80,11 +80,6 @@ export const metadata: Metadata = {
     icon: "/images/gh-logo.png",
     apple: "/images/gh-logo.png",
   },
-
-  // ─── Google Search Console Verification ────────────────
-  verification: {
-    google: "VOTRE_CODE_VERIFICATION_GOOGLE",
-  },
 }
 
 export const viewport: Viewport = {
@@ -107,6 +102,12 @@ export default function RootLayout({
     "priceRange": "Gratuit",
     "image": "https://gh-epaviste.fr/images/gh-logo.png",
     "logo": "https://gh-epaviste.fr/images/gh-logo.png",
+    "address": {
+      "@type": "PostalAddress",
+      "postalCode": "94190",
+      "addressLocality": "Villeneuve-Saint-Georges",
+      "addressCountry": "FR"
+    },
     "areaServed": [
       { "@type": "AdministrativeArea", "name": "Paris (75)" },
       { "@type": "AdministrativeArea", "name": "Seine-et-Marne (77)" },
@@ -134,7 +135,14 @@ export default function RootLayout({
   return (
     <html lang="fr" className={inter.variable}>
       <head>
-        {/* Next.js gère automatiquement le preconnect pour Google Fonts via next/font */}
+        {/* ── Preload LCP image (hero truck) ─────────────────────────────── */}
+        <link
+          rel="preload"
+          as="image"
+          href="/images/epaviste-enlevement-epave-ile-de-france.jpg"
+          fetchPriority="high"
+        />
+        {/* ── Preconnect analytics ────────────────────────────────────────── */}
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="preconnect" href="https://www.google-analytics.com" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />

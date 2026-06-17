@@ -43,7 +43,7 @@ export default function ArticleSansCarteGrise() {
             <ArrowLeft className="w-4 h-4" /> Retour au blog
           </Link>
           <h1 className="text-4xl font-bold text-white mb-4">Enlever une voiture sans carte grise : est-ce possible ?</h1>
-          <p className="text-gray-300">Cas particuliers · 4 min de lecture</p>
+          <p className="text-gray-200">Cas particuliers · 4 min de lecture</p>
         </div>
       </div>
       <div className="container mx-auto px-4 max-w-3xl py-12 space-y-6 text-gray-700 leading-relaxed">

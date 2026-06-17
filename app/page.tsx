@@ -184,7 +184,7 @@ export default function HomePage() {
                   <span className="text-3xl font-bold text-black">1</span>
                 </div>
                 <h3 className="text-xl font-bold mb-4">Remplissez le Formulaire</h3>
-                <p className="text-gray-300">Décrivez votre véhicule et votre situation en quelques clics</p>
+                <p className="text-gray-200">Décrivez votre véhicule et votre situation en quelques clics</p>
               </div>
 
               <div className="text-center">
@@ -192,7 +192,7 @@ export default function HomePage() {
                   <span className="text-3xl font-bold text-black">2</span>
                 </div>
                 <h3 className="text-xl font-bold mb-4">Prise de Rendez-vous Rapide</h3>
-                <p className="text-gray-300">Nous vous contactons sous 2h pour planifier l'intervention</p>
+                <p className="text-gray-200">Nous vous contactons sous 2h pour planifier l'intervention</p>
               </div>
 
               <div className="text-center">
@@ -200,7 +200,7 @@ export default function HomePage() {
                   <span className="text-3xl font-bold text-black">3</span>
                 </div>
                 <h3 className="text-xl font-bold mb-4">Enlèvement Rapide</h3>
-                <p className="text-gray-300">Intervention rapide et professionnelle</p>
+                <p className="text-gray-200">Intervention rapide et professionnelle</p>
               </div>
             </div>
           </div>

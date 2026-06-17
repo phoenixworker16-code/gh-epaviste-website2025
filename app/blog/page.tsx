@@ -94,55 +94,57 @@ export default function BlogPage() {
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Tout savoir sur l&apos;<span className="text-yellow-500">enlèvement d&apos;épave</span>
           </h1>
-          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-200 max-w-2xl mx-auto">
             Guides pratiques, conseils et procédures pour comprendre l&apos;enlèvement de votre véhicule hors d&apos;usage en Île-de-France.
           </p>
         </div>
       </section>
 
-      {/* Articles */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4 max-w-5xl">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {articles.map((article) => (
-              <Link key={article.slug} href={`/blog/${article.slug}`} className="group">
-                <Card className="h-full hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border-2 border-transparent group-hover:border-yellow-400">
-                  <CardContent className="p-6 flex flex-col h-full">
-                    <div className="flex items-center justify-between mb-4">
-                      <span className={`text-xs font-semibold px-3 py-1 rounded-full ${categoryColors[article.category] || "bg-gray-100 text-gray-700"}`}>
-                        {article.category}
-                      </span>
-                      <span className="flex items-center gap-1 text-xs text-gray-400">
-                        <Clock className="w-3 h-3" /> {article.readTime}
-                      </span>
-                    </div>
-                    <h2 className="text-lg font-bold text-black mb-3 group-hover:text-yellow-600 transition-colors leading-snug">
-                      {article.title}
-                    </h2>
-                    <p className="text-gray-600 text-sm flex-1 leading-relaxed">{article.excerpt}</p>
-                    <div className="flex items-center gap-1 text-yellow-600 font-semibold text-sm mt-4 group-hover:gap-2 transition-all">
-                      Lire l&apos;article <ArrowRight className="w-4 h-4" />
-                    </div>
-                  </CardContent>
-                </Card>
-              </Link>
-            ))}
+      <main>
+        {/* Articles */}
+        <section className="py-16 bg-gray-50">
+          <div className="container mx-auto px-4 max-w-5xl">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {articles.map((article) => (
+                <Link key={article.slug} href={`/blog/${article.slug}`} className="group">
+                  <Card className="h-full hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border-2 border-transparent group-hover:border-yellow-400">
+                    <CardContent className="p-6 flex flex-col h-full">
+                      <div className="flex items-center justify-between mb-4">
+                        <span className={`text-xs font-semibold px-3 py-1 rounded-full ${categoryColors[article.category] || "bg-gray-100 text-gray-700"}`}>
+                          {article.category}
+                        </span>
+                        <span className="flex items-center gap-1 text-xs text-gray-400">
+                          <Clock className="w-3 h-3" /> {article.readTime}
+                        </span>
+                      </div>
+                      <h3 className="text-lg font-bold text-black mb-3 group-hover:text-yellow-600 transition-colors leading-snug">
+                        {article.title}
+                      </h3>
+                      <p className="text-gray-600 text-sm flex-1 leading-relaxed">{article.excerpt}</p>
+                      <div className="flex items-center gap-1 text-yellow-600 font-semibold text-sm mt-4 group-hover:gap-2 transition-all">
+                        Lire l&apos;article <ArrowRight className="w-4 h-4" />
+                      </div>
+                    </CardContent>
+                  </Card>
+                </Link>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* CTA */}
-      <section className="py-16 bg-yellow-500">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-black mb-4">Prêt à faire enlever votre épave ?</h2>
-          <p className="text-black/80 mb-8 text-lg">Service gratuit, intervention rapide en Île-de-France</p>
-          <Link href="/formulaire">
-            <span className="inline-block bg-black hover:bg-gray-800 text-white font-bold px-8 py-4 rounded-lg text-lg transition-colors">
-              Demander un Enlèvement Gratuit
-            </span>
-          </Link>
-        </div>
-      </section>
+        {/* CTA */}
+        <section className="py-16 bg-yellow-500">
+          <div className="container mx-auto px-4 text-center">
+            <h2 className="text-3xl font-bold text-black mb-4">Prêt à faire enlever votre épave ?</h2>
+            <p className="text-black/80 mb-8 text-lg">Service gratuit, intervention rapide en Île-de-France</p>
+            <Link href="/formulaire">
+              <span className="inline-block bg-black hover:bg-gray-800 text-white font-bold px-8 py-4 rounded-lg text-lg transition-colors">
+                Demander un Enlèvement Gratuit
+              </span>
+            </Link>
+          </div>
+        </section>
+      </main>
     </div>
   )
 }

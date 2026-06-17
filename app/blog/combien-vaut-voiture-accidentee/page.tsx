@@ -50,7 +50,7 @@ export default function ArticleVoitureAccidentee() {
             <ArrowLeft className="w-4 h-4" /> Retour au blog
           </Link>
           <h1 className="text-4xl font-bold text-white mb-4">Combien vaut une voiture accidentée ?</h1>
-          <p className="text-gray-300">Estimation & valeur · 5 min de lecture</p>
+          <p className="text-gray-200">Estimation & valeur · 5 min de lecture</p>
         </div>
       </div>
       <div className="container mx-auto px-4 max-w-3xl py-12 space-y-6 text-gray-700 leading-relaxed">

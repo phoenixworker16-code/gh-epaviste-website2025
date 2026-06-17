@@ -47,7 +47,7 @@ export default function ArticleDocuments() {
         <div className="container mx-auto px-4 max-w-3xl">
           <Link href="/blog" className="inline-flex items-center gap-2 text-yellow-400 hover:text-yellow-300 mb-6 text-sm"><ArrowLeft className="w-4 h-4" /> Retour au blog</Link>
           <h1 className="text-4xl font-bold text-white mb-4">Documents nécessaires pour l&apos;enlèvement d&apos;une épave</h1>
-          <p className="text-gray-300">Administratif · 4 min de lecture</p>
+          <p className="text-gray-200">Administratif · 4 min de lecture</p>
         </div>
       </div>
       <div className="container mx-auto px-4 max-w-3xl py-12 space-y-6 text-gray-700 leading-relaxed">
