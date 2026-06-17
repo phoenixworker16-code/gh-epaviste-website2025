@@ -242,8 +242,10 @@ export default function HomePage() {
                     alt="Carte d'intervention d'un épaviste agréé en Île-de-France pour enlèvement d'épave gratuit"
                     width={220}
                     height={220}
-                    className="mx-auto mb-4 rounded shadow"
+                    className="mx-auto mb-4 rounded shadow object-contain"
+                    style={{ width: "100%", height: "auto", maxWidth: "220px" }}
                     loading="lazy"
+                    sizes="(max-width: 768px) 100vw, 220px"
                   />
                   <p className="text-gray-600 text-base leading-relaxed">
                     Que vous cherchiez un <strong>épaviste à Paris</strong>, un <strong>épaviste dans le 77</strong>, le <strong>78</strong>, le <strong>91</strong>, le <strong>92</strong>, le <strong>93</strong>, le <strong>94</strong> ou le <strong>95</strong>, notre équipe d'enlèvement d'épave gratuit se déplace sous 24h.
@@ -264,7 +266,7 @@ export default function HomePage() {
               fill
               className="object-cover object-[80%_center]"
               loading="lazy"
-              sizes="50vw"
+              sizes="(max-width: 1024px) 100vw, 50vw"
             />
             {/* Dégradé de fondu sur la gauche de l'image (bords) */}
             <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-[#0d1017] to-transparent pointer-events-none"></div>
