@@ -16,7 +16,7 @@ export async function POST(request: Request) {
       );
     }
 
-    const fromEmail = process.env.RESEND_FROM_EMAIL || 'onboarding@resend.dev';
+    const fromEmail = process.env.RESEND_FROM_EMAIL || 'contact@gh-epaviste.fr';
     const toEmail = 'contact@gh-epaviste.fr';
     const sentAt = new Date().toLocaleString('fr-FR', { timeZone: 'Europe/Paris' });
 
