@@ -1,9 +1,24 @@
 "use client"
 
-import { GoogleAnalytics } from "@next/third-parties/google"
+import Script from "next/script"
 
 export default function AnalyticsLoader({ gaId }: { gaId: string }) {
-  // @next/third-parties/google utilise nativement next/script avec la stratégie optimale 
-  // (afterInteractive par défaut) pour garantir que le FCP n'est pas bloqué.
-  return <GoogleAnalytics gaId={gaId} />
+  return (
+    <>
+      <Script
+        src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
+        strategy="lazyOnload"
+      />
+      <Script id="google-analytics" strategy="lazyOnload">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${gaId}', {
+            page_path: window.location.pathname,
+          });
+        `}
+      </Script>
+    </>
+  )
 }
