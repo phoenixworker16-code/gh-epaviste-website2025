@@ -130,7 +130,6 @@ export default function SiteFooter() {
               <li className="flex items-start gap-2 hover:text-white transition-colors">
                 <MapPin className="w-3.5 h-3.5 text-yellow-500 mt-1 flex-shrink-0" />
                 <span className="leading-tight">
-                  49 Rue Henri Janin<br />
                   94190 Villeneuve-Saint-Georges<br />
                   France
                 </span>
