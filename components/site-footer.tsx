@@ -19,7 +19,8 @@ export default function SiteFooter() {
               alt="GH Épaviste - Enlèvement d'Épaves en Île-de-France"
               width={160}
               height={80}
-              className="h-20 w-auto mb-3 drop-shadow-lg"
+              className="mb-3 drop-shadow-lg"
+              style={{ height: '80px', width: 'auto' }}
               loading="lazy"
             />
             <p className="text-gray-400 mb-4 text-sm max-w-sm leading-tight">

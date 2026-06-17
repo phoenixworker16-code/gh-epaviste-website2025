@@ -90,11 +90,9 @@ export default function FormulaireContent() {
               >
                 Nouvelle Demande
               </Button>
-              <Link href="/" passHref>
-                <Button variant="outline" className="w-full" asChild>
-                  <a aria-label="Retourner à la page d'accueil">Retour à l'Accueil</a>
-                </Button>
-              </Link>
+              <Button variant="outline" className="w-full" asChild>
+                <Link href="/" aria-label="Retourner à la page d'accueil">Retour à l'Accueil</Link>
+              </Button>
             </div>
           </CardContent>
         </Card>

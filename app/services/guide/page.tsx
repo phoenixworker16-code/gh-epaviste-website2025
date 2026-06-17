@@ -34,7 +34,7 @@ export default function GuideEpavePage() {
           alt="GH Épaviste Logo"
           width={220}
           height={120}
-          className="h-24 w-auto"
+          style={{ height: '96px', width: 'auto' }}
           priority
         />
       </div>
