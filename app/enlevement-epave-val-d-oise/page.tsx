@@ -5,23 +5,23 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 
 export const metadata: Metadata = {
-  title: "Épaviste Val-d'Oise 95 | Enlèvement d'Épave Gratuit",
+  title: "Enlèvement d'épave gratuit dans le Val-d'Oise (95) - Épaviste Agréé",
   description:
-    "Épaviste dans le Val-d'Oise (95) : enlèvement gratuit de votre épave 24h/24. Cergy, Argenteuil, Sarcelles, Pontoise et tout le 95. Appelez le 07 53 12 07 93.",
+    "Ne laissez plus un véhicule hors d'usage occuper inutilement votre espace privé ou public dans le 95. GH Épaviste déploie ses dépanneuses dans tout le Val-d'Oise pour retirer gratuitement vos autos, motos ou camionnettes usagées.",
   alternates: { canonical: "https://gh-epaviste.fr/enlevement-epave-val-d-oise" },
   robots: { index: true, follow: true },
   openGraph: {
-    title: "Épaviste Val-d'Oise 95 | GH Épaviste",
-    description: "Enlèvement d'épave gratuit dans le Val-d'Oise (95). Intervention rapide 24h/24.",
+    title: "Enlèvement d'épave gratuit dans le Val-d'Oise (95) - Épaviste Agréé",
+    description: "Ne laissez plus un véhicule hors d'usage occuper inutilement votre espace privé ou public dans le 95. GH Épaviste déploie ses dépanneuses dans tout le Val-d'Oise pour retirer gratuitement vos autos, motos ou camionnettes usagées.",
     url: "https://gh-epaviste.fr/enlevement-epave-val-d-oise",
     type: "website",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Épaviste Val-d'Oise 95" }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Enlèvement d'épave gratuit dans le Val-d'Oise (95)" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Épaviste Val-d'Oise 95 | Enlèvement d'Épave Gratuit",
+    title: "Enlèvement d'épave gratuit dans le Val-d'Oise (95) - Épaviste Agréé",
     description:
-      "Épaviste dans le Val-d'Oise (95) : enlèvement gratuit de votre épave 24h/24. Cergy, Argenteuil, Sarcelles, Pontoise et tout le 95. Appelez le 07 53 12 07 93.",
+      "Ne laissez plus un véhicule hors d'usage occuper inutilement votre espace privé ou public dans le 95. GH Épaviste déploie ses dépanneuses dans tout le Val-d'Oise pour retirer gratuitement vos autos, motos ou camionnettes usagées.",
     images: ["/og-image.jpg"],
   },
 }
@@ -48,12 +48,12 @@ export default function EpavisteValDOise() {
           <div className="inline-flex items-center gap-2 bg-yellow-500/20 text-yellow-400 px-4 py-2 rounded-full text-sm font-medium mb-6">
             <MapPin className="w-4 h-4" /> Val-d&apos;Oise — Département 95
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            <span className="text-yellow-500">Épaviste Val-d&apos;Oise (95)</span><br />Enlèvement d&apos;Épave Gratuit
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+            <span className="text-yellow-500">Enlèvement d&apos;épave gratuit dans le Val-d&apos;Oise (95)</span><br />
+            Épaviste Agréé
           </h1>
-          <p className="text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
-            GH Épaviste intervient dans tout le Val-d&apos;Oise pour l&apos;enlèvement gratuit de votre épave.
-            De Cergy à Argenteuil, disponible 24h/24 et 7j/7.
+          <p className="text-xl text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed">
+            Ne laissez plus un véhicule hors d&apos;usage occuper inutilement votre espace privé ou public dans le 95. GH Épaviste déploie ses dépanneuses dans tout le Val-d&apos;Oise pour retirer gratuitement vos autos, motos ou camionnettes usagées. Nos équipes se déplacent quotidiennement sur Argenteuil, Sarcelles, Cergy, Garges-lès-Gonesse et Franconville. Nous nous chargeons de convoyer votre ancien véhicule vers un centre de dépollution agréé VHU, le tout sans débourser un seul centime.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/formulaire"><Button size="lg" className="bg-yellow-500 hover:bg-yellow-400 text-black font-bold px-8">Demander un Enlèvement Gratuit</Button></Link>

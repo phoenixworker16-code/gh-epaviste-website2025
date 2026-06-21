@@ -5,23 +5,23 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 
 export const metadata: Metadata = {
-  title: "Épaviste Paris 75 | Enlèvement d'Épave Gratuit à Paris",
+  title: "Enlèvement d'épave gratuit à Paris (75) - Intervention 24h/24",
   description:
-    "Épaviste à Paris (75) : enlèvement gratuit de votre épave 24h/24 et 7j/7. Intervention rapide dans tous les arrondissements. Appelez le 07 53 12 07 93.",
+    "Besoin de libérer rapidement une place de stationnement ou un garage dans la capitale ? GH Épaviste intervient dans tous les arrondissements de Paris (du 1er au 20ème) pour l'enlèvement gratuit de vos véhicules hors d'usage (VHU).",
   alternates: { canonical: "https://gh-epaviste.fr/enlevement-epave-paris" },
   robots: { index: true, follow: true },
   openGraph: {
-    title: "Épaviste Paris 75 | GH Épaviste",
-    description: "Enlèvement d'épave gratuit à Paris. Intervention rapide 24h/24.",
+    title: "Enlèvement d'épave gratuit à Paris (75) - Intervention 24h/24",
+    description: "Besoin de libérer rapidement une place de stationnement ou un garage dans la capitale ? GH Épaviste intervient dans tous les arrondissements de Paris (du 1er au 20ème) pour l'enlèvement gratuit de vos véhicules hors d'usage (VHU).",
     url: "https://gh-epaviste.fr/enlevement-epave-paris",
     type: "website",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Épaviste Paris 75" }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Enlèvement d'épave gratuit à Paris (75)" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Épaviste Paris 75 | Enlèvement d'Épave Gratuit à Paris",
+    title: "Enlèvement d'épave gratuit à Paris (75) - Intervention 24h/24",
     description:
-      "Épaviste à Paris (75) : enlèvement gratuit de votre épave 24h/24 et 7j/7. Intervention rapide dans tous les arrondissements. Appelez le 07 53 12 07 93.",
+      "Besoin de libérer rapidement une place de stationnement ou un garage dans la capitale ? GH Épaviste intervient dans tous les arrondissements de Paris (du 1er au 20ème) pour l'enlèvement gratuit de vos véhicules hors d'usage (VHU).",
     images: ["/og-image.jpg"],
   },
 }
@@ -48,13 +48,12 @@ export default function EpavisteParis() {
           <div className="inline-flex items-center gap-2 bg-yellow-500/20 text-yellow-400 px-4 py-2 rounded-full text-sm font-medium mb-6">
             <MapPin className="w-4 h-4" /> Paris — Département 75
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            <span className="text-yellow-500">Épaviste Paris (75)</span>
-            <br />Enlèvement d&apos;Épave Gratuit
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+            <span className="text-yellow-500">Enlèvement d&apos;épave gratuit à Paris (75)</span><br />
+            Intervention 24h/24
           </h1>
-          <p className="text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
-            GH Épaviste intervient dans tous les arrondissements de Paris pour enlever votre épave gratuitement,
-            24h/24 et 7j/7. Rapide, professionnel et sans frais.
+          <p className="text-xl text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed">
+            Besoin de libérer rapidement une place de stationnement ou un garage dans la capitale ? GH Épaviste intervient dans tous les arrondissements de Paris (du 1er au 20ème) pour l&apos;enlèvement gratuit de vos véhicules hors d&apos;usage (VHU). Que votre voiture soit bloquée dans un parking souterrain étroit, en panne en bord de route ou accidentée, notre matériel spécialisé nous permet d&apos;agir rapidement malgré les contraintes de circulation parisiennes. Nous gérons l&apos;intégralité des démarches administratives sur place pour un remorquage écoresponsable et rapide.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/formulaire">

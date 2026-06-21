@@ -176,17 +176,17 @@ export default function SiteFooter() {
 
         {/* Zones d'intervention SEO */}
         <div className="border-t border-gray-800/60 pt-6 mt-8 mb-2">
-          <p className="text-gray-400 text-sm text-center leading-relaxed">
-            <span className="font-semibold text-gray-300">Nos zones d'intervention :</span>{" "}
-            <Link href="/enlevement-epave-paris" className="hover:text-yellow-500 transition-colors">Épaviste 75</Link> |{" "}
-            <Link href="/enlevement-epave-seine-et-marne" className="hover:text-yellow-500 transition-colors">Épaviste 77</Link> |{" "}
-            <Link href="/enlevement-epave-yvelines" className="hover:text-yellow-500 transition-colors">Épaviste 78</Link> |{" "}
-            <Link href="/enlevement-epave-essonne" className="hover:text-yellow-500 transition-colors">Épaviste 91</Link> |{" "}
-            <Link href="/enlevement-epave-hauts-de-seine" className="hover:text-yellow-500 transition-colors">Épaviste 92</Link> |{" "}
-            <Link href="/enlevement-epave-seine-saint-denis" className="hover:text-yellow-500 transition-colors">Épaviste 93</Link> |{" "}
-            <Link href="/enlevement-epave-val-de-marne" className="hover:text-yellow-500 transition-colors">Épaviste 94</Link> |{" "}
-            <Link href="/enlevement-epave-val-d-oise" className="hover:text-yellow-500 transition-colors">Épaviste 95</Link>
-          </p>
+          <div className="flex flex-wrap justify-center items-center gap-x-2 gap-y-1 text-gray-400 text-xs sm:text-sm text-center">
+            <span>Nos zones d'intervention en Île-de-France :</span>
+            <Link href="/enlevement-epave-paris" className="hover:text-yellow-500 transition-colors whitespace-nowrap">Épaviste Paris 75</Link> <span className="hidden sm:inline">|</span>
+            <Link href="/enlevement-epave-seine-et-marne" className="hover:text-yellow-500 transition-colors whitespace-nowrap">Épaviste Seine-et-Marne 77</Link> <span className="hidden sm:inline">|</span>
+            <Link href="/enlevement-epave-yvelines" className="hover:text-yellow-500 transition-colors whitespace-nowrap">Épaviste Yvelines 78</Link> <span className="hidden sm:inline">|</span>
+            <Link href="/enlevement-epave-essonne" className="hover:text-yellow-500 transition-colors whitespace-nowrap">Épaviste Essonne 91</Link> <span className="hidden sm:inline">|</span>
+            <Link href="/enlevement-epave-hauts-de-seine" className="hover:text-yellow-500 transition-colors whitespace-nowrap">Épaviste Hauts-de-Seine 92</Link> <span className="hidden sm:inline">|</span>
+            <Link href="/enlevement-epave-seine-saint-denis" className="hover:text-yellow-500 transition-colors whitespace-nowrap">Épaviste Seine-Saint-Denis 93</Link> <span className="hidden sm:inline">|</span>
+            <Link href="/enlevement-epave-val-de-marne" className="hover:text-yellow-500 transition-colors whitespace-nowrap">Épaviste Val-de-Marne 94</Link> <span className="hidden sm:inline">|</span>
+            <Link href="/enlevement-epave-val-d-oise" className="hover:text-yellow-500 transition-colors whitespace-nowrap">Épaviste Val-d'Oise 95</Link>
+          </div>
         </div>
 
         {/* Ligne Séparatrice & Copyright */}

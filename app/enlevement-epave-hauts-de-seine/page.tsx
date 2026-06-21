@@ -5,23 +5,23 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 
 export const metadata: Metadata = {
-  title: "Épaviste Hauts-de-Seine 92 | Enlèvement d'Épave Gratuit",
+  title: "Enlèvement d'épave gratuit Hauts-de-Seine (92) - Service Premium",
   description:
-    "Épaviste dans les Hauts-de-Seine (92) : enlèvement gratuit de votre épave 24h/24. Nanterre, Boulogne, Colombes, Courbevoie et tout le 92. Appelez le 07 53 12 07 93.",
+    "Face à la forte densité urbaine du 92, stocker un véhicule en panne ou accidenté peut vite devenir un problème coûteux. GH Épaviste met à votre disposition son savoir-faire pour un enlèvement d'épave gratuit et sécurisé dans les Hauts-de-Seine.",
   alternates: { canonical: "https://gh-epaviste.fr/enlevement-epave-hauts-de-seine" },
   robots: { index: true, follow: true },
   openGraph: {
-    title: "Épaviste Hauts-de-Seine 92 | GH Épaviste",
-    description: "Enlèvement d'épave gratuit dans les Hauts-de-Seine (92). Intervention rapide 24h/24.",
+    title: "Enlèvement d'épave gratuit Hauts-de-Seine (92) - Service Premium",
+    description: "Face à la forte densité urbaine du 92, stocker un véhicule en panne ou accidenté peut vite devenir un problème coûteux. GH Épaviste met à votre disposition son savoir-faire.",
     url: "https://gh-epaviste.fr/enlevement-epave-hauts-de-seine",
     type: "website",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Épaviste Hauts-de-Seine 92" }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Enlèvement d'épave gratuit Hauts-de-Seine (92)" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Épaviste Hauts-de-Seine 92 | Enlèvement d'Épave Gratuit",
+    title: "Enlèvement d'épave gratuit Hauts-de-Seine (92) - Service Premium",
     description:
-      "Épaviste dans les Hauts-de-Seine (92) : enlèvement gratuit de votre épave 24h/24. Nanterre, Boulogne, Colombes, Courbevoie et tout le 92. Appelez le 07 53 12 07 93.",
+      "Face à la forte densité urbaine du 92, stocker un véhicule en panne ou accidenté peut vite devenir un problème coûteux. GH Épaviste met à votre disposition son savoir-faire.",
     images: ["/og-image.jpg"],
   },
 }
@@ -48,11 +48,12 @@ export default function EpavisteHautsDeSeine() {
           <div className="inline-flex items-center gap-2 bg-yellow-500/20 text-yellow-400 px-4 py-2 rounded-full text-sm font-medium mb-6">
             <MapPin className="w-4 h-4" /> Hauts-de-Seine — Département 92
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            <span className="text-yellow-500">Épaviste Hauts-de-Seine (92)</span><br />Enlèvement d&apos;Épave Gratuit
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+            <span className="text-yellow-500">Enlèvement d&apos;épave gratuit Hauts-de-Seine (92)</span><br />
+            Service Premium
           </h1>
-          <p className="text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
-            GH Épaviste intervient dans tout le département des Hauts-de-Seine. De Nanterre à Boulogne-Billancourt, enlèvement gratuit de votre épave sous 24h.
+          <p className="text-xl text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed">
+            Face à la forte densité urbaine du 92, stocker un véhicule en panne ou accidenté peut vite devenir un problème coûteux. GH Épaviste met à votre disposition son savoir-faire pour un enlèvement d&apos;épave gratuit et sécurisé dans les Hauts-de-Seine. Nous intervenons rapidement par l&apos;A86 et les grands axes pour dégager vos véhicules à Boulogne-Billancourt, Nanterre, Asnières-sur-Seine, Colombes et Courbevoie. Un service pro, rapide et conforme aux normes environnementales européennes pour le recyclage automobile.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/formulaire"><Button size="lg" className="bg-yellow-500 hover:bg-yellow-400 text-black font-bold px-8">Demander un Enlèvement Gratuit</Button></Link>

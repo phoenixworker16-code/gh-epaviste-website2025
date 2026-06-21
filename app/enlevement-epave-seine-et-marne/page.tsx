@@ -5,23 +5,23 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 
 export const metadata: Metadata = {
-  title: "Épaviste Seine-et-Marne 77 | Enlèvement d'Épave Gratuit",
+  title: "Épaviste agréé en Seine-et-Marne (77) : Enlèvement VHU gratuit",
   description:
-    "Épaviste en Seine-et-Marne (77) : enlèvement gratuit de votre épave 24h/24. Melun, Meaux, Chelles, Pontault-Combault et tout le 77. Appelez le 07 53 12 07 93.",
+    "Vous possédez une vieille voiture qui encombre votre jardin ou votre entreprise en Seine-et-Marne ? Notre équipe de remorquage quadrille le 77 au quotidien pour vous débarrasser gratuitement de tout véhicule roulant ou non.",
   alternates: { canonical: "https://gh-epaviste.fr/enlevement-epave-seine-et-marne" },
   robots: { index: true, follow: true },
   openGraph: {
-    title: "Épaviste Seine-et-Marne 77 | GH Épaviste",
-    description: "Enlèvement d'épave gratuit en Seine-et-Marne (77). Intervention rapide 24h/24.",
+    title: "Épaviste agréé en Seine-et-Marne (77) : Enlèvement VHU gratuit",
+    description: "Vous possédez une vieille voiture qui encombre votre jardin ou votre entreprise en Seine-et-Marne ? Notre équipe de remorquage quadrille le 77 au quotidien pour vous débarrasser gratuitement de tout véhicule roulant ou non.",
     url: "https://gh-epaviste.fr/enlevement-epave-seine-et-marne",
     type: "website",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Épaviste Seine-et-Marne 77" }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Épaviste agréé en Seine-et-Marne (77)" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Épaviste Seine-et-Marne 77 | Enlèvement d'Épave Gratuit",
+    title: "Épaviste agréé en Seine-et-Marne (77) : Enlèvement VHU gratuit",
     description:
-      "Épaviste en Seine-et-Marne (77) : enlèvement gratuit de votre épave 24h/24. Melun, Meaux, Chelles, Pontault-Combault et tout le 77. Appelez le 07 53 12 07 93.",
+      "Vous possédez une vieille voiture qui encombre votre jardin ou votre entreprise en Seine-et-Marne ? Notre équipe de remorquage quadrille le 77 au quotidien pour vous débarrasser gratuitement de tout véhicule roulant ou non.",
     images: ["/og-image.jpg"],
   },
 }
@@ -49,13 +49,12 @@ export default function EpavisteSeineMarne() {
           <div className="inline-flex items-center gap-2 bg-yellow-500/20 text-yellow-400 px-4 py-2 rounded-full text-sm font-medium mb-6">
             <MapPin className="w-4 h-4" /> Seine-et-Marne — Département 77
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            <span className="text-yellow-500">Épaviste Seine-et-Marne (77)</span>
-            <br />Enlèvement d&apos;Épave Gratuit
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+            <span className="text-yellow-500">Épaviste agréé en Seine-et-Marne (77) :</span><br />
+            Enlèvement VHU gratuit
           </h1>
-          <p className="text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
-            GH Épaviste intervient dans tout le département de Seine-et-Marne pour enlever votre épave gratuitement.
-            Zones rurales et urbaines, nous nous déplaçons partout.
+          <p className="text-xl text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed">
+            Vous possédez une vieille voiture qui encombre votre jardin ou votre entreprise en Seine-et-Marne ? Notre équipe de remorquage quadrille le 77 au quotidien pour vous débarrasser gratuitement de tout véhicule roulant ou non. Grâce à un accès rapide via les axes A4 et A5, nous garantissons des interventions fluides et rapides dans de nombreuses communes comme Meaux, Chelles, Melun, Pontault-Combault et Savigny-le-Temple. Ne laissez plus un véhicule hors d&apos;usage polluer votre espace, contactez-nous pour une prise en charge de A à Z.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/formulaire">

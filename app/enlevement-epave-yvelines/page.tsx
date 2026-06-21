@@ -5,23 +5,23 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 
 export const metadata: Metadata = {
-  title: "Épaviste Yvelines 78 | Enlèvement d'Épave Gratuit",
+  title: "Enlèvement d'épave gratuit dans les Yvelines (78) sous 24h",
   description:
-    "Épaviste dans les Yvelines (78) : enlèvement gratuit de votre épave 24h/24. Versailles, Saint-Germain, Rambouillet et tout le 78. Appelez le 07 53 12 07 93.",
+    "Spécialiste de la récupération de véhicules hors d'usage, GH Épaviste se déplace gratuitement dans tout le département des Yvelines. Qu'il s'agisse d'un utilitaire léger, d'une moto ou d'une berline en panne, nous venons récupérer votre encombrant.",
   alternates: { canonical: "https://gh-epaviste.fr/enlevement-epave-yvelines" },
   robots: { index: true, follow: true },
   openGraph: {
-    title: "Épaviste Yvelines 78 | GH Épaviste",
-    description: "Enlèvement d'épave gratuit dans les Yvelines (78). Intervention rapide 24h/24.",
+    title: "Enlèvement d'épave gratuit dans les Yvelines (78) sous 24h",
+    description: "Spécialiste de la récupération de véhicules hors d'usage, GH Épaviste se déplace gratuitement dans tout le département des Yvelines.",
     url: "https://gh-epaviste.fr/enlevement-epave-yvelines",
     type: "website",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Épaviste Yvelines 78" }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Enlèvement d'épave gratuit dans les Yvelines (78)" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Épaviste Yvelines 78 | Enlèvement d'Épave Gratuit",
+    title: "Enlèvement d'épave gratuit dans les Yvelines (78) sous 24h",
     description:
-      "Épaviste dans les Yvelines (78) : enlèvement gratuit de votre épave 24h/24. Versailles, Saint-Germain, Rambouillet et tout le 78. Appelez le 07 53 12 07 93.",
+      "Spécialiste de la récupération de véhicules hors d'usage, GH Épaviste se déplace gratuitement dans tout le département des Yvelines.",
     images: ["/og-image.jpg"],
   },
 }
@@ -49,13 +49,12 @@ export default function EpavisteYvelines() {
           <div className="inline-flex items-center gap-2 bg-yellow-500/20 text-yellow-400 px-4 py-2 rounded-full text-sm font-medium mb-6">
             <MapPin className="w-4 h-4" /> Yvelines — Département 78
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            <span className="text-yellow-500">Épaviste Yvelines (78)</span>
-            <br />Enlèvement d&apos;Épave Gratuit
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+            <span className="text-yellow-500">Enlèvement d&apos;épave gratuit dans les Yvelines (78)</span><br />
+            sous 24h
           </h1>
-          <p className="text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
-            GH Épaviste intervient dans tout le département des Yvelines pour enlever votre épave gratuitement,
-            de Versailles à Mantes-la-Jolie, 24h/24 et 7j/7.
+          <p className="text-xl text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed">
+            Spécialiste de la récupération de véhicules hors d&apos;usage, GH Épaviste se déplace gratuitement dans tout le département des Yvelines. Qu&apos;il s&apos;agisse d&apos;un utilitaire léger, d&apos;une moto ou d&apos;une berline en panne, nous venons récupérer votre encombrant directement chez vous ou sur votre lieu de travail. Nos camions de remorquage desservent efficacement les secteurs de Versailles, Sartrouville, Mantes-la-Jolie, Saint-Germain-en-Laye et Poissy. Repartez l&apos;esprit tranquille avec votre certificat de cession remis en main propre.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/formulaire">

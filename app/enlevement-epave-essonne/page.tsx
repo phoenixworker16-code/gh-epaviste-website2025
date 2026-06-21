@@ -5,23 +5,23 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 
 export const metadata: Metadata = {
-  title: "Épaviste Essonne 91 | Enlèvement d'Épave Gratuit",
+  title: "Épaviste Gratuit Essonne (91) - Remorquage de véhicules hors d'usage",
   description:
-    "Épaviste en Essonne (91) : enlèvement gratuit de votre épave 24h/24. Évry, Corbeil-Essonnes, Massy, Palaiseau et tout le 91. Appelez le 07 53 12 07 93.",
+    "Situé à proximité immédiate du 91, GH Épaviste est votre partenaire local privilégié pour l'enlèvement gratuit de voitures cassettes, brûlées ou simplement trop vieilles pour rouler.",
   alternates: { canonical: "https://gh-epaviste.fr/enlevement-epave-essonne" },
   robots: { index: true, follow: true },
   openGraph: {
-    title: "Épaviste Essonne 91 | GH Épaviste",
-    description: "Enlèvement d'épave gratuit en Essonne (91). Intervention rapide 24h/24.",
+    title: "Épaviste Gratuit Essonne (91) - Remorquage de véhicules hors d'usage",
+    description: "Situé à proximité immédiate du 91, GH Épaviste est votre partenaire local privilégié pour l'enlèvement gratuit de voitures cassettes, brûlées ou simplement trop vieilles pour rouler.",
     url: "https://gh-epaviste.fr/enlevement-epave-essonne",
     type: "website",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Épaviste Essonne 91" }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Épaviste Gratuit Essonne (91)" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Épaviste Essonne 91 | Enlèvement d'Épave Gratuit",
+    title: "Épaviste Gratuit Essonne (91) - Remorquage de véhicules hors d'usage",
     description:
-      "Épaviste en Essonne (91) : enlèvement gratuit de votre épave 24h/24. Évry, Corbeil-Essonnes, Massy, Palaiseau et tout le 91. Appelez le 07 53 12 07 93.",
+      "Situé à proximité immédiate du 91, GH Épaviste est votre partenaire local privilégié pour l'enlèvement gratuit de voitures cassettes, brûlées ou simplement trop vieilles pour rouler.",
     images: ["/og-image.jpg"],
   },
 }
@@ -48,12 +48,12 @@ export default function EpavisteEssonne() {
           <div className="inline-flex items-center gap-2 bg-yellow-500/20 text-yellow-400 px-4 py-2 rounded-full text-sm font-medium mb-6">
             <MapPin className="w-4 h-4" /> Essonne — Département 91
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            <span className="text-yellow-500">Épaviste Essonne (91)</span><br />Enlèvement d&apos;Épave Gratuit
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+            <span className="text-yellow-500">Épaviste Gratuit Essonne (91)</span><br />
+            Remorquage de véhicules hors d&apos;usage
           </h1>
-          <p className="text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
-            GH Épaviste intervient dans tout le département de l&apos;Essonne pour enlever votre épave gratuitement.
-            D&apos;Évry à Gif-sur-Yvette, 24h/24 et 7j/7.
+          <p className="text-xl text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed">
+            Situé à proximité immédiate du 91, GH Épaviste est votre partenaire local privilégié pour l&apos;enlèvement gratuit de voitures cassettes, brûlées ou simplement trop vieilles pour rouler. Nous couvrons l&apos;intégralité de l&apos;Essonne avec une réactivité record sur les zones d&apos;Évry-Courcouronnes, Corbeil-Essonnes, Massy, Savigny-sur-Orge et Sainte-Geneviève-des-Bois. Disponibles 7j/7 et 24h/24, nous nous adaptons à vos contraintes horaires pour vous offrir un service professionnel, transparent et totalement gratuit.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/formulaire"><Button size="lg" className="bg-yellow-500 hover:bg-yellow-400 text-black font-bold px-8">Demander un Enlèvement Gratuit</Button></Link>

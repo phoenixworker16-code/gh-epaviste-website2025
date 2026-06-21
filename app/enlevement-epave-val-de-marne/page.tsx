@@ -5,23 +5,23 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 
 export const metadata: Metadata = {
-  title: "Épaviste Val-de-Marne 94 | Enlèvement d'Épave Gratuit",
+  title: "Épaviste Pro dans le Val-de-Marne (94) : Intervention ultra-rapide 24/7",
   description:
-    "Épaviste dans le Val-de-Marne (94) : enlèvement gratuit de votre épave 24h/24. Créteil, Vincennes, Vitry, Ivry et tout le 94. Appelez le 07 53 12 07 93.",
+    "Basés au cœur du Val-de-Marne à Villeneuve-Saint-Georges, nous sommes vos épavistes de proximité. Cette implantation stratégique nous permet d'être sur place en un temps record pour l'enlèvement gratuit de votre épave.",
   alternates: { canonical: "https://gh-epaviste.fr/enlevement-epave-val-de-marne" },
   robots: { index: true, follow: true },
   openGraph: {
-    title: "Épaviste Val-de-Marne 94 | GH Épaviste",
-    description: "Enlèvement d'épave gratuit dans le Val-de-Marne (94). Intervention rapide 24h/24.",
+    title: "Épaviste Pro dans le Val-de-Marne (94) : Intervention ultra-rapide 24/7",
+    description: "Basés au cœur du Val-de-Marne à Villeneuve-Saint-Georges, nous sommes vos épavistes de proximité. Cette implantation stratégique nous permet d'être sur place en un temps record pour l'enlèvement gratuit de votre épave.",
     url: "https://gh-epaviste.fr/enlevement-epave-val-de-marne",
     type: "website",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Épaviste Val-de-Marne 94" }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Épaviste Pro dans le Val-de-Marne (94) : Intervention ultra-rapide 24/7" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Épaviste Val-de-Marne 94 | Enlèvement d'Épave Gratuit",
+    title: "Épaviste Pro dans le Val-de-Marne (94) : Intervention ultra-rapide 24/7",
     description:
-      "Épaviste dans le Val-de-Marne (94) : enlèvement gratuit de votre épave 24h/24. Créteil, Vincennes, Vitry, Ivry et tout le 94. Appelez le 07 53 12 07 93.",
+      "Basés au cœur du Val-de-Marne à Villeneuve-Saint-Georges, nous sommes vos épavistes de proximité. Cette implantation stratégique nous permet d'être sur place en un temps record pour l'enlèvement gratuit de votre épave.",
     images: ["/og-image.jpg"],
   },
 }
@@ -48,12 +48,12 @@ export default function EpavisteValDeMarne() {
           <div className="inline-flex items-center gap-2 bg-yellow-500/20 text-yellow-400 px-4 py-2 rounded-full text-sm font-medium mb-6">
             <MapPin className="w-4 h-4" /> Val-de-Marne — Département 94
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            <span className="text-yellow-500">Épaviste Val-de-Marne (94)</span><br />Enlèvement d&apos;Épave Gratuit
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+            <span className="text-yellow-500">Épaviste Pro dans le Val-de-Marne (94) :</span><br />
+            Intervention ultra-rapide 24/7
           </h1>
-          <p className="text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
-            GH Épaviste intervient dans tout le Val-de-Marne pour l&apos;enlèvement gratuit de votre épave.
-            De Créteil à Vincennes, disponible 24h/24 et 7j/7.
+          <p className="text-xl text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed">
+            Basés au cœur du Val-de-Marne à Villeneuve-Saint-Georges, nous sommes vos épavistes de proximité. Cette implantation stratégique nous permet d&apos;être sur place en un temps record pour l&apos;enlèvement gratuit de votre épave à Créteil, Vitry-sur-Seine, Champigny-sur-Marne, Saint-Maur-des-Fossés et Ivry-sur-Seine. En tant qu&apos;acteurs locaux, nous vous garantissons la plus grande réactivité du marché pour libérer vos voies d&apos;accès ou vos parkings, avec un suivi administratif rigoureux et immédiat.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/formulaire"><Button size="lg" className="bg-yellow-500 hover:bg-yellow-400 text-black font-bold px-8">Demander un Enlèvement Gratuit</Button></Link>
