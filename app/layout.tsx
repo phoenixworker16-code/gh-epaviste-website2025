@@ -151,6 +151,7 @@ export default function RootLayout({
                 height={100}
                 style={{ height: '64px', width: 'auto' }}
                 priority
+                fetchPriority="high"
               />
             </div>
             <nav className="hidden md:flex items-center space-x-8">
@@ -177,7 +178,7 @@ export default function RootLayout({
               </Link>
             </nav>
             <div className="flex items-center gap-3">
-              <Link href="tel:+33753120793" className="hidden md:flex bg-yellow-500 hover:bg-yellow-600 text-black font-bold px-4 py-2 min-h-[44px] rounded items-center transition">
+              <Link href="tel:+33753120793" aria-label="Appeler l'épaviste au 07 53 12 07 93" className="hidden md:flex bg-yellow-500 hover:bg-yellow-600 text-black font-bold px-4 py-2 min-h-[44px] rounded items-center transition">
                 <Phone className="w-4 h-4 mr-2" />
                 APPELER MAINTENANT
               </Link>
