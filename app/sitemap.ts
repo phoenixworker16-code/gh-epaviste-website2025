@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://gh-epaviste.fr'
-  const lastMod = new Date('2025-06-17')
+  const lastMod = new Date()
   const blogDate = new Date('2025-06-01')
 
   return [
