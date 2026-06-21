@@ -23,7 +23,7 @@ export default function SiteFooter() {
               style={{ height: '80px', width: 'auto' }}
               loading="lazy"
             />
-            <p className="text-gray-400 mb-4 text-sm max-w-sm leading-tight">
+            <p className="text-gray-300 mb-4 text-sm max-w-sm leading-tight">
               Spécialiste de l&apos;enlèvement d&apos;épaves gratuit en Île-de-France.{" "}
               Intervention rapide, service professionnel, et recyclage respectueux de l&apos;environnement.
             </p>
@@ -90,7 +90,7 @@ export default function SiteFooter() {
                 <li key={idx}>
                   <Link
                     href={link.href}
-                    className="py-1 text-gray-400 hover:text-yellow-500 transition-all duration-300 flex items-center group"
+                    className="py-1 text-gray-300 hover:text-yellow-500 transition-all duration-300 flex items-center group"
                   >
                     <span className="w-0 overflow-hidden text-yellow-500 transition-all duration-300 group-hover:w-3 group-hover:mr-1.5">
                       ▸
@@ -108,7 +108,7 @@ export default function SiteFooter() {
               <span className="w-1 h-5 bg-yellow-500 rounded-sm"></span>
               Contact &amp; Horaires
             </h3>
-            <div className="lg:col-span-4 text-gray-300 text-sm space-y-4">
+            <ul className="space-y-2 text-gray-300 text-sm">
               <li className="flex items-start gap-2 hover:text-white transition-colors">
                 <Phone className="w-3.5 h-3.5 text-yellow-500 mt-1 flex-shrink-0" />
                 <div>
