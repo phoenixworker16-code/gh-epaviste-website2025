@@ -174,6 +174,21 @@ export default function SiteFooter() {
 
         </div>
 
+        {/* Zones d'intervention SEO */}
+        <div className="border-t border-gray-800/60 pt-6 mt-8 mb-2">
+          <p className="text-gray-400 text-sm text-center leading-relaxed">
+            <span className="font-semibold text-gray-300">Nos zones d'intervention :</span>{" "}
+            <Link href="/enlevement-epave-paris" className="hover:text-yellow-500 transition-colors">Épaviste 75</Link> |{" "}
+            <Link href="/enlevement-epave-seine-et-marne" className="hover:text-yellow-500 transition-colors">Épaviste 77</Link> |{" "}
+            <Link href="/enlevement-epave-yvelines" className="hover:text-yellow-500 transition-colors">Épaviste 78</Link> |{" "}
+            <Link href="/enlevement-epave-essonne" className="hover:text-yellow-500 transition-colors">Épaviste 91</Link> |{" "}
+            <Link href="/enlevement-epave-hauts-de-seine" className="hover:text-yellow-500 transition-colors">Épaviste 92</Link> |{" "}
+            <Link href="/enlevement-epave-seine-saint-denis" className="hover:text-yellow-500 transition-colors">Épaviste 93</Link> |{" "}
+            <Link href="/enlevement-epave-val-de-marne" className="hover:text-yellow-500 transition-colors">Épaviste 94</Link> |{" "}
+            <Link href="/enlevement-epave-val-d-oise" className="hover:text-yellow-500 transition-colors">Épaviste 95</Link>
+          </p>
+        </div>
+
         {/* Ligne Séparatrice & Copyright */}
         <div className="border-t border-gray-800/60 pt-4 mt-6 flex flex-col md:flex-row justify-between items-center gap-2 text-center md:text-left">
           <p className="text-gray-400 text-xs">
