@@ -3,6 +3,7 @@ import { HelpCircle } from "lucide-react"
 import BreadcrumbNav from "@/components/breadcrumb-nav"
 import ScrollToTop from "@/components/scroll-to-top"
 import { Metadata } from "next"
+import Link from "next/link"
 
 export const metadata: Metadata = {
   title: "Foire Aux Questions (FAQ) | GH Épaviste",
@@ -62,7 +63,7 @@ export default function FaqPage() {
                     <a href="tel:+33753120793" className="text-yellow-500 hover:text-yellow-600 font-bold">
                       07 53 12 07 93
                     </a>
-                    {" "}ou via notre <a href="/formulaire" className="text-yellow-500 hover:text-yellow-600 font-bold">formulaire de contact</a>.
+                    {" "}ou via notre <Link href="/formulaire" className="text-yellow-500 hover:text-yellow-600 font-bold">formulaire de contact</Link>.
                   </p>
                 </section>
                 <section>
