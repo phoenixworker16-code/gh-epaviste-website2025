@@ -8,12 +8,17 @@ import villes from "@/data/villes.json"
 
 export function generateStaticParams() {
   return villes.map((ville) => ({
-    slug: ville.slug,
+    slug: `epaviste-gratuit-${ville.slug}`,
   }))
 }
 
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
-  const ville = villes.find((v) => v.slug === params.slug)
+  if (!params.slug.startsWith('epaviste-gratuit-')) {
+    return {}
+  }
+
+  const citySlug = params.slug.replace('epaviste-gratuit-', '')
+  const ville = villes.find((v) => v.slug === citySlug)
   
   if (!ville) {
     return {}
@@ -44,13 +49,18 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 }
 
 export default function VillePage({ params }: { params: { slug: string } }) {
-  const ville = villes.find((v) => v.slug === params.slug)
+  if (!params.slug.startsWith('epaviste-gratuit-')) {
+    notFound()
+  }
+
+  const citySlug = params.slug.replace('epaviste-gratuit-', '')
+  const ville = villes.find((v) => v.slug === citySlug)
   
   if (!ville) {
     notFound()
   }
 
-  const index = villes.findIndex((v) => v.slug === params.slug)
+  const index = villes.findIndex((v) => v.slug === citySlug)
   const introVariant = index % 3
 
   const jsonLd = {
