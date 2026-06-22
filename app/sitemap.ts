@@ -1,11 +1,12 @@
 import { MetadataRoute } from 'next'
+import villes from '@/data/villes.json'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://gh-epaviste.fr'
   const lastMod = new Date()
   const blogDate = new Date('2025-06-01')
 
-  return [
+  const baseRoutes: MetadataRoute.Sitemap = [
     // ── Pages principales ──────────────────────────────────
     { url: baseUrl, lastModified: lastMod, changeFrequency: 'monthly', priority: 1 },
     { url: `${baseUrl}/services`, lastModified: lastMod, changeFrequency: 'monthly', priority: 0.9 },
@@ -41,4 +42,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/mentions-legales`, lastModified: lastMod, changeFrequency: 'yearly', priority: 0.3 },
     { url: `${baseUrl}/confidentialite`, lastModified: lastMod, changeFrequency: 'yearly', priority: 0.3 },
   ]
+
+  const villesRoutes: MetadataRoute.Sitemap = villes.map((ville) => ({
+    url: `${baseUrl}/epaviste-gratuit-${ville.slug}`,
+    lastModified: lastMod,
+    changeFrequency: 'monthly',
+    priority: 0.8,
+  }))
+
+  return [...baseRoutes, ...villesRoutes]
 }

@@ -3,7 +3,7 @@ import { Metadata } from "next"
 import { Phone, CheckCircle, MapPin } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-
+import { CitiesList } from "@/components/cities-list"
 export const metadata: Metadata = {
   title: "Enlèvement d'épave gratuit dans le Val-d'Oise (95) - Épaviste Agréé",
   description:
@@ -81,16 +81,7 @@ export default function EpavisteValDOise() {
           </div>
         </div>
       </section>
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl font-bold text-center mb-8 text-black">Principales villes couvertes dans le Val-d&apos;Oise</h2>
-          <div className="flex flex-wrap gap-3 justify-center">
-            {cities.map((city) => (
-              <span key={city} className="bg-yellow-50 border border-yellow-200 text-yellow-700 px-4 py-2 rounded-full font-medium text-sm">{city}</span>
-            ))}
-          </div>
-        </div>
-      </section>
+      <CitiesList depNumber="95" departementName="Val-d'Oise" />
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4 max-w-3xl">
           <h2 className="text-3xl font-bold text-center mb-10 text-black">Questions fréquentes — Val-d&apos;Oise (95)</h2>

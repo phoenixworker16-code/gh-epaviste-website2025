@@ -3,7 +3,7 @@ import { Metadata } from "next"
 import { Phone, CheckCircle, MapPin } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-
+import { CitiesList } from "@/components/cities-list"
 export const metadata: Metadata = {
   title: "Enlèvement d'épave gratuit à Paris (75) - Intervention 24h/24",
   description:
@@ -110,6 +110,8 @@ export default function EpavisteParis() {
           </div>
         </div>
       </section>
+
+      <CitiesList depNumber="75" departementName="Paris" />
 
       {/* FAQ */}
       <section className="py-16 bg-gray-50">

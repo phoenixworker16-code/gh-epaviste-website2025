@@ -3,7 +3,7 @@ import { Metadata } from "next"
 import { Phone, CheckCircle, MapPin } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-
+import { CitiesList } from "@/components/cities-list"
 export const metadata: Metadata = {
   title: "Épaviste agréé en Seine-et-Marne (77) : Enlèvement VHU gratuit",
   description:
@@ -94,18 +94,7 @@ export default function EpavisteSeineMarne() {
         </div>
       </section>
 
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl font-bold text-center mb-8 text-black">Principales villes couvertes en Seine-et-Marne</h2>
-          <div className="flex flex-wrap gap-3 justify-center">
-            {cities.map((city) => (
-              <span key={city} className="bg-yellow-50 border border-yellow-200 text-yellow-700 px-4 py-2 rounded-full font-medium text-sm">
-                {city}
-              </span>
-            ))}
-          </div>
-        </div>
-      </section>
+      <CitiesList depNumber="77" departementName="Seine-et-Marne" />
 
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4 max-w-3xl">
