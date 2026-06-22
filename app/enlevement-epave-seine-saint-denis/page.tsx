@@ -7,12 +7,12 @@ import { CitiesList } from "@/components/cities-list"
 export const metadata: Metadata = {
   title: "Épaviste 93 - Enlèvement gratuit de voitures et utilitaires (Seine-Saint-Denis)",
   description:
-    "Votre véhicule a subi un sinistre, est gravement accidenté ou ne passe plus le contrôle technique ? Notre centre d'appel planifie votre enlèvement de VHU gratuit partout en Seine-Saint-Denis.",
+    "Votre véhicule a subi un sinistre, est gravement accidenté ou ne passe plus le contrôle technique ? Notre équipe planifie votre enlèvement d'épave gratuit partout en Seine-Saint-Denis.",
   alternates: { canonical: "https://gh-epaviste.fr/enlevement-epave-seine-saint-denis" },
   robots: { index: true, follow: true },
   openGraph: {
     title: "Épaviste 93 - Enlèvement gratuit de voitures et utilitaires (Seine-Saint-Denis)",
-    description: "Votre véhicule a subi un sinistre, est gravement accidenté ou ne passe plus le contrôle technique ? Notre centre d'appel planifie votre enlèvement de VHU gratuit partout en Seine-Saint-Denis.",
+    description: "Votre véhicule a subi un sinistre, est gravement accidenté ou ne passe plus le contrôle technique ? Notre équipe planifie votre enlèvement d'épave gratuit partout en Seine-Saint-Denis.",
     url: "https://gh-epaviste.fr/enlevement-epave-seine-saint-denis",
     type: "website",
     images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Épaviste 93 - Enlèvement gratuit de voitures et utilitaires (Seine-Saint-Denis)" }],
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Épaviste 93 - Enlèvement gratuit de voitures et utilitaires (Seine-Saint-Denis)",
     description:
-      "Votre véhicule a subi un sinistre, est gravement accidenté ou ne passe plus le contrôle technique ? Notre centre d'appel planifie votre enlèvement de VHU gratuit partout en Seine-Saint-Denis.",
+      "Votre véhicule a subi un sinistre, est gravement accidenté ou ne passe plus le contrôle technique ? Notre équipe planifie votre enlèvement d'épave gratuit partout en Seine-Saint-Denis.",
     images: ["/og-image.jpg"],
   },
 }
@@ -53,7 +53,7 @@ export default function EpavisteSeineSaintDenis() {
             et utilitaires (Seine-Saint-Denis)
           </h1>
           <p className="text-xl text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed">
-            Votre véhicule a subi un sinistre, est gravement accidenté ou ne passe plus le contrôle technique ? Notre centre d&apos;appel planifie votre enlèvement de VHU gratuit partout en Seine-Saint-Denis. Nous connaissons parfaitement le secteur du 93 et assurons des rotations continues autour de Saint-Denis, Montreuil, Aulnay-sous-Bois, Aubervilliers et Drancy. Appelez-nous à toute heure du jour ou de la nuit : nous remorquons votre épave et vous aidons à clôturer votre dossier d&apos;assurance instantanément.
+            Votre véhicule a subi un sinistre, est gravement accidenté ou ne passe plus le contrôle technique ? Notre équipe planifie votre enlèvement d&apos;épave gratuit partout en Seine-Saint-Denis. Nous connaissons parfaitement le secteur du 93 et assurons des rotations continues autour de Saint-Denis, Montreuil, Aulnay-sous-Bois, Aubervilliers et Drancy. Appelez-nous à toute heure du jour ou de la nuit : nous remorquons votre épave et vous aidons à clôturer votre dossier d&apos;assurance instantanément.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/formulaire"><Button size="lg" className="bg-yellow-500 hover:bg-yellow-400 text-black font-bold px-8">Demander un Enlèvement Gratuit</Button></Link>

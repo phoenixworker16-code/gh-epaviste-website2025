@@ -3,7 +3,7 @@ import FormulaireContent from "@/components/formulaire-content"
 
 export const metadata: Metadata = {
   title: "Formulaire d'Enlèvement d'Épave Gratuit | GH Épaviste",
-  description: "Demandez l'enlèvement gratuit de votre véhicule hors d'usage (VHU) en Île-de-France. Remplissez notre formulaire en ligne ou appelez le 07 53 12 07 93.",
+  description: "Demandez l'enlèvement gratuit de votre véhicule hors d'usage en Île-de-France. Remplissez notre formulaire en ligne ou appelez le 07 53 12 07 93.",
   alternates: { canonical: "https://gh-epaviste.fr/formulaire" },
   robots: { index: true, follow: true },
   openGraph: {

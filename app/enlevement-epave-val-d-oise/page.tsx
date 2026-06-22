@@ -53,7 +53,7 @@ export default function EpavisteValDOise() {
             Épaviste Agréé
           </h1>
           <p className="text-xl text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed">
-            Ne laissez plus un véhicule hors d&apos;usage occuper inutilement votre espace privé ou public dans le 95. GH Épaviste déploie ses dépanneuses dans tout le Val-d&apos;Oise pour retirer gratuitement vos autos, motos ou camionnettes usagées. Nos équipes se déplacent quotidiennement sur Argenteuil, Sarcelles, Cergy, Garges-lès-Gonesse et Franconville. Nous nous chargeons de convoyer votre ancien véhicule vers un centre de dépollution agréé VHU, le tout sans débourser un seul centime.
+            Ne laissez plus un véhicule hors d&apos;usage occuper inutilement votre espace privé ou public dans le 95. GH Épaviste déploie ses dépanneuses dans tout le Val-d&apos;Oise pour retirer gratuitement vos autos, motos ou camionnettes usagées. Nos équipes se déplacent quotidiennement sur Argenteuil, Sarcelles, Cergy, Garges-lès-Gonesse et Franconville. Nous nous chargeons de confier votre ancien véhicule à notre filière de recyclage automobile partenaire, le tout sans débourser un seul centime.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/formulaire"><Button size="lg" className="bg-yellow-500 hover:bg-yellow-400 text-black font-bold px-8">Demander un Enlèvement Gratuit</Button></Link>

@@ -51,7 +51,7 @@ export default function ArticleEnleverEpaveGratuitement() {
           <p className="text-lg">Vous avez un vieux véhicule qui ne roule plus, une voiture accidentée ou une épave qui prend la place dans votre garage ou votre cour ? Bonne nouvelle : il est tout à fait possible de faire enlever ce véhicule <strong>gratuitement et légalement</strong>.</p>
 
           <h2 className="text-2xl font-bold text-black mt-8">Qu'est-ce qu'une épave ?</h2>
-          <p>Une épave au sens réglementaire désigne un <strong>véhicule hors d'usage (VHU)</strong> : un véhicule que son propriétaire souhaite abandonner ou qui ne peut plus circuler de façon normale. Cela inclut les voitures accidentées, brûlées, en panne irréparable, ou tout simplement trop vieilles pour être réparées.</p>
+          <p>Une épave au sens réglementaire désigne un <strong>véhicule hors d'usage</strong> : un véhicule que son propriétaire souhaite abandonner ou qui ne peut plus circuler de façon normale. Cela inclut les voitures accidentées, brûlées, en panne irréparable, ou tout simplement trop vieilles pour être réparées.</p>
 
           <h2 className="text-2xl font-bold text-black mt-8">Étapes pour faire enlever votre épave gratuitement</h2>
           <div className="space-y-4">

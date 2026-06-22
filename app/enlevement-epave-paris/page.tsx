@@ -7,12 +7,12 @@ import { CitiesList } from "@/components/cities-list"
 export const metadata: Metadata = {
   title: "Enlèvement d'épave gratuit à Paris (75) - Intervention 24h/24",
   description:
-    "Besoin de libérer rapidement une place de stationnement ou un garage dans la capitale ? GH Épaviste intervient dans tous les arrondissements de Paris (du 1er au 20ème) pour l'enlèvement gratuit de vos véhicules hors d'usage (VHU).",
+    "Besoin de libérer rapidement une place de stationnement ou un garage dans la capitale ? GH Épaviste intervient dans tous les arrondissements de Paris (du 1er au 20ème) pour l'enlèvement gratuit de vos véhicules hors d'usage.",
   alternates: { canonical: "https://gh-epaviste.fr/enlevement-epave-paris" },
   robots: { index: true, follow: true },
   openGraph: {
     title: "Enlèvement d'épave gratuit à Paris (75) - Intervention 24h/24",
-    description: "Besoin de libérer rapidement une place de stationnement ou un garage dans la capitale ? GH Épaviste intervient dans tous les arrondissements de Paris (du 1er au 20ème) pour l'enlèvement gratuit de vos véhicules hors d'usage (VHU).",
+    description: "Besoin de libérer rapidement une place de stationnement ou un garage dans la capitale ? GH Épaviste intervient dans tous les arrondissements de Paris (du 1er au 20ème) pour l'enlèvement gratuit de vos véhicules hors d'usage.",
     url: "https://gh-epaviste.fr/enlevement-epave-paris",
     type: "website",
     images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Enlèvement d'épave gratuit à Paris (75)" }],
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Enlèvement d'épave gratuit à Paris (75) - Intervention 24h/24",
     description:
-      "Besoin de libérer rapidement une place de stationnement ou un garage dans la capitale ? GH Épaviste intervient dans tous les arrondissements de Paris (du 1er au 20ème) pour l'enlèvement gratuit de vos véhicules hors d'usage (VHU).",
+      "Besoin de libérer rapidement une place de stationnement ou un garage dans la capitale ? GH Épaviste intervient dans tous les arrondissements de Paris (du 1er au 20ème) pour l'enlèvement gratuit de vos véhicules hors d'usage.",
     images: ["/og-image.jpg"],
   },
 }
@@ -53,7 +53,7 @@ export default function EpavisteParis() {
             Intervention 24h/24
           </h1>
           <p className="text-xl text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed">
-            Besoin de libérer rapidement une place de stationnement ou un garage dans la capitale ? GH Épaviste intervient dans tous les arrondissements de Paris (du 1er au 20ème) pour l&apos;enlèvement gratuit de vos véhicules hors d&apos;usage (VHU). Que votre voiture soit bloquée dans un parking souterrain étroit, en panne en bord de route ou accidentée, notre matériel spécialisé nous permet d&apos;agir rapidement malgré les contraintes de circulation parisiennes. Nous gérons l&apos;intégralité des démarches administratives sur place pour un remorquage écoresponsable et rapide.
+            Besoin de libérer rapidement une place de stationnement ou un garage dans la capitale ? GH Épaviste intervient dans tous les arrondissements de Paris (du 1er au 20ème) pour l&apos;enlèvement gratuit de vos véhicules hors d&apos;usage. Que votre voiture soit bloquée dans un parking souterrain étroit, en panne en bord de route ou accidentée, notre matériel spécialisé nous permet d&apos;agir rapidement malgré les contraintes de circulation parisiennes. Nous gérons l&apos;intégralité des démarches administratives sur place pour un remorquage écoresponsable et rapide.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/formulaire">

@@ -172,7 +172,7 @@ export default function VillePage({ params }: { params: { slug: string } }) {
                 </div>
                 <h3 className="font-bold text-black text-xl mb-3">Démarches Simplifiées</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Nous nous occupons de remplir le certificat de cession et d'envoyer le véhicule vers un centre VHU agréé.
+                  Nous nous occupons de remplir le certificat de cession et de confier votre véhicule à une filière de recyclage automobile partenaire.
                 </p>
               </CardContent>
             </Card>
@@ -241,7 +241,7 @@ export default function VillePage({ params }: { params: { slug: string } }) {
                 Dois-je payer quelque chose pour le remorquage depuis le {ville.depNumber} ?
               </h3>
               <p className="text-gray-600 pl-9">
-                Absolument rien. Notre service est 100% gratuit. L'enlèvement, le transport et la destruction en centre VHU agréé n'entraînent aucun frais pour vous.
+                Absolument rien. Notre service est 100% gratuit. L'enlèvement, le transport et la prise en charge de votre véhicule n'entraînent aucun frais pour vous.
               </p>
             </div>
             
@@ -251,7 +251,7 @@ export default function VillePage({ params }: { params: { slug: string } }) {
                 Est-ce que vous fournissez le certificat de destruction à {ville.ville} ?
               </h3>
               <p className="text-gray-600 pl-9">
-                Oui. Lors de l'enlèvement, nous remplissons avec vous un certificat de cession pour destruction. Vous recevrez ensuite le certificat de destruction final une fois le véhicule traité par le centre VHU.
+                Oui. Lors de l'enlèvement, nous remplissons avec vous un certificat de cession pour destruction. Vous recevrez ensuite le certificat de destruction final une fois le véhicule pris en charge par notre filière partenaire.
               </p>
             </div>
           </div>

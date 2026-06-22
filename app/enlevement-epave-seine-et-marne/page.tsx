@@ -5,13 +5,13 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { CitiesList } from "@/components/cities-list"
 export const metadata: Metadata = {
-  title: "Épaviste agréé en Seine-et-Marne (77) : Enlèvement VHU gratuit",
+  title: "Épaviste professionnel en Seine-et-Marne (77) : Enlèvement d'épave gratuit",
   description:
     "Vous possédez une vieille voiture qui encombre votre jardin ou votre entreprise en Seine-et-Marne ? Notre équipe de remorquage quadrille le 77 au quotidien pour vous débarrasser gratuitement de tout véhicule roulant ou non.",
   alternates: { canonical: "https://gh-epaviste.fr/enlevement-epave-seine-et-marne" },
   robots: { index: true, follow: true },
   openGraph: {
-    title: "Épaviste agréé en Seine-et-Marne (77) : Enlèvement VHU gratuit",
+    title: "Épaviste professionnel en Seine-et-Marne (77) : Enlèvement d'épave gratuit",
     description: "Vous possédez une vieille voiture qui encombre votre jardin ou votre entreprise en Seine-et-Marne ? Notre équipe de remorquage quadrille le 77 au quotidien pour vous débarrasser gratuitement de tout véhicule roulant ou non.",
     url: "https://gh-epaviste.fr/enlevement-epave-seine-et-marne",
     type: "website",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Épaviste agréé en Seine-et-Marne (77) : Enlèvement VHU gratuit",
+    title: "Épaviste professionnel en Seine-et-Marne (77) : Enlèvement d'épave gratuit",
     description:
       "Vous possédez une vieille voiture qui encombre votre jardin ou votre entreprise en Seine-et-Marne ? Notre équipe de remorquage quadrille le 77 au quotidien pour vous débarrasser gratuitement de tout véhicule roulant ou non.",
     images: ["/og-image.jpg"],
@@ -51,7 +51,7 @@ export default function EpavisteSeineMarne() {
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
             <span className="text-yellow-500">Épaviste agréé en Seine-et-Marne (77) :</span><br />
-            Enlèvement VHU gratuit
+            Enlèvement d&apos;épave gratuit
           </h1>
           <p className="text-xl text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed">
             Vous possédez une vieille voiture qui encombre votre jardin ou votre entreprise en Seine-et-Marne ? Notre équipe de remorquage quadrille le 77 au quotidien pour vous débarrasser gratuitement de tout véhicule roulant ou non. Grâce à un accès rapide via les axes A4 et A5, nous garantissons des interventions fluides et rapides dans de nombreuses communes comme Meaux, Chelles, Melun, Pontault-Combault et Savigny-le-Temple. Ne laissez plus un véhicule hors d&apos;usage polluer votre espace, contactez-nous pour une prise en charge de A à Z.

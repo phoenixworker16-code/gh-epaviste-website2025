@@ -261,7 +261,7 @@ export default function ServicesPage() {
           <div className="container mx-auto px-4">
             <h2 id="intervention-zone-heading" className="text-3xl font-bold text-center mb-4 text-black">Zone d'Intervention</h2>
             <p className="text-center text-gray-600 max-w-2xl mx-auto mb-10 text-base">
-              Besoin d'un <strong>épaviste en Île-de-France</strong> ? Nous assurons l'<strong>enlèvement d'épave gratuit</strong> et l'<strong>enlèvement de voiture hors d'usage</strong> (VHU) sous 24h. Nous intervenons dans tous les départements d'Île-de-France et confions chaque véhicule aux filières spécialisées de traitement conformément à la réglementation.
+              Besoin d'un <strong>épaviste en Île-de-France</strong> ? Nous assurons l'<strong>enlèvement d'épave gratuit</strong> et la <strong>reprise de véhicules hors d'usage</strong> sous 24h. Nous intervenons dans tous les départements d'Île-de-France et confions chaque véhicule aux filières spécialisées de traitement conformément à la réglementation.
             </p>
             <div className="max-w-4xl mx-auto">
               <Card>
@@ -292,7 +292,7 @@ export default function ServicesPage() {
                   <div className="text-center">
                     <p className="text-gray-600 mb-4">
                       Intervention rapide et gratuite dans <strong>toute l'Île-de-France</strong>, y compris les zones urbaines denses,
-                      périurbaines et rurales. Nous gérons l'intégralité du processus d'enlèvement de votre véhicule hors d'usage (VHU).
+                      périurbaines et rurales. Nous gérons l'intégralité du processus d'enlèvement de votre véhicule hors d'usage.
                     </p>
                     <div className="flex justify-center flex-wrap gap-2">
                       <Badge className="bg-green-100 text-green-800">Zones Urbaines</Badge>

@@ -76,7 +76,7 @@ export function StructuredData({ type, data }: StructuredDataProps) {
           ...baseData,
           '@type': 'WebPage',
           name: data?.title || 'GH Épaviste - Enlèvement Gratuit d\'Épaves',
-          description: data?.description || 'Service d\'enlèvement gratuit et rapide d\'épaves agréé VHU en Île-de-France',
+          description: data?.description || 'Service d\'enlèvement gratuit et rapide d\'épaves professionnel en Île-de-France',
           url: data?.url || 'https://gh-epaviste.fr',
           inLanguage: 'fr-FR',
           isPartOf: {
