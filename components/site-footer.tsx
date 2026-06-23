@@ -166,14 +166,14 @@ export default function SiteFooter() {
         <div className="border-t border-gray-800/60 pt-4 mt-4 mb-2">
           <div className="flex flex-wrap justify-center items-center gap-x-2 gap-y-2 text-gray-300 text-xs sm:text-sm text-center">
             <span className="py-2 font-semibold text-[#FFC42B]">Nos zones d&apos;intervention en Île-de-France :</span>
-            <Link href="/enlevement-epave-paris" className="whitespace-nowrap px-2 py-0.5 rounded transition-colors hover:bg-white hover:text-black">Épaviste Paris 75</Link> <span className="hidden sm:inline text-gray-600">|</span>
-            <Link href="/enlevement-epave-seine-et-marne" className="whitespace-nowrap px-2 py-0.5 rounded transition-colors hover:bg-white hover:text-black">Épaviste Seine-et-Marne 77</Link> <span className="hidden sm:inline text-gray-600">|</span>
-            <Link href="/enlevement-epave-yvelines" className="whitespace-nowrap px-2 py-0.5 rounded transition-colors hover:bg-white hover:text-black">Épaviste Yvelines 78</Link> <span className="hidden sm:inline text-gray-600">|</span>
-            <Link href="/enlevement-epave-essonne" className="whitespace-nowrap px-2 py-0.5 rounded transition-colors hover:bg-white hover:text-black">Épaviste Essonne 91</Link> <span className="hidden sm:inline text-gray-600">|</span>
-            <Link href="/enlevement-epave-hauts-de-seine" className="whitespace-nowrap px-2 py-0.5 rounded transition-colors hover:bg-white hover:text-black">Épaviste Hauts-de-Seine 92</Link> <span className="hidden sm:inline text-gray-600">|</span>
-            <Link href="/enlevement-epave-seine-saint-denis" className="whitespace-nowrap px-2 py-0.5 rounded transition-colors hover:bg-white hover:text-black">Épaviste Seine-Saint-Denis 93</Link> <span className="hidden sm:inline text-gray-600">|</span>
-            <Link href="/enlevement-epave-val-de-marne" className="whitespace-nowrap px-2 py-0.5 rounded transition-colors hover:bg-white hover:text-black">Épaviste Val-de-Marne 94</Link> <span className="hidden sm:inline text-gray-600">|</span>
-            <Link href="/enlevement-epave-val-d-oise" className="whitespace-nowrap px-2 py-0.5 rounded transition-colors hover:bg-white hover:text-black">Épaviste Val-d&apos;Oise 95</Link>
+            <Link href="/enlevement-epave-paris" className="whitespace-nowrap px-2 py-1 rounded transition-colors hover:bg-white hover:text-black">Épaviste Paris 75</Link> <span className="hidden sm:inline text-gray-600">|</span>
+            <Link href="/enlevement-epave-seine-et-marne" className="whitespace-nowrap px-2 py-1 rounded transition-colors hover:bg-white hover:text-black">Épaviste Seine-et-Marne 77</Link> <span className="hidden sm:inline text-gray-600">|</span>
+            <Link href="/enlevement-epave-yvelines" className="whitespace-nowrap px-2 py-1 rounded transition-colors hover:bg-white hover:text-black">Épaviste Yvelines 78</Link> <span className="hidden sm:inline text-gray-600">|</span>
+            <Link href="/enlevement-epave-essonne" className="whitespace-nowrap px-2 py-1 rounded transition-colors hover:bg-white hover:text-black">Épaviste Essonne 91</Link> <span className="hidden sm:inline text-gray-600">|</span>
+            <Link href="/enlevement-epave-hauts-de-seine" className="whitespace-nowrap px-2 py-1 rounded transition-colors hover:bg-white hover:text-black">Épaviste Hauts-de-Seine 92</Link> <span className="hidden sm:inline text-gray-600">|</span>
+            <Link href="/enlevement-epave-seine-saint-denis" className="whitespace-nowrap px-2 py-1 rounded transition-colors hover:bg-white hover:text-black">Épaviste Seine-Saint-Denis 93</Link> <span className="hidden sm:inline text-gray-600">|</span>
+            <Link href="/enlevement-epave-val-de-marne" className="whitespace-nowrap px-2 py-1 rounded transition-colors hover:bg-white hover:text-black">Épaviste Val-de-Marne 94</Link> <span className="hidden sm:inline text-gray-600">|</span>
+            <Link href="/enlevement-epave-val-d-oise" className="whitespace-nowrap px-2 py-1 rounded transition-colors hover:bg-white hover:text-black">Épaviste Val-d&apos;Oise 95</Link>
           </div>
         </div>
 
