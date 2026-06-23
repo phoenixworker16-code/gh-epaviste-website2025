@@ -10,6 +10,7 @@ import MobileNav from "@/components/mobile-nav"
 import AnalyticsLoader from "@/components/analytics-loader"
 import WhatsAppFloat from "@/components/whatsapp-float"
 import ScrollToTop from "@/components/scroll-to-top"
+import { headers } from "next/headers"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -92,6 +93,9 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const headersList = headers()
+  const nonce = headersList.get('x-nonce') || undefined
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
@@ -140,6 +144,7 @@ export default function RootLayout({
       <body className={`${inter.className} antialiased`}>
         <script
           type="application/ld+json"
+          nonce={nonce}
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
         <header className="bg-white border-b border-gray-200 sticky top-0 z-50">

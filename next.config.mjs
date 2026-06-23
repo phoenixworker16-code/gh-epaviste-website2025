@@ -67,20 +67,20 @@ const nextConfig = {
             key: "Strict-Transport-Security",
             value: "max-age=63072000; includeSubDomains; preload",
           },
+          // ─── COOP : isole le contexte de navigation, protège contre Spectre ──
           {
-            key: "Content-Security-Policy",
-            value: [
-              "default-src 'self'",
-              `script-src 'self' 'unsafe-inline'${process.env.NODE_ENV === 'development' ? " 'unsafe-eval'" : ""} https://www.googletagmanager.com https://www.google-analytics.com`,
-              "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
-              "font-src 'self' https://fonts.gstatic.com",
-              "img-src 'self' data: https:",
-              "connect-src 'self' https://www.google-analytics.com https://analytics.google.com",
-              "frame-src 'none'",
-              "object-src 'none'",
-              "base-uri 'self'",
-              "form-action 'self'",
-            ].join("; "),
+            key: "Cross-Origin-Opener-Policy",
+            value: "same-origin-allow-popups", // "same-origin" bloque les popups OAuth/WhatsApp
+          },
+          // ─── CORP : cross-origin car le site charge Google Fonts, GA, images CDN ──
+          {
+            key: "Cross-Origin-Resource-Policy",
+            value: "cross-origin",
+          },
+          // ─── COEP : active l'isolation cross-origin (SharedArrayBuffer, etc.) ──
+          {
+            key: "Cross-Origin-Embedder-Policy",
+            value: "unsafe-none", // "require-corp" casserait Google Fonts / Analytics
           },
         ],
       },

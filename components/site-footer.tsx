@@ -4,13 +4,13 @@ import { Phone, MapPin, Globe } from "lucide-react"
 
 export default function SiteFooter() {
   return (
-    <footer className="bg-[#0a0a0a] text-white pt-16 pb-8 border-t border-gray-800 relative overflow-hidden">
+    <footer className="bg-[#0a0a0a] text-white pt-8 pb-4 border-t border-gray-800 relative overflow-hidden">
       {/* Lueur de fond décorative subtile */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-[1px] bg-gradient-to-r from-transparent via-yellow-500/50 to-transparent"></div>
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[300px] bg-yellow-500/5 blur-[120px] rounded-full pointer-events-none"></div>
 
       <div className="container mx-auto px-6 relative z-10 font-light leading-snug">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6 lg:gap-8 mb-4">
 
           {/* Colonne 1 : Marque (Prend 4 colonnes sur 12) */}
           <div className="lg:col-span-4">
@@ -97,16 +97,16 @@ export default function SiteFooter() {
               Contact &amp; Horaires
             </h3>
             <ul className="space-y-2 text-gray-300 text-sm">
-              <li className="flex items-start gap-2 hover:text-white transition-colors">
-                <Phone className="w-3.5 h-3.5 text-yellow-500 mt-1 flex-shrink-0" />
+              <li className="flex items-start gap-2">
                 <div>
                   <a
                     href="tel:+33753120793"
-                    className="block font-bold text-base text-white hover:text-yellow-500 transition-colors"
+                    className="inline-flex items-center gap-2 border-2 border-[#FFC42B] text-[#FFC42B] px-4 py-2 rounded-lg hover:bg-[#FFC42B] hover:text-black transition-all duration-200 font-bold text-sm"
                   >
+                    <Phone className="w-3.5 h-3.5" />
                     07 53 12 07 93
                   </a>
-                  <span className="text-xs">Disponible 24h/24 et 7j/7</span>
+                  <span className="block text-xs text-gray-400 mt-1">Disponible 24h/24 et 7j/7</span>
                 </div>
               </li>
               <li className="flex items-start gap-2 hover:text-white transition-colors">
@@ -163,22 +163,22 @@ export default function SiteFooter() {
         </div>
 
         {/* Zones d'intervention SEO */}
-        <div className="border-t border-gray-800/60 pt-6 mt-8 mb-2">
+        <div className="border-t border-gray-800/60 pt-4 mt-4 mb-2">
           <div className="flex flex-wrap justify-center items-center gap-x-2 gap-y-2 text-gray-300 text-xs sm:text-sm text-center">
             <span className="py-2 font-semibold text-[#FFC42B]">Nos zones d&apos;intervention en Île-de-France :</span>
-            <Link href="/enlevement-epave-paris" className="hover:text-yellow-500 transition-colors whitespace-nowrap py-2 px-1">Épaviste Paris 75</Link> <span className="hidden sm:inline text-gray-600">|</span>
-            <Link href="/enlevement-epave-seine-et-marne" className="hover:text-yellow-500 transition-colors whitespace-nowrap py-2 px-1">Épaviste Seine-et-Marne 77</Link> <span className="hidden sm:inline text-gray-600">|</span>
-            <Link href="/enlevement-epave-yvelines" className="hover:text-yellow-500 transition-colors whitespace-nowrap py-2 px-1">Épaviste Yvelines 78</Link> <span className="hidden sm:inline text-gray-600">|</span>
-            <Link href="/enlevement-epave-essonne" className="hover:text-yellow-500 transition-colors whitespace-nowrap py-2 px-1">Épaviste Essonne 91</Link> <span className="hidden sm:inline text-gray-600">|</span>
-            <Link href="/enlevement-epave-hauts-de-seine" className="hover:text-yellow-500 transition-colors whitespace-nowrap py-2 px-1">Épaviste Hauts-de-Seine 92</Link> <span className="hidden sm:inline text-gray-600">|</span>
-            <Link href="/enlevement-epave-seine-saint-denis" className="hover:text-yellow-500 transition-colors whitespace-nowrap py-2 px-1">Épaviste Seine-Saint-Denis 93</Link> <span className="hidden sm:inline text-gray-600">|</span>
-            <Link href="/enlevement-epave-val-de-marne" className="hover:text-yellow-500 transition-colors whitespace-nowrap py-2 px-1">Épaviste Val-de-Marne 94</Link> <span className="hidden sm:inline text-gray-600">|</span>
-            <Link href="/enlevement-epave-val-d-oise" className="hover:text-yellow-500 transition-colors whitespace-nowrap py-2 px-1">Épaviste Val-d'Oise 95</Link>
+            <Link href="/enlevement-epave-paris" className="whitespace-nowrap px-2 py-0.5 rounded transition-colors hover:bg-white hover:text-black">Épaviste Paris 75</Link> <span className="hidden sm:inline text-gray-600">|</span>
+            <Link href="/enlevement-epave-seine-et-marne" className="whitespace-nowrap px-2 py-0.5 rounded transition-colors hover:bg-white hover:text-black">Épaviste Seine-et-Marne 77</Link> <span className="hidden sm:inline text-gray-600">|</span>
+            <Link href="/enlevement-epave-yvelines" className="whitespace-nowrap px-2 py-0.5 rounded transition-colors hover:bg-white hover:text-black">Épaviste Yvelines 78</Link> <span className="hidden sm:inline text-gray-600">|</span>
+            <Link href="/enlevement-epave-essonne" className="whitespace-nowrap px-2 py-0.5 rounded transition-colors hover:bg-white hover:text-black">Épaviste Essonne 91</Link> <span className="hidden sm:inline text-gray-600">|</span>
+            <Link href="/enlevement-epave-hauts-de-seine" className="whitespace-nowrap px-2 py-0.5 rounded transition-colors hover:bg-white hover:text-black">Épaviste Hauts-de-Seine 92</Link> <span className="hidden sm:inline text-gray-600">|</span>
+            <Link href="/enlevement-epave-seine-saint-denis" className="whitespace-nowrap px-2 py-0.5 rounded transition-colors hover:bg-white hover:text-black">Épaviste Seine-Saint-Denis 93</Link> <span className="hidden sm:inline text-gray-600">|</span>
+            <Link href="/enlevement-epave-val-de-marne" className="whitespace-nowrap px-2 py-0.5 rounded transition-colors hover:bg-white hover:text-black">Épaviste Val-de-Marne 94</Link> <span className="hidden sm:inline text-gray-600">|</span>
+            <Link href="/enlevement-epave-val-d-oise" className="whitespace-nowrap px-2 py-0.5 rounded transition-colors hover:bg-white hover:text-black">Épaviste Val-d&apos;Oise 95</Link>
           </div>
         </div>
 
         {/* Ligne Séparatrice & Copyright */}
-        <div className="border-t border-gray-800/60 pt-4 mt-6 flex flex-col md:flex-row justify-between items-center gap-2 text-center md:text-left">
+        <div className="border-t border-gray-800/60 pt-3 mt-4 flex flex-col md:flex-row justify-between items-center gap-2 text-center md:text-left">
           <p className="text-gray-300 text-xs">
             &copy; {new Date().getFullYear()} GH Épaviste. Tous droits réservés.
           </p>
