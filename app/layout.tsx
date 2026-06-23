@@ -9,6 +9,7 @@ import SiteFooter from "@/components/site-footer"
 import MobileNav from "@/components/mobile-nav"
 import AnalyticsLoader from "@/components/analytics-loader"
 import WhatsAppFloat from "@/components/whatsapp-float"
+import ScrollToTop from "@/components/scroll-to-top"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -188,6 +189,7 @@ export default function RootLayout({
         </header>
         {children}
         <WhatsAppFloat />
+        <ScrollToTop />
         <SiteFooter />
         <AnalyticsLoader gaId="G-0SF8DFE0VW" />
       </body>
