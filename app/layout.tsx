@@ -98,7 +98,7 @@ export default function RootLayout({
 
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": "AutomotiveBusiness",
     "@id": "https://gh-epaviste.fr/#business",
     "name": "GH Épaviste",
     "description": "Service professionnel d'enlèvement d'épaves en Île-de-France. Enlèvement gratuit avec intervention rapide 24h/24 et 7j/7.",

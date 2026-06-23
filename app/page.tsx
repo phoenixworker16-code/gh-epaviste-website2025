@@ -85,7 +85,7 @@ export default function HomePage() {
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-black">
-              Pourquoi Choisir GH Épaviste ?
+              Pourquoi Choisir GH Épaviste pour votre Enlèvement Gratuit ?
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               <Card className="text-center hover:shadow-lg transition-shadow border-0 bg-white">
@@ -137,7 +137,7 @@ export default function HomePage() {
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-black">
-              Nous Enlevons Tout Type de Véhicules
+              Un Enlèvement Gratuit pour Tout Type d'Épave
             </h2>
             <p className="text-center text-gray-600 mb-12 text-lg">
               Quel que soit leur état : accidentés, brûlés, abandonnés
@@ -176,7 +176,7 @@ export default function HomePage() {
         <section className="py-16 bg-black text-white">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-              <span className="text-yellow-500">Votre Épave Enlevée</span> en 3 Étapes Simples
+              Votre <span className="text-yellow-500">Enlèvement d'Épave Gratuit</span> en 3 Étapes
             </h2>
             <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
               <div className="text-center">
@@ -209,7 +209,7 @@ export default function HomePage() {
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-black">
-              <span className="text-yellow-500">Intervention Gratuite</span> Partout en Île-de-France
+              <span className="text-yellow-500">Épaviste :</span> Intervention Gratuite en Île-de-France
             </h2>
             <p className="text-center text-gray-600 max-w-2xl mx-auto mb-10 text-base">
               À la recherche d'un <strong>épaviste en Île-de-France</strong> ? Notre entreprise est spécialisée dans l'<strong>enlèvement d'épave gratuit</strong> et l'<strong>enlèvement de voiture hors d'usage</strong>. Nous intervenons rapidement pour prendre en charge votre véhicule et le confier aux filières spécialisées de recyclage, dans le respect de la réglementation en vigueur.
@@ -323,7 +323,7 @@ export default function HomePage() {
         {/* CTA Final */}
         <section className="py-16 bg-yellow-500">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-black">Prêt à Vous Débarrasser de Votre Épave ?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-black">Prêt pour l'Enlèvement Gratuit de votre Épave ?</h2>
             <p className="text-xl mb-8 text-black/80 max-w-2xl mx-auto">
               Contactez-nous dès maintenant pour un enlèvement gratuit et rapide
             </p>
