@@ -4,14 +4,15 @@ import { Phone, CheckCircle, MapPin } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { CitiesList } from "@/components/cities-list"
+import BreadcrumbJsonLd from "@/components/breadcrumb-jsonld"
 export const metadata: Metadata = {
-  title: "Enlèvement d'épave gratuit dans le Val-d'Oise (95) - Épaviste Agréé",
+  title: "Enlèvement d'épave gratuit dans le Val-d'Oise (95) - Épaviste Professionnel",
   description:
     "Ne laissez plus un véhicule hors d'usage occuper inutilement votre espace privé ou public dans le 95. GH Épaviste déploie ses dépanneuses dans tout le Val-d'Oise pour retirer gratuitement vos autos, motos ou camionnettes usagées.",
   alternates: { canonical: "https://gh-epaviste.fr/enlevement-epave-val-d-oise" },
   robots: { index: true, follow: true },
   openGraph: {
-    title: "Enlèvement d'épave gratuit dans le Val-d'Oise (95) - Épaviste Agréé",
+    title: "Enlèvement d'épave gratuit dans le Val-d'Oise (95) - Épaviste Professionnel",
     description: "Ne laissez plus un véhicule hors d'usage occuper inutilement votre espace privé ou public dans le 95. GH Épaviste déploie ses dépanneuses dans tout le Val-d'Oise pour retirer gratuitement vos autos, motos ou camionnettes usagées.",
     url: "https://gh-epaviste.fr/enlevement-epave-val-d-oise",
     type: "website",
@@ -19,7 +20,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Enlèvement d'épave gratuit dans le Val-d'Oise (95) - Épaviste Agréé",
+    title: "Enlèvement d'épave gratuit dans le Val-d'Oise (95) - Épaviste Professionnel",
     description:
       "Ne laissez plus un véhicule hors d'usage occuper inutilement votre espace privé ou public dans le 95. GH Épaviste déploie ses dépanneuses dans tout le Val-d'Oise pour retirer gratuitement vos autos, motos ou camionnettes usagées.",
     images: ["/og-image.jpg"],
@@ -42,6 +43,10 @@ export default function EpavisteValDOise() {
 
   return (
     <div className="min-h-screen bg-white">
+      <BreadcrumbJsonLd items={[
+        { name: "Accueil", url: "https://gh-epaviste.fr/" },
+        { name: "Enlèvement épave Val-d'Oise (95)", url: "https://gh-epaviste.fr/enlevement-epave-val-d-oise" },
+      ]} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <section className="bg-black text-white py-20">
         <div className="container mx-auto px-4 max-w-4xl text-center">
@@ -50,7 +55,7 @@ export default function EpavisteValDOise() {
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
             <span className="text-yellow-500">Enlèvement d&apos;épave gratuit dans le Val-d&apos;Oise (95)</span><br />
-            Épaviste Agréé
+            Épaviste Professionnel
           </h1>
           <p className="text-xl text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed">
             Ne laissez plus un véhicule hors d&apos;usage occuper inutilement votre espace privé ou public dans le 95. GH Épaviste déploie ses dépanneuses dans tout le Val-d&apos;Oise pour retirer gratuitement vos autos, motos ou camionnettes usagées. Nos équipes se déplacent quotidiennement sur Argenteuil, Sarcelles, Cergy, Garges-lès-Gonesse et Franconville. Nous nous chargeons de confier votre ancien véhicule à notre filière de recyclage automobile partenaire, le tout sans débourser un seul centime.

@@ -4,6 +4,7 @@ import { Phone, CheckCircle, MapPin } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { CitiesList } from "@/components/cities-list"
+import BreadcrumbJsonLd from "@/components/breadcrumb-jsonld"
 export const metadata: Metadata = {
   title: "Épaviste professionnel en Seine-et-Marne (77) : Enlèvement d'épave gratuit",
   description:
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
     description: "Vous possédez une vieille voiture qui encombre votre jardin ou votre entreprise en Seine-et-Marne ? Notre équipe de remorquage quadrille le 77 au quotidien pour vous débarrasser gratuitement de tout véhicule roulant ou non.",
     url: "https://gh-epaviste.fr/enlevement-epave-seine-et-marne",
     type: "website",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Épaviste agréé en Seine-et-Marne (77)" }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Épaviste professionnel en Seine-et-Marne (77)" }],
   },
   twitter: {
     card: "summary_large_image",
@@ -42,6 +43,10 @@ export default function EpavisteSeineMarne() {
 
   return (
     <div className="min-h-screen bg-white">
+      <BreadcrumbJsonLd items={[
+        { name: "Accueil", url: "https://gh-epaviste.fr/" },
+        { name: "Enlèvement épave Seine-et-Marne (77)", url: "https://gh-epaviste.fr/enlevement-epave-seine-et-marne" },
+      ]} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <section className="bg-black text-white py-20">
@@ -50,7 +55,7 @@ export default function EpavisteSeineMarne() {
             <MapPin className="w-4 h-4" /> Seine-et-Marne — Département 77
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
-            <span className="text-yellow-500">Épaviste agréé en Seine-et-Marne (77) :</span><br />
+            <span className="text-yellow-500">Épaviste professionnel en Seine-et-Marne (77) :</span><br />
             Enlèvement d&apos;épave gratuit
           </h1>
           <p className="text-xl text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed">

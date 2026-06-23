@@ -5,6 +5,7 @@ import { Phone, CheckCircle, MapPin, ShieldCheck, Clock, ThumbsUp, Wrench, Alert
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import villes from "@/data/villes.json"
+import BreadcrumbJsonLd from "@/components/breadcrumb-jsonld"
 
 export function generateStaticParams() {
   return villes.map((ville) => ({
@@ -25,7 +26,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   }
 
   const title = `Épaviste Gratuit ${ville.ville} (${ville.zipCode}) | Enlèvement Épave 24h/7j`
-  const description = `Besoin d'un épaviste agréé à ${ville.ville} (${ville.depNumber}) ? GH-Épaviste intervient gratuitement 24h/24 et 7j/7 pour l'enlèvement de votre véhicule hors d'usage. Appelez-nous !`
+  const description = `Besoin d'un épaviste expert à ${ville.ville} (${ville.depNumber}) ? GH-Épaviste intervient gratuitement 24h/24 et 7j/7 pour l'enlèvement de votre véhicule hors d'usage. Appelez-nous !`
 
   return {
     title,
@@ -85,6 +86,11 @@ export default function VillePage({ params }: { params: { slug: string } }) {
 
   return (
     <div className="min-h-screen bg-white">
+      <BreadcrumbJsonLd items={[
+        { name: "Accueil", url: "https://gh-epaviste.fr/" },
+        { name: `Épaviste en Île-de-France`, url: "https://gh-epaviste.fr/" },
+        { name: `Épaviste gratuit ${ville.ville} (${ville.zipCode})`, url: `https://gh-epaviste.fr/epaviste-gratuit-${ville.slug}` },
+      ]} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       
       {/* Hero Section */}
@@ -106,7 +112,7 @@ export default function VillePage({ params }: { params: { slug: string } }) {
           )}
           {introVariant === 1 && (
             <p className="text-xl md:text-2xl text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed">
-              Besoin de libérer rapidement de l'espace de stationnement ? Spécialiste de l'enlèvement de véhicules, notre équipe agréée se déplace à <strong>{ville.ville} ({ville.depNumber})</strong> sans aucun frais. Nous prenons en charge toutes les démarches administratives dans le <strong>{ville.departement}</strong>.
+              Besoin de libérer rapidement de l'espace de stationnement ? Spécialiste de l'enlèvement de véhicules, notre équipe professionnelle se déplace à <strong>{ville.ville} ({ville.depNumber})</strong> sans aucun frais. Nous prenons en charge toutes les démarches administratives dans le <strong>{ville.departement}</strong>.
             </p>
           )}
           {introVariant === 2 && (

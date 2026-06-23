@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
   openGraph: {
     title: "Formulaire d'Enlèvement d'Épave Gratuit | GH Épaviste",
-    description: "Planifiez l'enlèvement gratuit de votre épave (voiture, moto, utilitaire) sous 24h en Île-de-France. Service rapide et agréé.",
+    description: "Planifiez l'enlèvement gratuit de votre épave (voiture, moto, utilitaire) sous 24h en Île-de-France. Service rapide et professionnel.",
     url: "https://gh-epaviste.fr/formulaire",
     type: "website",
     images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Formulaire d'Enlèvement d'Épave Gratuit" }],
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Formulaire d'Enlèvement d'Épave Gratuit | GH Épaviste",
-    description: "Planifiez l'enlèvement gratuit de votre épave (voiture, moto, utilitaire) sous 24h en Île-de-France. Service rapide et agréé.",
+    description: "Planifiez l'enlèvement gratuit de votre épave (voiture, moto, utilitaire) sous 24h en Île-de-France. Service rapide et professionnel.",
     images: ["/og-image.jpg"],
   },
 }

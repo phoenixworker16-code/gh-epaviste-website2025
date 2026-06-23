@@ -4,16 +4,17 @@ import { Phone, Mail, MapPin, Clock, CheckCircle } from "lucide-react";
 import Link from "next/link";
 import BreadcrumbNav from "@/components/breadcrumb-nav";
 import ScrollToTop from "@/components/scroll-to-top";
+import BreadcrumbJsonLd from "@/components/breadcrumb-jsonld";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Contactez GH Épaviste | Enlèvement d'Épave Gratuit",
-  description: "Besoin d'un épaviste agréé en Île-de-France ? Contactez-nous par téléphone au 07 53 12 07 93 ou par email. Intervention rapide 24h/24 et 7j/7.",
+  description: "Besoin d'un épaviste professionnel en Île-de-France ? Contactez-nous par téléphone au 07 53 12 07 93 ou par email. Intervention rapide 24h/24 et 7j/7.",
   alternates: { canonical: "https://gh-epaviste.fr/contact" },
   robots: { index: true, follow: true },
   openGraph: {
     title: "Contactez GH Épaviste | Enlèvement d'Épave Gratuit",
-    description: "Besoin d'un épaviste agréé en Île-de-France ? Contactez-nous par téléphone au 07 53 12 07 93 ou par email. Intervention rapide 24h/24 et 7j/7.",
+    description: "Besoin d'un épaviste professionnel en Île-de-France ? Contactez-nous par téléphone au 07 53 12 07 93 ou par email. Intervention rapide 24h/24 et 7j/7.",
     url: "https://gh-epaviste.fr/contact",
     type: "website",
     images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Contact GH Épaviste" }],
@@ -21,7 +22,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Contactez GH Épaviste | Enlèvement d'Épave Gratuit",
-    description: "Besoin d'un épaviste agréé en Île-de-France ? Contactez-nous par téléphone au 07 53 12 07 93 ou par email. Intervention rapide 24h/24 et 7j/7.",
+    description: "Besoin d'un épaviste professionnel en Île-de-France ? Contactez-nous par téléphone au 07 53 12 07 93 ou par email. Intervention rapide 24h/24 et 7j/7.",
     images: ["/og-image.jpg"],
   },
 }
@@ -29,6 +30,10 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <div className="min-h-screen bg-gray-50">
+      <BreadcrumbJsonLd items={[
+        { name: "Accueil", url: "https://gh-epaviste.fr/" },
+        { name: "Contact", url: "https://gh-epaviste.fr/contact" },
+      ]} />
       <BreadcrumbNav />
 
       <main className="py-12 pb-24" id="main-content">

@@ -19,7 +19,7 @@ export default function HomePage() {
           <Image
             src="/images/epaviste-enlevement-epave-ile-de-france.jpg"
             alt="Camion épaviste enlevant une voiture pour enlèvement d'épave gratuit en Île-de-France"
-            title="Service d'épaviste agréé pour enlèvement d'épave gratuit"
+            title="Service d'épaviste professionnel pour enlèvement d'épave gratuit"
             fill
             className="object-cover object-right-bottom"
             priority
@@ -239,7 +239,7 @@ export default function HomePage() {
                 <div className="text-center">
                   <Image
                     src="/images/carte-idf.png"
-                    alt="Carte d'intervention d'un épaviste agréé en Île-de-France pour enlèvement d'épave gratuit"
+                    alt="Carte d'intervention d'un épaviste professionnel en Île-de-France pour enlèvement d'épave gratuit"
                     width={220}
                     height={220}
                     className="mx-auto mb-4 rounded shadow object-contain"
