@@ -183,24 +183,24 @@ export default function HomePage() {
                 <div className="w-20 h-20 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-6">
                   <span className="text-3xl font-bold text-black">1</span>
                 </div>
-                <h3 className="text-xl font-bold mb-4">Remplissez le Formulaire</h3>
-                <p className="text-gray-200">Décrivez votre véhicule et votre situation en quelques clics</p>
+                <h3 className="text-xl font-bold mb-4">Prise de contact 📞</h3>
+                <p className="text-gray-200">Appelez-nous ou remplissez le formulaire pour fixer un rendez-vous rapide selon vos disponibilités.</p>
               </div>
 
               <div className="text-center">
                 <div className="w-20 h-20 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-6">
                   <span className="text-3xl font-bold text-black">2</span>
                 </div>
-                <h3 className="text-xl font-bold mb-4">Prise de Rendez-vous Rapide</h3>
-                <p className="text-gray-200">Nous vous contactons sous 2h pour planifier l'intervention</p>
+                <h3 className="text-xl font-bold mb-4">Déplacement du camion de remorquage 🚛</h3>
+                <p className="text-gray-200">Notre équipe de professionnels se déplace gratuitement sur le lieu de stationnement de l'épave.</p>
               </div>
 
               <div className="text-center">
                 <div className="w-20 h-20 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-6">
                   <span className="text-3xl font-bold text-black">3</span>
                 </div>
-                <h3 className="text-xl font-bold mb-4">Enlèvement Rapide</h3>
-                <p className="text-gray-200">Intervention rapide et professionnelle</p>
+                <h3 className="text-xl font-bold mb-4">Remise du certificat de cession 📄</h3>
+                <p className="text-gray-200">Enlèvement sécurisé et remise immédiate des documents officiels pour la destruction.</p>
               </div>
             </div>
           </div>
@@ -252,6 +252,49 @@ export default function HomePage() {
                   </p>
                 </div>
               </div>
+            </div>
+            {/* Mention de fraîcheur pour SEO */}
+            <div className="mt-12 text-center text-sm text-gray-400">
+              <p>Services et zones d'intervention mis à jour pour 2026</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Témoignages & Avis Clients */}
+        <section className="py-16 bg-white border-t border-gray-100">
+          <div className="container mx-auto px-4 max-w-5xl">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-black">
+              Ils nous ont fait confiance
+            </h2>
+            <p className="text-center text-gray-600 mb-12 text-lg">
+              Découvrez les retours de nos clients suite à l'enlèvement de leur épave.
+            </p>
+            <div className="grid md:grid-cols-3 gap-6 mb-10">
+              {[
+                { name: "Marc D.", city: "Paris 75", text: "Intervention très rapide et professionnelle. Le remorquage s'est fait sans accroc et j'ai eu mon certificat de cession immédiatement. Je recommande !" },
+                { name: "Sophie L.", city: "Meaux 77", text: "Équipe ponctuelle et très courtoise. L'enlèvement de ma vieille voiture était gratuit comme promis. Une charge en moins !" },
+                { name: "Karim B.", city: "Montreuil 93", text: "Très réactifs, du premier appel téléphonique jusqu'à l'enlèvement. Démarches administratives claires. Parfait." },
+              ].map((testimonial, i) => (
+                <Card key={i} className="border border-gray-100 bg-gray-50 shadow-sm hover:shadow-md transition-shadow">
+                  <CardContent className="p-6">
+                    <div className="flex items-center gap-1 mb-4">
+                      {[...Array(5)].map((_, j) => (
+                        <svg key={j} className="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                      ))}
+                    </div>
+                    <p className="text-gray-700 italic mb-4">"{testimonial.text}"</p>
+                    <p className="font-bold text-black">{testimonial.name}</p>
+                    <p className="text-sm text-gray-500">{testimonial.city}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+            <div className="text-center">
+              <Link href="/avis-clients" className="inline-flex items-center justify-center font-semibold text-yellow-600 hover:text-yellow-700 underline underline-offset-4 transition-colors">
+                Voir tous les Avis Clients GH Épaviste | Témoignages
+              </Link>
             </div>
           </div>
         </section>
