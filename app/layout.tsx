@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   // ─── Titre & Description ───────────────────────────────
   title: {
     default: "GH Épaviste | Enlèvement d'Épave Gratuit en Île-de-France",
-    template: "%s | GH Épaviste Île-de-France",
+    template: "%s - GH Épaviste",
   },
   description:
     "Épaviste professionnel en Île-de-France. Enlèvement gratuit de votre épave avec intervention rapide 24h/24 et 7j/7 dans les 75, 77, 78, 91, 92, 93, 94 et 95. Contactez-nous maintenant au 07 53 12 07 93.",

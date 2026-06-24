@@ -34,9 +34,11 @@ export default function FaqPage() {
         <div className="container mx-auto px-4 max-w-4xl">
           <Card>
             <CardHeader>
-              <CardTitle className="text-3xl text-black flex items-center">
-                <HelpCircle className="w-8 h-8 text-yellow-500 mr-3" aria-hidden="true" />
-                Foire Aux Questions (FAQ)
+              <CardTitle className="text-3xl text-black">
+                <h1 className="flex items-center">
+                  <HelpCircle className="w-8 h-8 text-yellow-500 mr-3" aria-hidden="true" />
+                  Foire Aux Questions (FAQ)
+                </h1>
               </CardTitle>
               <p className="text-gray-600">Toutes les réponses à vos questions sur l’enlèvement d’épave GH Épaviste.</p>
             </CardHeader>
