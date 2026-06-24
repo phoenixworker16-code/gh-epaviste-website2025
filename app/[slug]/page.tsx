@@ -62,7 +62,33 @@ export default function VillePage({ params }: { params: { slug: string } }) {
   }
 
   const index = villes.findIndex((v) => v.slug === citySlug)
-  const introVariant = index % 3
+  
+  const hooks = [
+    "Votre véhicule est en panne, accidenté ou hors d'usage ?",
+    "Besoin de libérer rapidement de l'espace de stationnement ?",
+    "Ne laissez pas une épave encombrer plus longtemps votre terrain.",
+    "Un ancien véhicule hors d'usage prend de la place devant chez vous ?"
+  ];
+  const promises = [
+    `Notre camion de remorquage circule quotidiennement à <strong>${ville.ville}</strong> ainsi que dans tout le département du <strong>${ville.departement}</strong> pour vous débarrasser gratuitement de votre épave.`,
+    `Spécialiste de l'enlèvement de véhicules, notre équipe professionnelle se déplace à <strong>${ville.ville} (${ville.depNumber})</strong> sans aucun frais.`,
+    `GH Épaviste est le partenaire de confiance à <strong>${ville.ville}</strong> pour un enlèvement d'épave gratuit et rapide.`,
+    `Nous intervenons rapidement sur <strong>${ville.ville}</strong> et l'ensemble du <strong>${ville.departement}</strong> pour récupérer votre véhicule, qu'il soit roulant ou non.`
+  ];
+  const ctas = [
+    "Nous prenons en charge toutes les démarches administratives de A à Z.",
+    "Le tout est 100% conforme à la législation en vigueur pour une tranquillité d'esprit totale.",
+    "Profitez d'un service professionnel, sans frais cachés et respectueux de l'environnement.",
+    "Confiez-nous votre voiture, utilitaire ou deux-roues et nous nous occupons du reste."
+  ];
+
+  const hookIndex = index % hooks.length;
+  const promiseIndex = Math.floor(index / hooks.length) % promises.length;
+  const ctaIndex = Math.floor(index / (hooks.length * promises.length)) % ctas.length;
+
+  const hookText = hooks[hookIndex];
+  const promiseText = promises[promiseIndex];
+  const ctaText = ctas[ctaIndex];
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -105,21 +131,9 @@ export default function VillePage({ params }: { params: { slug: string } }) {
             Épaviste gratuit à <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600">{ville.ville}</span> ({ville.zipCode})
           </h1>
           
-          {introVariant === 0 && (
-            <p className="text-xl md:text-2xl text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed">
-              Votre véhicule est en panne, accidenté ou hors d'usage ? Notre camion de remorquage circule quotidiennement à <strong>{ville.ville}</strong> ainsi que dans tout le département du <strong>{ville.departement}</strong> pour vous débarrasser gratuitement de votre épave.
-            </p>
-          )}
-          {introVariant === 1 && (
-            <p className="text-xl md:text-2xl text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed">
-              Besoin de libérer rapidement de l'espace de stationnement ? Spécialiste de l'enlèvement de véhicules, notre équipe professionnelle se déplace à <strong>{ville.ville} ({ville.depNumber})</strong> sans aucun frais. Nous prenons en charge toutes les démarches administratives dans le <strong>{ville.departement}</strong>.
-            </p>
-          )}
-          {introVariant === 2 && (
-            <p className="text-xl md:text-2xl text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed">
-              Ne laissez pas une épave encombrer votre terrain. GH Épaviste est le partenaire de confiance à <strong>{ville.ville}</strong> pour un enlèvement d'épave gratuit, rapide et 100% conforme à la législation en vigueur dans le <strong>{ville.departement}</strong>.
-            </p>
-          )}
+          <p className="text-xl md:text-2xl text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed">
+            {hookText} <span dangerouslySetInnerHTML={{ __html: promiseText }} /> {ctaText}
+          </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
             <a href="tel:+33753120793" className="w-full sm:w-auto">

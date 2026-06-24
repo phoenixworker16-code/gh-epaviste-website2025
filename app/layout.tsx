@@ -101,17 +101,31 @@ export default function RootLayout({
     "@type": "AutomotiveBusiness",
     "@id": "https://gh-epaviste.fr/#business",
     "name": "GH Épaviste",
-    "description": "Service professionnel d'enlèvement d'épaves en Île-de-France. Enlèvement gratuit avec intervention rapide 24h/24 et 7j/7.",
+    "description": "Service professionnel d'enlèvement d'épave gratuit en Île-de-France. Intervention rapide 24h/24 et 7j/7.",
     "url": "https://gh-epaviste.fr",
     "telephone": "+33753120793",
-    "priceRange": "Gratuit",
+    "priceRange": "0€",
     "image": "https://gh-epaviste.fr/images/gh-logo.png",
-    "logo": "https://gh-epaviste.fr/images/gh-logo.png",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://gh-epaviste.fr/images/gh-logo.png"
+    },
     "address": {
       "@type": "PostalAddress",
+      "streetAddress": "Villeneuve-Saint-Georges",
       "postalCode": "94190",
       "addressLocality": "Villeneuve-Saint-Georges",
+      "addressRegion": "Île-de-France",
       "addressCountry": "FR"
+    },
+    "geo": {
+      "@type": "GeoCircle",
+      "geoMidpoint": {
+        "@type": "GeoCoordinates",
+        "latitude": "48.8566",
+        "longitude": "2.3522"
+      },
+      "geoRadius": "100000"
     },
     "areaServed": [
       { "@type": "AdministrativeArea", "name": "Paris (75)" },
@@ -133,8 +147,13 @@ export default function RootLayout({
       "@type": "ContactPoint",
       "telephone": "+33753120793",
       "contactType": "customer service",
-      "availableLanguage": "French"
-    }
+      "contactOption": "TollFree",
+      "availableLanguage": "French",
+      "areaServed": ["75","77","78","91","92","93","94","95"]
+    },
+    "sameAs": [
+      "https://gh-epaviste.fr"
+    ]
   }
 
   return (
