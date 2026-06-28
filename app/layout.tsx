@@ -168,13 +168,14 @@ export default function RootLayout({
         />
         <header className="bg-white border-b border-gray-200 sticky top-0 z-50">
           <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-            <div className="flex items-center">
+            <div className="flex items-center flex-shrink-0">
               <Image
                 src="/images/gh-logo-new.png"
                 alt="GH Épaviste"
                 width={292}
                 height={422}
                 style={{ height: '64px', width: '44px' }}
+                className="flex-shrink-0"
                 priority
                 fetchPriority="high"
               />
