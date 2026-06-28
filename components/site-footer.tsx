@@ -20,7 +20,7 @@ export default function SiteFooter() {
               width={422}
               height={506}
               className="mb-3 drop-shadow-lg"
-              style={{ height: '80px', width: 'auto' }}
+              style={{ height: '80px', width: '67px' }}
               loading="lazy"
             />
             <p className="text-gray-300 mb-4 text-sm max-w-sm leading-tight">

@@ -174,7 +174,7 @@ export default function RootLayout({
                 alt="GH Épaviste"
                 width={292}
                 height={422}
-                style={{ height: '64px', width: 'auto' }}
+                style={{ height: '64px', width: '44px' }}
                 priority
                 fetchPriority="high"
               />
