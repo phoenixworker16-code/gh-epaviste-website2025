@@ -304,8 +304,8 @@ export default function ServicesPage() {
                       <Image
                         src="/images/ma-carte-idf-speciale.png"
                         alt="Carte Île-de-France"
-                        width={420}
-                        height={420}
+                        width={1158}
+                        height={923}
                         className="rounded shadow"
                       />
                     </div>

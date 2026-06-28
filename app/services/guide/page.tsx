@@ -32,8 +32,8 @@ export default function GuideEpavePage() {
         <Image
           src="/images/gh-logo-new.png"
           alt="GH Épaviste Logo"
-          width={220}
-          height={120}
+          width={292}
+          height={422}
           style={{ height: '96px', width: 'auto' }}
           priority
         />

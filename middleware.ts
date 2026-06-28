@@ -12,7 +12,7 @@ export function middleware(request: NextRequest) {
     font-src 'self' data: https://fonts.gstatic.com;
     img-src 'self' data: https: blob:;
     media-src 'none';
-    connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://www.googletagmanager.com https://wa.me;
+    connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com https://stats.g.doubleclick.net https://*.g.doubleclick.net https://wa.me;
     worker-src 'none';
     frame-ancestors 'self';
     frame-src 'none';

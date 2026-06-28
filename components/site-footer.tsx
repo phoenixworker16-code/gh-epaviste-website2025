@@ -17,8 +17,8 @@ export default function SiteFooter() {
             <Image
               src="/images/gh-logo-white.png"
               alt="GH Épaviste - Enlèvement d'Épaves en Île-de-France"
-              width={160}
-              height={80}
+              width={422}
+              height={506}
               className="mb-3 drop-shadow-lg"
               style={{ height: '80px', width: 'auto' }}
               loading="lazy"

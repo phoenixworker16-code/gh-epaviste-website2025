@@ -172,8 +172,8 @@ export default function RootLayout({
               <Image
                 src="/images/gh-logo-new.png"
                 alt="GH Épaviste"
-                width={160}
-                height={100}
+                width={292}
+                height={422}
                 style={{ height: '64px', width: 'auto' }}
                 priority
                 fetchPriority="high"
