@@ -4,12 +4,12 @@ import { Phone, ArrowLeft, Car } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export const metadata: Metadata = {
-  title: "Véhicule immobilisé : quelles solutions ? | GH Épaviste",
+  title: "Véhicule immobilisé : quelles solutions ?",
   description: "Panne mécanique grave, CT raté, problème administratif : votre véhicule est immobilisé ? Découvrez toutes les solutions disponibles.",
   alternates: { canonical: "https://gh-epaviste.fr/blog/vehicule-immobilise-solutions" },
   robots: { index: true, follow: true },
   openGraph: {
-    title: "Véhicule immobilisé : quelles solutions ? | GH Épaviste",
+    title: "Véhicule immobilisé : quelles solutions ?",
     description: "Panne mécanique grave, CT raté, problème administratif : votre véhicule est immobilisé ? Découvrez toutes les solutions disponibles.",
     url: "https://gh-epaviste.fr/blog/vehicule-immobilise-solutions",
     type: "article",
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Véhicule immobilisé : quelles solutions ? | GH Épaviste",
+    title: "Véhicule immobilisé : quelles solutions ?",
     description: "Panne mécanique grave, CT raté, problème administratif : votre véhicule est immobilisé ? Découvrez toutes les solutions disponibles.",
     images: ["/og-image.jpg"],
   },

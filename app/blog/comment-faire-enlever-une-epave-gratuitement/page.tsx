@@ -4,12 +4,12 @@ import { Phone, CheckCircle, ArrowLeft } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export const metadata: Metadata = {
-  title: "Comment faire enlever une épave gratuitement ? | GH Épaviste",
+  title: "Comment faire enlever une épave gratuitement ?",
   description: "Guide complet pour faire enlever votre épave gratuitement en Île-de-France. Étapes, documents, conditions et conseils pratiques.",
   alternates: { canonical: "https://gh-epaviste.fr/blog/comment-faire-enlever-une-epave-gratuitement" },
   robots: { index: true, follow: true },
   openGraph: {
-    title: "Comment faire enlever une épave gratuitement ? | GH Épaviste",
+    title: "Comment faire enlever une épave gratuitement ?",
     description: "Guide complet pour faire enlever votre épave gratuitement en Île-de-France. Étapes, documents, conditions et conseils pratiques.",
     url: "https://gh-epaviste.fr/blog/comment-faire-enlever-une-epave-gratuitement",
     type: "article",
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Comment faire enlever une épave gratuitement ? | GH Épaviste",
+    title: "Comment faire enlever une épave gratuitement ?",
     description: "Guide complet pour faire enlever votre épave gratuitement en Île-de-France. Étapes, documents, conditions et conseils pratiques.",
     images: ["/og-image.jpg"],
   },

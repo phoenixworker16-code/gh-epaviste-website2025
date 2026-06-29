@@ -4,12 +4,12 @@ import { Phone, ArrowLeft, AlertCircle, CheckCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export const metadata: Metadata = {
-  title: "Enlever une voiture sans carte grise : est-ce possible ? | GH Épaviste",
+  title: "Enlever une voiture sans carte grise : est-ce possible ?",
   description: "Vous avez perdu la carte grise de votre épave ? Découvrez les solutions pour faire enlever votre véhicule même sans ce document.",
   alternates: { canonical: "https://gh-epaviste.fr/blog/enlever-voiture-sans-carte-grise" },
   robots: { index: true, follow: true },
   openGraph: {
-    title: "Enlever une voiture sans carte grise : est-ce possible ? | GH Épaviste",
+    title: "Enlever une voiture sans carte grise : est-ce possible ?",
     description: "Vous avez perdu la carte grise de votre épave ? Découvrez les solutions pour faire enlever votre véhicule même sans ce document.",
     url: "https://gh-epaviste.fr/blog/enlever-voiture-sans-carte-grise",
     type: "article",
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Enlever une voiture sans carte grise : est-ce possible ? | GH Épaviste",
+    title: "Enlever une voiture sans carte grise : est-ce possible ?",
     description: "Vous avez perdu la carte grise de votre épave ? Découvrez les solutions pour faire enlever votre véhicule même sans ce document.",
     images: ["/og-image.jpg"],
   },

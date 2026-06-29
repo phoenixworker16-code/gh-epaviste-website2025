@@ -5,12 +5,12 @@ import ScrollToTop from "@/components/scroll-to-top"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Politique de Confidentialité | GH Épaviste",
+  title: "Politique de Confidentialité",
   description: "Consultez la politique de confidentialité de GH Épaviste. Découvrez comment nous protégeons et traitons vos données personnelles.",
   alternates: { canonical: "https://gh-epaviste.fr/confidentialite" },
   robots: { index: false, follow: true },
   openGraph: {
-    title: "Politique de Confidentialité | GH Épaviste",
+    title: "Politique de Confidentialité",
     description: "Protection et traitement de vos données personnelles par GH Épaviste.",
     url: "https://gh-epaviste.fr/confidentialite",
     type: "website",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Politique de Confidentialité | GH Épaviste",
+    title: "Politique de Confidentialité",
     description: "Protection et traitement de vos données personnelles par GH Épaviste.",
     images: ["/og-image.jpg"],
   },

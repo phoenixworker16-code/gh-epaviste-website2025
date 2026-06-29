@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://gh-epaviste.fr/blog" },
   robots: { index: true, follow: true },
   openGraph: {
-    title: "Blog & Guide Pratique | GH Épaviste",
+    title: "Blog & Guide Pratique",
     description: "Guides et conseils pratiques pour l'enlèvement d'épave en Île-de-France.",
     url: "https://gh-epaviste.fr/blog",
     type: "website",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Blog & Guide Pratique | GH Épaviste",
+    title: "Blog & Guide Pratique",
     description: "Guides et conseils pratiques pour l'enlèvement d'épave en Île-de-France.",
     images: ["/og-image.jpg"],
   },

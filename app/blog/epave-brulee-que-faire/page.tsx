@@ -4,12 +4,12 @@ import { Phone, ArrowLeft, Flame, ShieldAlert } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export const metadata: Metadata = {
-  title: "Épave brûlée : que faire ? | GH Épaviste",
+  title: "Épave brûlée : que faire ?",
   description: "Votre véhicule a été incendié ? Découvrez les démarches à suivre : assurance, police, enlèvement de l'épave brûlée en Île-de-France.",
   alternates: { canonical: "https://gh-epaviste.fr/blog/epave-brulee-que-faire" },
   robots: { index: true, follow: true },
   openGraph: {
-    title: "Épave brûlée : que faire ? | GH Épaviste",
+    title: "Épave brûlée : que faire ?",
     description: "Votre véhicule a été incendié ? Découvrez les démarches à suivre : assurance, police, enlèvement de l'épave brûlée en Île-de-France.",
     url: "https://gh-epaviste.fr/blog/epave-brulee-que-faire",
     type: "article",
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Épave brûlée : que faire ? | GH Épaviste",
+    title: "Épave brûlée : que faire ?",
     description: "Votre véhicule a été incendié ? Découvrez les démarches à suivre : assurance, police, enlèvement de l'épave brûlée en Île-de-France.",
     images: ["/og-image.jpg"],
   },

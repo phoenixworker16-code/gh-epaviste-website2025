@@ -5,12 +5,12 @@ import ScrollToTop from "@/components/scroll-to-top";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Mentions Légales | GH Épaviste",
+  title: "Mentions Légales",
   description: "Consultez les mentions légales de GH Épaviste. Informations sur l'éditeur du site, l'hébergement et la propriété intellectuelle.",
   alternates: { canonical: "https://gh-epaviste.fr/mentions-legales" },
   robots: { index: false, follow: true },
   openGraph: {
-    title: "Mentions Légales | GH Épaviste",
+    title: "Mentions Légales",
     description: "Mentions légales et informations éditoriales pour le site de GH Épaviste.",
     url: "https://gh-epaviste.fr/mentions-legales",
     type: "website",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mentions Légales | GH Épaviste",
+    title: "Mentions Légales",
     description: "Mentions légales et informations éditoriales pour le site de GH Épaviste.",
     images: ["/og-image.jpg"],
   },

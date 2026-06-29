@@ -6,12 +6,12 @@ import { Metadata } from "next"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Foire Aux Questions (FAQ) | GH Épaviste",
+  title: "Foire Aux Questions (FAQ)",
   description: "Toutes les réponses à vos questions sur l'enlèvement d'épave gratuit en Île-de-France. Procédures, documents, gratuité, etc.",
   alternates: { canonical: "https://gh-epaviste.fr/faq" },
   robots: { index: true, follow: true },
   openGraph: {
-    title: "Foire Aux Questions (FAQ) | GH Épaviste",
+    title: "Foire Aux Questions (FAQ)",
     description: "Toutes les réponses à vos questions sur l'enlèvement d'épave gratuit en Île-de-France. Procédures, documents, gratuité, etc.",
     url: "https://gh-epaviste.fr/faq",
     type: "website",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Foire Aux Questions (FAQ) | GH Épaviste",
+    title: "Foire Aux Questions (FAQ)",
     description: "Toutes les réponses à vos questions sur l'enlèvement d'épave gratuit en Île-de-France. Procédures, documents, gratuité, etc.",
     images: ["/og-image.jpg"],
   },
@@ -34,13 +34,11 @@ export default function FaqPage() {
         <div className="container mx-auto px-4 max-w-4xl">
           <Card>
             <CardHeader>
-              <CardTitle className="text-3xl text-black">
-                <h1 className="flex items-center">
-                  <HelpCircle className="w-8 h-8 text-yellow-500 mr-3" aria-hidden="true" />
-                  Foire Aux Questions (FAQ)
-                </h1>
-              </CardTitle>
-              <p className="text-gray-600">Toutes les réponses à vos questions sur l’enlèvement d’épave GH Épaviste.</p>
+              <h1 className="text-3xl font-semibold leading-none tracking-tight text-black flex items-center">
+                <HelpCircle className="w-8 h-8 text-yellow-500 mr-3" aria-hidden="true" />
+                Foire Aux Questions (FAQ)
+              </h1>
+              <p className="text-gray-600 mt-1.5">Toutes les réponses à vos questions sur l’enlèvement d’épave GH Épaviste.</p>
             </CardHeader>
             <CardContent className="prose max-w-none">
               <div className="space-y-8">

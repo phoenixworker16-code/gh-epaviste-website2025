@@ -4,12 +4,12 @@ import { Phone, ArrowLeft, TrendingDown } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export const metadata: Metadata = {
-  title: "Combien vaut une voiture accidentée ? | GH Épaviste",
+  title: "Combien vaut une voiture accidentée ?",
   description: "Comment est évaluée la valeur d'une voiture accidentée ? Facteurs, méthodes et options pour valoriser au mieux votre véhicule endommagé.",
   alternates: { canonical: "https://gh-epaviste.fr/blog/combien-vaut-voiture-accidentee" },
   robots: { index: true, follow: true },
   openGraph: {
-    title: "Combien vaut une voiture accidentée ? | GH Épaviste",
+    title: "Combien vaut une voiture accidentée ?",
     description: "Comment est évaluée la valeur d'une voiture accidentée ? Facteurs, méthodes et options pour valoriser au mieux votre véhicule endommagé.",
     url: "https://gh-epaviste.fr/blog/combien-vaut-voiture-accidentee",
     type: "article",
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Combien vaut une voiture accidentée ? | GH Épaviste",
+    title: "Combien vaut une voiture accidentée ?",
     description: "Comment est évaluée la valeur d'une voiture accidentée ? Facteurs, méthodes et options pour valoriser au mieux votre véhicule endommagé.",
     images: ["/og-image.jpg"],
   },

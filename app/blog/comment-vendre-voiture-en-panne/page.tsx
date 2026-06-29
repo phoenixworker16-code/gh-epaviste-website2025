@@ -4,12 +4,12 @@ import { Phone, ArrowLeft, Wrench } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export const metadata: Metadata = {
-  title: "Comment vendre une voiture en panne ? | GH Épaviste",
+  title: "Comment vendre une voiture en panne ?",
   description: "Votre voiture est en panne et vous souhaitez vous en débarrasser ? Découvrez toutes les options pour vendre ou faire enlever un véhicule en panne.",
   alternates: { canonical: "https://gh-epaviste.fr/blog/comment-vendre-voiture-en-panne" },
   robots: { index: true, follow: true },
   openGraph: {
-    title: "Comment vendre une voiture en panne ? | GH Épaviste",
+    title: "Comment vendre une voiture en panne ?",
     description: "Votre voiture est en panne et vous souhaitez vous en débarrasser ? Découvrez toutes les options pour vendre ou faire enlever un véhicule en panne.",
     url: "https://gh-epaviste.fr/blog/comment-vendre-voiture-en-panne",
     type: "article",
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Comment vendre une voiture en panne ? | GH Épaviste",
+    title: "Comment vendre une voiture en panne ?",
     description: "Votre voiture est en panne et vous souhaitez vous en débarrasser ? Découvrez toutes les options pour vendre ou faire enlever un véhicule en panne.",
     images: ["/og-image.jpg"],
   },

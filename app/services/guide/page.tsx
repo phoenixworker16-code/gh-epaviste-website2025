@@ -5,12 +5,12 @@ import ScrollToTop from "@/components/scroll-to-top";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Comment faire enlever votre épave ? | GH Épaviste",
+  title: "Comment faire enlever votre épave ?",
   description: "Guide étape par étape pour l'enlèvement gratuit de votre épave par GH Épaviste en Île-de-France.",
   alternates: { canonical: "https://gh-epaviste.fr/services/guide" },
   robots: { index: true, follow: true },
   openGraph: {
-    title: "Comment faire enlever votre épave ? | GH Épaviste",
+    title: "Comment faire enlever votre épave ?",
     description: "Guide étape par étape pour l'enlèvement gratuit de votre épave par GH Épaviste en Île-de-France.",
     url: "https://gh-epaviste.fr/services/guide",
     type: "website",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Comment faire enlever votre épave ? | GH Épaviste",
+    title: "Comment faire enlever votre épave ?",
     description: "Guide étape par étape pour l'enlèvement gratuit de votre épave par GH Épaviste en Île-de-France.",
     images: ["/og-image.jpg"],
   },
