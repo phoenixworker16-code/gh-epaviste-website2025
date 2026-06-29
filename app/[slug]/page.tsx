@@ -63,6 +63,16 @@ export default function VillePage({ params }: { params: { slug: string } }) {
 
   const index = villes.findIndex((v) => v.slug === citySlug)
   
+  // --- MAILLAGE INTERNE PROFOND ---
+  // Sélection de 5 communes limitrophes ou proches dans le même département
+  const depCities = villes.filter(v => v.depNumber === ville.depNumber && v.slug !== ville.slug);
+  const startIndex = index % depCities.length;
+  const nearbyCities = [...depCities.slice(startIndex, startIndex + 5)];
+  if (nearbyCities.length < 5 && depCities.length > 0) {
+    nearbyCities.push(...depCities.slice(0, 5 - nearbyCities.length));
+  }
+  // ---------------------------------
+  
   const hooks = [
     "Votre véhicule est en panne, accidenté ou hors d'usage ?",
     "Besoin de libérer rapidement de l'espace de stationnement ?",
@@ -200,6 +210,19 @@ export default function VillePage({ params }: { params: { slug: string } }) {
         </div>
       </section>
 
+      {/* Contenu Sémantique SEO */}
+      <section className="py-12 bg-white">
+        <div className="container mx-auto px-4 max-w-4xl text-center">
+          <h2 className="text-2xl font-bold text-black mb-4">Un expert de l&apos;enlèvement d&apos;épave à votre service à {ville.ville}</h2>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            La gestion d&apos;un véhicule hors d&apos;usage peut s&apos;avérer complexe sans l&apos;aide d&apos;un professionnel. À {ville.ville} ({ville.zipCode}), notre équipe intervient rapidement et en toute sécurité, avec un matériel de remorquage adapté à toutes les situations : sous-sols étroits, voies difficiles d&apos;accès, véhicules gravement accidentés.
+          </p>
+          <p className="text-gray-700 leading-relaxed">
+            Faire appel à GH Épaviste, c&apos;est bénéficier d&apos;un service sérieux et sans surprise. Nous vous accompagnons dans les démarches administratives, notamment la rédaction du certificat de cession, et nous assurons le transfert de votre véhicule vers des filières de traitement conformes à la réglementation en vigueur dans le département {ville.depNumber}.
+          </p>
+        </div>
+      </section>
+
       {/* Véhicules Acceptés */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 max-w-5xl">
@@ -271,12 +294,36 @@ export default function VillePage({ params }: { params: { slug: string } }) {
                 Est-ce que vous fournissez le certificat de destruction à {ville.ville} ?
               </h3>
               <p className="text-gray-600 pl-9">
-                Oui. Lors de l'enlèvement, nous remplissons avec vous un certificat de cession pour destruction. Vous recevrez ensuite le certificat de destruction final une fois le véhicule pris en charge par notre filière partenaire.
+                Oui. Lors de l&apos;enlèvement, nous remplissons avec vous un certificat de cession pour destruction. Vous recevrez ensuite le certificat de destruction final une fois le véhicule transmis à nos partenaires de traitement.
               </p>
             </div>
           </div>
         </div>
       </section>
+
+      {/* Maillage Interne Profond : Communes limitrophes */}
+      {nearbyCities.length > 0 && (
+        <section className="py-12 bg-white border-t border-gray-100">
+          <div className="container mx-auto px-4 max-w-5xl text-center">
+            <h2 className="text-2xl font-bold text-black mb-6">Zones d'intervention proches de {ville.ville}</h2>
+            <nav aria-label="Communes limitrophes">
+              <ul className="flex flex-wrap justify-center gap-3">
+                {nearbyCities.map((nearby) => (
+                  <li key={nearby.slug}>
+                    <Link 
+                      href={`/epaviste-gratuit-${nearby.slug}`}
+                      prefetch={false}
+                      className="inline-block bg-gray-50 border border-gray-200 hover:border-yellow-500 hover:bg-yellow-50 text-gray-700 hover:text-yellow-700 px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+                    >
+                      Épaviste {nearby.ville} ({nearby.zipCode})
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          </div>
+        </section>
+      )}
 
       {/* CTA Final */}
       <section className="py-20 bg-black relative overflow-hidden">

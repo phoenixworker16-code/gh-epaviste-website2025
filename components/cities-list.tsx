@@ -2,17 +2,20 @@
 
 import { useState } from "react"
 import Link from "next/link"
-import villes from "@/data/villes.json"
 
-export function CitiesList({ depNumber, departementName }: { depNumber: string, departementName: string }) {
+export interface CityData {
+  slug: string
+  ville: string
+}
+
+export function CitiesList({ cities, departementName }: { cities: CityData[], departementName: string }) {
   const [showAll, setShowAll] = useState(false)
-  const departementVilles = villes.filter(ville => ville.depNumber === depNumber)
 
-  if (departementVilles.length === 0) return null
+  if (cities.length === 0) return null
 
   const maxInitial = 24
-  const hasMore = departementVilles.length > maxInitial
-  const displayedVilles = showAll ? departementVilles : departementVilles.slice(0, maxInitial)
+  const hasMore = cities.length > maxInitial
+  const displayedVilles = showAll ? cities : cities.slice(0, maxInitial)
 
   return (
     <section className="py-16 bg-white border-t border-gray-200">

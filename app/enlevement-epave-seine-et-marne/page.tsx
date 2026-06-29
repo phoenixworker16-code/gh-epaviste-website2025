@@ -4,6 +4,7 @@ import { Phone, CheckCircle, MapPin } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { CitiesList } from "@/components/cities-list"
+import villes from "@/data/villes.json"
 import BreadcrumbJsonLd from "@/components/breadcrumb-jsonld"
 export const metadata: Metadata = {
   title: "Épaviste professionnel en Seine-et-Marne (77) : Enlèvement d'épave gratuit",
@@ -99,7 +100,11 @@ export default function EpavisteSeineMarne() {
         </div>
       </section>
 
-      <CitiesList depNumber="77" departementName="Seine-et-Marne" />
+      {/* Variables passées en props (calculées côté serveur) */}
+      <CitiesList 
+        cities={villes.filter(v => v.depNumber === "77").map(v => ({ slug: v.slug, ville: v.ville }))} 
+        departementName="Seine-et-Marne" 
+      />
 
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4 max-w-3xl">

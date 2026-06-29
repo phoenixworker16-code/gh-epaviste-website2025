@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge"
 import { Truck, Shield, Clock, Leaf, Euro, Phone, ChevronDown, Car, Bike, MapPin, CheckCircle } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
-import ScrollToTop from "@/components/ScrollToTop"
+import ScrollToTop from "@/components/scroll-to-top"
 
 export default function HomePage() {
   return (

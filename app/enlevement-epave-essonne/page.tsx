@@ -4,6 +4,7 @@ import { Phone, CheckCircle, MapPin } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { CitiesList } from "@/components/cities-list"
+import villes from "@/data/villes.json"
 export const metadata: Metadata = {
   title: "Épaviste Gratuit Essonne (91) - Remorquage de véhicules hors d'usage",
   description:
@@ -81,7 +82,11 @@ export default function EpavisteEssonne() {
           </div>
         </div>
       </section>
-      <CitiesList depNumber="91" departementName="Essonne" />
+      {/* Variables passées en props (calculées côté serveur) */}
+      <CitiesList 
+        cities={villes.filter(v => v.depNumber === "91").map(v => ({ slug: v.slug, ville: v.ville }))} 
+        departementName="Essonne" 
+      />
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4 max-w-3xl">
           <h2 className="text-3xl font-bold text-center mb-10 text-black">Questions fréquentes — Essonne (91)</h2>

@@ -78,7 +78,7 @@ export default function MentionsLegalesPage() {
                     2. Prise en charge des véhicules hors d&apos;usage
                   </h2>
                   <p className="text-gray-700">
-                    GH Épaviste assure la collecte et le transport de véhicules hors d&apos;usage en Île-de-France. Les véhicules collectés sont remis à des centres partenaires agréés pour la dépollution, le recyclage et la destruction, conformément à la réglementation en vigueur.
+                    GH Épaviste assure la collecte et le transport de véhicules hors d&apos;usage en Île-de-France. Les véhicules collectés sont remis à des partenaires spécialisés pour la dépollution, le recyclage et la destruction, conformément à la réglementation en vigueur.
                   </p>
                   <div className="bg-yellow-50 p-4 rounded-lg mt-4">
                     <p className="text-gray-700 text-sm">
