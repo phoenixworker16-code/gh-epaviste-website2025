@@ -1,0 +1,364 @@
+[
+  {
+    "slug": "paris",
+    "name": "Paris",
+    "departmentCode": "75",
+    "hero": {
+      "title": "Enlèvement d'épave gratuit à Paris (75)",
+      "subtitle": "Service premium 24h/7j intra-muros. Enlèvement d'épaves dans les parkings souterrains et sur la voie publique parisienne."
+    },
+    "presentation": {
+      "title": "Épaviste à Paris : un service adapté à la densité urbaine",
+      "content": "La capitale impose des défis uniques pour l'enlèvement d'épaves : rues étroites, circulation dense, et de très nombreux véhicules stationnés en sous-sol. GH Épaviste dispose d'une flotte de dépanneuses adaptées au gabarit parisien (dont des véhicules surbaissés pour les parkings de moins de 1m90). Nous intervenons dans les 20 arrondissements pour libérer rapidement l'espace public ou privé."
+    },
+    "reglementation": {
+      "title": "Réglementation et ZFE-m à Paris",
+      "content": "Paris est au cœur de la Zone à Faibles Émissions mobilité (ZFE-m). De nombreux véhicules anciens (Crit'Air 4, 5 ou non classés) ne sont plus autorisés à circuler. Si votre véhicule est concerné et que vous souhaitez le mettre au rebut, nous nous occupons de l'enlèvement sans que vous n'ayez à le déplacer, en totale conformité avec la réglementation de la Préfecture de Police."
+    },
+    "delais": [
+      { "zone": "Paris Centre (1er-4e)", "delai": "Intervention sous 2h à 12h" },
+      { "zone": "Paris Est (10e-12e, 19e-20e)", "delai": "Intervention sous 12h à 24h" },
+      { "zone": "Paris Ouest & Sud (13e-18e, 5e-9e)", "delai": "Intervention sous 12h à 24h" }
+    ],
+    "faq": [
+      {
+        "q": "Intervenez-vous dans les parkings sous-terrains parisiens ?",
+        "a": "Oui, nous sommes équipés de dépanneuses extra-basses capables d'accéder à la grande majorité des parkings souterrains de Paris intra-muros."
+      },
+      {
+        "q": "Faut-il payer le stationnement le jour de l'enlèvement ?",
+        "a": "Nous vous recommandons de maintenir le stationnement valide jusqu'à l'arrivée de la dépanneuse pour éviter une verbalisation, bien que l'enlèvement lui-même soit rapide."
+      },
+      {
+        "q": "Comment faire pour un véhicule abandonné dans ma rue à Paris ?",
+        "a": "Si le véhicule ne vous appartient pas, vous devez le signaler via l'application DansMaRue ou à la police municipale. Nous ne pouvons enlever que les véhicules dont vous êtes le propriétaire légal."
+      },
+      {
+        "q": "Intervenez-vous la nuit à Paris ?",
+        "a": "Oui, nous proposons des créneaux en soirée ou de nuit pour éviter les problèmes de circulation et faciliter les manœuvres dans les rues étroites."
+      },
+      {
+        "q": "Le service est-il gratuit dans tous les arrondissements ?",
+        "a": "Absolument. De l'hyper-centre aux portes de Paris, notre service d'enlèvement d'épave est 100% gratuit."
+      }
+    ],
+    "communesSlugs": ["paris"]
+  },
+  {
+    "slug": "seine-et-marne",
+    "name": "Seine-et-Marne",
+    "departmentCode": "77",
+    "hero": {
+      "title": "Enlèvement d'épave gratuit en Seine-et-Marne (77)",
+      "subtitle": "Intervention rapide sur l'ensemble du plus vaste département francilien. Service 100% gratuit, 7j/7."
+    },
+    "presentation": {
+      "title": "Un épaviste couvrant tout le 77",
+      "content": "La Seine-et-Marne représente près de la moitié de la superficie de l'Île-de-France. Que vous soyez dans une agglomération dense comme Meaux ou Melun, ou dans une zone plus rurale autour de Provins ou Fontainebleau, GH Épaviste s'engage à intervenir rapidement. Nous couvrons l'ensemble des axes majeurs (A4, A5, A6, N104) et les routes départementales pour remorquer votre VHU."
+    },
+    "reglementation": {
+      "title": "Respect de l'environnement en grande couronne",
+      "content": "La Seine-et-Marne compte de nombreux espaces naturels et agricoles qu'il est crucial de préserver. L'abandon d'une épave en pleine nature constitue un délit sévèrement puni (jusqu'à 75 000 € d'amende). En faisant appel à GH Épaviste, votre véhicule est dépollué et recyclé dans un centre VHU agréé par la préfecture de Melun."
+    },
+    "delais": [
+      { "zone": "Agglomérations (Meaux, Melun, Chelles, Marne-la-Vallée)", "delai": "Intervention sous 24h" },
+      { "zone": "Zones périurbaines (Fontainebleau, Coulommiers)", "delai": "Intervention sous 24h à 48h" },
+      { "zone": "Secteurs ruraux (Provins, Montereau)", "delai": "Intervention sous 48h maximum" }
+    ],
+    "faq": [
+      {
+        "q": "Venez-vous récupérer des épaves dans les corps de ferme ?",
+        "a": "Oui, nous intervenons régulièrement dans des cours de ferme, granges ou terrains privés en Seine-et-Marne. Assurez-vous simplement que le passage est dégagé pour notre dépanneuse."
+      },
+      {
+        "q": "Mon véhicule est immobilisé dans un champ embourbé, est-ce possible ?",
+        "a": "Nous disposons de treuils puissants, mais l'accès doit rester carrossable pour la dépanneuse. Contactez-nous pour évaluer la faisabilité."
+      },
+      {
+        "q": "Le déplacement est-il gratuit même à l'extrême est du 77 ?",
+        "a": "Oui. Notre engagement de gratuité s'applique à l'intégralité du département de la Seine-et-Marne sans exception."
+      },
+      {
+        "q": "Pouvez-vous enlever plusieurs véhicules en même temps ?",
+        "a": "Oui. Pour les professionnels ou les particuliers possédant plusieurs VHU, nous pouvons organiser l'enlèvement groupé. Précisez-le lors de votre appel."
+      },
+      {
+        "q": "Enlevez-vous les engins agricoles ?",
+        "a": "Notre service est principalement dédié aux véhicules légers et utilitaires (jusqu'à 3.5T). Pour les gros engins agricoles, il faut contacter un récupérateur de métaux industriel."
+      }
+    ],
+    "communesSlugs": ["meaux", "melun", "chelles", "pontault-combault", "savigny-le-temple", "torcy", "lognes", "noisiel", "moissy-cramayel", "brie-comte-robert", "ozoir-la-ferriere", "fontainebleau", "provins", "montereau-fault-yonne", "coulommiers"]
+  },
+  {
+    "slug": "yvelines",
+    "name": "Yvelines",
+    "departmentCode": "78",
+    "hero": {
+      "title": "Enlèvement d'épave gratuit dans les Yvelines (78)",
+      "subtitle": "De Versailles à Mantes-la-Jolie, GH Épaviste retire vos véhicules hors d'usage gratuitement."
+    },
+    "presentation": {
+      "title": "Épaviste de confiance dans le 78",
+      "content": "Département contrasté entre zones fortement urbanisées à l'est et espaces ruraux à l'ouest, les Yvelines nécessitent une logistique bien rodée. GH Épaviste intervient aussi bien dans les rues résidentielles de Versailles, Saint-Germain-en-Laye ou Poissy, que dans les communes plus isolées près de Rambouillet. Nos dépanneuses sillonnent l'A13, l'A12 et la N10 au quotidien."
+    },
+    "reglementation": {
+      "title": "Destruction légale et certificat VHU",
+      "content": "En confiant votre véhicule à GH Épaviste, vous avez l'assurance que celui-ci sera traité par un centre VHU partenaire agréé par la préfecture de Versailles. Vous recevez le certificat de destruction, seul document officiel qui annule définitivement l'immatriculation et vous dégage de toute responsabilité (assurance, contraventions)."
+    },
+    "delais": [
+      { "zone": "Est Yvelinois (Versailles, SQY, Poissy, Sartrouville)", "delai": "Intervention sous 24h" },
+      { "zone": "Vallée de la Seine (Mantes, Les Mureaux)", "delai": "Intervention sous 24h à 48h" },
+      { "zone": "Sud Yvelines (Rambouillet, Chevreuse)", "delai": "Intervention sous 24h à 48h" }
+    ],
+    "faq": [
+      {
+        "q": "Intervenez-vous dans les résidences fermées des Yvelines ?",
+        "a": "Oui. Si votre épave se trouve dans une résidence sécurisée, il vous suffira de nous ouvrir le portail ou la barrière lors de notre arrivée."
+      },
+      {
+        "q": "Ma voiture n'a plus de roues, pouvez-vous l'enlever ?",
+        "a": "Oui, nos dépanneuses sont équipées de plateaux inclinables et de treuils. Nous pouvons glisser le véhicule même sans ses roues."
+      },
+      {
+        "q": "Faites-vous les enlèvements en sous-sol à Versailles ou Saint-Quentin ?",
+        "a": "Oui, nous possédons les véhicules adaptés (dépanneuses 4x4 basses) pour accéder aux parkings souterrains fréquents dans ces agglomérations."
+      },
+      {
+        "q": "Je n'ai pas la carte grise, que faire ?",
+        "a": "Vous devrez faire une déclaration de perte auprès du commissariat (si perdue/volée) ou demander une fiche d'identification du véhicule. Contactez-nous pour être guidé."
+      },
+      {
+        "q": "Le centre de destruction est-il bien situé en Île-de-France ?",
+        "a": "Oui, nous travaillons avec un réseau de centres de traitement agréés situés en Île-de-France pour limiter l'empreinte carbone du transport."
+      }
+    ],
+    "communesSlugs": ["versailles", "saint-germain-en-laye", "sartrouville", "mantes-la-jolie", "conflans-sainte-honorine", "poissy", "chatou", "houilles", "maisons-laffitte", "rambouillet", "guyancourt", "velizy-villacoublay", "montigny-le-bretonneux", "trappes", "le-vesinet"]
+  },
+  {
+    "slug": "essonne",
+    "name": "Essonne",
+    "departmentCode": "91",
+    "hero": {
+      "title": "Enlèvement d'épave gratuit en Essonne (91)",
+      "subtitle": "Service rapide et professionnel d'Évry à Étampes. Zéro frais, 100% légal."
+    },
+    "presentation": {
+      "title": "Votre épaviste gratuit dans le 91",
+      "content": "Que votre véhicule soit immobilisé à Évry-Courcouronnes, Corbeil-Essonnes, Massy ou dans le sud de l'Essonne, GH Épaviste intervient gratuitement. L'Essonne, traversée par des axes majeurs comme la N20, l'A6 et la Francilienne, est au cœur de notre zone de couverture. Nous retirons les voitures accidentées, en panne irréparable, ou brûlées."
+    },
+    "reglementation": {
+      "title": "Simplifiez vos démarches administratives",
+      "content": "La mise au rebut d'un véhicule nécessite une rigueur administrative. Lors de l'enlèvement, nous vous remettons le certificat de cession (Cerfa 15776) co-signé. Nous nous occupons de transférer le véhicule à un centre de traitement agréé, qui se chargera d'émettre le certificat de destruction final pour l'ANTS."
+    },
+    "delais": [
+      { "zone": "Nord Essonne (Massy, Palaiseau, Savigny)", "delai": "Intervention sous 24h" },
+      { "zone": "Centre Essonne (Évry, Corbeil, Brétigny)", "delai": "Intervention sous 24h" },
+      { "zone": "Sud Essonne (Étampes, Dourdan)", "delai": "Intervention sous 24h à 48h" }
+    ],
+    "faq": [
+      {
+        "q": "Le certificat de non-gage est-il obligatoire ?",
+        "a": "Oui, le certificat de situation administrative détaillé (non-gage) de moins de 15 jours est obligatoire pour prouver qu'aucune opposition n'empêche la cession de l'épave."
+      },
+      {
+        "q": "Ma voiture est garée le long de la N20, pouvez-vous l'enlever ?",
+        "a": "Oui. Si elle est sur la voie publique, assurez-vous d'être présent avec les documents et les clés. Pour une urgence sécuritaire, nous intervenons très rapidement."
+      },
+      {
+        "q": "Puis-je conserver certaines pièces de ma voiture avant l'enlèvement ?",
+        "a": "Non. La réglementation VHU exige que le véhicule soit remis complet, particulièrement avec ses éléments essentiels (moteur, pot catalytique, carrosserie)."
+      },
+      {
+        "q": "Rachetez-vous les épaves en Essonne ?",
+        "a": "L'enlèvement est totalement gratuit, ce qui est notre offre de valeur. Nous ne rachetons pas les VHU, le coût du transport et du traitement couvrant la valeur des matières premières."
+      },
+      {
+        "q": "Combien de temps faut-il prévoir pour l'intervention ?",
+        "a": "Sur place, l'opération prend environ 20 à 30 minutes : 10 minutes pour les formalités administratives, et 10 à 20 minutes pour le chargement du véhicule."
+      }
+    ],
+    "communesSlugs": ["evry-courcouronnes", "corbeil-essonnes", "massy", "palaiseau", "gif-sur-yvette", "les-ulis", "longjumeau", "juvisy-sur-orge", "ris-orangis", "athis-mons", "draveil", "viry-chatillon", "sainte-genevieve-des-bois", "etampes", "arpajon"]
+  },
+  {
+    "slug": "hauts-de-seine",
+    "name": "Hauts-de-Seine",
+    "departmentCode": "92",
+    "hero": {
+      "title": "Enlèvement d'épave gratuit dans les Hauts-de-Seine (92)",
+      "subtitle": "Service premium et rapide pour dégager vos VHU en zone très dense."
+    },
+    "presentation": {
+      "title": "L'expert du dépannage en milieu urbain dense",
+      "content": "Les Hauts-de-Seine, département le plus dense après Paris, présentent un fort enjeu de stationnement. Une voiture en panne ou accidentée à Boulogne-Billancourt, Nanterre, Courbevoie ou Colombes devient vite un problème coûteux. GH Épaviste intervient rapidement, même dans les rues étroites, les résidences, ou les parkings souterrains de La Défense."
+    },
+    "reglementation": {
+      "title": "Fin des amendes de stationnement",
+      "content": "Un véhicule ventouse (stationnement ininterrompu au même endroit) s'expose à des amendes, voire une mise en fourrière. Ne laissez pas la situation dégénérer. L'enlèvement par GH Épaviste est gratuit et vous permet de clôturer officiellement le dossier de ce véhicule via le centre VHU partenaire."
+    },
+    "delais": [
+      { "zone": "Boucle Nord (Colombes, Asnières, Gennevilliers)", "delai": "Intervention sous 24h" },
+      { "zone": "Centre (Nanterre, Courbevoie, Rueil)", "delai": "Intervention sous 24h" },
+      { "zone": "Sud (Boulogne, Issy, Antony, Montrouge)", "delai": "Intervention sous 24h" }
+    ],
+    "faq": [
+      {
+        "q": "Le véhicule est au fond d'un parking souterrain très bas (1m80), est-ce jouable ?",
+        "a": "Oui, nous utilisons des véhicules légers d'extraction (4x4 avec treuil) spécifiquement pour les parkings souterrains des Hauts-de-Seine."
+      },
+      {
+        "q": "Mon véhicule a reçu un papillon de mise en fourrière de la police de Boulogne, que faire ?",
+        "a": "Contactez-nous d'urgence. Si le véhicule n'est pas encore enlevé par la fourrière, nous pouvons le récupérer gratuitement, vous évitant les frais de fourrière."
+      },
+      {
+        "q": "La carte grise est à une ancienne adresse, est-ce grave ?",
+        "a": "Ce n'est pas un problème bloquant pour la mise au rebut. Assurez-vous simplement que vous êtes bien le titulaire et que vous avez une pièce d'identité correspondante."
+      },
+      {
+        "q": "Intervenez-vous dans le quartier de La Défense ?",
+        "a": "Oui, nous avons l'habitude d'intervenir dans les différents parkings et sous-sols du quartier d'affaires de La Défense."
+      },
+      {
+        "q": "J'ai perdu les clés de mon véhicule, l'enlevez-vous quand même ?",
+        "a": "Oui. Le manque de clés complique le retrait (blocage direction) mais nos dépanneuses sont équipées de patins glisseurs pour charger la voiture."
+      }
+    ],
+    "communesSlugs": ["boulogne-billancourt", "nanterre", "courbevoie", "colombes", "rueil-malmaison", "levallois-perret", "asnieres-sur-seine", "antony", "montrouge", "clamart", "issy-les-moulineaux", "clichy", "sceaux", "chatenay-malabry", "garches"]
+  },
+  {
+    "slug": "seine-saint-denis",
+    "name": "Seine-Saint-Denis",
+    "departmentCode": "93",
+    "hero": {
+      "title": "Enlèvement d'épave gratuit en Seine-Saint-Denis (93)",
+      "subtitle": "Intervention rapide et sans frais sur toutes les communes du 93."
+    },
+    "presentation": {
+      "title": "Service réactif sur tout le 93",
+      "content": "Montreuil, Saint-Denis, Aubervilliers, Aulnay-sous-Bois... GH Épaviste intervient dans chacune des 40 communes de Seine-Saint-Denis. Nous savons que la réactivité est clé dans ce département où les épaves peuvent être sources de nuisances. Nous enlevons gratuitement voitures, motos et utilitaires, quel que soit leur état (vandalisés, brûlés, accidentés)."
+    },
+    "reglementation": {
+      "title": "Lutte contre les épaves et sécurité",
+      "content": "Une épave abandonnée dans une cité, un terrain vague ou sur la voirie représente un danger (fluides inflammables, bris de glace). Notre intervention permet d'envoyer le véhicule vers un centre VHU agréé partenaire pour une dépollution sécurisée, dans le respect des normes environnementales."
+    },
+    "delais": [
+      { "zone": "Plaine Commune (St-Denis, Aubervilliers, St-Ouen)", "delai": "Intervention sous 24h" },
+      { "zone": "Est Ensemble (Montreuil, Pantin, Bobigny)", "delai": "Intervention sous 24h" },
+      { "zone": "Grand Paris Grand Est (Aulnay, Noisy-le-Grand)", "delai": "Intervention sous 24h" }
+    ],
+    "faq": [
+      {
+        "q": "Le véhicule a été vandalisé et en partie désossé, le prenez-vous ?",
+        "a": "Oui, nous pouvons retirer l'épave. Néanmoins, pour que le service reste 100% gratuit, le véhicule doit idéalement conserver ses composants majeurs (moteur)."
+      },
+      {
+        "q": "Enlevez-vous les voitures brûlées dans le 93 ?",
+        "a": "Oui, c'est une intervention que nous réalisons couramment. Prévoyez de nous informer à l'avance pour que nous adaptions le matériel."
+      },
+      {
+        "q": "Quels documents pour une voiture sans carte grise ?",
+        "a": "Si la voiture est brûlée ou la carte volée, vous devez fournir la déclaration de vol/perte établie par la police ou gendarmerie."
+      },
+      {
+        "q": "L'intervention en sous-sol d'un HLM est-elle possible ?",
+        "a": "Oui, si nous disposons des accès nécessaires (badges, clés des barrières) fournis par vous ou le gardien. Nous avons des dépanneuses adaptées."
+      },
+      {
+        "q": "Peut-on fixer le rdv le week-end ?",
+        "a": "Absolument. Nous sommes ouverts 7 jours sur 7 pour s'adapter à vos disponibilités."
+      }
+    ],
+    "communesSlugs": [
+      "aubervilliers", "aulnay-sous-bois", "bagnolet", "le-blanc-mesnil", "bobigny", "bondy", "le-bourget", "clichy-sous-bois", "coubron", "la-courneuve", "drancy", "dugny", "epinay-sur-seine", "gagny", "gournay-sur-marne", "lile-saint-denis", "les-lilas", "livry-gargan", "montfermeil", "montreuil", "neuilly-plaisance", "neuilly-sur-marne", "noisy-le-grand", "noisy-le-sec", "pantin", "les-pavillons-sous-bois", "le-pre-saint-gervais", "le-raincy", "romainville", "rosny-sous-bois", "saint-denis", "saint-ouen-sur-seine", "sevran", "stains", "tremblay-en-france", "vaujours", "villemomble", "villepinte", "villetaneuse"
+    ]
+  },
+  {
+    "slug": "val-de-marne",
+    "name": "Val-de-Marne",
+    "departmentCode": "94",
+    "hero": {
+      "title": "Enlèvement d'épave gratuit dans le Val-de-Marne (94)",
+      "subtitle": "Intervention sous 24h sur Créteil, Vitry, Champigny et tout le 94."
+    },
+    "presentation": {
+      "title": "Dépannage et enlèvement VHU rapide",
+      "content": "Installés à proximité, nous connaissons parfaitement le Val-de-Marne. Que vous soyez à Créteil, Vitry-sur-Seine, Champigny-sur-Marne ou Saint-Maur-des-Fossés, nos délais d'intervention sont parmi les plus rapides. GH Épaviste vous débarrasse sans frais de toute voiture, moto ou utilitaire encombrant."
+    },
+    "reglementation": {
+      "title": "Simplification administrative totale",
+      "content": "Ne laissez pas les démarches vous décourager. Le jour de l'enlèvement, nous remplissons avec vous le Cerfa 15776 de cession de véhicule. Le VHU est ensuite acheminé vers un centre agréé VHU qui garantit sa dépollution complète, conformément à la réglementation. Le certificat de destruction est votre garantie de conformité."
+    },
+    "delais": [
+      { "zone": "Nord & Ouest (Ivry, Vitry, Villejuif, Vincennes)", "delai": "Intervention sous 12h à 24h" },
+      { "zone": "Centre (Créteil, Choisy, Maisons-Alfort)", "delai": "Intervention sous 12h à 24h" },
+      { "zone": "Est & Sud (Champigny, St-Maur, Boissy)", "delai": "Intervention sous 24h" }
+    ],
+    "faq": [
+      {
+        "q": "Le propriétaire est décédé, puis-je faire enlever le véhicule ?",
+        "a": "Oui, mais cela nécessite les documents de succession (attestation du notaire ou certificat d'hérédité). Les héritiers doivent signer le certificat de cession."
+      },
+      {
+        "q": "Retirez-vous les camionnettes et utilitaires ?",
+        "a": "Oui, nous enlevons tous les utilitaires légers (PTAC inférieur ou égal à 3,5 tonnes)."
+      },
+      {
+        "q": "Faut-il payer pour la destruction en centre VHU ?",
+        "a": "Non. Le service d'enlèvement ET le traitement en centre VHU sont totalement gratuits pour vous."
+      },
+      {
+        "q": "Puis-je annuler le rdv si je change d'avis ?",
+        "a": "Oui, mais nous vous prions de nous prévenir dès que possible pour ne pas bloquer une dépanneuse inutilement."
+      },
+      {
+        "q": "Que faire de la vignette d'assurance sur le pare-brise ?",
+        "a": "Vous pouvez la retirer, tout comme vos effets personnels, avant notre arrivée. Vous devrez résilier votre contrat avec l'attestation de cession fournie."
+      }
+    ],
+    "communesSlugs": ["creteil", "vincennes", "champigny-sur-marne", "saint-maur-des-fosses", "vitry-sur-seine", "ivry-sur-seine", "alfortville", "maisons-alfort", "villeneuve-saint-georges", "choisy-le-roi", "fontenay-sous-bois", "nogent-sur-marne", "charenton-le-pont", "joinville-le-pont", "boissy-saint-leger"]
+  },
+  {
+    "slug": "val-doise",
+    "name": "Val-d'Oise",
+    "departmentCode": "95",
+    "hero": {
+      "title": "Enlèvement d'épave gratuit dans le Val-d'Oise (95)",
+      "subtitle": "Service 7j/7, de Cergy-Pontoise à Argenteuil et Sarcelles."
+    },
+    "presentation": {
+      "title": "Un épaviste proche de chez vous dans le 95",
+      "content": "GH Épaviste intervient quotidiennement dans tout le Val-d'Oise. Des zones urbaines très denses comme Argenteuil, Sarcelles ou Garges-lès-Gonesse, à l'agglomération de Cergy-Pontoise, jusqu'aux secteurs plus résidentiels et ruraux (Vexin français). Notre logistique nous permet de garantir un retrait d'épave 100% gratuit et rapide."
+    },
+    "reglementation": {
+      "title": "Sécurité et écologie avant tout",
+      "content": "Laisser un véhicule à l'abandon entraîne la fuite de liquides toxiques (huile, batterie, liquide de refroidissement). En confiant l'enlèvement à GH Épaviste, le véhicule part en centre VHU agréé où la dépollution est scrupuleusement réalisée, préservant ainsi les sols et l'environnement du Val-d'Oise."
+    },
+    "delais": [
+      { "zone": "Agglo Cergy-Pontoise", "delai": "Intervention sous 24h" },
+      { "zone": "Vallée de Montmorency & Argenteuil", "delai": "Intervention sous 24h" },
+      { "zone": "Est du 95 (Sarcelles, Gonesse)", "delai": "Intervention sous 24h à 48h" }
+    ],
+    "faq": [
+      {
+        "q": "Le certificat de cession est-il suffisant pour annuler l'assurance ?",
+        "a": "Oui. C'est la preuve légale que le véhicule a été cédé pour destruction. Votre assureur l'acceptera pour résilier le contrat immédiatement."
+      },
+      {
+        "q": "Est-ce que je dois me rendre à la préfecture ?",
+        "a": "Non, tout est numérisé. Vous n'avez qu'à faire votre déclaration de cession en ligne sur le site de l'ANTS."
+      },
+      {
+        "q": "Ma voiture est immobilisée dans mon jardin dans le Vexin, venez-vous ?",
+        "a": "Oui, si la dépanneuse peut accéder ou si nous pouvons tracter le véhicule vers la rue avec notre treuil sans risque d'embourbement."
+      },
+      {
+        "q": "Le CT (Contrôle Technique) est périmé, est-ce grave ?",
+        "a": "Le contrôle technique n'est absolument pas requis pour mettre un véhicule au rebut."
+      },
+      {
+        "q": "Puis-je donner ma voiture à un ferrailleur ambulant ?",
+        "a": "C'est fortement déconseillé et illégal. Seul un enlèvement lié à un centre VHU agréé vous assure de recevoir le certificat de destruction officiel et vous décharge de vos responsabilités."
+      }
+    ],
+    "communesSlugs": ["cergy", "argenteuil", "pontoise", "saint-ouen-laumone", "sarcelles", "garges-les-gonesse", "gonesse", "eragny-sur-oise", "herblay-sur-seine", "montmorency", "enghien-les-bains", "ermont", "bezons", "taverny", "marines"]
+  }
+]

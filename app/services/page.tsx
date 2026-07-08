@@ -331,7 +331,7 @@ export default function ServicesPage() {
                   DEMANDER UN ENLÈVEMENT
                 </Link>
               </Button>
-              <Button size="lg" className="bg-black hover:bg-gray-800 text-yellow-500 font-bold w-full sm:w-auto shadow-lg hover:shadow-xl transition-all" asChild>
+              <Button size="lg" className="bg-transparent text-yellow-400 border-2 border-yellow-400 hover:bg-[#ca8a04] hover:border-[#ca8a04] hover:text-black font-bold w-full sm:w-auto shadow-lg transition-all duration-200" asChild>
                 <a href="tel:+33753120793" aria-label="Appeler GH Épaviste au 00 33 7 53 12 07 93" className="flex justify-center items-center">
                   <Phone className="w-5 h-5 mr-2" aria-hidden="true" />
                   00 33 7 53 12 07 93
