@@ -1,8 +1,15 @@
-# https://www.robotstxt.org/robotstxt.html
+# robots.txt — GH Épaviste (https://gh-epaviste.fr)
+# Mis à jour : 2026-07-08
+
 User-agent: *
 Allow: /
-Allow: /_next/static/
+Disallow: /api/
+Disallow: /_next/
+
+# Googlebot : autorisations spécifiques
+User-agent: Googlebot
+Allow: /
 Disallow: /api/
 
-# Sitemap
+# Sitemap principal
 Sitemap: https://gh-epaviste.fr/sitemap.xml

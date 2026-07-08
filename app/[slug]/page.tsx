@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import villes from "@/data/villes.json"
 import BreadcrumbJsonLd from "@/components/breadcrumb-jsonld"
+import { isMajorCity } from "@/data/major-cities"
 
 export function generateStaticParams() {
   return villes.map((ville) => ({
@@ -28,11 +29,14 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   const title = `Épaviste Gratuit ${ville.ville} (${ville.zipCode}) | Enlèvement Épave 24h/7j`
   const description = `Besoin d'un épaviste expert à ${ville.ville} (${ville.depNumber}) ? GH-Épaviste intervient gratuitement 24h/24 et 7j/7 pour l'enlèvement de votre véhicule hors d'usage. Appelez-nous !`
 
+  // Communes non-majeures : noindex pour préserver le budget de crawl
+  const isIndexed = isMajorCity(citySlug)
+
   return {
     title,
     description,
     alternates: { canonical: `https://gh-epaviste.fr/epaviste-gratuit-${ville.slug}` },
-    robots: { index: true, follow: true },
+    robots: { index: isIndexed, follow: true },
     openGraph: {
       title,
       description,
@@ -202,7 +206,7 @@ export default function VillePage({ params }: { params: { slug: string } }) {
                 </div>
                 <h3 className="font-bold text-black text-xl mb-3">Démarches Simplifiées</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Nous nous occupons de remplir le certificat de cession et de confier votre véhicule à une filière de recyclage automobile partenaire.
+                  Nous co-signons le certificat de cession et confions votre véhicule à un centre de traitement agréé partenaire conformément à la réglementation en vigueur.
                 </p>
               </CardContent>
             </Card>
@@ -218,7 +222,7 @@ export default function VillePage({ params }: { params: { slug: string } }) {
             La gestion d&apos;un véhicule hors d&apos;usage peut s&apos;avérer complexe sans l&apos;aide d&apos;un professionnel. À {ville.ville} ({ville.zipCode}), notre équipe intervient rapidement et en toute sécurité, avec un matériel de remorquage adapté à toutes les situations : sous-sols étroits, voies difficiles d&apos;accès, véhicules gravement accidentés.
           </p>
           <p className="text-gray-700 leading-relaxed">
-            Faire appel à GH Épaviste, c&apos;est bénéficier d&apos;un service sérieux et sans surprise. Nous vous accompagnons dans les démarches administratives, notamment la rédaction du certificat de cession, et nous assurons le transfert de votre véhicule vers des filières de traitement conformes à la réglementation en vigueur dans le département {ville.depNumber}.
+            Faire appel à GH Épaviste, c&apos;est bénéficier d&apos;un service sérieux et sans surprise. Nous vous accompagnons dans les démarches administratives, notamment la co-signature du certificat de cession, et nous confions votre véhicule à un centre de traitement agréé VHU partenaire conformément à la réglementation en vigueur dans le département {ville.depNumber}.
           </p>
         </div>
       </section>
@@ -294,7 +298,7 @@ export default function VillePage({ params }: { params: { slug: string } }) {
                 Est-ce que vous fournissez le certificat de destruction à {ville.ville} ?
               </h3>
               <p className="text-gray-600 pl-9">
-                Oui. Lors de l&apos;enlèvement, nous remplissons avec vous un certificat de cession pour destruction. Vous recevrez ensuite le certificat de destruction final une fois le véhicule transmis à nos partenaires de traitement.
+                Lors de l&apos;enlèvement, nous co-signons ensemble le certificat de cession du véhicule. Le certificat de destruction officiel est émis par le centre de traitement agréé VHU partenaire conformément à la réglementation. GH Épaviste vous le transmet dès réception.
               </p>
             </div>
           </div>
