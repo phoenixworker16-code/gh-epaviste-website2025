@@ -1,6 +1,7 @@
 import { MetadataRoute } from 'next'
 import villes from '@/data/villes.json'
 import { MAJOR_CITY_SLUGS } from '@/data/major-cities'
+import servicesData from '@/data/services.json'
 
 interface Ville {
   slug: string
@@ -52,7 +53,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.9,
   }))
 
-  // 3. Pages Villes — UNIQUEMENT les communes majeures (~120 communes)
+  // 3. Pages Services (19 pages — priorité haute)
+  const servicePages: MetadataRoute.Sitemap = (servicesData as { slug: string }[]).map((service) => ({
+    url: `${baseUrl}/services/${service.slug}`,
+    lastModified: lastModDate,
+    changeFrequency: 'monthly' as const,
+    priority: 0.85,
+  }))
+
+  // 4. Pages Villes — UNIQUEMENT les communes majeures (~120 communes)
   // Les ~1 100 communes secondaires sont en noindex:follow et exclues du sitemap
   // → optimisation du budget de crawl Googlebot
   const majorCityPages: MetadataRoute.Sitemap = typedVilles
@@ -64,5 +73,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     }))
 
-  return [...mainPages, ...departmentPages, ...majorCityPages]
+  return [...mainPages, ...departmentPages, ...servicePages, ...majorCityPages]
 }
