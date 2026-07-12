@@ -1,0 +1,137 @@
+{
+  "version": "2.1.0",
+  "description": "Legal Auditor v2.1 — Règles juridiques GH Épaviste. Espaces gérés par regex (\\s+).",
+  "allowlist": [
+    "centre vhu partenaire",
+    "centre vhu partenaire agree",
+    "centres vhu partenaires",
+    "centres vhu partenaires agrees",
+    "acheminement vers un centre vhu partenaire",
+    "confie a un centre vhu partenaire",
+    "remis a un centre vhu partenaire",
+    "certificat de destruction delivre par",
+    "destruction realisee par un centre vhu partenaire"
+  ],
+  "rules": [
+    {
+      "id": "R01",
+      "category": "JURIDIQUE",
+      "level": "ERROR",
+      "pattern": "gh\\s+epaviste\\s+(est\\s+)?(un\\s+|le\\s+)?(centre|casse|site)\\s+vhu",
+      "regex": true,
+      "reason": "Affirme que GH Épaviste est un centre VHU"
+    },
+    {
+      "id": "R02",
+      "category": "JURIDIQUE",
+      "level": "ERROR",
+      "pattern": "epaviste\\s+agree\\s+vhu",
+      "regex": true,
+      "reason": "GH Épaviste n'est pas agréé VHU"
+    },
+    {
+      "id": "R03",
+      "category": "JURIDIQUE",
+      "level": "ERROR",
+      "pattern": "gh\\s+epaviste\\s+agree",
+      "regex": true,
+      "reason": "GH Épaviste n'est pas agréé"
+    },
+    {
+      "id": "R04",
+      "category": "JURIDIQUE",
+      "level": "ERROR",
+      "pattern": "notre\\s+(centre|casse|site)(\\s+vhu)?(\\s+agree)?",
+      "regex": true,
+      "reason": "GH Épaviste ne possède aucun centre/casse"
+    },
+    {
+      "id": "R05",
+      "category": "JURIDIQUE",
+      "level": "ERROR",
+      "pattern": "nous\\s+(sommes|somme)\\s+agrees",
+      "regex": true,
+      "reason": "GH Épaviste ne doit jamais se déclarer agréé"
+    },
+    {
+      "id": "R06",
+      "category": "JURIDIQUE",
+      "level": "ERROR",
+      "pattern": "nous\\s+delivrons\\s+(le\\s+)?(certificat|attestation)",
+      "regex": true,
+      "reason": "GH Épaviste ne délivre pas le certificat"
+    },
+    {
+      "id": "R07",
+      "category": "JURIDIQUE",
+      "level": "ERROR",
+      "pattern": "notre\\s+(certificat|attestation)\\s+de\\s+destruction",
+      "regex": true,
+      "reason": "GH Épaviste ne possède pas ce document"
+    },
+    {
+      "id": "R08",
+      "category": "JURIDIQUE",
+      "level": "ERROR",
+      "pattern": "notre\\s+agrement",
+      "regex": true,
+      "reason": "GH Épaviste n'a pas d'agrément VHU"
+    },
+    {
+      "id": "R09",
+      "category": "JURIDIQUE",
+      "level": "ERROR",
+      "pattern": "casse\\s+agree",
+      "regex": true,
+      "reason": "Laisse croire que GH Épaviste exploite une casse"
+    },
+    {
+      "id": "R10",
+      "category": "JURIDIQUE",
+      "level": "ERROR",
+      "pattern": "depollution\\s+vhu",
+      "regex": true,
+      "reason": "GH Épaviste ne réalise pas la dépollution"
+    },
+    {
+      "id": "R11",
+      "category": "GENERIQUE",
+      "level": "WARNING",
+      "pattern": "bienvenue\\s+a",
+      "regex": true,
+      "reason": "Formulation générique interdite"
+    },
+    {
+      "id": "R12",
+      "category": "SEO",
+      "level": "WARNING",
+      "pattern": "toute\\s+la\\s+commune",
+      "regex": true,
+      "reason": "Aucune valeur SEO"
+    },
+    {
+      "id": "R13",
+      "category": "GENERIQUE",
+      "level": "WARNING",
+      "pattern": "nous\\s+intervenons\\s+partout",
+      "regex": true,
+      "reason": "Formulation générique interdite"
+    },
+    {
+      "id": "R14",
+      "category": "GENERIQUE",
+      "level": "WARNING",
+      "pattern": "service\\s+de\\s+qualite",
+      "regex": true,
+      "reason": "Formulation générique interdite"
+    },
+    {
+      "id": "R15",
+      "category": "GENERIQUE",
+      "level": "WARNING",
+      "pattern": "notre\\s+equipe\\s+intervient\\s+rapidement",
+      "regex": true,
+      "reason": "Formulation générique interdite"
+    }
+  ]
+}

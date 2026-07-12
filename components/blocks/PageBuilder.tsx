@@ -129,7 +129,7 @@ function DocsPreparationBlockComponent({ block }: { block: any }) {
                 <div className="w-10 h-10 bg-yellow-100 text-yellow-700 rounded-full flex items-center justify-center mx-auto mb-4 font-bold">
                   {idx + 1}
                 </div>
-                <p className="font-semibold text-gray-900">{doc}</p>
+                <h3 className="font-semibold text-gray-900">{doc}</h3>
              </div>
           ))}
         </div>
@@ -195,21 +195,34 @@ function LocalCoverageBlockComponent({ block }: { block: any }) {
         <h2 className="text-3xl font-bold mb-6 text-gray-900 text-center">{block.title}</h2>
         <p className="text-center text-gray-600 mb-10 max-w-2xl mx-auto text-lg">{block.intro}</p>
         
-        <div className="grid md:grid-cols-3 gap-6">
-          {block.zones.map((zone: any, idx: number) => (
-            <div key={idx} className="bg-gray-50 border border-gray-200 rounded-xl p-6 hover:border-yellow-400 transition-colors">
-               <h3 className="font-bold text-xl mb-3 text-gray-900 flex items-center gap-2">
-                 <MapPin className="w-5 h-5 text-yellow-500" />
-                 {zone.name}
-               </h3>
-               <div className="inline-block bg-yellow-100 text-yellow-800 text-sm font-semibold px-3 py-1 rounded-full mb-4">
-                 Délai : {zone.delay}
-               </div>
-               {zone.specificities && (
-                 <p className="text-sm text-gray-600 leading-relaxed">{zone.specificities}</p>
-               )}
-            </div>
-          ))}
+        <div className="overflow-x-auto">
+          <table className="w-full text-left border-collapse bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm">
+            <thead className="bg-gray-50 border-b border-gray-200">
+              <tr>
+                <th className="py-4 px-6 font-bold text-gray-900">Zone d'intervention</th>
+                <th className="py-4 px-6 font-bold text-gray-900">Délai estimé</th>
+                <th className="py-4 px-6 font-bold text-gray-900">Spécificités</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-100">
+              {block.zones.map((zone: any, idx: number) => (
+                <tr key={idx} className="hover:bg-gray-50 transition-colors">
+                  <td className="py-4 px-6 font-semibold text-gray-900 flex items-center gap-2">
+                    <MapPin className="w-5 h-5 text-yellow-500" />
+                    {zone.name}
+                  </td>
+                  <td className="py-4 px-6 text-gray-700">
+                    <span className="inline-block bg-yellow-100 text-yellow-800 text-sm font-semibold px-3 py-1 rounded-full">
+                      {zone.delay}
+                    </span>
+                  </td>
+                  <td className="py-4 px-6 text-sm text-gray-600 leading-relaxed">
+                    {zone.specificities || '-'}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
       </div>
     </section>
@@ -292,15 +305,22 @@ function FaqLocalBlockComponent({ block }: { block: any }) {
         </h2>
         <div className="space-y-4">
           {block.questions.map((item: any, i: number) => (
-            <div key={i} className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:border-yellow-300 transition-colors">
-              <h3 className="font-bold text-lg text-gray-900 mb-3 flex items-start gap-3">
-                <span className="w-6 h-6 bg-yellow-100 text-yellow-700 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">
-                  Q
-                </span>
-                {item.q}
-              </h3>
-              <p className="text-gray-700 leading-relaxed pl-9">{item.a}</p>
-            </div>
+            <details key={i} className="group bg-white border border-gray-200 rounded-xl shadow-sm hover:border-yellow-300 transition-colors overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+              <summary className="p-6 cursor-pointer select-none">
+                <h3 className="font-bold text-lg text-gray-900 flex items-center gap-3 m-0">
+                  <span className="w-6 h-6 bg-yellow-100 text-yellow-700 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0">
+                    Q
+                  </span>
+                  <span className="flex-1">{item.q}</span>
+                  <span className="transition group-open:rotate-180">
+                    <ArrowRight className="w-5 h-5 text-gray-400 rotate-90" />
+                  </span>
+                </h3>
+              </summary>
+              <div className="px-6 pb-6 pt-0 text-gray-700 leading-relaxed pl-[3.25rem]">
+                {item.a}
+              </div>
+            </details>
           ))}
         </div>
       </div>

@@ -101,19 +101,44 @@ export default async function CityPage({ params }: { params: { slug: string } })
   const data = await getCityData(params.slug);
 
   if (data) {
-    const jsonLd = {
-      '@context': 'https://schema.org',
-      '@type': 'Service',
-      name: data.metaTitle,
-      description: data.metaDescription,
-      provider: { '@type': 'LocalBusiness', name: 'GH Épaviste', telephone: '+33753120793' },
-      areaServed: { '@type': 'City', name: data.badge || data.name || data.slug },
-      serviceType: "Enlèvement d'épave automobile",
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' },
-    };
+    const jsonLd = [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'Service',
+        name: data.metaTitle,
+        description: data.metaDescription,
+        provider: { '@type': 'LocalBusiness', '@id': 'https://gh-epaviste.fr/#localbusiness' },
+        areaServed: { '@type': 'City', name: data.badge || data.name || data.slug },
+        serviceType: "Enlèvement d'épave automobile",
+        offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' }
+      },
+      {
+        '@context': 'https://schema.org',
+        '@type': 'LocalBusiness',
+        '@id': 'https://gh-epaviste.fr/#localbusiness',
+        name: 'GH Épaviste',
+        telephone: '+33753120793',
+        url: 'https://gh-epaviste.fr',
+        address: {
+          '@type': 'PostalAddress',
+          addressCountry: 'FR'
+        }
+      },
+      {
+        '@context': 'https://schema.org',
+        '@type': 'Organization',
+        name: 'GH Épaviste',
+        url: 'https://gh-epaviste.fr',
+        contactPoint: {
+          '@type': 'ContactPoint',
+          telephone: '+33753120793',
+          contactType: 'customer service'
+        }
+      }
+    ];
 
     return (
-      <div className="min-h-screen bg-white">
+      <main className="min-h-screen bg-white">
         <BreadcrumbJsonLd
           items={[
             { name: 'Accueil', url: 'https://gh-epaviste.fr/' },
@@ -128,7 +153,7 @@ export default async function CityPage({ params }: { params: { slug: string } })
           currentSlug={data.slug || params.slug.replace('epaviste-gratuit-', '')}
           entityType={data.entityType || 'City'}
         />
-      </div>
+      </main>
     );
   }
 

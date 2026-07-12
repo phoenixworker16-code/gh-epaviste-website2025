@@ -11,7 +11,10 @@
     "generate:city-data": "node scripts/generate-city-data.js",
     "validate:batch": "node scripts/validate-cities.js",
     "check:slugs": "node scripts/check-slugs.js",
-    "validate:all": "node scripts/validate-all.js"
+    "validate:all": "node scripts/validate-all.js",
+    "audit:legal": "node scripts/legal-auditor.js",
+    "audit:seo": "node scripts/seo-auditor.js",
+    "audit": "node scripts/legal-auditor.js && node scripts/seo-auditor.js"
   },
   "browserslist": [
     "last 2 Chrome versions",
