@@ -1,0 +1,274 @@
+{
+  "city": "Courbevoie",
+  "department": "92",
+  "quartiers": [],
+  "rues": [
+    "Avenue De L'Arche",
+    "Avenue De La République",
+    "Avenue Gallieni",
+    "Avenue Léonard De Vinci",
+    "Avenue Marceau",
+    "Avenue Pasteur",
+    "Avenue Puvis De Chavannes",
+    "Boulevard Aristide Briand",
+    "Boulevard De La Mission Marchand",
+    "Boulevard De La Paix",
+    "Boulevard De Verdun",
+    "Boulevard Georges Clémenceau",
+    "Boulevard Saint-Denis",
+    "Quai Du Maréchal Joffre",
+    "Rue Armand Silvestre",
+    "Rue Blondel",
+    "Rue D'Estienne D'Orves",
+    "Rue De Belfort",
+    "Rue De Bezons",
+    "Rue De Bitche",
+    "Rue De Colombes",
+    "Rue De L'Alma",
+    "Rue De La Sablière",
+    "Rue De Normandie",
+    "Rue De Visien",
+    "Rue Des Fauvelles",
+    "Rue Des Étudiants",
+    "Rue Du Capitaine Guynemer",
+    "Rue Du Moulin Des Bruyères",
+    "Rue Du Vingt-Deux Septembre",
+    "Rue Edith Cavell",
+    "Rue Emile Deschanel",
+    "Rue Eugène Caron",
+    "Rue Franklin",
+    "Rue Gaultier",
+    "Rue Hoche",
+    "Rue Jean Bart",
+    "Rue Jean Moulin",
+    "Rue Jean-Baptiste Charcot",
+    "Rue Jean-Pierre Timbaud",
+    "Rue Jules Ferry",
+    "Rue Kilford",
+    "Rue Lambrechts",
+    "Rue Louvain",
+    "Rue Pierre Brossolette",
+    "Rue Raspail",
+    "Rue Segoffin",
+    "Rue Victor Hugo"
+  ],
+  "stations_metro": [
+    "Bécon-les-Bruyères",
+    "Esplanade de la Défense",
+    "La Défense",
+    "Ligne 1 du métro de Paris",
+    "Ligne 15 du métro de Paris",
+    "Ligne 3 du métro de Paris",
+    "Métro de Paris",
+    "Métropole",
+    "Métropole du Grand Paris"
+  ],
+  "gares": [
+    "Asnières-sur-Seine",
+    "Bécon-les-Bruyères",
+    "Courbevoie",
+    "la Défense"
+  ],
+  "parcs": [],
+  "hopitaux": [
+    "Hôpital américain de Neuilly",
+    "Hôpital militaire"
+  ],
+  "cliniques": [],
+  "centres_commerciaux": [],
+  "zones_activites": [],
+  "ponts": [],
+  "quais": [],
+  "monuments": [
+    "Musée Roybet Fould"
+  ],
+  "batiments_publics": [
+    "Hôtel de ville de Courbevoie"
+  ],
+  "communes_limitrophes": [
+    "Asnières-sur-Seine",
+    "Bois-Colombes",
+    "La Garenne-Colombes",
+    "Levallois-Perret",
+    "Nanterre",
+    "Neuilly-sur-Seine",
+    "Puteaux"
+  ],
+  "sources": {
+    "Overpass API": {
+      "quartiers": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "stations_metro": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "gares": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "parcs": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "hopitaux": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "cliniques": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "centres_commerciaux": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "zones_activites": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "ponts": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "quais": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "monuments": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "batiments_publics": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      }
+    },
+    "Overpass Géométrie": {
+      "communes_limitrophes": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      }
+    },
+    "Wikipedia HTML": {
+      "communes_limitrophes": {
+        "trouves": 7,
+        "retenus": 7,
+        "ignores": 0,
+        "exclusions": []
+      }
+    },
+    "Data.gouv.fr BAN": {
+      "rues": {
+        "trouves": 50,
+        "retenus": 48,
+        "ignores": 2,
+        "exclusions": [
+          {
+            "nom": "courbevoie",
+            "raison": "Commune différente: La Boissière-des-Landes"
+          },
+          {
+            "nom": "Rue de Courbevoie",
+            "raison": "Commune différente: Nanterre"
+          }
+        ]
+      }
+    },
+    "Wikipedia API": {
+      "stations_metro": {
+        "trouves": 9,
+        "retenus": 9,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "gares": {
+        "trouves": 4,
+        "retenus": 4,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "hopitaux": {
+        "trouves": 2,
+        "retenus": 2,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "monuments": {
+        "trouves": 1,
+        "retenus": 1,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "batiments_publics": {
+        "trouves": 1,
+        "retenus": 1,
+        "ignores": 0,
+        "exclusions": []
+      }
+    }
+  },
+  "timing": {
+    "overpass_poi": {
+      "durationSec": 77.5,
+      "status": "EMPTY"
+    },
+    "overpass_geo": {
+      "durationSec": 78.9,
+      "status": "EMPTY"
+    },
+    "wikipedia_html": {
+      "durationSec": 1.2,
+      "status": "OK"
+    },
+    "ban": {
+      "durationSec": 0.5,
+      "status": "OK"
+    },
+    "wikipedia_api": {
+      "durationSec": 0.3,
+      "status": "OK"
+    }
+  },
+  "validation": {
+    "status": "SUCCESS",
+    "quality": "PARTIAL",
+    "schemaVersion": "1.0",
+    "fetched": true,
+    "sources": {
+      "overpass_poi": false,
+      "overpass_geo": false,
+      "wikipedia_html": true,
+      "wikipedia_api": true,
+      "ban": true
+    },
+    "totalDurationSec": 158.4
+  }
+}

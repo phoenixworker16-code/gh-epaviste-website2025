@@ -548,3 +548,109 @@ Lorsqu'un nouveau modèle d'IA prend le relais :
 4. Continuer exactement à partir du dernier STOP validé.
 
 5. Si un doute existe, demander une clarification au lieu de modifier le projet.
+
+# SOURCE DE VÉRITÉ
+
+Toujours considérer comme références officielles :
+
+- AI_RULES.md
+- PROJECT_CONTEXT.md
+- WORKFLOW.md
+- V4_REFERENCE.md
+- CURRENT_TASK.md
+
+En cas de contradiction :
+
+AI_RULES.md prévaut.
+
+---
+
+# ARCHITECTURE
+
+Il est interdit de modifier :
+
+- l'arborescence du projet
+- le système de routing
+- PageBuilder
+- les composants React
+- le Pipeline V4
+- les Golden Files
+- les Snapshots
+
+sans demande explicite de l'utilisateur.
+
+---
+
+# DÉTERMINISME
+
+Interdiction d'utiliser :
+
+- Math.random()
+- Date.now()
+- new Date()
+- crypto.randomUUID()
+
+Les mêmes entrées doivent toujours produire exactement les mêmes sorties.
+
+---
+
+# RAPPORTS
+
+Les rapports sont en lecture seule.
+
+Ils analysent uniquement les fichiers générés.
+
+Ils ne doivent jamais modifier le projet.
+
+---
+
+# GOLDEN FILES
+
+Les Golden Files sont immuables.
+
+Ils ne peuvent être modifiés que via une commande dédiée.
+
+Aucune mise à jour automatique n'est autorisée.
+
+---
+
+# SNAPSHOTS
+
+Un snapshot absent est un FAIL.
+
+Ne jamais créer automatiquement un snapshot.
+
+---
+
+# DUPLICATE CONTENT
+
+Objectif :
+
+- aucune paire > 80 %
+- au moins 90 % des comparaisons < 65 %
+
+Le rapport doit afficher :
+
+- Similarité globale
+- Similarité par bloc
+- Verdict
+
+---
+
+# DONNÉES LOCALES
+
+Le slug provenant de villes.json est l'unique source de vérité.
+
+Les fichiers locaux doivent toujours utiliser ce slug.
+
+Ne jamais reconstruire un slug manuellement.
+
+---
+
+# RÉFÉRENCE
+
+Levallois-Perret est la référence qualité.
+
+Paris est le Golden File officiel.
+
+Aucun Golden File ne doit être modifié automatiquement.

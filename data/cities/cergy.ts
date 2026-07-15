@@ -3,44 +3,62 @@ import { PageData } from '../types'
 export const cergyData: PageData = {
   slug: 'cergy',
   entityType: 'City',
-  metaTitle: "Épaviste Cergy (95) | Enlèvement d'Épave Gratuit",
-  metaDescription: "Épaviste gratuit sur Cergy (95000). Retrait rapide de véhicules accidentés ou en panne (Préfecture, St-Christophe). Appelez le 07 53 12 07 93.",
+  metaTitle: 'Épaviste Cergy (95000) | Enlèvement Épave Gratuit 24h',
+  metaDescription: 'Service gratuit d\'enlèvement d\'épaves à Cergy (95000). Prise en charge de VHU avec certificat de destruction officiel. Intervention rapide.',
   relatedServicesSlugs: [
-    "enlevement-epave-gratuit",
-    "enlevement-voiture-accidentee"
+    'enlevement-epave-parking-souterrain',
+    'enlevement-voiture-en-panne',
+    'enlevement-voiture-sans-carte-grise'
   ],
   relatedCitiesSlugs: [
-    "val-doise",
-    "pontoise", "osny", "vaureal"
+    'enlevement-epave-val-d-oise'
   ],
   blocks: [
     {
       type: 'Hero',
-      title: "Épaviste Gratuit à Cergy (95000)",
-      subtitle: "Intervention rapide sur l'agglomération de Cergy-Pontoise.",
-      badge: "Cergy (95000)",
-      bgType: 'urban'
+      title: 'Épaviste Agréé Partenaire à Cergy',
+      subtitle: 'Un enlèvement préparé selon l’accès au véhicule et les informations transmises lors de votre demande.',
+      badge: 'Cergy (95000)',
     },
     {
       type: 'Introduction',
-      title: "Remorquage VHU à Cergy",
-      content: "De Cergy Préfecture à Cergy Saint-Christophe, l'abandon de véhicule ventouse est un problème récurrent dans l'agglomération. GH Épaviste vous propose une solution gratuite pour retirer un VHU de la voie publique ou d'un parking résidentiel."
-    },
-    {
-      type: 'DocsPreparation',
-      title: "Cession administrative",
-      intro: "La destruction légale passe par la présentation des documents suivants le jour J :",
-      specialCase: "Carte grise barrée, certificat de non-gage de moins de 2 semaines, et pièce d'identité du titulaire de la carte grise."
+      title: 'Votre épaviste de confiance à Cergy',
+      content: 'Dans une agglomération dynamique comme Cergy (95000), se débarrasser d\'un véhicule encombrant nécessite une logistique précise. Notre équipe couvre l\'ensemble de la commune pour vous proposer un service d\'enlèvement d\'épave totalement gratuit. Que ce soit du côté de Rue des Plants Orange ou ailleurs dans la commune, nous intervenons gratuitement. Nous garantissons une prise en charge conforme à la législation avec remise du certificat de destruction. L’organisation du retrait tient compte de l’emplacement du véhicule, de son état et des conditions d’accès. Le rendez-vous est organisé à partir de la situation du véhicule et des conditions d’accès indiquées. La préparation du rendez-vous clarifie les éléments à présenter lors de l’enlèvement.',
     },
     {
       type: 'VhuCompliance',
-      title: "Filière VHU Agréée",
-      content: "Il est de votre responsabilité de vous assurer que l'épave n'est pas abandonnée dans la nature. Nous garantissons sa livraison dans un **centre de traitement VHU agréé** pour dépollution et recyclage."
+      title: 'Dépollution et Recyclage',
+      content: 'Après l\'enlèvement, le véhicule est acheminé vers un centre VHU partenaire agréé. Le partenaire assure les formalités et l’orientation du véhicule vers les filières réglementaires appropriées. Le transfert est organisé avec un partenaire spécialisé dans les procédures applicables aux véhicules hors d’usage.',
+    },
+    {
+      type: 'LocalCoverage',
+      title: 'Couverture d\'intervention sur Cergy',
+      intro: 'Notre équipe intervient dans l\'ensemble de la commune de Cergy pour procéder à l\'enlèvement de votre véhicule. Chaque demande est organisée en tenant compte de l’emplacement exact du véhicule. Les modalités de passage sont précisées avant le déplacement du professionnel. Nos dépanneuses rayonnent également sur les secteurs limitrophes comme Neuville-sur-Oise et Courdimanche.',
+      zones: [
+        { name: 'Centre-ville & Rues étroites', delay: 'Sous 24h', specificities: 'Matériel adapté aux accès difficiles et parkings.' },
+        { name: 'Secteur Allée de la Futaie / Allée de la Girandole', delay: 'Sur RDV', specificities: 'Prise en charge rapide sur les grands axes.' }
+      ],
+    },
+    {
+      type: 'DocsPreparation',
+      title: 'Pièces à fournir pour l\'enlèvement',
+      intro: 'Pour procéder au remorquage gratuit depuis Cergy, notre chauffeur aura besoin des documents originaux du véhicule. Préparez votre carte grise (originale barrée), un certificat de non-gage datant de moins de 15 jours, et la pièce d\'identité du propriétaire.',
+      specialCase: 'Si vous avez égaré la carte grise, une déclaration de perte effectuée en gendarmerie ou préfecture du département Val-d\'Oise sera indispensable.',
+    },
+    {
+      type: 'FaqLocal',
+      title: 'Questions fréquentes sur l\'enlèvement à Cergy',
+      questions: [
+        { q: 'L\'intervention à Cergy est-elle soumise à des frais de déplacement ?', a: 'Non, si votre véhicule est complet, l\'enlèvement et le déplacement jusqu\'à Cergy sont entièrement gratuits.' },
+        { q: 'Délivrez-vous le certificat de destruction immédiatement ?', a: 'Oui, nous vous remettons le certificat de cession pour destruction en main propre le jour de l\'enlèvement.' },
+        { q: 'Mon véhicule est accidenté sur la voie publique, pouvez-vous le retirer ?', a: 'Absolument, nous intervenons sur la voie publique à condition que vous soyez présent avec les documents requis.' },
+        { q: 'Mon véhicule est bloqué en sous-sol à Cergy, est-ce un problème ?', a: 'Pas du tout. Nous disposons de dépanneuses 4x4 extra-basses capables d\'entrer dans la majorité des parkings souterrains.' }
+      ],
     },
     {
       type: 'Cta',
-      title: "Enlèvement gratuit sur Cergy",
-      subtitle: "Appelez GH Épaviste pour un rendez-vous rapide."
+      title: 'Prendre rendez-vous pour votre épave à Cergy',
+      subtitle: 'Contactez-nous pour planifier l\'enlèvement gratuit et légal de votre véhicule.',
     }
   ]
 }

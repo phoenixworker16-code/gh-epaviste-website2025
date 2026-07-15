@@ -3,9 +3,9 @@
 ## Informations
 - **Version Auditor :** 1.0.0
 - **Version Règles :** 1.0.0
-- **Date :** 2026-07-12T17:14:11.014Z
-- **URL auditée :** http://localhost:3000/epaviste-gratuit-levallois-perret
-- **Temps d'analyse :** 2387 ms
+- **Date :** 2026-07-12T17:47:16.166Z
+- **URL auditée :** http://localhost:3000/epaviste-gratuit-saint-denis
+- **Temps d'analyse :** 789 ms
 
 ## Résultat Global
 - **Score SEO :** 100/100

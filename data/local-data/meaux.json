@@ -1,0 +1,336 @@
+{
+  "city": "Meaux",
+  "department": "77",
+  "quartiers": [],
+  "rues": [
+    "Avenue Clémenceau",
+    "Avenue Henri Dunant",
+    "Avenue de la Republique",
+    "Avenue de la Victoire",
+    "Avenue du Marechal Foch",
+    "Avenue du Marechal Joffre",
+    "Parc Paul Frot",
+    "Rue Alfred Maury",
+    "Rue Aristide Briand",
+    "Rue Gambetta",
+    "Rue Georges Renard",
+    "Rue Jean Jaures",
+    "Rue Saint Faron",
+    "Rue Saint Remy",
+    "Rue de Chaage",
+    "Rue de Fublaines",
+    "Rue de la Creche",
+    "Rue de la Croix Saint Loup",
+    "Rue des Cordeliers",
+    "Rue du Faubourg Saint Nicolas"
+  ],
+  "stations_metro": [],
+  "gares": [
+    "Chelles - Gournay",
+    "Château-Thierry",
+    "Marne-la-Vallée - Chessy",
+    "Meaux",
+    "Paris-Est"
+  ],
+  "parcs": [],
+  "hopitaux": [
+    "Hôpital Necker-Enfants malades"
+  ],
+  "cliniques": [],
+  "centres_commerciaux": [],
+  "zones_activites": [],
+  "ponts": [],
+  "quais": [],
+  "monuments": [],
+  "batiments_publics": [
+    "Bibliothèque nationale de France"
+  ],
+  "communes_limitrophes": [
+    "Chambry (Seine-et-Marne)",
+    "Chauconin-Neufmontiers",
+    "Crégy-lès-Meaux",
+    "Fublaines",
+    "Mareuil-lès-Meaux",
+    "Nanteuil-lès-Meaux",
+    "Poincy",
+    "Trilport",
+    "Villenoy"
+  ],
+  "sources": {
+    "Overpass API": {
+      "quartiers": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "stations_metro": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "gares": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "parcs": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "hopitaux": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "cliniques": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "centres_commerciaux": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "zones_activites": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "ponts": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "quais": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "monuments": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "batiments_publics": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      }
+    },
+    "Overpass Géométrie": {
+      "communes_limitrophes": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      }
+    },
+    "Wikipedia HTML": {
+      "communes_limitrophes": {
+        "trouves": 9,
+        "retenus": 9,
+        "ignores": 0,
+        "exclusions": []
+      }
+    },
+    "Data.gouv.fr BAN": {
+      "rues": {
+        "trouves": 50,
+        "retenus": 20,
+        "ignores": 30,
+        "exclusions": [
+          {
+            "nom": "Méaux",
+            "raison": "Commune différente: Pacé"
+          },
+          {
+            "nom": "Meaux",
+            "raison": "Commune différente: Tavant"
+          },
+          {
+            "nom": "Rue de Meaux",
+            "raison": "Commune différente: Paris"
+          },
+          {
+            "nom": "Avenue de Meaux",
+            "raison": "Commune différente: Melun"
+          },
+          {
+            "nom": "Rue de Meaux",
+            "raison": "Commune différente: Bondy"
+          },
+          {
+            "nom": "Rue de Meaux",
+            "raison": "Commune différente: Vaujours"
+          },
+          {
+            "nom": "Rue de Meaux",
+            "raison": "Commune différente: Gagny"
+          },
+          {
+            "nom": "Rue de Meaux",
+            "raison": "Commune différente: Quincy-Voisins"
+          },
+          {
+            "nom": "Rue de Meaux",
+            "raison": "Commune différente: Pontault-Combault"
+          },
+          {
+            "nom": "Rue de Meaux",
+            "raison": "Commune différente: Senlis"
+          },
+          {
+            "nom": "Place de Meaux",
+            "raison": "Commune différente: Douai"
+          },
+          {
+            "nom": "Rue de Meaux",
+            "raison": "Commune différente: Dammartin-en-Goële"
+          },
+          {
+            "nom": "Chemin de Meaux",
+            "raison": "Commune différente: Neuilly-Plaisance"
+          },
+          {
+            "nom": "Route de Meaux",
+            "raison": "Commune différente: Serris"
+          },
+          {
+            "nom": "Rue de Meaux",
+            "raison": "Commune différente: Guignes"
+          },
+          {
+            "nom": "Rue de Meaux",
+            "raison": "Commune différente: Vert-Saint-Denis"
+          },
+          {
+            "nom": "Rue de Meaux",
+            "raison": "Commune différente: Saint-Augustin"
+          },
+          {
+            "nom": "Route de Meaux",
+            "raison": "Commune différente: Rubelles"
+          },
+          {
+            "nom": "Rue de Meaux",
+            "raison": "Commune différente: Savigny-le-Temple"
+          },
+          {
+            "nom": "Esplanade de Meaux",
+            "raison": "Commune différente: Neuilly-sur-Marne"
+          },
+          {
+            "nom": "Rue de Meaux",
+            "raison": "Commune différente: La Ferté-Milon"
+          },
+          {
+            "nom": "Chemin de Meaux",
+            "raison": "Commune différente: Crégy-lès-Meaux"
+          },
+          {
+            "nom": "Rue de Meaux",
+            "raison": "Commune différente: Isles-lès-Villenoy"
+          },
+          {
+            "nom": "Rue de Meaux",
+            "raison": "Commune différente: Mareuil-sur-Ourcq"
+          },
+          {
+            "nom": "Route de Meaux",
+            "raison": "Commune différente: La Houssaye-en-Brie"
+          },
+          {
+            "nom": "Impasse Meaux Sud",
+            "raison": "Commune différente: Sainte-Livrade-sur-Lot"
+          },
+          {
+            "nom": "Rue de Meaux",
+            "raison": "Commune différente: Pommeuse"
+          },
+          {
+            "nom": "Place de Meaux",
+            "raison": "Commune différente: Villeparisis"
+          },
+          {
+            "nom": "Rue Martin Meaux",
+            "raison": "Commune différente: Richebourg"
+          },
+          {
+            "nom": "Impasse de Meaux",
+            "raison": "Commune différente: Caussade"
+          }
+        ]
+      }
+    },
+    "Wikipedia API": {
+      "gares": {
+        "trouves": 5,
+        "retenus": 5,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "hopitaux": {
+        "trouves": 1,
+        "retenus": 1,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "batiments_publics": {
+        "trouves": 1,
+        "retenus": 1,
+        "ignores": 0,
+        "exclusions": []
+      }
+    }
+  },
+  "timing": {
+    "overpass_poi": {
+      "durationSec": 77.5,
+      "status": "EMPTY"
+    },
+    "overpass_geo": {
+      "durationSec": 78.9,
+      "status": "EMPTY"
+    },
+    "wikipedia_html": {
+      "durationSec": 1.2,
+      "status": "OK"
+    },
+    "ban": {
+      "durationSec": 0.3,
+      "status": "OK"
+    },
+    "wikipedia_api": {
+      "durationSec": 0.3,
+      "status": "OK"
+    }
+  },
+  "validation": {
+    "status": "SUCCESS",
+    "quality": "PARTIAL",
+    "schemaVersion": "1.0",
+    "fetched": true,
+    "sources": {
+      "overpass_poi": false,
+      "overpass_geo": false,
+      "wikipedia_html": true,
+      "wikipedia_api": true,
+      "ban": true
+    },
+    "totalDurationSec": 158.2
+  }
+}

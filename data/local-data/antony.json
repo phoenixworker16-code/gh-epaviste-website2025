@@ -1,0 +1,346 @@
+{
+  "city": "Antony",
+  "department": "92",
+  "quartiers": [],
+  "rues": [
+    "Avenue Aristide Briand",
+    "Avenue Armand Guillebaud",
+    "Avenue Fernand Fenzy",
+    "Avenue Francois Molé",
+    "Avenue Léon Blum",
+    "Avenue Saint Exupery",
+    "Avenue de la Division Leclerc",
+    "Avenue du Bois de Verrières",
+    "Avenue du Pdt J Fitzgerald Kennedy",
+    "Boulevard Colbert",
+    "Rue Adolphe Pajeaud",
+    "Rue Camille Pelletan",
+    "Rue Mirabeau",
+    "Rue Pierre Vermeir",
+    "Rue Roger Salengro",
+    "Rue de Massy",
+    "Rue de l'Aubépine",
+    "Rue de la Cité Moderne",
+    "Rue de la Mutualité",
+    "Rue des Baconnets",
+    "Rue des Glaises",
+    "Rue des Hautes Bievres",
+    "Rue des Marguerites",
+    "Rue des Mûres",
+    "Rue des Rabats",
+    "Rue des Sources",
+    "Rue du Colonel Fabien"
+  ],
+  "stations_metro": [
+    "Antonypole - Wissous Centre",
+    "Ligne 18 du métro de Paris",
+    "Métropole du Grand Paris"
+  ],
+  "gares": [
+    "Antony",
+    "Chemin d'Antony",
+    "Fontaine Michalon",
+    "La Croix de Berny",
+    "Massy - Verrières",
+    "du Chemin d'Antony",
+    "du Parc de Sceaux",
+    "s Baconnets"
+  ],
+  "parcs": [
+    "Parc Bourdeau",
+    "Parc Heller",
+    "Parc Raymond-Sibille",
+    "Parc de Sceaux"
+  ],
+  "hopitaux": [
+    "Hôpital en France"
+  ],
+  "cliniques": [],
+  "centres_commerciaux": [],
+  "zones_activites": [],
+  "ponts": [],
+  "quais": [],
+  "monuments": [
+    "Château de Berny"
+  ],
+  "batiments_publics": [
+    "Hôtel de ville d'Antony"
+  ],
+  "communes_limitrophes": [
+    "Bourg-la-Reine",
+    "Châtenay-Malabry",
+    "Fresnes (Val-de-Marne)",
+    "L'Haÿ-les-Roses",
+    "Massy (Essonne)",
+    "Sceaux (Hauts-de-Seine)",
+    "Verrières-le-Buisson",
+    "Wissous"
+  ],
+  "sources": {
+    "Overpass API": {
+      "quartiers": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "stations_metro": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "gares": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "parcs": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "hopitaux": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "cliniques": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "centres_commerciaux": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "zones_activites": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "ponts": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "quais": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "monuments": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "batiments_publics": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      }
+    },
+    "Overpass Géométrie": {
+      "communes_limitrophes": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      }
+    },
+    "Wikipedia HTML": {
+      "communes_limitrophes": {
+        "trouves": 8,
+        "retenus": 8,
+        "ignores": 0,
+        "exclusions": []
+      }
+    },
+    "Data.gouv.fr BAN": {
+      "rues": {
+        "trouves": 50,
+        "retenus": 27,
+        "ignores": 23,
+        "exclusions": [
+          {
+            "nom": "Antony",
+            "raison": "Commune différente: Beaupréau-en-Mauges"
+          },
+          {
+            "nom": "rue d'Antony",
+            "raison": "Commune différente: Limoges"
+          },
+          {
+            "nom": "Chemin Antony Payet",
+            "raison": "Commune différente: Le Tampon"
+          },
+          {
+            "nom": "chemin d'Antony",
+            "raison": "Commune différente: Limoges"
+          },
+          {
+            "nom": "Boulevard Antony Joly",
+            "raison": "Commune différente: Aurillac"
+          },
+          {
+            "nom": "Avenue Antony GALVAING",
+            "raison": "Commune différente: Fréjus"
+          },
+          {
+            "nom": "Rue Antony Duvivier",
+            "raison": "Commune différente: Nevers"
+          },
+          {
+            "nom": "Avenue ANTONY",
+            "raison": "Commune différente: Fréjus"
+          },
+          {
+            "nom": "Rue Antony Réal",
+            "raison": "Commune différente: Orange"
+          },
+          {
+            "nom": "Avenue Antony Fabre",
+            "raison": "Commune différente: Villeneuve-Loubet"
+          },
+          {
+            "nom": "Route d'Antony",
+            "raison": "Commune différente: Wissous"
+          },
+          {
+            "nom": "Rue Antony Fleur",
+            "raison": "Commune différente: Lorient"
+          },
+          {
+            "nom": "Place Antony Mars",
+            "raison": "Commune différente: Vence"
+          },
+          {
+            "nom": "rue antony viot",
+            "raison": "Commune différente: Bourg-en-Bresse"
+          },
+          {
+            "nom": "Rue d'Antony",
+            "raison": "Commune différente: Verrières-le-Buisson"
+          },
+          {
+            "nom": "Ruelle Antony",
+            "raison": "Commune différente: Hirson"
+          },
+          {
+            "nom": "Impasse Antony Réal",
+            "raison": "Commune différente: Orange"
+          },
+          {
+            "nom": "Rue Antony Gaulmier",
+            "raison": "Commune différente: Saint-Amand-Montrond"
+          },
+          {
+            "nom": "allée Antony Bardin",
+            "raison": "Commune différente: Gerzat"
+          },
+          {
+            "nom": "Rue d'Antony",
+            "raison": "Commune différente: Wissous"
+          },
+          {
+            "nom": "Rue d’Antony",
+            "raison": "Commune différente: Rungis"
+          },
+          {
+            "nom": "Maitre Antony",
+            "raison": "Commune différente: Pageas"
+          },
+          {
+            "nom": "May d'Antony",
+            "raison": "Commune différente: Blanquefort-sur-Briolance"
+          }
+        ]
+      }
+    },
+    "Wikipedia API": {
+      "stations_metro": {
+        "trouves": 3,
+        "retenus": 3,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "gares": {
+        "trouves": 8,
+        "retenus": 8,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "parcs": {
+        "trouves": 4,
+        "retenus": 4,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "hopitaux": {
+        "trouves": 1,
+        "retenus": 1,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "monuments": {
+        "trouves": 1,
+        "retenus": 1,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "batiments_publics": {
+        "trouves": 1,
+        "retenus": 1,
+        "ignores": 0,
+        "exclusions": []
+      }
+    }
+  },
+  "timing": {
+    "overpass_poi": {
+      "durationSec": 77.5,
+      "status": "EMPTY"
+    },
+    "overpass_geo": {
+      "durationSec": 78.9,
+      "status": "EMPTY"
+    },
+    "wikipedia_html": {
+      "durationSec": 2,
+      "status": "OK"
+    },
+    "ban": {
+      "durationSec": 0.5,
+      "status": "OK"
+    },
+    "wikipedia_api": {
+      "durationSec": 0.3,
+      "status": "OK"
+    }
+  },
+  "validation": {
+    "status": "SUCCESS",
+    "quality": "PARTIAL",
+    "schemaVersion": "1.0",
+    "fetched": true,
+    "sources": {
+      "overpass_poi": false,
+      "overpass_geo": false,
+      "wikipedia_html": true,
+      "wikipedia_api": true,
+      "ban": true
+    },
+    "totalDurationSec": 159.2
+  }
+}

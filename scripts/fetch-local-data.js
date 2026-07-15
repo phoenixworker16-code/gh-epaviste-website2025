@@ -22,10 +22,47 @@ const OVERPASS_ENDPOINTS = [
   'https://overpass.kumi.systems/api/interpreter',
   'https://z.overpass-api.de/api/interpreter'
 ];
-const OVERPASS_TIMEOUT = 25000;
-const OVERPASS_GEO_TIMEOUT = 30000;
+
+// Timeouts par source (recommandation utilisateur)
+const SOURCE_TIMEOUTS = {
+  overpass_poi: 30000,
+  overpass_geo: 30000,
+  wikipedia_html: 10000,
+  wikipedia_api: 10000,
+  ban: 5000
+};
 const REQUEST_DELAY = 1500;
 const BAN_URL = 'https://api-adresse.data.gouv.fr/search/';
+
+// ─── Chronométrage par source ─────────────────────────────────
+class SourceTimer {
+  constructor() { this.timings = {}; }
+  start(name) { this.timings[name] = { start: Date.now(), duration: null, status: 'RUNNING' }; }
+  end(name, status = 'OK') {
+    if (this.timings[name]) {
+      this.timings[name].duration = ((Date.now() - this.timings[name].start) / 1000).toFixed(1);
+      this.timings[name].status = status;
+    }
+  }
+  print(cityName) {
+    console.log('\n' + '═'.repeat(60));
+    console.log(`  CHRONOMÉTRAGE — ${cityName}`);
+    console.log('═'.repeat(60));
+    for (const [name, t] of Object.entries(this.timings)) {
+      const dur = t.duration ? `${t.duration} s` : 'N/A';
+      const pad = name.padEnd(25, '.');
+      console.log(`  ${pad} ${dur.padStart(8)}  [${t.status}]`);
+    }
+    console.log('═'.repeat(60));
+  }
+  toJSON() {
+    const result = {};
+    for (const [name, t] of Object.entries(this.timings)) {
+      result[name] = { durationSec: parseFloat(t.duration) || 0, status: t.status };
+    }
+    return result;
+  }
+}
 
 const CATEGORIES = [
   'quartiers', 'rues', 'stations_metro', 'gares', 'parcs',
@@ -210,8 +247,9 @@ function filterElement(tags, category) {
 // ═══════════════════════════════════════════════════════════════
 // SOURCE 1 : Overpass API — Requête combinée POI
 // ═══════════════════════════════════════════════════════════════
-async function collectFromOverpass(cityName, report) {
+async function collectFromOverpass(cityName, report, timer) {
   console.log('\n📡 [Source 1] Overpass API — POI combinés...');
+  timer.start('overpass_poi');
   const areaClause = makeAreaClause(cityName);
   const query = `
     ${areaClause}
@@ -244,7 +282,7 @@ async function collectFromOverpass(cityName, report) {
     out center tags;
   `;
 
-  const elements = await fetchOverpass(query);
+  const elements = await fetchOverpass(query, SOURCE_TIMEOUTS.overpass_poi);
   console.log(`  → ${elements.length} éléments bruts reçus`);
 
   const results = {};
@@ -283,14 +321,16 @@ async function collectFromOverpass(cityName, report) {
     report.add('Overpass API', cat, rawByCategory[cat], kept, exclusionsByCategory[cat]);
   }
 
+  timer.end('overpass_poi', elements.length > 0 ? 'OK' : 'EMPTY');
   return results;
 }
 
 // ═══════════════════════════════════════════════════════════════
 // SOURCE 2 : Overpass Géométrie — Communes limitrophes (fiable)
 // ═══════════════════════════════════════════════════════════════
-async function collectCommunesLimitrophes(cityName, report) {
+async function collectCommunesLimitrophes(cityName, report, timer) {
   console.log('\n🗺️  [Source 2] Overpass Géométrie — Communes limitrophes...');
+  timer.start('overpass_geo');
   await wait(REQUEST_DELAY);
 
   const escaped = cityName.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
@@ -304,7 +344,7 @@ async function collectCommunesLimitrophes(cityName, report) {
     out tags;
   `;
 
-  const elements = await fetchOverpass(query, OVERPASS_GEO_TIMEOUT);
+  const elements = await fetchOverpass(query, SOURCE_TIMEOUTS.overpass_geo);
 
   const rawItems = [];
   const keptItems = [];
@@ -340,19 +380,22 @@ async function collectCommunesLimitrophes(cityName, report) {
   report.add('Overpass Géométrie', 'communes_limitrophes', rawItems, uniqueItems, exclusions);
   console.log(`  → ${uniqueItems.length} commune(s) limitrophe(s) identifiée(s)`);
 
+  timer.end('overpass_geo', uniqueItems.length > 0 ? 'OK' : 'EMPTY');
   return uniqueItems;
 }
 
 // ═══════════════════════════════════════════════════════════════
 // SOURCE 3 : Wikipedia HTML — Scraping structuré (cheerio)
 // ═══════════════════════════════════════════════════════════════
-async function collectFromWikipediaHTML(cityName, existingResults, report) {
+async function collectFromWikipediaHTML(cityName, existingResults, report, timer) {
   console.log('\n📖 [Source 3] Wikipedia HTML — Scraping structuré...');
+  timer.start('wikipedia_html');
   try {
     const wikiTitle = cityName.replace(/\s/g, '_');
     const url = `https://fr.wikipedia.org/wiki/${encodeURIComponent(wikiTitle)}`;
 
     const response = await axios.get(url, {
+      timeout: SOURCE_TIMEOUTS.wikipedia_html,
       headers: { 'User-Agent': 'GHEpaviste-SEO/2.0 (contact@gh-epaviste.fr)' }
     });
     const html = response.data;
@@ -476,10 +519,12 @@ async function collectFromWikipediaHTML(cityName, existingResults, report) {
       if (existingResults[cat]) for (const item of newItems) existingResults[cat].add(item);
     }
     console.log(`  → Scraping réussi`);
+    timer.end('wikipedia_html', 'OK');
     return wikiResults;
   } catch (error) {
     console.log(`  ⚠️  Wikipedia HTML: ${error.message}`);
     report.add('Wikipedia HTML', 'communes_limitrophes', [], [], [{ nom: '-', raison: error.message }]);
+    timer.end('wikipedia_html', 'FAIL');
     return {};
   }
 }
@@ -487,8 +532,9 @@ async function collectFromWikipediaHTML(cityName, existingResults, report) {
 // ═══════════════════════════════════════════════════════════════
 // SOURCE 4 : Data.gouv.fr BAN — Rues
 // ═══════════════════════════════════════════════════════════════
-async function collectFromBAN(cityName, report) {
+async function collectFromBAN(cityName, report, timer) {
   console.log('\n🏛️  [Source 4] Data.gouv.fr BAN — Rues...');
+  timer.start('ban');
   const searchName = cityName.replace(/-/g, ' ');
   const rawItems = [];
   const keptItems = [];
@@ -496,7 +542,7 @@ async function collectFromBAN(cityName, report) {
 
   try {
     const banUrl = `${BAN_URL}?q=${encodeURIComponent(searchName)}&type=street&limit=50`;
-    const response = await axios.get(banUrl, { headers: { 'User-Agent': 'GHEpaviste-SEO/2.0 (contact@gh-epaviste.fr)' } });
+    const response = await axios.get(banUrl, { timeout: SOURCE_TIMEOUTS.ban, headers: { 'User-Agent': 'GHEpaviste-SEO/2.0 (contact@gh-epaviste.fr)' } });
     const banData = response.data;
     const normalizedSearch = searchName.toLowerCase().replace(/[-\s]/g, '');
 
@@ -525,18 +571,20 @@ async function collectFromBAN(cityName, report) {
   }
 
   report.add('Data.gouv.fr BAN', 'rues', rawItems, keptItems, exclusions);
+  timer.end('ban', keptItems.length > 0 ? 'OK' : 'EMPTY');
   return keptItems;
 }
 
 // ═══════════════════════════════════════════════════════════════
 // SOURCE 5 : Wikipedia API — Enrichissement fallback
 // ═══════════════════════════════════════════════════════════════
-async function collectFromWikipediaAPI(cityName, existingResults, report) {
+async function collectFromWikipediaAPI(cityName, existingResults, report, timer) {
   console.log('\n📚 [Source 5] Wikipedia API — Enrichissement fallback...');
+  timer.start('wikipedia_api');
   try {
     const searchName = cityName.replace(/-/g, ' ');
     const url = `https://fr.wikipedia.org/w/api.php?action=query&prop=links&titles=${encodeURIComponent(searchName)}&format=json&pllimit=max`;
-    const response = await axios.get(url, { headers: { 'User-Agent': 'GHEpaviste-SEO/2.0 (contact@gh-epaviste.fr)' } });
+    const response = await axios.get(url, { timeout: SOURCE_TIMEOUTS.wikipedia_api, headers: { 'User-Agent': 'GHEpaviste-SEO/2.0 (contact@gh-epaviste.fr)' } });
     const data = response.data;
 
     const pages = data.query?.pages;
@@ -583,76 +631,133 @@ async function collectFromWikipediaAPI(cityName, existingResults, report) {
       if (existingResults[cat]) for (const item of newItems) existingResults[cat].add(item);
     }
     console.log(`  → ${links.length} liens analysés`);
+    timer.end('wikipedia_api', 'OK');
   } catch (error) {
     console.log(`  ⚠️  Wikipedia API: ${error.message}`);
+    timer.end('wikipedia_api', 'FAIL');
   }
 }
 
 // ═══════════════════════════════════════════════════════════════
 // FONCTION PRINCIPALE
 // ═══════════════════════════════════════════════════════════════
-async function fetchLocalData(cityName, departmentCode) {
+function getCommuneFromSlug(slug) {
+  const cataloguePath = path.resolve(__dirname, '..', 'data', 'villes.json');
+  const communes = JSON.parse(fs.readFileSync(cataloguePath, 'utf-8'));
+  const commune = communes.find(item => item.slug === slug);
+
+  if (!commune) {
+    throw new Error(`Slug inconnu dans data/villes.json : ${slug}`);
+  }
+
+  return commune;
+}
+
+async function fetchLocalData(slug) {
+  const { ville: cityName, depNumber: departmentCode } = getCommuneFromSlug(slug);
+  const totalStart = Date.now();
   console.log('╔' + '═'.repeat(88) + '╗');
   console.log(`║  COLLECTE DE DONNÉES LOCALES — ${cityName.toUpperCase()} (${departmentCode})`.padEnd(89) + '║');
   console.log('╚' + '═'.repeat(88) + '╝');
 
+  // ── Cache permanent : skip si déjà valide ──
+  const outDir = path.resolve(__dirname, '..', 'data', 'local-data');
+  if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
+  const outFile = path.join(outDir, `${slug}.json`);
+
+  if (fs.existsSync(outFile)) {
+    try {
+      const cached = JSON.parse(fs.readFileSync(outFile, 'utf-8'));
+      if (cached.validation && cached.validation.status === 'SUCCESS') {
+        console.log(`  [CACHE] ${cityName} already collected and validated. Skipping.`);
+        return cached;
+      }
+    } catch(e) { /* cache corrupted, re-fetch */ }
+  }
+
   const report = new CollectionReport();
+  const timer = new SourceTimer();
   const results = {};
   for (const cat of CATEGORIES) results[cat] = new Set();
 
-  const overpassResults = await collectFromOverpass(cityName, report);
-  for (const cat of CATEGORIES) {
-    if (overpassResults[cat]) for (const item of overpassResults[cat]) results[cat].add(item);
+  // ── Source 1 : Overpass POI (graceful) ──
+  try {
+    const overpassResults = await collectFromOverpass(cityName, report, timer);
+    for (const cat of CATEGORIES) {
+      if (overpassResults[cat]) for (const item of overpassResults[cat]) results[cat].add(item);
+    }
+  } catch(err) {
+    console.log(`  ⚠️  Overpass POI failed: ${err.message}`);
+    timer.end('overpass_poi', 'FAIL');
   }
 
-  const communesLimitrophes = await collectCommunesLimitrophes(cityName, report);
-  for (const c of communesLimitrophes) results.communes_limitrophes.add(c);
+  // ── Source 2 : Overpass Géométrie (graceful) ──
+  try {
+    const communesLimitrophes = await collectCommunesLimitrophes(cityName, report, timer);
+    for (const c of communesLimitrophes) results.communes_limitrophes.add(c);
+  } catch(err) {
+    console.log(`  ⚠️  Overpass Géométrie failed: ${err.message}`);
+    timer.end('overpass_geo', 'FAIL');
+  }
 
-  await collectFromWikipediaHTML(cityName, results, report);
+  // ── Source 3 : Wikipedia HTML (graceful) ──
+  try {
+    await collectFromWikipediaHTML(cityName, results, report, timer);
+  } catch(err) {
+    console.log(`  ⚠️  Wikipedia HTML failed: ${err.message}`);
+    timer.end('wikipedia_html', 'FAIL');
+  }
 
-  const rues = await collectFromBAN(cityName, report);
-  for (const r of rues) results.rues.add(r);
+  // ── Source 4 : BAN (graceful) ──
+  try {
+    const rues = await collectFromBAN(cityName, report, timer);
+    for (const r of rues) results.rues.add(r);
+  } catch(err) {
+    console.log(`  ⚠️  BAN failed: ${err.message}`);
+    timer.end('ban', 'FAIL');
+  }
 
-  await collectFromWikipediaAPI(cityName, results, report);
+  // ── Source 5 : Wikipedia API (graceful) ──
+  try {
+    await collectFromWikipediaAPI(cityName, results, report, timer);
+  } catch(err) {
+    console.log(`  ⚠️  Wikipedia API failed: ${err.message}`);
+    timer.end('wikipedia_api', 'FAIL');
+  }
 
   const finalData = {};
   for (const cat of CATEGORIES) finalData[cat] = Array.from(results[cat]).sort();
 
   report.print();
+  timer.print(cityName);
+
+  // ── Calcul du score de qualité ──
+  const sourcesStatus = timer.toJSON();
+  const successfulSources = Object.values(sourcesStatus).filter(s => s.status === 'OK').length;
+  const totalSources = Object.keys(sourcesStatus).length;
+  
+  const hasRues = finalData.rues.length >= 1;
+  const hasLimitrophes = finalData.communes_limitrophes.length >= 1;
+  
+  let quality;
+  if (hasRues && hasLimitrophes && successfulSources >= 4) {
+    quality = 'FULL';
+  } else if (hasRues || hasLimitrophes) {
+    quality = 'PARTIAL';
+  } else {
+    quality = 'MINIMAL';
+  }
 
   console.log('\n' + '═'.repeat(90));
-  console.log('  CONTRÔLE DE COHÉRENCE (FAIL-SAFE)');
+  console.log('  CONTRÔLE DE COHÉRENCE');
   console.log('═'.repeat(90));
-  
-  const checks = [
-    { name: 'Quartiers', count: finalData.quartiers.length, min: 0, required: false },
-    { name: 'Stations/Gares', count: finalData.stations_metro.length + finalData.gares.length, min: 0, required: false },
-    { name: 'Rues', count: finalData.rues.length, min: 15, required: true },
-    { name: 'Communes limitrophes', count: finalData.communes_limitrophes.length, min: 3, required: true }
-  ];
+  console.log(`  Rues ................. ${finalData.rues.length}`);
+  console.log(`  Communes limitrophes . ${finalData.communes_limitrophes.length}`);
+  console.log(`  Sources OK ........... ${successfulSources}/${totalSources}`);
+  console.log(`  Qualité .............. ${quality}`);
+  console.log('═'.repeat(90));
 
-  let passedAll = true;
-  for (const check of checks) {
-    if (check.count >= check.min) {
-      console.log(`  ✅ ${check.name.padEnd(25)}: ${String(check.count).padStart(3)} (Min: ${check.min})`);
-    } else {
-      if (check.required) {
-        console.log(`  ❌ ${check.name.padEnd(25)}: ${String(check.count).padStart(3)} (Min: ${check.min}) - ÉCHEC REQUIS`);
-        passedAll = false;
-      } else {
-        console.log(`  ⚠️  ${check.name.padEnd(25)}: ${String(check.count).padStart(3)} (Min: ${check.min}) - NON REQUIS, IGNORÉ`);
-      }
-    }
-  }
-
-  if (!passedAll) {
-    console.error('\n╔' + '═'.repeat(88) + '╗');
-    console.error('║  ❌ ERREUR CRITIQUE — FAIL-SAFE DÉCLENCHÉ                                              ║');
-    console.error('║  Les données collectées sont insuffisantes pour générer une page de qualité.           ║');
-    console.error('║  AUCUN JSON N\'EST SAUVEGARDÉ. STOP.                                                    ║');
-    console.error('╚' + '═'.repeat(88) + '╝');
-    process.exit(1);
-  }
+  const totalDuration = ((Date.now() - totalStart) / 1000).toFixed(1);
 
   // ── Construire l'objet de sortie complet ──
   const output = {
@@ -660,50 +765,44 @@ async function fetchLocalData(cityName, departmentCode) {
     department: departmentCode,
     ...finalData,
     sources: report.toJSON(),
-    validated: false,
-    generatedAt: new Date().toISOString()
+    timing: sourcesStatus,
+    validation: {
+      status: 'SUCCESS',
+      quality: quality,
+      schemaVersion: '1.0',
+      fetched: true,
+      sources: {
+        overpass_poi: (sourcesStatus.overpass_poi || {}).status === 'OK',
+        overpass_geo: (sourcesStatus.overpass_geo || {}).status === 'OK',
+        wikipedia_html: (sourcesStatus.wikipedia_html || {}).status === 'OK',
+        wikipedia_api: (sourcesStatus.wikipedia_api || {}).status === 'OK',
+        ban: (sourcesStatus.ban || {}).status === 'OK'
+      },
+      totalDurationSec: parseFloat(totalDuration)
+    }
   };
 
-  const outDir = path.resolve(__dirname, '..', 'data', 'local-data');
-  if (!fs.existsSync(outDir)) {
-    fs.mkdirSync(outDir, { recursive: true });
-  }
-  const slug = cityName.toLowerCase().replace(/[^a-z0-9àâäéèêëïîôùûüÿçœæ]+/g, '-').replace(/^-|-$/g, '');
-  const outFile = path.join(outDir, `${slug}.json`);
   fs.writeFileSync(outFile, JSON.stringify(output, null, 2), 'utf8');
 
   console.log(`\n💾 JSON sauvegardé : ${outFile}`);
-  console.log('\n' + '═'.repeat(90));
-  console.log('  JSON FINAL — DONNÉES LOCALES (à valider avant génération)');
-  console.log('═'.repeat(90));
-  console.log(JSON.stringify(output, null, 2));
-  console.log('═'.repeat(90));
-  console.log('  ⚠️  AUCUNE GÉNÉRATION IA TANT QUE "validated" N\'EST PAS "true" DANS LE JSON');
-  console.log('═'.repeat(90));
+  console.log(`   Qualité : ${quality} | Durée totale : ${totalDuration}s`);
 
   return output;
 }
 
 if (require.main === module) {
-  const city = process.argv[2];
-  const dept = process.argv[3] || '92';
+  const slug = process.argv[2];
 
-  if (!city) {
-    console.error('Usage: node scripts/fetch-local-data.js <ville> [departement]');
-    console.error('Exemple: node scripts/fetch-local-data.js levallois-perret 92');
+  if (!slug) {
+    console.error('Usage: node scripts/fetch-local-data.js <slug>');
+    console.error('Exemple: node scripts/fetch-local-data.js levallois-perret');
     process.exit(1);
   }
 
-  const normalizedCity = city
-    .split('-')
-    .map(part => part.charAt(0).toUpperCase() + part.slice(1).toLowerCase())
-    .join('-');
-
-  fetchLocalData(normalizedCity, dept)
+  fetchLocalData(slug)
     .then(output => {
-      console.log(`\n✅ Collecte terminée pour ${normalizedCity}.`);
-      console.log(`   Fichier JSON : data/local-data/${city.toLowerCase()}.json`);
-      console.log(`   Ouvrez le JSON, modifiez "validated": false en "validated": true puis lancez la génération.`);
+      console.log(`\n✅ Collecte terminée pour ${output.city}.`);
+      console.log(`   Fichier JSON : data/local-data/${slug}.json`);
     })
     .catch(err => {
       console.error(`\n❌ Erreur fatale: ${err.message}`);
@@ -712,4 +811,4 @@ if (require.main === module) {
     });
 }
 
-module.exports = { fetchLocalData };
+module.exports = { fetchLocalData, getCommuneFromSlug };

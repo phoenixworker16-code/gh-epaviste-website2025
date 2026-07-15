@@ -1,0 +1,64 @@
+{
+  "version": "1.0",
+  "timestamp": "2026-07-15T17:50:59.520Z",
+  "status": "PASS",
+  "summary": {
+    "passed": 5,
+    "warning": 0,
+    "error": 0
+  },
+  "checks": [
+    {
+      "id": "C01",
+      "category": "Schema",
+      "severity": "ERROR",
+      "status": "PASS",
+      "message": "types.ts exists and is not empty",
+      "expected": "valid file",
+      "observed": "valid file"
+    },
+    {
+      "id": "C02",
+      "category": "Schema",
+      "severity": "ERROR",
+      "status": "PASS",
+      "message": "pageDataSchema.ts exists and is not empty",
+      "expected": "valid file",
+      "observed": "valid file"
+    },
+    {
+      "id": "C03",
+      "category": "Rules",
+      "severity": "ERROR",
+      "status": "PASS",
+      "message": "legal-blacklist.json is valid JSON",
+      "expected": "valid JSON",
+      "observed": "valid JSON"
+    },
+    {
+      "id": "C04",
+      "category": "Rules",
+      "severity": "ERROR",
+      "status": "PASS",
+      "message": "seo-rules.json is valid JSON",
+      "expected": "valid JSON",
+      "observed": "valid JSON"
+    },
+    {
+      "id": "C05",
+      "category": "Config",
+      "severity": "ERROR",
+      "status": "PASS",
+      "message": "versions.json is valid",
+      "expected": "valid config",
+      "observed": "valid config"
+    }
+  ],
+  "hashes": {
+    "types.ts": "4ab2bc7e5420d909e4bc8347c3aef3342f93a7f347b71aa9f0c6f5d6e05121aa",
+    "pageDataSchema.ts": "11f4bbbee9c0b9aebb9a5794904fcb929a9a4105fbc5426df41d69da6c5c78e9",
+    "legal-blacklist.json": "4bf31815f0eeff866540ca6523ab0bdc48fca28177f150e528ba3b38e32865dc",
+    "seo-rules.json": "dc6348d16f07445202311736d7634fb9fa9954d59f75b47cf04f4140b70f20d8",
+    "versions.json": "95e0df17f8d5e63a45e52e2b71e758e127ff68f353ae4c4d44a181bf42654953"
+  }
+}

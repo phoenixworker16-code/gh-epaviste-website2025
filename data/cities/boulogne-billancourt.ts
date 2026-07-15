@@ -3,86 +3,62 @@ import { PageData } from '../types'
 export const boulogneBillancourtData: PageData = {
   slug: 'boulogne-billancourt',
   entityType: 'City',
-  metaTitle: "Épaviste Boulogne-Billancourt (92) | Enlèvement d'Épave Gratuit",
-  metaDescription: "Enlèvement d'épave gratuit à Boulogne-Billancourt (92100). Intervention rapide en sous-sol et voie publique. Service conforme VHU. Appelez le 07 53 12 07 93.",
+  metaTitle: 'Épaviste Boulogne-Billancourt (92100) | Enlèvement Épave Gratuit 24h',
+  metaDescription: 'Service gratuit d\'enlèvement d\'épaves à Boulogne-Billancourt (92100). Prise en charge de VHU avec certificat de destruction officiel. Intervention rapide.',
   relatedServicesSlugs: [
-    "enlevement-epave-parking-souterrain", 
-    "enlevement-epave-gratuit", 
-    "reprise-vehicule-hors-usage"
+    'enlevement-epave-parking-souterrain',
+    'enlevement-voiture-en-panne',
+    'enlevement-voiture-sans-carte-grise'
   ],
   relatedCitiesSlugs: [
-    "hauts-de-seine", // Parent department
-    "issy-les-moulineaux", 
-    "saint-cloud", 
-    "sevres" // Villes limitrophes
+    'enlevement-epave-hauts-de-seine'
   ],
   blocks: [
     {
       type: 'Hero',
-      title: "Enlèvement d'épave gratuit à Boulogne-Billancourt",
-      subtitle: "Service d'épaviste rapide et 100% gratuit dans tous les quartiers de Boulogne-Billancourt (92100).",
-      badge: "Boulogne-Billancourt (92100)"
+      title: 'Épaviste Agréé Partenaire à Boulogne-Billancourt',
+      subtitle: 'Un enlèvement préparé selon l’accès au véhicule et les informations transmises lors de votre demande.',
+      badge: 'Boulogne-Billancourt (92100)',
     },
     {
       type: 'Introduction',
-      title: "Votre épaviste de proximité à Boulogne-Billancourt",
-      content: "La ville de Boulogne-Billancourt est l'une des communes les plus denses d'Île-de-France. Trouver une place de stationnement y est un défi quotidien, et y laisser un véhicule hors d'usage (VHU) immobilisé peut rapidement vous coûter cher en amendes ou frais de fourrière.\n\nQue vous habitiez près du Pont de Sèvres, dans le quartier des Passages, ou vers Marcel Sembat, GH Épaviste intervient dans les meilleurs délais pour retirer gratuitement votre véhicule."
-    },
-    {
-      type: 'UndergroundParking',
-      title: "Extraction de votre épave en parking souterrain",
-      content: "De très nombreuses résidences à Boulogne-Billancourt disposent de parkings souterrains avec des rampes exiguës. Nos dépanneuses surbaissées 4x4 sont spécifiquement conçues pour ce type d'environnement. Nous pouvons extraire votre véhicule en panne ou accidenté même si celui-ci se trouve au 3ème sous-sol d'un parking résidentiel étroit.",
-      maxHeight: "1m90"
-    },
-    {
-      type: 'LocalCoverage',
-      title: "Intervention rapide dans tous les quartiers",
-      intro: "Nos dépanneuses sillonnent quotidiennement les Hauts-de-Seine et Boulogne-Billancourt pour garantir une réactivité maximale.",
-      zones: [
-        {
-          name: "Secteur Centre-Ville (Les Passages, Marcel Sembat)",
-          delay: "Sous 2h à 12h",
-          specificities: "Intervention privilégiée en heures creuses pour éviter les bouchons de l'Avenue du Général Leclerc."
-        },
-        {
-          name: "Secteur Sud (Pont de Sèvres, Trapèze)",
-          delay: "Sous 12h à 24h",
-          specificities: "Accès facile via la N118 et les quais de Seine."
-        },
-        {
-          name: "Secteur Nord (Roland Garros, Parchamp)",
-          delay: "Sous 12h à 24h",
-          specificities: "Prise en charge discrète dans les zones résidentielles."
-        }
-      ]
+      title: 'Votre épaviste de confiance à Boulogne-Billancourt',
+      content: 'Dans une agglomération dynamique comme Boulogne-Billancourt (92100), se débarrasser d\'un véhicule encombrant nécessite une logistique précise. Notre équipe couvre l\'ensemble de la commune pour vous proposer un service d\'enlèvement d\'épave totalement gratuit. Que ce soit du côté de Rue des Abondances ou ailleurs dans la commune, nous intervenons gratuitement. Nous garantissons une prise en charge conforme à la législation avec remise du certificat de destruction. La demande permet de préciser les contraintes de stationnement et les documents disponibles avant l’intervention. Les informations communiquées au moment de la demande facilitent la préparation du retrait. Un point préalable facilite la coordination entre le propriétaire et le professionnel chargé du retrait.',
     },
     {
       type: 'VhuCompliance',
-      title: "Un traitement écologique et légal",
-      content: "GH Épaviste est le prestataire logistique de confiance qui fait le lien entre vous et les **centres VHU agréés**. En nous confiant votre épave à Boulogne-Billancourt, vous avez la certitude que celle-ci ne finira pas dans une filière illégale. Elle sera dépolluée selon les normes environnementales strictes, et vous recevrez le certificat de destruction requis pour résilier votre assurance et faire valoir vos droits (ex: prime à la conversion)."
+      title: 'Dépollution et Recyclage',
+      content: 'Le véhicule est remis à un partenaire spécialisé pour la suite de son traitement réglementaire. Le partenaire assure les formalités et l’orientation du véhicule vers les filières réglementaires appropriées. Le propriétaire conserve ainsi une information claire sur le parcours réglementaire du véhicule.',
+    },
+    {
+      type: 'LocalCoverage',
+      title: 'Couverture d\'intervention sur Boulogne-Billancourt',
+      intro: 'Notre équipe intervient dans l\'ensemble de la commune de Boulogne-Billancourt pour procéder à l\'enlèvement de votre véhicule. Le rendez-vous est préparé selon le type d’accès indiqué lors de la demande. Les indications fournies avant le rendez-vous servent à préparer l’itinéraire et l’accès. Nos dépanneuses rayonnent également sur les secteurs limitrophes comme Sèvres et Paris.',
+      zones: [
+        { name: 'Centre-ville & Rues étroites', delay: 'Sous 24h', specificities: 'Matériel adapté aux accès difficiles et parkings.' },
+        { name: 'Secteur Avenue André Morizet / Avenue Edouard Vaillant', delay: 'Sur RDV', specificities: 'Prise en charge rapide sur les grands axes.' }
+      ],
+    },
+    {
+      type: 'DocsPreparation',
+      title: 'Pièces à fournir pour l\'enlèvement',
+      intro: 'Pour procéder au remorquage gratuit depuis Boulogne-Billancourt, notre chauffeur aura besoin des documents originaux du véhicule. Préparez votre carte grise (originale barrée), un certificat de non-gage datant de moins de 15 jours, et la pièce d\'identité du propriétaire.',
+      specialCase: 'Si vous avez égaré la carte grise, une déclaration de perte effectuée en gendarmerie ou préfecture du département Hauts-de-Seine sera indispensable.',
     },
     {
       type: 'FaqLocal',
-      title: "Questions fréquentes : Enlèvement à Boulogne-Billancourt",
+      title: 'Questions fréquentes sur l\'enlèvement à Boulogne-Billancourt',
       questions: [
-        {
-          q: "Ma voiture a été vandalisée sur un parking de la ville, l'enlevez-vous ?",
-          a: "Oui, nous pouvons retirer un véhicule vandalisé (vitres brisées, pneus crevés). Veillez toutefois à ce que le moteur soit toujours présent pour que la gratuité soit maintenue."
-        },
-        {
-          q: "La mairie de Boulogne-Billancourt m'a mis en demeure de retirer mon véhicule, que faire ?",
-          a: "Contactez-nous immédiatement. Nous planifierons un enlèvement express pour vous éviter l'envoi du véhicule en fourrière, dont les frais d'enlèvement et de garde seraient à votre charge."
-        },
-        {
-          q: "Dois-je me déplacer à la préfecture des Hauts-de-Seine après l'enlèvement ?",
-          a: "Non. Toute la procédure de cession se fait sur le site internet de l'ANTS. Nous vous fournirons le certificat de cession (Cerfa 15776) dument rempli lors de notre intervention pour réaliser cette démarche."
-        }
-      ]
+        { q: 'Mon véhicule est bloqué en sous-sol à Boulogne-Billancourt, est-ce un problème ?', a: 'Pas du tout. Nous disposons de dépanneuses 4x4 extra-basses capables d\'entrer dans la majorité des parkings souterrains.' },
+        { q: 'Mon véhicule est accidenté sur la voie publique, pouvez-vous le retirer ?', a: 'Absolument, nous intervenons sur la voie publique à condition que vous soyez présent avec les documents requis.' },
+        { q: 'Délivrez-vous le certificat de destruction immédiatement ?', a: 'Oui, nous vous remettons le certificat de cession pour destruction en main propre le jour de l\'enlèvement.' },
+        { q: 'L\'intervention à Boulogne-Billancourt est-elle soumise à des frais de déplacement ?', a: 'Non, si votre véhicule est complet, l\'enlèvement et le déplacement jusqu\'à Boulogne-Billancourt sont entièrement gratuits.' }
+      ],
     },
     {
       type: 'Cta',
-      title: "Ne laissez pas votre épave vous encombrer",
-      subtitle: "Contactez GH Épaviste pour une intervention rapide à Boulogne-Billancourt."
+      title: 'Prendre rendez-vous pour votre épave à Boulogne-Billancourt',
+      subtitle: 'Contactez-nous pour planifier l\'enlèvement gratuit et légal de votre véhicule.',
     }
   ]
 }

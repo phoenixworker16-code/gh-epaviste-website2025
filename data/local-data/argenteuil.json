@@ -1,0 +1,212 @@
+{
+  "city": "Argenteuil",
+  "department": "95",
+  "quartiers": [],
+  "rues": [
+    "Avenue Gabriel Peri",
+    "Avenue Jean Jaures",
+    "Avenue Maurice Utrillo",
+    "Avenue de Stalingrad",
+    "Avenue de Verdun",
+    "Avenue du Marechal Joffre",
+    "Boulevard Jean Allemane",
+    "Boulevard du General Delambre",
+    "Route de Pontoise",
+    "Rue Antonin Georges Belin",
+    "Rue Duguay",
+    "Rue Etienne Chevalier",
+    "Rue Ferdinand Berthoud",
+    "Rue Gambetta",
+    "Rue Henri Barbusse",
+    "Rue Louis Blanc",
+    "Rue Marcelle Laget",
+    "Rue Maurice Rechsteiner",
+    "Rue Michel Carre",
+    "Rue Pasteur",
+    "Rue Paul Vaillant Couturier",
+    "Rue Rene Briand",
+    "Rue Robespierre",
+    "Rue Victor Puiseux",
+    "Rue de Calais",
+    "Rue de Chailloit",
+    "Rue de Chanconnet",
+    "Rue de Felifeu",
+    "Rue de Gode",
+    "Rue de Jolival",
+    "Rue de Malcouture",
+    "Rue de Morifosse",
+    "Rue de Rochefort",
+    "Rue de Vaucelle",
+    "Rue de la Chapelle",
+    "Rue de la Grande Voie",
+    "Rue de la Marjolaine",
+    "Rue de la Republique",
+    "Rue de la Tour Billy",
+    "Rue de l’Union",
+    "Rue des Champioux",
+    "Rue des Chataigniers",
+    "Rue des Cloviers",
+    "Rue des Courlis",
+    "Rue du Perreux",
+    "Rue du Trouillet",
+    "Rue du Troupeau",
+    "Rue d’Eaubonne",
+    "Rue d’Epinay"
+  ],
+  "stations_metro": [],
+  "gares": [],
+  "parcs": [],
+  "hopitaux": [],
+  "cliniques": [],
+  "centres_commerciaux": [],
+  "zones_activites": [],
+  "ponts": [],
+  "quais": [],
+  "monuments": [
+    "Château d'Argenteuil",
+    "Église Notre-Dame d'Argenteuil"
+  ],
+  "batiments_publics": [],
+  "communes_limitrophes": [],
+  "sources": {
+    "Overpass API": {
+      "quartiers": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "stations_metro": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "gares": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "parcs": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "hopitaux": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "cliniques": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "centres_commerciaux": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "zones_activites": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "ponts": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "quais": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "monuments": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "batiments_publics": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      }
+    },
+    "Overpass Géométrie": {
+      "communes_limitrophes": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      }
+    },
+    "Data.gouv.fr BAN": {
+      "rues": {
+        "trouves": 50,
+        "retenus": 49,
+        "ignores": 1,
+        "exclusions": [
+          {
+            "nom": "Avenue d’Argenteuil",
+            "raison": "Commune différente: Asnières-sur-Seine"
+          }
+        ]
+      }
+    },
+    "Wikipedia API": {
+      "monuments": {
+        "trouves": 2,
+        "retenus": 2,
+        "ignores": 0,
+        "exclusions": []
+      }
+    }
+  },
+  "timing": {
+    "overpass_poi": {
+      "durationSec": 34.9,
+      "status": "EMPTY"
+    },
+    "overpass_geo": {
+      "durationSec": 51.9,
+      "status": "EMPTY"
+    },
+    "wikipedia_html": {
+      "durationSec": 0.5,
+      "status": "OK"
+    },
+    "ban": {
+      "durationSec": 0.4,
+      "status": "OK"
+    },
+    "wikipedia_api": {
+      "durationSec": 0.2,
+      "status": "OK"
+    }
+  },
+  "validation": {
+    "status": "SUCCESS",
+    "quality": "PARTIAL",
+    "schemaVersion": "1.0",
+    "fetched": true,
+    "sources": {
+      "overpass_poi": false,
+      "overpass_geo": false,
+      "wikipedia_html": true,
+      "wikipedia_api": true,
+      "ban": true
+    },
+    "totalDurationSec": 87.9
+  }
+}

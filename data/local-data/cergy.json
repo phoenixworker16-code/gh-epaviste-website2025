@@ -1,0 +1,249 @@
+{
+  "city": "Cergy",
+  "department": "95",
+  "quartiers": [],
+  "rues": [
+    "Allée de la Futaie",
+    "Allée de la Girandole",
+    "Allée de la Moulinière",
+    "Allée des Charmes",
+    "Allée des Courtils",
+    "Allée du Tapis Vert",
+    "Avenue Mondétour",
+    "Avenue de l'Orangerie",
+    "Avenue des Essarts",
+    "Avenue des Genottes",
+    "Avenue des Hérons",
+    "Avenue du Bontemps",
+    "Avenue du Haut Pavé",
+    "Avenue du Hazay",
+    "Boulevard de l'Evasion",
+    "Passage des Ballades",
+    "Passage des Lauzes",
+    "Rue Chevée",
+    "Rue Francis Combe",
+    "Rue Nationale",
+    "Rue Pierre Vogler",
+    "Rue Saint Martin",
+    "Rue Serpente",
+    "Rue de Neuville",
+    "Rue de Pontoise",
+    "Rue de Vauréal",
+    "Rue de l'Abbaye",
+    "Rue de l'Abondance",
+    "Rue de l'Aisselette",
+    "Rue de l'Amiral",
+    "Rue de l'Aubépine",
+    "Rue de la Parabole",
+    "Rue des Bocages Bruns",
+    "Rue des Entrechats",
+    "Rue des Genevriers",
+    "Rue des Heuruelles Brunes",
+    "Rue des Plants Bruns",
+    "Rue des Plants Orange",
+    "Rue des Plants Pourpres",
+    "Rue des Plants Verts",
+    "Rue des Touleuses Mauves",
+    "Rue des Touleuses Pourpres",
+    "Rue des Touleuses Vertes",
+    "Rue des Vendanges Prochaines",
+    "Rue du Brûloir",
+    "Rue du Buisson Prunelle",
+    "Rue du Pampre d'Or",
+    "Rue du Petit Sol",
+    "Square de la Belle Epine",
+    "Square de la Rouvraie"
+  ],
+  "stations_metro": [],
+  "gares": [
+    "Argenteuil",
+    "Cergy-Préfecture",
+    "Cergy-Saint-Christophe",
+    "Cergy-le-Haut",
+    "Châtelet - Les Halles",
+    "Conflans-Fin-d'Oise",
+    "Houilles - Carrières-sur-Seine",
+    "Maisons-Laffitte",
+    "Mantes-la-Jolie",
+    "Paris-Saint-Lazare",
+    "Poissy",
+    "Pontoise",
+    "Saint-Germain-en-Laye",
+    "Saint-Quentin-en-Yvelines - Montigny-le-Bretonneux",
+    "Sartrouville",
+    "Versailles-Rive-Droite",
+    "l'aéroport Charles-de-Gaulle 1",
+    "la Défense"
+  ],
+  "parcs": [],
+  "hopitaux": [],
+  "cliniques": [],
+  "centres_commerciaux": [],
+  "zones_activites": [],
+  "ponts": [],
+  "quais": [],
+  "monuments": [
+    "Monument aux morts",
+    "Monument historique"
+  ],
+  "batiments_publics": [],
+  "communes_limitrophes": [
+    "Courdimanche",
+    "Neuville-sur-Oise",
+    "Osny",
+    "Pontoise",
+    "Puiseux-Pontoise",
+    "Vauréal",
+    "Éragny-sur-Oise"
+  ],
+  "sources": {
+    "Overpass API": {
+      "quartiers": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "stations_metro": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "gares": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "parcs": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "hopitaux": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "cliniques": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "centres_commerciaux": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "zones_activites": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "ponts": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "quais": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "monuments": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "batiments_publics": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      }
+    },
+    "Overpass Géométrie": {
+      "communes_limitrophes": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      }
+    },
+    "Wikipedia HTML": {
+      "communes_limitrophes": {
+        "trouves": 7,
+        "retenus": 7,
+        "ignores": 0,
+        "exclusions": []
+      }
+    },
+    "Data.gouv.fr BAN": {
+      "rues": {
+        "trouves": 50,
+        "retenus": 50,
+        "ignores": 0,
+        "exclusions": []
+      }
+    },
+    "Wikipedia API": {
+      "gares": {
+        "trouves": 18,
+        "retenus": 18,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "monuments": {
+        "trouves": 2,
+        "retenus": 2,
+        "ignores": 0,
+        "exclusions": []
+      }
+    }
+  },
+  "timing": {
+    "overpass_poi": {
+      "durationSec": 76.6,
+      "status": "EMPTY"
+    },
+    "overpass_geo": {
+      "durationSec": 50.4,
+      "status": "EMPTY"
+    },
+    "wikipedia_html": {
+      "durationSec": 1.3,
+      "status": "OK"
+    },
+    "ban": {
+      "durationSec": 0.5,
+      "status": "OK"
+    },
+    "wikipedia_api": {
+      "durationSec": 0.3,
+      "status": "OK"
+    }
+  },
+  "validation": {
+    "status": "SUCCESS",
+    "quality": "PARTIAL",
+    "schemaVersion": "1.0",
+    "fetched": true,
+    "sources": {
+      "overpass_poi": false,
+      "overpass_geo": false,
+      "wikipedia_html": true,
+      "wikipedia_api": true,
+      "ban": true
+    },
+    "totalDurationSec": 129.1
+  }
+}

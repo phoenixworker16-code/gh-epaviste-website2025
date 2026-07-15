@@ -3,44 +3,62 @@ import { PageData } from '../types'
 export const creteilData: PageData = {
   slug: 'creteil',
   entityType: 'City',
-  metaTitle: "Épaviste Créteil (94) | Enlèvement d'Épave Gratuit",
-  metaDescription: "Épaviste gratuit à Créteil (94000). Remorquage de voitures en panne ou accidentées. Procédure VHU légale garantie. Contactez-nous au 07 53 12 07 93.",
+  metaTitle: 'Épaviste Créteil (94000) | Enlèvement Épave Gratuit 24h',
+  metaDescription: 'Service gratuit d\'enlèvement d\'épaves à Créteil (94000). Prise en charge de VHU avec certificat de destruction officiel. Intervention rapide.',
   relatedServicesSlugs: [
-    "enlevement-epave-gratuit",
-    "enlevement-voiture-sans-assurance"
+    'enlevement-epave-parking-souterrain',
+    'enlevement-voiture-en-panne',
+    'enlevement-voiture-sans-carte-grise'
   ],
   relatedCitiesSlugs: [
-    "val-de-marne",
-    "choisy-le-roi", "maisons-alfort", "bonneuil-sur-marne"
+    'enlevement-epave-val-de-marne'
   ],
   blocks: [
     {
       type: 'Hero',
-      title: "Épaviste gratuit à Créteil (94000)",
-      subtitle: "Enlèvement d'épave rapide pour libérer les places de stationnement à Créteil et alentours.",
-      badge: "Créteil (94000)",
-      bgType: 'city'
+      title: 'Retrait de véhicule hors d\'usage à Créteil',
+      subtitle: 'Prise en charge professionnelle de votre véhicule hors d\'usage avec un rendez-vous adapté à son emplacement.',
+      badge: 'Créteil (94000)',
     },
     {
       type: 'Introduction',
-      title: "Épaviste au cœur du Val-de-Marne",
-      content: "Préfecture du 94, Créteil abrite le grand lac, des quartiers résidentiels denses (Mont-Mesly, l'Échat) et le pôle universitaire. Une voiture immobilisée prend une place précieuse. GH Épaviste intervient pour retirer votre véhicule de manière 100% gratuite."
-    },
-    {
-      type: 'ZfeAlert',
-      title: "Restriction ZFE-m",
-      content: "Comme le reste de la petite couronne, Créteil est impacté par la ZFE. Si votre vieille voiture diesel ne peut plus rouler, l'enlèvement pour destruction est le meilleur choix économique.",
-      level: 'info'
+      title: 'Votre épaviste de confiance à Créteil',
+      content: 'Dans une agglomération dynamique comme Créteil (94000), se débarrasser d\'un véhicule encombrant nécessite une logistique précise. Notre équipe couvre l\'ensemble de la commune pour vous proposer un service d\'enlèvement d\'épave totalement gratuit. Que ce soit du côté de Avenue Laferrière ou ailleurs dans la commune, nous intervenons gratuitement. Nous garantissons une prise en charge conforme à la législation avec remise du certificat de destruction. Avant le rendez-vous, vérifiez l’accès au véhicule et préparez les documents demandés. Les informations communiquées au moment de la demande facilitent la préparation du retrait. Un point préalable facilite la coordination entre le propriétaire et le professionnel chargé du retrait.',
     },
     {
       type: 'VhuCompliance',
-      title: "Une destruction 100% tracée",
-      content: "Faire appel à nous, c'est choisir la sécurité. Nous transportons le véhicule vers un **centre VHU agréé**. C'est le seul moyen d'obtenir l'attestation de destruction exigée par l'assurance et la préfecture."
+      title: 'Dépollution et Recyclage',
+      content: 'L\'enlèvement est suivi d\'un acheminement vers un centre VHU partenaire agréé. Cette organisation garantit une prise en charge conforme et une valorisation dans les filières prévues. Les démarches sont préparées afin que le relais vers le partenaire soit effectué dans le cadre prévu.',
+    },
+    {
+      type: 'LocalCoverage',
+      title: 'Couverture d\'intervention sur Créteil',
+      intro: 'Notre équipe intervient dans l\'ensemble de la commune de Créteil pour procéder à l\'enlèvement de votre véhicule. La préparation du passage prend en compte les contraintes signalées avant l’intervention. Les indications fournies avant le rendez-vous servent à préparer l’itinéraire et l’accès. Nos dépanneuses rayonnent également sur les secteurs limitrophes comme Alfortville et Maisons-Alfort.',
+      zones: [
+        { name: 'Centre-ville & Rues étroites', delay: 'Sous 24h', specificities: 'Matériel adapté aux accès difficiles et parkings.' },
+        { name: 'Secteur Allee de la Toison d’Or / Allée Centrale', delay: 'Sur RDV', specificities: 'Prise en charge rapide sur les grands axes.' }
+      ],
+    },
+    {
+      type: 'DocsPreparation',
+      title: 'Pièces à fournir pour l\'enlèvement',
+      intro: 'L\'enlèvement d\'un véhicule hors d\'usage à Créteil implique une stricte conformité réglementaire. Voici les éléments à préparer. Préparez votre carte grise (originale barrée), un certificat de non-gage datant de moins de 15 jours, et la pièce d\'identité du propriétaire.',
+      specialCase: 'Si vous avez égaré la carte grise, une déclaration de perte effectuée en gendarmerie ou préfecture du département Val-de-Marne sera indispensable.',
+    },
+    {
+      type: 'FaqLocal',
+      title: 'Questions fréquentes sur l\'enlèvement à Créteil',
+      questions: [
+        { q: 'L\'intervention à Créteil est-elle soumise à des frais de déplacement ?', a: 'Non, si votre véhicule est complet, l\'enlèvement et le déplacement jusqu\'à Créteil sont entièrement gratuits.' },
+        { q: 'Délivrez-vous le certificat de destruction immédiatement ?', a: 'Oui, nous vous remettons le certificat de cession pour destruction en main propre le jour de l\'enlèvement.' },
+        { q: 'Mon véhicule est accidenté sur la voie publique, pouvez-vous le retirer ?', a: 'Absolument, nous intervenons sur la voie publique à condition que vous soyez présent avec les documents requis.' },
+        { q: 'Mon véhicule est bloqué en sous-sol à Créteil, est-ce un problème ?', a: 'Pas du tout. Nous disposons de dépanneuses 4x4 extra-basses capables d\'entrer dans la majorité des parkings souterrains.' }
+      ],
     },
     {
       type: 'Cta',
-      title: "Faites retirer votre VHU à Créteil",
-      subtitle: "Prenez rendez-vous, nous gérons tout le reste."
+      title: 'Prendre rendez-vous pour votre épave à Créteil',
+      subtitle: 'Contactez-nous pour planifier l\'enlèvement gratuit et légal de votre véhicule.',
     }
   ]
 }

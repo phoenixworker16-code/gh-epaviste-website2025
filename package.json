@@ -14,7 +14,16 @@
     "validate:all": "node scripts/validate-all.js",
     "audit:legal": "node scripts/legal-auditor.js",
     "audit:seo": "node scripts/seo-auditor.js",
-    "audit": "node scripts/legal-auditor.js && node scripts/seo-auditor.js"
+    "audit": "node scripts/legal-auditor.js && node scripts/seo-auditor.js",
+    "generate:v4": "node scripts/pipeline-v4.js",
+    "pipeline:v4": "node scripts/pipeline-v4.js",
+    "generate": "node scripts/pipeline-v4/generate.js",
+    "validate": "node scripts/pipeline-v4/validate.js",
+    "publish": "echo 'Not implemented yet'",
+    "compatibility": "node scripts/pipeline-v4/compatibility-report.js",
+    "test": "node scripts/pipeline-v4/tests/runner.js",
+    "benchmark": "node scripts/pipeline-v4/benchmark.js",
+    "stress": "node scripts/pipeline-v4/stress.js"
   },
   "browserslist": [
     "last 2 Chrome versions",

@@ -1,0 +1,333 @@
+{
+  "city": "Fontainebleau",
+  "department": "77",
+  "quartiers": [],
+  "rues": [
+    "Avenue du Touring Club",
+    "Boulevard Orloff",
+    "Boulevard du Marechal Foch",
+    "Boulevard du Maréchal Joffre",
+    "Chateau de Fontainebleau",
+    "Rue Aristide Briand",
+    "Rue Béranger",
+    "Rue Grande",
+    "Rue Guérin",
+    "Rue Lagorsse",
+    "Rue Paul Jozon",
+    "Rue Royale",
+    "Rue Saint-honoré",
+    "Rue Saint-merry",
+    "Rue d'Avon",
+    "Rue de Fleury",
+    "Rue de France",
+    "Rue de l'Arbre Sec",
+    "Rue de la Cloche",
+    "Rue de la Paroisse",
+    "Rue des Pleus",
+    "Rue des Sablons",
+    "Rue du Château",
+    "boulevard du général leclerc"
+  ],
+  "stations_metro": [],
+  "gares": [
+    "Fontainebleau - Avon",
+    "Montargis",
+    "Montereau",
+    "Thomery"
+  ],
+  "parcs": [],
+  "hopitaux": [
+    "Centre hospitalier du Sud Seine-et-Marne"
+  ],
+  "cliniques": [],
+  "centres_commerciaux": [],
+  "zones_activites": [],
+  "ponts": [],
+  "quais": [],
+  "monuments": [
+    "Château de Fontainebleau",
+    "Château fort"
+  ],
+  "batiments_publics": [],
+  "communes_limitrophes": [
+    "Achères-la-Forêt",
+    "Arbonne-la-Forêt",
+    "Avon (Seine-et-Marne)",
+    "Barbizon",
+    "Bois-le-Roi (Seine-et-Marne)",
+    "Bourron-Marlotte",
+    "Chailly-en-Bière",
+    "Dammarie-les-Lys",
+    "La Rochette (Seine-et-Marne)",
+    "Montigny-sur-Loing",
+    "Moret-Loing-et-Orvanne",
+    "Noisy-sur-École",
+    "Recloses",
+    "Saint-Martin-en-Bière",
+    "Samois-sur-Seine",
+    "Thomery",
+    "Ury",
+    "Villiers-en-Bière"
+  ],
+  "sources": {
+    "Overpass API": {
+      "quartiers": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "stations_metro": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "gares": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "parcs": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "hopitaux": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "cliniques": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "centres_commerciaux": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "zones_activites": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "ponts": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "quais": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "monuments": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "batiments_publics": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      }
+    },
+    "Overpass Géométrie": {
+      "communes_limitrophes": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      }
+    },
+    "Wikipedia HTML": {
+      "communes_limitrophes": {
+        "trouves": 18,
+        "retenus": 18,
+        "ignores": 0,
+        "exclusions": []
+      }
+    },
+    "Data.gouv.fr BAN": {
+      "rues": {
+        "trouves": 50,
+        "retenus": 24,
+        "ignores": 26,
+        "exclusions": [
+          {
+            "nom": "Fontainebleau",
+            "raison": "Commune différente: Saint-Caprais-de-Bordeaux"
+          },
+          {
+            "nom": "Rue de Fontainebleau",
+            "raison": "Commune différente: Toulouse"
+          },
+          {
+            "nom": "Boulevard de Fontainebleau",
+            "raison": "Commune différente: Corbeil-Essonnes"
+          },
+          {
+            "nom": "Allée de Fontainebleau",
+            "raison": "Commune différente: Paris"
+          },
+          {
+            "nom": "Avenue de Fontainebleau",
+            "raison": "Commune différente: Le Kremlin-Bicêtre"
+          },
+          {
+            "nom": "Avenue de Fontainebleau",
+            "raison": "Commune différente: Moret-Loing-et-Orvanne"
+          },
+          {
+            "nom": "Avenue de Fontainebleau",
+            "raison": "Commune différente: Saint-Fargeau-Ponthierry"
+          },
+          {
+            "nom": "Avenue de Fontainebleau",
+            "raison": "Commune différente: Saint-Herblain"
+          },
+          {
+            "nom": "impasse fontainebleau",
+            "raison": "Commune différente: La Seyne-sur-Mer"
+          },
+          {
+            "nom": "Rue Fontainebleau",
+            "raison": "Commune différente: Mont-de-Marsan"
+          },
+          {
+            "nom": "Avenue de Fontainebleau",
+            "raison": "Commune différente: Thiais"
+          },
+          {
+            "nom": "Rue de Fontainebleau",
+            "raison": "Commune différente: Gagny"
+          },
+          {
+            "nom": "Allée de Fontainebleau",
+            "raison": "Commune différente: Tours"
+          },
+          {
+            "nom": "Avenue de Fontainebleau",
+            "raison": "Commune différente: Pringy"
+          },
+          {
+            "nom": "Rue de Fontainebleau",
+            "raison": "Commune différente: Lormont"
+          },
+          {
+            "nom": "rue de Fontainebleau",
+            "raison": "Commune différente: Limoges"
+          },
+          {
+            "nom": "rue de Fontainebleau",
+            "raison": "Commune différente: Pau"
+          },
+          {
+            "nom": "Route de Fontainebleau",
+            "raison": "Commune différente: Vitry-sur-Seine"
+          },
+          {
+            "nom": "Rue de Fontainebleau",
+            "raison": "Commune différente: Savigny-le-Temple"
+          },
+          {
+            "nom": "Rue de Fontainebleau",
+            "raison": "Commune différente: Faches-Thumesnil"
+          },
+          {
+            "nom": "allee fontainebleau",
+            "raison": "Commune différente: Roquebrune-sur-Argens"
+          },
+          {
+            "nom": "Rue de Fontainebleau",
+            "raison": "Commune différente: Douai"
+          },
+          {
+            "nom": "Rue de fontainebleau",
+            "raison": "Commune différente: Challans"
+          },
+          {
+            "nom": "Route de Fontainebleau",
+            "raison": "Commune différente: Milly-la-Forêt"
+          },
+          {
+            "nom": "Allée de Fontainebleau",
+            "raison": "Commune différente: Aubervilliers"
+          },
+          {
+            "nom": "Rue de Fontainebleau",
+            "raison": "Commune différente: Cambrai"
+          }
+        ]
+      }
+    },
+    "Wikipedia API": {
+      "gares": {
+        "trouves": 4,
+        "retenus": 4,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "hopitaux": {
+        "trouves": 1,
+        "retenus": 1,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "monuments": {
+        "trouves": 2,
+        "retenus": 2,
+        "ignores": 0,
+        "exclusions": []
+      }
+    }
+  },
+  "timing": {
+    "overpass_poi": {
+      "durationSec": 77.6,
+      "status": "EMPTY"
+    },
+    "overpass_geo": {
+      "durationSec": 78.9,
+      "status": "EMPTY"
+    },
+    "wikipedia_html": {
+      "durationSec": 1.3,
+      "status": "OK"
+    },
+    "ban": {
+      "durationSec": 0.5,
+      "status": "OK"
+    },
+    "wikipedia_api": {
+      "durationSec": 0.3,
+      "status": "OK"
+    }
+  },
+  "validation": {
+    "status": "SUCCESS",
+    "quality": "PARTIAL",
+    "schemaVersion": "1.0",
+    "fetched": true,
+    "sources": {
+      "overpass_poi": false,
+      "overpass_geo": false,
+      "wikipedia_html": true,
+      "wikipedia_api": true,
+      "ban": true
+    },
+    "totalDurationSec": 158.7
+  }
+}

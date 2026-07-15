@@ -1,0 +1,6089 @@
+{
+  "status": "PASS",
+  "thresholds": {
+    "warning": 65,
+    "fail": 80
+  },
+  "pairs": [
+    {
+      "pageA": "paris",
+      "pageB": "chelles",
+      "similarity": 29.5,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 10.3,
+          "sharedTokens": 3,
+          "contribution": 5.1
+        },
+        {
+          "block": "Introduction",
+          "similarity": 12.6,
+          "sharedTokens": 14,
+          "contribution": 23.7
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 65.2,
+          "sharedTokens": 30,
+          "contribution": 50.8
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 26.7,
+          "sharedTokens": 12,
+          "contribution": 20.3
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "paris",
+      "pageB": "fontainebleau",
+      "similarity": 30.2,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 10,
+          "sharedTokens": 3,
+          "contribution": 5.5
+        },
+        {
+          "block": "Introduction",
+          "similarity": 11.6,
+          "sharedTokens": 13,
+          "contribution": 23.6
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 65.2,
+          "sharedTokens": 30,
+          "contribution": 54.5
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 20.9,
+          "sharedTokens": 9,
+          "contribution": 16.4
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "paris",
+      "pageB": "meaux",
+      "similarity": 32.6,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 57.1,
+          "sharedTokens": 12,
+          "contribution": 19.4
+        },
+        {
+          "block": "Introduction",
+          "similarity": 15.8,
+          "sharedTokens": 18,
+          "contribution": 29
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 44.2,
+          "sharedTokens": 23,
+          "contribution": 37.1
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 20.9,
+          "sharedTokens": 9,
+          "contribution": 14.5
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "paris",
+      "pageB": "melun",
+      "similarity": 30.4,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 6.5,
+          "sharedTokens": 2,
+          "contribution": 3.4
+        },
+        {
+          "block": "Introduction",
+          "similarity": 16.2,
+          "sharedTokens": 19,
+          "contribution": 32.2
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 58.3,
+          "sharedTokens": 28,
+          "contribution": 47.5
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 21.7,
+          "sharedTokens": 10,
+          "contribution": 16.9
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "paris",
+      "pageB": "poissy",
+      "similarity": 29.8,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 10,
+          "sharedTokens": 3,
+          "contribution": 5.6
+        },
+        {
+          "block": "Introduction",
+          "similarity": 12.4,
+          "sharedTokens": 14,
+          "contribution": 25.9
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 33.3,
+          "sharedTokens": 17,
+          "contribution": 31.5
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 57.1,
+          "sharedTokens": 20,
+          "contribution": 37
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "paris",
+      "pageB": "versailles",
+      "similarity": 30.9,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 17.9,
+          "sharedTokens": 5,
+          "contribution": 8.3
+        },
+        {
+          "block": "Introduction",
+          "similarity": 11.3,
+          "sharedTokens": 13,
+          "contribution": 21.7
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 74.4,
+          "sharedTokens": 29,
+          "contribution": 48.3
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 31,
+          "sharedTokens": 13,
+          "contribution": 21.7
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "paris",
+      "pageB": "massy",
+      "similarity": 32.4,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 13.8,
+          "sharedTokens": 4,
+          "contribution": 6.6
+        },
+        {
+          "block": "Introduction",
+          "similarity": 20.9,
+          "sharedTokens": 23,
+          "contribution": 37.7
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 36.7,
+          "sharedTokens": 18,
+          "contribution": 29.5
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 40,
+          "sharedTokens": 16,
+          "contribution": 26.2
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "paris",
+      "pageB": "antony",
+      "similarity": 35.1,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 13.8,
+          "sharedTokens": 4,
+          "contribution": 6.2
+        },
+        {
+          "block": "Introduction",
+          "similarity": 22,
+          "sharedTokens": 22,
+          "contribution": 33.8
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 59.6,
+          "sharedTokens": 28,
+          "contribution": 43.1
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 23.9,
+          "sharedTokens": 11,
+          "contribution": 16.9
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "paris",
+      "pageB": "boulogne-billancourt",
+      "similarity": 35.2,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 13.8,
+          "sharedTokens": 4,
+          "contribution": 6.1
+        },
+        {
+          "block": "Introduction",
+          "similarity": 15.3,
+          "sharedTokens": 18,
+          "contribution": 27.3
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 65.2,
+          "sharedTokens": 30,
+          "contribution": 45.5
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 37.8,
+          "sharedTokens": 14,
+          "contribution": 21.2
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "paris",
+      "pageB": "courbevoie",
+      "similarity": 45.6,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 54.5,
+          "sharedTokens": 12,
+          "contribution": 14
+        },
+        {
+          "block": "Introduction",
+          "similarity": 28.1,
+          "sharedTokens": 27,
+          "contribution": 31.4
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 56.3,
+          "sharedTokens": 27,
+          "contribution": 31.4
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 57.1,
+          "sharedTokens": 20,
+          "contribution": 23.3
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "paris",
+      "pageB": "issy-les-moulineaux",
+      "similarity": 31.8,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 10,
+          "sharedTokens": 3,
+          "contribution": 4.8
+        },
+        {
+          "block": "Introduction",
+          "similarity": 20.6,
+          "sharedTokens": 21,
+          "contribution": 33.9
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 74.4,
+          "sharedTokens": 29,
+          "contribution": 46.8
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 20.5,
+          "sharedTokens": 9,
+          "contribution": 14.5
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "paris",
+      "pageB": "nanterre",
+      "similarity": 31.6,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 10,
+          "sharedTokens": 3,
+          "contribution": 5
+        },
+        {
+          "block": "Introduction",
+          "similarity": 17.2,
+          "sharedTokens": 20,
+          "contribution": 33.3
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 60.9,
+          "sharedTokens": 28,
+          "contribution": 46.7
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 20.9,
+          "sharedTokens": 9,
+          "contribution": 15
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "paris",
+      "pageB": "drancy",
+      "similarity": 31.3,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 13.8,
+          "sharedTokens": 4,
+          "contribution": 6.3
+        },
+        {
+          "block": "Introduction",
+          "similarity": 22.3,
+          "sharedTokens": 23,
+          "contribution": 36.5
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 40.7,
+          "sharedTokens": 22,
+          "contribution": 34.9
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 34.1,
+          "sharedTokens": 14,
+          "contribution": 22.2
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "paris",
+      "pageB": "saint-denis",
+      "similarity": 22.3,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 6.5,
+          "sharedTokens": 2,
+          "contribution": 4.4
+        },
+        {
+          "block": "Introduction",
+          "similarity": 11.3,
+          "sharedTokens": 13,
+          "contribution": 28.9
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 40.4,
+          "sharedTokens": 19,
+          "contribution": 42.2
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 26.8,
+          "sharedTokens": 11,
+          "contribution": 24.4
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "paris",
+      "pageB": "creteil",
+      "similarity": 31.9,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 60,
+          "sharedTokens": 12,
+          "contribution": 18.2
+        },
+        {
+          "block": "Introduction",
+          "similarity": 15.3,
+          "sharedTokens": 18,
+          "contribution": 27.3
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 43.4,
+          "sharedTokens": 23,
+          "contribution": 34.8
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 29.5,
+          "sharedTokens": 13,
+          "contribution": 19.7
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "paris",
+      "pageB": "ivry-sur-seine",
+      "similarity": 38,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 57.1,
+          "sharedTokens": 12,
+          "contribution": 16.2
+        },
+        {
+          "block": "Introduction",
+          "similarity": 20.9,
+          "sharedTokens": 23,
+          "contribution": 31.1
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 40.4,
+          "sharedTokens": 19,
+          "contribution": 25.7
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 57.1,
+          "sharedTokens": 20,
+          "contribution": 27
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "paris",
+      "pageB": "vitry-sur-seine",
+      "similarity": 29.7,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 11.1,
+          "sharedTokens": 3,
+          "contribution": 5.8
+        },
+        {
+          "block": "Introduction",
+          "similarity": 16.2,
+          "sharedTokens": 19,
+          "contribution": 36.5
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 40.4,
+          "sharedTokens": 21,
+          "contribution": 40.4
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 20.9,
+          "sharedTokens": 9,
+          "contribution": 17.3
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "paris",
+      "pageB": "argenteuil",
+      "similarity": 30.1,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 13.8,
+          "sharedTokens": 4,
+          "contribution": 7.4
+        },
+        {
+          "block": "Introduction",
+          "similarity": 16.7,
+          "sharedTokens": 19,
+          "contribution": 35.2
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 50,
+          "sharedTokens": 22,
+          "contribution": 40.7
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 20.5,
+          "sharedTokens": 9,
+          "contribution": 16.7
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "paris",
+      "pageB": "cergy",
+      "similarity": 40.7,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 13.8,
+          "sharedTokens": 4,
+          "contribution": 5.6
+        },
+        {
+          "block": "Introduction",
+          "similarity": 27.9,
+          "sharedTokens": 29,
+          "contribution": 40.3
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 59.6,
+          "sharedTokens": 28,
+          "contribution": 38.9
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 25.6,
+          "sharedTokens": 11,
+          "contribution": 15.3
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "chelles",
+      "pageB": "fontainebleau",
+      "similarity": 58.6,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 63.2,
+          "sharedTokens": 12,
+          "contribution": 11.9
+        },
+        {
+          "block": "Introduction",
+          "similarity": 63.4,
+          "sharedTokens": 45,
+          "contribution": 44.6
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 85.4,
+          "sharedTokens": 35,
+          "contribution": 34.7
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 19.6,
+          "sharedTokens": 9,
+          "contribution": 8.9
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "chelles",
+      "pageB": "meaux",
+      "similarity": 38.7,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 19.2,
+          "sharedTokens": 5,
+          "contribution": 7.4
+        },
+        {
+          "block": "Introduction",
+          "similarity": 24.2,
+          "sharedTokens": 24,
+          "contribution": 35.3
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 47.1,
+          "sharedTokens": 24,
+          "contribution": 35.3
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 37.5,
+          "sharedTokens": 15,
+          "contribution": 22.1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "chelles",
+      "pageB": "melun",
+      "similarity": 35.2,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 19.2,
+          "sharedTokens": 5,
+          "contribution": 7.4
+        },
+        {
+          "block": "Introduction",
+          "similarity": 18.7,
+          "sharedTokens": 20,
+          "contribution": 29.4
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 58.3,
+          "sharedTokens": 28,
+          "contribution": 41.2
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 34.1,
+          "sharedTokens": 15,
+          "contribution": 22.1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "chelles",
+      "pageB": "poissy",
+      "similarity": 41.8,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 63.2,
+          "sharedTokens": 12,
+          "contribution": 15.4
+        },
+        {
+          "block": "Introduction",
+          "similarity": 53.2,
+          "sharedTokens": 41,
+          "contribution": 52.6
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 30.8,
+          "sharedTokens": 16,
+          "contribution": 20.5
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 18.4,
+          "sharedTokens": 9,
+          "contribution": 11.5
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "chelles",
+      "pageB": "versailles",
+      "similarity": 38.8,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 14.8,
+          "sharedTokens": 4,
+          "contribution": 6.5
+        },
+        {
+          "block": "Introduction",
+          "similarity": 19,
+          "sharedTokens": 19,
+          "contribution": 30.6
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 54.5,
+          "sharedTokens": 24,
+          "contribution": 38.7
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 34.9,
+          "sharedTokens": 15,
+          "contribution": 24.2
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "chelles",
+      "pageB": "massy",
+      "similarity": 33.7,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 14.8,
+          "sharedTokens": 4,
+          "contribution": 6.6
+        },
+        {
+          "block": "Introduction",
+          "similarity": 22.8,
+          "sharedTokens": 23,
+          "contribution": 37.7
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 39.6,
+          "sharedTokens": 19,
+          "contribution": 31.1
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 34.1,
+          "sharedTokens": 15,
+          "contribution": 24.6
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "chelles",
+      "pageB": "antony",
+      "similarity": 29.5,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 14.8,
+          "sharedTokens": 4,
+          "contribution": 6.9
+        },
+        {
+          "block": "Introduction",
+          "similarity": 18.9,
+          "sharedTokens": 18,
+          "contribution": 31
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 59.6,
+          "sharedTokens": 28,
+          "contribution": 48.3
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 15.4,
+          "sharedTokens": 8,
+          "contribution": 13.8
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "chelles",
+      "pageB": "boulogne-billancourt",
+      "similarity": 38.2,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 14.8,
+          "sharedTokens": 4,
+          "contribution": 5.9
+        },
+        {
+          "block": "Introduction",
+          "similarity": 19.8,
+          "sharedTokens": 21,
+          "contribution": 30.9
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 61.7,
+          "sharedTokens": 29,
+          "contribution": 42.6
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 35,
+          "sharedTokens": 14,
+          "contribution": 20.6
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "chelles",
+      "pageB": "courbevoie",
+      "similarity": 29.7,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 14.3,
+          "sharedTokens": 4,
+          "contribution": 7.3
+        },
+        {
+          "block": "Introduction",
+          "similarity": 12.9,
+          "sharedTokens": 13,
+          "contribution": 23.6
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 41.5,
+          "sharedTokens": 22,
+          "contribution": 40
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 38.1,
+          "sharedTokens": 16,
+          "contribution": 29.1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "chelles",
+      "pageB": "issy-les-moulineaux",
+      "similarity": 29.2,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 19.2,
+          "sharedTokens": 5,
+          "contribution": 9.4
+        },
+        {
+          "block": "Introduction",
+          "similarity": 15.2,
+          "sharedTokens": 15,
+          "contribution": 28.3
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 54.5,
+          "sharedTokens": 24,
+          "contribution": 45.3
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 19.1,
+          "sharedTokens": 9,
+          "contribution": 17
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "chelles",
+      "pageB": "nanterre",
+      "similarity": 40.6,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 14.8,
+          "sharedTokens": 4,
+          "contribution": 5.4
+        },
+        {
+          "block": "Introduction",
+          "similarity": 27,
+          "sharedTokens": 27,
+          "contribution": 36.5
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 60.9,
+          "sharedTokens": 28,
+          "contribution": 37.8
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 37.5,
+          "sharedTokens": 15,
+          "contribution": 20.3
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "chelles",
+      "pageB": "drancy",
+      "similarity": 32.6,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 14.8,
+          "sharedTokens": 4,
+          "contribution": 6.7
+        },
+        {
+          "block": "Introduction",
+          "similarity": 19.4,
+          "sharedTokens": 19,
+          "contribution": 31.7
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 40.7,
+          "sharedTokens": 22,
+          "contribution": 36.7
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 34.9,
+          "sharedTokens": 15,
+          "contribution": 25
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "chelles",
+      "pageB": "saint-denis",
+      "similarity": 29.8,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 19.2,
+          "sharedTokens": 5,
+          "contribution": 8.9
+        },
+        {
+          "block": "Introduction",
+          "similarity": 24,
+          "sharedTokens": 23,
+          "contribution": 41.1
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 40.4,
+          "sharedTokens": 19,
+          "contribution": 33.9
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 19.6,
+          "sharedTokens": 9,
+          "contribution": 16.1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "chelles",
+      "pageB": "creteil",
+      "similarity": 34.7,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 11.1,
+          "sharedTokens": 3,
+          "contribution": 4.5
+        },
+        {
+          "block": "Introduction",
+          "similarity": 24.5,
+          "sharedTokens": 25,
+          "contribution": 37.9
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 46.2,
+          "sharedTokens": 24,
+          "contribution": 36.4
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 30.4,
+          "sharedTokens": 14,
+          "contribution": 21.2
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "chelles",
+      "pageB": "ivry-sur-seine",
+      "similarity": 29.8,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 19.2,
+          "sharedTokens": 5,
+          "contribution": 8.6
+        },
+        {
+          "block": "Introduction",
+          "similarity": 21.6,
+          "sharedTokens": 22,
+          "contribution": 37.9
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 40.4,
+          "sharedTokens": 19,
+          "contribution": 32.8
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 26.1,
+          "sharedTokens": 12,
+          "contribution": 20.7
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "chelles",
+      "pageB": "vitry-sur-seine",
+      "similarity": 30.2,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 7.7,
+          "sharedTokens": 2,
+          "contribution": 3.6
+        },
+        {
+          "block": "Introduction",
+          "similarity": 23.3,
+          "sharedTokens": 24,
+          "contribution": 42.9
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 40.4,
+          "sharedTokens": 21,
+          "contribution": 37.5
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 19.6,
+          "sharedTokens": 9,
+          "contribution": 16.1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "chelles",
+      "pageB": "argenteuil",
+      "similarity": 37.5,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 14.8,
+          "sharedTokens": 4,
+          "contribution": 6.2
+        },
+        {
+          "block": "Introduction",
+          "similarity": 30.5,
+          "sharedTokens": 29,
+          "contribution": 44.6
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 50,
+          "sharedTokens": 22,
+          "contribution": 33.8
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 21.7,
+          "sharedTokens": 10,
+          "contribution": 15.4
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "chelles",
+      "pageB": "cergy",
+      "similarity": 33.5,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 14.8,
+          "sharedTokens": 4,
+          "contribution": 7.4
+        },
+        {
+          "block": "Introduction",
+          "similarity": 15.9,
+          "sharedTokens": 17,
+          "contribution": 31.5
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 44.2,
+          "sharedTokens": 23,
+          "contribution": 42.6
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 21.3,
+          "sharedTokens": 10,
+          "contribution": 18.5
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "fontainebleau",
+      "pageB": "meaux",
+      "similarity": 39.5,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 14.3,
+          "sharedTokens": 4,
+          "contribution": 6
+        },
+        {
+          "block": "Introduction",
+          "similarity": 28.1,
+          "sharedTokens": 27,
+          "contribution": 40.3
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 44.2,
+          "sharedTokens": 23,
+          "contribution": 34.3
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 35.1,
+          "sharedTokens": 13,
+          "contribution": 19.4
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "fontainebleau",
+      "pageB": "melun",
+      "similarity": 39.1,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 28,
+          "sharedTokens": 7,
+          "contribution": 9.6
+        },
+        {
+          "block": "Introduction",
+          "similarity": 23.3,
+          "sharedTokens": 24,
+          "contribution": 32.9
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 58.3,
+          "sharedTokens": 28,
+          "contribution": 38.4
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 35,
+          "sharedTokens": 14,
+          "contribution": 19.2
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "fontainebleau",
+      "pageB": "poissy",
+      "similarity": 53.4,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 77.8,
+          "sharedTokens": 14,
+          "contribution": 15.6
+        },
+        {
+          "block": "Introduction",
+          "similarity": 76.1,
+          "sharedTokens": 51,
+          "contribution": 56.7
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 30.8,
+          "sharedTokens": 16,
+          "contribution": 17.8
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 20.5,
+          "sharedTokens": 9,
+          "contribution": 10
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "fontainebleau",
+      "pageB": "versailles",
+      "similarity": 37.9,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 10.3,
+          "sharedTokens": 3,
+          "contribution": 5.5
+        },
+        {
+          "block": "Introduction",
+          "similarity": 19,
+          "sharedTokens": 19,
+          "contribution": 34.5
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 54.5,
+          "sharedTokens": 24,
+          "contribution": 43.6
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 20.5,
+          "sharedTokens": 9,
+          "contribution": 16.4
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "fontainebleau",
+      "pageB": "massy",
+      "similarity": 35.3,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 10.3,
+          "sharedTokens": 3,
+          "contribution": 5.1
+        },
+        {
+          "block": "Introduction",
+          "similarity": 27.8,
+          "sharedTokens": 27,
+          "contribution": 45.8
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 39.6,
+          "sharedTokens": 19,
+          "contribution": 32.2
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 22.7,
+          "sharedTokens": 10,
+          "contribution": 16.9
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "fontainebleau",
+      "pageB": "antony",
+      "similarity": 29.5,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 14.3,
+          "sharedTokens": 4,
+          "contribution": 7.1
+        },
+        {
+          "block": "Introduction",
+          "similarity": 11.9,
+          "sharedTokens": 12,
+          "contribution": 21.4
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 59.6,
+          "sharedTokens": 28,
+          "contribution": 50
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 27.9,
+          "sharedTokens": 12,
+          "contribution": 21.4
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "fontainebleau",
+      "pageB": "boulogne-billancourt",
+      "similarity": 37.4,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 10.3,
+          "sharedTokens": 3,
+          "contribution": 4.6
+        },
+        {
+          "block": "Introduction",
+          "similarity": 18.7,
+          "sharedTokens": 20,
+          "contribution": 30.8
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 61.7,
+          "sharedTokens": 29,
+          "contribution": 44.6
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 36.1,
+          "sharedTokens": 13,
+          "contribution": 20
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "fontainebleau",
+      "pageB": "courbevoie",
+      "similarity": 28.2,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 22.2,
+          "sharedTokens": 6,
+          "contribution": 11.8
+        },
+        {
+          "block": "Introduction",
+          "similarity": 10.7,
+          "sharedTokens": 11,
+          "contribution": 21.6
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 41.5,
+          "sharedTokens": 22,
+          "contribution": 43.1
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 29.3,
+          "sharedTokens": 12,
+          "contribution": 23.5
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "fontainebleau",
+      "pageB": "issy-les-moulineaux",
+      "similarity": 39.1,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 23.1,
+          "sharedTokens": 6,
+          "contribution": 9.1
+        },
+        {
+          "block": "Introduction",
+          "similarity": 12.9,
+          "sharedTokens": 13,
+          "contribution": 19.7
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 54.5,
+          "sharedTokens": 24,
+          "contribution": 36.4
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 82.1,
+          "sharedTokens": 23,
+          "contribution": 34.8
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "fontainebleau",
+      "pageB": "nanterre",
+      "similarity": 37.4,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 14.3,
+          "sharedTokens": 4,
+          "contribution": 6.3
+        },
+        {
+          "block": "Introduction",
+          "similarity": 17.6,
+          "sharedTokens": 19,
+          "contribution": 29.7
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 60.9,
+          "sharedTokens": 28,
+          "contribution": 43.8
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 35.1,
+          "sharedTokens": 13,
+          "contribution": 20.3
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "fontainebleau",
+      "pageB": "drancy",
+      "similarity": 28.1,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 14.3,
+          "sharedTokens": 4,
+          "contribution": 7.8
+        },
+        {
+          "block": "Introduction",
+          "similarity": 14.7,
+          "sharedTokens": 15,
+          "contribution": 29.4
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 40.7,
+          "sharedTokens": 22,
+          "contribution": 43.1
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 23.3,
+          "sharedTokens": 10,
+          "contribution": 19.6
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "fontainebleau",
+      "pageB": "saint-denis",
+      "similarity": 44.4,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 28,
+          "sharedTokens": 7,
+          "contribution": 9.3
+        },
+        {
+          "block": "Introduction",
+          "similarity": 40,
+          "sharedTokens": 34,
+          "contribution": 45.3
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 40.4,
+          "sharedTokens": 19,
+          "contribution": 25.3
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 42.9,
+          "sharedTokens": 15,
+          "contribution": 20
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "fontainebleau",
+      "pageB": "creteil",
+      "similarity": 34.7,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 10.7,
+          "sharedTokens": 3,
+          "contribution": 4.9
+        },
+        {
+          "block": "Introduction",
+          "similarity": 23.3,
+          "sharedTokens": 24,
+          "contribution": 39.3
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 46.2,
+          "sharedTokens": 24,
+          "contribution": 39.3
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 22.2,
+          "sharedTokens": 10,
+          "contribution": 16.4
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "fontainebleau",
+      "pageB": "ivry-sur-seine",
+      "similarity": 30.6,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 14.3,
+          "sharedTokens": 4,
+          "contribution": 7.5
+        },
+        {
+          "block": "Introduction",
+          "similarity": 20.4,
+          "sharedTokens": 21,
+          "contribution": 39.6
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 40.4,
+          "sharedTokens": 19,
+          "contribution": 35.8
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 20.5,
+          "sharedTokens": 9,
+          "contribution": 17
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "fontainebleau",
+      "pageB": "vitry-sur-seine",
+      "similarity": 46.5,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 16,
+          "sharedTokens": 4,
+          "contribution": 5
+        },
+        {
+          "block": "Introduction",
+          "similarity": 30.9,
+          "sharedTokens": 30,
+          "contribution": 37.5
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 40.4,
+          "sharedTokens": 21,
+          "contribution": 26.3
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 100,
+          "sharedTokens": 25,
+          "contribution": 31.3
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "fontainebleau",
+      "pageB": "argenteuil",
+      "similarity": 44.4,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 14.3,
+          "sharedTokens": 4,
+          "contribution": 5.4
+        },
+        {
+          "block": "Introduction",
+          "similarity": 29.2,
+          "sharedTokens": 28,
+          "contribution": 37.8
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 50,
+          "sharedTokens": 22,
+          "contribution": 29.7
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 64.5,
+          "sharedTokens": 20,
+          "contribution": 27
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "fontainebleau",
+      "pageB": "cergy",
+      "similarity": 39.9,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 10.3,
+          "sharedTokens": 3,
+          "contribution": 4.7
+        },
+        {
+          "block": "Introduction",
+          "similarity": 20.4,
+          "sharedTokens": 21,
+          "contribution": 32.8
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 44.2,
+          "sharedTokens": 23,
+          "contribution": 35.9
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 48.6,
+          "sharedTokens": 17,
+          "contribution": 26.6
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "meaux",
+      "pageB": "melun",
+      "similarity": 42.4,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 10.3,
+          "sharedTokens": 3,
+          "contribution": 3.6
+        },
+        {
+          "block": "Introduction",
+          "similarity": 55.8,
+          "sharedTokens": 48,
+          "contribution": 57.1
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 44.2,
+          "sharedTokens": 23,
+          "contribution": 27.4
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 22.7,
+          "sharedTokens": 10,
+          "contribution": 11.9
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "meaux",
+      "pageB": "poissy",
+      "similarity": 29,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 14.3,
+          "sharedTokens": 4,
+          "contribution": 7.7
+        },
+        {
+          "block": "Introduction",
+          "similarity": 23.8,
+          "sharedTokens": 24,
+          "contribution": 46.2
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 31.4,
+          "sharedTokens": 16,
+          "contribution": 30.8
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 17.8,
+          "sharedTokens": 8,
+          "contribution": 15.4
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "meaux",
+      "pageB": "versailles",
+      "similarity": 50,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 23.1,
+          "sharedTokens": 6,
+          "contribution": 7.1
+        },
+        {
+          "block": "Introduction",
+          "similarity": 61.5,
+          "sharedTokens": 48,
+          "contribution": 57.1
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 34,
+          "sharedTokens": 17,
+          "contribution": 20.2
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 32.5,
+          "sharedTokens": 13,
+          "contribution": 15.5
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "meaux",
+      "pageB": "massy",
+      "similarity": 52.7,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 14.3,
+          "sharedTokens": 4,
+          "contribution": 4.5
+        },
+        {
+          "block": "Introduction",
+          "similarity": 74.7,
+          "sharedTokens": 56,
+          "contribution": 62.9
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 46.7,
+          "sharedTokens": 21,
+          "contribution": 23.6
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 17.4,
+          "sharedTokens": 8,
+          "contribution": 9
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "meaux",
+      "pageB": "antony",
+      "similarity": 31.3,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 14.3,
+          "sharedTokens": 4,
+          "contribution": 7.1
+        },
+        {
+          "block": "Introduction",
+          "similarity": 15.4,
+          "sharedTokens": 16,
+          "contribution": 28.6
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 60.9,
+          "sharedTokens": 28,
+          "contribution": 50
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 17,
+          "sharedTokens": 8,
+          "contribution": 14.3
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "meaux",
+      "pageB": "boulogne-billancourt",
+      "similarity": 56.6,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 14.3,
+          "sharedTokens": 4,
+          "contribution": 4.1
+        },
+        {
+          "block": "Introduction",
+          "similarity": 63.4,
+          "sharedTokens": 52,
+          "contribution": 53.6
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 44.2,
+          "sharedTokens": 23,
+          "contribution": 23.7
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 58.1,
+          "sharedTokens": 18,
+          "contribution": 18.6
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "meaux",
+      "pageB": "courbevoie",
+      "similarity": 31.4,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 65,
+          "sharedTokens": 13,
+          "contribution": 24.5
+        },
+        {
+          "block": "Introduction",
+          "similarity": 11,
+          "sharedTokens": 12,
+          "contribution": 22.6
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 37,
+          "sharedTokens": 20,
+          "contribution": 37.7
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 17.8,
+          "sharedTokens": 8,
+          "contribution": 15.1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "meaux",
+      "pageB": "issy-les-moulineaux",
+      "similarity": 28.7,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 18.5,
+          "sharedTokens": 5,
+          "contribution": 10.6
+        },
+        {
+          "block": "Introduction",
+          "similarity": 11,
+          "sharedTokens": 12,
+          "contribution": 25.5
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 34,
+          "sharedTokens": 17,
+          "contribution": 36.2
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 34.2,
+          "sharedTokens": 13,
+          "contribution": 27.7
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "meaux",
+      "pageB": "nanterre",
+      "similarity": 57.1,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 6.7,
+          "sharedTokens": 2,
+          "contribution": 2
+        },
+        {
+          "block": "Introduction",
+          "similarity": 57.6,
+          "sharedTokens": 49,
+          "contribution": 49.5
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 46,
+          "sharedTokens": 23,
+          "contribution": 23.2
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 100,
+          "sharedTokens": 25,
+          "contribution": 25.3
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "meaux",
+      "pageB": "drancy",
+      "similarity": 30.5,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 14.3,
+          "sharedTokens": 4,
+          "contribution": 7.8
+        },
+        {
+          "block": "Introduction",
+          "similarity": 11.7,
+          "sharedTokens": 13,
+          "contribution": 25.5
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 56.3,
+          "sharedTokens": 27,
+          "contribution": 52.9
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 15.2,
+          "sharedTokens": 7,
+          "contribution": 13.7
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "meaux",
+      "pageB": "saint-denis",
+      "similarity": 48.3,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 10.3,
+          "sharedTokens": 3,
+          "contribution": 3.7
+        },
+        {
+          "block": "Introduction",
+          "similarity": 68,
+          "sharedTokens": 51,
+          "contribution": 62.2
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 32.7,
+          "sharedTokens": 16,
+          "contribution": 19.5
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 31.6,
+          "sharedTokens": 12,
+          "contribution": 14.6
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "meaux",
+      "pageB": "creteil",
+      "similarity": 52.9,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 63.2,
+          "sharedTokens": 12,
+          "contribution": 12.2
+        },
+        {
+          "block": "Introduction",
+          "similarity": 74,
+          "sharedTokens": 57,
+          "contribution": 58.2
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 41.5,
+          "sharedTokens": 22,
+          "contribution": 22.4
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 14.6,
+          "sharedTokens": 7,
+          "contribution": 7.1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "meaux",
+      "pageB": "ivry-sur-seine",
+      "similarity": 49,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 77.8,
+          "sharedTokens": 14,
+          "contribution": 15.7
+        },
+        {
+          "block": "Introduction",
+          "similarity": 61.7,
+          "sharedTokens": 50,
+          "contribution": 56.2
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 32.7,
+          "sharedTokens": 16,
+          "contribution": 18
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 20.5,
+          "sharedTokens": 9,
+          "contribution": 10.1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "meaux",
+      "pageB": "vitry-sur-seine",
+      "similarity": 50.3,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 16,
+          "sharedTokens": 4,
+          "contribution": 4.5
+        },
+        {
+          "block": "Introduction",
+          "similarity": 61.4,
+          "sharedTokens": 51,
+          "contribution": 57.3
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 41.2,
+          "sharedTokens": 21,
+          "contribution": 23.6
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 35.1,
+          "sharedTokens": 13,
+          "contribution": 14.6
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "meaux",
+      "pageB": "argenteuil",
+      "similarity": 57,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 14.3,
+          "sharedTokens": 4,
+          "contribution": 4.2
+        },
+        {
+          "block": "Introduction",
+          "similarity": 74.7,
+          "sharedTokens": 56,
+          "contribution": 58.9
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 51.2,
+          "sharedTokens": 22,
+          "contribution": 23.2
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 34.2,
+          "sharedTokens": 13,
+          "contribution": 13.7
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "meaux",
+      "pageB": "cergy",
+      "similarity": 61.9,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 14.3,
+          "sharedTokens": 4,
+          "contribution": 4.2
+        },
+        {
+          "block": "Introduction",
+          "similarity": 63.7,
+          "sharedTokens": 51,
+          "contribution": 53.7
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 57.4,
+          "sharedTokens": 27,
+          "contribution": 28.4
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 33.3,
+          "sharedTokens": 13,
+          "contribution": 13.7
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "melun",
+      "pageB": "poissy",
+      "similarity": 40.5,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 28,
+          "sharedTokens": 7,
+          "contribution": 9.7
+        },
+        {
+          "block": "Introduction",
+          "similarity": 30.3,
+          "sharedTokens": 30,
+          "contribution": 41.7
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 36,
+          "sharedTokens": 18,
+          "contribution": 25
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 42.5,
+          "sharedTokens": 17,
+          "contribution": 23.6
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "melun",
+      "pageB": "versailles",
+      "similarity": 49,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 6.7,
+          "sharedTokens": 2,
+          "contribution": 2.4
+        },
+        {
+          "block": "Introduction",
+          "similarity": 62.5,
+          "sharedTokens": 50,
+          "contribution": 58.8
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 47.8,
+          "sharedTokens": 22,
+          "contribution": 25.9
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 23.9,
+          "sharedTokens": 11,
+          "contribution": 12.9
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "melun",
+      "pageB": "massy",
+      "similarity": 45.1,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 6.7,
+          "sharedTokens": 2,
+          "contribution": 2.7
+        },
+        {
+          "block": "Introduction",
+          "similarity": 50,
+          "sharedTokens": 45,
+          "contribution": 60.8
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 31.4,
+          "sharedTokens": 16,
+          "contribution": 21.6
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 23.4,
+          "sharedTokens": 11,
+          "contribution": 14.9
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "melun",
+      "pageB": "antony",
+      "similarity": 36.4,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 52.4,
+          "sharedTokens": 11,
+          "contribution": 15.1
+        },
+        {
+          "block": "Introduction",
+          "similarity": 12.7,
+          "sharedTokens": 14,
+          "contribution": 19.2
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 59.6,
+          "sharedTokens": 28,
+          "contribution": 38.4
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 51.3,
+          "sharedTokens": 20,
+          "contribution": 27.4
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "melun",
+      "pageB": "boulogne-billancourt",
+      "similarity": 50.6,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 6.7,
+          "sharedTokens": 2,
+          "contribution": 2.2
+        },
+        {
+          "block": "Introduction",
+          "similarity": 66.3,
+          "sharedTokens": 55,
+          "contribution": 59.1
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 58.3,
+          "sharedTokens": 28,
+          "contribution": 30.1
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 17.8,
+          "sharedTokens": 8,
+          "contribution": 8.6
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "melun",
+      "pageB": "courbevoie",
+      "similarity": 31.3,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 17.9,
+          "sharedTokens": 5,
+          "contribution": 8.9
+        },
+        {
+          "block": "Introduction",
+          "similarity": 15.7,
+          "sharedTokens": 17,
+          "contribution": 30.4
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 41.5,
+          "sharedTokens": 22,
+          "contribution": 39.3
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 26.7,
+          "sharedTokens": 12,
+          "contribution": 21.4
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "melun",
+      "pageB": "issy-les-moulineaux",
+      "similarity": 31.6,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 18.5,
+          "sharedTokens": 5,
+          "contribution": 8.6
+        },
+        {
+          "block": "Introduction",
+          "similarity": 17.9,
+          "sharedTokens": 19,
+          "contribution": 32.8
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 47.8,
+          "sharedTokens": 22,
+          "contribution": 37.9
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 27.9,
+          "sharedTokens": 12,
+          "contribution": 20.7
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "melun",
+      "pageB": "nanterre",
+      "similarity": 60.9,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 52.4,
+          "sharedTokens": 11,
+          "contribution": 10.2
+        },
+        {
+          "block": "Introduction",
+          "similarity": 74.7,
+          "sharedTokens": 59,
+          "contribution": 54.6
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 60.9,
+          "sharedTokens": 28,
+          "contribution": 25.9
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 22.7,
+          "sharedTokens": 10,
+          "contribution": 9.3
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "melun",
+      "pageB": "drancy",
+      "similarity": 30.4,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 52.4,
+          "sharedTokens": 11,
+          "contribution": 18.6
+        },
+        {
+          "block": "Introduction",
+          "similarity": 12.3,
+          "sharedTokens": 14,
+          "contribution": 23.7
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 43.4,
+          "sharedTokens": 23,
+          "contribution": 39
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 23.9,
+          "sharedTokens": 11,
+          "contribution": 18.6
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "melun",
+      "pageB": "saint-denis",
+      "similarity": 52.3,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 77.8,
+          "sharedTokens": 14,
+          "contribution": 15.6
+        },
+        {
+          "block": "Introduction",
+          "similarity": 58.5,
+          "sharedTokens": 48,
+          "contribution": 53.3
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 32,
+          "sharedTokens": 16,
+          "contribution": 17.8
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 28.6,
+          "sharedTokens": 12,
+          "contribution": 13.3
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "melun",
+      "pageB": "creteil",
+      "similarity": 44.8,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 6.9,
+          "sharedTokens": 2,
+          "contribution": 2.4
+        },
+        {
+          "block": "Introduction",
+          "similarity": 55.1,
+          "sharedTokens": 49,
+          "contribution": 59
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 38.2,
+          "sharedTokens": 21,
+          "contribution": 25.3
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 22.9,
+          "sharedTokens": 11,
+          "contribution": 13.3
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "melun",
+      "pageB": "ivry-sur-seine",
+      "similarity": 40.1,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 10.3,
+          "sharedTokens": 3,
+          "contribution": 3.9
+        },
+        {
+          "block": "Introduction",
+          "similarity": 55.2,
+          "sharedTokens": 48,
+          "contribution": 62.3
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 32,
+          "sharedTokens": 16,
+          "contribution": 20.8
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 21.3,
+          "sharedTokens": 10,
+          "contribution": 13
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "melun",
+      "pageB": "vitry-sur-seine",
+      "similarity": 53.1,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 16,
+          "sharedTokens": 4,
+          "contribution": 4.2
+        },
+        {
+          "block": "Introduction",
+          "similarity": 64.3,
+          "sharedTokens": 54,
+          "contribution": 56.8
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 46,
+          "sharedTokens": 23,
+          "contribution": 24.2
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 35,
+          "sharedTokens": 14,
+          "contribution": 14.7
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "melun",
+      "pageB": "argenteuil",
+      "similarity": 52.8,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 52.4,
+          "sharedTokens": 11,
+          "contribution": 11.7
+        },
+        {
+          "block": "Introduction",
+          "similarity": 51.7,
+          "sharedTokens": 46,
+          "contribution": 48.9
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 50,
+          "sharedTokens": 22,
+          "contribution": 23.4
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 37.5,
+          "sharedTokens": 15,
+          "contribution": 16
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "melun",
+      "pageB": "cergy",
+      "similarity": 47.9,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 6.7,
+          "sharedTokens": 2,
+          "contribution": 2.5
+        },
+        {
+          "block": "Introduction",
+          "similarity": 48.4,
+          "sharedTokens": 44,
+          "contribution": 55
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 38.9,
+          "sharedTokens": 21,
+          "contribution": 26.3
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 30.2,
+          "sharedTokens": 13,
+          "contribution": 16.3
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "poissy",
+      "pageB": "versailles",
+      "similarity": 35.8,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 10.3,
+          "sharedTokens": 3,
+          "contribution": 5.5
+        },
+        {
+          "block": "Introduction",
+          "similarity": 26,
+          "sharedTokens": 25,
+          "contribution": 45.5
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 39.5,
+          "sharedTokens": 17,
+          "contribution": 30.9
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 21.7,
+          "sharedTokens": 10,
+          "contribution": 18.2
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "poissy",
+      "pageB": "massy",
+      "similarity": 35.8,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 10.3,
+          "sharedTokens": 3,
+          "contribution": 5.2
+        },
+        {
+          "block": "Introduction",
+          "similarity": 22.3,
+          "sharedTokens": 23,
+          "contribution": 39.7
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 43.9,
+          "sharedTokens": 18,
+          "contribution": 31
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 32.6,
+          "sharedTokens": 14,
+          "contribution": 24.1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "poissy",
+      "pageB": "antony",
+      "similarity": 30.6,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 14.3,
+          "sharedTokens": 4,
+          "contribution": 7.5
+        },
+        {
+          "block": "Introduction",
+          "similarity": 13.9,
+          "sharedTokens": 14,
+          "contribution": 26.4
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 34,
+          "sharedTokens": 17,
+          "contribution": 32.1
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 45,
+          "sharedTokens": 18,
+          "contribution": 34
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "poissy",
+      "pageB": "boulogne-billancourt",
+      "similarity": 33.9,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 10.3,
+          "sharedTokens": 3,
+          "contribution": 5.2
+        },
+        {
+          "block": "Introduction",
+          "similarity": 25.2,
+          "sharedTokens": 26,
+          "contribution": 44.8
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 30.8,
+          "sharedTokens": 16,
+          "contribution": 27.6
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 33.3,
+          "sharedTokens": 13,
+          "contribution": 22.4
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "poissy",
+      "pageB": "courbevoie",
+      "similarity": 33.1,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 22.2,
+          "sharedTokens": 6,
+          "contribution": 10.3
+        },
+        {
+          "block": "Introduction",
+          "similarity": 12.6,
+          "sharedTokens": 13,
+          "contribution": 22.4
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 48.9,
+          "sharedTokens": 22,
+          "contribution": 37.9
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 43.6,
+          "sharedTokens": 17,
+          "contribution": 29.3
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "poissy",
+      "pageB": "issy-les-moulineaux",
+      "similarity": 31.1,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 23.1,
+          "sharedTokens": 6,
+          "contribution": 11.8
+        },
+        {
+          "block": "Introduction",
+          "similarity": 19.6,
+          "sharedTokens": 19,
+          "contribution": 37.3
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 39.5,
+          "sharedTokens": 17,
+          "contribution": 33.3
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 20,
+          "sharedTokens": 9,
+          "contribution": 17.6
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "poissy",
+      "pageB": "nanterre",
+      "similarity": 31.6,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 14.3,
+          "sharedTokens": 4,
+          "contribution": 7.4
+        },
+        {
+          "block": "Introduction",
+          "similarity": 24,
+          "sharedTokens": 25,
+          "contribution": 46.3
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 34.7,
+          "sharedTokens": 17,
+          "contribution": 31.5
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 17.8,
+          "sharedTokens": 8,
+          "contribution": 14.8
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "poissy",
+      "pageB": "drancy",
+      "similarity": 26.9,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 14.3,
+          "sharedTokens": 4,
+          "contribution": 8
+        },
+        {
+          "block": "Introduction",
+          "similarity": 15.5,
+          "sharedTokens": 16,
+          "contribution": 32
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 36,
+          "sharedTokens": 18,
+          "contribution": 36
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 27.3,
+          "sharedTokens": 12,
+          "contribution": 24
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "poissy",
+      "pageB": "saint-denis",
+      "similarity": 41.3,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 28,
+          "sharedTokens": 7,
+          "contribution": 10
+        },
+        {
+          "block": "Introduction",
+          "similarity": 33,
+          "sharedTokens": 30,
+          "contribution": 42.9
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 61.1,
+          "sharedTokens": 22,
+          "contribution": 31.4
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 26.2,
+          "sharedTokens": 11,
+          "contribution": 15.7
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "poissy",
+      "pageB": "creteil",
+      "similarity": 29.8,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 10.7,
+          "sharedTokens": 3,
+          "contribution": 5.7
+        },
+        {
+          "block": "Introduction",
+          "similarity": 19.4,
+          "sharedTokens": 21,
+          "contribution": 39.6
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 36,
+          "sharedTokens": 18,
+          "contribution": 34
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 23.4,
+          "sharedTokens": 11,
+          "contribution": 20.8
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "poissy",
+      "pageB": "ivry-sur-seine",
+      "similarity": 32.5,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 14.3,
+          "sharedTokens": 4,
+          "contribution": 7
+        },
+        {
+          "block": "Introduction",
+          "similarity": 16.7,
+          "sharedTokens": 18,
+          "contribution": 31.6
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 61.1,
+          "sharedTokens": 22,
+          "contribution": 38.6
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 30.2,
+          "sharedTokens": 13,
+          "contribution": 22.8
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "poissy",
+      "pageB": "vitry-sur-seine",
+      "similarity": 32.7,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 16,
+          "sharedTokens": 4,
+          "contribution": 6.7
+        },
+        {
+          "block": "Introduction",
+          "similarity": 25.2,
+          "sharedTokens": 26,
+          "contribution": 43.3
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 47.7,
+          "sharedTokens": 21,
+          "contribution": 35
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 20.5,
+          "sharedTokens": 9,
+          "contribution": 15
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "poissy",
+      "pageB": "argenteuil",
+      "similarity": 32.4,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 14.3,
+          "sharedTokens": 4,
+          "contribution": 7.4
+        },
+        {
+          "block": "Introduction",
+          "similarity": 23.5,
+          "sharedTokens": 24,
+          "contribution": 44.4
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 41.5,
+          "sharedTokens": 17,
+          "contribution": 31.5
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 20,
+          "sharedTokens": 9,
+          "contribution": 16.7
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "poissy",
+      "pageB": "cergy",
+      "similarity": 30.9,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 10.3,
+          "sharedTokens": 3,
+          "contribution": 6.1
+        },
+        {
+          "block": "Introduction",
+          "similarity": 20,
+          "sharedTokens": 21,
+          "contribution": 42.9
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 31.4,
+          "sharedTokens": 16,
+          "contribution": 32.7
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 19.6,
+          "sharedTokens": 9,
+          "contribution": 18.4
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "versailles",
+      "pageB": "massy",
+      "similarity": 54.6,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 52.4,
+          "sharedTokens": 11,
+          "contribution": 12.4
+        },
+        {
+          "block": "Introduction",
+          "similarity": 49.4,
+          "sharedTokens": 42,
+          "contribution": 47.2
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 43.9,
+          "sharedTokens": 18,
+          "contribution": 20.2
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 46.2,
+          "sharedTokens": 18,
+          "contribution": 20.2
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "versailles",
+      "pageB": "antony",
+      "similarity": 30.2,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 18.5,
+          "sharedTokens": 5,
+          "contribution": 9.1
+        },
+        {
+          "block": "Introduction",
+          "similarity": 18.4,
+          "sharedTokens": 18,
+          "contribution": 32.7
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 48.9,
+          "sharedTokens": 22,
+          "contribution": 40
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 20.8,
+          "sharedTokens": 10,
+          "contribution": 18.2
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "versailles",
+      "pageB": "boulogne-billancourt",
+      "similarity": 52.3,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 52.4,
+          "sharedTokens": 11,
+          "contribution": 11.8
+        },
+        {
+          "block": "Introduction",
+          "similarity": 68.8,
+          "sharedTokens": 53,
+          "contribution": 57
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 51.1,
+          "sharedTokens": 23,
+          "contribution": 24.7
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 13,
+          "sharedTokens": 6,
+          "contribution": 6.5
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "versailles",
+      "pageB": "courbevoie",
+      "similarity": 36.1,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 17.9,
+          "sharedTokens": 5,
+          "contribution": 8.8
+        },
+        {
+          "block": "Introduction",
+          "similarity": 12.5,
+          "sharedTokens": 13,
+          "contribution": 22.8
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 45.7,
+          "sharedTokens": 21,
+          "contribution": 36.8
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 47.4,
+          "sharedTokens": 18,
+          "contribution": 31.6
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "versailles",
+      "pageB": "issy-les-moulineaux",
+      "similarity": 41.2,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 52.4,
+          "sharedTokens": 11,
+          "contribution": 15.9
+        },
+        {
+          "block": "Introduction",
+          "similarity": 17,
+          "sharedTokens": 17,
+          "contribution": 24.6
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 93.5,
+          "sharedTokens": 29,
+          "contribution": 42
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 28.6,
+          "sharedTokens": 12,
+          "contribution": 17.4
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "versailles",
+      "pageB": "nanterre",
+      "similarity": 54,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 6.7,
+          "sharedTokens": 2,
+          "contribution": 2.3
+        },
+        {
+          "block": "Introduction",
+          "similarity": 62.5,
+          "sharedTokens": 50,
+          "contribution": 57.5
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 50,
+          "sharedTokens": 22,
+          "contribution": 25.3
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 32.5,
+          "sharedTokens": 13,
+          "contribution": 14.9
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "versailles",
+      "pageB": "drancy",
+      "similarity": 37.5,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 18.5,
+          "sharedTokens": 5,
+          "contribution": 8.2
+        },
+        {
+          "block": "Introduction",
+          "similarity": 18.8,
+          "sharedTokens": 19,
+          "contribution": 31.1
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 30.8,
+          "sharedTokens": 16,
+          "contribution": 26.2
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 60,
+          "sharedTokens": 21,
+          "contribution": 34.4
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "versailles",
+      "pageB": "saint-denis",
+      "similarity": 50,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 6.7,
+          "sharedTokens": 2,
+          "contribution": 2.6
+        },
+        {
+          "block": "Introduction",
+          "similarity": 56.4,
+          "sharedTokens": 44,
+          "contribution": 56.4
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 48.7,
+          "sharedTokens": 19,
+          "contribution": 24.4
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 32.5,
+          "sharedTokens": 13,
+          "contribution": 16.7
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "versailles",
+      "pageB": "creteil",
+      "similarity": 51.7,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 24,
+          "sharedTokens": 6,
+          "contribution": 6.5
+        },
+        {
+          "block": "Introduction",
+          "similarity": 56.6,
+          "sharedTokens": 47,
+          "contribution": 51.1
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 33.3,
+          "sharedTokens": 17,
+          "contribution": 18.5
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 61.1,
+          "sharedTokens": 22,
+          "contribution": 23.9
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "versailles",
+      "pageB": "ivry-sur-seine",
+      "similarity": 47.6,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 23.1,
+          "sharedTokens": 6,
+          "contribution": 7.6
+        },
+        {
+          "block": "Introduction",
+          "similarity": 47.7,
+          "sharedTokens": 41,
+          "contribution": 51.9
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 48.7,
+          "sharedTokens": 19,
+          "contribution": 24.1
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 30.2,
+          "sharedTokens": 13,
+          "contribution": 16.5
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "versailles",
+      "pageB": "vitry-sur-seine",
+      "similarity": 42.4,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 3.6,
+          "sharedTokens": 1,
+          "contribution": 1.5
+        },
+        {
+          "block": "Introduction",
+          "similarity": 49.4,
+          "sharedTokens": 43,
+          "contribution": 63.2
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 30,
+          "sharedTokens": 15,
+          "contribution": 22.1
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 20.5,
+          "sharedTokens": 9,
+          "contribution": 13.2
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "versailles",
+      "pageB": "argenteuil",
+      "similarity": 49.7,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 18.5,
+          "sharedTokens": 5,
+          "contribution": 6.3
+        },
+        {
+          "block": "Introduction",
+          "similarity": 49.4,
+          "sharedTokens": 42,
+          "contribution": 53.2
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 61.1,
+          "sharedTokens": 22,
+          "contribution": 27.8
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 22.7,
+          "sharedTokens": 10,
+          "contribution": 12.7
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "versailles",
+      "pageB": "cergy",
+      "similarity": 52.3,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 52.4,
+          "sharedTokens": 11,
+          "contribution": 13.1
+        },
+        {
+          "block": "Introduction",
+          "similarity": 47.7,
+          "sharedTokens": 41,
+          "contribution": 48.8
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 48.9,
+          "sharedTokens": 22,
+          "contribution": 26.2
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 22.2,
+          "sharedTokens": 10,
+          "contribution": 11.9
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "massy",
+      "pageB": "antony",
+      "similarity": 28,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 6.7,
+          "sharedTokens": 2,
+          "contribution": 4.2
+        },
+        {
+          "block": "Introduction",
+          "similarity": 11,
+          "sharedTokens": 12,
+          "contribution": 25
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 50,
+          "sharedTokens": 22,
+          "contribution": 45.8
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 25.5,
+          "sharedTokens": 12,
+          "contribution": 25
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "massy",
+      "pageB": "boulogne-billancourt",
+      "similarity": 46.2,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 77.8,
+          "sharedTokens": 14,
+          "contribution": 16.7
+        },
+        {
+          "block": "Introduction",
+          "similarity": 51.7,
+          "sharedTokens": 46,
+          "contribution": 54.8
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 34,
+          "sharedTokens": 17,
+          "contribution": 20.2
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 15.2,
+          "sharedTokens": 7,
+          "contribution": 8.3
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "massy",
+      "pageB": "courbevoie",
+      "similarity": 31.9,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 10,
+          "sharedTokens": 3,
+          "contribution": 5.7
+        },
+        {
+          "block": "Introduction",
+          "similarity": 15.1,
+          "sharedTokens": 16,
+          "contribution": 30.2
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 32,
+          "sharedTokens": 16,
+          "contribution": 30.2
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 46.2,
+          "sharedTokens": 18,
+          "contribution": 34
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "massy",
+      "pageB": "issy-les-moulineaux",
+      "similarity": 34.8,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 52.4,
+          "sharedTokens": 11,
+          "contribution": 19.6
+        },
+        {
+          "block": "Introduction",
+          "similarity": 16.2,
+          "sharedTokens": 17,
+          "contribution": 30.4
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 43.9,
+          "sharedTokens": 18,
+          "contribution": 32.1
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 22.2,
+          "sharedTokens": 10,
+          "contribution": 17.9
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "massy",
+      "pageB": "nanterre",
+      "similarity": 46.9,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 18.5,
+          "sharedTokens": 5,
+          "contribution": 6.5
+        },
+        {
+          "block": "Introduction",
+          "similarity": 53.4,
+          "sharedTokens": 47,
+          "contribution": 61
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 35.4,
+          "sharedTokens": 17,
+          "contribution": 22.1
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 17.4,
+          "sharedTokens": 8,
+          "contribution": 10.4
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "massy",
+      "pageB": "drancy",
+      "similarity": 28.7,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 6.7,
+          "sharedTokens": 2,
+          "contribution": 4.1
+        },
+        {
+          "block": "Introduction",
+          "similarity": 12.6,
+          "sharedTokens": 14,
+          "contribution": 28.6
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 28.8,
+          "sharedTokens": 15,
+          "contribution": 30.6
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 46.2,
+          "sharedTokens": 18,
+          "contribution": 36.7
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "massy",
+      "pageB": "saint-denis",
+      "similarity": 54,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 6.7,
+          "sharedTokens": 2,
+          "contribution": 2.3
+        },
+        {
+          "block": "Introduction",
+          "similarity": 67.1,
+          "sharedTokens": 51,
+          "contribution": 59.3
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 67.6,
+          "sharedTokens": 23,
+          "contribution": 26.7
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 22.7,
+          "sharedTokens": 10,
+          "contribution": 11.6
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "massy",
+      "pageB": "creteil",
+      "similarity": 60.7,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 10.7,
+          "sharedTokens": 3,
+          "contribution": 2.9
+        },
+        {
+          "block": "Introduction",
+          "similarity": 60.7,
+          "sharedTokens": 51,
+          "contribution": 49.5
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 52.3,
+          "sharedTokens": 23,
+          "contribution": 22.3
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 78.8,
+          "sharedTokens": 26,
+          "contribution": 25.2
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "massy",
+      "pageB": "ivry-sur-seine",
+      "similarity": 62.7,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 14.3,
+          "sharedTokens": 4,
+          "contribution": 4
+        },
+        {
+          "block": "Introduction",
+          "similarity": 73.7,
+          "sharedTokens": 56,
+          "contribution": 56.6
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 67.6,
+          "sharedTokens": 23,
+          "contribution": 23.2
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 39,
+          "sharedTokens": 16,
+          "contribution": 16.2
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "massy",
+      "pageB": "vitry-sur-seine",
+      "similarity": 46.8,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 3.6,
+          "sharedTokens": 1,
+          "contribution": 1.3
+        },
+        {
+          "block": "Introduction",
+          "similarity": 58.8,
+          "sharedTokens": 50,
+          "contribution": 66.7
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 28,
+          "sharedTokens": 14,
+          "contribution": 18.7
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 22.7,
+          "sharedTokens": 10,
+          "contribution": 13.3
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "massy",
+      "pageB": "argenteuil",
+      "similarity": 57.6,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 6.7,
+          "sharedTokens": 2,
+          "contribution": 2.2
+        },
+        {
+          "block": "Introduction",
+          "similarity": 76,
+          "sharedTokens": 57,
+          "contribution": 63.3
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 58.3,
+          "sharedTokens": 21,
+          "contribution": 23.3
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 22.2,
+          "sharedTokens": 10,
+          "contribution": 11.1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "massy",
+      "pageB": "cergy",
+      "similarity": 56.1,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 77.8,
+          "sharedTokens": 14,
+          "contribution": 14.3
+        },
+        {
+          "block": "Introduction",
+          "similarity": 73.7,
+          "sharedTokens": 56,
+          "contribution": 57.1
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 34.7,
+          "sharedTokens": 17,
+          "contribution": 17.3
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 24.4,
+          "sharedTokens": 11,
+          "contribution": 11.2
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "antony",
+      "pageB": "boulogne-billancourt",
+      "similarity": 28,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 6.7,
+          "sharedTokens": 2,
+          "contribution": 3.6
+        },
+        {
+          "block": "Introduction",
+          "similarity": 17,
+          "sharedTokens": 18,
+          "contribution": 32.7
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 59.6,
+          "sharedTokens": 28,
+          "contribution": 50.9
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 14.9,
+          "sharedTokens": 7,
+          "contribution": 12.7
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "antony",
+      "pageB": "courbevoie",
+      "similarity": 49.3,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 13.8,
+          "sharedTokens": 4,
+          "contribution": 5
+        },
+        {
+          "block": "Introduction",
+          "similarity": 65.7,
+          "sharedTokens": 44,
+          "contribution": 55
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 37,
+          "sharedTokens": 20,
+          "contribution": 25
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 26.1,
+          "sharedTokens": 12,
+          "contribution": 15
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "antony",
+      "pageB": "issy-les-moulineaux",
+      "similarity": 44.3,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 6.7,
+          "sharedTokens": 2,
+          "contribution": 2.7
+        },
+        {
+          "block": "Introduction",
+          "similarity": 54.2,
+          "sharedTokens": 39,
+          "contribution": 53.4
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 48.9,
+          "sharedTokens": 22,
+          "contribution": 30.1
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 21.7,
+          "sharedTokens": 10,
+          "contribution": 13.7
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "antony",
+      "pageB": "nanterre",
+      "similarity": 31.7,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 52.4,
+          "sharedTokens": 11,
+          "contribution": 17.5
+        },
+        {
+          "block": "Introduction",
+          "similarity": 14.8,
+          "sharedTokens": 16,
+          "contribution": 25.4
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 62.2,
+          "sharedTokens": 28,
+          "contribution": 44.4
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 17,
+          "sharedTokens": 8,
+          "contribution": 12.7
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "antony",
+      "pageB": "drancy",
+      "similarity": 51.7,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 77.8,
+          "sharedTokens": 14,
+          "contribution": 15.2
+        },
+        {
+          "block": "Introduction",
+          "similarity": 60.6,
+          "sharedTokens": 43,
+          "contribution": 46.7
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 44.2,
+          "sharedTokens": 23,
+          "contribution": 25
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 26.1,
+          "sharedTokens": 12,
+          "contribution": 13
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "antony",
+      "pageB": "saint-denis",
+      "similarity": 25.6,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 52.4,
+          "sharedTokens": 11,
+          "contribution": 22
+        },
+        {
+          "block": "Introduction",
+          "similarity": 10.5,
+          "sharedTokens": 11,
+          "contribution": 22
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 35.4,
+          "sharedTokens": 17,
+          "contribution": 34
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 25,
+          "sharedTokens": 11,
+          "contribution": 22
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "antony",
+      "pageB": "creteil",
+      "similarity": 27,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 19.2,
+          "sharedTokens": 5,
+          "contribution": 9.3
+        },
+        {
+          "block": "Introduction",
+          "similarity": 14.8,
+          "sharedTokens": 16,
+          "contribution": 29.6
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 41.5,
+          "sharedTokens": 22,
+          "contribution": 40.7
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 22.4,
+          "sharedTokens": 11,
+          "contribution": 20.4
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "antony",
+      "pageB": "ivry-sur-seine",
+      "similarity": 26.4,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 14.3,
+          "sharedTokens": 4,
+          "contribution": 7.8
+        },
+        {
+          "block": "Introduction",
+          "similarity": 10,
+          "sharedTokens": 11,
+          "contribution": 21.6
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 35.4,
+          "sharedTokens": 17,
+          "contribution": 33.3
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 48.7,
+          "sharedTokens": 19,
+          "contribution": 37.3
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "antony",
+      "pageB": "vitry-sur-seine",
+      "similarity": 25.5,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 3.6,
+          "sharedTokens": 1,
+          "contribution": 2.2
+        },
+        {
+          "block": "Introduction",
+          "similarity": 9.7,
+          "sharedTokens": 11,
+          "contribution": 24.4
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 41.2,
+          "sharedTokens": 21,
+          "contribution": 46.7
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 27.9,
+          "sharedTokens": 12,
+          "contribution": 26.7
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "antony",
+      "pageB": "argenteuil",
+      "similarity": 33.1,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 77.8,
+          "sharedTokens": 14,
+          "contribution": 21.9
+        },
+        {
+          "block": "Introduction",
+          "similarity": 10,
+          "sharedTokens": 11,
+          "contribution": 17.2
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 71.1,
+          "sharedTokens": 27,
+          "contribution": 42.2
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 27.3,
+          "sharedTokens": 12,
+          "contribution": 18.8
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "antony",
+      "pageB": "cergy",
+      "similarity": 37.1,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 6.7,
+          "sharedTokens": 2,
+          "contribution": 3.2
+        },
+        {
+          "block": "Introduction",
+          "similarity": 16.3,
+          "sharedTokens": 17,
+          "contribution": 27.4
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 42.3,
+          "sharedTokens": 22,
+          "contribution": 35.5
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 58.3,
+          "sharedTokens": 21,
+          "contribution": 33.9
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "boulogne-billancourt",
+      "pageB": "courbevoie",
+      "similarity": 31,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 10,
+          "sharedTokens": 3,
+          "contribution": 5.9
+        },
+        {
+          "block": "Introduction",
+          "similarity": 11.6,
+          "sharedTokens": 13,
+          "contribution": 25.5
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 38.9,
+          "sharedTokens": 21,
+          "contribution": 41.2
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 36.8,
+          "sharedTokens": 14,
+          "contribution": 27.5
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "boulogne-billancourt",
+      "pageB": "issy-les-moulineaux",
+      "similarity": 35.4,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 52.4,
+          "sharedTokens": 11,
+          "contribution": 17.2
+        },
+        {
+          "block": "Introduction",
+          "similarity": 15.7,
+          "sharedTokens": 17,
+          "contribution": 26.6
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 51.1,
+          "sharedTokens": 23,
+          "contribution": 35.9
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 35.1,
+          "sharedTokens": 13,
+          "contribution": 20.3
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "boulogne-billancourt",
+      "pageB": "nanterre",
+      "similarity": 59.5,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 18.5,
+          "sharedTokens": 5,
+          "contribution": 4.7
+        },
+        {
+          "block": "Introduction",
+          "similarity": 66.3,
+          "sharedTokens": 55,
+          "contribution": 51.9
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 60.9,
+          "sharedTokens": 28,
+          "contribution": 26.4
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 58.1,
+          "sharedTokens": 18,
+          "contribution": 17
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "boulogne-billancourt",
+      "pageB": "drancy",
+      "similarity": 25.3,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 6.7,
+          "sharedTokens": 2,
+          "contribution": 4.4
+        },
+        {
+          "block": "Introduction",
+          "similarity": 11.3,
+          "sharedTokens": 13,
+          "contribution": 28.9
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 40.7,
+          "sharedTokens": 22,
+          "contribution": 48.9
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 18.2,
+          "sharedTokens": 8,
+          "contribution": 17.8
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "boulogne-billancourt",
+      "pageB": "saint-denis",
+      "similarity": 44.8,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 6.7,
+          "sharedTokens": 2,
+          "contribution": 2.7
+        },
+        {
+          "block": "Introduction",
+          "similarity": 49.4,
+          "sharedTokens": 43,
+          "contribution": 57.3
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 34.7,
+          "sharedTokens": 17,
+          "contribution": 22.7
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 36.1,
+          "sharedTokens": 13,
+          "contribution": 17.3
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "boulogne-billancourt",
+      "pageB": "creteil",
+      "similarity": 57.1,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 10.7,
+          "sharedTokens": 3,
+          "contribution": 3.1
+        },
+        {
+          "block": "Introduction",
+          "similarity": 76.9,
+          "sharedTokens": 60,
+          "contribution": 61.9
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 58.3,
+          "sharedTokens": 28,
+          "contribution": 28.9
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 12.5,
+          "sharedTokens": 6,
+          "contribution": 6.2
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "boulogne-billancourt",
+      "pageB": "ivry-sur-seine",
+      "similarity": 42.8,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 14.3,
+          "sharedTokens": 4,
+          "contribution": 5.3
+        },
+        {
+          "block": "Introduction",
+          "similarity": 51.7,
+          "sharedTokens": 46,
+          "contribution": 61.3
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 34.7,
+          "sharedTokens": 17,
+          "contribution": 22.7
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 18.2,
+          "sharedTokens": 8,
+          "contribution": 10.7
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "boulogne-billancourt",
+      "pageB": "vitry-sur-seine",
+      "similarity": 55.6,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 3.6,
+          "sharedTokens": 1,
+          "contribution": 1.1
+        },
+        {
+          "block": "Introduction",
+          "similarity": 66.3,
+          "sharedTokens": 55,
+          "contribution": 61.1
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 40.4,
+          "sharedTokens": 21,
+          "contribution": 23.3
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 36.1,
+          "sharedTokens": 13,
+          "contribution": 14.4
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "boulogne-billancourt",
+      "pageB": "argenteuil",
+      "similarity": 49.4,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 6.7,
+          "sharedTokens": 2,
+          "contribution": 2.4
+        },
+        {
+          "block": "Introduction",
+          "similarity": 51.7,
+          "sharedTokens": 46,
+          "contribution": 55.4
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 50,
+          "sharedTokens": 22,
+          "contribution": 26.5
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 35.1,
+          "sharedTokens": 13,
+          "contribution": 15.7
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "boulogne-billancourt",
+      "pageB": "cergy",
+      "similarity": 51.9,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 77.8,
+          "sharedTokens": 14,
+          "contribution": 14.9
+        },
+        {
+          "block": "Introduction",
+          "similarity": 50,
+          "sharedTokens": 45,
+          "contribution": 47.9
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 41.5,
+          "sharedTokens": 22,
+          "contribution": 23.4
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 34.2,
+          "sharedTokens": 13,
+          "contribution": 13.8
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "courbevoie",
+      "pageB": "issy-les-moulineaux",
+      "similarity": 48.9,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 22.2,
+          "sharedTokens": 6,
+          "contribution": 7.3
+        },
+        {
+          "block": "Introduction",
+          "similarity": 67.2,
+          "sharedTokens": 45,
+          "contribution": 54.9
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 45.7,
+          "sharedTokens": 21,
+          "contribution": 25.6
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 22.7,
+          "sharedTokens": 10,
+          "contribution": 12.2
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "courbevoie",
+      "pageB": "nanterre",
+      "similarity": 31.8,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 6.5,
+          "sharedTokens": 2,
+          "contribution": 4
+        },
+        {
+          "block": "Introduction",
+          "similarity": 16.8,
+          "sharedTokens": 18,
+          "contribution": 36
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 43.1,
+          "sharedTokens": 22,
+          "contribution": 44
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 17.8,
+          "sharedTokens": 8,
+          "contribution": 16
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "courbevoie",
+      "pageB": "drancy",
+      "similarity": 54.5,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 13.8,
+          "sharedTokens": 4,
+          "contribution": 4.5
+        },
+        {
+          "block": "Introduction",
+          "similarity": 57.5,
+          "sharedTokens": 42,
+          "contribution": 47.2
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 44.2,
+          "sharedTokens": 23,
+          "contribution": 25.8
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 55.6,
+          "sharedTokens": 20,
+          "contribution": 22.5
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "courbevoie",
+      "pageB": "saint-denis",
+      "similarity": 25.6,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 17.9,
+          "sharedTokens": 5,
+          "contribution": 11.4
+        },
+        {
+          "block": "Introduction",
+          "similarity": 9.3,
+          "sharedTokens": 10,
+          "contribution": 22.7
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 35.4,
+          "sharedTokens": 17,
+          "contribution": 38.6
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 29.3,
+          "sharedTokens": 12,
+          "contribution": 27.3
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "courbevoie",
+      "pageB": "creteil",
+      "similarity": 34.5,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 60,
+          "sharedTokens": 12,
+          "contribution": 18.8
+        },
+        {
+          "block": "Introduction",
+          "similarity": 10.6,
+          "sharedTokens": 12,
+          "contribution": 18.8
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 41.5,
+          "sharedTokens": 22,
+          "contribution": 34.4
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 45,
+          "sharedTokens": 18,
+          "contribution": 28.1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "courbevoie",
+      "pageB": "ivry-sur-seine",
+      "similarity": 33.5,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 65,
+          "sharedTokens": 13,
+          "contribution": 21.3
+        },
+        {
+          "block": "Introduction",
+          "similarity": 17.3,
+          "sharedTokens": 18,
+          "contribution": 29.5
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 35.4,
+          "sharedTokens": 17,
+          "contribution": 27.9
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 30.2,
+          "sharedTokens": 13,
+          "contribution": 21.3
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "courbevoie",
+      "pageB": "vitry-sur-seine",
+      "similarity": 31.4,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 25,
+          "sharedTokens": 6,
+          "contribution": 10.7
+        },
+        {
+          "block": "Introduction",
+          "similarity": 9.6,
+          "sharedTokens": 11,
+          "contribution": 19.6
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 60,
+          "sharedTokens": 27,
+          "contribution": 48.2
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 29.3,
+          "sharedTokens": 12,
+          "contribution": 21.4
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "courbevoie",
+      "pageB": "argenteuil",
+      "similarity": 28,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 13.8,
+          "sharedTokens": 4,
+          "contribution": 9.5
+        },
+        {
+          "block": "Introduction",
+          "similarity": 9.9,
+          "sharedTokens": 11,
+          "contribution": 26.2
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 27.5,
+          "sharedTokens": 14,
+          "contribution": 33.3
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 31.7,
+          "sharedTokens": 13,
+          "contribution": 31
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "courbevoie",
+      "pageB": "cergy",
+      "similarity": 39,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 10,
+          "sharedTokens": 3,
+          "contribution": 4.7
+        },
+        {
+          "block": "Introduction",
+          "similarity": 20.8,
+          "sharedTokens": 21,
+          "contribution": 32.8
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 57.4,
+          "sharedTokens": 27,
+          "contribution": 42.2
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 31,
+          "sharedTokens": 13,
+          "contribution": 20.3
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "issy-les-moulineaux",
+      "pageB": "nanterre",
+      "similarity": 34.5,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 6.7,
+          "sharedTokens": 2,
+          "contribution": 3.5
+        },
+        {
+          "block": "Introduction",
+          "similarity": 19,
+          "sharedTokens": 20,
+          "contribution": 35.1
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 50,
+          "sharedTokens": 22,
+          "contribution": 38.6
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 34.2,
+          "sharedTokens": 13,
+          "contribution": 22.8
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "issy-les-moulineaux",
+      "pageB": "drancy",
+      "similarity": 39.6,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 6.7,
+          "sharedTokens": 2,
+          "contribution": 3
+        },
+        {
+          "block": "Introduction",
+          "similarity": 45.6,
+          "sharedTokens": 36,
+          "contribution": 53.7
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 30.8,
+          "sharedTokens": 16,
+          "contribution": 23.9
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 31.7,
+          "sharedTokens": 13,
+          "contribution": 19.4
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "issy-les-moulineaux",
+      "pageB": "saint-denis",
+      "similarity": 33.1,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 18.5,
+          "sharedTokens": 5,
+          "contribution": 9.3
+        },
+        {
+          "block": "Introduction",
+          "similarity": 11.4,
+          "sharedTokens": 12,
+          "contribution": 22.2
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 48.7,
+          "sharedTokens": 19,
+          "contribution": 35.2
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 54.5,
+          "sharedTokens": 18,
+          "contribution": 33.3
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "issy-les-moulineaux",
+      "pageB": "creteil",
+      "similarity": 30.2,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 10.7,
+          "sharedTokens": 3,
+          "contribution": 6.7
+        },
+        {
+          "block": "Introduction",
+          "similarity": 10.6,
+          "sharedTokens": 12,
+          "contribution": 26.7
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 33.3,
+          "sharedTokens": 17,
+          "contribution": 37.8
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 30.2,
+          "sharedTokens": 13,
+          "contribution": 28.9
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "issy-les-moulineaux",
+      "pageB": "ivry-sur-seine",
+      "similarity": 34.8,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 18.5,
+          "sharedTokens": 5,
+          "contribution": 8.9
+        },
+        {
+          "block": "Introduction",
+          "similarity": 23.2,
+          "sharedTokens": 23,
+          "contribution": 41.1
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 48.7,
+          "sharedTokens": 19,
+          "contribution": 33.9
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 20,
+          "sharedTokens": 9,
+          "contribution": 16.1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "issy-les-moulineaux",
+      "pageB": "vitry-sur-seine",
+      "similarity": 34.1,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 16,
+          "sharedTokens": 4,
+          "contribution": 7.4
+        },
+        {
+          "block": "Introduction",
+          "similarity": 10.6,
+          "sharedTokens": 12,
+          "contribution": 22.2
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 30,
+          "sharedTokens": 15,
+          "contribution": 27.8
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 82.1,
+          "sharedTokens": 23,
+          "contribution": 42.6
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "issy-les-moulineaux",
+      "pageB": "argenteuil",
+      "similarity": 33.7,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 6.7,
+          "sharedTokens": 2,
+          "contribution": 3.7
+        },
+        {
+          "block": "Introduction",
+          "similarity": 10.9,
+          "sharedTokens": 12,
+          "contribution": 22.2
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 61.1,
+          "sharedTokens": 22,
+          "contribution": 40.7
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 52.9,
+          "sharedTokens": 18,
+          "contribution": 33.3
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "issy-les-moulineaux",
+      "pageB": "cergy",
+      "similarity": 37,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 52.4,
+          "sharedTokens": 11,
+          "contribution": 17.5
+        },
+        {
+          "block": "Introduction",
+          "similarity": 14,
+          "sharedTokens": 15,
+          "contribution": 23.8
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 48.9,
+          "sharedTokens": 22,
+          "contribution": 34.9
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 39.5,
+          "sharedTokens": 15,
+          "contribution": 23.8
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "nanterre",
+      "pageB": "drancy",
+      "similarity": 36.2,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 52.4,
+          "sharedTokens": 11,
+          "contribution": 18.3
+        },
+        {
+          "block": "Introduction",
+          "similarity": 18.5,
+          "sharedTokens": 20,
+          "contribution": 33.3
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 42.3,
+          "sharedTokens": 22,
+          "contribution": 36.7
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 15.2,
+          "sharedTokens": 7,
+          "contribution": 11.7
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "nanterre",
+      "pageB": "saint-denis",
+      "similarity": 53.4,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 52.4,
+          "sharedTokens": 11,
+          "contribution": 13.3
+        },
+        {
+          "block": "Introduction",
+          "similarity": 49.4,
+          "sharedTokens": 43,
+          "contribution": 51.8
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 36.2,
+          "sharedTokens": 17,
+          "contribution": 20.5
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 31.6,
+          "sharedTokens": 12,
+          "contribution": 14.5
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "nanterre",
+      "pageB": "creteil",
+      "similarity": 43.9,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 6.9,
+          "sharedTokens": 2,
+          "contribution": 2.5
+        },
+        {
+          "block": "Introduction",
+          "similarity": 55.1,
+          "sharedTokens": 49,
+          "contribution": 61.3
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 42.3,
+          "sharedTokens": 22,
+          "contribution": 27.5
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 14.6,
+          "sharedTokens": 7,
+          "contribution": 8.8
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "nanterre",
+      "pageB": "ivry-sur-seine",
+      "similarity": 43.5,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 6.7,
+          "sharedTokens": 2,
+          "contribution": 2.6
+        },
+        {
+          "block": "Introduction",
+          "similarity": 57,
+          "sharedTokens": 49,
+          "contribution": 63.6
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 36.2,
+          "sharedTokens": 17,
+          "contribution": 22.1
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 20.5,
+          "sharedTokens": 9,
+          "contribution": 11.7
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "nanterre",
+      "pageB": "vitry-sur-seine",
+      "similarity": 48.5,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 3.6,
+          "sharedTokens": 1,
+          "contribution": 1.2
+        },
+        {
+          "block": "Introduction",
+          "similarity": 53.3,
+          "sharedTokens": 48,
+          "contribution": 57.1
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 44.9,
+          "sharedTokens": 22,
+          "contribution": 26.2
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 35.1,
+          "sharedTokens": 13,
+          "contribution": 15.5
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "nanterre",
+      "pageB": "argenteuil",
+      "similarity": 58.9,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 52.4,
+          "sharedTokens": 11,
+          "contribution": 11.1
+        },
+        {
+          "block": "Introduction",
+          "similarity": 64.6,
+          "sharedTokens": 53,
+          "contribution": 53.5
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 52.4,
+          "sharedTokens": 22,
+          "contribution": 22.2
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 34.2,
+          "sharedTokens": 13,
+          "contribution": 13.1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "nanterre",
+      "pageB": "cergy",
+      "similarity": 54.4,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 18.5,
+          "sharedTokens": 5,
+          "contribution": 5.9
+        },
+        {
+          "block": "Introduction",
+          "similarity": 51.7,
+          "sharedTokens": 46,
+          "contribution": 54.1
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 40.4,
+          "sharedTokens": 21,
+          "contribution": 24.7
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 33.3,
+          "sharedTokens": 13,
+          "contribution": 15.3
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "drancy",
+      "pageB": "saint-denis",
+      "similarity": 33.3,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 52.4,
+          "sharedTokens": 11,
+          "contribution": 18.3
+        },
+        {
+          "block": "Introduction",
+          "similarity": 13.2,
+          "sharedTokens": 14,
+          "contribution": 23.3
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 29.4,
+          "sharedTokens": 15,
+          "contribution": 25
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 60.6,
+          "sharedTokens": 20,
+          "contribution": 33.3
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "drancy",
+      "pageB": "creteil",
+      "similarity": 32,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 19.2,
+          "sharedTokens": 5,
+          "contribution": 8.5
+        },
+        {
+          "block": "Introduction",
+          "similarity": 10.3,
+          "sharedTokens": 12,
+          "contribution": 20.3
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 38.2,
+          "sharedTokens": 21,
+          "contribution": 35.6
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 56.8,
+          "sharedTokens": 21,
+          "contribution": 35.6
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "drancy",
+      "pageB": "ivry-sur-seine",
+      "similarity": 25,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 14.3,
+          "sharedTokens": 4,
+          "contribution": 8.9
+        },
+        {
+          "block": "Introduction",
+          "similarity": 10.6,
+          "sharedTokens": 12,
+          "contribution": 26.7
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 29.4,
+          "sharedTokens": 15,
+          "contribution": 33.3
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 33.3,
+          "sharedTokens": 14,
+          "contribution": 31.1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "drancy",
+      "pageB": "vitry-sur-seine",
+      "similarity": 28.3,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 3.6,
+          "sharedTokens": 1,
+          "contribution": 1.9
+        },
+        {
+          "block": "Introduction",
+          "similarity": 11.3,
+          "sharedTokens": 13,
+          "contribution": 25
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 62.2,
+          "sharedTokens": 28,
+          "contribution": 53.8
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 23.3,
+          "sharedTokens": 10,
+          "contribution": 19.2
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "drancy",
+      "pageB": "argenteuil",
+      "similarity": 33.9,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 77.8,
+          "sharedTokens": 14,
+          "contribution": 23
+        },
+        {
+          "block": "Introduction",
+          "similarity": 17.9,
+          "sharedTokens": 19,
+          "contribution": 31.1
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 34.7,
+          "sharedTokens": 17,
+          "contribution": 27.9
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 25.6,
+          "sharedTokens": 11,
+          "contribution": 18
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "drancy",
+      "pageB": "cergy",
+      "similarity": 34.7,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 6.7,
+          "sharedTokens": 2,
+          "contribution": 3.3
+        },
+        {
+          "block": "Introduction",
+          "similarity": 19,
+          "sharedTokens": 20,
+          "contribution": 32.8
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 56.3,
+          "sharedTokens": 27,
+          "contribution": 44.3
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 27.9,
+          "sharedTokens": 12,
+          "contribution": 19.7
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "saint-denis",
+      "pageB": "creteil",
+      "similarity": 47.1,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 6.9,
+          "sharedTokens": 2,
+          "contribution": 2.4
+        },
+        {
+          "block": "Introduction",
+          "similarity": 56.6,
+          "sharedTokens": 47,
+          "contribution": 55.3
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 53.5,
+          "sharedTokens": 23,
+          "contribution": 27.1
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 31,
+          "sharedTokens": 13,
+          "contribution": 15.3
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "saint-denis",
+      "pageB": "ivry-sur-seine",
+      "similarity": 51.1,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 10.3,
+          "sharedTokens": 3,
+          "contribution": 3.5
+        },
+        {
+          "block": "Introduction",
+          "similarity": 54.9,
+          "sharedTokens": 45,
+          "contribution": 52.3
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 93.1,
+          "sharedTokens": 27,
+          "contribution": 31.4
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 26.2,
+          "sharedTokens": 11,
+          "contribution": 12.8
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "saint-denis",
+      "pageB": "vitry-sur-seine",
+      "similarity": 52.4,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 16,
+          "sharedTokens": 4,
+          "contribution": 4.7
+        },
+        {
+          "block": "Introduction",
+          "similarity": 68.8,
+          "sharedTokens": 53,
+          "contribution": 61.6
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 28.6,
+          "sharedTokens": 14,
+          "contribution": 16.3
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 42.9,
+          "sharedTokens": 15,
+          "contribution": 17.4
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "saint-denis",
+      "pageB": "argenteuil",
+      "similarity": 59.9,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 52.4,
+          "sharedTokens": 11,
+          "contribution": 11.6
+        },
+        {
+          "block": "Introduction",
+          "similarity": 69.3,
+          "sharedTokens": 52,
+          "contribution": 54.7
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 43.6,
+          "sharedTokens": 17,
+          "contribution": 17.9
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 41.7,
+          "sharedTokens": 15,
+          "contribution": 15.8
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "saint-denis",
+      "pageB": "cergy",
+      "similarity": 47.7,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 6.7,
+          "sharedTokens": 2,
+          "contribution": 2.5
+        },
+        {
+          "block": "Introduction",
+          "similarity": 54.9,
+          "sharedTokens": 45,
+          "contribution": 55.6
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 38.3,
+          "sharedTokens": 18,
+          "contribution": 22.2
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 44.4,
+          "sharedTokens": 16,
+          "contribution": 19.8
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "creteil",
+      "pageB": "ivry-sur-seine",
+      "similarity": 54.7,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 63.2,
+          "sharedTokens": 12,
+          "contribution": 12.2
+        },
+        {
+          "block": "Introduction",
+          "similarity": 58.8,
+          "sharedTokens": 50,
+          "contribution": 51
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 53.5,
+          "sharedTokens": 23,
+          "contribution": 23.5
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 28.9,
+          "sharedTokens": 13,
+          "contribution": 13.3
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "creteil",
+      "pageB": "vitry-sur-seine",
+      "similarity": 53.8,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 12,
+          "sharedTokens": 3,
+          "contribution": 3.3
+        },
+        {
+          "block": "Introduction",
+          "similarity": 74.7,
+          "sharedTokens": 59,
+          "contribution": 64.1
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 37.7,
+          "sharedTokens": 20,
+          "contribution": 21.7
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 22.2,
+          "sharedTokens": 10,
+          "contribution": 10.9
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "creteil",
+      "pageB": "argenteuil",
+      "similarity": 46.9,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 19.2,
+          "sharedTokens": 5,
+          "contribution": 6.1
+        },
+        {
+          "block": "Introduction",
+          "similarity": 60.7,
+          "sharedTokens": 51,
+          "contribution": 62.2
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 32,
+          "sharedTokens": 16,
+          "contribution": 19.5
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 21.7,
+          "sharedTokens": 10,
+          "contribution": 12.2
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "creteil",
+      "pageB": "cergy",
+      "similarity": 44.9,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 10.7,
+          "sharedTokens": 3,
+          "contribution": 3.7
+        },
+        {
+          "block": "Introduction",
+          "similarity": 51.7,
+          "sharedTokens": 46,
+          "contribution": 56.1
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 44.2,
+          "sharedTokens": 23,
+          "contribution": 28
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 21.3,
+          "sharedTokens": 10,
+          "contribution": 12.2
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "ivry-sur-seine",
+      "pageB": "vitry-sur-seine",
+      "similarity": 45.2,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 16,
+          "sharedTokens": 4,
+          "contribution": 5.1
+        },
+        {
+          "block": "Introduction",
+          "similarity": 58.8,
+          "sharedTokens": 50,
+          "contribution": 64.1
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 31.3,
+          "sharedTokens": 15,
+          "contribution": 19.2
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 20.5,
+          "sharedTokens": 9,
+          "contribution": 11.5
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "ivry-sur-seine",
+      "pageB": "argenteuil",
+      "similarity": 47.7,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 14.3,
+          "sharedTokens": 4,
+          "contribution": 4.9
+        },
+        {
+          "block": "Introduction",
+          "similarity": 63,
+          "sharedTokens": 51,
+          "contribution": 63
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 43.6,
+          "sharedTokens": 17,
+          "contribution": 21
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 20,
+          "sharedTokens": 9,
+          "contribution": 11.1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "ivry-sur-seine",
+      "pageB": "cergy",
+      "similarity": 55.5,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 14.3,
+          "sharedTokens": 4,
+          "contribution": 4.4
+        },
+        {
+          "block": "Introduction",
+          "similarity": 61,
+          "sharedTokens": 50,
+          "contribution": 54.9
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 38.3,
+          "sharedTokens": 18,
+          "contribution": 19.8
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 52.8,
+          "sharedTokens": 19,
+          "contribution": 20.9
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "vitry-sur-seine",
+      "pageB": "argenteuil",
+      "similarity": 52.9,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 3.6,
+          "sharedTokens": 1,
+          "contribution": 1.1
+        },
+        {
+          "block": "Introduction",
+          "similarity": 60.7,
+          "sharedTokens": 51,
+          "contribution": 58.6
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 31.3,
+          "sharedTokens": 15,
+          "contribution": 17.2
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 64.5,
+          "sharedTokens": 20,
+          "contribution": 23
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "vitry-sur-seine",
+      "pageB": "cergy",
+      "similarity": 51.6,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 3.6,
+          "sharedTokens": 1,
+          "contribution": 1.2
+        },
+        {
+          "block": "Introduction",
+          "similarity": 50,
+          "sharedTokens": 45,
+          "contribution": 53.6
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 41.2,
+          "sharedTokens": 21,
+          "contribution": 25
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 48.6,
+          "sharedTokens": 17,
+          "contribution": 20.2
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "pageA": "argenteuil",
+      "pageB": "cergy",
+      "similarity": 55.3,
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 6.7,
+          "sharedTokens": 2,
+          "contribution": 2.3
+        },
+        {
+          "block": "Introduction",
+          "similarity": 63,
+          "sharedTokens": 51,
+          "contribution": 59.3
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 32.7,
+          "sharedTokens": 16,
+          "contribution": 18.6
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 47.2,
+          "sharedTokens": 17,
+          "contribution": 19.8
+        }
+      ],
+      "status": "PASS"
+    }
+  ]
+}

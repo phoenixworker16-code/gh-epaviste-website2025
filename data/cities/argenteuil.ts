@@ -3,47 +3,62 @@ import { PageData } from '../types'
 export const argenteuilData: PageData = {
   slug: 'argenteuil',
   entityType: 'City',
-  metaTitle: "Épaviste Argenteuil (95) | Enlèvement d'Épave Gratuit",
-  metaDescription: "Votre épaviste gratuit à Argenteuil (95100). Dépannage rapide d'épaves et VHU. Service partenaire VHU. Contact: 07 53 12 07 93.",
+  metaTitle: 'Épaviste Argenteuil (95100) | Enlèvement Épave Gratuit 24h',
+  metaDescription: 'Service gratuit d\'enlèvement d\'épaves à Argenteuil (95100). Prise en charge de VHU avec certificat de destruction officiel. Intervention rapide.',
   relatedServicesSlugs: [
-    "enlevement-epave-parking-souterrain",
-    "enlevement-utilitaire-epave"
+    'enlevement-epave-parking-souterrain',
+    'enlevement-voiture-en-panne',
+    'enlevement-voiture-sans-carte-grise'
   ],
   relatedCitiesSlugs: [
-    "val-doise",
-    "bezons", "sannois", "cormeilles-en-parisis"
+    'enlevement-epave-val-d-oise'
   ],
   blocks: [
     {
       type: 'Hero',
-      title: "Enlèvement d'épave à Argenteuil (95100)",
-      subtitle: "Service d'épaviste gratuit et réactif sur toute la commune d'Argenteuil.",
-      badge: "Argenteuil (95100)"
+      title: 'Retrait de véhicule hors d\'usage à Argenteuil',
+      subtitle: 'Une solution organisée pour retirer un véhicule immobilisé à Argenteuil (95100) dans le respect des démarches requises.',
+      badge: 'Argenteuil (95100)',
     },
     {
       type: 'Introduction',
-      title: "L'épaviste de proximité à Argenteuil",
-      content: "Commune la plus peuplée du Val-d'Oise, Argenteuil requiert une logistique sans faille. Entre les coteaux escarpés et les zones très urbaines (Val d'Argent), GH Épaviste retire vos épaves gratuitement grâce à une flotte de dépanneuses équipées de treuils puissants."
+      title: 'Votre épaviste de confiance à Argenteuil',
+      content: 'Dans une agglomération dynamique comme Argenteuil (95100), se débarrasser d\'un véhicule encombrant nécessite une logistique précise. Notre équipe couvre l\'ensemble de la commune pour vous proposer un service d\'enlèvement d\'épave totalement gratuit. Que ce soit du côté de Rue Duguay ou ailleurs dans la commune, nous intervenons gratuitement. Nous garantissons une prise en charge conforme à la législation avec remise du certificat de destruction. Avant le rendez-vous, vérifiez l’accès au véhicule et préparez les documents demandés. La préparation du passage vise à éviter les déplacements inutiles et les difficultés d’accès. La préparation du rendez-vous clarifie les éléments à présenter lors de l’enlèvement.',
     },
     {
       type: 'VhuCompliance',
-      title: "Dépollution réglementaire obligatoire",
-      content: "Une voiture épave est un déchet dangereux. Elle doit être remise à un **centre VHU agréé** par la préfecture du Val-d'Oise. En faisant appel à GH Épaviste, nous agissons en tant que collecteur officiel pour ces centres."
+      title: 'Dépollution et Recyclage',
+      content: 'Après l\'enlèvement, le véhicule est acheminé vers un centre VHU partenaire agréé. Le partenaire assure les formalités et l’orientation du véhicule vers les filières réglementaires appropriées. Cette coordination permet d’orienter le véhicule vers l’interlocuteur compétent pour les étapes suivantes.',
+    },
+    {
+      type: 'LocalCoverage',
+      title: 'Couverture d\'intervention sur Argenteuil',
+      intro: 'Notre équipe intervient dans l\'ensemble de la commune de Argenteuil pour procéder à l\'enlèvement de votre véhicule. Le rendez-vous est préparé selon le type d’accès indiqué lors de la demande. Le rendez-vous est préparé pour tenir compte de la situation déclarée par le propriétaire.',
+      zones: [
+        { name: 'Centre-ville & Rues étroites', delay: 'Sous 24h', specificities: 'Matériel adapté aux accès difficiles et parkings.' },
+        { name: 'Secteur Avenue Gabriel Peri / Avenue Jean Jaures', delay: 'Sur RDV', specificities: 'Prise en charge rapide sur les grands axes.' }
+      ],
+    },
+    {
+      type: 'DocsPreparation',
+      title: 'Pièces à fournir pour l\'enlèvement',
+      intro: 'L\'enlèvement d\'un véhicule hors d\'usage à Argenteuil implique une stricte conformité réglementaire. Voici les éléments à préparer. Préparez votre carte grise (originale barrée), un certificat de non-gage datant de moins de 15 jours, et la pièce d\'identité du propriétaire.',
+      specialCase: 'Si vous avez égaré la carte grise, une déclaration de perte effectuée en gendarmerie ou préfecture du département Val-d\'Oise sera indispensable.',
     },
     {
       type: 'FaqLocal',
-      title: "F.A.Q Argenteuil",
+      title: 'Questions fréquentes sur l\'enlèvement à Argenteuil',
       questions: [
-        {
-          q: "Puis-je faire enlever une camionnette ?",
-          a: "Oui, nous enlevons tous types d'utilitaires légers (PTAC < 3,5T) gratuitement."
-        }
-      ]
+        { q: 'Mon véhicule est bloqué en sous-sol à Argenteuil, est-ce un problème ?', a: 'Pas du tout. Nous disposons de dépanneuses 4x4 extra-basses capables d\'entrer dans la majorité des parkings souterrains.' },
+        { q: 'Mon véhicule est accidenté sur la voie publique, pouvez-vous le retirer ?', a: 'Absolument, nous intervenons sur la voie publique à condition que vous soyez présent avec les documents requis.' },
+        { q: 'Délivrez-vous le certificat de destruction immédiatement ?', a: 'Oui, nous vous remettons le certificat de cession pour destruction en main propre le jour de l\'enlèvement.' },
+        { q: 'L\'intervention à Argenteuil est-elle soumise à des frais de déplacement ?', a: 'Non, si votre véhicule est complet, l\'enlèvement et le déplacement jusqu\'à Argenteuil sont entièrement gratuits.' }
+      ],
     },
     {
       type: 'Cta',
-      title: "Une épave à Argenteuil ?",
-      subtitle: "Prenez rendez-vous, nous intervenons souvent sous 24h."
+      title: 'Prendre rendez-vous pour votre épave à Argenteuil',
+      subtitle: 'Contactez-nous pour planifier l\'enlèvement gratuit et légal de votre véhicule.',
     }
   ]
 }

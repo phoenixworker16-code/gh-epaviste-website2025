@@ -3,48 +3,62 @@ import { PageData } from '../types'
 export const saintDenisData: PageData = {
   slug: 'saint-denis',
   entityType: 'City',
-  metaTitle: "Épaviste Saint-Denis (93) | Enlèvement d'Épave Gratuit",
-  metaDescription: "Épaviste gratuit sur Saint-Denis (93200). Enlèvement de voitures accidentées, vandalisées. Intervention rapide. Centre VHU agréé partenaire. 07 53 12 07 93.",
+  metaTitle: 'Épaviste Saint-Denis (93200) | Enlèvement Épave Gratuit 24h',
+  metaDescription: 'Service gratuit d\'enlèvement d\'épaves à Saint-Denis (93200). Prise en charge de VHU avec certificat de destruction officiel. Intervention rapide.',
   relatedServicesSlugs: [
-    "enlevement-voiture-brulee",
-    "enlevement-epave-gratuit"
+    'enlevement-epave-parking-souterrain',
+    'enlevement-voiture-en-panne',
+    'enlevement-voiture-sans-carte-grise'
   ],
   relatedCitiesSlugs: [
-    "seine-saint-denis",
-    "aubervilliers", "saint-ouen", "la-courneuve"
+    'enlevement-epave-seine-saint-denis'
   ],
   blocks: [
     {
       type: 'Hero',
-      title: "Enlèvement d'épave à Saint-Denis (93200)",
-      subtitle: "Intervention d'urgence ou sur rendez-vous pour retirer les véhicules accidentés ou épaves.",
-      badge: "Saint-Denis (93200)",
-      bgType: 'urban'
+      title: 'Service d\'enlèvement d\'épave à Saint-Denis',
+      subtitle: 'Une solution organisée pour retirer un véhicule immobilisé à Saint-Denis (93200) dans le respect des démarches requises.',
+      badge: 'Saint-Denis (93200)',
     },
     {
       type: 'Introduction',
-      title: "Votre épaviste à Saint-Denis",
-      content: "La densité urbaine de Saint-Denis (Plaine Saulnier, Franc-Moisin, Stade de France) rend problématique la présence de véhicules abandonnés ou vandalisés. Ces derniers s'abîment vite et attirent les ennuis. GH Épaviste vient récupérer votre voiture, utilitaire ou moto, quel que soit son état, gratuitement."
-    },
-    {
-      type: 'VehicleTypes',
-      title: "VHU pris en charge",
-      accepted: [
-        "Véhicules en panne irréparable",
-        "Véhicules accidentés",
-        "Véhicules calcinés (avec déclaration)",
-        "Utilitaires légers"
-      ]
+      title: 'Votre épaviste de confiance à Saint-Denis',
+      content: 'Dans une agglomération dynamique comme Saint-Denis (93200), se débarrasser d\'un véhicule encombrant nécessite une logistique précise. Notre équipe couvre l\'ensemble de la commune pour vous proposer un service d\'enlèvement d\'épave totalement gratuit. Nous garantissons une prise en charge conforme à la législation avec remise du certificat de destruction. Avant le rendez-vous, vérifiez l’accès au véhicule et préparez les documents demandés. Un échange préalable permet de prévoir le matériel approprié et le créneau de passage. La préparation du rendez-vous clarifie les éléments à présenter lors de l’enlèvement.',
     },
     {
       type: 'VhuCompliance',
-      title: "Respect de la loi",
-      content: "Attention au marché noir de la pièce détachée. En passant par GH Épaviste, votre véhicule est remis à un **centre VHU agréé**. Il y sera broyé et recyclé selon les normes, garantissant la fin de votre responsabilité civile."
+      title: 'Dépollution et Recyclage',
+      content: 'L\'enlèvement est suivi d\'un acheminement vers un centre VHU partenaire agréé. Le partenaire assure les formalités et l’orientation du véhicule vers les filières réglementaires appropriées. Le parcours du véhicule est défini dès la prise de rendez-vous avec les professionnels concernés.',
+    },
+    {
+      type: 'LocalCoverage',
+      title: 'Couverture d\'intervention sur Saint-Denis',
+      intro: 'Notre équipe intervient dans l\'ensemble de la commune de Saint-Denis pour procéder à l\'enlèvement de votre véhicule. La préparation du passage prend en compte les contraintes signalées avant l’intervention. Les contraintes d’accès sont prises en compte pendant la préparation du rendez-vous.',
+      zones: [
+        { name: 'Centre-ville & Rues étroites', delay: 'Sous 24h', specificities: 'Matériel adapté aux accès difficiles et parkings.' },
+        { name: 'Quartiers périphériques', delay: '24h à 48h', specificities: 'Intervention planifiée.' }
+      ],
+    },
+    {
+      type: 'DocsPreparation',
+      title: 'Pièces à fournir pour l\'enlèvement',
+      intro: 'Pour procéder au remorquage gratuit depuis Saint-Denis, notre chauffeur aura besoin des documents originaux du véhicule. Préparez votre carte grise (originale barrée), un certificat de non-gage datant de moins de 15 jours, et la pièce d\'identité du propriétaire.',
+      specialCase: 'Si vous avez égaré la carte grise, une déclaration de perte effectuée en gendarmerie ou préfecture du département Seine-Saint-Denis sera indispensable.',
+    },
+    {
+      type: 'FaqLocal',
+      title: 'Questions fréquentes sur l\'enlèvement à Saint-Denis',
+      questions: [
+        { q: 'L\'intervention à Saint-Denis est-elle soumise à des frais de déplacement ?', a: 'Non, si votre véhicule est complet, l\'enlèvement et le déplacement jusqu\'à Saint-Denis sont entièrement gratuits.' },
+        { q: 'Délivrez-vous le certificat de destruction immédiatement ?', a: 'Oui, nous vous remettons le certificat de cession pour destruction en main propre le jour de l\'enlèvement.' },
+        { q: 'Mon véhicule est accidenté sur la voie publique, pouvez-vous le retirer ?', a: 'Absolument, nous intervenons sur la voie publique à condition que vous soyez présent avec les documents requis.' },
+        { q: 'Mon véhicule est bloqué en sous-sol à Saint-Denis, est-ce un problème ?', a: 'Pas du tout. Nous disposons de dépanneuses 4x4 extra-basses capables d\'entrer dans la majorité des parkings souterrains.' }
+      ],
     },
     {
       type: 'Cta',
-      title: "Faites enlever votre épave",
-      subtitle: "Appelez GH Épaviste pour une prise en charge sur Saint-Denis."
+      title: 'Prendre rendez-vous pour votre épave à Saint-Denis',
+      subtitle: 'Contactez-nous pour planifier l\'enlèvement gratuit et légal de votre véhicule.',
     }
   ]
 }

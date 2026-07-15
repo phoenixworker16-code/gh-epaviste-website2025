@@ -1,0 +1,106 @@
+{
+  "status": "PASS",
+  "urls": [
+    {
+      "loc": "https://gh-epaviste.fr/epaviste/paris",
+      "canonical": "https://gh-epaviste.fr/epaviste/paris",
+      "valid": true
+    },
+    {
+      "loc": "https://gh-epaviste.fr/epaviste/chelles",
+      "canonical": "https://gh-epaviste.fr/epaviste/chelles",
+      "valid": true
+    },
+    {
+      "loc": "https://gh-epaviste.fr/epaviste/fontainebleau",
+      "canonical": "https://gh-epaviste.fr/epaviste/fontainebleau",
+      "valid": true
+    },
+    {
+      "loc": "https://gh-epaviste.fr/epaviste/meaux",
+      "canonical": "https://gh-epaviste.fr/epaviste/meaux",
+      "valid": true
+    },
+    {
+      "loc": "https://gh-epaviste.fr/epaviste/melun",
+      "canonical": "https://gh-epaviste.fr/epaviste/melun",
+      "valid": true
+    },
+    {
+      "loc": "https://gh-epaviste.fr/epaviste/poissy",
+      "canonical": "https://gh-epaviste.fr/epaviste/poissy",
+      "valid": true
+    },
+    {
+      "loc": "https://gh-epaviste.fr/epaviste/versailles",
+      "canonical": "https://gh-epaviste.fr/epaviste/versailles",
+      "valid": true
+    },
+    {
+      "loc": "https://gh-epaviste.fr/epaviste/massy",
+      "canonical": "https://gh-epaviste.fr/epaviste/massy",
+      "valid": true
+    },
+    {
+      "loc": "https://gh-epaviste.fr/epaviste/antony",
+      "canonical": "https://gh-epaviste.fr/epaviste/antony",
+      "valid": true
+    },
+    {
+      "loc": "https://gh-epaviste.fr/epaviste/boulogne-billancourt",
+      "canonical": "https://gh-epaviste.fr/epaviste/boulogne-billancourt",
+      "valid": true
+    },
+    {
+      "loc": "https://gh-epaviste.fr/epaviste/courbevoie",
+      "canonical": "https://gh-epaviste.fr/epaviste/courbevoie",
+      "valid": true
+    },
+    {
+      "loc": "https://gh-epaviste.fr/epaviste/issy-les-moulineaux",
+      "canonical": "https://gh-epaviste.fr/epaviste/issy-les-moulineaux",
+      "valid": true
+    },
+    {
+      "loc": "https://gh-epaviste.fr/epaviste/nanterre",
+      "canonical": "https://gh-epaviste.fr/epaviste/nanterre",
+      "valid": true
+    },
+    {
+      "loc": "https://gh-epaviste.fr/epaviste/drancy",
+      "canonical": "https://gh-epaviste.fr/epaviste/drancy",
+      "valid": true
+    },
+    {
+      "loc": "https://gh-epaviste.fr/epaviste/saint-denis",
+      "canonical": "https://gh-epaviste.fr/epaviste/saint-denis",
+      "valid": true
+    },
+    {
+      "loc": "https://gh-epaviste.fr/epaviste/creteil",
+      "canonical": "https://gh-epaviste.fr/epaviste/creteil",
+      "valid": true
+    },
+    {
+      "loc": "https://gh-epaviste.fr/epaviste/ivry-sur-seine",
+      "canonical": "https://gh-epaviste.fr/epaviste/ivry-sur-seine",
+      "valid": true
+    },
+    {
+      "loc": "https://gh-epaviste.fr/epaviste/vitry-sur-seine",
+      "canonical": "https://gh-epaviste.fr/epaviste/vitry-sur-seine",
+      "valid": true
+    },
+    {
+      "loc": "https://gh-epaviste.fr/epaviste/argenteuil",
+      "canonical": "https://gh-epaviste.fr/epaviste/argenteuil",
+      "valid": true
+    },
+    {
+      "loc": "https://gh-epaviste.fr/epaviste/cergy",
+      "canonical": "https://gh-epaviste.fr/epaviste/cergy",
+      "valid": true
+    }
+  ],
+  "errors": []
+}

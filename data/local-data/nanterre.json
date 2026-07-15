@@ -1,0 +1,243 @@
+{
+  "city": "Nanterre",
+  "department": "92",
+  "quartiers": [],
+  "rues": [
+    "Avenue Félix Faure",
+    "Avenue Georges Clemenceau",
+    "Avenue Jules Quentin",
+    "Avenue Pablo Picasso",
+    "Avenue de Rueil",
+    "Avenue de la République",
+    "Avenue du Maréchal Joffre",
+    "Boulevard de la Défense",
+    "Boulevard de la Seine",
+    "Boulevard des Provinces Françaises",
+    "Boulevard du Couchant",
+    "Boulevard du Général Leclerc",
+    "Rue André Sabatier",
+    "Rue Daniel Becker",
+    "Rue Elisée Reclus",
+    "Rue Henri Barbusse",
+    "Rue Maurice Thorez",
+    "Rue Pascal",
+    "Rue Paul Bertin",
+    "Rue Paul Vaillant-Couturier",
+    "Rue Philippe Triaire",
+    "Rue Pierre Curie",
+    "Rue Raymond Barbet",
+    "Rue Raymond Poincaré",
+    "Rue Sadi Carnot",
+    "Rue Salvador Allende",
+    "Rue Thomas Lemaître",
+    "Rue Victor Hugo",
+    "Rue Volant",
+    "Rue de Belfort",
+    "Rue de Courbevoie",
+    "Rue de Garches",
+    "Rue de Saint-Cloud",
+    "Rue de Stalingrad",
+    "Rue de Suresnes",
+    "Rue de la Croix",
+    "Rue de la Source",
+    "Rue des Alouettes",
+    "Rue des Chailliers",
+    "Rue des Ombraies",
+    "Rue des Plaideurs",
+    "Rue des Suisses",
+    "Rue du 8 Mai 1945",
+    "Rue du Bois",
+    "Rue du Calvaire",
+    "Rue du Docteur Charcot",
+    "Rue du Sergent Bobillot",
+    "Rue du Tir",
+    "Rue du Vieux-Pont"
+  ],
+  "stations_metro": [
+    "Ligne 15 du métro de Paris",
+    "Ligne 18 du métro de Paris"
+  ],
+  "gares": [
+    "Nanterre - Préfecture",
+    "Nanterre - Université",
+    "Nanterre-La Folie",
+    "Nanterre-Préfecture",
+    "Nanterre-Université",
+    "Nanterre-Ville"
+  ],
+  "parcs": [],
+  "hopitaux": [],
+  "cliniques": [],
+  "centres_commerciaux": [],
+  "zones_activites": [],
+  "ponts": [],
+  "quais": [],
+  "monuments": [],
+  "batiments_publics": [],
+  "communes_limitrophes": [
+    "Bezons",
+    "Carrières-sur-Seine",
+    "Chatou",
+    "Colombes",
+    "Courbevoie",
+    "La Garenne-Colombes",
+    "Puteaux",
+    "Rueil-Malmaison",
+    "Suresnes"
+  ],
+  "sources": {
+    "Overpass API": {
+      "quartiers": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "stations_metro": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "gares": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "parcs": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "hopitaux": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "cliniques": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "centres_commerciaux": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "zones_activites": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "ponts": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "quais": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "monuments": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "batiments_publics": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      }
+    },
+    "Overpass Géométrie": {
+      "communes_limitrophes": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      }
+    },
+    "Wikipedia HTML": {
+      "communes_limitrophes": {
+        "trouves": 9,
+        "retenus": 9,
+        "ignores": 0,
+        "exclusions": []
+      }
+    },
+    "Data.gouv.fr BAN": {
+      "rues": {
+        "trouves": 50,
+        "retenus": 49,
+        "ignores": 1,
+        "exclusions": [
+          {
+            "nom": "Rue de Nanterre",
+            "raison": "Commune différente: Asnières-sur-Seine"
+          }
+        ]
+      }
+    },
+    "Wikipedia API": {
+      "stations_metro": {
+        "trouves": 2,
+        "retenus": 2,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "gares": {
+        "trouves": 6,
+        "retenus": 6,
+        "ignores": 0,
+        "exclusions": []
+      }
+    }
+  },
+  "timing": {
+    "overpass_poi": {
+      "durationSec": 77.5,
+      "status": "EMPTY"
+    },
+    "overpass_geo": {
+      "durationSec": 78.9,
+      "status": "EMPTY"
+    },
+    "wikipedia_html": {
+      "durationSec": 1.6,
+      "status": "OK"
+    },
+    "ban": {
+      "durationSec": 0.4,
+      "status": "OK"
+    },
+    "wikipedia_api": {
+      "durationSec": 0.3,
+      "status": "OK"
+    }
+  },
+  "validation": {
+    "status": "SUCCESS",
+    "quality": "PARTIAL",
+    "schemaVersion": "1.0",
+    "fetched": true,
+    "sources": {
+      "overpass_poi": false,
+      "overpass_geo": false,
+      "wikipedia_html": true,
+      "wikipedia_api": true,
+      "ban": true
+    },
+    "totalDurationSec": 158.8
+  }
+}

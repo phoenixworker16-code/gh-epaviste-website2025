@@ -1,0 +1,358 @@
+{
+  "city": "Saint-Denis",
+  "department": "93",
+  "quartiers": [],
+  "rues": [],
+  "stations_metro": [
+    "Métrophane",
+    "Métropolite"
+  ],
+  "gares": [],
+  "parcs": [],
+  "hopitaux": [],
+  "cliniques": [],
+  "centres_commerciaux": [],
+  "zones_activites": [],
+  "ponts": [],
+  "quais": [],
+  "monuments": [],
+  "batiments_publics": [],
+  "communes_limitrophes": [],
+  "sources": {
+    "Overpass API": {
+      "quartiers": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "stations_metro": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "gares": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "parcs": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "hopitaux": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "cliniques": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "centres_commerciaux": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "zones_activites": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "ponts": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "quais": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "monuments": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "batiments_publics": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      }
+    },
+    "Overpass Géométrie": {
+      "communes_limitrophes": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      }
+    },
+    "Data.gouv.fr BAN": {
+      "rues": {
+        "trouves": 50,
+        "retenus": 0,
+        "ignores": 50,
+        "exclusions": [
+          {
+            "nom": "saint denis",
+            "raison": "Commune différente: Liffré"
+          },
+          {
+            "nom": "Saint Denis",
+            "raison": "Commune différente: Amboise"
+          },
+          {
+            "nom": "Saint Denis",
+            "raison": "Commune différente: La Courtine"
+          },
+          {
+            "nom": "Saint-Denis",
+            "raison": "Commune différente: Saint-Sulpice-la-Forêt"
+          },
+          {
+            "nom": "Saint-Denis",
+            "raison": "Commune différente: Pont-sur-Seine"
+          },
+          {
+            "nom": "Saint-Denis",
+            "raison": "Commune différente: Spézet"
+          },
+          {
+            "nom": "Saint-Denis",
+            "raison": "Commune différente: Montjoie-Saint-Martin"
+          },
+          {
+            "nom": "Saint-Denis",
+            "raison": "Commune différente: Val d'Issoire"
+          },
+          {
+            "nom": "Saint Denis",
+            "raison": "Commune différente: Saint-Gravé"
+          },
+          {
+            "nom": "saint-denis",
+            "raison": "Commune différente: Thorigny"
+          },
+          {
+            "nom": "Saint Denis",
+            "raison": "Commune différente: Pauilhac"
+          },
+          {
+            "nom": "Boulevard Saint-Denis",
+            "raison": "Commune différente: Courbevoie"
+          },
+          {
+            "nom": "Rue Saint-Denis",
+            "raison": "Commune différente: Colombes"
+          },
+          {
+            "nom": "Rue Saint-Denis",
+            "raison": "Commune différente: Montreuil"
+          },
+          {
+            "nom": "Rue Saint Denis",
+            "raison": "Commune différente: Toulouse"
+          },
+          {
+            "nom": "Rue Saint-Denis",
+            "raison": "Commune différente: Boulogne-Billancourt"
+          },
+          {
+            "nom": "Boulevard Saint-Denis",
+            "raison": "Commune différente: Châteauroux"
+          },
+          {
+            "nom": "Rue Saint Denis",
+            "raison": "Commune différente: Montpellier"
+          },
+          {
+            "nom": "Rue Saint Denis",
+            "raison": "Commune différente: Poitiers"
+          },
+          {
+            "nom": "Rue Saint-Denis",
+            "raison": "Commune différente: Paris"
+          },
+          {
+            "nom": "Rue Saint-denis",
+            "raison": "Commune différente: Lagny-sur-Marne"
+          },
+          {
+            "nom": "Rue Saint Denis",
+            "raison": "Commune différente: Rosny-sous-Bois"
+          },
+          {
+            "nom": "Rue Saint Denis",
+            "raison": "Commune différente: Nantes"
+          },
+          {
+            "nom": "Rue Saint Denis",
+            "raison": "Commune différente: Noisy-le-Sec"
+          },
+          {
+            "nom": "Rue Saint-denis",
+            "raison": "Commune différente: Dreux"
+          },
+          {
+            "nom": "Rue Saint - Denis",
+            "raison": "Commune différente: Rouen"
+          },
+          {
+            "nom": "Rue Saint-Denis",
+            "raison": "Commune différente: Paris"
+          },
+          {
+            "nom": "Avenue Saint Denis",
+            "raison": "Commune différente: Quimper"
+          },
+          {
+            "nom": "Rue Saint-denis",
+            "raison": "Commune différente: Amboise"
+          },
+          {
+            "nom": "Boulevard Saint-Denis",
+            "raison": "Commune différente: Villeparisis"
+          },
+          {
+            "nom": "Quai Saint Denis",
+            "raison": "Commune différente: Argenteuil"
+          },
+          {
+            "nom": "Rue Saint Denis",
+            "raison": "Commune différente: Cayenne"
+          },
+          {
+            "nom": "Rue Saint Denis",
+            "raison": "Commune différente: Sablé-sur-Sarthe"
+          },
+          {
+            "nom": "Boulevard Saint-Denis",
+            "raison": "Commune différente: Paris"
+          },
+          {
+            "nom": "Rue Saint-Denis",
+            "raison": "Commune différente: Orléans"
+          },
+          {
+            "nom": "Rue Saint Denis",
+            "raison": "Commune différente: Sarreguemines"
+          },
+          {
+            "nom": "Rue Saint Denis",
+            "raison": "Commune différente: Saint-Louis"
+          },
+          {
+            "nom": "Rue Saint Denis",
+            "raison": "Commune différente: Troyes"
+          },
+          {
+            "nom": "Rue Saint-Denis",
+            "raison": "Commune différente: Vendôme"
+          },
+          {
+            "nom": "Rue Saint Denis",
+            "raison": "Commune différente: Bron"
+          },
+          {
+            "nom": "Rue Saint-Denis",
+            "raison": "Commune différente: Ploërmel"
+          },
+          {
+            "nom": "Allée Saint-Denis",
+            "raison": "Commune différente: Paris"
+          },
+          {
+            "nom": "Rue Saint-Denis",
+            "raison": "Commune différente: Angers"
+          },
+          {
+            "nom": "Chemin Saint Denis",
+            "raison": "Commune différente: Annonay"
+          },
+          {
+            "nom": "Rue Saint-denis",
+            "raison": "Commune différente: Bezons"
+          },
+          {
+            "nom": "Impasse Saint-Denis",
+            "raison": "Commune différente: Châteauroux"
+          },
+          {
+            "nom": "Place Saint-denis",
+            "raison": "Commune différente: Troyes"
+          },
+          {
+            "nom": "Rue Saint-Denis",
+            "raison": "Commune différente: Bihorel"
+          },
+          {
+            "nom": "Passage Saint-Denis",
+            "raison": "Commune différente: Boulogne-Billancourt"
+          },
+          {
+            "nom": "Rue Saint Denis",
+            "raison": "Commune différente: Arras"
+          }
+        ]
+      }
+    },
+    "Wikipedia API": {
+      "stations_metro": {
+        "trouves": 2,
+        "retenus": 2,
+        "ignores": 0,
+        "exclusions": []
+      }
+    }
+  },
+  "timing": {
+    "overpass_poi": {
+      "durationSec": 77.5,
+      "status": "EMPTY"
+    },
+    "overpass_geo": {
+      "durationSec": 78.9,
+      "status": "EMPTY"
+    },
+    "wikipedia_html": {
+      "durationSec": 0.6,
+      "status": "OK"
+    },
+    "ban": {
+      "durationSec": 0.5,
+      "status": "EMPTY"
+    },
+    "wikipedia_api": {
+      "durationSec": 0.2,
+      "status": "OK"
+    }
+  },
+  "validation": {
+    "status": "SUCCESS",
+    "quality": "MINIMAL",
+    "schemaVersion": "1.0",
+    "fetched": true,
+    "sources": {
+      "overpass_poi": false,
+      "overpass_geo": false,
+      "wikipedia_html": true,
+      "wikipedia_api": true,
+      "ban": false
+    },
+    "totalDurationSec": 157.7
+  }
+}

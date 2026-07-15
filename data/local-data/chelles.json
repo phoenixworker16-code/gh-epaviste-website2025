@@ -1,0 +1,253 @@
+{
+  "city": "Chelles",
+  "department": "77",
+  "quartiers": [],
+  "rues": [
+    "Allée Hervé Legrand",
+    "Allée des Giroflées",
+    "Allée du Muguet",
+    "Avenue Albert Caillou",
+    "Avenue Cassini",
+    "Avenue Claude Bernard",
+    "Avenue Daguerre",
+    "Avenue Delambre",
+    "Avenue Denis Papin",
+    "Avenue Gay-Lussac",
+    "Avenue Georges Digoy",
+    "Avenue Général de Gaulle",
+    "Avenue Humboldt",
+    "Avenue Jehan de Chelles",
+    "Avenue Lavoisier",
+    "Avenue Leverrier",
+    "Avenue Monge",
+    "Avenue Pascal",
+    "Avenue Salomon de Caus",
+    "Avenue d'Iena",
+    "Avenue de Claye",
+    "Avenue de Solferino",
+    "Avenue de la Cité Forestière",
+    "Avenue de la Résistance",
+    "Avenue des Abbesses",
+    "Avenue des Sciences",
+    "Avenue du Docteur Blanchet",
+    "Avenue du Gendarme Castermant",
+    "Avenue du Général Leclerc",
+    "Avenue du Maréchal Foch",
+    "Boulevard d'Alsace-Lorraine",
+    "Chemin de Chantereine",
+    "Chemin de Courtry",
+    "Quai Auguste Prévost",
+    "Route de Montfermeil",
+    "Rue Alexandre Bickart",
+    "Rue Auguste Meunier",
+    "Rue Charles et Jacques Schlosser",
+    "Rue Estienne",
+    "Rue Gabriel Pannet",
+    "Rue Gustave Nast",
+    "Rue Nobel",
+    "Rue Victor Hugo",
+    "Rue de Villevaudé",
+    "Rue de la Belle Ile",
+    "Rue des Cités",
+    "Rue du Chelléen",
+    "Rue du Chevalier Bayard",
+    "Rue du Panorama"
+  ],
+  "stations_metro": [],
+  "gares": [
+    "Chelles - Gournay",
+    "Haussmann - Saint-Lazare",
+    "Magenta",
+    "Paris-Nord",
+    "Vaires - Torcy",
+    "triage"
+  ],
+  "parcs": [
+    "Jardin du Luxembourg"
+  ],
+  "hopitaux": [
+    "Centre hospitalier de Marne-la-Vallée",
+    "Centre hospitalier intercommunal Le Raincy-Montfermeil"
+  ],
+  "cliniques": [],
+  "centres_commerciaux": [],
+  "zones_activites": [],
+  "ponts": [],
+  "quais": [],
+  "monuments": [],
+  "batiments_publics": [],
+  "communes_limitrophes": [
+    "Brou-sur-Chantereine",
+    "Champs-sur-Marne",
+    "Coubron",
+    "Courtry",
+    "Gagny",
+    "Gournay-sur-Marne",
+    "Le Pin (Seine-et-Marne)",
+    "Montfermeil",
+    "Neuilly-sur-Marne",
+    "Noisiel",
+    "Vaires-sur-Marne"
+  ],
+  "sources": {
+    "Overpass API": {
+      "quartiers": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "stations_metro": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "gares": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "parcs": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "hopitaux": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "cliniques": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "centres_commerciaux": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "zones_activites": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "ponts": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "quais": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "monuments": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "batiments_publics": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      }
+    },
+    "Overpass Géométrie": {
+      "communes_limitrophes": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      }
+    },
+    "Wikipedia HTML": {
+      "communes_limitrophes": {
+        "trouves": 11,
+        "retenus": 11,
+        "ignores": 0,
+        "exclusions": []
+      }
+    },
+    "Data.gouv.fr BAN": {
+      "rues": {
+        "trouves": 50,
+        "retenus": 49,
+        "ignores": 1,
+        "exclusions": [
+          {
+            "nom": "Chelles",
+            "raison": "Commune différente: Brousse"
+          }
+        ]
+      }
+    },
+    "Wikipedia API": {
+      "gares": {
+        "trouves": 6,
+        "retenus": 6,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "parcs": {
+        "trouves": 1,
+        "retenus": 1,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "hopitaux": {
+        "trouves": 2,
+        "retenus": 2,
+        "ignores": 0,
+        "exclusions": []
+      }
+    }
+  },
+  "timing": {
+    "overpass_poi": {
+      "durationSec": 77.5,
+      "status": "EMPTY"
+    },
+    "overpass_geo": {
+      "durationSec": 78.9,
+      "status": "EMPTY"
+    },
+    "wikipedia_html": {
+      "durationSec": 1.6,
+      "status": "OK"
+    },
+    "ban": {
+      "durationSec": 0.3,
+      "status": "OK"
+    },
+    "wikipedia_api": {
+      "durationSec": 0.2,
+      "status": "OK"
+    }
+  },
+  "validation": {
+    "status": "SUCCESS",
+    "quality": "PARTIAL",
+    "schemaVersion": "1.0",
+    "fetched": true,
+    "sources": {
+      "overpass_poi": false,
+      "overpass_geo": false,
+      "wikipedia_html": true,
+      "wikipedia_api": true,
+      "ban": true
+    },
+    "totalDurationSec": 158.6
+  }
+}

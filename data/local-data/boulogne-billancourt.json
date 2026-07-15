@@ -1,0 +1,214 @@
+{
+  "city": "Boulogne-Billancourt",
+  "department": "92",
+  "quartiers": [],
+  "rues": [
+    "Avenue André Morizet",
+    "Avenue Edouard Vaillant",
+    "Avenue Jean Baptiste Clément",
+    "Avenue Pierre Grenier",
+    "Avenue Victor Hugo",
+    "Avenue du Général Leclerc",
+    "Avenue du Maréchal Juin",
+    "Boulevard Jean Jaurès",
+    "Boulevard de la République",
+    "Quai Alphonse Le Gallo",
+    "Route de la Reine",
+    "Rue Barthélémy Danjou",
+    "Rue Carnot",
+    "Rue Denfert-Rochereau",
+    "Rue Diaz",
+    "Rue Emile Landrin",
+    "Rue Escudier",
+    "Rue Fernand Pelloutier",
+    "Rue Fessart",
+    "Rue Gallieni",
+    "Rue Gambetta",
+    "Rue Le Corbusier",
+    "Rue Louis Pasteur",
+    "Rue Marcel Bontemps",
+    "Rue Marcel Dassault",
+    "Rue Nationale",
+    "Rue Reinhardt",
+    "Rue Thiers",
+    "Rue Traversière",
+    "Rue Yves Kermen",
+    "Rue d'Aguesseau",
+    "Rue de Bellevue",
+    "Rue de Billancourt",
+    "Rue de Paris",
+    "Rue de Silly",
+    "Rue de Sèvres",
+    "Rue de l'Ancienne Mairie",
+    "Rue de l'Est",
+    "Rue de la Belle Feuille",
+    "Rue de la Rochefoucauld",
+    "Rue de la Saussière",
+    "Rue de la Tourelle",
+    "Rue des Abondances",
+    "Rue des Longs Prés",
+    "Rue des Peupliers",
+    "Rue des Tilleuls",
+    "Rue du Château",
+    "Rue du Dôme",
+    "Rue du Point du Jour",
+    "Rue du Vieux Pont de Sèvres"
+  ],
+  "stations_metro": [],
+  "gares": [],
+  "parcs": [],
+  "hopitaux": [],
+  "cliniques": [],
+  "centres_commerciaux": [],
+  "zones_activites": [],
+  "ponts": [],
+  "quais": [],
+  "monuments": [],
+  "batiments_publics": [],
+  "communes_limitrophes": [
+    "Auteuil (Seine)",
+    "Bois de Boulogne",
+    "Issy-les-Moulineaux",
+    "Meudon",
+    "Paris",
+    "Quartier de Javel",
+    "Saint-Cloud",
+    "Sèvres"
+  ],
+  "sources": {
+    "Overpass API": {
+      "quartiers": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "stations_metro": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "gares": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "parcs": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "hopitaux": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "cliniques": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "centres_commerciaux": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "zones_activites": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "ponts": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "quais": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "monuments": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "batiments_publics": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      }
+    },
+    "Overpass Géométrie": {
+      "communes_limitrophes": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      }
+    },
+    "Wikipedia HTML": {
+      "communes_limitrophes": {
+        "trouves": 8,
+        "retenus": 8,
+        "ignores": 0,
+        "exclusions": []
+      }
+    },
+    "Data.gouv.fr BAN": {
+      "rues": {
+        "trouves": 50,
+        "retenus": 50,
+        "ignores": 0,
+        "exclusions": []
+      }
+    }
+  },
+  "timing": {
+    "overpass_poi": {
+      "durationSec": 77.5,
+      "status": "EMPTY"
+    },
+    "overpass_geo": {
+      "durationSec": 78.9,
+      "status": "EMPTY"
+    },
+    "wikipedia_html": {
+      "durationSec": 1.8,
+      "status": "OK"
+    },
+    "ban": {
+      "durationSec": 0.3,
+      "status": "OK"
+    },
+    "wikipedia_api": {
+      "durationSec": 0.2,
+      "status": "OK"
+    }
+  },
+  "validation": {
+    "status": "SUCCESS",
+    "quality": "PARTIAL",
+    "schemaVersion": "1.0",
+    "fetched": true,
+    "sources": {
+      "overpass_poi": false,
+      "overpass_geo": false,
+      "wikipedia_html": true,
+      "wikipedia_api": true,
+      "ban": true
+    },
+    "totalDurationSec": 158.6
+  }
+}

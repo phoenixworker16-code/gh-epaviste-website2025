@@ -1,5 +1,7 @@
 Étape 0
 
+↓
+
 Lint
 
 ↓
@@ -20,10 +22,6 @@ Collecte données
 
 ↓
 
-Audit
-
-↓
-
 Génération
 
 ↓
@@ -40,11 +38,7 @@ Duplicate Auditor
 
 ↓
 
-Validation
-
-↓
-
-Remplacement
+Validation Finale
 
 ↓
 

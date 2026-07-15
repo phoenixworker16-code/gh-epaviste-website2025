@@ -1,10 +1,10 @@
 # Legal Audit Report
 
-Date : 2026-07-12T17:08:13.334Z
+Date : 2026-07-15T17:55:31.975Z
 
-## levallois-perret.ts — ✅ PASS (100/100)
+## cergy.ts — ✅ PASS (100/100)
 
-Expressions autorisées détectées : **0**
+Expressions autorisées détectées : **1**
 
 Aucune violation.
 
@@ -14,7 +14,7 @@ Aucune violation.
 
 - **Score** : 100/100
 - **Verdict** : PASS ✅
-- Expressions autorisées détectées : **0**
+- Expressions autorisées détectées : **1**
 - INFO : **0**
 - WARNING : **0**
 - ERROR : **0**

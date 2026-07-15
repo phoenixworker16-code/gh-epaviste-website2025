@@ -3,63 +3,62 @@ import { PageData } from '../types'
 export const versaillesData: PageData = {
   slug: 'versailles',
   entityType: 'City',
-  metaTitle: "Épaviste Versailles (78) | Enlèvement Épave Gratuit 24h",
-  metaDescription: "Service d'enlèvement d'épaves gratuit à Versailles (78000). Interventions discrètes, parkings souterrains et copropriétés. Contactez GH Épaviste au 07 53 12 07 93.",
+  metaTitle: 'Épaviste Versailles (78000) | Enlèvement Épave Gratuit 24h',
+  metaDescription: 'Service gratuit d\'enlèvement d\'épaves à Versailles (78000). Prise en charge de VHU avec certificat de destruction officiel. Intervention rapide.',
   relatedServicesSlugs: [
-    "enlevement-epave-parking-souterrain",
-    "enlevement-voiture-en-panne",
-    "enlevement-voiture-sans-carte-grise"
+    'enlevement-epave-parking-souterrain',
+    'enlevement-voiture-en-panne',
+    'enlevement-voiture-sans-carte-grise'
   ],
   relatedCitiesSlugs: [
-    "yvelines", // Parent
-    "le-chesnay-rocquencourt", "viroflay", "buc", "saint-cyr-l-ecole"
+    'enlevement-epave-yvelines'
   ],
   blocks: [
     {
       type: 'Hero',
-      title: "Épaviste Gratuit à Versailles (78000)",
-      subtitle: "Intervention sur mesure dans toute la ville royale, que vous soyez dans le centre historique ou dans les quartiers résidentiels.",
-      badge: "Versailles (78000)"
+      title: 'Retrait de véhicule hors d\'usage à Versailles',
+      subtitle: 'Un enlèvement préparé selon l’accès au véhicule et les informations transmises lors de votre demande.',
+      badge: 'Versailles (78000)',
     },
     {
       type: 'Introduction',
-      title: "L'expertise d'un épaviste à Versailles",
-      content: "La ville de Versailles présente un patrimoine historique exceptionnel, mais ses ruelles du quartier Saint-Louis ou de Notre-Dame ne sont pas toujours adaptées au passage des grosses dépanneuses. De plus, de nombreuses copropriétés privées exigent des interventions discrètes et rapides.\n\nGH Épaviste intervient avec une flotte de véhicules adaptés aux spécificités versaillaises (4x4, dépanneuses surbaissées) pour extraire gratuitement votre véhicule hors d'usage, qu'il soit stationné près du Château, à Porchefontaine ou à Montreuil."
-    },
-    {
-      type: 'UndergroundParking',
-      title: "Extraction en parking souterrain versaillais",
-      content: "Si votre véhicule en panne définitive se trouve bloqué dans un parking Vinci (ex: Parking de l'Europe) ou dans le sous-sol de votre résidence, nous pouvons l'extraire. Nos dépanneuses spéciales peuvent franchir des hauteurs de 1m85 et treuiller des véhicules dont les roues sont bloquées.",
-      maxHeight: "1m85"
-    },
-    {
-      type: 'Copropriety',
-      title: "Syndics de copropriété à Versailles",
-      content: "Nous travaillons fréquemment avec les syndics versaillais pour assainir les cours privées et les parkings de résidences encombrés par des véhicules 'ventouses'. Nous vous guidons dans les démarches administratives pour vous protéger légalement avant l'enlèvement."
+      title: 'Votre épaviste de confiance à Versailles',
+      content: 'Dans une agglomération dynamique comme Versailles (78000), se débarrasser d\'un véhicule encombrant nécessite une logistique précise. Notre équipe couvre l\'ensemble de la commune pour vous proposer un service d\'enlèvement d\'épave totalement gratuit. Nous garantissons une prise en charge conforme à la législation avec remise du certificat de destruction. La demande permet de préciser les contraintes de stationnement et les documents disponibles avant l’intervention. Les informations communiquées au moment de la demande facilitent la préparation du retrait. Le créneau est confirmé après vérification des éléments utiles à la prise en charge.',
     },
     {
       type: 'VhuCompliance',
-      title: "Une mise au rebut écologique et réglementaire",
-      content: "La préservation de l'environnement est essentielle. GH Épaviste est le garant que votre épave sera dépolluée selon les normes en vigueur par un **centre VHU agréé**. Le certificat de destruction remis attestera de l'annulation de l'immatriculation."
+      title: 'Dépollution et Recyclage',
+      content: 'L\'enlèvement est suivi d\'un acheminement vers un centre VHU partenaire agréé. Cette organisation garantit une prise en charge conforme et une valorisation dans les filières prévues. Les responsabilités de chaque intervenant sont distinguées dès l’organisation de l’enlèvement.',
+    },
+    {
+      type: 'LocalCoverage',
+      title: 'Couverture d\'intervention sur Versailles',
+      intro: 'Notre équipe intervient dans l\'ensemble de la commune de Versailles pour procéder à l\'enlèvement de votre véhicule. Le rendez-vous est préparé selon le type d’accès indiqué lors de la demande. Les modalités de passage sont précisées avant le déplacement du professionnel.',
+      zones: [
+        { name: 'Centre-ville & Rues étroites', delay: 'Sous 24h', specificities: 'Matériel adapté aux accès difficiles et parkings.' },
+        { name: 'Quartiers périphériques', delay: '24h à 48h', specificities: 'Intervention planifiée.' }
+      ],
+    },
+    {
+      type: 'DocsPreparation',
+      title: 'Pièces à fournir pour l\'enlèvement',
+      intro: 'L\'enlèvement d\'un véhicule hors d\'usage à Versailles implique une stricte conformité réglementaire. Voici les éléments à préparer. Préparez votre carte grise (originale barrée), un certificat de non-gage datant de moins de 15 jours, et la pièce d\'identité du propriétaire.',
+      specialCase: 'Si vous avez égaré la carte grise, une déclaration de perte effectuée en gendarmerie ou préfecture du département Yvelines sera indispensable.',
     },
     {
       type: 'FaqLocal',
-      title: "Questions sur l'enlèvement à Versailles",
+      title: 'Questions fréquentes sur l\'enlèvement à Versailles',
       questions: [
-        {
-          q: "Ma voiture est stationnée dans une rue en pente près de l'Orangerie, pouvez-vous la treuiller ?",
-          a: "Oui, nos dépanneuses disposent de treuils puissants permettant de charger en toute sécurité un véhicule garé dans une forte pente."
-        },
-        {
-          q: "Mon véhicule n'a plus de roues (vandalisme), l'enlèvement est-il toujours gratuit ?",
-          a: "Dans la majorité des cas oui, grâce à nos patins spéciaux, mais il faut nous prévenir à l'avance pour que nous adaptions le matériel."
-        }
-      ]
+        { q: 'Mon véhicule est bloqué en sous-sol à Versailles, est-ce un problème ?', a: 'Pas du tout. Nous disposons de dépanneuses 4x4 extra-basses capables d\'entrer dans la majorité des parkings souterrains.' },
+        { q: 'Mon véhicule est accidenté sur la voie publique, pouvez-vous le retirer ?', a: 'Absolument, nous intervenons sur la voie publique à condition que vous soyez présent avec les documents requis.' },
+        { q: 'Délivrez-vous le certificat de destruction immédiatement ?', a: 'Oui, nous vous remettons le certificat de cession pour destruction en main propre le jour de l\'enlèvement.' },
+        { q: 'L\'intervention à Versailles est-elle soumise à des frais de déplacement ?', a: 'Non, si votre véhicule est complet, l\'enlèvement et le déplacement jusqu\'à Versailles sont entièrement gratuits.' }
+      ],
     },
     {
       type: 'Cta',
-      title: "Besoin d'un épaviste à Versailles ?",
-      subtitle: "Appelez-nous au 07 53 12 07 93 pour un remorquage gratuit aujourd'hui."
+      title: 'Prendre rendez-vous pour votre épave à Versailles',
+      subtitle: 'Contactez-nous pour planifier l\'enlèvement gratuit et légal de votre véhicule.',
     }
   ]
 }

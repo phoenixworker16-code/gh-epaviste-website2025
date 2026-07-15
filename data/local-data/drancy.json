@@ -1,0 +1,284 @@
+{
+  "city": "Drancy",
+  "department": "93",
+  "quartiers": [],
+  "rues": [
+    "Avenue Castelnau",
+    "Avenue De La Division Leclerc",
+    "Avenue Garibaldi",
+    "Avenue Henri Barbusse",
+    "Avenue Jean Jaures",
+    "Avenue Joffre",
+    "Avenue Marceau",
+    "Avenue Martyrs Chateaubriand",
+    "Avenue Pierre Et Marie Curie",
+    "Avenue Turgot",
+    "Rue Albert Beugnet",
+    "Rue Albert David",
+    "Rue Ambroise Croizat",
+    "Rue Anatole France",
+    "Rue Baudin",
+    "Rue Charles Gide",
+    "Rue D'Alsace Lorraine",
+    "Rue Danton",
+    "Rue De La Fraternite",
+    "Rue De La Liberte",
+    "Rue De La Republique",
+    "Rue De La Tour D'Auvergne",
+    "Rue Du Onze Novembre",
+    "Rue Edouard Vaillant",
+    "Rue Eugene Varlin",
+    "Rue Faidherbe",
+    "Rue Francois Rude",
+    "Rue Grosperrin",
+    "Rue Gustave Deveze",
+    "Rue Gutenberg",
+    "Rue Henri Langlois",
+    "Rue Henri Rouanet",
+    "Rue Jane Joye",
+    "Rue Jean Pomier",
+    "Rue Jules Mailly",
+    "Rue Julian Grimau",
+    "Rue Lamartine",
+    "Rue Leon Bernard",
+    "Rue Leon Gambetta",
+    "Rue Louise Michel",
+    "Rue Maurice Bernard",
+    "Rue Maxime Gorki",
+    "Rue Raymond Justice",
+    "Rue Rene Deschamps",
+    "Rue Ribot",
+    "Rue Roger Gibrat",
+    "Rue Roger Salengro",
+    "Rue Roger Salomon",
+    "Rue Rouget De Lisle",
+    "Rue Sacco Et Vanzetti"
+  ],
+  "stations_metro": [
+    "Bobigny - Pablo Picasso",
+    "La Courneuve - 8 Mai 1945",
+    "Ligne 15 du métro de Paris",
+    "Ligne 16 du métro de Paris",
+    "Ligne 17 du métro de Paris",
+    "Ligne 5 du métro de Paris",
+    "Ligne 7 du métro de Paris",
+    "Métropole du Grand Paris"
+  ],
+  "gares": [
+    "Drancy",
+    "Paris-Nord",
+    "Paris-Saint-Lazare",
+    "du Bourget",
+    "triage"
+  ],
+  "parcs": [
+    "Jardin communautaire",
+    "Parc de Ladoucette (Drancy)"
+  ],
+  "hopitaux": [
+    "Hôpital Avicenne"
+  ],
+  "cliniques": [],
+  "centres_commerciaux": [
+    "Centre commercial"
+  ],
+  "zones_activites": [],
+  "ponts": [],
+  "quais": [],
+  "monuments": [
+    "Château de Chapius",
+    "Monument aux morts",
+    "Monument historique",
+    "Musée de l'air et de l'espace"
+  ],
+  "batiments_publics": [
+    "Hôtel de ville de Drancy"
+  ],
+  "communes_limitrophes": [
+    "Bobigny",
+    "Bondy",
+    "La Courneuve",
+    "Le Blanc-Mesnil",
+    "Le Bourget (Seine-Saint-Denis)"
+  ],
+  "sources": {
+    "Overpass API": {
+      "quartiers": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "stations_metro": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "gares": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "parcs": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "hopitaux": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "cliniques": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "centres_commerciaux": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "zones_activites": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "ponts": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "quais": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "monuments": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "batiments_publics": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      }
+    },
+    "Overpass Géométrie": {
+      "communes_limitrophes": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      }
+    },
+    "Wikipedia HTML": {
+      "communes_limitrophes": {
+        "trouves": 5,
+        "retenus": 5,
+        "ignores": 0,
+        "exclusions": []
+      }
+    },
+    "Data.gouv.fr BAN": {
+      "rues": {
+        "trouves": 50,
+        "retenus": 50,
+        "ignores": 0,
+        "exclusions": []
+      }
+    },
+    "Wikipedia API": {
+      "stations_metro": {
+        "trouves": 8,
+        "retenus": 8,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "gares": {
+        "trouves": 5,
+        "retenus": 5,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "parcs": {
+        "trouves": 2,
+        "retenus": 2,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "hopitaux": {
+        "trouves": 1,
+        "retenus": 1,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "centres_commerciaux": {
+        "trouves": 1,
+        "retenus": 1,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "monuments": {
+        "trouves": 4,
+        "retenus": 4,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "batiments_publics": {
+        "trouves": 1,
+        "retenus": 1,
+        "ignores": 0,
+        "exclusions": []
+      }
+    }
+  },
+  "timing": {
+    "overpass_poi": {
+      "durationSec": 77.5,
+      "status": "EMPTY"
+    },
+    "overpass_geo": {
+      "durationSec": 78.9,
+      "status": "EMPTY"
+    },
+    "wikipedia_html": {
+      "durationSec": 1.5,
+      "status": "OK"
+    },
+    "ban": {
+      "durationSec": 0.3,
+      "status": "OK"
+    },
+    "wikipedia_api": {
+      "durationSec": 0.3,
+      "status": "OK"
+    }
+  },
+  "validation": {
+    "status": "SUCCESS",
+    "quality": "PARTIAL",
+    "schemaVersion": "1.0",
+    "fetched": true,
+    "sources": {
+      "overpass_poi": false,
+      "overpass_geo": false,
+      "wikipedia_html": true,
+      "wikipedia_api": true,
+      "ban": true
+    },
+    "totalDurationSec": 158.5
+  }
+}

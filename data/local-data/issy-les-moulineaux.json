@@ -1,0 +1,201 @@
+{
+  "city": "Issy-Les-Moulineaux",
+  "department": "92",
+  "quartiers": [],
+  "rues": [
+    "Allée des Citeaux",
+    "Avenue Bourgain",
+    "Avenue Victor Cresson",
+    "Avenue de Verdun",
+    "Avenue de la Paix",
+    "Avenue du Bas Meudon",
+    "Avenue du Général de Gaulle",
+    "Boulevard Gallieni",
+    "Boulevard Rodin",
+    "Promenade du Verger",
+    "Quai de la Bataille de Stalingrad",
+    "Rue Aristide Briand",
+    "Rue Barbès",
+    "Rue Baudin",
+    "Rue Benoit Malon",
+    "Rue Camille Desmoulins",
+    "Rue Danton",
+    "Rue Diderot",
+    "Rue Emile Duployé",
+    "Rue Ernest Renan",
+    "Rue Ferdinand Buisson",
+    "Rue Foucher Lepelletier",
+    "Rue Gabriel Péri",
+    "Rue Guynemer",
+    "Rue Henri Tariel",
+    "Rue Hoche",
+    "Rue Horace Vernet",
+    "Rue Jean Jacques Rousseau",
+    "Rue Jean Pierre Timbaud",
+    "Rue Jules Guesde",
+    "Rue Lazare Carnot",
+    "Rue Madame",
+    "Rue Marcel Miquel",
+    "Rue Pierre Brossolette",
+    "Rue Pierre Curie",
+    "Rue Pierre Poli",
+    "Rue Roger Salengro",
+    "Rue Tolstoï",
+    "Rue Victor Hugo",
+    "Rue d'Erevan",
+    "Rue d'Estienne d'Orves",
+    "Rue de Meudon",
+    "Rue de l'Egalité",
+    "Rue de la Défense",
+    "Rue du Capitaine Ferber",
+    "Rue du Fort",
+    "Rue du Gouverneur Général Eboué",
+    "Rue du Général Leclerc",
+    "Rue du Moulin de Pierre"
+  ],
+  "stations_metro": [],
+  "gares": [],
+  "parcs": [],
+  "hopitaux": [],
+  "cliniques": [],
+  "centres_commerciaux": [],
+  "zones_activites": [],
+  "ponts": [],
+  "quais": [],
+  "monuments": [],
+  "batiments_publics": [],
+  "communes_limitrophes": [],
+  "sources": {
+    "Overpass API": {
+      "quartiers": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "stations_metro": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "gares": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "parcs": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "hopitaux": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "cliniques": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "centres_commerciaux": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "zones_activites": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "ponts": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "quais": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "monuments": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "batiments_publics": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      }
+    },
+    "Overpass Géométrie": {
+      "communes_limitrophes": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      }
+    },
+    "Data.gouv.fr BAN": {
+      "rues": {
+        "trouves": 50,
+        "retenus": 49,
+        "ignores": 1,
+        "exclusions": [
+          {
+            "nom": "Quai d'Issy-Les-Moulineaux",
+            "raison": "Commune différente: Paris"
+          }
+        ]
+      }
+    }
+  },
+  "timing": {
+    "overpass_poi": {
+      "durationSec": 77.5,
+      "status": "EMPTY"
+    },
+    "overpass_geo": {
+      "durationSec": 78.9,
+      "status": "EMPTY"
+    },
+    "wikipedia_html": {
+      "durationSec": 2.1,
+      "status": "OK"
+    },
+    "ban": {
+      "durationSec": 0.3,
+      "status": "OK"
+    },
+    "wikipedia_api": {
+      "durationSec": 0.2,
+      "status": "FAIL"
+    }
+  },
+  "validation": {
+    "status": "SUCCESS",
+    "quality": "PARTIAL",
+    "schemaVersion": "1.0",
+    "fetched": true,
+    "sources": {
+      "overpass_poi": false,
+      "overpass_geo": false,
+      "wikipedia_html": true,
+      "wikipedia_api": false,
+      "ban": true
+    },
+    "totalDurationSec": 159.1
+  }
+}

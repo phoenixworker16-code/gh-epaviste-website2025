@@ -1,120 +1,124 @@
-# Guide de Déploiement - GH Épaviste Website
+# Guide de Déploiement — GH Épaviste
 
-## Préparation pour le déploiement OVH
+## Hébergement
 
-### 1. Configuration de l'environnement
+- Hébergeur : Vercel
+- DNS : OVH
+- Framework : Next.js 14 App Router
 
-1. **Copier le fichier d'environnement de production :**
-   ```bash
-   cp .env.production .env
-   ```
+---
 
-2. **Modifier les variables dans `.env` :**
-   - `DATABASE_URL` : URL de votre base de données PostgreSQL OVH
-   - `NEXTAUTH_SECRET` : Générer une clé secrète sécurisée
-   - `SMTP_*` : Configuration email OVH
-   - `NEXT_PUBLIC_GA_ID` : ID Google Analytics (optionnel)
+# Variables d'environnement
 
-### 2. Build de production
+Configurer uniquement les variables réellement utilisées.
+
+Exemple :
+
+```
+RESEND_API_KEY=
+RESEND_FROM_EMAIL=
+NEXT_PUBLIC_SITE_URL=https://gh-epaviste.fr
+```
+
+Aucune variable Prisma.
+
+Aucune DATABASE_URL.
+
+---
+
+# Base de données
+
+Le projet n'utilise aucune base de données.
+
+Les formulaires sont envoyés directement via Resend vers :
+
+contact@gh-epaviste.fr
+
+Aucune persistance locale.
+
+Aucun PostgreSQL.
+
+Aucun Prisma.
+
+---
+
+# Déploiement
+
+Installation :
+
+```bash
+npm install
+```
+
+Build :
 
 ```bash
 npm run build
 ```
 
-### 3. Configuration OVH
-
-#### A. Hébergement Web Pro/Performance
-1. Uploader les fichiers dans le dossier `www`
-2. Configurer Node.js dans l'espace client OVH
-3. Définir le point d'entrée : `server.js`
-
-#### B. VPS/Serveur dédié
-1. Installer Node.js 18+ et npm
-2. Cloner le repository
-3. Installer les dépendances : `npm install`
-4. Build : `npm run build`
-5. Démarrer : `npm start`
-
-### 4. Configuration DNS
-
-Dans l'espace client OVH, configurer :
-- **A** : `@` → IP du serveur
-- **CNAME** : `www` → `gh-epaviste.fr`
-
-### 5. SSL/TLS
-
-Activer le certificat SSL Let's Encrypt dans l'espace client OVH.
-
-### 6. Base de données
-
-1. Créer une base PostgreSQL dans l'espace client OVH
-2. Exécuter les migrations Prisma :
-   ```bash
-   npx prisma migrate deploy
-   ```
-
-### 7. Optimisations post-déploiement
-
-#### Cache et Performance
-- Activer la compression gzip/brotli
-- Configurer les headers de cache (déjà dans next.config.mjs)
-- Utiliser un CDN si nécessaire
-
-#### SEO
-- Vérifier le sitemap : `https://gh-epaviste.fr/sitemap.xml`
-- Vérifier robots.txt : `https://gh-epaviste.fr/robots.txt`
-- Soumettre le site à Google Search Console
-- Configurer Google Analytics
-
-#### Monitoring
-- Configurer les logs d'erreur
-- Mettre en place un monitoring de disponibilité
-- Sauvegardes automatiques de la base de données
-
-### 8. Checklist de déploiement
-
-- [ ] Variables d'environnement configurées
-- [ ] Base de données créée et migrée
-- [ ] Build de production réussi
-- [ ] DNS configuré
-- [ ] SSL activé
-- [ ] Sitemap accessible
-- [ ] Robots.txt accessible
-- [ ] Formulaires fonctionnels
-- [ ] Images optimisées
-- [ ] Performance testée (PageSpeed Insights)
-- [ ] SEO vérifié (Google Search Console)
-
-### 9. Commandes utiles
+Déploiement :
 
 ```bash
-# Build de production
-npm run build
-
-# Démarrage en production
-npm start
-
-# Vérification des dépendances
-npm audit
-
-# Mise à jour des dépendances
-npm update
-
-# Génération du client Prisma
-npx prisma generate
-
-# Migration de la base de données
-npx prisma migrate deploy
+vercel --prod
 ```
 
-### 10. Support et maintenance
+---
 
-- Surveiller les logs d'erreur
-- Mettre à jour régulièrement les dépendances
-- Sauvegarder la base de données
-- Monitorer les performances
-- Vérifier les liens cassés
+# DNS
 
-## Contact technique
+Le domaine est géré chez OVH.
 
-Pour toute question technique concernant le déploiement, contactez l'équipe de développement.
+Les enregistrements DNS pointent vers Vercel.
+
+---
+
+# Vérifications après déploiement
+
+- HTTPS actif
+- Sitemap accessible
+- robots.txt accessible
+- Google Search Console
+- Core Web Vitals
+- JSON-LD valide
+- Formulaire fonctionnel
+- Emails reçus sur contact@gh-epaviste.fr
+
+---
+
+# Commandes utiles
+
+Build :
+
+```bash
+npm run build
+```
+
+Lint :
+
+```bash
+npm run lint
+```
+
+TypeScript :
+
+```bash
+npx tsc --noEmit
+```
+
+Déploiement :
+
+```bash
+vercel --prod
+```
+
+---
+
+# Maintenance
+
+Après chaque modification importante :
+
+- npm run lint
+- npx tsc --noEmit
+- npm run build
+
+Le projet ne doit jamais être déclaré valide sans l'exécution réelle de ces commandes.

@@ -1,37 +1,40 @@
 const fs = require('fs');
 const path = require('path');
+const crypto = require('crypto');
 
-// Extract only the editorial content (strip code, footer, etc.)
-function extractEditorialContent(content) {
-  // Very basic extraction: get text inside <p>, <h2>, <h3>, <li>
-  // In a real scenario, this would parse JSX to string, but regex works for a static script
-  let editorial = '';
-  const matches = content.match(/<(p|h2|h3|li)[^>]*>(.*?)<\/\1>/gi);
-  if (matches) {
-    editorial = matches.map(m => m.replace(/<[^>]+>/g, '').trim()).join(' ');
+// Extraire le contenu éditorial d'un objet PageData
+function getEditorialTextFromObject(pageData) {
+  let text = '';
+  const blocksToKeep = ['Introduction', 'LocalCoverage', 'VhuCompliance', 'DocsPreparation'];
+  
+  if (pageData && pageData.blocks) {
+    for (const block of pageData.blocks) {
+      if (blocksToKeep.includes(block.type)) {
+        if (block.content) text += block.content + ' ';
+        if (block.intro) text += block.intro + ' ';
+        if (block.title) text += block.title + ' ';
+        if (block.zones) {
+          block.zones.forEach(z => {
+             text += (z.name || '') + ' ' + (z.specificities || '') + ' ';
+          });
+        }
+        if (block.specialCase) text += block.specialCase + ' ';
+      }
+    }
   }
-  
-  // Remove common generic phrases that skew similarity
-  const exclude = [
-    'contactez-nous',
-    'mentions légales',
-    'enlèvement d\'épave gratuit',
-    'centre vhu agréé',
-    'certificat de destruction'
-  ];
-  
-  let cleanText = editorial.toLowerCase();
-  for (const ex of exclude) {
-    cleanText = cleanText.split(ex).join(' ');
-  }
-  
-  return cleanText;
+  return text.toLowerCase().replace(/[^a-z0-9à-ÿœæç]/g, ' ').replace(/\s+/g, ' ').trim();
 }
 
-// Calculate Jaccard similarity between two strings
+// Créer un hash de l'empreinte éditoriale
+function getEditorialHash(pageData) {
+  const text = getEditorialTextFromObject(pageData);
+  return crypto.createHash('sha256').update(text).digest('hex').substring(0, 8);
+}
+
+// Calculer la similarité Jaccard sur les bigrammes
 function calculateSimilarity(text1, text2) {
   const getBigrams = (str) => {
-    const words = str.match(/[a-zà-ÿ0-9]+/g) || [];
+    const words = str.split(' ').filter(w => w.length > 0);
     const bigrams = new Set();
     for (let i = 0; i < words.length - 1; i++) {
       bigrams.add(words[i] + ' ' + words[i+1]);
@@ -53,45 +56,8 @@ function calculateSimilarity(text1, text2) {
   return intersection / union;
 }
 
-function detectDuplicates(newFilePath, existingFilesDir) {
-  const newContent = fs.readFileSync(newFilePath, 'utf8');
-  const text1 = extractEditorialContent(newContent);
-  
-  let maxSimilarity = 0;
-  let mostSimilarFile = '';
-  
-  const files = fs.readdirSync(existingFilesDir).filter(f => f.endsWith('.ts'));
-  
-  for (const file of files) {
-    const existingPath = path.join(existingFilesDir, file);
-    if (existingPath === newFilePath) continue;
-    
-    const existingContent = fs.readFileSync(existingPath, 'utf8');
-    const text2 = extractEditorialContent(existingContent);
-    
-    const sim = calculateSimilarity(text1, text2);
-    if (sim > maxSimilarity) {
-      maxSimilarity = sim;
-      mostSimilarFile = file;
-    }
-  }
-  
-  return {
-    maxSimilarity: Math.round(maxSimilarity * 100),
-    mostSimilarFile,
-    passed: maxSimilarity <= 0.65 // 65% strict max
-  };
-}
-
-if (require.main === module) {
-  const newFile = process.argv[2];
-  const dir = process.argv[3] || path.join(__dirname, '../data/cities_new');
-  if (!newFile) {
-    console.error('Usage: node detect-duplicates.js <new-file.ts> [dir-to-compare]');
-    process.exit(1);
-  }
-  const result = detectDuplicates(newFile, dir);
-  console.log(JSON.stringify(result, null, 2));
-}
-
-module.exports = { detectDuplicates, calculateSimilarity };
+module.exports = { 
+  getEditorialTextFromObject, 
+  getEditorialHash, 
+  calculateSimilarity 
+};

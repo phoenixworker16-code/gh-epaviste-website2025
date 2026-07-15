@@ -1,0 +1,68 @@
+{
+  "hyper-centre": {
+    "sections": [
+      "Hero",
+      "Introduction",
+      "LocalCoverage",
+      "DocsPreparation",
+      "VhuCompliance",
+      "FaqLocal",
+      "Cta"
+    ]
+  },
+  "grande-ville": {
+    "sections": [
+      "Hero",
+      "Introduction",
+      "VhuCompliance",
+      "LocalCoverage",
+      "DocsPreparation",
+      "FaqLocal",
+      "Cta"
+    ]
+  },
+  "banlieue-dense": {
+    "sections": [
+      "Hero",
+      "LocalCoverage",
+      "Introduction",
+      "DocsPreparation",
+      "VhuCompliance",
+      "FaqLocal",
+      "Cta"
+    ]
+  },
+  "residentielle": {
+    "sections": [
+      "Hero",
+      "Introduction",
+      "DocsPreparation",
+      "LocalCoverage",
+      "VhuCompliance",
+      "FaqLocal",
+      "Cta"
+    ]
+  },
+  "periurbaine": {
+    "sections": [
+      "Hero",
+      "Introduction",
+      "VhuCompliance",
+      "DocsPreparation",
+      "LocalCoverage",
+      "FaqLocal",
+      "Cta"
+    ]
+  },
+  "rurale": {
+    "sections": [
+      "Hero",
+      "Introduction",
+      "DocsPreparation",
+      "VhuCompliance",
+      "LocalCoverage",
+      "FaqLocal",
+      "Cta"
+    ]
+  }
+}

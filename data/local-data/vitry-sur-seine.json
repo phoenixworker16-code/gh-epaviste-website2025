@@ -1,0 +1,222 @@
+{
+  "city": "Vitry-Sur-Seine",
+  "department": "94",
+  "quartiers": [],
+  "rues": [
+    "Avenue Anatole France",
+    "Avenue André Maginot",
+    "Avenue Ernest Havet",
+    "Avenue Guy Môquet",
+    "Avenue Jean Jaurès",
+    "Avenue Paul Vaillant Couturier",
+    "Avenue Rouget de Lisle",
+    "Avenue du Colonel Fabien",
+    "Avenue du Groupe Manouchian",
+    "Avenue du Moulin de Saquet",
+    "Avenue du Progrès",
+    "Avenue la Bruyère",
+    "Boulevard de Stalingrad",
+    "Quai Jules Guesde",
+    "Rue Ansèlme Rondenay",
+    "Rue Antoine Marie Colin",
+    "Rue Balzac",
+    "Rue Berlioz",
+    "Rue Boïeldieu",
+    "Rue Camille Groult",
+    "Rue Camélinat",
+    "Rue Champollion",
+    "Rue Charles Floquet",
+    "Rue Charles Infroit",
+    "Rue Constant Coquelin",
+    "Rue Donizetti",
+    "Rue Edouard Tremblay",
+    "Rue Gabriel Péri",
+    "Rue Jules Lagaisse",
+    "Rue Julian Grimau",
+    "Rue Lesueur",
+    "Rue Louise Aglaë Cretté",
+    "Rue Marie Sorin Defresne",
+    "Rue Meissonier",
+    "Rue Mozart",
+    "Rue Pasteur",
+    "Rue Raphaël",
+    "Rue Talma",
+    "Rue Waldeck Rousseau",
+    "Rue de Choisy",
+    "Rue de la Marne",
+    "Rue des Ardoines",
+    "Rue des Blanches",
+    "Rue des Blancs Murs",
+    "Rue des Malassis",
+    "Rue des Prés",
+    "Rue du Fort",
+    "Rue du Génie",
+    "Rue du Lion d'Or",
+    "Voie Daumier"
+  ],
+  "stations_metro": [],
+  "gares": [],
+  "parcs": [],
+  "hopitaux": [],
+  "cliniques": [],
+  "centres_commerciaux": [],
+  "zones_activites": [],
+  "ponts": [],
+  "quais": [],
+  "monuments": [],
+  "batiments_publics": [],
+  "communes_limitrophes": [
+    "Alfortville",
+    "Chevilly-Larue",
+    "Choisy-le-Roi",
+    "Ivry-sur-Seine",
+    "Thiais",
+    "Villejuif"
+  ],
+  "sources": {
+    "Overpass API": {
+      "quartiers": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "stations_metro": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "gares": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "parcs": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "hopitaux": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "cliniques": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "centres_commerciaux": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "zones_activites": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "ponts": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "quais": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "monuments": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "batiments_publics": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      }
+    },
+    "Overpass Géométrie": {
+      "communes_limitrophes": {
+        "trouves": 7,
+        "retenus": 6,
+        "ignores": 1,
+        "exclusions": [
+          {
+            "nom": "Vitry-sur-Seine",
+            "raison": "Commune cible elle-même"
+          }
+        ]
+      }
+    },
+    "Wikipedia HTML": {
+      "communes_limitrophes": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": [
+          {
+            "nom": "-",
+            "raison": "Request failed with status code 404"
+          }
+        ]
+      }
+    },
+    "Data.gouv.fr BAN": {
+      "rues": {
+        "trouves": 50,
+        "retenus": 50,
+        "ignores": 0,
+        "exclusions": []
+      }
+    }
+  },
+  "timing": {
+    "overpass_poi": {
+      "durationSec": 91.3,
+      "status": "EMPTY"
+    },
+    "overpass_geo": {
+      "durationSec": 6.3,
+      "status": "OK"
+    },
+    "wikipedia_html": {
+      "durationSec": 0.6,
+      "status": "FAIL"
+    },
+    "ban": {
+      "durationSec": 0.3,
+      "status": "OK"
+    },
+    "wikipedia_api": {
+      "durationSec": 0.2,
+      "status": "FAIL"
+    }
+  },
+  "validation": {
+    "status": "SUCCESS",
+    "quality": "PARTIAL",
+    "schemaVersion": "1.0",
+    "fetched": true,
+    "sources": {
+      "overpass_poi": false,
+      "overpass_geo": true,
+      "wikipedia_html": false,
+      "wikipedia_api": false,
+      "ban": true
+    },
+    "totalDurationSec": 98.6
+  }
+}

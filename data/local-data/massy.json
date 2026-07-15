@@ -1,0 +1,217 @@
+{
+  "city": "Massy",
+  "department": "91",
+  "quartiers": [],
+  "rues": [
+    "Av du Pdt J Fitzgerald Kennedy",
+    "Avenue Carnot",
+    "Avenue Georges Clemenceau",
+    "Avenue Jean Monnet",
+    "Avenue Raymond Aron",
+    "Avenue Saint Marc",
+    "Avenue de Paris",
+    "Avenue de Verrières",
+    "Avenue des Tilleuls",
+    "Avenue du Maréchal Leclerc",
+    "Avenue du President Allende",
+    "Chemin des Sablons",
+    "Residence du Moulin de Grais",
+    "Route de Palaiseau",
+    "Rue Ampère",
+    "Rue Andre de Chenier",
+    "Rue Appert",
+    "Rue Fustel de Coulanges",
+    "Rue Gabriel Peri",
+    "Rue Gambetta",
+    "Rue Henri Gilbert",
+    "Rue Henri Lenoble",
+    "Rue Hèlène Boucher",
+    "Rue Jean Jaurès",
+    "Rue Jean Mermoz",
+    "Rue Jeanne d'Arc",
+    "Rue Lucien Sergent",
+    "Rue Mangeon",
+    "Rue Marx Dormoy",
+    "Rue Robespierre",
+    "Rue Toulouse Lautrec",
+    "Rue de Londres",
+    "Rue de Longjumeau",
+    "Rue de Migneaux",
+    "Rue de Versailles",
+    "Rue de Vilgénis",
+    "Rue de l'Effort Mutuel",
+    "Rue de l'Epine Montain",
+    "Rue de la Cerisaie",
+    "Rue de la Division Leclerc",
+    "Rue de la Saussaye",
+    "Rue des Graviers",
+    "Rue des Ruelles",
+    "Rue du Buisson aux Fraises",
+    "Rue du Docteur Tenon",
+    "Rue du Hameau de Villaine",
+    "Rue du Saule Trapu"
+  ],
+  "stations_metro": [],
+  "gares": [
+    "Massy"
+  ],
+  "parcs": [],
+  "hopitaux": [],
+  "cliniques": [],
+  "centres_commerciaux": [],
+  "zones_activites": [],
+  "ponts": [],
+  "quais": [],
+  "monuments": [],
+  "batiments_publics": [],
+  "communes_limitrophes": [],
+  "sources": {
+    "Overpass API": {
+      "quartiers": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "stations_metro": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "gares": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "parcs": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "hopitaux": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "cliniques": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "centres_commerciaux": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "zones_activites": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "ponts": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "quais": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "monuments": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "batiments_publics": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      }
+    },
+    "Overpass Géométrie": {
+      "communes_limitrophes": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      }
+    },
+    "Data.gouv.fr BAN": {
+      "rues": {
+        "trouves": 50,
+        "retenus": 47,
+        "ignores": 3,
+        "exclusions": [
+          {
+            "nom": "Massy",
+            "raison": "Commune différente: Sainte-Rose"
+          },
+          {
+            "nom": "Massy",
+            "raison": "Commune différente: Neuvy-en-Sullias"
+          },
+          {
+            "nom": "Rue de Massy",
+            "raison": "Commune différente: Antony"
+          }
+        ]
+      }
+    },
+    "Wikipedia API": {
+      "gares": {
+        "trouves": 1,
+        "retenus": 1,
+        "ignores": 0,
+        "exclusions": []
+      }
+    }
+  },
+  "timing": {
+    "overpass_poi": {
+      "durationSec": 77.5,
+      "status": "EMPTY"
+    },
+    "overpass_geo": {
+      "durationSec": 78.9,
+      "status": "EMPTY"
+    },
+    "wikipedia_html": {
+      "durationSec": 0.9,
+      "status": "OK"
+    },
+    "ban": {
+      "durationSec": 0.3,
+      "status": "OK"
+    },
+    "wikipedia_api": {
+      "durationSec": 0.2,
+      "status": "OK"
+    }
+  },
+  "validation": {
+    "status": "SUCCESS",
+    "quality": "PARTIAL",
+    "schemaVersion": "1.0",
+    "fetched": true,
+    "sources": {
+      "overpass_poi": false,
+      "overpass_geo": false,
+      "wikipedia_html": true,
+      "wikipedia_api": true,
+      "ban": true
+    },
+    "totalDurationSec": 157.7
+  }
+}

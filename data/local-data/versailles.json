@@ -1,0 +1,388 @@
+{
+  "city": "Versailles",
+  "department": "78",
+  "quartiers": [],
+  "rues": [],
+  "stations_metro": [],
+  "gares": [
+    "Montreuil",
+    "Paris-Montparnasse",
+    "Paris-Saint-Lazare",
+    "Porchefontaine",
+    "Versailles-Chantiers",
+    "Versailles-Château-Rive-Gauche",
+    "Versailles-Rive-Droite"
+  ],
+  "parcs": [],
+  "hopitaux": [
+    "Hôpital André Mignot",
+    "Hôpital Richaud"
+  ],
+  "cliniques": [],
+  "centres_commerciaux": [],
+  "zones_activites": [],
+  "ponts": [],
+  "quais": [],
+  "monuments": [
+    "Château de Versailles"
+  ],
+  "batiments_publics": [
+    "Hôtel de ville de Versailles"
+  ],
+  "communes_limitrophes": [],
+  "sources": {
+    "Overpass API": {
+      "quartiers": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "stations_metro": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "gares": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "parcs": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "hopitaux": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "cliniques": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "centres_commerciaux": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "zones_activites": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "ponts": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "quais": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "monuments": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "batiments_publics": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      }
+    },
+    "Overpass Géométrie": {
+      "communes_limitrophes": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      }
+    },
+    "Data.gouv.fr BAN": {
+      "rues": {
+        "trouves": 50,
+        "retenus": 0,
+        "ignores": 50,
+        "exclusions": [
+          {
+            "nom": "versailles",
+            "raison": "Commune différente: Notre-Dame-des-Landes"
+          },
+          {
+            "nom": "Versailles",
+            "raison": "Commune différente: Saint-Caprais-de-Bordeaux"
+          },
+          {
+            "nom": "Versailles",
+            "raison": "Commune différente: Pons"
+          },
+          {
+            "nom": "Versailles",
+            "raison": "Commune différente: Lherm"
+          },
+          {
+            "nom": "Versailles",
+            "raison": "Commune différente: Lafitte-sur-Lot"
+          },
+          {
+            "nom": "Versailles",
+            "raison": "Commune différente: Saint-Just-d'Ardèche"
+          },
+          {
+            "nom": "Versailles",
+            "raison": "Commune différente: Plazac"
+          },
+          {
+            "nom": "Versailles",
+            "raison": "Commune différente: Ciran"
+          },
+          {
+            "nom": "Versailles",
+            "raison": "Commune différente: Cassaniouze"
+          },
+          {
+            "nom": "Versailles",
+            "raison": "Commune différente: Saint-Pierre-de-Buzet"
+          },
+          {
+            "nom": "Versailles",
+            "raison": "Commune différente: Monheurt"
+          },
+          {
+            "nom": "Versailles Cadou",
+            "raison": "Commune différente: Petit-Bourg"
+          },
+          {
+            "nom": "Avenue de Versailles",
+            "raison": "Commune différente: Paris"
+          },
+          {
+            "nom": "Quai de Versailles",
+            "raison": "Commune différente: Nantes"
+          },
+          {
+            "nom": "Avenue de Versailles",
+            "raison": "Commune différente: Rueil-Malmaison"
+          },
+          {
+            "nom": "Rue de Versailles",
+            "raison": "Commune différente: Massy"
+          },
+          {
+            "nom": "Rue de Versailles",
+            "raison": "Commune différente: Le Chesnay-Rocquencourt"
+          },
+          {
+            "nom": "Avenue de Versailles",
+            "raison": "Commune différente: Gagny"
+          },
+          {
+            "nom": "Rue de Versailles",
+            "raison": "Commune différente: Bondy"
+          },
+          {
+            "nom": "Avenue de Versailles",
+            "raison": "Commune différente: Thiais"
+          },
+          {
+            "nom": "Route de Versailles",
+            "raison": "Commune différente: Évry-Courcouronnes"
+          },
+          {
+            "nom": "Avenue de Versailles",
+            "raison": "Commune différente: Nantes"
+          },
+          {
+            "nom": "rue de Versailles",
+            "raison": "Commune différente: Limoges"
+          },
+          {
+            "nom": "Rue de Versailles",
+            "raison": "Commune différente: Ville-d'Avray"
+          },
+          {
+            "nom": "Rue de Versailles",
+            "raison": "Commune différente: Orsay"
+          },
+          {
+            "nom": "Rue de Versailles",
+            "raison": "Commune différente: Avion"
+          },
+          {
+            "nom": "Cour de Versailles",
+            "raison": "Commune différente: Nantes"
+          },
+          {
+            "nom": "Rue de Versailles",
+            "raison": "Commune différente: Clamart"
+          },
+          {
+            "nom": "Rue de Versailles",
+            "raison": "Commune différente: Beaupréau-en-Mauges"
+          },
+          {
+            "nom": "Rue de Versailles",
+            "raison": "Commune différente: Aurillac"
+          },
+          {
+            "nom": "Avenue de Versailles",
+            "raison": "Commune différente: Saint-Herblain"
+          },
+          {
+            "nom": "Route de Versailles",
+            "raison": "Commune différente: Magny-les-Hameaux"
+          },
+          {
+            "nom": "Rue de Versailles",
+            "raison": "Commune différente: Saint-Laurent-Blangy"
+          },
+          {
+            "nom": "Avenue de Versailles",
+            "raison": "Commune différente: Les Clayes-sous-Bois"
+          },
+          {
+            "nom": "Rue de Versailles",
+            "raison": "Commune différente: Liévin"
+          },
+          {
+            "nom": "Place de VERSAILLES",
+            "raison": "Commune différente: Fréjus"
+          },
+          {
+            "nom": "Rue de versailles",
+            "raison": "Commune différente: Marseille"
+          },
+          {
+            "nom": "Rue de Versailles",
+            "raison": "Commune différente: Cambrai"
+          },
+          {
+            "nom": "Ile de Versailles",
+            "raison": "Commune différente: Nantes"
+          },
+          {
+            "nom": "Impasse de Versailles",
+            "raison": "Commune différente: Nantes"
+          },
+          {
+            "nom": "Route de Versailles",
+            "raison": "Commune différente: Le Chesnay-Rocquencourt"
+          },
+          {
+            "nom": "Avenue de Versailles",
+            "raison": "Commune différente: Canteleu"
+          },
+          {
+            "nom": "Rue de Versailles",
+            "raison": "Commune différente: Villeneuve-d'Ascq"
+          },
+          {
+            "nom": "Route de Versailles",
+            "raison": "Commune différente: Champlan"
+          },
+          {
+            "nom": "Avenue de Versailles",
+            "raison": "Commune différente: Villepreux"
+          },
+          {
+            "nom": "impasse versailles",
+            "raison": "Commune différente: La Seyne-sur-Mer"
+          },
+          {
+            "nom": "Rue de Versailles",
+            "raison": "Commune différente: Chevreuse"
+          },
+          {
+            "nom": "Rue de Versailles",
+            "raison": "Commune différente: Bouc-Bel-Air"
+          },
+          {
+            "nom": "Rue de Versailles",
+            "raison": "Commune différente: Le Tampon"
+          },
+          {
+            "nom": "Route de Versailles",
+            "raison": "Commune différente: Louveciennes"
+          }
+        ]
+      }
+    },
+    "Wikipedia API": {
+      "gares": {
+        "trouves": 7,
+        "retenus": 7,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "hopitaux": {
+        "trouves": 2,
+        "retenus": 2,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "monuments": {
+        "trouves": 1,
+        "retenus": 1,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "batiments_publics": {
+        "trouves": 1,
+        "retenus": 1,
+        "ignores": 0,
+        "exclusions": []
+      }
+    }
+  },
+  "timing": {
+    "overpass_poi": {
+      "durationSec": 77.5,
+      "status": "EMPTY"
+    },
+    "overpass_geo": {
+      "durationSec": 78.9,
+      "status": "EMPTY"
+    },
+    "wikipedia_html": {
+      "durationSec": 1.9,
+      "status": "OK"
+    },
+    "ban": {
+      "durationSec": 0.6,
+      "status": "EMPTY"
+    },
+    "wikipedia_api": {
+      "durationSec": 0.3,
+      "status": "OK"
+    }
+  },
+  "validation": {
+    "status": "SUCCESS",
+    "quality": "MINIMAL",
+    "schemaVersion": "1.0",
+    "fetched": true,
+    "sources": {
+      "overpass_poi": false,
+      "overpass_geo": false,
+      "wikipedia_html": true,
+      "wikipedia_api": true,
+      "ban": false
+    },
+    "totalDurationSec": 159.1
+  }
+}
