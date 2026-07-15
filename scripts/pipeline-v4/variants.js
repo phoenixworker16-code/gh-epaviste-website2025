@@ -231,6 +231,8 @@ function generateVhuCompliance(profile, commune, localData) {
 
 function generateFaqLocal(profile, commune, localData) {
   const { ville } = commune;
+
+  // 3 questions communes à tous les profils
   const questions = [
     {
       q: `L'intervention à ${ville} est-elle soumise à des frais de déplacement ?`,
@@ -246,17 +248,48 @@ function generateFaqLocal(profile, commune, localData) {
     }
   ];
 
+  // 1 question spécifique au profil (tous les profils couverts)
   if (profile === 'hyper-centre' || profile === 'grande-ville') {
     questions.push({
       q: `Mon véhicule est bloqué en sous-sol à ${ville}, est-ce un problème ?`,
       a: `Pas du tout. Nous disposons de dépanneuses 4x4 extra-basses capables d'entrer dans la majorité des parkings souterrains.`
+    });
+  } else if (profile === 'banlieue-dense') {
+    questions.push({
+      q: `Intervenez-vous rapidement en cas de véhicule gênant la circulation à ${ville} ?`,
+      a: `Oui, nous priorisons les situations urgentes en petite couronne. Contactez-nous pour un créneau adapté.`
     });
   } else if (profile === 'residentielle' || profile === 'rurale') {
     questions.push({
       q: `Venez-vous chercher une épave dans un champ ou un terrain difficile ?`,
       a: `Oui, nous sommes équipés de treuils puissants permettant d'extraire des véhicules enlisés ou sur des terrains non goudronnés.`
     });
+  } else if (profile === 'periurbaine') {
+    questions.push({
+      q: `Votre service couvre-t-il les zones peu desservies autour de ${ville} ?`,
+      a: `Oui, nous nous déplaçons dans les communes périphériques sans frais supplémentaires si le véhicule est complet.`
+    });
   }
+
+  // 4 questions communes supplémentaires pour atteindre 7 minimum (7 H3 FAQ + 3 H3 DocsPrep = 10 H3 requis)
+  questions.push(
+    {
+      q: `Que se passe-t-il si je n'ai plus la carte grise de mon véhicule ?`,
+      a: `Une déclaration de perte ou de vol effectuée en préfecture ou gendarmerie suffit. Nous vous guidons dans cette démarche.`
+    },
+    {
+      q: `Prenez-vous en charge les motos et utilitaires en plus des voitures ?`,
+      a: `Oui, nous enlevons gratuitement tout type de véhicule hors d'usage : voiture, moto, scooter, camionnette ou utilitaire.`
+    },
+    {
+      q: `Quel est le délai habituel entre la demande et l'enlèvement ?`,
+      a: `En général, nous intervenons sous 24 à 48h après confirmation du rendez-vous et vérification des documents.`
+    },
+    {
+      q: `Le véhicule doit-il être en état de rouler pour être enlevé ?`,
+      a: `Non, nous prenons en charge les véhicules immobilisés, sans roues, sans batterie ou fortement endommagés.`
+    }
+  );
 
   const seed = ville.length;
   if (seed % 2 === 0) questions.reverse();
