@@ -1,69 +1,69 @@
-/**
- * Données générées automatiquement pour la ville Bobigny
- * Généré le 2026-07-08T11:45:28.422Z
- */
+import { PageData } from '../types'
 
-const cityName = 'Bobigny';
-const slug = 'bobigny';
-export const cityData = {
+export const bobignyData: PageData = {
   slug: 'bobigny',
-  name: 'Bobigny',
-  // Hero
-  hero: {
-    title: 'Bobigny – Débarrassage d’épaves et enlèvement gratuit',
-    subtitle: 'Service professionnel, rapide et conforme à la réglementation',
-    backgroundImage: '/images/bobigny/hero.jpg',
-  },
-  // Introduction spécifique
-  introduction: 'Bienvenue à Bobigny. Nous intervenons dans toute la commune pour l’enlèvement d’épaves, le désamiantage et la dépollution.',
-  // Présentation locale (exemple de situation)
-  localContext: 'Dans Bobigny, les rues étroites et les zones résidentielles demandent une grande vigilance. Notre équipe connaît les meilleures solutions.',
-  // Documents obligatoires
-  documents: [
-    { title: 'Attestation de destruction', url: '/documents/bobigny/attestation.pdf' },
-    { title: 'Certificat de traitement', url: '/documents/bobigny/certificat.pdf' },
+  entityType: 'City',
+  metaTitle: 'Épaviste Bobigny (93000) | Enlèvement Épave Gratuit 24h',
+  metaDescription: 'Service gratuit d\'enlèvement d\'épaves à Bobigny (93000). Prise en charge de VHU avec certificat de destruction officiel. Intervention rapide.',
+  relatedServicesSlugs: [
+    'enlevement-epave-parking-souterrain',
+    'enlevement-voiture-en-panne',
+    'enlevement-voiture-sans-carte-grise'
   ],
-  // Délais d’intervention
-  timing: {
-    standard: '48 h à 72 h',
-    urgent: '24 h',
-  },
-  // Types de véhicules pris en charge
-  vehicleTypes: ['Voiture', 'Camion', 'Bateau', '2 roues', 'Véhicules hors d’usage'],
-  // Conseils pratiques
-  tips: [
-    'Déposez l’épave sur le domaine public uniquement avec autorisation.',
-    'Préparez les documents d’identité avant l’intervention.',
+  relatedCitiesSlugs: [
+    'enlevement-epave-seine-saint-denis'
   ],
-  // FAQ locale (exemple générique, à enrichir)
-  faq: [
+  blocks: [
     {
-      question: 'Comment se déroule la collecte d’une épave à ' + cityName + ' ?',
-      answer: 'Nous prenons rendez‑vous, récupérons l’épave, puis nous la transportons vers un centre habilité.',
+      type: 'Hero',
+      title: 'Service d\'enlèvement d\'épave à Bobigny (93000) - Intervention Bobigny',
+      subtitle: 'Retrait gratuit de votre véhicule hors d\'usage à Bobigny (93000). Service professionnel à Bobigny.',
+      badge: 'Bobigny (93000)',
     },
-  ],
-  // CTA
-  cta: {
-    text: 'Demander un devis gratuit',
-    url: '/contact?city=' + slug,
-  },
-  // Maillage interne (exemple de lien vers la page blog locale)
-  internalLinks: [
-    { title: 'Guide du propriétaire à ' + cityName, href: '/blog/guide-' + slug },
-  ],
-  // Métadonnées SEO
-  seo: {
-    title: cityName + ' – Débarrassage d’épaves',
-    description: 'Service d’enlèvement d’épaves à ' + cityName + '. Rapide, gratuit, conforme aux normes.',
-    keywords: cityName + ', enlèvement épave, dépollution, VHU',
-  },
-  // JSON‑LD (schéma LocalBusiness simplifié)
-  jsonLd: {
-    '@context': 'https://schema.org',
-    '@type': 'LocalBusiness',
-    name: 'GH Épaviste – ' + cityName,
-    url: 'https://gh-epaviste.fr/' + slug,
-    address: { addressLocality: 'Bobigny', addressCountry: 'FR' },
-    contactPoint: [{ telephone: '+33 1 23 45 67 89', contactType: 'customer service' }],
-  },
-};
+    {
+      type: 'LocalCoverage',
+      title: 'Couverture d\'intervention sur Bobigny',
+      intro: 'Notre équipe intervient dans toute l\'agglomération de Bobigny pour retirer votre épave gratuitement. Pour un retrait à Bobigny, le professionnel se prépare en fonction des indications reçues. Les habitants du 93000 à Bobigny bénéficient d\'un passage régulier de nos équipes et d\'une prise en charge adaptée à ce secteur. Les axes routiers menant à Bobigny sont régulièrement empruntés par nos équipes.',
+      zones: [
+        { name: 'Zones pavillonnaires', delay: 'Sous 24h', specificities: 'Enlèvement au domicile ou dans votre allée privée.' },
+        { name: 'Centre-ville & Axes principaux', delay: '24h', specificities: 'Retrait d\'épave sur voie publique.' },
+        { name: 'Secteurs d\'activité', delay: 'Sur RDV', specificities: 'Intervention en zone commerciale.' }
+      ],
+    },
+    {
+      type: 'Introduction',
+      title: 'Votre épaviste de confiance à Bobigny',
+      content: 'Votre véhicule immobilisé à Bobigny peut être retiré rapidement par notre équipe. Les rues de Bobigny ne doivent pas servir de dépôt pour un véhicule hors d\'usage. Le service à Bobigny est optimisé pour une intervention rapide en zone urbaine dense. Les modalités logistiques sont ajustées selon les particularités de chaque intervention. Nous adaptons notre logistique à la configuration urbaine de Bobigny.',
+    },
+    {
+      type: 'DocsPreparation',
+      title: 'Pièces à fournir pour l\'enlèvement',
+      intro: 'L\'enlèvement d\'un véhicule hors d\'usage à Bobigny implique une stricte conformité réglementaire. Voici les éléments à préparer. Préparez votre carte grise (originale barrée), un certificat de non-gage datant de moins de 15 jours, et la pièce d\'identité du propriétaire.',
+      specialCase: 'Si vous avez égaré la carte grise, une déclaration de perte effectuée en gendarmerie ou préfecture du département Seine-Saint-Denis sera indispensable.',
+    },
+    {
+      type: 'VhuCompliance',
+      title: 'Traitement réglementaire et recyclage',
+      content: 'La continuité du parcours est assurée par un partenaire spécialisé dans la filière concernée. Les obligations déclaratives sont remplies par les opérateurs compétents de la filière. Les rôles de chacun sont documentés pour garantir la traçabilité du parcours du véhicule.',
+    },
+    {
+      type: 'FaqLocal',
+      title: 'Questions fréquentes sur l\'enlèvement à Bobigny',
+      questions: [
+        { q: 'L\'intervention à Bobigny est-elle soumise à des frais de déplacement ?', a: 'Non, si votre véhicule est complet, l\'enlèvement et le déplacement jusqu\'à Bobigny sont entièrement gratuits.' },
+        { q: 'Délivrez-vous le certificat de destruction immédiatement ?', a: 'Oui, nous vous remettons le certificat de cession pour destruction en main propre le jour de l\'enlèvement.' },
+        { q: 'Mon véhicule est accidenté sur la voie publique, pouvez-vous le retirer ?', a: 'Absolument, nous intervenons sur la voie publique à condition que vous soyez présent avec les documents requis.' },
+        { q: 'Intervenez-vous rapidement en cas de véhicule gênant la circulation à Bobigny ?', a: 'Oui, nous priorisons les situations urgentes en petite couronne. Contactez-nous pour un créneau adapté.' },
+        { q: 'Que se passe-t-il si je n\'ai plus la carte grise de mon véhicule ?', a: 'Une déclaration de perte ou de vol effectuée en préfecture ou gendarmerie suffit. Nous vous guidons dans cette démarche.' },
+        { q: 'Prenez-vous en charge les motos et utilitaires en plus des voitures ?', a: 'Oui, nous enlevons gratuitement tout type de véhicule hors d\'usage : voiture, moto, scooter, camionnette ou utilitaire.' },
+        { q: 'Quel est le délai habituel entre la demande et l\'enlèvement ?', a: 'En général, nous intervenons sous 24 à 48h après confirmation du rendez-vous et vérification des documents.' },
+        { q: 'Le véhicule doit-il être en état de rouler pour être enlevé ?', a: 'Non, nous prenons en charge les véhicules immobilisés, sans roues, sans batterie ou fortement endommagés.' }
+      ],
+    },
+    {
+      type: 'Cta',
+      title: 'Prendre rendez-vous pour votre épave à Bobigny',
+      subtitle: 'Contactez-nous pour planifier l\'enlèvement gratuit et légal de votre véhicule.',
+    }
+  ]
+}

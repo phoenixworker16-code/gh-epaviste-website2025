@@ -16,22 +16,23 @@ export const parisData: PageData = {
   blocks: [
     {
       type: 'Hero',
-      title: 'Épaviste Rapide au Cœur de Paris (75001)',
-      subtitle: 'Prise en charge professionnelle de votre véhicule hors d\'usage avec un rendez-vous adapté à son emplacement.',
+      title: 'Retrait d\'épave professionnel à Paris (75001) pour votre VHU à Paris',
+      subtitle: 'Votre épave à Paris retirée gratuitement. Intervention rapide dans le 75001 à Paris.',
       badge: 'Paris (75001)',
     },
     {
       type: 'Introduction',
       title: 'Votre épaviste de confiance à Paris',
-      content: 'Vous résidez en plein centre de Paris (75001) et votre véhicule est hors d\'usage ? Le stationnement urbain rend la présence d\'une épave particulièrement coûteuse et contraignante. GH Épaviste intervient rapidement pour l\'enlèvement gratuit de votre VHU (voiture, moto, utilitaire). Que ce soit du côté de Allée Paris-Ivry ou ailleurs dans la commune, nous intervenons gratuitement. Votre véhicule est ensuite acheminé vers un centre VHU partenaire pour y être dépollué dans les règles. L’organisation du retrait tient compte de l’emplacement du véhicule, de son état et des conditions d’accès. Le rendez-vous est organisé à partir de la situation du véhicule et des conditions d’accès indiquées. Les détails communiqués en amont servent à organiser le passage dans de bonnes conditions.',
+      content: 'Votre vieille voiture ne démarre plus dans Paris et occupe une place précieuse ? Dans un environnement urbain aussi dense que Paris, une épave est vite repérée. Le service d\'enlèvement gratuit couvre Paris dans son intégralité, du centre aux périphéries. La coordination avec le propriétaire permet de caler le meilleur créneau pour l\'enlèvement. Nous connaissons les particularités de chaque arrondissement pour une intervention ciblée. Le secteur de Allée Paris-Ivry est couvert comme l\'ensemble de la commune.',
     },
     {
       type: 'LocalCoverage',
       title: 'Couverture d\'intervention sur Paris',
-      intro: 'Notre équipe intervient dans l\'ensemble de la commune de Paris pour procéder à l\'enlèvement de votre véhicule. Le rendez-vous est préparé selon le type d’accès indiqué lors de la demande. Les modalités de passage sont précisées avant le déplacement du professionnel. Nos dépanneuses rayonnent également sur les secteurs limitrophes comme Saint-Mandé et Clichy.',
+      intro: 'L\'enlèvement à Paris est organisé sans considération de zone ou de quartier. Les détails d\'accès pour Paris sont examinés avant le départ de l\'équipe. Les demandes pour le 75001 de Paris sont traitées en priorité par notre équipe qui connaît bien ce secteur. Au-delà de Paris, nous intervenons aussi dans les secteurs voisins. C\'est le cas notamment vers Saint-Mandé et Clichy.',
       zones: [
         { name: 'Centre-ville & Rues étroites', delay: 'Sous 24h', specificities: 'Matériel adapté aux accès difficiles et parkings.' },
-        { name: 'Quartiers périphériques', delay: '24h à 48h', specificities: 'Intervention planifiée.' }
+        { name: 'Parkings souterrains', delay: 'Sur RDV', specificities: 'Dépanneuse extra-basse pour sous-sols.' },
+        { name: 'Quartiers périphériques', delay: '24h à 48h', specificities: 'Intervention planifiée sur voie publique.' }
       ],
     },
     {
@@ -42,8 +43,8 @@ export const parisData: PageData = {
     },
     {
       type: 'VhuCompliance',
-      title: 'Dépollution et Recyclage',
-      content: 'La prise en charge prévoit le transfert du véhicule vers un centre VHU partenaire agréé. Les opérations prévues par la réglementation et le recyclage y sont assurés dans les filières adaptées. Le propriétaire conserve ainsi une information claire sur le parcours réglementaire du véhicule.',
+      title: 'Traitement réglementaire et recyclage',
+      content: 'La suite du parcours est confiée à un partenaire habilité à intervenir sur les véhicules en fin de vie. Les formalités réglementaires sont accomplies dans les conditions prévues par la législation. La coordination des acteurs garantit le respect des procédures à chaque étape du parcours.',
     },
     {
       type: 'FaqLocal',
@@ -52,7 +53,11 @@ export const parisData: PageData = {
         { q: 'L\'intervention à Paris est-elle soumise à des frais de déplacement ?', a: 'Non, si votre véhicule est complet, l\'enlèvement et le déplacement jusqu\'à Paris sont entièrement gratuits.' },
         { q: 'Délivrez-vous le certificat de destruction immédiatement ?', a: 'Oui, nous vous remettons le certificat de cession pour destruction en main propre le jour de l\'enlèvement.' },
         { q: 'Mon véhicule est accidenté sur la voie publique, pouvez-vous le retirer ?', a: 'Absolument, nous intervenons sur la voie publique à condition que vous soyez présent avec les documents requis.' },
-        { q: 'Mon véhicule est bloqué en sous-sol à Paris, est-ce un problème ?', a: 'Pas du tout. Nous disposons de dépanneuses 4x4 extra-basses capables d\'entrer dans la majorité des parkings souterrains.' }
+        { q: 'Mon véhicule est bloqué en sous-sol à Paris, est-ce un problème ?', a: 'Pas du tout. Nous disposons de dépanneuses 4x4 extra-basses capables d\'entrer dans la majorité des parkings souterrains.' },
+        { q: 'Que se passe-t-il si je n\'ai plus la carte grise de mon véhicule ?', a: 'Une déclaration de perte ou de vol effectuée en préfecture ou gendarmerie suffit. Nous vous guidons dans cette démarche.' },
+        { q: 'Prenez-vous en charge les motos et utilitaires en plus des voitures ?', a: 'Oui, nous enlevons gratuitement tout type de véhicule hors d\'usage : voiture, moto, scooter, camionnette ou utilitaire.' },
+        { q: 'Quel est le délai habituel entre la demande et l\'enlèvement ?', a: 'En général, nous intervenons sous 24 à 48h après confirmation du rendez-vous et vérification des documents.' },
+        { q: 'Le véhicule doit-il être en état de rouler pour être enlevé ?', a: 'Non, nous prenons en charge les véhicules immobilisés, sans roues, sans batterie ou fortement endommagés.' }
       ],
     },
     {

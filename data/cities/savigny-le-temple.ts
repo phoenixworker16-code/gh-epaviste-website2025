@@ -1,69 +1,69 @@
-/**
- * Données générées automatiquement pour la ville Savigny Le Temple
- * Généré le 2026-07-08T11:45:28.054Z
- */
+import { PageData } from '../types'
 
-const cityName = 'Savigny Le Temple';
-const slug = 'savigny-le-temple';
-export const cityData = {
+export const savignyLeTempleData: PageData = {
   slug: 'savigny-le-temple',
-  name: 'Savigny Le Temple',
-  // Hero
-  hero: {
-    title: 'Savigny Le Temple – Débarrassage d’épaves et enlèvement gratuit',
-    subtitle: 'Service professionnel, rapide et conforme à la réglementation',
-    backgroundImage: '/images/savigny-le-temple/hero.jpg',
-  },
-  // Introduction spécifique
-  introduction: 'Bienvenue à Savigny Le Temple. Nous intervenons dans toute la commune pour l’enlèvement d’épaves, le désamiantage et la dépollution.',
-  // Présentation locale (exemple de situation)
-  localContext: 'Dans Savigny Le Temple, les rues étroites et les zones résidentielles demandent une grande vigilance. Notre équipe connaît les meilleures solutions.',
-  // Documents obligatoires
-  documents: [
-    { title: 'Attestation de destruction', url: '/documents/savigny-le-temple/attestation.pdf' },
-    { title: 'Certificat de traitement', url: '/documents/savigny-le-temple/certificat.pdf' },
+  entityType: 'City',
+  metaTitle: 'Épaviste Savigny-le-Temple (77176) | Enlèvement Épave Gratuit 24h',
+  metaDescription: 'Service gratuit d\'enlèvement d\'épaves à Savigny-le-Temple (77176). Prise en charge de VHU avec certificat de destruction officiel. Intervention rapide.',
+  relatedServicesSlugs: [
+    'enlevement-epave-parking-souterrain',
+    'enlevement-voiture-en-panne',
+    'enlevement-voiture-sans-carte-grise'
   ],
-  // Délais d’intervention
-  timing: {
-    standard: '48 h à 72 h',
-    urgent: '24 h',
-  },
-  // Types de véhicules pris en charge
-  vehicleTypes: ['Voiture', 'Camion', 'Bateau', '2 roues', 'Véhicules hors d’usage'],
-  // Conseils pratiques
-  tips: [
-    'Déposez l’épave sur le domaine public uniquement avec autorisation.',
-    'Préparez les documents d’identité avant l’intervention.',
+  relatedCitiesSlugs: [
+    'enlevement-epave-seine-et-marne'
   ],
-  // FAQ locale (exemple générique, à enrichir)
-  faq: [
+  blocks: [
     {
-      question: 'Comment se déroule la collecte d’une épave à ' + cityName + ' ?',
-      answer: 'Nous prenons rendez‑vous, récupérons l’épave, puis nous la transportons vers un centre habilité.',
+      type: 'Hero',
+      title: 'Débarras d\'épave automobile à Savigny-le-Temple (77176) par épaviste à Savigny-le-Temple',
+      subtitle: 'Débarrassez votre épave à Savigny-le-Temple (77176) sans frais. Notre service couvre tout le secteur de Savigny-le-Temple.',
+      badge: 'Savigny-le-Temple (77176)',
     },
-  ],
-  // CTA
-  cta: {
-    text: 'Demander un devis gratuit',
-    url: '/contact?city=' + slug,
-  },
-  // Maillage interne (exemple de lien vers la page blog locale)
-  internalLinks: [
-    { title: 'Guide du propriétaire à ' + cityName, href: '/blog/guide-' + slug },
-  ],
-  // Métadonnées SEO
-  seo: {
-    title: cityName + ' – Débarrassage d’épaves',
-    description: 'Service d’enlèvement d’épaves à ' + cityName + '. Rapide, gratuit, conforme aux normes.',
-    keywords: cityName + ', enlèvement épave, dépollution, VHU',
-  },
-  // JSON‑LD (schéma LocalBusiness simplifié)
-  jsonLd: {
-    '@context': 'https://schema.org',
-    '@type': 'LocalBusiness',
-    name: 'GH Épaviste – ' + cityName,
-    url: 'https://gh-epaviste.fr/' + slug,
-    address: { addressLocality: 'Savigny Le Temple', addressCountry: 'FR' },
-    contactPoint: [{ telephone: '+33 1 23 45 67 89', contactType: 'customer service' }],
-  },
-};
+    {
+      type: 'Introduction',
+      title: 'Votre épaviste de confiance à Savigny-le-Temple',
+      content: 'À Savigny-le-Temple, notre équipe se déplace jusque dans les hameaux pour retirer les épaves. Dans l\'environnement rural de Savigny-le-Temple, nous intervenons avec discrétion et efficacité. Nous organisons à Savigny-le-Temple des interventions adaptées aux grandes propriétés et aux écarts. La préparation logistique intègre les spécificités de chaque demande d\'enlèvement. Notre connaissance des zones rurales garantit une intervention efficace à Savigny-le-Temple.',
+    },
+    {
+      type: 'DocsPreparation',
+      title: 'Pièces à fournir pour l\'enlèvement',
+      intro: 'Pour procéder au remorquage gratuit depuis Savigny-le-Temple, notre chauffeur aura besoin des documents originaux du véhicule. Préparez votre carte grise (originale barrée), un certificat de non-gage datant de moins de 15 jours, et la pièce d\'identité du propriétaire.',
+      specialCase: 'Si vous avez égaré la carte grise, une déclaration de perte effectuée en gendarmerie ou préfecture du département Seine-et-Marne sera indispensable.',
+    },
+    {
+      type: 'VhuCompliance',
+      title: 'Traitement réglementaire et recyclage',
+      content: 'Après enlèvement, la prise en charge est transmise à un opérateur spécialisé dans la filière automobile. Le partenaire assure les formalités et l\'orientation du véhicule vers les filières réglementaires appropriées. La coordination des acteurs garantit le respect des procédures à chaque étape du parcours.',
+    },
+    {
+      type: 'LocalCoverage',
+      title: 'Couverture d\'intervention sur Savigny-le-Temple',
+      intro: 'Nous nous déplaçons dans tous les secteurs de Savigny-le-Temple pour un enlèvement gratuit. Le dispositif mis en place pour Savigny-le-Temple est adapté à chaque situation particulière. Les demandes pour le 77176 de Savigny-le-Temple sont traitées en priorité par notre équipe qui connaît bien ce secteur. Les routes et chemins autour de Savigny-le-Temple sont parcourus régulièrement par nos véhicules.',
+      zones: [
+        { name: 'Bourg et centre', delay: 'Sous 48h', specificities: 'Intervention programmée avec vous.' },
+        { name: 'Lieux-dits et extérieurs', delay: 'Sur RDV', specificities: 'Accès terrain privé ou chemin rural.' },
+        { name: 'Hameaux et secteurs isolés', delay: '48h', specificities: 'Matériel adapté aux voies non goudronnées.' }
+      ],
+    },
+    {
+      type: 'FaqLocal',
+      title: 'Questions fréquentes sur l\'enlèvement à Savigny-le-Temple',
+      questions: [
+        { q: 'L\'intervention à Savigny-le-Temple est-elle soumise à des frais de déplacement ?', a: 'Non, si votre véhicule est complet, l\'enlèvement et le déplacement jusqu\'à Savigny-le-Temple sont entièrement gratuits.' },
+        { q: 'Délivrez-vous le certificat de destruction immédiatement ?', a: 'Oui, nous vous remettons le certificat de cession pour destruction en main propre le jour de l\'enlèvement.' },
+        { q: 'Mon véhicule est accidenté sur la voie publique, pouvez-vous le retirer ?', a: 'Absolument, nous intervenons sur la voie publique à condition que vous soyez présent avec les documents requis.' },
+        { q: 'Venez-vous chercher une épave dans un champ ou un terrain difficile ?', a: 'Oui, nous sommes équipés de treuils puissants permettant d\'extraire des véhicules enlisés ou sur des terrains non goudronnés.' },
+        { q: 'Que se passe-t-il si je n\'ai plus la carte grise de mon véhicule ?', a: 'Une déclaration de perte ou de vol effectuée en préfecture ou gendarmerie suffit. Nous vous guidons dans cette démarche.' },
+        { q: 'Prenez-vous en charge les motos et utilitaires en plus des voitures ?', a: 'Oui, nous enlevons gratuitement tout type de véhicule hors d\'usage : voiture, moto, scooter, camionnette ou utilitaire.' },
+        { q: 'Quel est le délai habituel entre la demande et l\'enlèvement ?', a: 'En général, nous intervenons sous 24 à 48h après confirmation du rendez-vous et vérification des documents.' },
+        { q: 'Le véhicule doit-il être en état de rouler pour être enlevé ?', a: 'Non, nous prenons en charge les véhicules immobilisés, sans roues, sans batterie ou fortement endommagés.' }
+      ],
+    },
+    {
+      type: 'Cta',
+      title: 'Prendre rendez-vous pour votre épave à Savigny-le-Temple',
+      subtitle: 'Contactez-nous pour planifier l\'enlèvement gratuit et légal de votre véhicule.',
+    }
+  ]
+}

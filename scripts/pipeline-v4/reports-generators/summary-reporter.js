@@ -13,11 +13,13 @@ function runSummaryReport(batchName, generatedPages, duration, reportsDir) {
   const totalPages = generatedPages.length;
 
   // Similarity stats (values already in percentage 0-100)
-  let simMax = 0, simSum = 0, simPass = 0, simFail = 0;
+  let simMax = 0, simSum = 0, simPass = 0, simWarn = 0, simFail = 0;
   simReport.pairs.forEach(p => {
     if (p.similarity > simMax) simMax = p.similarity;
     simSum += p.similarity;
-    if (p.status === 'PASS') simPass++; else simFail++;
+    if (p.status === 'PASS') simPass++;
+    else if (p.status === 'WARNING') simWarn++;
+    else simFail++;
   });
   const simAvg = simReport.pairs.length > 0 ? (simSum / simReport.pairs.length).toFixed(1) : 0;
   const simMaxPct = simMax.toFixed(1);
@@ -52,7 +54,7 @@ function runSummaryReport(batchName, generatedPages, duration, reportsDir) {
   markdown += `| Temps moyen | ${avgDuration} s |\n\n`;
 
   markdown += `## Détail Similarité\n`;
-  markdown += `- ${simPass} PASS / ${simFail} FAIL\n\n`;
+  markdown += `- ${simPass} PASS / ${simWarn} WARNING / ${simFail} FAIL\n\n`;
 
   markdown += `## Metadata Uniqueness\n`;
   markdown += `- ${metaReport.status === 'PASS' ? `${totalPages} PASS` : `FAIL (${metaReport.duplicates.length} duplicates)`}\n\n`;

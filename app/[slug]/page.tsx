@@ -4,19 +4,79 @@ import { notFound } from 'next/navigation';
 import { PageBuilder } from '@/components/blocks/PageBuilder';
 import { InternalLinking } from '@/components/internal-linking';
 import BreadcrumbJsonLd from '@/components/breadcrumb-jsonld';
-import { MAJOR_CITY_SLUGS } from '@/data/major-cities';
+import { MAJOR_CITY_SLUGS, isMajorCity } from '@/data/major-cities';
 
-// Helper to get city data dynamically
+// Liste exhaustive des slugs de ville générés — utilisée pour generateStaticParams
+// et pour valider les slugs entrants (prévention d'attaques par import dynamique)
+// Générée à partir du fichier batch phase4-2-batch1 + manuellement validée
+const VALID_CITY_SLUGS = new Set<string>([
+  "alfortville","antony","argenteuil","arpajon","asnieres-sur-seine","athis-mons",
+  "aubervilliers","aulnay-sous-bois","bagnolet","bezons","bobigny","boissy-saint-leger",
+  "bondy","boulogne-billancourt","brie-comte-robert","cergy","champigny-sur-marne",
+  "charenton-le-pont","chatenay-malabry","chatou","chelles","choisy-le-roi","clamart",
+  "clichy-sous-bois","clichy","colombes","conflans-sainte-honorine","corbeil-essonnes",
+  "coubron","coulommiers","courbevoie","creteil","drancy","draveil","dugny",
+  "enghien-les-bains","epinay-sur-seine","eragny-sur-oise","ermont","etampes",
+  "evry-courcouronnes","fontainebleau","fontenay-sous-bois","gagny","garches",
+  "garges-les-gonesse","gif-sur-yvette","gonesse","gournay-sur-marne","guyancourt",
+  "herblay-sur-seine","houilles","issy-les-moulineaux","ivry-sur-seine",
+  "joinville-le-pont","juvisy-sur-orge","la-courneuve","le-blanc-mesnil","le-bourget",
+  "le-pre-saint-gervais","le-raincy","le-vesinet","les-lilas","les-pavillons-sous-bois",
+  "les-ulis","levallois-perret","lile-saint-denis","livry-gargan","lognes","longjumeau",
+  "maisons-alfort","maisons-laffitte","mantes-la-jolie","marines","massy","meaux",
+  "melun","moissy-cramayel","montereau-fault-yonne","montfermeil",
+  "montigny-le-bretonneux","montmorency","montreuil","montrouge","nanterre",
+  "neuilly-plaisance","neuilly-sur-marne","nogent-sur-marne","noisiel","noisy-le-grand",
+  "noisy-le-sec","ozoir-la-ferriere","palaiseau","pantin","paris","poissy",
+  "pontault-combault","pontoise","provins","rambouillet","ris-orangis","romainville",
+  "rosny-sous-bois","rueil-malmaison","saint-denis","saint-germain-en-laye",
+  "saint-maur-des-fosses","saint-ouen-laumone","saint-ouen-sur-seine",
+  "sainte-genevieve-des-bois","sarcelles","sartrouville","savigny-le-temple","sceaux",
+  "sevran","stains","taverny","torcy","trappes","tremblay-en-france","vaujours",
+  "velizy-villacoublay","versailles","villemomble","villeneuve-saint-georges",
+  "villepinte","villetaneuse","vincennes","viry-chatillon","vitry-sur-seine"
+]);
+
+// Cache par requête pour éviter les doubles imports (generateMetadata + page component)
+const cityDataCache = new Map<string, any>();
+
+// Valide que le slug est un slug de ville connu avec le bon préfixe
+function validateSlug(slug: string): { valid: boolean; citySlug: string } {
+  if (!slug.startsWith('epaviste-gratuit-')) {
+    return { valid: false, citySlug: '' };
+  }
+  const citySlug = slug.slice('epaviste-gratuit-'.length);
+  if (!citySlug || !VALID_CITY_SLUGS.has(citySlug)) {
+    return { valid: false, citySlug };
+  }
+  return { valid: true, citySlug };
+}
+
+// Helper to get city data with caching per request
 async function getCityData(slug: string) {
-  const citySlug = slug.replace('epaviste-gratuit-', '');
+  const { valid, citySlug } = validateSlug(slug);
+  if (!valid) return null;
+
+  // Cache check pour éviter double import (generateMetadata + page component)
+  const cacheKey = citySlug;
+  if (cityDataCache.has(cacheKey)) {
+    return cityDataCache.get(cacheKey)!;
+  }
   
   try {
     const cityModule = await import(`@/data/cities/${citySlug}`);
-    // Support the manually created format (e.g. montreuilData) or the generated format (cityData)
-    const rawData = cityModule.cityData || cityModule[`${citySlug.replace(/-([a-z])/g, (g: string) => g[1].toUpperCase())}Data`] || Object.values(cityModule)[0] as any;
+    // Support deterministe : on utilise un nom de variable construit depuis le slug
+    // Les fichiers générés par le pipeline utilisent le format camelCase + "Data"
+    const camelSlug = citySlug.replace(/-([a-z])/g, (g: string) => g[1].toUpperCase());
+    const expectedKey = `${camelSlug}Data`;
+    
+    // Ordre de résolution déterministe :
+    // 1. format pipeline-v4 (ex: alfortvilleData)
+    // 2. format legacy cityData
+    const rawData = cityModule[expectedKey] || cityModule.cityData || null;
     
     if (!rawData) {
-      console.log(`[getCityData] rawData is falsy for ${citySlug}`, cityModule);
+      console.log(`[getCityData] No data found for ${citySlug} (expected ${expectedKey})`);
       return null;
     }
     
@@ -60,7 +120,7 @@ async function getCityData(slug: string) {
           subtitle: "Contactez-nous pour un retrait gratuit."
         });
       }
-      return {
+      const result = {
         ...rawData,
         metaTitle: rawData.seo?.title || rawData.hero?.title,
         metaDescription: rawData.seo?.description || rawData.introduction,
@@ -68,13 +128,23 @@ async function getCityData(slug: string) {
         relatedServicesSlugs: [],
         relatedCitiesSlugs: []
       };
+      cityDataCache.set(cacheKey, result);
+      return result;
     }
     
+    cityDataCache.set(cacheKey, rawData);
     return rawData;
   } catch (error) {
     console.log(`[getCityData] import failed for ${citySlug}:`, error);
     return null;
   }
+}
+
+// SSG : liste des slugs à pré-générer
+export async function generateStaticParams() {
+  return Array.from(VALID_CITY_SLUGS).map((citySlug) => ({
+    slug: `epaviste-gratuit-${citySlug}`,
+  }));
 }
 
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {

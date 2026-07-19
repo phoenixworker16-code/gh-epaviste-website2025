@@ -1,16 +1,1469 @@
 {
-  "timestamp": "2026-07-15T17:55:32.005Z",
-  "score": 100,
+  "timestamp": "2026-07-16T18:52:33.559Z",
+  "score": 0,
   "verdict": "PASS",
   "summary": {
     "info": 0,
-    "warning": 0,
+    "warning": 79,
     "error": 0,
-    "allowlistMatches": 1
+    "allowlistMatches": 16
   },
   "files": [
     {
+      "file": "alfortville.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "antony.ts",
+      "allowlistMatches": 1,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "argenteuil.ts",
+      "allowlistMatches": 1,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "arpajon.ts",
+      "allowlistMatches": 0,
+      "score": 95,
+      "violations": [
+        {
+          "rule": "R14",
+          "category": "GENERIQUE",
+          "level": "WARNING",
+          "line": 26,
+          "extract": "content: 'Situé à Arpajon, votre véhicule hors d\\'usage encombre votre terrain ou votre cour ? Dans ",
+          "reason": "Formulation générique interdite"
+        }
+      ]
+    },
+    {
+      "file": "asnieres-sur-seine.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "athis-mons.ts",
+      "allowlistMatches": 0,
+      "score": 95,
+      "violations": [
+        {
+          "rule": "R12",
+          "category": "SEO",
+          "level": "WARNING",
+          "line": 42,
+          "extract": "intro: 'À Athis-Mons, notre dispositif d\\'intervention permet de couvrir toute la commune efficaceme",
+          "reason": "Aucune valeur SEO"
+        }
+      ]
+    },
+    {
+      "file": "aubervilliers.ts",
+      "allowlistMatches": 0,
+      "score": 95,
+      "violations": [
+        {
+          "rule": "R15",
+          "category": "GENERIQUE",
+          "level": "WARNING",
+          "line": 36,
+          "extract": "content: 'Votre voiture ne roule plus à Aubervilliers et vous voulez une intervention rapide ? Nous ",
+          "reason": "Formulation générique interdite"
+        }
+      ]
+    },
+    {
+      "file": "aulnay-sous-bois.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "bagnolet.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "bezons.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "bobigny.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "boissy-saint-leger.ts",
+      "allowlistMatches": 0,
+      "score": 95,
+      "violations": [
+        {
+          "rule": "R15",
+          "category": "GENERIQUE",
+          "level": "WARNING",
+          "line": 36,
+          "extract": "content: 'La densité de circulation à Boissy-Saint-Léger exige une solution professionnelle pour l\\'",
+          "reason": "Formulation générique interdite"
+        }
+      ]
+    },
+    {
+      "file": "bondy.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "boulogne-billancourt.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "brie-comte-robert.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
       "file": "cergy.ts",
+      "allowlistMatches": 1,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "champigny-sur-marne.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "charenton-le-pont.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "chatenay-malabry.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "chatou.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "chelles.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "choisy-le-roi.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "clamart.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "clichy-sous-bois.ts",
+      "allowlistMatches": 0,
+      "score": 90,
+      "violations": [
+        {
+          "rule": "R11",
+          "category": "GENERIQUE",
+          "level": "WARNING",
+          "line": 18,
+          "extract": "introduction: 'Bienvenue à Clichy Sous Bois. Nous intervenons dans toute la commune pour l’enlèvemen",
+          "reason": "Formulation générique interdite"
+        },
+        {
+          "rule": "R12",
+          "category": "SEO",
+          "level": "WARNING",
+          "line": 18,
+          "extract": "introduction: 'Bienvenue à Clichy Sous Bois. Nous intervenons dans toute la commune pour l’enlèvemen",
+          "reason": "Aucune valeur SEO"
+        }
+      ]
+    },
+    {
+      "file": "clichy.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "colombes.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "conflans-sainte-honorine.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "corbeil-essonnes.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "coubron.ts",
+      "allowlistMatches": 0,
+      "score": 90,
+      "violations": [
+        {
+          "rule": "R11",
+          "category": "GENERIQUE",
+          "level": "WARNING",
+          "line": 18,
+          "extract": "introduction: 'Bienvenue à Coubron. Nous intervenons dans toute la commune pour l’enlèvement d’épave",
+          "reason": "Formulation générique interdite"
+        },
+        {
+          "rule": "R12",
+          "category": "SEO",
+          "level": "WARNING",
+          "line": 18,
+          "extract": "introduction: 'Bienvenue à Coubron. Nous intervenons dans toute la commune pour l’enlèvement d’épave",
+          "reason": "Aucune valeur SEO"
+        }
+      ]
+    },
+    {
+      "file": "coulommiers.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "courbevoie.ts",
+      "allowlistMatches": 1,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "creteil.ts",
+      "allowlistMatches": 1,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "drancy.ts",
+      "allowlistMatches": 1,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "draveil.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "dugny.ts",
+      "allowlistMatches": 0,
+      "score": 90,
+      "violations": [
+        {
+          "rule": "R11",
+          "category": "GENERIQUE",
+          "level": "WARNING",
+          "line": 18,
+          "extract": "introduction: 'Bienvenue à Dugny. Nous intervenons dans toute la commune pour l’enlèvement d’épaves,",
+          "reason": "Formulation générique interdite"
+        },
+        {
+          "rule": "R12",
+          "category": "SEO",
+          "level": "WARNING",
+          "line": 18,
+          "extract": "introduction: 'Bienvenue à Dugny. Nous intervenons dans toute la commune pour l’enlèvement d’épaves,",
+          "reason": "Aucune valeur SEO"
+        }
+      ]
+    },
+    {
+      "file": "enghien-les-bains.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "epinay-sur-seine.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "eragny-sur-oise.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "ermont.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "etampes.ts",
+      "allowlistMatches": 0,
+      "score": 95,
+      "violations": [
+        {
+          "rule": "R13",
+          "category": "GENERIQUE",
+          "level": "WARNING",
+          "line": 42,
+          "extract": "intro: 'Aucun quartier de Étampes n\\'est exclu : nous intervenons partout dans la commune. Chaque en",
+          "reason": "Formulation générique interdite"
+        }
+      ]
+    },
+    {
+      "file": "evry-courcouronnes.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "fontainebleau.ts",
+      "allowlistMatches": 1,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "fontenay-sous-bois.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "gagny.ts",
+      "allowlistMatches": 0,
+      "score": 90,
+      "violations": [
+        {
+          "rule": "R11",
+          "category": "GENERIQUE",
+          "level": "WARNING",
+          "line": 18,
+          "extract": "introduction: 'Bienvenue à Gagny. Nous intervenons dans toute la commune pour l’enlèvement d’épaves,",
+          "reason": "Formulation générique interdite"
+        },
+        {
+          "rule": "R12",
+          "category": "SEO",
+          "level": "WARNING",
+          "line": 18,
+          "extract": "introduction: 'Bienvenue à Gagny. Nous intervenons dans toute la commune pour l’enlèvement d’épaves,",
+          "reason": "Aucune valeur SEO"
+        }
+      ]
+    },
+    {
+      "file": "garches.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "garges-les-gonesse.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "gif-sur-yvette.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "gonesse.ts",
+      "allowlistMatches": 0,
+      "score": 95,
+      "violations": [
+        {
+          "rule": "R12",
+          "category": "SEO",
+          "level": "WARNING",
+          "line": 42,
+          "extract": "intro: 'À Gonesse, notre dispositif d\\'intervention permet de couvrir toute la commune efficacement.",
+          "reason": "Aucune valeur SEO"
+        }
+      ]
+    },
+    {
+      "file": "gournay-sur-marne.ts",
+      "allowlistMatches": 0,
+      "score": 90,
+      "violations": [
+        {
+          "rule": "R11",
+          "category": "GENERIQUE",
+          "level": "WARNING",
+          "line": 18,
+          "extract": "introduction: 'Bienvenue à Gournay Sur Marne. Nous intervenons dans toute la commune pour l’enlèveme",
+          "reason": "Formulation générique interdite"
+        },
+        {
+          "rule": "R12",
+          "category": "SEO",
+          "level": "WARNING",
+          "line": 18,
+          "extract": "introduction: 'Bienvenue à Gournay Sur Marne. Nous intervenons dans toute la commune pour l’enlèveme",
+          "reason": "Aucune valeur SEO"
+        }
+      ]
+    },
+    {
+      "file": "guyancourt.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "herblay-sur-seine.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "houilles.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "issy-les-moulineaux.ts",
+      "allowlistMatches": 1,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "ivry-sur-seine.ts",
+      "allowlistMatches": 1,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "joinville-le-pont.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "juvisy-sur-orge.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "la-courneuve.ts",
+      "allowlistMatches": 0,
+      "score": 95,
+      "violations": [
+        {
+          "rule": "R15",
+          "category": "GENERIQUE",
+          "level": "WARNING",
+          "line": 36,
+          "extract": "content: 'Votre véhicule est immobilisé à La Courneuve et vous cherchez un enlèvement gratuit et fia",
+          "reason": "Formulation générique interdite"
+        }
+      ]
+    },
+    {
+      "file": "le-blanc-mesnil.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "le-bourget.ts",
+      "allowlistMatches": 0,
+      "score": 90,
+      "violations": [
+        {
+          "rule": "R11",
+          "category": "GENERIQUE",
+          "level": "WARNING",
+          "line": 18,
+          "extract": "introduction: 'Bienvenue à Le Bourget. Nous intervenons dans toute la commune pour l’enlèvement d’ép",
+          "reason": "Formulation générique interdite"
+        },
+        {
+          "rule": "R12",
+          "category": "SEO",
+          "level": "WARNING",
+          "line": 18,
+          "extract": "introduction: 'Bienvenue à Le Bourget. Nous intervenons dans toute la commune pour l’enlèvement d’ép",
+          "reason": "Aucune valeur SEO"
+        }
+      ]
+    },
+    {
+      "file": "le-pre-saint-gervais.ts",
+      "allowlistMatches": 0,
+      "score": 90,
+      "violations": [
+        {
+          "rule": "R11",
+          "category": "GENERIQUE",
+          "level": "WARNING",
+          "line": 18,
+          "extract": "introduction: 'Bienvenue à Le Pre Saint Gervais. Nous intervenons dans toute la commune pour l’enlèv",
+          "reason": "Formulation générique interdite"
+        },
+        {
+          "rule": "R12",
+          "category": "SEO",
+          "level": "WARNING",
+          "line": 18,
+          "extract": "introduction: 'Bienvenue à Le Pre Saint Gervais. Nous intervenons dans toute la commune pour l’enlèv",
+          "reason": "Aucune valeur SEO"
+        }
+      ]
+    },
+    {
+      "file": "le-raincy.ts",
+      "allowlistMatches": 0,
+      "score": 90,
+      "violations": [
+        {
+          "rule": "R11",
+          "category": "GENERIQUE",
+          "level": "WARNING",
+          "line": 18,
+          "extract": "introduction: 'Bienvenue à Le Raincy. Nous intervenons dans toute la commune pour l’enlèvement d’épa",
+          "reason": "Formulation générique interdite"
+        },
+        {
+          "rule": "R12",
+          "category": "SEO",
+          "level": "WARNING",
+          "line": 18,
+          "extract": "introduction: 'Bienvenue à Le Raincy. Nous intervenons dans toute la commune pour l’enlèvement d’épa",
+          "reason": "Aucune valeur SEO"
+        }
+      ]
+    },
+    {
+      "file": "le-vesinet.ts",
+      "allowlistMatches": 0,
+      "score": 90,
+      "violations": [
+        {
+          "rule": "R11",
+          "category": "GENERIQUE",
+          "level": "WARNING",
+          "line": 18,
+          "extract": "introduction: 'Bienvenue à Le Vesinet. Nous intervenons dans toute la commune pour l’enlèvement d’ép",
+          "reason": "Formulation générique interdite"
+        },
+        {
+          "rule": "R12",
+          "category": "SEO",
+          "level": "WARNING",
+          "line": 18,
+          "extract": "introduction: 'Bienvenue à Le Vesinet. Nous intervenons dans toute la commune pour l’enlèvement d’ép",
+          "reason": "Aucune valeur SEO"
+        }
+      ]
+    },
+    {
+      "file": "les-lilas.ts",
+      "allowlistMatches": 0,
+      "score": 90,
+      "violations": [
+        {
+          "rule": "R11",
+          "category": "GENERIQUE",
+          "level": "WARNING",
+          "line": 18,
+          "extract": "introduction: 'Bienvenue à Les Lilas. Nous intervenons dans toute la commune pour l’enlèvement d’épa",
+          "reason": "Formulation générique interdite"
+        },
+        {
+          "rule": "R12",
+          "category": "SEO",
+          "level": "WARNING",
+          "line": 18,
+          "extract": "introduction: 'Bienvenue à Les Lilas. Nous intervenons dans toute la commune pour l’enlèvement d’épa",
+          "reason": "Aucune valeur SEO"
+        }
+      ]
+    },
+    {
+      "file": "les-pavillons-sous-bois.ts",
+      "allowlistMatches": 0,
+      "score": 90,
+      "violations": [
+        {
+          "rule": "R11",
+          "category": "GENERIQUE",
+          "level": "WARNING",
+          "line": 18,
+          "extract": "introduction: 'Bienvenue à Les Pavillons Sous Bois. Nous intervenons dans toute la commune pour l’en",
+          "reason": "Formulation générique interdite"
+        },
+        {
+          "rule": "R12",
+          "category": "SEO",
+          "level": "WARNING",
+          "line": 18,
+          "extract": "introduction: 'Bienvenue à Les Pavillons Sous Bois. Nous intervenons dans toute la commune pour l’en",
+          "reason": "Aucune valeur SEO"
+        }
+      ]
+    },
+    {
+      "file": "les-ulis.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "levallois-perret.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "lile-saint-denis.ts",
+      "allowlistMatches": 0,
+      "score": 90,
+      "violations": [
+        {
+          "rule": "R11",
+          "category": "GENERIQUE",
+          "level": "WARNING",
+          "line": 18,
+          "extract": "introduction: 'Bienvenue à Lile Saint Denis. Nous intervenons dans toute la commune pour l’enlèvemen",
+          "reason": "Formulation générique interdite"
+        },
+        {
+          "rule": "R12",
+          "category": "SEO",
+          "level": "WARNING",
+          "line": 18,
+          "extract": "introduction: 'Bienvenue à Lile Saint Denis. Nous intervenons dans toute la commune pour l’enlèvemen",
+          "reason": "Aucune valeur SEO"
+        }
+      ]
+    },
+    {
+      "file": "livry-gargan.ts",
+      "allowlistMatches": 0,
+      "score": 90,
+      "violations": [
+        {
+          "rule": "R11",
+          "category": "GENERIQUE",
+          "level": "WARNING",
+          "line": 18,
+          "extract": "introduction: 'Bienvenue à Livry Gargan. Nous intervenons dans toute la commune pour l’enlèvement d’",
+          "reason": "Formulation générique interdite"
+        },
+        {
+          "rule": "R12",
+          "category": "SEO",
+          "level": "WARNING",
+          "line": 18,
+          "extract": "introduction: 'Bienvenue à Livry Gargan. Nous intervenons dans toute la commune pour l’enlèvement d’",
+          "reason": "Aucune valeur SEO"
+        }
+      ]
+    },
+    {
+      "file": "lognes.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "longjumeau.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "maisons-alfort.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "maisons-laffitte.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "mantes-la-jolie.ts",
+      "allowlistMatches": 0,
+      "score": 95,
+      "violations": [
+        {
+          "rule": "R13",
+          "category": "GENERIQUE",
+          "level": "WARNING",
+          "line": 42,
+          "extract": "intro: 'Aucun quartier de Mantes-la-Jolie n\\'est exclu : nous intervenons partout dans la commune. L",
+          "reason": "Formulation générique interdite"
+        }
+      ]
+    },
+    {
+      "file": "marines.ts",
+      "allowlistMatches": 0,
+      "score": 90,
+      "violations": [
+        {
+          "rule": "R11",
+          "category": "GENERIQUE",
+          "level": "WARNING",
+          "line": 18,
+          "extract": "introduction: 'Bienvenue à Marines. Nous intervenons dans toute la commune pour l’enlèvement d’épave",
+          "reason": "Formulation générique interdite"
+        },
+        {
+          "rule": "R12",
+          "category": "SEO",
+          "level": "WARNING",
+          "line": 18,
+          "extract": "introduction: 'Bienvenue à Marines. Nous intervenons dans toute la commune pour l’enlèvement d’épave",
+          "reason": "Aucune valeur SEO"
+        }
+      ]
+    },
+    {
+      "file": "massy.ts",
+      "allowlistMatches": 1,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "meaux.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "melun.ts",
+      "allowlistMatches": 1,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "moissy-cramayel.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "montereau-fault-yonne.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "montfermeil.ts",
+      "allowlistMatches": 0,
+      "score": 90,
+      "violations": [
+        {
+          "rule": "R11",
+          "category": "GENERIQUE",
+          "level": "WARNING",
+          "line": 18,
+          "extract": "introduction: 'Bienvenue à Montfermeil. Nous intervenons dans toute la commune pour l’enlèvement d’é",
+          "reason": "Formulation générique interdite"
+        },
+        {
+          "rule": "R12",
+          "category": "SEO",
+          "level": "WARNING",
+          "line": 18,
+          "extract": "introduction: 'Bienvenue à Montfermeil. Nous intervenons dans toute la commune pour l’enlèvement d’é",
+          "reason": "Aucune valeur SEO"
+        }
+      ]
+    },
+    {
+      "file": "montigny-le-bretonneux.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "montmorency.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "montreuil.ts",
+      "allowlistMatches": 0,
+      "score": 95,
+      "violations": [
+        {
+          "rule": "R12",
+          "category": "SEO",
+          "level": "WARNING",
+          "line": 26,
+          "extract": "intro: 'Pour les habitants de Montreuil, l\\'enlèvement d\\'épave est gratuit dans toute la commune. U",
+          "reason": "Aucune valeur SEO"
+        }
+      ]
+    },
+    {
+      "file": "montrouge.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "nanterre.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "neuilly-plaisance.ts",
+      "allowlistMatches": 0,
+      "score": 90,
+      "violations": [
+        {
+          "rule": "R11",
+          "category": "GENERIQUE",
+          "level": "WARNING",
+          "line": 18,
+          "extract": "introduction: 'Bienvenue à Neuilly Plaisance. Nous intervenons dans toute la commune pour l’enlèveme",
+          "reason": "Formulation générique interdite"
+        },
+        {
+          "rule": "R12",
+          "category": "SEO",
+          "level": "WARNING",
+          "line": 18,
+          "extract": "introduction: 'Bienvenue à Neuilly Plaisance. Nous intervenons dans toute la commune pour l’enlèveme",
+          "reason": "Aucune valeur SEO"
+        }
+      ]
+    },
+    {
+      "file": "neuilly-sur-marne.ts",
+      "allowlistMatches": 0,
+      "score": 90,
+      "violations": [
+        {
+          "rule": "R11",
+          "category": "GENERIQUE",
+          "level": "WARNING",
+          "line": 18,
+          "extract": "introduction: 'Bienvenue à Neuilly Sur Marne. Nous intervenons dans toute la commune pour l’enlèveme",
+          "reason": "Formulation générique interdite"
+        },
+        {
+          "rule": "R12",
+          "category": "SEO",
+          "level": "WARNING",
+          "line": 18,
+          "extract": "introduction: 'Bienvenue à Neuilly Sur Marne. Nous intervenons dans toute la commune pour l’enlèveme",
+          "reason": "Aucune valeur SEO"
+        }
+      ]
+    },
+    {
+      "file": "nogent-sur-marne.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "noisiel.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "noisy-le-grand.ts",
+      "allowlistMatches": 0,
+      "score": 90,
+      "violations": [
+        {
+          "rule": "R12",
+          "category": "SEO",
+          "level": "WARNING",
+          "line": 26,
+          "extract": "intro: 'À Noisy-le-Grand, notre dispositif d\\'intervention permet de couvrir toute la commune effica",
+          "reason": "Aucune valeur SEO"
+        },
+        {
+          "rule": "R12",
+          "category": "SEO",
+          "level": "WARNING",
+          "line": 36,
+          "extract": "content: 'Une épave à Noisy-le-Grand attire les regards et les remarques : solutionnez cela gratuite",
+          "reason": "Aucune valeur SEO"
+        }
+      ]
+    },
+    {
+      "file": "noisy-le-sec.ts",
+      "allowlistMatches": 0,
+      "score": 90,
+      "violations": [
+        {
+          "rule": "R11",
+          "category": "GENERIQUE",
+          "level": "WARNING",
+          "line": 18,
+          "extract": "introduction: 'Bienvenue à Noisy Le Sec. Nous intervenons dans toute la commune pour l’enlèvement d’",
+          "reason": "Formulation générique interdite"
+        },
+        {
+          "rule": "R12",
+          "category": "SEO",
+          "level": "WARNING",
+          "line": 18,
+          "extract": "introduction: 'Bienvenue à Noisy Le Sec. Nous intervenons dans toute la commune pour l’enlèvement d’",
+          "reason": "Aucune valeur SEO"
+        }
+      ]
+    },
+    {
+      "file": "ozoir-la-ferriere.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "palaiseau.ts",
+      "allowlistMatches": 0,
+      "score": 95,
+      "violations": [
+        {
+          "rule": "R14",
+          "category": "GENERIQUE",
+          "level": "WARNING",
+          "line": 26,
+          "extract": "content: 'Un véhicule hors d\\'usage oublié dans votre propriété à Palaiseau peut être retiré sans fr",
+          "reason": "Formulation générique interdite"
+        }
+      ]
+    },
+    {
+      "file": "pantin.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "paris.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "poissy.ts",
+      "allowlistMatches": 1,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "pontault-combault.ts",
+      "allowlistMatches": 0,
+      "score": 95,
+      "violations": [
+        {
+          "rule": "R12",
+          "category": "SEO",
+          "level": "WARNING",
+          "line": 42,
+          "extract": "intro: 'Les propriétaires à Pontault-Combault peuvent compter sur notre service dans toute la commun",
+          "reason": "Aucune valeur SEO"
+        }
+      ]
+    },
+    {
+      "file": "pontoise.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "provins.ts",
+      "allowlistMatches": 0,
+      "score": 95,
+      "violations": [
+        {
+          "rule": "R12",
+          "category": "SEO",
+          "level": "WARNING",
+          "line": 42,
+          "extract": "intro: 'Les propriétaires à Provins peuvent compter sur notre service dans toute la commune. Pour un",
+          "reason": "Aucune valeur SEO"
+        }
+      ]
+    },
+    {
+      "file": "rambouillet.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "ris-orangis.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "romainville.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "rosny-sous-bois.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "rueil-malmaison.ts",
+      "allowlistMatches": 0,
+      "score": 95,
+      "violations": [
+        {
+          "rule": "R12",
+          "category": "SEO",
+          "level": "WARNING",
+          "line": 36,
+          "extract": "content: 'La densité de circulation à Rueil-Malmaison exige une solution professionnelle pour l\\'enl",
+          "reason": "Aucune valeur SEO"
+        }
+      ]
+    },
+    {
+      "file": "saint-denis.ts",
+      "allowlistMatches": 1,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "saint-germain-en-laye.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "saint-maur-des-fosses.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "saint-ouen-laumone.ts",
+      "allowlistMatches": 0,
+      "score": 95,
+      "violations": [
+        {
+          "rule": "R12",
+          "category": "SEO",
+          "level": "WARNING",
+          "line": 42,
+          "extract": "intro: 'À Saint-Ouen-l\\'Aumône, notre dispositif d\\'intervention permet de couvrir toute la commune ",
+          "reason": "Aucune valeur SEO"
+        }
+      ]
+    },
+    {
+      "file": "saint-ouen-sur-seine.ts",
+      "allowlistMatches": 0,
+      "score": 90,
+      "violations": [
+        {
+          "rule": "R11",
+          "category": "GENERIQUE",
+          "level": "WARNING",
+          "line": 18,
+          "extract": "introduction: 'Bienvenue à Saint Ouen Sur Seine. Nous intervenons dans toute la commune pour l’enlèv",
+          "reason": "Formulation générique interdite"
+        },
+        {
+          "rule": "R12",
+          "category": "SEO",
+          "level": "WARNING",
+          "line": 18,
+          "extract": "introduction: 'Bienvenue à Saint Ouen Sur Seine. Nous intervenons dans toute la commune pour l’enlèv",
+          "reason": "Aucune valeur SEO"
+        }
+      ]
+    },
+    {
+      "file": "sainte-genevieve-des-bois.ts",
+      "allowlistMatches": 0,
+      "score": 90,
+      "violations": [
+        {
+          "rule": "R11",
+          "category": "GENERIQUE",
+          "level": "WARNING",
+          "line": 18,
+          "extract": "introduction: 'Bienvenue à Sainte Genevieve Des Bois. Nous intervenons dans toute la commune pour l’",
+          "reason": "Formulation générique interdite"
+        },
+        {
+          "rule": "R12",
+          "category": "SEO",
+          "level": "WARNING",
+          "line": 18,
+          "extract": "introduction: 'Bienvenue à Sainte Genevieve Des Bois. Nous intervenons dans toute la commune pour l’",
+          "reason": "Aucune valeur SEO"
+        }
+      ]
+    },
+    {
+      "file": "sarcelles.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "sartrouville.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "savigny-le-temple.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "sceaux.ts",
+      "allowlistMatches": 0,
+      "score": 95,
+      "violations": [
+        {
+          "rule": "R12",
+          "category": "SEO",
+          "level": "WARNING",
+          "line": 26,
+          "extract": "intro: 'Pour les habitants de Sceaux, l\\'enlèvement d\\'épave est gratuit dans toute la commune. Un c",
+          "reason": "Aucune valeur SEO"
+        }
+      ]
+    },
+    {
+      "file": "sevran.ts",
+      "allowlistMatches": 0,
+      "score": 90,
+      "violations": [
+        {
+          "rule": "R12",
+          "category": "SEO",
+          "level": "WARNING",
+          "line": 36,
+          "extract": "content: 'Vous avez un véhicule hors d\\'usage dans une rue de Sevran et vous voulez agir vite ? À Se",
+          "reason": "Aucune valeur SEO"
+        },
+        {
+          "rule": "R15",
+          "category": "GENERIQUE",
+          "level": "WARNING",
+          "line": 36,
+          "extract": "content: 'Vous avez un véhicule hors d\\'usage dans une rue de Sevran et vous voulez agir vite ? À Se",
+          "reason": "Formulation générique interdite"
+        }
+      ]
+    },
+    {
+      "file": "stains.ts",
+      "allowlistMatches": 0,
+      "score": 90,
+      "violations": [
+        {
+          "rule": "R11",
+          "category": "GENERIQUE",
+          "level": "WARNING",
+          "line": 18,
+          "extract": "introduction: 'Bienvenue à Stains. Nous intervenons dans toute la commune pour l’enlèvement d’épaves",
+          "reason": "Formulation générique interdite"
+        },
+        {
+          "rule": "R12",
+          "category": "SEO",
+          "level": "WARNING",
+          "line": 18,
+          "extract": "introduction: 'Bienvenue à Stains. Nous intervenons dans toute la commune pour l’enlèvement d’épaves",
+          "reason": "Aucune valeur SEO"
+        }
+      ]
+    },
+    {
+      "file": "taverny.ts",
+      "allowlistMatches": 0,
+      "score": 90,
+      "violations": [
+        {
+          "rule": "R11",
+          "category": "GENERIQUE",
+          "level": "WARNING",
+          "line": 18,
+          "extract": "introduction: 'Bienvenue à Taverny. Nous intervenons dans toute la commune pour l’enlèvement d’épave",
+          "reason": "Formulation générique interdite"
+        },
+        {
+          "rule": "R12",
+          "category": "SEO",
+          "level": "WARNING",
+          "line": 18,
+          "extract": "introduction: 'Bienvenue à Taverny. Nous intervenons dans toute la commune pour l’enlèvement d’épave",
+          "reason": "Aucune valeur SEO"
+        }
+      ]
+    },
+    {
+      "file": "torcy.ts",
+      "allowlistMatches": 0,
+      "score": 90,
+      "violations": [
+        {
+          "rule": "R11",
+          "category": "GENERIQUE",
+          "level": "WARNING",
+          "line": 18,
+          "extract": "introduction: 'Bienvenue à Torcy. Nous intervenons dans toute la commune pour l’enlèvement d’épaves,",
+          "reason": "Formulation générique interdite"
+        },
+        {
+          "rule": "R12",
+          "category": "SEO",
+          "level": "WARNING",
+          "line": 18,
+          "extract": "introduction: 'Bienvenue à Torcy. Nous intervenons dans toute la commune pour l’enlèvement d’épaves,",
+          "reason": "Aucune valeur SEO"
+        }
+      ]
+    },
+    {
+      "file": "trappes.ts",
+      "allowlistMatches": 0,
+      "score": 90,
+      "violations": [
+        {
+          "rule": "R11",
+          "category": "GENERIQUE",
+          "level": "WARNING",
+          "line": 18,
+          "extract": "introduction: 'Bienvenue à Trappes. Nous intervenons dans toute la commune pour l’enlèvement d’épave",
+          "reason": "Formulation générique interdite"
+        },
+        {
+          "rule": "R12",
+          "category": "SEO",
+          "level": "WARNING",
+          "line": 18,
+          "extract": "introduction: 'Bienvenue à Trappes. Nous intervenons dans toute la commune pour l’enlèvement d’épave",
+          "reason": "Aucune valeur SEO"
+        }
+      ]
+    },
+    {
+      "file": "tremblay-en-france.ts",
+      "allowlistMatches": 0,
+      "score": 90,
+      "violations": [
+        {
+          "rule": "R11",
+          "category": "GENERIQUE",
+          "level": "WARNING",
+          "line": 18,
+          "extract": "introduction: 'Bienvenue à Tremblay En France. Nous intervenons dans toute la commune pour l’enlèvem",
+          "reason": "Formulation générique interdite"
+        },
+        {
+          "rule": "R12",
+          "category": "SEO",
+          "level": "WARNING",
+          "line": 18,
+          "extract": "introduction: 'Bienvenue à Tremblay En France. Nous intervenons dans toute la commune pour l’enlèvem",
+          "reason": "Aucune valeur SEO"
+        }
+      ]
+    },
+    {
+      "file": "vaujours.ts",
+      "allowlistMatches": 0,
+      "score": 90,
+      "violations": [
+        {
+          "rule": "R11",
+          "category": "GENERIQUE",
+          "level": "WARNING",
+          "line": 18,
+          "extract": "introduction: 'Bienvenue à Vaujours. Nous intervenons dans toute la commune pour l’enlèvement d’épav",
+          "reason": "Formulation générique interdite"
+        },
+        {
+          "rule": "R12",
+          "category": "SEO",
+          "level": "WARNING",
+          "line": 18,
+          "extract": "introduction: 'Bienvenue à Vaujours. Nous intervenons dans toute la commune pour l’enlèvement d’épav",
+          "reason": "Aucune valeur SEO"
+        }
+      ]
+    },
+    {
+      "file": "velizy-villacoublay.ts",
+      "allowlistMatches": 0,
+      "score": 90,
+      "violations": [
+        {
+          "rule": "R11",
+          "category": "GENERIQUE",
+          "level": "WARNING",
+          "line": 18,
+          "extract": "introduction: 'Bienvenue à Velizy Villacoublay. Nous intervenons dans toute la commune pour l’enlève",
+          "reason": "Formulation générique interdite"
+        },
+        {
+          "rule": "R12",
+          "category": "SEO",
+          "level": "WARNING",
+          "line": 18,
+          "extract": "introduction: 'Bienvenue à Velizy Villacoublay. Nous intervenons dans toute la commune pour l’enlève",
+          "reason": "Aucune valeur SEO"
+        }
+      ]
+    },
+    {
+      "file": "versailles.ts",
+      "allowlistMatches": 1,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "villemomble.ts",
+      "allowlistMatches": 1,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "villeneuve-saint-georges.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "villepinte.ts",
+      "allowlistMatches": 0,
+      "score": 90,
+      "violations": [
+        {
+          "rule": "R11",
+          "category": "GENERIQUE",
+          "level": "WARNING",
+          "line": 18,
+          "extract": "introduction: 'Bienvenue à Villepinte. Nous intervenons dans toute la commune pour l’enlèvement d’ép",
+          "reason": "Formulation générique interdite"
+        },
+        {
+          "rule": "R12",
+          "category": "SEO",
+          "level": "WARNING",
+          "line": 18,
+          "extract": "introduction: 'Bienvenue à Villepinte. Nous intervenons dans toute la commune pour l’enlèvement d’ép",
+          "reason": "Aucune valeur SEO"
+        }
+      ]
+    },
+    {
+      "file": "villetaneuse.ts",
+      "allowlistMatches": 0,
+      "score": 90,
+      "violations": [
+        {
+          "rule": "R11",
+          "category": "GENERIQUE",
+          "level": "WARNING",
+          "line": 18,
+          "extract": "introduction: 'Bienvenue à Villetaneuse. Nous intervenons dans toute la commune pour l’enlèvement d’",
+          "reason": "Formulation générique interdite"
+        },
+        {
+          "rule": "R12",
+          "category": "SEO",
+          "level": "WARNING",
+          "line": 18,
+          "extract": "introduction: 'Bienvenue à Villetaneuse. Nous intervenons dans toute la commune pour l’enlèvement d’",
+          "reason": "Aucune valeur SEO"
+        }
+      ]
+    },
+    {
+      "file": "vincennes.ts",
+      "allowlistMatches": 0,
+      "score": 100,
+      "violations": []
+    },
+    {
+      "file": "viry-chatillon.ts",
+      "allowlistMatches": 0,
+      "score": 90,
+      "violations": [
+        {
+          "rule": "R11",
+          "category": "GENERIQUE",
+          "level": "WARNING",
+          "line": 18,
+          "extract": "introduction: 'Bienvenue à Viry Chatillon. Nous intervenons dans toute la commune pour l’enlèvement ",
+          "reason": "Formulation générique interdite"
+        },
+        {
+          "rule": "R12",
+          "category": "SEO",
+          "level": "WARNING",
+          "line": 18,
+          "extract": "introduction: 'Bienvenue à Viry Chatillon. Nous intervenons dans toute la commune pour l’enlèvement ",
+          "reason": "Aucune valeur SEO"
+        }
+      ]
+    },
+    {
+      "file": "vitry-sur-seine.ts",
       "allowlistMatches": 1,
       "score": 100,
       "violations": []

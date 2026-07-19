@@ -3,48 +3,67 @@ import { PageData } from '../types'
 export const montreuilData: PageData = {
   slug: 'montreuil',
   entityType: 'City',
-  metaTitle: "Épaviste Montreuil (93) | Enlèvement Épave Gratuit",
-  metaDescription: "Retrait gratuit d'épaves sur Montreuil (93100). Enlèvement en sous-sol et rues étroites. Centre VHU partenaire. Appelez GH Épaviste au 07 53 12 07 93.",
+  metaTitle: 'Épaviste Montreuil (93100) | Enlèvement Épave Gratuit 24h',
+  metaDescription: 'Service gratuit d\'enlèvement d\'épaves à Montreuil (93100). Prise en charge de VHU avec certificat de destruction officiel. Intervention rapide.',
   relatedServicesSlugs: [
-    "enlevement-epave-parking-souterrain",
-    "enlevement-utilitaire-epave"
+    'enlevement-epave-parking-souterrain',
+    'enlevement-voiture-en-panne',
+    'enlevement-voiture-sans-carte-grise'
   ],
   relatedCitiesSlugs: [
-    "seine-saint-denis",
-    "bagnolet", "vincennes", "fontenay-sous-bois"
+    'enlevement-epave-seine-saint-denis'
   ],
   blocks: [
     {
       type: 'Hero',
-      title: "Épaviste gratuit sur Montreuil (93100)",
-      subtitle: "Un service de retrait de véhicules réactif, couvrant l'ensemble des quartiers montreuillois.",
-      badge: "Montreuil (93100)"
+      title: 'Enlèvement gratuit VHU à Montreuil (93100) par épaviste agréé dans Montreuil',
+      subtitle: 'Nous enlevons les épaves à Montreuil (93100). Prestation gratuite incluant remorquage à Montreuil.',
+      badge: 'Montreuil (93100)',
+    },
+    {
+      type: 'LocalCoverage',
+      title: 'Couverture d\'intervention sur Montreuil',
+      intro: 'Pour les habitants de Montreuil, l\'enlèvement d\'épave est gratuit dans toute la commune. Un créneau d\'enlèvement à Montreuil vous est proposé selon vos disponibilités. Notre équipe couvre le secteur postal 93100 avec une logistique dédiée. Les habitants de Montreuil peuvent compter sur notre présence régulière dans ce code postal. Les localités voisines de Montreuil peuvent aussi solliciter notre intervention.',
+      zones: [
+        { name: 'Zones pavillonnaires', delay: 'Sous 24h', specificities: 'Enlèvement au domicile ou dans votre allée privée.' },
+        { name: 'Centre-ville & Axes principaux', delay: '24h', specificities: 'Retrait d\'épave sur voie publique.' },
+        { name: 'Secteurs d\'activité', delay: 'Sur RDV', specificities: 'Intervention en zone commerciale.' }
+      ],
     },
     {
       type: 'Introduction',
-      title: "L'expertise logistique à Montreuil",
-      content: "Montreuil est la ville la plus peuplée du 93. Son réseau de rues très escarpées (secteur Murs à Pêches) et ses multiples parkings souterrains (Croix de Chavaux, Mairie) demandent des dépanneuses adaptées. Nous garantissons un enlèvement rapide et sûr de votre épave, sans bloquer la circulation."
+      title: 'Votre épaviste de confiance à Montreuil',
+      content: 'Notre service à Montreuil permet un enlèvement gratuit même dans les quartiers les plus denses. Fini les soucis de stationnement abusif : nous récupérons votre véhicule hors d\'usage rapidement. Notre service à Montreuil garantit un enlèvement gratuit avec une logistique adaptée à la densité urbaine. La logistique est organisée pour garantir une intervention efficace et sans attente. Les contraintes urbaines de Montreuil sont gérées par notre équipe expérimentée.',
     },
     {
-      type: 'TipsAndMistakes',
-      title: "Ce qu'il faut savoir",
-      tips: [
-        "Vérifiez que vous avez le certificat de non-gage de moins de 15 jours.",
-        "Signalez-nous si le véhicule est garé dans une rue à sens unique très étroite."
-      ],
-      mistakes: [
-        "Laisser l'épave sur un trottoir : amende majorée assurée."
-      ]
+      type: 'DocsPreparation',
+      title: 'Pièces à fournir pour l\'enlèvement',
+      intro: 'Afin que le retrait de votre épave à Montreuil soit rapide et légal, un dossier complet est exigé. Préparez votre carte grise (originale barrée), un certificat de non-gage datant de moins de 15 jours, et la pièce d\'identité du propriétaire.',
+      specialCase: 'Si vous avez égaré la carte grise, une déclaration de perte effectuée en gendarmerie ou préfecture du département Seine-Saint-Denis sera indispensable.',
     },
     {
       type: 'VhuCompliance',
-      title: "Un traitement VHU encadré",
-      content: "Nous ne stockons aucune pièce. GH Épaviste récupère l'épave et la transporte directement chez notre **centre VHU agréé partenaire**. Vous obtenez la certitude d'une destruction légale et écologique."
+      title: 'Traitement réglementaire et recyclage',
+      content: 'Le véhicule est remis à un partenaire spécialisé pour la suite de son traitement réglementaire. Le partenaire assure les formalités et l\'orientation du véhicule vers les filières réglementaires appropriées. Les professionnels habilités prennent le relais selon le planning établi lors de l\'enlèvement.',
+    },
+    {
+      type: 'FaqLocal',
+      title: 'Questions fréquentes sur l\'enlèvement à Montreuil',
+      questions: [
+        { q: 'L\'intervention à Montreuil est-elle soumise à des frais de déplacement ?', a: 'Non, si votre véhicule est complet, l\'enlèvement et le déplacement jusqu\'à Montreuil sont entièrement gratuits.' },
+        { q: 'Délivrez-vous le certificat de destruction immédiatement ?', a: 'Oui, nous vous remettons le certificat de cession pour destruction en main propre le jour de l\'enlèvement.' },
+        { q: 'Mon véhicule est accidenté sur la voie publique, pouvez-vous le retirer ?', a: 'Absolument, nous intervenons sur la voie publique à condition que vous soyez présent avec les documents requis.' },
+        { q: 'Intervenez-vous rapidement en cas de véhicule gênant la circulation à Montreuil ?', a: 'Oui, nous priorisons les situations urgentes en petite couronne. Contactez-nous pour un créneau adapté.' },
+        { q: 'Que se passe-t-il si je n\'ai plus la carte grise de mon véhicule ?', a: 'Une déclaration de perte ou de vol effectuée en préfecture ou gendarmerie suffit. Nous vous guidons dans cette démarche.' },
+        { q: 'Prenez-vous en charge les motos et utilitaires en plus des voitures ?', a: 'Oui, nous enlevons gratuitement tout type de véhicule hors d\'usage : voiture, moto, scooter, camionnette ou utilitaire.' },
+        { q: 'Quel est le délai habituel entre la demande et l\'enlèvement ?', a: 'En général, nous intervenons sous 24 à 48h après confirmation du rendez-vous et vérification des documents.' },
+        { q: 'Le véhicule doit-il être en état de rouler pour être enlevé ?', a: 'Non, nous prenons en charge les véhicules immobilisés, sans roues, sans batterie ou fortement endommagés.' }
+      ],
     },
     {
       type: 'Cta',
-      title: "Une épave à débarrasser à Montreuil ?",
-      subtitle: "Contactez-nous pour un rdv immédiat."
+      title: 'Prendre rendez-vous pour votre épave à Montreuil',
+      subtitle: 'Contactez-nous pour planifier l\'enlèvement gratuit et légal de votre véhicule.',
     }
   ]
 }

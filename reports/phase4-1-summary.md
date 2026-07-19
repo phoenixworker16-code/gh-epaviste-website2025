@@ -1,27 +1,27 @@
 # Batch Summary: phase4-1
 
-**Pages generated**: 20
-**Duration**: 0.28 s
+## Synthèse
 
-## Legal Auditor
-- 20 PASS
+| Vérification | Résultat |
+|---|---|
+| Communes générées | 20 |
+| Similarité max | 62.7 % |
+| Similarité moyenne | 40.2 % |
+| Editorial Hash uniques | 20 / 20 |
+| Legal PASS | 20 |
+| SEO PASS | 20 |
+| Coverage PASS | 20 |
+| Metadata PASS | 20 |
+| Internal Links PASS | 20 |
+| Sitemap PASS | 20 |
+| Temps total | 0.21 s |
+| Temps moyen | 0.010 s |
 
-## SEO Auditor & Schema
-- 20 PASS
+## Détail Similarité
+- 190 PASS / 0 FAIL
 
 ## Metadata Uniqueness
 - 20 PASS
-
-## Similarity (Jaccard)
-- 190 PASS
-- 0 WARNING
-- 0 FAIL
-
-## Coverage
-- 20 PASS
-
-## Internal Links
-- 20 PASS (Checked cross-linking within batch)
 
 ## Sitemap
 - 20 PASS

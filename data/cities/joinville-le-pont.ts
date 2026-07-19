@@ -1,69 +1,69 @@
-/**
- * Données générées automatiquement pour la ville Joinville Le Pont
- * Généré le 2026-07-08T11:45:28.582Z
- */
+import { PageData } from '../types'
 
-const cityName = 'Joinville Le Pont';
-const slug = 'joinville-le-pont';
-export const cityData = {
+export const joinvilleLePontData: PageData = {
   slug: 'joinville-le-pont',
-  name: 'Joinville Le Pont',
-  // Hero
-  hero: {
-    title: 'Joinville Le Pont – Débarrassage d’épaves et enlèvement gratuit',
-    subtitle: 'Service professionnel, rapide et conforme à la réglementation',
-    backgroundImage: '/images/joinville-le-pont/hero.jpg',
-  },
-  // Introduction spécifique
-  introduction: 'Bienvenue à Joinville Le Pont. Nous intervenons dans toute la commune pour l’enlèvement d’épaves, le désamiantage et la dépollution.',
-  // Présentation locale (exemple de situation)
-  localContext: 'Dans Joinville Le Pont, les rues étroites et les zones résidentielles demandent une grande vigilance. Notre équipe connaît les meilleures solutions.',
-  // Documents obligatoires
-  documents: [
-    { title: 'Attestation de destruction', url: '/documents/joinville-le-pont/attestation.pdf' },
-    { title: 'Certificat de traitement', url: '/documents/joinville-le-pont/certificat.pdf' },
+  entityType: 'City',
+  metaTitle: 'Épaviste Joinville-le-Pont (94340) | Enlèvement Épave Gratuit 24h',
+  metaDescription: 'Service gratuit d\'enlèvement d\'épaves à Joinville-le-Pont (94340). Prise en charge de VHU avec certificat de destruction officiel. Intervention rapide.',
+  relatedServicesSlugs: [
+    'enlevement-epave-parking-souterrain',
+    'enlevement-voiture-en-panne',
+    'enlevement-voiture-sans-carte-grise'
   ],
-  // Délais d’intervention
-  timing: {
-    standard: '48 h à 72 h',
-    urgent: '24 h',
-  },
-  // Types de véhicules pris en charge
-  vehicleTypes: ['Voiture', 'Camion', 'Bateau', '2 roues', 'Véhicules hors d’usage'],
-  // Conseils pratiques
-  tips: [
-    'Déposez l’épave sur le domaine public uniquement avec autorisation.',
-    'Préparez les documents d’identité avant l’intervention.',
+  relatedCitiesSlugs: [
+    'enlevement-epave-val-de-marne'
   ],
-  // FAQ locale (exemple générique, à enrichir)
-  faq: [
+  blocks: [
     {
-      question: 'Comment se déroule la collecte d’une épave à ' + cityName + ' ?',
-      answer: 'Nous prenons rendez‑vous, récupérons l’épave, puis nous la transportons vers un centre habilité.',
+      type: 'Hero',
+      title: 'Retrait gratuit de carcasse automobile à Joinville-le-Pont (94340) dans le 94340',
+      subtitle: 'Nous enlevons les épaves à Joinville-le-Pont (94340). Prestation gratuite incluant remorquage à Joinville-le-Pont.',
+      badge: 'Joinville-le-Pont (94340)',
     },
-  ],
-  // CTA
-  cta: {
-    text: 'Demander un devis gratuit',
-    url: '/contact?city=' + slug,
-  },
-  // Maillage interne (exemple de lien vers la page blog locale)
-  internalLinks: [
-    { title: 'Guide du propriétaire à ' + cityName, href: '/blog/guide-' + slug },
-  ],
-  // Métadonnées SEO
-  seo: {
-    title: cityName + ' – Débarrassage d’épaves',
-    description: 'Service d’enlèvement d’épaves à ' + cityName + '. Rapide, gratuit, conforme aux normes.',
-    keywords: cityName + ', enlèvement épave, dépollution, VHU',
-  },
-  // JSON‑LD (schéma LocalBusiness simplifié)
-  jsonLd: {
-    '@context': 'https://schema.org',
-    '@type': 'LocalBusiness',
-    name: 'GH Épaviste – ' + cityName,
-    url: 'https://gh-epaviste.fr/' + slug,
-    address: { addressLocality: 'Joinville Le Pont', addressCountry: 'FR' },
-    contactPoint: [{ telephone: '+33 1 23 45 67 89', contactType: 'customer service' }],
-  },
-};
+    {
+      type: 'LocalCoverage',
+      title: 'Couverture d\'intervention sur Joinville-le-Pont',
+      intro: 'Notre dispositif à Joinville-le-Pont assure un enlèvement gratuit dans tous les secteurs sans exception. Nous organisons le passage à Joinville-le-Pont avec une préparation minutieuse de l\'itinéraire. Les demandes pour le 94340 de Joinville-le-Pont sont traitées en priorité par notre équipe qui connaît bien ce secteur. Les communes proches de Joinville-le-Pont sont incluses dans notre zone d\'intervention.',
+      zones: [
+        { name: 'Zones pavillonnaires', delay: 'Sous 24h', specificities: 'Enlèvement au domicile ou dans votre allée privée.' },
+        { name: 'Centre-ville & Axes principaux', delay: '24h', specificities: 'Retrait d\'épave sur voie publique.' },
+        { name: 'Secteurs d\'activité', delay: 'Sur RDV', specificities: 'Intervention en zone commerciale.' }
+      ],
+    },
+    {
+      type: 'Introduction',
+      title: 'Votre épaviste de confiance à Joinville-le-Pont',
+      content: 'Vous souhaitez vous débarrasser gratuitement de votre vieux véhicule à Joinville-le-Pont ? Dans une commune comme Joinville-le-Pont, le stationnement est déjà tendu sans une épave en plus. Notre logistique à Joinville-le-Pont est conçue pour minimiser les contraintes de circulation. Les informations recueillies permettent de dimensionner l\'intervention au plus juste. Nous vous accompagnons dans l\'organisation de l\'enlèvement à Joinville-le-Pont en toute sérénité.',
+    },
+    {
+      type: 'DocsPreparation',
+      title: 'Pièces à fournir pour l\'enlèvement',
+      intro: 'Pour procéder au remorquage gratuit depuis Joinville-le-Pont, notre chauffeur aura besoin des documents originaux du véhicule. Préparez votre carte grise (originale barrée), un certificat de non-gage datant de moins de 15 jours, et la pièce d\'identité du propriétaire.',
+      specialCase: 'Si vous avez égaré la carte grise, une déclaration de perte effectuée en gendarmerie ou préfecture du département Val-de-Marne sera indispensable.',
+    },
+    {
+      type: 'VhuCompliance',
+      title: 'Traitement réglementaire et recyclage',
+      content: 'Le véhicule retiré rejoint une installation partenaire disposant des autorisations d\'exploitation. La conformité aux textes réglementaires est vérifiée par les opérateurs compétents. Les partenaires se répartissent les opérations selon leur domaine d\'expertise respectif.',
+    },
+    {
+      type: 'FaqLocal',
+      title: 'Questions fréquentes sur l\'enlèvement à Joinville-le-Pont',
+      questions: [
+        { q: 'L\'intervention à Joinville-le-Pont est-elle soumise à des frais de déplacement ?', a: 'Non, si votre véhicule est complet, l\'enlèvement et le déplacement jusqu\'à Joinville-le-Pont sont entièrement gratuits.' },
+        { q: 'Délivrez-vous le certificat de destruction immédiatement ?', a: 'Oui, nous vous remettons le certificat de cession pour destruction en main propre le jour de l\'enlèvement.' },
+        { q: 'Mon véhicule est accidenté sur la voie publique, pouvez-vous le retirer ?', a: 'Absolument, nous intervenons sur la voie publique à condition que vous soyez présent avec les documents requis.' },
+        { q: 'Intervenez-vous rapidement en cas de véhicule gênant la circulation à Joinville-le-Pont ?', a: 'Oui, nous priorisons les situations urgentes en petite couronne. Contactez-nous pour un créneau adapté.' },
+        { q: 'Que se passe-t-il si je n\'ai plus la carte grise de mon véhicule ?', a: 'Une déclaration de perte ou de vol effectuée en préfecture ou gendarmerie suffit. Nous vous guidons dans cette démarche.' },
+        { q: 'Prenez-vous en charge les motos et utilitaires en plus des voitures ?', a: 'Oui, nous enlevons gratuitement tout type de véhicule hors d\'usage : voiture, moto, scooter, camionnette ou utilitaire.' },
+        { q: 'Quel est le délai habituel entre la demande et l\'enlèvement ?', a: 'En général, nous intervenons sous 24 à 48h après confirmation du rendez-vous et vérification des documents.' },
+        { q: 'Le véhicule doit-il être en état de rouler pour être enlevé ?', a: 'Non, nous prenons en charge les véhicules immobilisés, sans roues, sans batterie ou fortement endommagés.' }
+      ],
+    },
+    {
+      type: 'Cta',
+      title: 'Prendre rendez-vous pour votre épave à Joinville-le-Pont',
+      subtitle: 'Contactez-nous pour planifier l\'enlèvement gratuit et légal de votre véhicule.',
+    }
+  ]
+}

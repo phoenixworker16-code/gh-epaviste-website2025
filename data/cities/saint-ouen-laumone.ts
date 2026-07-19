@@ -1,69 +1,69 @@
-/**
- * Données générées automatiquement pour la ville Saint Ouen Laumone
- * Généré le 2026-07-08T11:45:28.591Z
- */
+import { PageData } from '../types'
 
-const cityName = 'Saint Ouen Laumone';
-const slug = 'saint-ouen-laumone';
-export const cityData = {
+export const saintOuenLaumoneData: PageData = {
   slug: 'saint-ouen-laumone',
-  name: 'Saint Ouen Laumone',
-  // Hero
-  hero: {
-    title: 'Saint Ouen Laumone – Débarrassage d’épaves et enlèvement gratuit',
-    subtitle: 'Service professionnel, rapide et conforme à la réglementation',
-    backgroundImage: '/images/saint-ouen-laumone/hero.jpg',
-  },
-  // Introduction spécifique
-  introduction: 'Bienvenue à Saint Ouen Laumone. Nous intervenons dans toute la commune pour l’enlèvement d’épaves, le désamiantage et la dépollution.',
-  // Présentation locale (exemple de situation)
-  localContext: 'Dans Saint Ouen Laumone, les rues étroites et les zones résidentielles demandent une grande vigilance. Notre équipe connaît les meilleures solutions.',
-  // Documents obligatoires
-  documents: [
-    { title: 'Attestation de destruction', url: '/documents/saint-ouen-laumone/attestation.pdf' },
-    { title: 'Certificat de traitement', url: '/documents/saint-ouen-laumone/certificat.pdf' },
+  entityType: 'City',
+  metaTitle: 'Épaviste Saint-Ouen-l\'Aumône (95310) | Enlèvement Épave Gratuit 24h',
+  metaDescription: 'Service gratuit d\'enlèvement d\'épaves à Saint-Ouen-l\'Aumône (95310). Prise en charge de VHU avec certificat de destruction officiel. Intervention rapide.',
+  relatedServicesSlugs: [
+    'enlevement-epave-parking-souterrain',
+    'enlevement-voiture-en-panne',
+    'enlevement-voiture-sans-carte-grise'
   ],
-  // Délais d’intervention
-  timing: {
-    standard: '48 h à 72 h',
-    urgent: '24 h',
-  },
-  // Types de véhicules pris en charge
-  vehicleTypes: ['Voiture', 'Camion', 'Bateau', '2 roues', 'Véhicules hors d’usage'],
-  // Conseils pratiques
-  tips: [
-    'Déposez l’épave sur le domaine public uniquement avec autorisation.',
-    'Préparez les documents d’identité avant l’intervention.',
+  relatedCitiesSlugs: [
+    'enlevement-epave-val-d-oise'
   ],
-  // FAQ locale (exemple générique, à enrichir)
-  faq: [
+  blocks: [
     {
-      question: 'Comment se déroule la collecte d’une épave à ' + cityName + ' ?',
-      answer: 'Nous prenons rendez‑vous, récupérons l’épave, puis nous la transportons vers un centre habilité.',
+      type: 'Hero',
+      title: 'Épaviste professionnel à Saint-Ouen-l\'Aumône (95310) pour votre VHU à Saint-Ouen-l\'Aumône',
+      subtitle: 'Épave à Saint-Ouen-l\'Aumône ? Intervention gratuite dans le secteur 95310 de Saint-Ouen-l\'Aumône sous 24-48h.',
+      badge: 'Saint-Ouen-l\'Aumône (95310)',
     },
-  ],
-  // CTA
-  cta: {
-    text: 'Demander un devis gratuit',
-    url: '/contact?city=' + slug,
-  },
-  // Maillage interne (exemple de lien vers la page blog locale)
-  internalLinks: [
-    { title: 'Guide du propriétaire à ' + cityName, href: '/blog/guide-' + slug },
-  ],
-  // Métadonnées SEO
-  seo: {
-    title: cityName + ' – Débarrassage d’épaves',
-    description: 'Service d’enlèvement d’épaves à ' + cityName + '. Rapide, gratuit, conforme aux normes.',
-    keywords: cityName + ', enlèvement épave, dépollution, VHU',
-  },
-  // JSON‑LD (schéma LocalBusiness simplifié)
-  jsonLd: {
-    '@context': 'https://schema.org',
-    '@type': 'LocalBusiness',
-    name: 'GH Épaviste – ' + cityName,
-    url: 'https://gh-epaviste.fr/' + slug,
-    address: { addressLocality: 'Saint Ouen Laumone', addressCountry: 'FR' },
-    contactPoint: [{ telephone: '+33 1 23 45 67 89', contactType: 'customer service' }],
-  },
-};
+    {
+      type: 'Introduction',
+      title: 'Votre épaviste de confiance à Saint-Ouen-l\'Aumône',
+      content: 'Un véhicule hors d\'usage oublié dans votre propriété à Saint-Ouen-l\'Aumône peut être retiré sans frais. Dans les zones reculées de Saint-Ouen-l\'Aumône, nous adaptons notre matériel pour un retrait sans difficulté. À Saint-Ouen-l\'Aumône, nous proposons un enlèvement gratuit même dans les zones les plus isolées. Les contraintes d\'accès sont identifiées en amont pour éviter les mauvaises surprises. Nous adaptons notre intervention à Saint-Ouen-l\'Aumône en fonction de la configuration des lieux.',
+    },
+    {
+      type: 'DocsPreparation',
+      title: 'Pièces à fournir pour l\'enlèvement',
+      intro: 'L\'enlèvement d\'un véhicule hors d\'usage à Saint-Ouen-l\'Aumône implique une stricte conformité réglementaire. Voici les éléments à préparer. Préparez votre carte grise (originale barrée), un certificat de non-gage datant de moins de 15 jours, et la pièce d\'identité du propriétaire.',
+      specialCase: 'Si vous avez égaré la carte grise, une déclaration de perte effectuée en gendarmerie ou préfecture du département Val-d\'Oise sera indispensable.',
+    },
+    {
+      type: 'VhuCompliance',
+      title: 'Traitement réglementaire et recyclage',
+      content: 'Le parcours du véhicule comprend une étape chez un partenaire habilité pour la suite du traitement. Les différentes phases de traitement sont réalisées sous le contrôle des opérateurs autorisés. Le propriétaire est informé du déroulement et des étapes successives de la prise en charge.',
+    },
+    {
+      type: 'LocalCoverage',
+      title: 'Couverture d\'intervention sur Saint-Ouen-l\'Aumône',
+      intro: 'À Saint-Ouen-l\'Aumône, notre dispositif d\'intervention permet de couvrir toute la commune efficacement. La planification de l\'enlèvement à Saint-Ouen-l\'Aumône s\'appuie sur les données communiquées en amont. La zone 95310 fait partie de notre secteur d\'intervention prioritaire. Nous organisons des passages réguliers dans cette partie de Saint-Ouen-l\'Aumône. Les axes secondaires et les hameaux près de Saint-Ouen-l\'Aumône sont inclus dans notre périmètre.',
+      zones: [
+        { name: 'Bourg et centre', delay: 'Sous 48h', specificities: 'Intervention programmée avec vous.' },
+        { name: 'Lieux-dits et extérieurs', delay: 'Sur RDV', specificities: 'Accès terrain privé ou chemin rural.' },
+        { name: 'Hameaux et secteurs isolés', delay: '48h', specificities: 'Matériel adapté aux voies non goudronnées.' }
+      ],
+    },
+    {
+      type: 'FaqLocal',
+      title: 'Questions fréquentes sur l\'enlèvement à Saint-Ouen-l\'Aumône',
+      questions: [
+        { q: 'L\'intervention à Saint-Ouen-l\'Aumône est-elle soumise à des frais de déplacement ?', a: 'Non, si votre véhicule est complet, l\'enlèvement et le déplacement jusqu\'à Saint-Ouen-l\'Aumône sont entièrement gratuits.' },
+        { q: 'Délivrez-vous le certificat de destruction immédiatement ?', a: 'Oui, nous vous remettons le certificat de cession pour destruction en main propre le jour de l\'enlèvement.' },
+        { q: 'Mon véhicule est accidenté sur la voie publique, pouvez-vous le retirer ?', a: 'Absolument, nous intervenons sur la voie publique à condition que vous soyez présent avec les documents requis.' },
+        { q: 'Venez-vous chercher une épave dans un champ ou un terrain difficile ?', a: 'Oui, nous sommes équipés de treuils puissants permettant d\'extraire des véhicules enlisés ou sur des terrains non goudronnés.' },
+        { q: 'Que se passe-t-il si je n\'ai plus la carte grise de mon véhicule ?', a: 'Une déclaration de perte ou de vol effectuée en préfecture ou gendarmerie suffit. Nous vous guidons dans cette démarche.' },
+        { q: 'Prenez-vous en charge les motos et utilitaires en plus des voitures ?', a: 'Oui, nous enlevons gratuitement tout type de véhicule hors d\'usage : voiture, moto, scooter, camionnette ou utilitaire.' },
+        { q: 'Quel est le délai habituel entre la demande et l\'enlèvement ?', a: 'En général, nous intervenons sous 24 à 48h après confirmation du rendez-vous et vérification des documents.' },
+        { q: 'Le véhicule doit-il être en état de rouler pour être enlevé ?', a: 'Non, nous prenons en charge les véhicules immobilisés, sans roues, sans batterie ou fortement endommagés.' }
+      ],
+    },
+    {
+      type: 'Cta',
+      title: 'Prendre rendez-vous pour votre épave à Saint-Ouen-l\'Aumône',
+      subtitle: 'Contactez-nous pour planifier l\'enlèvement gratuit et légal de votre véhicule.',
+    }
+  ]
+}

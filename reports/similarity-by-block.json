@@ -1,0 +1,64 @@
+{
+  "status": "WARNING",
+  "thresholds": {
+    "warning": 65,
+    "fail": 80
+  },
+  "totalPairs": 3160,
+  "blocks": {
+    "Hero": {
+      "pairsAnalyzed": 3160,
+      "average": 22.8,
+      "max": 78.9,
+      "min": 3.3,
+      "pass": 3158,
+      "warning": 2,
+      "fail": 0
+    },
+    "Introduction": {
+      "pairsAnalyzed": 3160,
+      "average": 16.3,
+      "max": 45.8,
+      "min": 5.6,
+      "pass": 3160,
+      "warning": 0,
+      "fail": 0
+    },
+    "LocalCoverage": {
+      "pairsAnalyzed": 3160,
+      "average": 17,
+      "max": 61.4,
+      "min": 5.6,
+      "pass": 3160,
+      "warning": 0,
+      "fail": 0
+    },
+    "VhuCompliance": {
+      "pairsAnalyzed": 3160,
+      "average": 19.7,
+      "max": 64.7,
+      "min": 7.7,
+      "pass": 3160,
+      "warning": 0,
+      "fail": 0
+    },
+    "FaqLocal": {
+      "pairsAnalyzed": 0,
+      "average": 0,
+      "max": 0,
+      "min": 0,
+      "pass": 0,
+      "warning": 0,
+      "fail": 0
+    },
+    "Cta": {
+      "pairsAnalyzed": 0,
+      "average": 0,
+      "max": 0,
+      "min": 0,
+      "pass": 0,
+      "warning": 0,
+      "fail": 0
+    }
+  }
+}

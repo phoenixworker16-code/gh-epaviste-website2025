@@ -28,14 +28,20 @@ if (!fs.existsSync(batchPath)) {
   process.exit(1);
 }
 
-const batchSlugs = JSON.parse(fs.readFileSync(batchPath, 'utf-8'));
+const batchFile = JSON.parse(fs.readFileSync(batchPath, 'utf-8'));
+const batchSlugs = Array.isArray(batchFile) ? batchFile : batchFile.slugs;
 const allCommunes = JSON.parse(fs.readFileSync(path.join(__dirname, '..', '..', 'data', 'villes.json'), 'utf-8'));
 
-const communesToProcess = allCommunes.filter(c => batchSlugs.includes(c.slug));
-
-if (communesToProcess.length !== batchSlugs.length) {
-  logger.warn(`Attention: certaines communes du lot n'ont pas été trouvées dans villes.json.`);
+// Validation obligatoire avant génération
+const { execSync } = require('child_process');
+try {
+  execSync(`node "${path.join(__dirname, 'validate-batch.js')}" --batch=${batchName}`, { stdio: 'inherit' });
+} catch {
+  logger.error('Validation du batch échouée. Génération annulée.');
+  process.exit(1);
 }
+
+const communesToProcess = allCommunes.filter(c => batchSlugs.includes(c.slug));
 
 logger.info(`Démarrage du batch: ${batchName} (${communesToProcess.length} communes)`);
 
@@ -75,6 +81,7 @@ logger.info(`Batch ${batchName} terminé en ${duration} s. Pages générées: ${
 
 // Après la génération, lancer les reporters de masse
 const { runSimilarityReport } = require('./reports-generators/similarity-reporter');
+const { runSimilarityBlockReport } = require('./reports-generators/similarity-block-reporter');
 const { runCoverageReport } = require('./reports-generators/coverage-reporter');
 const { runMetadataReport } = require('./reports-generators/metadata-reporter');
 const { runInternalLinksReport } = require('./reports-generators/internal-links-reporter');
@@ -89,6 +96,7 @@ if (!fs.existsSync(reportsDir)) {
 }
 
 const similarityReport = runSimilarityReport(generatedPages, reportsDir);
+runSimilarityBlockReport(generatedPages, reportsDir, similarityReport);
 runCoverageReport(generatedPages, reportsDir);
 runMetadataReport(generatedPages, reportsDir);
 runInternalLinksReport(generatedPages, reportsDir);
