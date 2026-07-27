@@ -16,23 +16,24 @@ export const villemombleData: PageData = {
   blocks: [
     {
       type: 'Hero',
-      title: 'Retrait de véhicule hors d\'usage à Villemomble',
-      subtitle: 'Intervention rapide en petite couronne. Débarrassez-vous de votre VHU sans frais et sans contrainte de stationnement.',
+      title: 'Retrait d\'épave par professionnel agréé à Villemomble (93250) dans tout Villemomble',
+      subtitle: 'Épave à Villemomble ? Intervention gratuite dans le secteur 93250 de Villemomble sous 24-48h.',
       badge: 'Villemomble (93250)',
     },
     {
       type: 'LocalCoverage',
       title: 'Couverture d\'intervention sur Villemomble',
-      intro: 'Notre équipe intervient dans l\'ensemble de la commune de Villemomble pour procéder à l\'enlèvement de votre véhicule. Les informations de stationnement permettent d’anticiper les conditions de prise en charge. Le rendez-vous est préparé pour tenir compte de la situation déclarée par le propriétaire.',
+      intro: 'Tous les habitants de Villemomble peuvent bénéficier de notre service d\'enlèvement à domicile. La préparation du retrait à Villemomble inclut une évaluation des conditions d\'intervention. Le secteur 93250 de Villemomble est couvert sans supplément de prix par notre service d\'enlèvement gratuit de véhicules hors d\'usage. Notre rayonnement autour de Villemomble s\'étend sur plusieurs kilomètres à la ronde.',
       zones: [
         { name: 'Zones pavillonnaires', delay: 'Sous 24h', specificities: 'Enlèvement au domicile ou dans votre allée privée.' },
-        { name: 'Secteur Gare / Centre', delay: 'Rapide', specificities: 'Retrait d\'épave sur voie publique.' }
+        { name: 'Centre-ville & Axes principaux', delay: '24h', specificities: 'Retrait d\'épave sur voie publique.' },
+        { name: 'Secteurs d\'activité', delay: 'Sur RDV', specificities: 'Intervention en zone commerciale.' }
       ],
     },
     {
       type: 'Introduction',
       title: 'Votre épaviste de confiance à Villemomble',
-      content: 'La densité de circulation à Villemomble (93250) exige une solution professionnelle pour l\'enlèvement de votre épave. Nous mettons à votre disposition nos dépanneuses spécialisées dans les interventions en petite couronne. Fini les soucis de stationnement abusif : nous récupérons votre véhicule hors d\'usage et l\'amenons chez un broyeur agréé VHU partenaire. L’organisation du retrait tient compte de l’emplacement du véhicule, de son état et des conditions d’accès. La préparation du passage vise à éviter les déplacements inutiles et les difficultés d’accès. Un point préalable facilite la coordination entre le propriétaire et le professionnel chargé du retrait.',
+      content: 'Dans une commune dense comme Villemomble, une épave sur la voie publique pose vite problème. Les rues de Villemomble ne doivent pas servir de dépôt pour un véhicule hors d\'usage. À Villemomble, l\'enlèvement gratuit est réalisé par des professionnels de la petite couronne. Les modalités logistiques sont ajustées selon les particularités de chaque intervention. Les créneaux proposés tiennent compte des heures d\'affluence à Villemomble.',
     },
     {
       type: 'DocsPreparation',
@@ -42,21 +43,21 @@ export const villemombleData: PageData = {
     },
     {
       type: 'VhuCompliance',
-      title: 'Dépollution et Recyclage',
-      content: 'L\'enlèvement est suivi d\'un acheminement vers un centre VHU partenaire agréé. Les étapes ultérieures sont réalisées par les professionnels compétents, conformément au cadre applicable. Cette répartition des rôles assure une continuité entre l’enlèvement et les opérations réglementaires ultérieures.',
+      title: 'Traitement réglementaire et recyclage',
+      content: 'Le véhicule retiré rejoint une installation partenaire disposant des autorisations d\'exploitation. La prise en charge respecte les dispositions réglementaires applicables aux véhicules hors d\'usage. La coordination des professionnels garantit l\'efficacité du traitement réglementaire.',
     },
     {
       type: 'FaqLocal',
       title: 'Questions fréquentes sur l\'enlèvement à Villemomble',
       questions: [
-        { q: 'L\'intervention à Villemomble est-elle soumise à des frais de déplacement ?', a: 'Non, si votre véhicule est complet, l\'enlèvement et le déplacement jusqu\'à Villemomble sont entièrement gratuits.' },
-        { q: 'Délivrez-vous le certificat de destruction immédiatement ?', a: 'Oui, nous vous remettons le certificat de cession pour destruction en main propre le jour de l\'enlèvement.' },
-        { q: 'Mon véhicule est accidenté sur la voie publique, pouvez-vous le retirer ?', a: 'Absolument, nous intervenons sur la voie publique à condition que vous soyez présent avec les documents requis.' },
-        { q: 'Intervenez-vous rapidement en cas de véhicule gênant la circulation à Villemomble ?', a: 'Oui, nous priorisons les situations urgentes en petite couronne. Contactez-nous pour un créneau adapté.' },
-        { q: 'Que se passe-t-il si je n\'ai plus la carte grise de mon véhicule ?', a: 'Une déclaration de perte ou de vol effectuée en préfecture ou gendarmerie suffit. Nous vous guidons dans cette démarche.' },
-        { q: 'Prenez-vous en charge les motos et utilitaires en plus des voitures ?', a: 'Oui, nous enlevons gratuitement tout type de véhicule hors d\'usage : voiture, moto, scooter, camionnette ou utilitaire.' },
+        { q: 'Le véhicule doit-il être en état de rouler pour être enlevé ?', a: 'Non, nous prenons en charge les véhicules immobilisés, sans roues, sans batterie ou fortement endommagés.' },
         { q: 'Quel est le délai habituel entre la demande et l\'enlèvement ?', a: 'En général, nous intervenons sous 24 à 48h après confirmation du rendez-vous et vérification des documents.' },
-        { q: 'Le véhicule doit-il être en état de rouler pour être enlevé ?', a: 'Non, nous prenons en charge les véhicules immobilisés, sans roues, sans batterie ou fortement endommagés.' }
+        { q: 'Prenez-vous en charge les motos et utilitaires en plus des voitures ?', a: 'Oui, nous enlevons gratuitement tout type de véhicule hors d\'usage : voiture, moto, scooter, camionnette ou utilitaire.' },
+        { q: 'Que se passe-t-il si je n\'ai plus la carte grise de mon véhicule ?', a: 'Une déclaration de perte ou de vol effectuée en préfecture ou gendarmerie suffit. Nous vous guidons dans cette démarche.' },
+        { q: 'Intervenez-vous rapidement en cas de véhicule gênant la circulation à Villemomble ?', a: 'Oui, nous priorisons les situations urgentes en petite couronne. Contactez-nous pour un créneau adapté.' },
+        { q: 'Mon véhicule est accidenté sur la voie publique, pouvez-vous le retirer ?', a: 'Absolument, nous intervenons sur la voie publique à condition que vous soyez présent avec les documents requis.' },
+        { q: 'Quels documents obtenez-vous le jour de l\'enlèvement ?', a: 'Vous recevez un justificatif de prise en charge le jour même, ainsi que tous les documents attestant de la bonne fin de l\'opération.' },
+        { q: 'L\'intervention à Villemomble est-elle soumise à des frais de déplacement ?', a: 'Non, si votre véhicule est complet, l\'enlèvement et le déplacement jusqu\'à Villemomble sont entièrement gratuits.' }
       ],
     },
     {

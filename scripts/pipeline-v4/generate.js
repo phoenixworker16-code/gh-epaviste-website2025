@@ -68,8 +68,7 @@ async function generate() {
   logger.info(`Loading catalogue... ${isDryRun ? '(DRY-RUN)' : ''}`);
   const communes = JSON.parse(fs.readFileSync(VILLES_JSON, 'utf-8'));
   
-  // Limiting batch to 5 for now to avoid console spam in output, adjust as needed
-  const batch = communes.slice(0, 5); 
+  const batch = communes;
 
   let successCount = 0, failCount = 0;
   const results = [];

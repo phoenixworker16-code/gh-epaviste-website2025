@@ -1,0 +1,69 @@
+import { PageData } from '../types'
+
+export const orsonvilleData: PageData = {
+  slug: 'orsonville',
+  entityType: 'City',
+  metaTitle: 'Épaviste Orsonville (78660) | Enlèvement Épave Gratuit 24h',
+  metaDescription: 'Service gratuit d\'enlèvement d\'épaves à Orsonville (78660). Prise en charge de VHU avec certificat de destruction officiel. Intervention rapide.',
+  relatedServicesSlugs: [
+    'enlevement-epave-parking-souterrain',
+    'enlevement-voiture-en-panne',
+    'enlevement-voiture-sans-carte-grise'
+  ],
+  relatedCitiesSlugs: [
+    'enlevement-epave-yvelines'
+  ],
+  blocks: [
+    {
+      type: 'Hero',
+      title: 'Enlèvement épave Orsonville (78660) - Service gratuit à Orsonville',
+      subtitle: 'Épaviste gratuit à Orsonville (78660) : intervention dans tout Orsonville pour votre véhicule hors d\'usage.',
+      badge: 'Orsonville (78660)',
+    },
+    {
+      type: 'Introduction',
+      title: 'Votre épaviste de confiance à Orsonville',
+      content: 'Redonnez de l\'espace à votre terrain à Orsonville en confiant cette épave à notre service. Dans les zones reculées de Orsonville, nous adaptons notre matériel pour un retrait sans difficulté. Notre service rural à Orsonville garantit un retrait professionnel sans contrainte de distance. La préparation du retrait inclut une vérification des accès et des contraintes éventuelles. Les détails de l\'intervention à Orsonville sont confirmés en amont pour une coordination parfaite.',
+    },
+    {
+      type: 'DocsPreparation',
+      title: 'Pièces à fournir pour l\'enlèvement',
+      intro: 'L\'enlèvement d\'un véhicule hors d\'usage à Orsonville implique une stricte conformité réglementaire. Voici les éléments à préparer. Préparez votre carte grise (originale barrée), un certificat de non-gage datant de moins de 15 jours, et la pièce d\'identité du propriétaire.',
+      specialCase: 'Si vous avez égaré la carte grise, une déclaration de perte effectuée en gendarmerie ou préfecture du département Yvelines sera indispensable.',
+    },
+    {
+      type: 'VhuCompliance',
+      title: 'Traitement réglementaire et recyclage',
+      content: 'La prise en charge inclut l\'acheminement vers un professionnel partenaire habilité pour les véhicules hors d\'usage. Le traitement respecte les normes applicables aux véhicules en fin de vie. La progression du véhicule dans la filière est suivie par les différents opérateurs concernés.',
+    },
+    {
+      type: 'LocalCoverage',
+      title: 'Couverture d\'intervention sur Orsonville',
+      intro: 'Tous les habitants de Orsonville peuvent bénéficier de notre service d\'enlèvement à domicile. Nous organisons le passage à Orsonville avec une préparation minutieuse de l\'itinéraire. Notre équipe couvre le secteur postal 78660 avec une logistique dédiée. Les habitants de Orsonville peuvent compter sur notre présence régulière dans ce code postal. Les voies d\'accès et les secteurs autour de Orsonville font partie de notre circuit.',
+      zones: [
+        { name: 'Bourg et centre', delay: 'Sous 48h', specificities: 'Intervention programmée avec vous.' },
+        { name: 'Lieux-dits et extérieurs', delay: 'Sur RDV', specificities: 'Accès terrain privé ou chemin rural.' },
+        { name: 'Hameaux et secteurs isolés', delay: '48h', specificities: 'Matériel adapté aux voies non goudronnées.' }
+      ],
+    },
+    {
+      type: 'FaqLocal',
+      title: 'Questions fréquentes sur l\'enlèvement à Orsonville',
+      questions: [
+        { q: 'Le véhicule doit-il être en état de rouler pour être enlevé ?', a: 'Non, nous prenons en charge les véhicules immobilisés, sans roues, sans batterie ou fortement endommagés.' },
+        { q: 'Quel est le délai habituel entre la demande et l\'enlèvement ?', a: 'En général, nous intervenons sous 24 à 48h après confirmation du rendez-vous et vérification des documents.' },
+        { q: 'Prenez-vous en charge les motos et utilitaires en plus des voitures ?', a: 'Oui, nous enlevons gratuitement tout type de véhicule hors d\'usage : voiture, moto, scooter, camionnette ou utilitaire.' },
+        { q: 'Que se passe-t-il si je n\'ai plus la carte grise de mon véhicule ?', a: 'Une déclaration de perte ou de vol effectuée en préfecture ou gendarmerie suffit. Nous vous guidons dans cette démarche.' },
+        { q: 'Venez-vous chercher une épave dans un champ ou un terrain difficile ?', a: 'Oui, nous sommes équipés de treuils puissants permettant d\'extraire des véhicules enlisés ou sur des terrains non goudronnés.' },
+        { q: 'Mon véhicule est accidenté sur la voie publique, pouvez-vous le retirer ?', a: 'Absolument, nous intervenons sur la voie publique à condition que vous soyez présent avec les documents requis.' },
+        { q: 'Quels documents obtenez-vous le jour de l\'enlèvement ?', a: 'Vous recevez un justificatif de prise en charge le jour même, ainsi que tous les documents attestant de la bonne fin de l\'opération.' },
+        { q: 'L\'intervention à Orsonville est-elle soumise à des frais de déplacement ?', a: 'Non, si votre véhicule est complet, l\'enlèvement et le déplacement jusqu\'à Orsonville sont entièrement gratuits.' }
+      ],
+    },
+    {
+      type: 'Cta',
+      title: 'Prendre rendez-vous pour votre épave à Orsonville',
+      subtitle: 'Contactez-nous pour planifier l\'enlèvement gratuit et légal de votre véhicule.',
+    }
+  ]
+}

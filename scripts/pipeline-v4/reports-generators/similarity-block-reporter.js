@@ -56,11 +56,22 @@ function runSimilarityBlockReport(generatedPages, reportsDir, similarityReport) 
     const similarities = stats.similarities;
     const count = similarities.length;
 
+    let maxVal = 0;
+    let minVal = 0;
+    if (count > 0) {
+      maxVal = similarities[0];
+      minVal = similarities[0];
+      for (let i = 1; i < count; i++) {
+        if (similarities[i] > maxVal) maxVal = similarities[i];
+        if (similarities[i] < minVal) minVal = similarities[i];
+      }
+    }
+
     report.blocks[type] = {
       pairsAnalyzed: count,
       average: count > 0 ? Number((similarities.reduce((a, b) => a + b, 0) / count).toFixed(1)) : 0,
-      max: count > 0 ? Math.max(...similarities) : 0,
-      min: count > 0 ? Math.min(...similarities) : 0,
+      max: maxVal,
+      min: minVal,
       pass: stats.pass,
       warning: stats.warning,
       fail: stats.fail

@@ -16,23 +16,24 @@ export const issyLesMoulineauxData: PageData = {
   blocks: [
     {
       type: 'Hero',
-      title: 'Service d\'enlèvement d\'épave à Issy-les-Moulineaux',
-      subtitle: 'Un enlèvement préparé selon l’accès au véhicule et les informations transmises lors de votre demande.',
+      title: 'Solution enlèvement épave Issy-les-Moulineaux (92130) - Prise en charge Issy-les-Moulineaux',
+      subtitle: 'Enlèvement gratuit VHU à Issy-les-Moulineaux (92130). Prenez rendez-vous, on s\'occupe de votre épave à Issy-les-Moulineaux.',
       badge: 'Issy-les-Moulineaux (92130)',
     },
     {
       type: 'LocalCoverage',
       title: 'Couverture d\'intervention sur Issy-les-Moulineaux',
-      intro: 'Notre équipe intervient dans l\'ensemble de la commune de Issy-les-Moulineaux pour procéder à l\'enlèvement de votre véhicule. Le rendez-vous est préparé selon le type d’accès indiqué lors de la demande. Les modalités de passage sont précisées avant le déplacement du professionnel.',
+      intro: 'À Issy-les-Moulineaux, nous pouvons retirer votre véhicule hors d\'usage en tout point du territoire. Avant de se déplacer à Issy-les-Moulineaux, l\'équipe vérifie les accès et prépare le matériel adapté. La zone 92130 fait partie de notre secteur d\'intervention prioritaire. Nous organisons des passages réguliers dans cette partie de Issy-les-Moulineaux. Au départ de Issy-les-Moulineaux, nos équipes couvrent un vaste secteur géographique.',
       zones: [
         { name: 'Zones pavillonnaires', delay: 'Sous 24h', specificities: 'Enlèvement au domicile ou dans votre allée privée.' },
-        { name: 'Secteur Gare / Centre', delay: 'Rapide', specificities: 'Retrait d\'épave sur voie publique.' }
+        { name: 'Centre-ville & Axes principaux', delay: '24h', specificities: 'Retrait d\'épave sur voie publique.' },
+        { name: 'Secteurs d\'activité', delay: 'Sur RDV', specificities: 'Intervention en zone commerciale.' }
       ],
     },
     {
       type: 'Introduction',
       title: 'Votre épaviste de confiance à Issy-les-Moulineaux',
-      content: 'La densité de circulation à Issy-les-Moulineaux (92130) exige une solution professionnelle pour l\'enlèvement de votre épave. Nous mettons à votre disposition nos dépanneuses spécialisées dans les interventions en petite couronne. Fini les soucis de stationnement abusif : nous récupérons votre véhicule hors d\'usage et l\'amenons chez un broyeur agréé VHU partenaire. La demande permet de préciser les contraintes de stationnement et les documents disponibles avant l’intervention. Le rendez-vous est organisé à partir de la situation du véhicule et des conditions d’accès indiquées. Les modalités du rendez-vous sont précisées afin de préparer l’intervention.',
+      content: 'Nous organisons l\'enlèvement gratuit de votre véhicule à Issy-les-Moulineaux sur simple demande. Dans une commune dense comme Issy-les-Moulineaux, chaque mètre de voirie compte pour le stationnement. Le retrait gratuit de votre épave à Issy-les-Moulineaux est assuré par des professionnels expérimentés. Le programme d\'intervention est défini avec le propriétaire pour une prise en charge optimale. Notre connaissance de la petite couronne garantit une intervention rapide à Issy-les-Moulineaux. Le secteur de Rue de la Défense est couvert comme l\'ensemble de la commune.',
     },
     {
       type: 'DocsPreparation',
@@ -42,21 +43,21 @@ export const issyLesMoulineauxData: PageData = {
     },
     {
       type: 'VhuCompliance',
-      title: 'Dépollution et Recyclage',
-      content: 'L\'enlèvement est suivi d\'un acheminement vers un centre VHU partenaire agréé. Le partenaire assure les formalités et l’orientation du véhicule vers les filières réglementaires appropriées. Le partenaire compétent prend ensuite le relais pour les étapes qui relèvent de sa responsabilité.',
+      title: 'Traitement réglementaire et recyclage',
+      content: 'Le véhicule est acheminé vers un professionnel autorisé à intervenir dans cette filière spécifique. La traçabilité du parcours est assurée conformément aux obligations en vigueur. Les différents opérateurs interviennent en synergie pour la réalisation des opérations requises.',
     },
     {
       type: 'FaqLocal',
       title: 'Questions fréquentes sur l\'enlèvement à Issy-les-Moulineaux',
       questions: [
-        { q: 'L\'intervention à Issy-les-Moulineaux est-elle soumise à des frais de déplacement ?', a: 'Non, si votre véhicule est complet, l\'enlèvement et le déplacement jusqu\'à Issy-les-Moulineaux sont entièrement gratuits.' },
-        { q: 'Délivrez-vous le certificat de destruction immédiatement ?', a: 'Oui, nous vous remettons le certificat de cession pour destruction en main propre le jour de l\'enlèvement.' },
-        { q: 'Mon véhicule est accidenté sur la voie publique, pouvez-vous le retirer ?', a: 'Absolument, nous intervenons sur la voie publique à condition que vous soyez présent avec les documents requis.' },
-        { q: 'Intervenez-vous rapidement en cas de véhicule gênant la circulation à Issy-les-Moulineaux ?', a: 'Oui, nous priorisons les situations urgentes en petite couronne. Contactez-nous pour un créneau adapté.' },
-        { q: 'Que se passe-t-il si je n\'ai plus la carte grise de mon véhicule ?', a: 'Une déclaration de perte ou de vol effectuée en préfecture ou gendarmerie suffit. Nous vous guidons dans cette démarche.' },
-        { q: 'Prenez-vous en charge les motos et utilitaires en plus des voitures ?', a: 'Oui, nous enlevons gratuitement tout type de véhicule hors d\'usage : voiture, moto, scooter, camionnette ou utilitaire.' },
+        { q: 'Le véhicule doit-il être en état de rouler pour être enlevé ?', a: 'Non, nous prenons en charge les véhicules immobilisés, sans roues, sans batterie ou fortement endommagés.' },
         { q: 'Quel est le délai habituel entre la demande et l\'enlèvement ?', a: 'En général, nous intervenons sous 24 à 48h après confirmation du rendez-vous et vérification des documents.' },
-        { q: 'Le véhicule doit-il être en état de rouler pour être enlevé ?', a: 'Non, nous prenons en charge les véhicules immobilisés, sans roues, sans batterie ou fortement endommagés.' }
+        { q: 'Prenez-vous en charge les motos et utilitaires en plus des voitures ?', a: 'Oui, nous enlevons gratuitement tout type de véhicule hors d\'usage : voiture, moto, scooter, camionnette ou utilitaire.' },
+        { q: 'Que se passe-t-il si je n\'ai plus la carte grise de mon véhicule ?', a: 'Une déclaration de perte ou de vol effectuée en préfecture ou gendarmerie suffit. Nous vous guidons dans cette démarche.' },
+        { q: 'Intervenez-vous rapidement en cas de véhicule gênant la circulation à Issy-les-Moulineaux ?', a: 'Oui, nous priorisons les situations urgentes en petite couronne. Contactez-nous pour un créneau adapté.' },
+        { q: 'Mon véhicule est accidenté sur la voie publique, pouvez-vous le retirer ?', a: 'Absolument, nous intervenons sur la voie publique à condition que vous soyez présent avec les documents requis.' },
+        { q: 'Quels documents obtenez-vous le jour de l\'enlèvement ?', a: 'Vous recevez un justificatif de prise en charge le jour même, ainsi que tous les documents attestant de la bonne fin de l\'opération.' },
+        { q: 'L\'intervention à Issy-les-Moulineaux est-elle soumise à des frais de déplacement ?', a: 'Non, si votre véhicule est complet, l\'enlèvement et le déplacement jusqu\'à Issy-les-Moulineaux sont entièrement gratuits.' }
       ],
     },
     {

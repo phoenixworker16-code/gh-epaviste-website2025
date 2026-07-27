@@ -1,0 +1,21 @@
+{
+  "pages": [],
+  "warnings": [
+    {
+      "type": "dependency",
+      "message": "cities-content.json encore référencé",
+      "files": [
+        "reports/architecture-inventory.md",
+        "scripts/validate-all.js"
+      ]
+    }
+  ],
+  "errors": [],
+  "summary": {
+    "totalPages": 0,
+    "totalIssues": 0,
+    "totalWarnings": 1,
+    "totalErrors": 0,
+    "readyForProduction": false
+  }
+}

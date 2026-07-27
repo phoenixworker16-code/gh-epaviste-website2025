@@ -16,27 +16,28 @@ export const ivrySurSeineData: PageData = {
   blocks: [
     {
       type: 'Hero',
-      title: 'Enlèvement d\'épave à Ivry-sur-Seine (94200)',
-      subtitle: 'Prise en charge professionnelle de votre véhicule hors d\'usage avec un rendez-vous adapté à son emplacement.',
+      title: 'Service d\'enlèvement d\'épave à Ivry-sur-Seine (94200) - Intervention Ivry-sur-Seine',
+      subtitle: 'Intervention à Ivry-sur-Seine (94200) : retrait gratuit de votre épave par des professionnels à Ivry-sur-Seine.',
       badge: 'Ivry-sur-Seine (94200)',
     },
     {
       type: 'Introduction',
       title: 'Votre épaviste de confiance à Ivry-sur-Seine',
-      content: 'Dans une agglomération dynamique comme Ivry-sur-Seine (94200), se débarrasser d\'un véhicule encombrant nécessite une logistique précise. Notre équipe couvre l\'ensemble de la commune pour vous proposer un service d\'enlèvement d\'épave totalement gratuit. Que ce soit du côté de Rue Gaston Picard ou ailleurs dans la commune, nous intervenons gratuitement. Nous garantissons une prise en charge conforme à la législation avec remise du certificat de destruction. Avant le rendez-vous, vérifiez l’accès au véhicule et préparez les documents demandés. Le rendez-vous est organisé à partir de la situation du véhicule et des conditions d’accès indiquées. Les modalités du rendez-vous sont précisées afin de préparer l’intervention.',
+      content: 'Dans une grande ville comme Ivry-sur-Seine, un véhicule hors d\'usage attire vite l\'attention. Évitez les désagréments d\'une amende à Ivry-sur-Seine en organisant un enlèvement préventif. Notre équipe à Ivry-sur-Seine assure un enlèvement gratuit et professionnel de votre véhicule hors d\'usage. La préparation du passage vise à éviter les déplacements inutiles et les difficultés d\'accès. Le passage est programmé en fonction de l\'accessibilité du véhicule signalée lors de la demande. Notre équipe dessert notamment le secteur de Rue Ampère dans la commune.',
     },
     {
       type: 'VhuCompliance',
-      title: 'Dépollution et Recyclage',
-      content: 'La prise en charge prévoit le transfert du véhicule vers un centre VHU partenaire agréé. Les opérations prévues par la réglementation et le recyclage y sont assurés dans les filières adaptées. Le transfert est organisé avec un partenaire spécialisé dans les procédures applicables aux véhicules hors d’usage.',
+      title: 'Traitement réglementaire et recyclage',
+      content: 'Le véhicule est dirigé vers un opérateur partenaire compétent dans le domaine du recyclage automobile. Les opérations réglementaires sont réalisées selon les procédures établies par les partenaires. La coordination des acteurs garantit le respect des procédures à chaque étape du parcours.',
     },
     {
       type: 'LocalCoverage',
       title: 'Couverture d\'intervention sur Ivry-sur-Seine',
-      intro: 'Notre équipe intervient dans l\'ensemble de la commune de Ivry-sur-Seine pour procéder à l\'enlèvement de votre véhicule. La préparation du passage prend en compte les contraintes signalées avant l’intervention. Les contraintes d’accès sont prises en compte pendant la préparation du rendez-vous.',
+      intro: 'Que vous habitiez le centre ou la périphérie de Ivry-sur-Seine, nous venons retirer votre véhicule. Un créneau d\'enlèvement à Ivry-sur-Seine vous est proposé selon vos disponibilités. Les habitants du 94200 à Ivry-sur-Seine bénéficient d\'un passage régulier de nos équipes et d\'une prise en charge adaptée à ce secteur. Au-delà du territoire de Ivry-sur-Seine, les secteurs périphériques sont également couverts.',
       zones: [
-        { name: 'Centre-ville & Rues étroites', delay: 'Sous 24h', specificities: 'Matériel adapté aux accès difficiles et parkings.' },
-        { name: 'Secteur Allée de la Chocolaterie / Avenue Danielle Casanova', delay: 'Sur RDV', specificities: 'Prise en charge rapide sur les grands axes.' }
+        { name: 'Centre-ville & Zones denses', delay: 'Sous 24h', specificities: 'Intervention rapide sur l\'agglomération.' },
+        { name: 'Quartiers résidentiels', delay: '24h', specificities: 'Enlèvement au domicile ou parking.' },
+        { name: 'Zones d\'activité', delay: 'Sur RDV', specificities: 'Retrait sur parkings d\'entreprise.' }
       ],
     },
     {
@@ -49,14 +50,14 @@ export const ivrySurSeineData: PageData = {
       type: 'FaqLocal',
       title: 'Questions fréquentes sur l\'enlèvement à Ivry-sur-Seine',
       questions: [
-        { q: 'Le véhicule doit-il être en état de rouler pour être enlevé ?', a: 'Non, nous prenons en charge les véhicules immobilisés, sans roues, sans batterie ou fortement endommagés.' },
-        { q: 'Quel est le délai habituel entre la demande et l\'enlèvement ?', a: 'En général, nous intervenons sous 24 à 48h après confirmation du rendez-vous et vérification des documents.' },
-        { q: 'Prenez-vous en charge les motos et utilitaires en plus des voitures ?', a: 'Oui, nous enlevons gratuitement tout type de véhicule hors d\'usage : voiture, moto, scooter, camionnette ou utilitaire.' },
-        { q: 'Que se passe-t-il si je n\'ai plus la carte grise de mon véhicule ?', a: 'Une déclaration de perte ou de vol effectuée en préfecture ou gendarmerie suffit. Nous vous guidons dans cette démarche.' },
-        { q: 'Mon véhicule est bloqué en sous-sol à Ivry-sur-Seine, est-ce un problème ?', a: 'Pas du tout. Nous disposons de dépanneuses 4x4 extra-basses capables d\'entrer dans la majorité des parkings souterrains.' },
+        { q: 'L\'intervention à Ivry-sur-Seine est-elle soumise à des frais de déplacement ?', a: 'Non, si votre véhicule est complet, l\'enlèvement et le déplacement jusqu\'à Ivry-sur-Seine sont entièrement gratuits.' },
+        { q: 'Quels documents obtenez-vous le jour de l\'enlèvement ?', a: 'Vous recevez un justificatif de prise en charge le jour même, ainsi que tous les documents attestant de la bonne fin de l\'opération.' },
         { q: 'Mon véhicule est accidenté sur la voie publique, pouvez-vous le retirer ?', a: 'Absolument, nous intervenons sur la voie publique à condition que vous soyez présent avec les documents requis.' },
-        { q: 'Délivrez-vous le certificat de destruction immédiatement ?', a: 'Oui, nous vous remettons le certificat de cession pour destruction en main propre le jour de l\'enlèvement.' },
-        { q: 'L\'intervention à Ivry-sur-Seine est-elle soumise à des frais de déplacement ?', a: 'Non, si votre véhicule est complet, l\'enlèvement et le déplacement jusqu\'à Ivry-sur-Seine sont entièrement gratuits.' }
+        { q: 'Mon véhicule est bloqué en sous-sol à Ivry-sur-Seine, est-ce un problème ?', a: 'Pas du tout. Nous disposons de dépanneuses 4x4 extra-basses capables d\'entrer dans la majorité des parkings souterrains.' },
+        { q: 'Que se passe-t-il si je n\'ai plus la carte grise de mon véhicule ?', a: 'Une déclaration de perte ou de vol effectuée en préfecture ou gendarmerie suffit. Nous vous guidons dans cette démarche.' },
+        { q: 'Prenez-vous en charge les motos et utilitaires en plus des voitures ?', a: 'Oui, nous enlevons gratuitement tout type de véhicule hors d\'usage : voiture, moto, scooter, camionnette ou utilitaire.' },
+        { q: 'Quel est le délai habituel entre la demande et l\'enlèvement ?', a: 'En général, nous intervenons sous 24 à 48h après confirmation du rendez-vous et vérification des documents.' },
+        { q: 'Le véhicule doit-il être en état de rouler pour être enlevé ?', a: 'Non, nous prenons en charge les véhicules immobilisés, sans roues, sans batterie ou fortement endommagés.' }
       ],
     },
     {

@@ -16,23 +16,24 @@ export const courbevoieData: PageData = {
   blocks: [
     {
       type: 'Hero',
-      title: 'Service d\'enlèvement d\'épave à Courbevoie',
-      subtitle: 'Prise en charge professionnelle de votre véhicule hors d\'usage avec un rendez-vous adapté à son emplacement.',
+      title: 'Retrait de véhicule hors d\'usage à Courbevoie (92400) dans le 92400',
+      subtitle: 'Besoin d\'un épaviste à Courbevoie (92400) ? Enlèvement gratuit de votre VHU dans tout Courbevoie.',
       badge: 'Courbevoie (92400)',
     },
     {
       type: 'LocalCoverage',
       title: 'Couverture d\'intervention sur Courbevoie',
-      intro: 'Notre équipe intervient dans l\'ensemble de la commune de Courbevoie pour procéder à l\'enlèvement de votre véhicule. Les informations de stationnement permettent d’anticiper les conditions de prise en charge. Les modalités de passage sont précisées avant le déplacement du professionnel. Nos dépanneuses rayonnent également sur les secteurs limitrophes comme Levallois-Perret et La Garenne-Colombes.',
+      intro: 'Notre service à Courbevoie est accessible dans tous les quartiers, du centre aux lotissements. Pour Courbevoie, l\'équipe se renseigne sur les spécificités d\'accès avant le départ. Le code postal 92400 est intégré dans notre tournée d\'enlèvement régulière à Courbevoie, ce qui garantit une intervention rapide. Les alentours de Courbevoie sont intégrés à notre tournée d\'enlèvement régulière. C\'est le cas notamment vers Levallois-Perret et La Garenne-Colombes.',
       zones: [
         { name: 'Zones pavillonnaires', delay: 'Sous 24h', specificities: 'Enlèvement au domicile ou dans votre allée privée.' },
-        { name: 'Axes vers Asnières-sur-Seine', delay: '24h', specificities: 'Dépannage bord de route ou parking.' }
+        { name: 'Centre-ville & Axes principaux', delay: '24h', specificities: 'Retrait d\'épave sur voie publique.' },
+        { name: 'Secteurs d\'activité', delay: 'Sur RDV', specificities: 'Intervention en zone commerciale.' }
       ],
     },
     {
       type: 'Introduction',
       title: 'Votre épaviste de confiance à Courbevoie',
-      content: 'La densité de circulation à Courbevoie (92400) exige une solution professionnelle pour l\'enlèvement de votre épave. Nous mettons à votre disposition nos dépanneuses spécialisées dans les interventions en petite couronne. Fini les soucis de stationnement abusif : nous récupérons votre véhicule hors d\'usage et l\'amenons chez un broyeur agréé VHU partenaire. L’organisation du retrait tient compte de l’emplacement du véhicule, de son état et des conditions d’accès. Le rendez-vous est organisé à partir de la situation du véhicule et des conditions d’accès indiquées. Les informations disponibles sont examinées avant de fixer les modalités du retrait.',
+      content: 'Dans une commune dense comme Courbevoie, une épave sur la voie publique pose vite problème. Dans une commune comme Courbevoie, le stationnement est déjà tendu sans une épave en plus. L\'intervention à Courbevoie est réalisée avec les équipements appropriés à la circulation locale. Un échange téléphonique permet de finaliser l\'organisation avant le passage. Notre équipe connaît les raccourcis et les horaires de circulation à Courbevoie. Notre équipe dessert notamment le secteur de Rue De Visien dans la commune.',
     },
     {
       type: 'DocsPreparation',
@@ -42,21 +43,21 @@ export const courbevoieData: PageData = {
     },
     {
       type: 'VhuCompliance',
-      title: 'Dépollution et Recyclage',
-      content: 'Après l\'enlèvement, le véhicule est acheminé vers un centre VHU partenaire agréé. Cette organisation garantit une prise en charge conforme et une valorisation dans les filières prévues. Le propriétaire conserve ainsi une information claire sur le parcours réglementaire du véhicule.',
+      title: 'Traitement réglementaire et recyclage',
+      content: 'Après l\'enlèvement, le véhicule est acheminé vers une installation partenaire autorisée pour les opérations de fin de vie. Les formalités requises sont accomplies par les partenaires compétents dans la filière. Le processus est organisé de manière à respecter les obligations à chaque phase du parcours.',
     },
     {
       type: 'FaqLocal',
       title: 'Questions fréquentes sur l\'enlèvement à Courbevoie',
       questions: [
-        { q: 'Le véhicule doit-il être en état de rouler pour être enlevé ?', a: 'Non, nous prenons en charge les véhicules immobilisés, sans roues, sans batterie ou fortement endommagés.' },
-        { q: 'Quel est le délai habituel entre la demande et l\'enlèvement ?', a: 'En général, nous intervenons sous 24 à 48h après confirmation du rendez-vous et vérification des documents.' },
-        { q: 'Prenez-vous en charge les motos et utilitaires en plus des voitures ?', a: 'Oui, nous enlevons gratuitement tout type de véhicule hors d\'usage : voiture, moto, scooter, camionnette ou utilitaire.' },
-        { q: 'Que se passe-t-il si je n\'ai plus la carte grise de mon véhicule ?', a: 'Une déclaration de perte ou de vol effectuée en préfecture ou gendarmerie suffit. Nous vous guidons dans cette démarche.' },
-        { q: 'Intervenez-vous rapidement en cas de véhicule gênant la circulation à Courbevoie ?', a: 'Oui, nous priorisons les situations urgentes en petite couronne. Contactez-nous pour un créneau adapté.' },
+        { q: 'L\'intervention à Courbevoie est-elle soumise à des frais de déplacement ?', a: 'Non, si votre véhicule est complet, l\'enlèvement et le déplacement jusqu\'à Courbevoie sont entièrement gratuits.' },
+        { q: 'Quels documents obtenez-vous le jour de l\'enlèvement ?', a: 'Vous recevez un justificatif de prise en charge le jour même, ainsi que tous les documents attestant de la bonne fin de l\'opération.' },
         { q: 'Mon véhicule est accidenté sur la voie publique, pouvez-vous le retirer ?', a: 'Absolument, nous intervenons sur la voie publique à condition que vous soyez présent avec les documents requis.' },
-        { q: 'Délivrez-vous le certificat de destruction immédiatement ?', a: 'Oui, nous vous remettons le certificat de cession pour destruction en main propre le jour de l\'enlèvement.' },
-        { q: 'L\'intervention à Courbevoie est-elle soumise à des frais de déplacement ?', a: 'Non, si votre véhicule est complet, l\'enlèvement et le déplacement jusqu\'à Courbevoie sont entièrement gratuits.' }
+        { q: 'Intervenez-vous rapidement en cas de véhicule gênant la circulation à Courbevoie ?', a: 'Oui, nous priorisons les situations urgentes en petite couronne. Contactez-nous pour un créneau adapté.' },
+        { q: 'Que se passe-t-il si je n\'ai plus la carte grise de mon véhicule ?', a: 'Une déclaration de perte ou de vol effectuée en préfecture ou gendarmerie suffit. Nous vous guidons dans cette démarche.' },
+        { q: 'Prenez-vous en charge les motos et utilitaires en plus des voitures ?', a: 'Oui, nous enlevons gratuitement tout type de véhicule hors d\'usage : voiture, moto, scooter, camionnette ou utilitaire.' },
+        { q: 'Quel est le délai habituel entre la demande et l\'enlèvement ?', a: 'En général, nous intervenons sous 24 à 48h après confirmation du rendez-vous et vérification des documents.' },
+        { q: 'Le véhicule doit-il être en état de rouler pour être enlevé ?', a: 'Non, nous prenons en charge les véhicules immobilisés, sans roues, sans batterie ou fortement endommagés.' }
       ],
     },
     {

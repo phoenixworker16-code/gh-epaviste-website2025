@@ -6,36 +6,11 @@ import { InternalLinking } from '@/components/internal-linking';
 import BreadcrumbJsonLd from '@/components/breadcrumb-jsonld';
 import { MAJOR_CITY_SLUGS, isMajorCity } from '@/data/major-cities';
 
+import villesData from '@/data/villes.json';
+
 // Liste exhaustive des slugs de ville générés — utilisée pour generateStaticParams
-// et pour valider les slugs entrants (prévention d'attaques par import dynamique)
-// Générée à partir du fichier batch phase4-2-batch1 + manuellement validée
-const VALID_CITY_SLUGS = new Set<string>([
-  "alfortville","antony","argenteuil","arpajon","asnieres-sur-seine","athis-mons",
-  "aubervilliers","aulnay-sous-bois","bagnolet","bezons","bobigny","boissy-saint-leger",
-  "bondy","boulogne-billancourt","brie-comte-robert","cergy","champigny-sur-marne",
-  "charenton-le-pont","chatenay-malabry","chatou","chelles","choisy-le-roi","clamart",
-  "clichy-sous-bois","clichy","colombes","conflans-sainte-honorine","corbeil-essonnes",
-  "coubron","coulommiers","courbevoie","creteil","drancy","draveil","dugny",
-  "enghien-les-bains","epinay-sur-seine","eragny-sur-oise","ermont","etampes",
-  "evry-courcouronnes","fontainebleau","fontenay-sous-bois","gagny","garches",
-  "garges-les-gonesse","gif-sur-yvette","gonesse","gournay-sur-marne","guyancourt",
-  "herblay-sur-seine","houilles","issy-les-moulineaux","ivry-sur-seine",
-  "joinville-le-pont","juvisy-sur-orge","la-courneuve","le-blanc-mesnil","le-bourget",
-  "le-pre-saint-gervais","le-raincy","le-vesinet","les-lilas","les-pavillons-sous-bois",
-  "les-ulis","levallois-perret","lile-saint-denis","livry-gargan","lognes","longjumeau",
-  "maisons-alfort","maisons-laffitte","mantes-la-jolie","marines","massy","meaux",
-  "melun","moissy-cramayel","montereau-fault-yonne","montfermeil",
-  "montigny-le-bretonneux","montmorency","montreuil","montrouge","nanterre",
-  "neuilly-plaisance","neuilly-sur-marne","nogent-sur-marne","noisiel","noisy-le-grand",
-  "noisy-le-sec","ozoir-la-ferriere","palaiseau","pantin","paris","poissy",
-  "pontault-combault","pontoise","provins","rambouillet","ris-orangis","romainville",
-  "rosny-sous-bois","rueil-malmaison","saint-denis","saint-germain-en-laye",
-  "saint-maur-des-fosses","saint-ouen-laumone","saint-ouen-sur-seine",
-  "sainte-genevieve-des-bois","sarcelles","sartrouville","savigny-le-temple","sceaux",
-  "sevran","stains","taverny","torcy","trappes","tremblay-en-france","vaujours",
-  "velizy-villacoublay","versailles","villemomble","villeneuve-saint-georges",
-  "villepinte","villetaneuse","vincennes","viry-chatillon","vitry-sur-seine"
-]);
+// Source de vérité unique : data/villes.json
+const VALID_CITY_SLUGS = new Set<string>(villesData.map((v: any) => v.slug));
 
 // Cache par requête pour éviter les doubles imports (generateMetadata + page component)
 const cityDataCache = new Map<string, any>();

@@ -16,14 +16,14 @@ export const chellesData: PageData = {
   blocks: [
     {
       type: 'Hero',
-      title: 'Enlèvement d\'épave à Chelles (77500)',
-      subtitle: 'Nous venons jusqu\'à vous à Chelles (77500) pour retirer gratuitement votre véhicule encombrant.',
+      title: 'Service d\'enlèvement 100% gratuit à Chelles (77500) pour les habitants de Chelles',
+      subtitle: 'Solution enlèvement épave à Chelles (77500). Intervention rapide et gratuite dans le 77500 de Chelles.',
       badge: 'Chelles (77500)',
     },
     {
       type: 'Introduction',
       title: 'Votre épaviste de confiance à Chelles',
-      content: 'Situé à Chelles (77500), votre véhicule hors d\'usage encombre votre terrain ou votre cour ? Nous nous déplaçons gratuitement jusqu\'à vous, même dans les zones moins denses du département Seine-et-Marne. Profitez d\'un débarras d\'épave professionnel et écologique, avec une prise en charge complète du remorquage au recyclage. Avant le rendez-vous, vérifiez l’accès au véhicule et préparez les documents demandés. La préparation du passage vise à éviter les déplacements inutiles et les difficultés d’accès. La demande permet d’identifier les informations nécessaires avant le déplacement.',
+      content: 'Dans le secteur rural de Chelles, nous nous déplaçons gratuitement pour enlever votre épave. Dans l\'environnement rural de Chelles, nous intervenons avec discrétion et efficacité. Les exploitants agricoles de Chelles nous confient leurs épaves pour un traitement réglementaire. L\'organisation du retrait est préparée conjointement avec le propriétaire du véhicule. Nous prévoyons le passage à Chelles en fonction des conditions météo et d\'accès. Notre équipe dessert notamment le secteur de Avenue d\'Iena dans la commune.',
     },
     {
       type: 'DocsPreparation',
@@ -33,30 +33,31 @@ export const chellesData: PageData = {
     },
     {
       type: 'VhuCompliance',
-      title: 'Dépollution et Recyclage',
-      content: 'Le véhicule est remis à un partenaire spécialisé pour la suite de son traitement réglementaire. Cette organisation garantit une prise en charge conforme et une valorisation dans les filières prévues. Cette répartition des rôles assure une continuité entre l’enlèvement et les opérations réglementaires ultérieures.',
+      title: 'Traitement réglementaire et recyclage',
+      content: 'Le véhicule est acheminé vers un partenaire disposant des compétences pour le traitement de fin de vie. Les différentes obligations sont remplies par les professionnels intervenant dans la chaîne de traitement. La continuité du traitement est assurée par une organisation structurée entre les partenaires.',
     },
     {
       type: 'LocalCoverage',
       title: 'Couverture d\'intervention sur Chelles',
-      intro: 'Notre équipe intervient dans l\'ensemble de la commune de Chelles pour procéder à l\'enlèvement de votre véhicule. Le rendez-vous est préparé selon le type d’accès indiqué lors de la demande. Les détails partagés avant l’intervention facilitent l’organisation du passage. Nos dépanneuses rayonnent également sur les secteurs limitrophes comme Coubron et Le Pin (Seine-et-Marne).',
+      intro: 'Pour un enlèvement à Chelles, notre logistique couvre tous les secteurs sans exception. Les modalités pratiques de l\'enlèvement à Chelles sont calées en amont avec vous. Notre service dessert quotidiennement le secteur 77500 de Chelles avec des équipes spécialisées dans l\'enlèvement d\'épaves. Les routes et chemins autour de Chelles sont parcourus régulièrement par nos véhicules. C\'est le cas notamment vers Coubron et Le Pin (Seine-et-Marne).',
       zones: [
-        { name: 'Bourg et centre de Chelles', delay: 'Sous 48h', specificities: 'Intervention programmée avec vous.' },
-        { name: 'Lieux-dits et extérieurs', delay: 'Sur RDV', specificities: 'Accès terrain privé ou chemin.' }
+        { name: 'Bourg et centre', delay: 'Sous 48h', specificities: 'Intervention programmée avec vous.' },
+        { name: 'Lieux-dits et extérieurs', delay: 'Sur RDV', specificities: 'Accès terrain privé ou chemin rural.' },
+        { name: 'Hameaux et secteurs isolés', delay: '48h', specificities: 'Matériel adapté aux voies non goudronnées.' }
       ],
     },
     {
       type: 'FaqLocal',
       title: 'Questions fréquentes sur l\'enlèvement à Chelles',
       questions: [
-        { q: 'L\'intervention à Chelles est-elle soumise à des frais de déplacement ?', a: 'Non, si votre véhicule est complet, l\'enlèvement et le déplacement jusqu\'à Chelles sont entièrement gratuits.' },
-        { q: 'Délivrez-vous le certificat de destruction immédiatement ?', a: 'Oui, nous vous remettons le certificat de cession pour destruction en main propre le jour de l\'enlèvement.' },
-        { q: 'Mon véhicule est accidenté sur la voie publique, pouvez-vous le retirer ?', a: 'Absolument, nous intervenons sur la voie publique à condition que vous soyez présent avec les documents requis.' },
-        { q: 'Venez-vous chercher une épave dans un champ ou un terrain difficile ?', a: 'Oui, nous sommes équipés de treuils puissants permettant d\'extraire des véhicules enlisés ou sur des terrains non goudronnés.' },
-        { q: 'Que se passe-t-il si je n\'ai plus la carte grise de mon véhicule ?', a: 'Une déclaration de perte ou de vol effectuée en préfecture ou gendarmerie suffit. Nous vous guidons dans cette démarche.' },
-        { q: 'Prenez-vous en charge les motos et utilitaires en plus des voitures ?', a: 'Oui, nous enlevons gratuitement tout type de véhicule hors d\'usage : voiture, moto, scooter, camionnette ou utilitaire.' },
+        { q: 'Le véhicule doit-il être en état de rouler pour être enlevé ?', a: 'Non, nous prenons en charge les véhicules immobilisés, sans roues, sans batterie ou fortement endommagés.' },
         { q: 'Quel est le délai habituel entre la demande et l\'enlèvement ?', a: 'En général, nous intervenons sous 24 à 48h après confirmation du rendez-vous et vérification des documents.' },
-        { q: 'Le véhicule doit-il être en état de rouler pour être enlevé ?', a: 'Non, nous prenons en charge les véhicules immobilisés, sans roues, sans batterie ou fortement endommagés.' }
+        { q: 'Prenez-vous en charge les motos et utilitaires en plus des voitures ?', a: 'Oui, nous enlevons gratuitement tout type de véhicule hors d\'usage : voiture, moto, scooter, camionnette ou utilitaire.' },
+        { q: 'Que se passe-t-il si je n\'ai plus la carte grise de mon véhicule ?', a: 'Une déclaration de perte ou de vol effectuée en préfecture ou gendarmerie suffit. Nous vous guidons dans cette démarche.' },
+        { q: 'Venez-vous chercher une épave dans un champ ou un terrain difficile ?', a: 'Oui, nous sommes équipés de treuils puissants permettant d\'extraire des véhicules enlisés ou sur des terrains non goudronnés.' },
+        { q: 'Mon véhicule est accidenté sur la voie publique, pouvez-vous le retirer ?', a: 'Absolument, nous intervenons sur la voie publique à condition que vous soyez présent avec les documents requis.' },
+        { q: 'Quels documents obtenez-vous le jour de l\'enlèvement ?', a: 'Vous recevez un justificatif de prise en charge le jour même, ainsi que tous les documents attestant de la bonne fin de l\'opération.' },
+        { q: 'L\'intervention à Chelles est-elle soumise à des frais de déplacement ?', a: 'Non, si votre véhicule est complet, l\'enlèvement et le déplacement jusqu\'à Chelles sont entièrement gratuits.' }
       ],
     },
     {

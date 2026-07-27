@@ -16,27 +16,28 @@ export const versaillesData: PageData = {
   blocks: [
     {
       type: 'Hero',
-      title: 'Retrait de véhicule hors d\'usage à Versailles',
-      subtitle: 'Un enlèvement préparé selon l’accès au véhicule et les informations transmises lors de votre demande.',
+      title: 'Service d\'enlèvement de véhicule à Versailles (78000) dans tout Versailles',
+      subtitle: 'Votre véhicule hors d\'usage à Versailles (78000) ? Enlèvement gratuit partout dans Versailles.',
       badge: 'Versailles (78000)',
     },
     {
       type: 'Introduction',
       title: 'Votre épaviste de confiance à Versailles',
-      content: 'Dans une agglomération dynamique comme Versailles (78000), se débarrasser d\'un véhicule encombrant nécessite une logistique précise. Notre équipe couvre l\'ensemble de la commune pour vous proposer un service d\'enlèvement d\'épave totalement gratuit. Nous garantissons une prise en charge conforme à la législation avec remise du certificat de destruction. La demande permet de préciser les contraintes de stationnement et les documents disponibles avant l’intervention. Les informations communiquées au moment de la demande facilitent la préparation du retrait. Le créneau est confirmé après vérification des éléments utiles à la prise en charge.',
+      content: 'Nous intervenons dans toute l\'agglomération de Versailles pour un retrait rapide et gratuit. À Versailles, nous vous évitons les tracas en prenant en charge votre véhicule gratuitement. À Versailles, le service d\'enlèvement gratuit est organisé avec une logistique de proximité. Les informations communiquées au moment de la demande facilitent la préparation du retrait. Les accès et le stationnement à Versailles sont anticipés pour une intervention sans stress.',
     },
     {
       type: 'VhuCompliance',
-      title: 'Dépollution et Recyclage',
-      content: 'L\'enlèvement est suivi d\'un acheminement vers un centre VHU partenaire agréé. Cette organisation garantit une prise en charge conforme et une valorisation dans les filières prévues. Les responsabilités de chaque intervenant sont distinguées dès l’organisation de l’enlèvement.',
+      title: 'Traitement réglementaire et recyclage',
+      content: 'La prestation comprend l\'orientation du véhicule vers un interlocuteur compétent pour les étapes à venir. Les différentes opérations sont soumises au respect des règles applicables à la filière. La coordination des professionnels garantit l\'efficacité du traitement réglementaire.',
     },
     {
       type: 'LocalCoverage',
       title: 'Couverture d\'intervention sur Versailles',
-      intro: 'Notre équipe intervient dans l\'ensemble de la commune de Versailles pour procéder à l\'enlèvement de votre véhicule. Le rendez-vous est préparé selon le type d’accès indiqué lors de la demande. Les modalités de passage sont précisées avant le déplacement du professionnel.',
+      intro: 'Nous venons chercher votre épave à Versailles, même dans les endroits difficilement accessibles. Pour Versailles, une préparation sur mesure est réalisée selon vos indications. La zone 78000 fait partie de notre secteur d\'intervention prioritaire. Nous organisons des passages réguliers dans cette partie de Versailles. Les communes autour de Versailles sont également parcourues par nos dépanneuses.',
       zones: [
-        { name: 'Centre-ville & Rues étroites', delay: 'Sous 24h', specificities: 'Matériel adapté aux accès difficiles et parkings.' },
-        { name: 'Quartiers périphériques', delay: '24h à 48h', specificities: 'Intervention planifiée.' }
+        { name: 'Centre-ville & Zones denses', delay: 'Sous 24h', specificities: 'Intervention rapide sur l\'agglomération.' },
+        { name: 'Quartiers résidentiels', delay: '24h', specificities: 'Enlèvement au domicile ou parking.' },
+        { name: 'Zones d\'activité', delay: 'Sur RDV', specificities: 'Retrait sur parkings d\'entreprise.' }
       ],
     },
     {
@@ -55,7 +56,7 @@ export const versaillesData: PageData = {
         { q: 'Que se passe-t-il si je n\'ai plus la carte grise de mon véhicule ?', a: 'Une déclaration de perte ou de vol effectuée en préfecture ou gendarmerie suffit. Nous vous guidons dans cette démarche.' },
         { q: 'Mon véhicule est bloqué en sous-sol à Versailles, est-ce un problème ?', a: 'Pas du tout. Nous disposons de dépanneuses 4x4 extra-basses capables d\'entrer dans la majorité des parkings souterrains.' },
         { q: 'Mon véhicule est accidenté sur la voie publique, pouvez-vous le retirer ?', a: 'Absolument, nous intervenons sur la voie publique à condition que vous soyez présent avec les documents requis.' },
-        { q: 'Délivrez-vous le certificat de destruction immédiatement ?', a: 'Oui, nous vous remettons le certificat de cession pour destruction en main propre le jour de l\'enlèvement.' },
+        { q: 'Quels documents obtenez-vous le jour de l\'enlèvement ?', a: 'Vous recevez un justificatif de prise en charge le jour même, ainsi que tous les documents attestant de la bonne fin de l\'opération.' },
         { q: 'L\'intervention à Versailles est-elle soumise à des frais de déplacement ?', a: 'Non, si votre véhicule est complet, l\'enlèvement et le déplacement jusqu\'à Versailles sont entièrement gratuits.' }
       ],
     },

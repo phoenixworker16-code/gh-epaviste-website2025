@@ -16,27 +16,28 @@ export const cergyData: PageData = {
   blocks: [
     {
       type: 'Hero',
-      title: 'Épaviste Agréé Partenaire à Cergy',
-      subtitle: 'Un enlèvement préparé selon l’accès au véhicule et les informations transmises lors de votre demande.',
+      title: 'Enlèvement d\'épave gratuit à Cergy (95000) - Service Cergy',
+      subtitle: 'Retrait gratuit de votre véhicule hors d\'usage à Cergy (95000). Service professionnel à Cergy.',
       badge: 'Cergy (95000)',
     },
     {
       type: 'Introduction',
       title: 'Votre épaviste de confiance à Cergy',
-      content: 'Dans une agglomération dynamique comme Cergy (95000), se débarrasser d\'un véhicule encombrant nécessite une logistique précise. Notre équipe couvre l\'ensemble de la commune pour vous proposer un service d\'enlèvement d\'épave totalement gratuit. Que ce soit du côté de Rue des Plants Orange ou ailleurs dans la commune, nous intervenons gratuitement. Nous garantissons une prise en charge conforme à la législation avec remise du certificat de destruction. L’organisation du retrait tient compte de l’emplacement du véhicule, de son état et des conditions d’accès. Le rendez-vous est organisé à partir de la situation du véhicule et des conditions d’accès indiquées. La préparation du rendez-vous clarifie les éléments à présenter lors de l’enlèvement.',
+      content: 'Nous intervenons dans toute l\'agglomération de Cergy pour un retrait rapide et gratuit. Les rues de Cergy ne sont pas un lieu de stockage pour un véhicule hors d\'usage. Nous couvrons Cergy et ses environs pour un retrait professionnel et sans frais. Un contact est établi avant le passage pour confirmer les modalités de l\'intervention. Les modalités pratiques sont échangées en amont pour une intervention sereine à Cergy. Notre équipe dessert notamment le secteur de Rue des Entrechats dans la commune.',
     },
     {
       type: 'VhuCompliance',
-      title: 'Dépollution et Recyclage',
-      content: 'Après l\'enlèvement, le véhicule est acheminé vers un centre VHU partenaire agréé. Le partenaire assure les formalités et l’orientation du véhicule vers les filières réglementaires appropriées. Le transfert est organisé avec un partenaire spécialisé dans les procédures applicables aux véhicules hors d’usage.',
+      title: 'Traitement réglementaire et recyclage',
+      content: 'Après retrait, le véhicule est pris en relais par un opérateur de la filière de recyclage. Les étapes ultérieures sont réalisées par les professionnels compétents, conformément au cadre applicable. Les opérateurs successifs interviennent chacun selon leurs compétences et habilitations.',
     },
     {
       type: 'LocalCoverage',
       title: 'Couverture d\'intervention sur Cergy',
-      intro: 'Notre équipe intervient dans l\'ensemble de la commune de Cergy pour procéder à l\'enlèvement de votre véhicule. Chaque demande est organisée en tenant compte de l’emplacement exact du véhicule. Les modalités de passage sont précisées avant le déplacement du professionnel. Nos dépanneuses rayonnent également sur les secteurs limitrophes comme Neuville-sur-Oise et Courdimanche.',
+      intro: 'Même dans les secteurs les plus excentrés de Cergy, nous organisons l\'enlèvement. Pour Cergy, l\'équipe se renseigne sur les spécificités d\'accès avant le départ. Les habitants du 95000 à Cergy bénéficient d\'un passage régulier de nos équipes et d\'une prise en charge adaptée à ce secteur. Les localités voisines de Cergy peuvent aussi solliciter notre intervention. C\'est le cas notamment vers Neuville-sur-Oise et Courdimanche.',
       zones: [
-        { name: 'Centre-ville & Rues étroites', delay: 'Sous 24h', specificities: 'Matériel adapté aux accès difficiles et parkings.' },
-        { name: 'Secteur Allée de la Futaie / Allée de la Girandole', delay: 'Sur RDV', specificities: 'Prise en charge rapide sur les grands axes.' }
+        { name: 'Centre-ville & Zones denses', delay: 'Sous 24h', specificities: 'Intervention rapide sur l\'agglomération.' },
+        { name: 'Quartiers résidentiels', delay: '24h', specificities: 'Enlèvement au domicile ou parking.' },
+        { name: 'Zones d\'activité', delay: 'Sur RDV', specificities: 'Retrait sur parkings d\'entreprise.' }
       ],
     },
     {
@@ -50,7 +51,7 @@ export const cergyData: PageData = {
       title: 'Questions fréquentes sur l\'enlèvement à Cergy',
       questions: [
         { q: 'L\'intervention à Cergy est-elle soumise à des frais de déplacement ?', a: 'Non, si votre véhicule est complet, l\'enlèvement et le déplacement jusqu\'à Cergy sont entièrement gratuits.' },
-        { q: 'Délivrez-vous le certificat de destruction immédiatement ?', a: 'Oui, nous vous remettons le certificat de cession pour destruction en main propre le jour de l\'enlèvement.' },
+        { q: 'Quels documents obtenez-vous le jour de l\'enlèvement ?', a: 'Vous recevez un justificatif de prise en charge le jour même, ainsi que tous les documents attestant de la bonne fin de l\'opération.' },
         { q: 'Mon véhicule est accidenté sur la voie publique, pouvez-vous le retirer ?', a: 'Absolument, nous intervenons sur la voie publique à condition que vous soyez présent avec les documents requis.' },
         { q: 'Mon véhicule est bloqué en sous-sol à Cergy, est-ce un problème ?', a: 'Pas du tout. Nous disposons de dépanneuses 4x4 extra-basses capables d\'entrer dans la majorité des parkings souterrains.' },
         { q: 'Que se passe-t-il si je n\'ai plus la carte grise de mon véhicule ?', a: 'Une déclaration de perte ou de vol effectuée en préfecture ou gendarmerie suffit. Nous vous guidons dans cette démarche.' },

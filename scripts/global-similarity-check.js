@@ -2,7 +2,7 @@
 /**
  * global-similarity-check.js
  * 
- * Analyse de similarité GLOBALE sur l'ensemble des 130 communes générées.
+ * Analyse de similarité GLOBALE sur l'ensemble des communes générées.
  * 
  * Objectif : valider que le générateur éditorial (variants.js) et le pipeline
  * produisent un contenu suffisamment diversifié pour TOUTES les communes,
@@ -26,7 +26,7 @@ const CITIES_DIR = path.join(PROJECT_ROOT, 'data', 'cities');
 const REPORTS_DIR = path.join(PROJECT_ROOT, 'reports');
 
 // =========================================================================
-// Jaccard Similarity Engine (identique à similarity-reporter.js)
+// Jaccard Similarity Engine
 // =========================================================================
 
 function jaccardSimilarity(setA, setB) {
@@ -39,9 +39,7 @@ function jaccardSimilarity(setA, setB) {
 function extractUniqueWords(pageData) {
   const words = [];
   for (const block of pageData.blocks) {
-    if (['Cta', 'FaqLocal', 'DocsPreparation', 'VehicleTypes'].includes(block.type)) {
-      continue;
-    }
+    if (['Cta', 'FaqLocal', 'DocsPreparation', 'VehicleTypes'].includes(block.type)) continue;
     const textVals = Object.values(block).filter(v => typeof v === 'string').join(' ');
     const cleaned = textVals.toLowerCase().replace(/[.,!?;:()]/g, ' ').replace(/\s+/g, ' ');
     words.push(...cleaned.split(' ').filter(w => w.length > 3));
@@ -91,53 +89,9 @@ function buildBreakdown(pageA, pageB) {
   }));
 }
 
-// =========================================================================
-// Block-level aggregation (identique à similarity-block-reporter.js)
-// =========================================================================
-
 const THRESHOLD_WARN = 65;
 const THRESHOLD_FAIL = 80;
 const ALL_BLOCK_TYPES = ['Hero', 'Introduction', 'LocalCoverage', 'VhuCompliance', 'FaqLocal', 'Cta'];
-
-function aggregateByBlock(pairs) {
-  const blockStats = {};
-  for (const type of ALL_BLOCK_TYPES) {
-    blockStats[type] = { similarities: [], warning: 0, fail: 0, pass: 0 };
-  }
-
-  for (const pair of pairs) {
-    for (const breakdown of pair.breakdown) {
-      const type = breakdown.block;
-      if (!blockStats[type]) continue;
-      blockStats[type].similarities.push(breakdown.similarity);
-      if (breakdown.similarity >= THRESHOLD_FAIL) {
-        blockStats[type].fail++;
-      } else if (breakdown.similarity >= THRESHOLD_WARN) {
-        blockStats[type].warning++;
-      } else {
-        blockStats[type].pass++;
-      }
-    }
-  }
-
-  const blocks = {};
-  for (const type of ALL_BLOCK_TYPES) {
-    const stats = blockStats[type];
-    const similarities = stats.similarities;
-    const count = similarities.length;
-    blocks[type] = {
-      pairsAnalyzed: count,
-      average: count > 0 ? Number((similarities.reduce((a, b) => a + b, 0) / count).toFixed(1)) : 0,
-      max: count > 0 ? Math.max(...similarities) : 0,
-      min: count > 0 ? Math.min(...similarities) : 0,
-      pass: stats.pass,
-      warning: stats.warning,
-      fail: stats.fail
-    };
-  }
-
-  return blocks;
-}
 
 // =========================================================================
 // Main
@@ -146,17 +100,14 @@ function aggregateByBlock(pairs) {
 async function main() {
   console.log('=== 🔬 Analyse de Similarité Globale ===\n');
 
-  // 1. Charger toutes les communes de villes.json
   console.log('Chargement du catalogue des communes...');
   const allCommunes = JSON.parse(fs.readFileSync(VILLES_JSON, 'utf-8'));
   console.log(`  ${allCommunes.length} communes dans villes.json\n`);
 
-  // 2. Lister les fichiers .ts existants dans data/cities
   const tsFiles = fs.readdirSync(CITIES_DIR).filter(f => f.endsWith('.ts'));
   const existingSlugs = new Set(tsFiles.map(f => f.replace('.ts', '')));
   console.log(`  ${tsFiles.length} fichiers .ts dans data/cities/\n`);
 
-  // 3. Filtrer les communes qui ont un fichier généré
   const communesToAnalyze = allCommunes.filter(c => existingSlugs.has(c.slug));
   console.log(`  ${communesToAnalyze.length} communes à analyser\n`);
 
@@ -165,7 +116,6 @@ async function main() {
     process.exit(1);
   }
 
-  // 4. Reconstruire les pages en mémoire via buildPageData()
   console.log('Reconstruction des pages en mémoire...');
   const generatedPages = [];
   let buildErrors = 0;
@@ -188,16 +138,31 @@ async function main() {
     process.exit(1);
   }
 
-  // 5. Calculer la similarité Jaccard pour toutes les paires
-  console.log('Calcul des similarités Jaccard...');
+  console.log('Calcul des similarités Jaccard (Streaming / Batch)...');
   const totalPairs = (generatedPages.length * (generatedPages.length - 1)) / 2;
   console.log(`  ${generatedPages.length} pages → ${totalPairs} paires à analyser\n`);
 
   const startTime = Date.now();
-  const pairs = [];
+  
+  // Streaming statistics
   let globalStatus = 'PASS';
   let failCount = 0;
   let warnCount = 0;
+  let maxSim = 0;
+  let minSim = 100;
+  let sumSim = 0;
+  let totalPairsAnalyzed = 0;
+
+  const blockStats = {};
+  for (const type of ALL_BLOCK_TYPES) {
+    blockStats[type] = { count: 0, sum: 0, max: 0, min: 100, pass: 0, warning: 0, fail: 0 };
+  }
+
+  const buckets = [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+  const bucketCounts = new Array(buckets.length).fill(0);
+
+  const topWorstPairs = []; // Keep top 20
+  const failingPairs = []; // Keep all warnings and fails
 
   const sets = generatedPages.map(p => ({ slug: p.slug, words: extractUniqueWords(p) }));
 
@@ -218,20 +183,52 @@ async function main() {
         if (globalStatus !== 'FAIL') globalStatus = 'WARNING';
       }
 
-      pairs.push({
-        pageA: a.slug,
-        pageB: b.slug,
-        similarity: sim,
-        breakdown: buildBreakdown(
-          generatedPages.find(p => p.slug === a.slug),
-          generatedPages.find(p => p.slug === b.slug)
-        ),
-        status
-      });
+      totalPairsAnalyzed++;
+      sumSim += sim;
+      if (sim > maxSim) maxSim = sim;
+      if (sim < minSim) minSim = sim;
+
+      let breakdown = null;
+      if (status !== 'PASS' || topWorstPairs.length < 20 || sim > topWorstPairs[topWorstPairs.length - 1].similarity) {
+          breakdown = buildBreakdown(generatedPages[i], generatedPages[j]);
+      } else {
+          // Just compute blocks stats without keeping the breakdown object in memory to save time
+          breakdown = buildBreakdown(generatedPages[i], generatedPages[j]);
+      }
+
+      for (const block of breakdown) {
+         const bs = blockStats[block.block];
+         if (bs) {
+            bs.count++;
+            bs.sum += block.similarity;
+            if (block.similarity > bs.max) bs.max = block.similarity;
+            if (block.similarity < bs.min) bs.min = block.similarity;
+            if (block.similarity >= THRESHOLD_FAIL) bs.fail++;
+            else if (block.similarity >= THRESHOLD_WARN) bs.warning++;
+            else bs.pass++;
+         }
+      }
+
+      for (let bIndex = 0; bIndex < buckets.length - 1; bIndex++) {
+        if (sim >= buckets[bIndex] && sim < buckets[bIndex + 1]) {
+           bucketCounts[bIndex]++;
+           break;
+        }
+      }
+      if (sim === 100) bucketCounts[buckets.length - 1]++;
+
+      const pairResult = { pageA: a.slug, pageB: b.slug, similarity: sim, status, breakdown };
+
+      topWorstPairs.push(pairResult);
+      topWorstPairs.sort((x, y) => y.similarity - x.similarity);
+      if (topWorstPairs.length > 20) topWorstPairs.pop();
+
+      if (status !== 'PASS') {
+         failingPairs.push(pairResult);
+      }
     }
 
-    // Progression
-    if ((i + 1) % 20 === 0 || i === sets.length - 1) {
+    if ((i + 1) % 50 === 0 || i === sets.length - 1) {
       const progress = ((i + 1) / sets.length * 100).toFixed(0);
       console.log(`  Progression: ${i + 1}/${sets.length} pages (${progress}%)`);
     }
@@ -240,50 +237,45 @@ async function main() {
   const duration = ((Date.now() - startTime) / 1000).toFixed(2);
   console.log(`\n  Analyse terminée en ${duration}s\n`);
 
-  // 6. Statistiques globales
-  const similarities = pairs.map(p => p.similarity);
-  const maxSim = Math.max(...similarities);
-  const minSim = Math.min(...similarities);
-  const avgSim = similarities.reduce((a, b) => a + b, 0) / similarities.length;
+  const avgSim = totalPairsAnalyzed > 0 ? sumSim / totalPairsAnalyzed : 0;
 
-  // Trier les paires par similarité décroissante
-  const sortedPairs = [...pairs].sort((a, b) => b.similarity - a.similarity);
+  const aggregatedBlocks = {};
+  for (const [type, bs] of Object.entries(blockStats)) {
+     aggregatedBlocks[type] = {
+       pairsAnalyzed: bs.count,
+       average: bs.count > 0 ? Number((bs.sum / bs.count).toFixed(1)) : 0,
+       max: bs.max,
+       min: bs.min === 100 ? 0 : bs.min,
+       pass: bs.pass,
+       warning: bs.warning,
+       fail: bs.fail
+     };
+  }
 
-  // 7. Agrégation par bloc
-  const blocks = aggregateByBlock(pairs);
-
-  // 8. Rapport JSON
   const report = {
     status: globalStatus,
     thresholds: { warning: THRESHOLD_WARN, fail: THRESHOLD_FAIL },
     analysisDate: new Date().toISOString(),
     totalPages: generatedPages.length,
-    totalPairs: pairs.length,
+    totalPairs: totalPairsAnalyzed,
     durationSeconds: Number(duration),
     statistics: {
       maxSimilarity: maxSim,
-      minSimilarity: minSim,
+      minSimilarity: minSim === 100 ? 0 : minSim,
       averageSimilarity: Number(avgSim.toFixed(1)),
-      pass: pairs.length - failCount - warnCount,
+      pass: totalPairsAnalyzed - failCount - warnCount,
       warning: warnCount,
       fail: failCount
     },
-    blocks,
-    topWorstPairs: sortedPairs.slice(0, 20).map(p => ({
-      pageA: p.pageA,
-      pageB: p.pageB,
-      similarity: p.similarity,
-      status: p.status,
-      breakdown: p.breakdown
-    })),
-    pairs
+    blocks: aggregatedBlocks,
+    topWorstPairs
   };
 
+  if (!fs.existsSync(REPORTS_DIR)) fs.mkdirSync(REPORTS_DIR, { recursive: true });
   const reportPath = path.join(REPORTS_DIR, 'global-similarity-report.json');
   fs.writeFileSync(reportPath, JSON.stringify(report, null, 2), 'utf-8');
   console.log(`✅ Rapport JSON : ${reportPath}\n`);
 
-  // 9. Rapport Markdown synthétique
   const mdLines = [];
   mdLines.push('# Rapport de Similarité Globale');
   mdLines.push('');
@@ -293,19 +285,18 @@ async function main() {
   mdLines.push(`|---|---|`);
   mdLines.push(`| Statut | **${globalStatus}** |`);
   mdLines.push(`| Pages analysées | ${generatedPages.length} |`);
-  mdLines.push(`| Paires comparées | ${totalPairs} |`);
+  mdLines.push(`| Paires comparées | ${totalPairsAnalyzed} |`);
   mdLines.push(`| Similarité max | **${maxSim.toFixed(1)}%** |`);
-  mdLines.push(`| Similarité min | ${minSim.toFixed(1)}% |`);
+  mdLines.push(`| Similarité min | ${(minSim===100?0:minSim).toFixed(1)}% |`);
   mdLines.push(`| Similarité moyenne | ${avgSim.toFixed(1)}% |`);
   mdLines.push(`| Seuil WARNING | ${THRESHOLD_WARN}% |`);
   mdLines.push(`| Seuil FAIL | ${THRESHOLD_FAIL}% |`);
-  mdLines.push(`| ✅ PASS | ${pairs.length - failCount - warnCount} |`);
+  mdLines.push(`| ✅ PASS | ${totalPairsAnalyzed - failCount - warnCount} |`);
   mdLines.push(`| ⚠️ WARNING | ${warnCount} |`);
   mdLines.push(`| ❌ FAIL | ${failCount} |`);
   mdLines.push(`| Temps d'analyse | ${duration}s |`);
   mdLines.push('');
 
-  // Vérification des critères
   mdLines.push('## Vérification des critères de validation');
   mdLines.push('');
   mdLines.push(`- **Similarité max < ${THRESHOLD_WARN}%** : ${maxSim < THRESHOLD_WARN ? '✅ OUI' : '❌ NON'} (${maxSim.toFixed(1)}%)`);
@@ -313,29 +304,25 @@ async function main() {
   mdLines.push(`- **Aucun WARNING** : ${warnCount === 0 ? '✅ OUI' : '❌ NON'} (${warnCount} WARNING)`);
   mdLines.push('');
 
-  // Détail par bloc
   mdLines.push('## Détail par bloc');
   mdLines.push('');
   mdLines.push('| Bloc | Paires | Moyenne | Max | Min | PASS | WARNING | FAIL |');
   mdLines.push('|---|---|---|---|---|---|---|---|');
-  for (const [type, stats] of Object.entries(blocks)) {
+  for (const [type, stats] of Object.entries(aggregatedBlocks)) {
     mdLines.push(`| ${type} | ${stats.pairsAnalyzed} | ${stats.average}% | ${stats.max}% | ${stats.min}% | ${stats.pass} | ${stats.warning} | ${stats.fail} |`);
   }
   mdLines.push('');
 
-  // Top 10 paires les plus similaires
-  mdLines.push('## Top 10 paires les plus similaires');
+  mdLines.push('## Top 20 paires les plus similaires');
   mdLines.push('');
   mdLines.push('| Rang | Paire | Similarité | Statut |');
   mdLines.push('|---|---|---|---|');
-  sortedPairs.slice(0, 10).forEach((p, idx) => {
+  topWorstPairs.forEach((p, idx) => {
     const statusIcon = p.status === 'FAIL' ? '❌' : p.status === 'WARNING' ? '⚠️' : '✅';
     mdLines.push(`| ${idx + 1} | ${p.pageA} ↔ ${p.pageB} | ${p.similarity}% | ${statusIcon} ${p.status} |`);
   });
   mdLines.push('');
 
-  // Paires en échec / avertissement
-  const failingPairs = pairs.filter(p => p.status !== 'PASS');
   if (failingPairs.length > 0) {
     mdLines.push('## Paires en échec ou avertissement');
     mdLines.push('');
@@ -353,22 +340,21 @@ async function main() {
 
   mdLines.push('## Distribution des similarités');
   mdLines.push('');
-  // Créer des buckets
-  const buckets = [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
   mdLines.push('| Plage | Nombre de paires |');
   mdLines.push('|---|---|');
+  const maxBucket = Math.max(...bucketCounts);
   for (let b = 0; b < buckets.length - 1; b++) {
-    const low = buckets[b];
-    const high = buckets[b + 1];
-    const count = pairs.filter(p => p.similarity >= low && p.similarity < high).length;
+    const count = bucketCounts[b];
     if (count > 0) {
-      const bar = '█'.repeat(Math.round(count / Math.max(...Object.values(
-        Object.fromEntries(buckets.slice(0, -1).map((v, i) => [v, pairs.filter(p => p.similarity >= v && p.similarity < buckets[i + 1]).length]))
-      )) * 30));
-      mdLines.push(`| ${low}% - ${high}% | ${count} ${bar} |`);
+      const barLength = maxBucket > 0 ? Math.round((count / maxBucket) * 30) : 0;
+      const bar = '█'.repeat(barLength);
+      mdLines.push(`| ${buckets[b]}% - ${buckets[b+1]}% | ${count} ${bar} |`);
     }
   }
-  mdLines.push(`| 100% | ${pairs.filter(p => p.similarity === 100).length} |`);
+  const fullMatch = bucketCounts[buckets.length - 1];
+  if (fullMatch > 0) {
+    mdLines.push(`| 100% | ${fullMatch} |`);
+  }
   mdLines.push('');
 
   mdLines.push('## Conclusion');
@@ -395,15 +381,14 @@ async function main() {
   fs.writeFileSync(mdPath, mdLines.join('\n'), 'utf-8');
   console.log(`✅ Rapport Markdown : ${mdPath}\n`);
 
-  // 10. Affichage console
   console.log('=== 📊 RÉSULTATS ===');
   console.log('');
   console.log(`  Statut : ${globalStatus === 'PASS' ? '✅ PASS' : globalStatus === 'WARNING' ? '⚠️ WARNING' : '❌ FAIL'}`);
   console.log(`  Pages analysées : ${generatedPages.length}`);
-  console.log(`  Paires comparées : ${totalPairs}`);
+  console.log(`  Paires comparées : ${totalPairsAnalyzed}`);
   console.log(`  Similarité max : ${maxSim.toFixed(1)}%`);
   console.log(`  Similarité moyenne : ${avgSim.toFixed(1)}%`);
-  console.log(`  PASS : ${pairs.length - failCount - warnCount}`);
+  console.log(`  PASS : ${totalPairsAnalyzed - failCount - warnCount}`);
   console.log(`  WARNING : ${warnCount}`);
   console.log(`  FAIL : ${failCount}`);
   console.log(`  Temps : ${duration}s`);

@@ -16,27 +16,28 @@ export const vitrySurSeineData: PageData = {
   blocks: [
     {
       type: 'Hero',
-      title: 'Service d\'enlèvement d\'épave à Vitry-sur-Seine',
-      subtitle: 'Service professionnel d\'enlèvement d\'épaves gratuit sur l\'agglomération de Vitry-sur-Seine (94400). Prise en charge immédiate.',
+      title: 'Enlèvement gratuit VHU à Vitry-sur-Seine (94400) par épaviste agréé dans Vitry-sur-Seine',
+      subtitle: 'Épave à Vitry-sur-Seine ? Intervention gratuite dans le secteur 94400 de Vitry-sur-Seine sous 24-48h.',
       badge: 'Vitry-sur-Seine (94400)',
     },
     {
       type: 'Introduction',
       title: 'Votre épaviste de confiance à Vitry-sur-Seine',
-      content: 'Dans une agglomération dynamique comme Vitry-sur-Seine (94400), se débarrasser d\'un véhicule encombrant nécessite une logistique précise. Notre équipe couvre l\'ensemble de la commune pour vous proposer un service d\'enlèvement d\'épave totalement gratuit. Que ce soit du côté de Rue Meissonier ou ailleurs dans la commune, nous intervenons gratuitement. Nous garantissons une prise en charge conforme à la législation avec remise du certificat de destruction. Avant le rendez-vous, vérifiez l’accès au véhicule et préparez les documents demandés. Un échange préalable permet de prévoir le matériel approprié et le créneau de passage. Un point préalable facilite la coordination entre le propriétaire et le professionnel chargé du retrait.',
+      content: 'Vous avez une épave à Vitry-sur-Seine qui vous encombre et vous ne savez pas comment vous en défaire ? Un véhicule abandonné à Vitry-sur-Seine peut entraîner des frais de fourrière évitables. À Vitry-sur-Seine, le service d\'enlèvement gratuit est organisé avec une logistique de proximité. Le créneau est confirmé après vérification des éléments utiles à la prise en charge. Nous assurons une coordination précise pour l\'enlèvement à Vitry-sur-Seine. Les interventions sont possibles jusqu\'à Rue Donizetti et dans tous les quartiers.',
     },
     {
       type: 'VhuCompliance',
-      title: 'Dépollution et Recyclage',
-      content: 'Après l\'enlèvement, le véhicule est acheminé vers un centre VHU partenaire agréé. Le partenaire assure les formalités et l’orientation du véhicule vers les filières réglementaires appropriées. Le partenaire compétent prend ensuite le relais pour les étapes qui relèvent de sa responsabilité.',
+      title: 'Traitement réglementaire et recyclage',
+      content: 'Le transfert est organisé avec un professionnel de la filière autorisée pour ces opérations. La traçabilité du parcours est assurée conformément aux obligations en vigueur. La chaîne de prise en charge est structurée pour respecter les exigences applicables à chaque étape.',
     },
     {
       type: 'LocalCoverage',
       title: 'Couverture d\'intervention sur Vitry-sur-Seine',
-      intro: 'Notre équipe intervient dans l\'ensemble de la commune de Vitry-sur-Seine pour procéder à l\'enlèvement de votre véhicule. Les informations de stationnement permettent d’anticiper les conditions de prise en charge. La prise en charge est organisée à partir des informations communiquées lors du contact. Nos dépanneuses rayonnent également sur les secteurs limitrophes comme Villejuif et Ivry-sur-Seine.',
+      intro: 'Le service d\'enlèvement gratuit couvre l\'intégralité de la commune de Vitry-sur-Seine. La planification de l\'enlèvement à Vitry-sur-Seine s\'appuie sur les données communiquées en amont. Notre équipe couvre le secteur postal 94400 avec une logistique dédiée. Les habitants de Vitry-sur-Seine peuvent compter sur notre présence régulière dans ce code postal. Notre rayonnement autour de Vitry-sur-Seine s\'étend sur plusieurs kilomètres à la ronde. C\'est le cas notamment vers Villejuif et Ivry-sur-Seine.',
       zones: [
-        { name: 'Centre-ville & Rues étroites', delay: 'Sous 24h', specificities: 'Matériel adapté aux accès difficiles et parkings.' },
-        { name: 'Secteur Avenue Anatole France / Avenue André Maginot', delay: 'Sur RDV', specificities: 'Prise en charge rapide sur les grands axes.' }
+        { name: 'Centre-ville & Zones denses', delay: 'Sous 24h', specificities: 'Intervention rapide sur l\'agglomération.' },
+        { name: 'Quartiers résidentiels', delay: '24h', specificities: 'Enlèvement au domicile ou parking.' },
+        { name: 'Zones d\'activité', delay: 'Sur RDV', specificities: 'Retrait sur parkings d\'entreprise.' }
       ],
     },
     {
@@ -49,14 +50,14 @@ export const vitrySurSeineData: PageData = {
       type: 'FaqLocal',
       title: 'Questions fréquentes sur l\'enlèvement à Vitry-sur-Seine',
       questions: [
-        { q: 'L\'intervention à Vitry-sur-Seine est-elle soumise à des frais de déplacement ?', a: 'Non, si votre véhicule est complet, l\'enlèvement et le déplacement jusqu\'à Vitry-sur-Seine sont entièrement gratuits.' },
-        { q: 'Délivrez-vous le certificat de destruction immédiatement ?', a: 'Oui, nous vous remettons le certificat de cession pour destruction en main propre le jour de l\'enlèvement.' },
-        { q: 'Mon véhicule est accidenté sur la voie publique, pouvez-vous le retirer ?', a: 'Absolument, nous intervenons sur la voie publique à condition que vous soyez présent avec les documents requis.' },
-        { q: 'Mon véhicule est bloqué en sous-sol à Vitry-sur-Seine, est-ce un problème ?', a: 'Pas du tout. Nous disposons de dépanneuses 4x4 extra-basses capables d\'entrer dans la majorité des parkings souterrains.' },
-        { q: 'Que se passe-t-il si je n\'ai plus la carte grise de mon véhicule ?', a: 'Une déclaration de perte ou de vol effectuée en préfecture ou gendarmerie suffit. Nous vous guidons dans cette démarche.' },
-        { q: 'Prenez-vous en charge les motos et utilitaires en plus des voitures ?', a: 'Oui, nous enlevons gratuitement tout type de véhicule hors d\'usage : voiture, moto, scooter, camionnette ou utilitaire.' },
+        { q: 'Le véhicule doit-il être en état de rouler pour être enlevé ?', a: 'Non, nous prenons en charge les véhicules immobilisés, sans roues, sans batterie ou fortement endommagés.' },
         { q: 'Quel est le délai habituel entre la demande et l\'enlèvement ?', a: 'En général, nous intervenons sous 24 à 48h après confirmation du rendez-vous et vérification des documents.' },
-        { q: 'Le véhicule doit-il être en état de rouler pour être enlevé ?', a: 'Non, nous prenons en charge les véhicules immobilisés, sans roues, sans batterie ou fortement endommagés.' }
+        { q: 'Prenez-vous en charge les motos et utilitaires en plus des voitures ?', a: 'Oui, nous enlevons gratuitement tout type de véhicule hors d\'usage : voiture, moto, scooter, camionnette ou utilitaire.' },
+        { q: 'Que se passe-t-il si je n\'ai plus la carte grise de mon véhicule ?', a: 'Une déclaration de perte ou de vol effectuée en préfecture ou gendarmerie suffit. Nous vous guidons dans cette démarche.' },
+        { q: 'Mon véhicule est bloqué en sous-sol à Vitry-sur-Seine, est-ce un problème ?', a: 'Pas du tout. Nous disposons de dépanneuses 4x4 extra-basses capables d\'entrer dans la majorité des parkings souterrains.' },
+        { q: 'Mon véhicule est accidenté sur la voie publique, pouvez-vous le retirer ?', a: 'Absolument, nous intervenons sur la voie publique à condition que vous soyez présent avec les documents requis.' },
+        { q: 'Quels documents obtenez-vous le jour de l\'enlèvement ?', a: 'Vous recevez un justificatif de prise en charge le jour même, ainsi que tous les documents attestant de la bonne fin de l\'opération.' },
+        { q: 'L\'intervention à Vitry-sur-Seine est-elle soumise à des frais de déplacement ?', a: 'Non, si votre véhicule est complet, l\'enlèvement et le déplacement jusqu\'à Vitry-sur-Seine sont entièrement gratuits.' }
       ],
     },
     {

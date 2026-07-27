@@ -1,46 +1,46 @@
 {
-  "status": "WARNING",
+  "status": "FAIL",
   "thresholds": {
     "warning": 65,
     "fail": 80
   },
-  "totalPairs": 3160,
+  "totalPairs": 388521,
   "blocks": {
     "Hero": {
-      "pairsAnalyzed": 3160,
-      "average": 22.8,
-      "max": 78.9,
-      "min": 3.3,
-      "pass": 3158,
-      "warning": 2,
-      "fail": 0
+      "pairsAnalyzed": 388521,
+      "average": 22.9,
+      "max": 87.5,
+      "min": 3,
+      "pass": 388104,
+      "warning": 407,
+      "fail": 10
     },
     "Introduction": {
-      "pairsAnalyzed": 3160,
-      "average": 16.3,
-      "max": 45.8,
-      "min": 5.6,
-      "pass": 3160,
-      "warning": 0,
-      "fail": 0
+      "pairsAnalyzed": 388521,
+      "average": 18.3,
+      "max": 80,
+      "min": 4.7,
+      "pass": 388513,
+      "warning": 7,
+      "fail": 1
     },
     "LocalCoverage": {
-      "pairsAnalyzed": 3160,
+      "pairsAnalyzed": 388521,
       "average": 17,
-      "max": 61.4,
-      "min": 5.6,
-      "pass": 3160,
-      "warning": 0,
-      "fail": 0
+      "max": 90,
+      "min": 4.2,
+      "pass": 388476,
+      "warning": 42,
+      "fail": 3
     },
     "VhuCompliance": {
-      "pairsAnalyzed": 3160,
-      "average": 19.7,
-      "max": 64.7,
-      "min": 7.7,
-      "pass": 3160,
-      "warning": 0,
-      "fail": 0
+      "pairsAnalyzed": 388521,
+      "average": 19.4,
+      "max": 100,
+      "min": 7.1,
+      "pass": 388388,
+      "warning": 127,
+      "fail": 6
     },
     "FaqLocal": {
       "pairsAnalyzed": 0,

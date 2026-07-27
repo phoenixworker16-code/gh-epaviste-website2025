@@ -16,27 +16,28 @@ export const massyData: PageData = {
   blocks: [
     {
       type: 'Hero',
-      title: 'Épaviste Agréé Partenaire à Massy',
-      subtitle: 'Un enlèvement préparé selon l’accès au véhicule et les informations transmises lors de votre demande.',
+      title: 'Votre épaviste à Massy pour enlèvement gratuit de VHU dans le 91300',
+      subtitle: 'Débarrassez votre épave à Massy (91300) sans frais. Notre service couvre tout le secteur de Massy.',
       badge: 'Massy (91300)',
     },
     {
       type: 'Introduction',
       title: 'Votre épaviste de confiance à Massy',
-      content: 'Dans une agglomération dynamique comme Massy (91300), se débarrasser d\'un véhicule encombrant nécessite une logistique précise. Notre équipe couvre l\'ensemble de la commune pour vous proposer un service d\'enlèvement d\'épave totalement gratuit. Que ce soit du côté de Rue Marx Dormoy ou ailleurs dans la commune, nous intervenons gratuitement. Nous garantissons une prise en charge conforme à la législation avec remise du certificat de destruction. Avant le rendez-vous, vérifiez l’accès au véhicule et préparez les documents demandés. Le rendez-vous est organisé à partir de la situation du véhicule et des conditions d’accès indiquées. La préparation du rendez-vous clarifie les éléments à présenter lors de l’enlèvement.',
+      content: 'Vous avez une épave à Massy qui vous encombre et vous ne savez pas comment vous en défaire ? À Massy, la circulation dense nécessite une intervention professionnelle pour retirer toute épave. Nous déployons à Massy des moyens adaptés pour retirer votre épave sans complication. L\'organisation du retrait tient compte de l\'emplacement du véhicule, de son état et des conditions d\'accès. L\'organisation de l\'enlèvement à Massy est conçue pour être la plus fluide possible. Les interventions sont possibles jusqu\'à Rue Mangeon et dans tous les quartiers.',
     },
     {
       type: 'VhuCompliance',
-      title: 'Dépollution et Recyclage',
-      content: 'La prise en charge prévoit le transfert du véhicule vers un centre VHU partenaire agréé. Cette organisation garantit une prise en charge conforme et une valorisation dans les filières prévues. Les démarches sont préparées afin que le relais vers le partenaire soit effectué dans le cadre prévu.',
+      title: 'Traitement réglementaire et recyclage',
+      content: 'L\'organisation mise en place prévoit un relais vers un opérateur partenaire pour les phases suivantes. La traçabilité du parcours est assurée conformément aux obligations en vigueur. Les opérateurs compétents interviennent à tour de rôle pour couvrir l\'ensemble du processus.',
     },
     {
       type: 'LocalCoverage',
       title: 'Couverture d\'intervention sur Massy',
-      intro: 'Notre équipe intervient dans l\'ensemble de la commune de Massy pour procéder à l\'enlèvement de votre véhicule. La préparation du passage prend en compte les contraintes signalées avant l’intervention. Le rendez-vous est préparé pour tenir compte de la situation déclarée par le propriétaire.',
+      intro: 'Où que soit garé votre véhicule à Massy, notre dépanneuse peut accéder pour le retirer. La préparation du retrait à Massy inclut une évaluation des conditions d\'intervention. Le secteur 91300 de Massy est couvert sans supplément de prix par notre service d\'enlèvement gratuit de véhicules hors d\'usage. Au-delà du centre de Massy, les secteurs périphériques sont régulièrement visités.',
       zones: [
-        { name: 'Centre-ville & Rues étroites', delay: 'Sous 24h', specificities: 'Matériel adapté aux accès difficiles et parkings.' },
-        { name: 'Secteur Av du Pdt J Fitzgerald Kennedy / Avenue Carnot', delay: 'Sur RDV', specificities: 'Prise en charge rapide sur les grands axes.' }
+        { name: 'Centre-ville & Zones denses', delay: 'Sous 24h', specificities: 'Intervention rapide sur l\'agglomération.' },
+        { name: 'Quartiers résidentiels', delay: '24h', specificities: 'Enlèvement au domicile ou parking.' },
+        { name: 'Zones d\'activité', delay: 'Sur RDV', specificities: 'Retrait sur parkings d\'entreprise.' }
       ],
     },
     {
@@ -49,14 +50,14 @@ export const massyData: PageData = {
       type: 'FaqLocal',
       title: 'Questions fréquentes sur l\'enlèvement à Massy',
       questions: [
-        { q: 'L\'intervention à Massy est-elle soumise à des frais de déplacement ?', a: 'Non, si votre véhicule est complet, l\'enlèvement et le déplacement jusqu\'à Massy sont entièrement gratuits.' },
-        { q: 'Délivrez-vous le certificat de destruction immédiatement ?', a: 'Oui, nous vous remettons le certificat de cession pour destruction en main propre le jour de l\'enlèvement.' },
-        { q: 'Mon véhicule est accidenté sur la voie publique, pouvez-vous le retirer ?', a: 'Absolument, nous intervenons sur la voie publique à condition que vous soyez présent avec les documents requis.' },
-        { q: 'Mon véhicule est bloqué en sous-sol à Massy, est-ce un problème ?', a: 'Pas du tout. Nous disposons de dépanneuses 4x4 extra-basses capables d\'entrer dans la majorité des parkings souterrains.' },
-        { q: 'Que se passe-t-il si je n\'ai plus la carte grise de mon véhicule ?', a: 'Une déclaration de perte ou de vol effectuée en préfecture ou gendarmerie suffit. Nous vous guidons dans cette démarche.' },
-        { q: 'Prenez-vous en charge les motos et utilitaires en plus des voitures ?', a: 'Oui, nous enlevons gratuitement tout type de véhicule hors d\'usage : voiture, moto, scooter, camionnette ou utilitaire.' },
+        { q: 'Le véhicule doit-il être en état de rouler pour être enlevé ?', a: 'Non, nous prenons en charge les véhicules immobilisés, sans roues, sans batterie ou fortement endommagés.' },
         { q: 'Quel est le délai habituel entre la demande et l\'enlèvement ?', a: 'En général, nous intervenons sous 24 à 48h après confirmation du rendez-vous et vérification des documents.' },
-        { q: 'Le véhicule doit-il être en état de rouler pour être enlevé ?', a: 'Non, nous prenons en charge les véhicules immobilisés, sans roues, sans batterie ou fortement endommagés.' }
+        { q: 'Prenez-vous en charge les motos et utilitaires en plus des voitures ?', a: 'Oui, nous enlevons gratuitement tout type de véhicule hors d\'usage : voiture, moto, scooter, camionnette ou utilitaire.' },
+        { q: 'Que se passe-t-il si je n\'ai plus la carte grise de mon véhicule ?', a: 'Une déclaration de perte ou de vol effectuée en préfecture ou gendarmerie suffit. Nous vous guidons dans cette démarche.' },
+        { q: 'Mon véhicule est bloqué en sous-sol à Massy, est-ce un problème ?', a: 'Pas du tout. Nous disposons de dépanneuses 4x4 extra-basses capables d\'entrer dans la majorité des parkings souterrains.' },
+        { q: 'Mon véhicule est accidenté sur la voie publique, pouvez-vous le retirer ?', a: 'Absolument, nous intervenons sur la voie publique à condition que vous soyez présent avec les documents requis.' },
+        { q: 'Quels documents obtenez-vous le jour de l\'enlèvement ?', a: 'Vous recevez un justificatif de prise en charge le jour même, ainsi que tous les documents attestant de la bonne fin de l\'opération.' },
+        { q: 'L\'intervention à Massy est-elle soumise à des frais de déplacement ?', a: 'Non, si votre véhicule est complet, l\'enlèvement et le déplacement jusqu\'à Massy sont entièrement gratuits.' }
       ],
     },
     {

@@ -16,27 +16,28 @@ export const saintDenisData: PageData = {
   blocks: [
     {
       type: 'Hero',
-      title: 'Service d\'enlèvement d\'épave à Saint-Denis',
-      subtitle: 'Une solution organisée pour retirer un véhicule immobilisé à Saint-Denis (93200) dans le respect des démarches requises.',
+      title: 'Retrait de véhicule hors d\'usage à Saint-Denis (93200) dans le 93200',
+      subtitle: 'Épaviste gratuit à Saint-Denis (93200) : intervention dans tout Saint-Denis pour votre véhicule hors d\'usage.',
       badge: 'Saint-Denis (93200)',
     },
     {
       type: 'Introduction',
       title: 'Votre épaviste de confiance à Saint-Denis',
-      content: 'Dans une agglomération dynamique comme Saint-Denis (93200), se débarrasser d\'un véhicule encombrant nécessite une logistique précise. Notre équipe couvre l\'ensemble de la commune pour vous proposer un service d\'enlèvement d\'épave totalement gratuit. Nous garantissons une prise en charge conforme à la législation avec remise du certificat de destruction. Avant le rendez-vous, vérifiez l’accès au véhicule et préparez les documents demandés. Un échange préalable permet de prévoir le matériel approprié et le créneau de passage. La préparation du rendez-vous clarifie les éléments à présenter lors de l’enlèvement.',
+      content: 'Notre équipe à Saint-Denis prend en charge gratuitement l\'enlèvement de votre véhicule. À Saint-Denis, les services de voirie peuvent intervenir si une épave stationne trop longtemps. L\'équipe à Saint-Denis assure une prestation complète de l\'enlèvement à la remise des documents. La préparation logistique intègre les spécificités de chaque demande d\'enlèvement. Notre service à Saint-Denis bénéficie d\'une logistique optimisée pour la zone urbaine.',
     },
     {
       type: 'VhuCompliance',
-      title: 'Dépollution et Recyclage',
-      content: 'L\'enlèvement est suivi d\'un acheminement vers un centre VHU partenaire agréé. Le partenaire assure les formalités et l’orientation du véhicule vers les filières réglementaires appropriées. Le parcours du véhicule est défini dès la prise de rendez-vous avec les professionnels concernés.',
+      title: 'Traitement réglementaire et recyclage',
+      content: 'L\'enlèvement est suivi d\'un acheminement vers une structure partenaire autorisée à recevoir ce type de véhicule. La traçabilité des opérations est assurée par les professionnels intervenant dans la filière. Le parcours du véhicule est défini dès la prise de rendez-vous avec les professionnels concernés.',
     },
     {
       type: 'LocalCoverage',
       title: 'Couverture d\'intervention sur Saint-Denis',
-      intro: 'Notre équipe intervient dans l\'ensemble de la commune de Saint-Denis pour procéder à l\'enlèvement de votre véhicule. La préparation du passage prend en compte les contraintes signalées avant l’intervention. Les contraintes d’accès sont prises en compte pendant la préparation du rendez-vous.',
+      intro: 'Les propriétaires à Saint-Denis peuvent compter sur notre service dans toute la commune. Le passage à Saint-Denis est planifié de manière à optimiser le temps d\'intervention. Le code postal 93200 est intégré dans notre tournée d\'enlèvement régulière à Saint-Denis, ce qui garantit une intervention rapide. Les habitants des environs proches de Saint-Denis peuvent compter sur notre service.',
       zones: [
-        { name: 'Centre-ville & Rues étroites', delay: 'Sous 24h', specificities: 'Matériel adapté aux accès difficiles et parkings.' },
-        { name: 'Quartiers périphériques', delay: '24h à 48h', specificities: 'Intervention planifiée.' }
+        { name: 'Centre-ville & Zones denses', delay: 'Sous 24h', specificities: 'Intervention rapide sur l\'agglomération.' },
+        { name: 'Quartiers résidentiels', delay: '24h', specificities: 'Enlèvement au domicile ou parking.' },
+        { name: 'Zones d\'activité', delay: 'Sur RDV', specificities: 'Retrait sur parkings d\'entreprise.' }
       ],
     },
     {
@@ -50,7 +51,7 @@ export const saintDenisData: PageData = {
       title: 'Questions fréquentes sur l\'enlèvement à Saint-Denis',
       questions: [
         { q: 'L\'intervention à Saint-Denis est-elle soumise à des frais de déplacement ?', a: 'Non, si votre véhicule est complet, l\'enlèvement et le déplacement jusqu\'à Saint-Denis sont entièrement gratuits.' },
-        { q: 'Délivrez-vous le certificat de destruction immédiatement ?', a: 'Oui, nous vous remettons le certificat de cession pour destruction en main propre le jour de l\'enlèvement.' },
+        { q: 'Quels documents obtenez-vous le jour de l\'enlèvement ?', a: 'Vous recevez un justificatif de prise en charge le jour même, ainsi que tous les documents attestant de la bonne fin de l\'opération.' },
         { q: 'Mon véhicule est accidenté sur la voie publique, pouvez-vous le retirer ?', a: 'Absolument, nous intervenons sur la voie publique à condition que vous soyez présent avec les documents requis.' },
         { q: 'Mon véhicule est bloqué en sous-sol à Saint-Denis, est-ce un problème ?', a: 'Pas du tout. Nous disposons de dépanneuses 4x4 extra-basses capables d\'entrer dans la majorité des parkings souterrains.' },
         { q: 'Que se passe-t-il si je n\'ai plus la carte grise de mon véhicule ?', a: 'Une déclaration de perte ou de vol effectuée en préfecture ou gendarmerie suffit. Nous vous guidons dans cette démarche.' },

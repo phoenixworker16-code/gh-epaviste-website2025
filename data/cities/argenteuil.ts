@@ -16,27 +16,28 @@ export const argenteuilData: PageData = {
   blocks: [
     {
       type: 'Hero',
-      title: 'Retrait de véhicule hors d\'usage à Argenteuil',
-      subtitle: 'Une solution organisée pour retirer un véhicule immobilisé à Argenteuil (95100) dans le respect des démarches requises.',
+      title: 'Enlèvement épave Argenteuil (95100) - Service gratuit à Argenteuil',
+      subtitle: 'Débarrassez votre épave à Argenteuil gratuitement. Notre équipe intervient dans tout le 95100 de Argenteuil.',
       badge: 'Argenteuil (95100)',
     },
     {
       type: 'Introduction',
       title: 'Votre épaviste de confiance à Argenteuil',
-      content: 'Dans une agglomération dynamique comme Argenteuil (95100), se débarrasser d\'un véhicule encombrant nécessite une logistique précise. Notre équipe couvre l\'ensemble de la commune pour vous proposer un service d\'enlèvement d\'épave totalement gratuit. Que ce soit du côté de Rue Duguay ou ailleurs dans la commune, nous intervenons gratuitement. Nous garantissons une prise en charge conforme à la législation avec remise du certificat de destruction. Avant le rendez-vous, vérifiez l’accès au véhicule et préparez les documents demandés. La préparation du passage vise à éviter les déplacements inutiles et les difficultés d’accès. La préparation du rendez-vous clarifie les éléments à présenter lors de l’enlèvement.',
+      content: 'Votre voiture ne circule plus à Argenteuil et vous souhaitez libérer de l\'espace ? Les habitants de Argenteuil sont sensibles à la présence d\'épaves dans leur environnement quotidien. Dans toute l\'agglomération de Argenteuil, notre équipe intervient rapidement sur simple appel. Un contact est établi avant le passage pour confirmer les modalités de l\'intervention. Les détails pratiques sont communiqués avant le rendez-vous pour une intervention sans surprise. Notre équipe dessert notamment le secteur de Rue de Felifeu dans la commune.',
     },
     {
       type: 'VhuCompliance',
-      title: 'Dépollution et Recyclage',
-      content: 'Après l\'enlèvement, le véhicule est acheminé vers un centre VHU partenaire agréé. Le partenaire assure les formalités et l’orientation du véhicule vers les filières réglementaires appropriées. Cette coordination permet d’orienter le véhicule vers l’interlocuteur compétent pour les étapes suivantes.',
+      title: 'Traitement réglementaire et recyclage',
+      content: 'Le véhicule est remis à un partenaire spécialisé pour la suite de son traitement réglementaire. La réglementation en vigueur est suivie par l\'ensemble des intervenants de la filière. Les opérateurs compétents interviennent à tour de rôle pour couvrir l\'ensemble du processus.',
     },
     {
       type: 'LocalCoverage',
       title: 'Couverture d\'intervention sur Argenteuil',
-      intro: 'Notre équipe intervient dans l\'ensemble de la commune de Argenteuil pour procéder à l\'enlèvement de votre véhicule. Le rendez-vous est préparé selon le type d’accès indiqué lors de la demande. Le rendez-vous est préparé pour tenir compte de la situation déclarée par le propriétaire.',
+      intro: 'Pour un enlèvement à Argenteuil, notre logistique couvre tous les secteurs sans exception. Chaque enlèvement à Argenteuil est préparé en étudiant les accès et les contraintes locales. Le secteur 95100 de Argenteuil est couvert sans supplément de prix par notre service d\'enlèvement gratuit de véhicules hors d\'usage. Les habitants des environs de Argenteuil peuvent aussi faire appel à notre service.',
       zones: [
-        { name: 'Centre-ville & Rues étroites', delay: 'Sous 24h', specificities: 'Matériel adapté aux accès difficiles et parkings.' },
-        { name: 'Secteur Avenue Gabriel Peri / Avenue Jean Jaures', delay: 'Sur RDV', specificities: 'Prise en charge rapide sur les grands axes.' }
+        { name: 'Centre-ville & Zones denses', delay: 'Sous 24h', specificities: 'Intervention rapide sur l\'agglomération.' },
+        { name: 'Quartiers résidentiels', delay: '24h', specificities: 'Enlèvement au domicile ou parking.' },
+        { name: 'Zones d\'activité', delay: 'Sur RDV', specificities: 'Retrait sur parkings d\'entreprise.' }
       ],
     },
     {
@@ -49,14 +50,14 @@ export const argenteuilData: PageData = {
       type: 'FaqLocal',
       title: 'Questions fréquentes sur l\'enlèvement à Argenteuil',
       questions: [
-        { q: 'Le véhicule doit-il être en état de rouler pour être enlevé ?', a: 'Non, nous prenons en charge les véhicules immobilisés, sans roues, sans batterie ou fortement endommagés.' },
-        { q: 'Quel est le délai habituel entre la demande et l\'enlèvement ?', a: 'En général, nous intervenons sous 24 à 48h après confirmation du rendez-vous et vérification des documents.' },
-        { q: 'Prenez-vous en charge les motos et utilitaires en plus des voitures ?', a: 'Oui, nous enlevons gratuitement tout type de véhicule hors d\'usage : voiture, moto, scooter, camionnette ou utilitaire.' },
-        { q: 'Que se passe-t-il si je n\'ai plus la carte grise de mon véhicule ?', a: 'Une déclaration de perte ou de vol effectuée en préfecture ou gendarmerie suffit. Nous vous guidons dans cette démarche.' },
-        { q: 'Mon véhicule est bloqué en sous-sol à Argenteuil, est-ce un problème ?', a: 'Pas du tout. Nous disposons de dépanneuses 4x4 extra-basses capables d\'entrer dans la majorité des parkings souterrains.' },
+        { q: 'L\'intervention à Argenteuil est-elle soumise à des frais de déplacement ?', a: 'Non, si votre véhicule est complet, l\'enlèvement et le déplacement jusqu\'à Argenteuil sont entièrement gratuits.' },
+        { q: 'Quels documents obtenez-vous le jour de l\'enlèvement ?', a: 'Vous recevez un justificatif de prise en charge le jour même, ainsi que tous les documents attestant de la bonne fin de l\'opération.' },
         { q: 'Mon véhicule est accidenté sur la voie publique, pouvez-vous le retirer ?', a: 'Absolument, nous intervenons sur la voie publique à condition que vous soyez présent avec les documents requis.' },
-        { q: 'Délivrez-vous le certificat de destruction immédiatement ?', a: 'Oui, nous vous remettons le certificat de cession pour destruction en main propre le jour de l\'enlèvement.' },
-        { q: 'L\'intervention à Argenteuil est-elle soumise à des frais de déplacement ?', a: 'Non, si votre véhicule est complet, l\'enlèvement et le déplacement jusqu\'à Argenteuil sont entièrement gratuits.' }
+        { q: 'Mon véhicule est bloqué en sous-sol à Argenteuil, est-ce un problème ?', a: 'Pas du tout. Nous disposons de dépanneuses 4x4 extra-basses capables d\'entrer dans la majorité des parkings souterrains.' },
+        { q: 'Que se passe-t-il si je n\'ai plus la carte grise de mon véhicule ?', a: 'Une déclaration de perte ou de vol effectuée en préfecture ou gendarmerie suffit. Nous vous guidons dans cette démarche.' },
+        { q: 'Prenez-vous en charge les motos et utilitaires en plus des voitures ?', a: 'Oui, nous enlevons gratuitement tout type de véhicule hors d\'usage : voiture, moto, scooter, camionnette ou utilitaire.' },
+        { q: 'Quel est le délai habituel entre la demande et l\'enlèvement ?', a: 'En général, nous intervenons sous 24 à 48h après confirmation du rendez-vous et vérification des documents.' },
+        { q: 'Le véhicule doit-il être en état de rouler pour être enlevé ?', a: 'Non, nous prenons en charge les véhicules immobilisés, sans roues, sans batterie ou fortement endommagés.' }
       ],
     },
     {

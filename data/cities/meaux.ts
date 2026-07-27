@@ -16,27 +16,28 @@ export const meauxData: PageData = {
   blocks: [
     {
       type: 'Hero',
-      title: 'Enlèvement d\'épave à Meaux (77100)',
-      subtitle: 'Prise en charge professionnelle de votre véhicule hors d\'usage avec un rendez-vous adapté à son emplacement.',
+      title: 'Service d\'enlèvement 100% gratuit à Meaux (77100) pour les habitants de Meaux',
+      subtitle: 'Service d\'enlèvement à Meaux (77100) : retrait gratuit de votre VHU par notre équipe à Meaux.',
       badge: 'Meaux (77100)',
     },
     {
       type: 'Introduction',
       title: 'Votre épaviste de confiance à Meaux',
-      content: 'Dans une agglomération dynamique comme Meaux (77100), se débarrasser d\'un véhicule encombrant nécessite une logistique précise. Notre équipe couvre l\'ensemble de la commune pour vous proposer un service d\'enlèvement d\'épave totalement gratuit. Que ce soit du côté de Rue de la Creche ou ailleurs dans la commune, nous intervenons gratuitement. Nous garantissons une prise en charge conforme à la législation avec remise du certificat de destruction. Avant le rendez-vous, vérifiez l’accès au véhicule et préparez les documents demandés. Les informations communiquées au moment de la demande facilitent la préparation du retrait. La préparation du rendez-vous clarifie les éléments à présenter lors de l’enlèvement.',
+      content: 'Votre voiture ne circule plus à Meaux et vous souhaitez libérer de l\'espace ? Dans une grande agglomération comme Meaux, il est essentiel de libérer l\'espace public. Nous couvrons Meaux et ses environs pour un retrait professionnel et sans frais. La préparation du retrait inclut une vérification des accès et des contraintes éventuelles. Notre équipe à Meaux garantit un service professionnel et ponctuel. Le secteur de Rue Georges Renard est couvert comme l\'ensemble de la commune.',
     },
     {
       type: 'VhuCompliance',
-      title: 'Dépollution et Recyclage',
-      content: 'Le véhicule est remis à un partenaire spécialisé pour la suite de son traitement réglementaire. Le partenaire assure les formalités et l’orientation du véhicule vers les filières réglementaires appropriées. Les responsabilités de chaque intervenant sont distinguées dès l’organisation de l’enlèvement.',
+      title: 'Traitement réglementaire et recyclage',
+      content: 'Une fois le véhicule pris en charge, il est transféré vers un opérateur partenaire qualifié. Les professionnels engagés respectent le cadre légal applicable à cette catégorie de véhicules. La coordination entre les opérateurs garantit la continuité du traitement réglementaire.',
     },
     {
       type: 'LocalCoverage',
       title: 'Couverture d\'intervention sur Meaux',
-      intro: 'Notre équipe intervient dans l\'ensemble de la commune de Meaux pour procéder à l\'enlèvement de votre véhicule. Chaque demande est organisée en tenant compte de l’emplacement exact du véhicule. Le rendez-vous est préparé pour tenir compte de la situation déclarée par le propriétaire. Nos dépanneuses rayonnent également sur les secteurs limitrophes comme Nanteuil-lès-Meaux et Chambry (Seine-et-Marne).',
+      intro: 'Notre dispositif à Meaux assure un enlèvement gratuit dans tous les secteurs sans exception. À Meaux, l\'organisation du retrait s\'adapte aux circonstances décrites. Notre service dessert quotidiennement le secteur 77100 de Meaux avec des équipes spécialisées dans l\'enlèvement d\'épaves. Au-delà des limites de Meaux, notre service continue dans les secteurs alentour. C\'est le cas notamment vers Nanteuil-lès-Meaux et Chambry (Seine-et-Marne).',
       zones: [
-        { name: 'Centre-ville & Rues étroites', delay: 'Sous 24h', specificities: 'Matériel adapté aux accès difficiles et parkings.' },
-        { name: 'Secteur Avenue Clémenceau / Avenue Henri Dunant', delay: 'Sur RDV', specificities: 'Prise en charge rapide sur les grands axes.' }
+        { name: 'Centre-ville & Zones denses', delay: 'Sous 24h', specificities: 'Intervention rapide sur l\'agglomération.' },
+        { name: 'Quartiers résidentiels', delay: '24h', specificities: 'Enlèvement au domicile ou parking.' },
+        { name: 'Zones d\'activité', delay: 'Sur RDV', specificities: 'Retrait sur parkings d\'entreprise.' }
       ],
     },
     {
@@ -49,14 +50,14 @@ export const meauxData: PageData = {
       type: 'FaqLocal',
       title: 'Questions fréquentes sur l\'enlèvement à Meaux',
       questions: [
-        { q: 'L\'intervention à Meaux est-elle soumise à des frais de déplacement ?', a: 'Non, si votre véhicule est complet, l\'enlèvement et le déplacement jusqu\'à Meaux sont entièrement gratuits.' },
-        { q: 'Délivrez-vous le certificat de destruction immédiatement ?', a: 'Oui, nous vous remettons le certificat de cession pour destruction en main propre le jour de l\'enlèvement.' },
-        { q: 'Mon véhicule est accidenté sur la voie publique, pouvez-vous le retirer ?', a: 'Absolument, nous intervenons sur la voie publique à condition que vous soyez présent avec les documents requis.' },
-        { q: 'Mon véhicule est bloqué en sous-sol à Meaux, est-ce un problème ?', a: 'Pas du tout. Nous disposons de dépanneuses 4x4 extra-basses capables d\'entrer dans la majorité des parkings souterrains.' },
-        { q: 'Que se passe-t-il si je n\'ai plus la carte grise de mon véhicule ?', a: 'Une déclaration de perte ou de vol effectuée en préfecture ou gendarmerie suffit. Nous vous guidons dans cette démarche.' },
-        { q: 'Prenez-vous en charge les motos et utilitaires en plus des voitures ?', a: 'Oui, nous enlevons gratuitement tout type de véhicule hors d\'usage : voiture, moto, scooter, camionnette ou utilitaire.' },
+        { q: 'Le véhicule doit-il être en état de rouler pour être enlevé ?', a: 'Non, nous prenons en charge les véhicules immobilisés, sans roues, sans batterie ou fortement endommagés.' },
         { q: 'Quel est le délai habituel entre la demande et l\'enlèvement ?', a: 'En général, nous intervenons sous 24 à 48h après confirmation du rendez-vous et vérification des documents.' },
-        { q: 'Le véhicule doit-il être en état de rouler pour être enlevé ?', a: 'Non, nous prenons en charge les véhicules immobilisés, sans roues, sans batterie ou fortement endommagés.' }
+        { q: 'Prenez-vous en charge les motos et utilitaires en plus des voitures ?', a: 'Oui, nous enlevons gratuitement tout type de véhicule hors d\'usage : voiture, moto, scooter, camionnette ou utilitaire.' },
+        { q: 'Que se passe-t-il si je n\'ai plus la carte grise de mon véhicule ?', a: 'Une déclaration de perte ou de vol effectuée en préfecture ou gendarmerie suffit. Nous vous guidons dans cette démarche.' },
+        { q: 'Mon véhicule est bloqué en sous-sol à Meaux, est-ce un problème ?', a: 'Pas du tout. Nous disposons de dépanneuses 4x4 extra-basses capables d\'entrer dans la majorité des parkings souterrains.' },
+        { q: 'Mon véhicule est accidenté sur la voie publique, pouvez-vous le retirer ?', a: 'Absolument, nous intervenons sur la voie publique à condition que vous soyez présent avec les documents requis.' },
+        { q: 'Quels documents obtenez-vous le jour de l\'enlèvement ?', a: 'Vous recevez un justificatif de prise en charge le jour même, ainsi que tous les documents attestant de la bonne fin de l\'opération.' },
+        { q: 'L\'intervention à Meaux est-elle soumise à des frais de déplacement ?', a: 'Non, si votre véhicule est complet, l\'enlèvement et le déplacement jusqu\'à Meaux sont entièrement gratuits.' }
       ],
     },
     {

@@ -1,0 +1,5055 @@
+{
+  "generated": 1262,
+  "failed": 0,
+  "timestamp": "2026-07-27T16:05:07.395Z",
+  "results": [
+    {
+      "slug": "paris",
+      "status": "OK"
+    },
+    {
+      "slug": "acheres-la-foret",
+      "status": "OK"
+    },
+    {
+      "slug": "amillis",
+      "status": "OK"
+    },
+    {
+      "slug": "amponville",
+      "status": "OK"
+    },
+    {
+      "slug": "andrezel",
+      "status": "OK"
+    },
+    {
+      "slug": "annet-sur-marne",
+      "status": "OK"
+    },
+    {
+      "slug": "arbonne-la-foret",
+      "status": "OK"
+    },
+    {
+      "slug": "argentieres",
+      "status": "OK"
+    },
+    {
+      "slug": "armentieres-en-brie",
+      "status": "OK"
+    },
+    {
+      "slug": "arville",
+      "status": "OK"
+    },
+    {
+      "slug": "aubepierre-ozouer-le-repos",
+      "status": "OK"
+    },
+    {
+      "slug": "aufferville",
+      "status": "OK"
+    },
+    {
+      "slug": "augers-en-brie",
+      "status": "OK"
+    },
+    {
+      "slug": "aulnoy",
+      "status": "OK"
+    },
+    {
+      "slug": "avon",
+      "status": "OK"
+    },
+    {
+      "slug": "baby",
+      "status": "OK"
+    },
+    {
+      "slug": "bagneaux-sur-loing",
+      "status": "OK"
+    },
+    {
+      "slug": "bailly-romainvilliers",
+      "status": "OK"
+    },
+    {
+      "slug": "balloy",
+      "status": "OK"
+    },
+    {
+      "slug": "bannost-villegagnon",
+      "status": "OK"
+    },
+    {
+      "slug": "barbey",
+      "status": "OK"
+    },
+    {
+      "slug": "barbizon",
+      "status": "OK"
+    },
+    {
+      "slug": "barcy",
+      "status": "OK"
+    },
+    {
+      "slug": "bassevelle",
+      "status": "OK"
+    },
+    {
+      "slug": "bazoches-les-bray",
+      "status": "OK"
+    },
+    {
+      "slug": "beauchery-saint-martin",
+      "status": "OK"
+    },
+    {
+      "slug": "beaumont-du-gatinais",
+      "status": "OK"
+    },
+    {
+      "slug": "beauvoir",
+      "status": "OK"
+    },
+    {
+      "slug": "bellot",
+      "status": "OK"
+    },
+    {
+      "slug": "bernay-vilbert",
+      "status": "OK"
+    },
+    {
+      "slug": "beton-bazoches",
+      "status": "OK"
+    },
+    {
+      "slug": "bezalles",
+      "status": "OK"
+    },
+    {
+      "slug": "blandy",
+      "status": "OK"
+    },
+    {
+      "slug": "blennes",
+      "status": "OK"
+    },
+    {
+      "slug": "boisdon",
+      "status": "OK"
+    },
+    {
+      "slug": "bois-le-roi",
+      "status": "OK"
+    },
+    {
+      "slug": "boissettes",
+      "status": "OK"
+    },
+    {
+      "slug": "boissise-la-bertrand",
+      "status": "OK"
+    },
+    {
+      "slug": "boissise-le-roi",
+      "status": "OK"
+    },
+    {
+      "slug": "boissy-aux-cailles",
+      "status": "OK"
+    },
+    {
+      "slug": "boissy-le-chatel",
+      "status": "OK"
+    },
+    {
+      "slug": "boitron",
+      "status": "OK"
+    },
+    {
+      "slug": "bombon",
+      "status": "OK"
+    },
+    {
+      "slug": "bougligny",
+      "status": "OK"
+    },
+    {
+      "slug": "boulancourt",
+      "status": "OK"
+    },
+    {
+      "slug": "bouleurs",
+      "status": "OK"
+    },
+    {
+      "slug": "bourron-marlotte",
+      "status": "OK"
+    },
+    {
+      "slug": "boutigny",
+      "status": "OK"
+    },
+    {
+      "slug": "bransles",
+      "status": "OK"
+    },
+    {
+      "slug": "bray-sur-seine",
+      "status": "OK"
+    },
+    {
+      "slug": "breau",
+      "status": "OK"
+    },
+    {
+      "slug": "brie-comte-robert",
+      "status": "OK"
+    },
+    {
+      "slug": "la-brosse-montceaux",
+      "status": "OK"
+    },
+    {
+      "slug": "brou-sur-chantereine",
+      "status": "OK"
+    },
+    {
+      "slug": "burcy",
+      "status": "OK"
+    },
+    {
+      "slug": "bussieres",
+      "status": "OK"
+    },
+    {
+      "slug": "bussy-saint-georges",
+      "status": "OK"
+    },
+    {
+      "slug": "bussy-saint-martin",
+      "status": "OK"
+    },
+    {
+      "slug": "buthiers",
+      "status": "OK"
+    },
+    {
+      "slug": "cannes-ecluse",
+      "status": "OK"
+    },
+    {
+      "slug": "carnetin",
+      "status": "OK"
+    },
+    {
+      "slug": "la-celle-sur-morin",
+      "status": "OK"
+    },
+    {
+      "slug": "cely",
+      "status": "OK"
+    },
+    {
+      "slug": "cerneux",
+      "status": "OK"
+    },
+    {
+      "slug": "cesson",
+      "status": "OK"
+    },
+    {
+      "slug": "cessoy-en-montois",
+      "status": "OK"
+    },
+    {
+      "slug": "chailly-en-biere",
+      "status": "OK"
+    },
+    {
+      "slug": "chailly-en-brie",
+      "status": "OK"
+    },
+    {
+      "slug": "chaintreaux",
+      "status": "OK"
+    },
+    {
+      "slug": "chalautre-la-grande",
+      "status": "OK"
+    },
+    {
+      "slug": "chalautre-la-petite",
+      "status": "OK"
+    },
+    {
+      "slug": "chalifert",
+      "status": "OK"
+    },
+    {
+      "slug": "chalmaison",
+      "status": "OK"
+    },
+    {
+      "slug": "chambry",
+      "status": "OK"
+    },
+    {
+      "slug": "chamigny",
+      "status": "OK"
+    },
+    {
+      "slug": "champagne-sur-seine",
+      "status": "OK"
+    },
+    {
+      "slug": "champcenest",
+      "status": "OK"
+    },
+    {
+      "slug": "champdeuil",
+      "status": "OK"
+    },
+    {
+      "slug": "champeaux",
+      "status": "OK"
+    },
+    {
+      "slug": "champs-sur-marne",
+      "status": "OK"
+    },
+    {
+      "slug": "changis-sur-marne",
+      "status": "OK"
+    },
+    {
+      "slug": "chanteloup-en-brie",
+      "status": "OK"
+    },
+    {
+      "slug": "la-chapelle-gauthier",
+      "status": "OK"
+    },
+    {
+      "slug": "la-chapelle-iger",
+      "status": "OK"
+    },
+    {
+      "slug": "la-chapelle-la-reine",
+      "status": "OK"
+    },
+    {
+      "slug": "la-chapelle-rablais",
+      "status": "OK"
+    },
+    {
+      "slug": "la-chapelle-saint-sulpice",
+      "status": "OK"
+    },
+    {
+      "slug": "les-chapelles-bourbon",
+      "status": "OK"
+    },
+    {
+      "slug": "la-chapelle-moutils",
+      "status": "OK"
+    },
+    {
+      "slug": "charmentray",
+      "status": "OK"
+    },
+    {
+      "slug": "charny",
+      "status": "OK"
+    },
+    {
+      "slug": "chartrettes",
+      "status": "OK"
+    },
+    {
+      "slug": "chartronges",
+      "status": "OK"
+    },
+    {
+      "slug": "chateaubleau",
+      "status": "OK"
+    },
+    {
+      "slug": "chateau-landon",
+      "status": "OK"
+    },
+    {
+      "slug": "le-chatelet-en-brie",
+      "status": "OK"
+    },
+    {
+      "slug": "chatenay-sur-seine",
+      "status": "OK"
+    },
+    {
+      "slug": "chatenoy",
+      "status": "OK"
+    },
+    {
+      "slug": "chatillon-la-borde",
+      "status": "OK"
+    },
+    {
+      "slug": "chatres",
+      "status": "OK"
+    },
+    {
+      "slug": "chauffry",
+      "status": "OK"
+    },
+    {
+      "slug": "chaumes-en-brie",
+      "status": "OK"
+    },
+    {
+      "slug": "chelles",
+      "status": "OK"
+    },
+    {
+      "slug": "chenoise-cucharmoy",
+      "status": "OK"
+    },
+    {
+      "slug": "chenou",
+      "status": "OK"
+    },
+    {
+      "slug": "chessy",
+      "status": "OK"
+    },
+    {
+      "slug": "chevrainvilliers",
+      "status": "OK"
+    },
+    {
+      "slug": "chevru",
+      "status": "OK"
+    },
+    {
+      "slug": "chevry-cossigny",
+      "status": "OK"
+    },
+    {
+      "slug": "chevry-en-sereine",
+      "status": "OK"
+    },
+    {
+      "slug": "choisy-en-brie",
+      "status": "OK"
+    },
+    {
+      "slug": "citry",
+      "status": "OK"
+    },
+    {
+      "slug": "claye-souilly",
+      "status": "OK"
+    },
+    {
+      "slug": "clos-fontaine",
+      "status": "OK"
+    },
+    {
+      "slug": "cocherel",
+      "status": "OK"
+    },
+    {
+      "slug": "collegien",
+      "status": "OK"
+    },
+    {
+      "slug": "combs-la-ville",
+      "status": "OK"
+    },
+    {
+      "slug": "compans",
+      "status": "OK"
+    },
+    {
+      "slug": "conches-sur-gondoire",
+      "status": "OK"
+    },
+    {
+      "slug": "conde-sainte-libiaire",
+      "status": "OK"
+    },
+    {
+      "slug": "congis-sur-therouanne",
+      "status": "OK"
+    },
+    {
+      "slug": "coubert",
+      "status": "OK"
+    },
+    {
+      "slug": "couilly-pont-aux-dames",
+      "status": "OK"
+    },
+    {
+      "slug": "coulombs-en-valois",
+      "status": "OK"
+    },
+    {
+      "slug": "coulommes",
+      "status": "OK"
+    },
+    {
+      "slug": "coulommiers",
+      "status": "OK"
+    },
+    {
+      "slug": "coupvray",
+      "status": "OK"
+    },
+    {
+      "slug": "courcelles-en-bassee",
+      "status": "OK"
+    },
+    {
+      "slug": "courchamp",
+      "status": "OK"
+    },
+    {
+      "slug": "courpalay",
+      "status": "OK"
+    },
+    {
+      "slug": "courquetaine",
+      "status": "OK"
+    },
+    {
+      "slug": "courtacon",
+      "status": "OK"
+    },
+    {
+      "slug": "courtomer",
+      "status": "OK"
+    },
+    {
+      "slug": "courtry",
+      "status": "OK"
+    },
+    {
+      "slug": "coutencon",
+      "status": "OK"
+    },
+    {
+      "slug": "coutevroult",
+      "status": "OK"
+    },
+    {
+      "slug": "crecy-la-chapelle",
+      "status": "OK"
+    },
+    {
+      "slug": "cregy-les-meaux",
+      "status": "OK"
+    },
+    {
+      "slug": "crevecur-en-brie",
+      "status": "OK"
+    },
+    {
+      "slug": "crisenoy",
+      "status": "OK"
+    },
+    {
+      "slug": "croissy-beaubourg",
+      "status": "OK"
+    },
+    {
+      "slug": "la-croix-en-brie",
+      "status": "OK"
+    },
+    {
+      "slug": "crouy-sur-ourcq",
+      "status": "OK"
+    },
+    {
+      "slug": "cuisy",
+      "status": "OK"
+    },
+    {
+      "slug": "dagny",
+      "status": "OK"
+    },
+    {
+      "slug": "dammarie-les-lys",
+      "status": "OK"
+    },
+    {
+      "slug": "dammartin-en-goele",
+      "status": "OK"
+    },
+    {
+      "slug": "dammartin-sur-tigeaux",
+      "status": "OK"
+    },
+    {
+      "slug": "dampmart",
+      "status": "OK"
+    },
+    {
+      "slug": "darvault",
+      "status": "OK"
+    },
+    {
+      "slug": "dhuisy",
+      "status": "OK"
+    },
+    {
+      "slug": "diant",
+      "status": "OK"
+    },
+    {
+      "slug": "donnemarie-dontilly",
+      "status": "OK"
+    },
+    {
+      "slug": "dormelles",
+      "status": "OK"
+    },
+    {
+      "slug": "doue",
+      "status": "OK"
+    },
+    {
+      "slug": "douy-la-ramee",
+      "status": "OK"
+    },
+    {
+      "slug": "echouboulains",
+      "status": "OK"
+    },
+    {
+      "slug": "les-ecrennes",
+      "status": "OK"
+    },
+    {
+      "slug": "egligny",
+      "status": "OK"
+    },
+    {
+      "slug": "egreville",
+      "status": "OK"
+    },
+    {
+      "slug": "emerainville",
+      "status": "OK"
+    },
+    {
+      "slug": "esbly",
+      "status": "OK"
+    },
+    {
+      "slug": "esmans",
+      "status": "OK"
+    },
+    {
+      "slug": "etrepilly",
+      "status": "OK"
+    },
+    {
+      "slug": "everly",
+      "status": "OK"
+    },
+    {
+      "slug": "evry-gregy-sur-yerre",
+      "status": "OK"
+    },
+    {
+      "slug": "faremoutiers",
+      "status": "OK"
+    },
+    {
+      "slug": "favieres",
+      "status": "OK"
+    },
+    {
+      "slug": "fay-les-nemours",
+      "status": "OK"
+    },
+    {
+      "slug": "fericy",
+      "status": "OK"
+    },
+    {
+      "slug": "ferolles-attilly",
+      "status": "OK"
+    },
+    {
+      "slug": "ferrieres-en-brie",
+      "status": "OK"
+    },
+    {
+      "slug": "la-ferte-gaucher",
+      "status": "OK"
+    },
+    {
+      "slug": "la-ferte-sous-jouarre",
+      "status": "OK"
+    },
+    {
+      "slug": "flagy",
+      "status": "OK"
+    },
+    {
+      "slug": "fleury-en-biere",
+      "status": "OK"
+    },
+    {
+      "slug": "fontainebleau",
+      "status": "OK"
+    },
+    {
+      "slug": "fontaine-fourches",
+      "status": "OK"
+    },
+    {
+      "slug": "fontaine-le-port",
+      "status": "OK"
+    },
+    {
+      "slug": "fontains",
+      "status": "OK"
+    },
+    {
+      "slug": "fontenailles",
+      "status": "OK"
+    },
+    {
+      "slug": "fontenay-tresigny",
+      "status": "OK"
+    },
+    {
+      "slug": "forfry",
+      "status": "OK"
+    },
+    {
+      "slug": "forges",
+      "status": "OK"
+    },
+    {
+      "slug": "fouju",
+      "status": "OK"
+    },
+    {
+      "slug": "fresnes-sur-marne",
+      "status": "OK"
+    },
+    {
+      "slug": "fretoy",
+      "status": "OK"
+    },
+    {
+      "slug": "fromont",
+      "status": "OK"
+    },
+    {
+      "slug": "fublaines",
+      "status": "OK"
+    },
+    {
+      "slug": "garentreville",
+      "status": "OK"
+    },
+    {
+      "slug": "gastins",
+      "status": "OK"
+    },
+    {
+      "slug": "la-genevraye",
+      "status": "OK"
+    },
+    {
+      "slug": "germigny-leveque",
+      "status": "OK"
+    },
+    {
+      "slug": "germigny-sous-coulombs",
+      "status": "OK"
+    },
+    {
+      "slug": "gesvres-le-chapitre",
+      "status": "OK"
+    },
+    {
+      "slug": "giremoutiers",
+      "status": "OK"
+    },
+    {
+      "slug": "gironville",
+      "status": "OK"
+    },
+    {
+      "slug": "gouaix",
+      "status": "OK"
+    },
+    {
+      "slug": "gouvernes",
+      "status": "OK"
+    },
+    {
+      "slug": "la-grande-paroisse",
+      "status": "OK"
+    },
+    {
+      "slug": "grandpuits-bailly-carrois",
+      "status": "OK"
+    },
+    {
+      "slug": "gravon",
+      "status": "OK"
+    },
+    {
+      "slug": "gressy",
+      "status": "OK"
+    },
+    {
+      "slug": "gretz-armainvilliers",
+      "status": "OK"
+    },
+    {
+      "slug": "grez-sur-loing",
+      "status": "OK"
+    },
+    {
+      "slug": "grisy-suisnes",
+      "status": "OK"
+    },
+    {
+      "slug": "grisy-sur-seine",
+      "status": "OK"
+    },
+    {
+      "slug": "guerard",
+      "status": "OK"
+    },
+    {
+      "slug": "guercheville",
+      "status": "OK"
+    },
+    {
+      "slug": "guermantes",
+      "status": "OK"
+    },
+    {
+      "slug": "guignes",
+      "status": "OK"
+    },
+    {
+      "slug": "gurcy-le-chatel",
+      "status": "OK"
+    },
+    {
+      "slug": "hautefeuille",
+      "status": "OK"
+    },
+    {
+      "slug": "la-haute-maison",
+      "status": "OK"
+    },
+    {
+      "slug": "hericy",
+      "status": "OK"
+    },
+    {
+      "slug": "herme",
+      "status": "OK"
+    },
+    {
+      "slug": "hondevilliers",
+      "status": "OK"
+    },
+    {
+      "slug": "la-houssaye-en-brie",
+      "status": "OK"
+    },
+    {
+      "slug": "ichy",
+      "status": "OK"
+    },
+    {
+      "slug": "isles-les-meldeuses",
+      "status": "OK"
+    },
+    {
+      "slug": "isles-les-villenoy",
+      "status": "OK"
+    },
+    {
+      "slug": "iverny",
+      "status": "OK"
+    },
+    {
+      "slug": "jablines",
+      "status": "OK"
+    },
+    {
+      "slug": "jaignes",
+      "status": "OK"
+    },
+    {
+      "slug": "jaulnes",
+      "status": "OK"
+    },
+    {
+      "slug": "jossigny",
+      "status": "OK"
+    },
+    {
+      "slug": "jouarre",
+      "status": "OK"
+    },
+    {
+      "slug": "jouy-le-chatel",
+      "status": "OK"
+    },
+    {
+      "slug": "jouy-sur-morin",
+      "status": "OK"
+    },
+    {
+      "slug": "juilly",
+      "status": "OK"
+    },
+    {
+      "slug": "jutigny",
+      "status": "OK"
+    },
+    {
+      "slug": "lagny-sur-marne",
+      "status": "OK"
+    },
+    {
+      "slug": "larchant",
+      "status": "OK"
+    },
+    {
+      "slug": "laval-en-brie",
+      "status": "OK"
+    },
+    {
+      "slug": "lechelle",
+      "status": "OK"
+    },
+    {
+      "slug": "lescherolles",
+      "status": "OK"
+    },
+    {
+      "slug": "lesches",
+      "status": "OK"
+    },
+    {
+      "slug": "lesigny",
+      "status": "OK"
+    },
+    {
+      "slug": "leudon-en-brie",
+      "status": "OK"
+    },
+    {
+      "slug": "lieusaint",
+      "status": "OK"
+    },
+    {
+      "slug": "limoges-fourches",
+      "status": "OK"
+    },
+    {
+      "slug": "lissy",
+      "status": "OK"
+    },
+    {
+      "slug": "liverdy-en-brie",
+      "status": "OK"
+    },
+    {
+      "slug": "livry-sur-seine",
+      "status": "OK"
+    },
+    {
+      "slug": "lizines",
+      "status": "OK"
+    },
+    {
+      "slug": "lizy-sur-ourcq",
+      "status": "OK"
+    },
+    {
+      "slug": "lognes",
+      "status": "OK"
+    },
+    {
+      "slug": "longperrier",
+      "status": "OK"
+    },
+    {
+      "slug": "longueville",
+      "status": "OK"
+    },
+    {
+      "slug": "lorrez-le-bocage-preaux",
+      "status": "OK"
+    },
+    {
+      "slug": "louan-villegruis-fontaine",
+      "status": "OK"
+    },
+    {
+      "slug": "luisetaines",
+      "status": "OK"
+    },
+    {
+      "slug": "lumigny-nesles-ormeaux",
+      "status": "OK"
+    },
+    {
+      "slug": "luzancy",
+      "status": "OK"
+    },
+    {
+      "slug": "machault",
+      "status": "OK"
+    },
+    {
+      "slug": "la-madeleine-sur-loing",
+      "status": "OK"
+    },
+    {
+      "slug": "magny-le-hongre",
+      "status": "OK"
+    },
+    {
+      "slug": "maincy",
+      "status": "OK"
+    },
+    {
+      "slug": "maisoncelles-en-brie",
+      "status": "OK"
+    },
+    {
+      "slug": "maisoncelles-en-gatinais",
+      "status": "OK"
+    },
+    {
+      "slug": "maison-rouge",
+      "status": "OK"
+    },
+    {
+      "slug": "marchemoret",
+      "status": "OK"
+    },
+    {
+      "slug": "marcilly",
+      "status": "OK"
+    },
+    {
+      "slug": "les-marets",
+      "status": "OK"
+    },
+    {
+      "slug": "mareuil-les-meaux",
+      "status": "OK"
+    },
+    {
+      "slug": "marles-en-brie",
+      "status": "OK"
+    },
+    {
+      "slug": "marolles-en-brie",
+      "status": "OK"
+    },
+    {
+      "slug": "marolles-sur-seine",
+      "status": "OK"
+    },
+    {
+      "slug": "mary-sur-marne",
+      "status": "OK"
+    },
+    {
+      "slug": "mauperthuis",
+      "status": "OK"
+    },
+    {
+      "slug": "mauregard",
+      "status": "OK"
+    },
+    {
+      "slug": "may-en-multien",
+      "status": "OK"
+    },
+    {
+      "slug": "meaux",
+      "status": "OK"
+    },
+    {
+      "slug": "le-mee-sur-seine",
+      "status": "OK"
+    },
+    {
+      "slug": "meigneux",
+      "status": "OK"
+    },
+    {
+      "slug": "meilleray",
+      "status": "OK"
+    },
+    {
+      "slug": "melun",
+      "status": "OK"
+    },
+    {
+      "slug": "melz-sur-seine",
+      "status": "OK"
+    },
+    {
+      "slug": "mery-sur-marne",
+      "status": "OK"
+    },
+    {
+      "slug": "le-mesnil-amelot",
+      "status": "OK"
+    },
+    {
+      "slug": "messy",
+      "status": "OK"
+    },
+    {
+      "slug": "misy-sur-yonne",
+      "status": "OK"
+    },
+    {
+      "slug": "mitry-mory",
+      "status": "OK"
+    },
+    {
+      "slug": "moisenay",
+      "status": "OK"
+    },
+    {
+      "slug": "moissy-cramayel",
+      "status": "OK"
+    },
+    {
+      "slug": "mondreville",
+      "status": "OK"
+    },
+    {
+      "slug": "mons-en-montois",
+      "status": "OK"
+    },
+    {
+      "slug": "montceaux-les-meaux",
+      "status": "OK"
+    },
+    {
+      "slug": "montceaux-les-provins",
+      "status": "OK"
+    },
+    {
+      "slug": "moncourt-fromonville",
+      "status": "OK"
+    },
+    {
+      "slug": "montdauphin",
+      "status": "OK"
+    },
+    {
+      "slug": "montenils",
+      "status": "OK"
+    },
+    {
+      "slug": "montereau-fault-yonne",
+      "status": "OK"
+    },
+    {
+      "slug": "montereau-sur-le-jard",
+      "status": "OK"
+    },
+    {
+      "slug": "montevrain",
+      "status": "OK"
+    },
+    {
+      "slug": "montge-en-goele",
+      "status": "OK"
+    },
+    {
+      "slug": "monthyon",
+      "status": "OK"
+    },
+    {
+      "slug": "montigny-le-guesdier",
+      "status": "OK"
+    },
+    {
+      "slug": "montigny-lencoup",
+      "status": "OK"
+    },
+    {
+      "slug": "montigny-sur-loing",
+      "status": "OK"
+    },
+    {
+      "slug": "montmachoux",
+      "status": "OK"
+    },
+    {
+      "slug": "montolivet",
+      "status": "OK"
+    },
+    {
+      "slug": "montry",
+      "status": "OK"
+    },
+    {
+      "slug": "moret-loing-et-orvanne",
+      "status": "OK"
+    },
+    {
+      "slug": "mormant",
+      "status": "OK"
+    },
+    {
+      "slug": "mortcerf",
+      "status": "OK"
+    },
+    {
+      "slug": "mortery",
+      "status": "OK"
+    },
+    {
+      "slug": "mouroux",
+      "status": "OK"
+    },
+    {
+      "slug": "mousseaux-les-bray",
+      "status": "OK"
+    },
+    {
+      "slug": "moussy-le-neuf",
+      "status": "OK"
+    },
+    {
+      "slug": "moussy-le-vieux",
+      "status": "OK"
+    },
+    {
+      "slug": "mouy-sur-seine",
+      "status": "OK"
+    },
+    {
+      "slug": "nandy",
+      "status": "OK"
+    },
+    {
+      "slug": "nangis",
+      "status": "OK"
+    },
+    {
+      "slug": "nanteau-sur-essonne",
+      "status": "OK"
+    },
+    {
+      "slug": "nanteau-sur-lunain",
+      "status": "OK"
+    },
+    {
+      "slug": "nanteuil-les-meaux",
+      "status": "OK"
+    },
+    {
+      "slug": "nanteuil-sur-marne",
+      "status": "OK"
+    },
+    {
+      "slug": "nantouillet",
+      "status": "OK"
+    },
+    {
+      "slug": "nemours",
+      "status": "OK"
+    },
+    {
+      "slug": "chauconin-neufmontiers",
+      "status": "OK"
+    },
+    {
+      "slug": "neufmoutiers-en-brie",
+      "status": "OK"
+    },
+    {
+      "slug": "noisiel",
+      "status": "OK"
+    },
+    {
+      "slug": "noisy-rudignon",
+      "status": "OK"
+    },
+    {
+      "slug": "noisy-sur-ecole",
+      "status": "OK"
+    },
+    {
+      "slug": "nonville",
+      "status": "OK"
+    },
+    {
+      "slug": "noyen-sur-seine",
+      "status": "OK"
+    },
+    {
+      "slug": "obsonville",
+      "status": "OK"
+    },
+    {
+      "slug": "ocquerre",
+      "status": "OK"
+    },
+    {
+      "slug": "oissery",
+      "status": "OK"
+    },
+    {
+      "slug": "orly-sur-morin",
+      "status": "OK"
+    },
+    {
+      "slug": "les-ormes-sur-voulzie",
+      "status": "OK"
+    },
+    {
+      "slug": "ormesson",
+      "status": "OK"
+    },
+    {
+      "slug": "othis",
+      "status": "OK"
+    },
+    {
+      "slug": "ozoir-la-ferriere",
+      "status": "OK"
+    },
+    {
+      "slug": "ozouer-le-voulgis",
+      "status": "OK"
+    },
+    {
+      "slug": "paley",
+      "status": "OK"
+    },
+    {
+      "slug": "pamfou",
+      "status": "OK"
+    },
+    {
+      "slug": "paroy",
+      "status": "OK"
+    },
+    {
+      "slug": "passy-sur-seine",
+      "status": "OK"
+    },
+    {
+      "slug": "pecy",
+      "status": "OK"
+    },
+    {
+      "slug": "penchard",
+      "status": "OK"
+    },
+    {
+      "slug": "perthes",
+      "status": "OK"
+    },
+    {
+      "slug": "pezarches",
+      "status": "OK"
+    },
+    {
+      "slug": "pierre-levee",
+      "status": "OK"
+    },
+    {
+      "slug": "le-pin",
+      "status": "OK"
+    },
+    {
+      "slug": "le-plessis-aux-bois",
+      "status": "OK"
+    },
+    {
+      "slug": "le-plessis-feu-aussoux",
+      "status": "OK"
+    },
+    {
+      "slug": "le-plessis-leveque",
+      "status": "OK"
+    },
+    {
+      "slug": "le-plessis-placy",
+      "status": "OK"
+    },
+    {
+      "slug": "poigny",
+      "status": "OK"
+    },
+    {
+      "slug": "poincy",
+      "status": "OK"
+    },
+    {
+      "slug": "poligny",
+      "status": "OK"
+    },
+    {
+      "slug": "pommeuse",
+      "status": "OK"
+    },
+    {
+      "slug": "pomponne",
+      "status": "OK"
+    },
+    {
+      "slug": "pontault-combault",
+      "status": "OK"
+    },
+    {
+      "slug": "pontcarre",
+      "status": "OK"
+    },
+    {
+      "slug": "precy-sur-marne",
+      "status": "OK"
+    },
+    {
+      "slug": "presles-en-brie",
+      "status": "OK"
+    },
+    {
+      "slug": "pringy",
+      "status": "OK"
+    },
+    {
+      "slug": "provins",
+      "status": "OK"
+    },
+    {
+      "slug": "puisieux",
+      "status": "OK"
+    },
+    {
+      "slug": "quiers",
+      "status": "OK"
+    },
+    {
+      "slug": "quincy-voisins",
+      "status": "OK"
+    },
+    {
+      "slug": "rampillon",
+      "status": "OK"
+    },
+    {
+      "slug": "reau",
+      "status": "OK"
+    },
+    {
+      "slug": "rebais",
+      "status": "OK"
+    },
+    {
+      "slug": "recloses",
+      "status": "OK"
+    },
+    {
+      "slug": "remauville",
+      "status": "OK"
+    },
+    {
+      "slug": "reuil-en-brie",
+      "status": "OK"
+    },
+    {
+      "slug": "la-rochette",
+      "status": "OK"
+    },
+    {
+      "slug": "roissy-en-brie",
+      "status": "OK"
+    },
+    {
+      "slug": "rouilly",
+      "status": "OK"
+    },
+    {
+      "slug": "rouvres",
+      "status": "OK"
+    },
+    {
+      "slug": "rozay-en-brie",
+      "status": "OK"
+    },
+    {
+      "slug": "rubelles",
+      "status": "OK"
+    },
+    {
+      "slug": "rumont",
+      "status": "OK"
+    },
+    {
+      "slug": "rupereux",
+      "status": "OK"
+    },
+    {
+      "slug": "saacy-sur-marne",
+      "status": "OK"
+    },
+    {
+      "slug": "sablonnieres",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-augustin",
+      "status": "OK"
+    },
+    {
+      "slug": "sainte-aulde",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-barthelemy",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-brice",
+      "status": "OK"
+    },
+    {
+      "slug": "sainte-colombe",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-cyr-sur-morin",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-denis-les-rebais",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-fargeau-ponthierry",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-fiacre",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-germain-laval",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-germain-laxis",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-germain-sous-doue",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-germain-sur-ecole",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-germain-sur-morin",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-hilliers",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-jean-les-deux-jumeaux",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-just-en-brie",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-leger",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-loup-de-naud",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-mammes",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-mard",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-mars-vieux-maisons",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-martin-des-champs",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-martin-du-boschet",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-martin-en-biere",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-mery",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-mesmes",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-ouen-en-brie",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-ouen-sur-morin",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-pathus",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-pierre-les-nemours",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-remy-de-la-vanne",
+      "status": "OK"
+    },
+    {
+      "slug": "beautheil-saints",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-sauveur-les-bray",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-sauveur-sur-ecole",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-simeon",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-soupplets",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-thibault-des-vignes",
+      "status": "OK"
+    },
+    {
+      "slug": "salins",
+      "status": "OK"
+    },
+    {
+      "slug": "sammeron",
+      "status": "OK"
+    },
+    {
+      "slug": "samois-sur-seine",
+      "status": "OK"
+    },
+    {
+      "slug": "samoreau",
+      "status": "OK"
+    },
+    {
+      "slug": "sancy",
+      "status": "OK"
+    },
+    {
+      "slug": "sancy-les-provins",
+      "status": "OK"
+    },
+    {
+      "slug": "savigny-le-temple",
+      "status": "OK"
+    },
+    {
+      "slug": "savins",
+      "status": "OK"
+    },
+    {
+      "slug": "seine-port",
+      "status": "OK"
+    },
+    {
+      "slug": "sept-sorts",
+      "status": "OK"
+    },
+    {
+      "slug": "serris",
+      "status": "OK"
+    },
+    {
+      "slug": "servon",
+      "status": "OK"
+    },
+    {
+      "slug": "signy-signets",
+      "status": "OK"
+    },
+    {
+      "slug": "sigy",
+      "status": "OK"
+    },
+    {
+      "slug": "sivry-courtry",
+      "status": "OK"
+    },
+    {
+      "slug": "sognolles-en-montois",
+      "status": "OK"
+    },
+    {
+      "slug": "soignolles-en-brie",
+      "status": "OK"
+    },
+    {
+      "slug": "soisy-bouy",
+      "status": "OK"
+    },
+    {
+      "slug": "solers",
+      "status": "OK"
+    },
+    {
+      "slug": "souppes-sur-loing",
+      "status": "OK"
+    },
+    {
+      "slug": "sourdun",
+      "status": "OK"
+    },
+    {
+      "slug": "tancrou",
+      "status": "OK"
+    },
+    {
+      "slug": "thenisy",
+      "status": "OK"
+    },
+    {
+      "slug": "thieux",
+      "status": "OK"
+    },
+    {
+      "slug": "thomery",
+      "status": "OK"
+    },
+    {
+      "slug": "thorigny-sur-marne",
+      "status": "OK"
+    },
+    {
+      "slug": "thoury-ferottes",
+      "status": "OK"
+    },
+    {
+      "slug": "tigeaux",
+      "status": "OK"
+    },
+    {
+      "slug": "la-tombe",
+      "status": "OK"
+    },
+    {
+      "slug": "torcy",
+      "status": "OK"
+    },
+    {
+      "slug": "touquin",
+      "status": "OK"
+    },
+    {
+      "slug": "tournan-en-brie",
+      "status": "OK"
+    },
+    {
+      "slug": "tousson",
+      "status": "OK"
+    },
+    {
+      "slug": "la-tretoire",
+      "status": "OK"
+    },
+    {
+      "slug": "treuzy-levelay",
+      "status": "OK"
+    },
+    {
+      "slug": "trilbardou",
+      "status": "OK"
+    },
+    {
+      "slug": "trilport",
+      "status": "OK"
+    },
+    {
+      "slug": "trocy-en-multien",
+      "status": "OK"
+    },
+    {
+      "slug": "ury",
+      "status": "OK"
+    },
+    {
+      "slug": "ussy-sur-marne",
+      "status": "OK"
+    },
+    {
+      "slug": "vaires-sur-marne",
+      "status": "OK"
+    },
+    {
+      "slug": "valence-en-brie",
+      "status": "OK"
+    },
+    {
+      "slug": "vanville",
+      "status": "OK"
+    },
+    {
+      "slug": "varennes-sur-seine",
+      "status": "OK"
+    },
+    {
+      "slug": "varreddes",
+      "status": "OK"
+    },
+    {
+      "slug": "vaucourtois",
+      "status": "OK"
+    },
+    {
+      "slug": "le-vaudoue",
+      "status": "OK"
+    },
+    {
+      "slug": "vaudoy-en-brie",
+      "status": "OK"
+    },
+    {
+      "slug": "vaux-le-penil",
+      "status": "OK"
+    },
+    {
+      "slug": "vaux-sur-lunain",
+      "status": "OK"
+    },
+    {
+      "slug": "vendrest",
+      "status": "OK"
+    },
+    {
+      "slug": "verdelot",
+      "status": "OK"
+    },
+    {
+      "slug": "verneuil-letang",
+      "status": "OK"
+    },
+    {
+      "slug": "vernou-la-celle-sur-seine",
+      "status": "OK"
+    },
+    {
+      "slug": "vert-saint-denis",
+      "status": "OK"
+    },
+    {
+      "slug": "vieux-champagne",
+      "status": "OK"
+    },
+    {
+      "slug": "vignely",
+      "status": "OK"
+    },
+    {
+      "slug": "villebeon",
+      "status": "OK"
+    },
+    {
+      "slug": "villecerf",
+      "status": "OK"
+    },
+    {
+      "slug": "villemarechal",
+      "status": "OK"
+    },
+    {
+      "slug": "villemareuil",
+      "status": "OK"
+    },
+    {
+      "slug": "villemer",
+      "status": "OK"
+    },
+    {
+      "slug": "villenauxe-la-petite",
+      "status": "OK"
+    },
+    {
+      "slug": "villeneuve-le-comte",
+      "status": "OK"
+    },
+    {
+      "slug": "villeneuve-les-bordes",
+      "status": "OK"
+    },
+    {
+      "slug": "villeneuve-saint-denis",
+      "status": "OK"
+    },
+    {
+      "slug": "villeneuve-sous-dammartin",
+      "status": "OK"
+    },
+    {
+      "slug": "villeneuve-sur-bellot",
+      "status": "OK"
+    },
+    {
+      "slug": "villenoy",
+      "status": "OK"
+    },
+    {
+      "slug": "villeparisis",
+      "status": "OK"
+    },
+    {
+      "slug": "villeroy",
+      "status": "OK"
+    },
+    {
+      "slug": "ville-saint-jacques",
+      "status": "OK"
+    },
+    {
+      "slug": "villevaude",
+      "status": "OK"
+    },
+    {
+      "slug": "villiers-en-biere",
+      "status": "OK"
+    },
+    {
+      "slug": "villiers-saint-georges",
+      "status": "OK"
+    },
+    {
+      "slug": "villiers-sous-grez",
+      "status": "OK"
+    },
+    {
+      "slug": "villiers-sur-morin",
+      "status": "OK"
+    },
+    {
+      "slug": "villiers-sur-seine",
+      "status": "OK"
+    },
+    {
+      "slug": "villuis",
+      "status": "OK"
+    },
+    {
+      "slug": "vimpelles",
+      "status": "OK"
+    },
+    {
+      "slug": "vinantes",
+      "status": "OK"
+    },
+    {
+      "slug": "vincy-manuvre",
+      "status": "OK"
+    },
+    {
+      "slug": "voinsles",
+      "status": "OK"
+    },
+    {
+      "slug": "voisenon",
+      "status": "OK"
+    },
+    {
+      "slug": "voulangis",
+      "status": "OK"
+    },
+    {
+      "slug": "voulton",
+      "status": "OK"
+    },
+    {
+      "slug": "voulx",
+      "status": "OK"
+    },
+    {
+      "slug": "vulaines-les-provins",
+      "status": "OK"
+    },
+    {
+      "slug": "vulaines-sur-seine",
+      "status": "OK"
+    },
+    {
+      "slug": "yebles",
+      "status": "OK"
+    },
+    {
+      "slug": "ablis",
+      "status": "OK"
+    },
+    {
+      "slug": "acheres",
+      "status": "OK"
+    },
+    {
+      "slug": "adainville",
+      "status": "OK"
+    },
+    {
+      "slug": "aigremont",
+      "status": "OK"
+    },
+    {
+      "slug": "allainville",
+      "status": "OK"
+    },
+    {
+      "slug": "les-alluets-le-roi",
+      "status": "OK"
+    },
+    {
+      "slug": "andelu",
+      "status": "OK"
+    },
+    {
+      "slug": "andresy",
+      "status": "OK"
+    },
+    {
+      "slug": "arnouville-les-mantes",
+      "status": "OK"
+    },
+    {
+      "slug": "aubergenville",
+      "status": "OK"
+    },
+    {
+      "slug": "auffargis",
+      "status": "OK"
+    },
+    {
+      "slug": "auffreville-brasseuil",
+      "status": "OK"
+    },
+    {
+      "slug": "aulnay-sur-mauldre",
+      "status": "OK"
+    },
+    {
+      "slug": "auteuil",
+      "status": "OK"
+    },
+    {
+      "slug": "autouillet",
+      "status": "OK"
+    },
+    {
+      "slug": "bailly",
+      "status": "OK"
+    },
+    {
+      "slug": "bazainville",
+      "status": "OK"
+    },
+    {
+      "slug": "bazemont",
+      "status": "OK"
+    },
+    {
+      "slug": "bazoches-sur-guyonne",
+      "status": "OK"
+    },
+    {
+      "slug": "behoust",
+      "status": "OK"
+    },
+    {
+      "slug": "bennecourt",
+      "status": "OK"
+    },
+    {
+      "slug": "beynes",
+      "status": "OK"
+    },
+    {
+      "slug": "blaru",
+      "status": "OK"
+    },
+    {
+      "slug": "boinville-en-mantois",
+      "status": "OK"
+    },
+    {
+      "slug": "boinville-le-gaillard",
+      "status": "OK"
+    },
+    {
+      "slug": "boinvilliers",
+      "status": "OK"
+    },
+    {
+      "slug": "bois-darcy",
+      "status": "OK"
+    },
+    {
+      "slug": "boissets",
+      "status": "OK"
+    },
+    {
+      "slug": "la-boissiere-ecole",
+      "status": "OK"
+    },
+    {
+      "slug": "boissy-mauvoisin",
+      "status": "OK"
+    },
+    {
+      "slug": "boissy-sans-avoir",
+      "status": "OK"
+    },
+    {
+      "slug": "bonnelles",
+      "status": "OK"
+    },
+    {
+      "slug": "bonnieres-sur-seine",
+      "status": "OK"
+    },
+    {
+      "slug": "bouafle",
+      "status": "OK"
+    },
+    {
+      "slug": "bougival",
+      "status": "OK"
+    },
+    {
+      "slug": "bourdonne",
+      "status": "OK"
+    },
+    {
+      "slug": "breuil-bois-robert",
+      "status": "OK"
+    },
+    {
+      "slug": "breval",
+      "status": "OK"
+    },
+    {
+      "slug": "les-breviaires",
+      "status": "OK"
+    },
+    {
+      "slug": "brueil-en-vexin",
+      "status": "OK"
+    },
+    {
+      "slug": "buc",
+      "status": "OK"
+    },
+    {
+      "slug": "buchelay",
+      "status": "OK"
+    },
+    {
+      "slug": "bullion",
+      "status": "OK"
+    },
+    {
+      "slug": "carrieres-sous-poissy",
+      "status": "OK"
+    },
+    {
+      "slug": "carrieres-sur-seine",
+      "status": "OK"
+    },
+    {
+      "slug": "la-celle-les-bordes",
+      "status": "OK"
+    },
+    {
+      "slug": "la-celle-saint-cloud",
+      "status": "OK"
+    },
+    {
+      "slug": "cernay-la-ville",
+      "status": "OK"
+    },
+    {
+      "slug": "chambourcy",
+      "status": "OK"
+    },
+    {
+      "slug": "chanteloup-les-vignes",
+      "status": "OK"
+    },
+    {
+      "slug": "chapet",
+      "status": "OK"
+    },
+    {
+      "slug": "chateaufort",
+      "status": "OK"
+    },
+    {
+      "slug": "chatou",
+      "status": "OK"
+    },
+    {
+      "slug": "chaufour-les-bonnieres",
+      "status": "OK"
+    },
+    {
+      "slug": "chavenay",
+      "status": "OK"
+    },
+    {
+      "slug": "le-chesnay-rocquencourt",
+      "status": "OK"
+    },
+    {
+      "slug": "chevreuse",
+      "status": "OK"
+    },
+    {
+      "slug": "choisel",
+      "status": "OK"
+    },
+    {
+      "slug": "civry-la-foret",
+      "status": "OK"
+    },
+    {
+      "slug": "clairefontaine-en-yvelines",
+      "status": "OK"
+    },
+    {
+      "slug": "les-clayes-sous-bois",
+      "status": "OK"
+    },
+    {
+      "slug": "coignieres",
+      "status": "OK"
+    },
+    {
+      "slug": "conde-sur-vesgre",
+      "status": "OK"
+    },
+    {
+      "slug": "conflans-sainte-honorine",
+      "status": "OK"
+    },
+    {
+      "slug": "courgent",
+      "status": "OK"
+    },
+    {
+      "slug": "cravent",
+      "status": "OK"
+    },
+    {
+      "slug": "crespieres",
+      "status": "OK"
+    },
+    {
+      "slug": "croissy-sur-seine",
+      "status": "OK"
+    },
+    {
+      "slug": "dammartin-en-serve",
+      "status": "OK"
+    },
+    {
+      "slug": "dampierre-en-yvelines",
+      "status": "OK"
+    },
+    {
+      "slug": "dannemarie",
+      "status": "OK"
+    },
+    {
+      "slug": "davron",
+      "status": "OK"
+    },
+    {
+      "slug": "drocourt",
+      "status": "OK"
+    },
+    {
+      "slug": "ecquevilly",
+      "status": "OK"
+    },
+    {
+      "slug": "elancourt",
+      "status": "OK"
+    },
+    {
+      "slug": "emance",
+      "status": "OK"
+    },
+    {
+      "slug": "epone",
+      "status": "OK"
+    },
+    {
+      "slug": "les-essarts-le-roi",
+      "status": "OK"
+    },
+    {
+      "slug": "letang-la-ville",
+      "status": "OK"
+    },
+    {
+      "slug": "evecquemont",
+      "status": "OK"
+    },
+    {
+      "slug": "la-falaise",
+      "status": "OK"
+    },
+    {
+      "slug": "favrieux",
+      "status": "OK"
+    },
+    {
+      "slug": "feucherolles",
+      "status": "OK"
+    },
+    {
+      "slug": "flacourt",
+      "status": "OK"
+    },
+    {
+      "slug": "flexanville",
+      "status": "OK"
+    },
+    {
+      "slug": "flins-neuve-eglise",
+      "status": "OK"
+    },
+    {
+      "slug": "flins-sur-seine",
+      "status": "OK"
+    },
+    {
+      "slug": "follainville-dennemont",
+      "status": "OK"
+    },
+    {
+      "slug": "fontenay-le-fleury",
+      "status": "OK"
+    },
+    {
+      "slug": "fontenay-mauvoisin",
+      "status": "OK"
+    },
+    {
+      "slug": "fontenay-saint-pere",
+      "status": "OK"
+    },
+    {
+      "slug": "freneuse",
+      "status": "OK"
+    },
+    {
+      "slug": "gaillon-sur-montcient",
+      "status": "OK"
+    },
+    {
+      "slug": "galluis",
+      "status": "OK"
+    },
+    {
+      "slug": "gambais",
+      "status": "OK"
+    },
+    {
+      "slug": "gambaiseuil",
+      "status": "OK"
+    },
+    {
+      "slug": "garancieres",
+      "status": "OK"
+    },
+    {
+      "slug": "gargenville",
+      "status": "OK"
+    },
+    {
+      "slug": "gazeran",
+      "status": "OK"
+    },
+    {
+      "slug": "gommecourt",
+      "status": "OK"
+    },
+    {
+      "slug": "goupillieres",
+      "status": "OK"
+    },
+    {
+      "slug": "goussonville",
+      "status": "OK"
+    },
+    {
+      "slug": "grandchamp",
+      "status": "OK"
+    },
+    {
+      "slug": "gressey",
+      "status": "OK"
+    },
+    {
+      "slug": "grosrouvre",
+      "status": "OK"
+    },
+    {
+      "slug": "guernes",
+      "status": "OK"
+    },
+    {
+      "slug": "guerville",
+      "status": "OK"
+    },
+    {
+      "slug": "guitrancourt",
+      "status": "OK"
+    },
+    {
+      "slug": "guyancourt",
+      "status": "OK"
+    },
+    {
+      "slug": "hardricourt",
+      "status": "OK"
+    },
+    {
+      "slug": "hargeville",
+      "status": "OK"
+    },
+    {
+      "slug": "la-hauteville",
+      "status": "OK"
+    },
+    {
+      "slug": "herbeville",
+      "status": "OK"
+    },
+    {
+      "slug": "hermeray",
+      "status": "OK"
+    },
+    {
+      "slug": "houdan",
+      "status": "OK"
+    },
+    {
+      "slug": "houilles",
+      "status": "OK"
+    },
+    {
+      "slug": "issou",
+      "status": "OK"
+    },
+    {
+      "slug": "jambville",
+      "status": "OK"
+    },
+    {
+      "slug": "notre-dame-de-la-mer",
+      "status": "OK"
+    },
+    {
+      "slug": "jouars-pontchartrain",
+      "status": "OK"
+    },
+    {
+      "slug": "jouy-en-josas",
+      "status": "OK"
+    },
+    {
+      "slug": "jouy-mauvoisin",
+      "status": "OK"
+    },
+    {
+      "slug": "jumeauville",
+      "status": "OK"
+    },
+    {
+      "slug": "juziers",
+      "status": "OK"
+    },
+    {
+      "slug": "lainville-en-vexin",
+      "status": "OK"
+    },
+    {
+      "slug": "levis-saint-nom",
+      "status": "OK"
+    },
+    {
+      "slug": "limay",
+      "status": "OK"
+    },
+    {
+      "slug": "limetz-villez",
+      "status": "OK"
+    },
+    {
+      "slug": "les-loges-en-josas",
+      "status": "OK"
+    },
+    {
+      "slug": "lommoye",
+      "status": "OK"
+    },
+    {
+      "slug": "longnes",
+      "status": "OK"
+    },
+    {
+      "slug": "longvilliers",
+      "status": "OK"
+    },
+    {
+      "slug": "louveciennes",
+      "status": "OK"
+    },
+    {
+      "slug": "magnanville",
+      "status": "OK"
+    },
+    {
+      "slug": "magny-les-hameaux",
+      "status": "OK"
+    },
+    {
+      "slug": "maisons-laffitte",
+      "status": "OK"
+    },
+    {
+      "slug": "mantes-la-jolie",
+      "status": "OK"
+    },
+    {
+      "slug": "mantes-la-ville",
+      "status": "OK"
+    },
+    {
+      "slug": "marcq",
+      "status": "OK"
+    },
+    {
+      "slug": "mareil-le-guyon",
+      "status": "OK"
+    },
+    {
+      "slug": "mareil-marly",
+      "status": "OK"
+    },
+    {
+      "slug": "mareil-sur-mauldre",
+      "status": "OK"
+    },
+    {
+      "slug": "marly-le-roi",
+      "status": "OK"
+    },
+    {
+      "slug": "maule",
+      "status": "OK"
+    },
+    {
+      "slug": "maulette",
+      "status": "OK"
+    },
+    {
+      "slug": "maurecourt",
+      "status": "OK"
+    },
+    {
+      "slug": "maurepas",
+      "status": "OK"
+    },
+    {
+      "slug": "medan",
+      "status": "OK"
+    },
+    {
+      "slug": "menerville",
+      "status": "OK"
+    },
+    {
+      "slug": "mere",
+      "status": "OK"
+    },
+    {
+      "slug": "mericourt",
+      "status": "OK"
+    },
+    {
+      "slug": "le-mesnil-le-roi",
+      "status": "OK"
+    },
+    {
+      "slug": "le-mesnil-saint-denis",
+      "status": "OK"
+    },
+    {
+      "slug": "les-mesnuls",
+      "status": "OK"
+    },
+    {
+      "slug": "meulan-en-yvelines",
+      "status": "OK"
+    },
+    {
+      "slug": "mezieres-sur-seine",
+      "status": "OK"
+    },
+    {
+      "slug": "mezy-sur-seine",
+      "status": "OK"
+    },
+    {
+      "slug": "millemont",
+      "status": "OK"
+    },
+    {
+      "slug": "milon-la-chapelle",
+      "status": "OK"
+    },
+    {
+      "slug": "mittainville",
+      "status": "OK"
+    },
+    {
+      "slug": "moisson",
+      "status": "OK"
+    },
+    {
+      "slug": "montainville",
+      "status": "OK"
+    },
+    {
+      "slug": "montalet-le-bois",
+      "status": "OK"
+    },
+    {
+      "slug": "montchauvet",
+      "status": "OK"
+    },
+    {
+      "slug": "montesson",
+      "status": "OK"
+    },
+    {
+      "slug": "montfort-lamaury",
+      "status": "OK"
+    },
+    {
+      "slug": "montigny-le-bretonneux",
+      "status": "OK"
+    },
+    {
+      "slug": "morainvilliers",
+      "status": "OK"
+    },
+    {
+      "slug": "mousseaux-sur-seine",
+      "status": "OK"
+    },
+    {
+      "slug": "mulcent",
+      "status": "OK"
+    },
+    {
+      "slug": "les-mureaux",
+      "status": "OK"
+    },
+    {
+      "slug": "neauphle-le-chateau",
+      "status": "OK"
+    },
+    {
+      "slug": "neauphle-le-vieux",
+      "status": "OK"
+    },
+    {
+      "slug": "neauphlette",
+      "status": "OK"
+    },
+    {
+      "slug": "nezel",
+      "status": "OK"
+    },
+    {
+      "slug": "noisy-le-roi",
+      "status": "OK"
+    },
+    {
+      "slug": "oinville-sur-montcient",
+      "status": "OK"
+    },
+    {
+      "slug": "orcemont",
+      "status": "OK"
+    },
+    {
+      "slug": "orgerus",
+      "status": "OK"
+    },
+    {
+      "slug": "orgeval",
+      "status": "OK"
+    },
+    {
+      "slug": "orphin",
+      "status": "OK"
+    },
+    {
+      "slug": "orsonville",
+      "status": "OK"
+    },
+    {
+      "slug": "orvilliers",
+      "status": "OK"
+    },
+    {
+      "slug": "osmoy",
+      "status": "OK"
+    },
+    {
+      "slug": "paray-douaville",
+      "status": "OK"
+    },
+    {
+      "slug": "le-pecq",
+      "status": "OK"
+    },
+    {
+      "slug": "perdreauville",
+      "status": "OK"
+    },
+    {
+      "slug": "le-perray-en-yvelines",
+      "status": "OK"
+    },
+    {
+      "slug": "plaisir",
+      "status": "OK"
+    },
+    {
+      "slug": "poigny-la-foret",
+      "status": "OK"
+    },
+    {
+      "slug": "poissy",
+      "status": "OK"
+    },
+    {
+      "slug": "ponthevrard",
+      "status": "OK"
+    },
+    {
+      "slug": "porcheville",
+      "status": "OK"
+    },
+    {
+      "slug": "le-port-marly",
+      "status": "OK"
+    },
+    {
+      "slug": "prunay-le-temple",
+      "status": "OK"
+    },
+    {
+      "slug": "prunay-en-yvelines",
+      "status": "OK"
+    },
+    {
+      "slug": "la-queue-les-yvelines",
+      "status": "OK"
+    },
+    {
+      "slug": "raizeux",
+      "status": "OK"
+    },
+    {
+      "slug": "rambouillet",
+      "status": "OK"
+    },
+    {
+      "slug": "rennemoulin",
+      "status": "OK"
+    },
+    {
+      "slug": "richebourg",
+      "status": "OK"
+    },
+    {
+      "slug": "rochefort-en-yvelines",
+      "status": "OK"
+    },
+    {
+      "slug": "rolleboise",
+      "status": "OK"
+    },
+    {
+      "slug": "rosay",
+      "status": "OK"
+    },
+    {
+      "slug": "rosny-sur-seine",
+      "status": "OK"
+    },
+    {
+      "slug": "sailly",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-arnoult-en-yvelines",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-cyr-lecole",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-forget",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-germain-de-la-grange",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-germain-en-laye",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-hilarion",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-illiers-la-ville",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-illiers-le-bois",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-lambert",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-leger-en-yvelines",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-martin-de-brethencourt",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-martin-la-garenne",
+      "status": "OK"
+    },
+    {
+      "slug": "sainte-mesme",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-nom-la-breteche",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-remy-les-chevreuse",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-remy-lhonore",
+      "status": "OK"
+    },
+    {
+      "slug": "sartrouville",
+      "status": "OK"
+    },
+    {
+      "slug": "saulx-marchais",
+      "status": "OK"
+    },
+    {
+      "slug": "senlisse",
+      "status": "OK"
+    },
+    {
+      "slug": "septeuil",
+      "status": "OK"
+    },
+    {
+      "slug": "soindres",
+      "status": "OK"
+    },
+    {
+      "slug": "sonchamp",
+      "status": "OK"
+    },
+    {
+      "slug": "tacoignieres",
+      "status": "OK"
+    },
+    {
+      "slug": "le-tartre-gaudran",
+      "status": "OK"
+    },
+    {
+      "slug": "le-tertre-saint-denis",
+      "status": "OK"
+    },
+    {
+      "slug": "tessancourt-sur-aubette",
+      "status": "OK"
+    },
+    {
+      "slug": "thiverval-grignon",
+      "status": "OK"
+    },
+    {
+      "slug": "thoiry",
+      "status": "OK"
+    },
+    {
+      "slug": "tilly",
+      "status": "OK"
+    },
+    {
+      "slug": "toussus-le-noble",
+      "status": "OK"
+    },
+    {
+      "slug": "trappes",
+      "status": "OK"
+    },
+    {
+      "slug": "le-tremblay-sur-mauldre",
+      "status": "OK"
+    },
+    {
+      "slug": "triel-sur-seine",
+      "status": "OK"
+    },
+    {
+      "slug": "vaux-sur-seine",
+      "status": "OK"
+    },
+    {
+      "slug": "velizy-villacoublay",
+      "status": "OK"
+    },
+    {
+      "slug": "verneuil-sur-seine",
+      "status": "OK"
+    },
+    {
+      "slug": "vernouillet",
+      "status": "OK"
+    },
+    {
+      "slug": "la-verriere",
+      "status": "OK"
+    },
+    {
+      "slug": "versailles",
+      "status": "OK"
+    },
+    {
+      "slug": "vert",
+      "status": "OK"
+    },
+    {
+      "slug": "le-vesinet",
+      "status": "OK"
+    },
+    {
+      "slug": "vicq",
+      "status": "OK"
+    },
+    {
+      "slug": "vieille-eglise-en-yvelines",
+      "status": "OK"
+    },
+    {
+      "slug": "la-villeneuve-en-chevrie",
+      "status": "OK"
+    },
+    {
+      "slug": "villennes-sur-seine",
+      "status": "OK"
+    },
+    {
+      "slug": "villepreux",
+      "status": "OK"
+    },
+    {
+      "slug": "villette",
+      "status": "OK"
+    },
+    {
+      "slug": "villiers-le-mahieu",
+      "status": "OK"
+    },
+    {
+      "slug": "villiers-saint-frederic",
+      "status": "OK"
+    },
+    {
+      "slug": "viroflay",
+      "status": "OK"
+    },
+    {
+      "slug": "voisins-le-bretonneux",
+      "status": "OK"
+    },
+    {
+      "slug": "abbeville-la-riviere",
+      "status": "OK"
+    },
+    {
+      "slug": "angerville",
+      "status": "OK"
+    },
+    {
+      "slug": "angervilliers",
+      "status": "OK"
+    },
+    {
+      "slug": "arpajon",
+      "status": "OK"
+    },
+    {
+      "slug": "arrancourt",
+      "status": "OK"
+    },
+    {
+      "slug": "athis-mons",
+      "status": "OK"
+    },
+    {
+      "slug": "authon-la-plaine",
+      "status": "OK"
+    },
+    {
+      "slug": "auvernaux",
+      "status": "OK"
+    },
+    {
+      "slug": "auvers-saint-georges",
+      "status": "OK"
+    },
+    {
+      "slug": "avrainville",
+      "status": "OK"
+    },
+    {
+      "slug": "ballainvilliers",
+      "status": "OK"
+    },
+    {
+      "slug": "ballancourt-sur-essonne",
+      "status": "OK"
+    },
+    {
+      "slug": "baulne",
+      "status": "OK"
+    },
+    {
+      "slug": "bievres",
+      "status": "OK"
+    },
+    {
+      "slug": "boigneville",
+      "status": "OK"
+    },
+    {
+      "slug": "bois-herpin",
+      "status": "OK"
+    },
+    {
+      "slug": "boissy-la-riviere",
+      "status": "OK"
+    },
+    {
+      "slug": "boissy-le-cutte",
+      "status": "OK"
+    },
+    {
+      "slug": "boissy-le-sec",
+      "status": "OK"
+    },
+    {
+      "slug": "boissy-sous-saint-yon",
+      "status": "OK"
+    },
+    {
+      "slug": "bondoufle",
+      "status": "OK"
+    },
+    {
+      "slug": "boullay-les-troux",
+      "status": "OK"
+    },
+    {
+      "slug": "bouray-sur-juine",
+      "status": "OK"
+    },
+    {
+      "slug": "boussy-saint-antoine",
+      "status": "OK"
+    },
+    {
+      "slug": "boutervilliers",
+      "status": "OK"
+    },
+    {
+      "slug": "boutigny-sur-essonne",
+      "status": "OK"
+    },
+    {
+      "slug": "bouville",
+      "status": "OK"
+    },
+    {
+      "slug": "bretigny-sur-orge",
+      "status": "OK"
+    },
+    {
+      "slug": "breuillet",
+      "status": "OK"
+    },
+    {
+      "slug": "breux-jouy",
+      "status": "OK"
+    },
+    {
+      "slug": "brieres-les-scelles",
+      "status": "OK"
+    },
+    {
+      "slug": "briis-sous-forges",
+      "status": "OK"
+    },
+    {
+      "slug": "brouy",
+      "status": "OK"
+    },
+    {
+      "slug": "brunoy",
+      "status": "OK"
+    },
+    {
+      "slug": "bruyeres-le-chatel",
+      "status": "OK"
+    },
+    {
+      "slug": "buno-bonnevaux",
+      "status": "OK"
+    },
+    {
+      "slug": "bures-sur-yvette",
+      "status": "OK"
+    },
+    {
+      "slug": "cerny",
+      "status": "OK"
+    },
+    {
+      "slug": "chalo-saint-mars",
+      "status": "OK"
+    },
+    {
+      "slug": "chalou-moulineux",
+      "status": "OK"
+    },
+    {
+      "slug": "chamarande",
+      "status": "OK"
+    },
+    {
+      "slug": "champcueil",
+      "status": "OK"
+    },
+    {
+      "slug": "champlan",
+      "status": "OK"
+    },
+    {
+      "slug": "champmotteux",
+      "status": "OK"
+    },
+    {
+      "slug": "chatignonville",
+      "status": "OK"
+    },
+    {
+      "slug": "chauffour-les-etrechy",
+      "status": "OK"
+    },
+    {
+      "slug": "cheptainville",
+      "status": "OK"
+    },
+    {
+      "slug": "chevannes",
+      "status": "OK"
+    },
+    {
+      "slug": "chilly-mazarin",
+      "status": "OK"
+    },
+    {
+      "slug": "corbeil-essonnes",
+      "status": "OK"
+    },
+    {
+      "slug": "corbreuse",
+      "status": "OK"
+    },
+    {
+      "slug": "le-coudray-montceaux",
+      "status": "OK"
+    },
+    {
+      "slug": "courances",
+      "status": "OK"
+    },
+    {
+      "slug": "courdimanche-sur-essonne",
+      "status": "OK"
+    },
+    {
+      "slug": "courson-monteloup",
+      "status": "OK"
+    },
+    {
+      "slug": "crosne",
+      "status": "OK"
+    },
+    {
+      "slug": "dannemois",
+      "status": "OK"
+    },
+    {
+      "slug": "dhuison-longueville",
+      "status": "OK"
+    },
+    {
+      "slug": "dourdan",
+      "status": "OK"
+    },
+    {
+      "slug": "draveil",
+      "status": "OK"
+    },
+    {
+      "slug": "echarcon",
+      "status": "OK"
+    },
+    {
+      "slug": "egly",
+      "status": "OK"
+    },
+    {
+      "slug": "epinay-sous-senart",
+      "status": "OK"
+    },
+    {
+      "slug": "epinay-sur-orge",
+      "status": "OK"
+    },
+    {
+      "slug": "etampes",
+      "status": "OK"
+    },
+    {
+      "slug": "etiolles",
+      "status": "OK"
+    },
+    {
+      "slug": "etrechy",
+      "status": "OK"
+    },
+    {
+      "slug": "evry-courcouronnes",
+      "status": "OK"
+    },
+    {
+      "slug": "la-ferte-alais",
+      "status": "OK"
+    },
+    {
+      "slug": "fleury-merogis",
+      "status": "OK"
+    },
+    {
+      "slug": "fontaine-la-riviere",
+      "status": "OK"
+    },
+    {
+      "slug": "fontenay-les-briis",
+      "status": "OK"
+    },
+    {
+      "slug": "fontenay-le-vicomte",
+      "status": "OK"
+    },
+    {
+      "slug": "la-foret-le-roi",
+      "status": "OK"
+    },
+    {
+      "slug": "la-foret-sainte-croix",
+      "status": "OK"
+    },
+    {
+      "slug": "forges-les-bains",
+      "status": "OK"
+    },
+    {
+      "slug": "gif-sur-yvette",
+      "status": "OK"
+    },
+    {
+      "slug": "gironville-sur-essonne",
+      "status": "OK"
+    },
+    {
+      "slug": "gometz-la-ville",
+      "status": "OK"
+    },
+    {
+      "slug": "gometz-le-chatel",
+      "status": "OK"
+    },
+    {
+      "slug": "les-granges-le-roi",
+      "status": "OK"
+    },
+    {
+      "slug": "grigny",
+      "status": "OK"
+    },
+    {
+      "slug": "guibeville",
+      "status": "OK"
+    },
+    {
+      "slug": "guigneville-sur-essonne",
+      "status": "OK"
+    },
+    {
+      "slug": "guillerval",
+      "status": "OK"
+    },
+    {
+      "slug": "igny",
+      "status": "OK"
+    },
+    {
+      "slug": "itteville",
+      "status": "OK"
+    },
+    {
+      "slug": "janville-sur-juine",
+      "status": "OK"
+    },
+    {
+      "slug": "janvry",
+      "status": "OK"
+    },
+    {
+      "slug": "juvisy-sur-orge",
+      "status": "OK"
+    },
+    {
+      "slug": "lardy",
+      "status": "OK"
+    },
+    {
+      "slug": "leudeville",
+      "status": "OK"
+    },
+    {
+      "slug": "leuville-sur-orge",
+      "status": "OK"
+    },
+    {
+      "slug": "limours",
+      "status": "OK"
+    },
+    {
+      "slug": "linas",
+      "status": "OK"
+    },
+    {
+      "slug": "lisses",
+      "status": "OK"
+    },
+    {
+      "slug": "longjumeau",
+      "status": "OK"
+    },
+    {
+      "slug": "longpont-sur-orge",
+      "status": "OK"
+    },
+    {
+      "slug": "maisse",
+      "status": "OK"
+    },
+    {
+      "slug": "marcoussis",
+      "status": "OK"
+    },
+    {
+      "slug": "marolles-en-beauce",
+      "status": "OK"
+    },
+    {
+      "slug": "marolles-en-hurepoix",
+      "status": "OK"
+    },
+    {
+      "slug": "massy",
+      "status": "OK"
+    },
+    {
+      "slug": "mauchamps",
+      "status": "OK"
+    },
+    {
+      "slug": "mennecy",
+      "status": "OK"
+    },
+    {
+      "slug": "le-merevillois",
+      "status": "OK"
+    },
+    {
+      "slug": "merobert",
+      "status": "OK"
+    },
+    {
+      "slug": "mespuits",
+      "status": "OK"
+    },
+    {
+      "slug": "milly-la-foret",
+      "status": "OK"
+    },
+    {
+      "slug": "moigny-sur-ecole",
+      "status": "OK"
+    },
+    {
+      "slug": "les-molieres",
+      "status": "OK"
+    },
+    {
+      "slug": "mondeville",
+      "status": "OK"
+    },
+    {
+      "slug": "monnerville",
+      "status": "OK"
+    },
+    {
+      "slug": "montgeron",
+      "status": "OK"
+    },
+    {
+      "slug": "montlhery",
+      "status": "OK"
+    },
+    {
+      "slug": "morangis",
+      "status": "OK"
+    },
+    {
+      "slug": "morigny-champigny",
+      "status": "OK"
+    },
+    {
+      "slug": "morsang-sur-orge",
+      "status": "OK"
+    },
+    {
+      "slug": "morsang-sur-seine",
+      "status": "OK"
+    },
+    {
+      "slug": "nainville-les-roches",
+      "status": "OK"
+    },
+    {
+      "slug": "la-norville",
+      "status": "OK"
+    },
+    {
+      "slug": "nozay",
+      "status": "OK"
+    },
+    {
+      "slug": "ollainville",
+      "status": "OK"
+    },
+    {
+      "slug": "oncy-sur-ecole",
+      "status": "OK"
+    },
+    {
+      "slug": "ormoy",
+      "status": "OK"
+    },
+    {
+      "slug": "ormoy-la-riviere",
+      "status": "OK"
+    },
+    {
+      "slug": "orsay",
+      "status": "OK"
+    },
+    {
+      "slug": "orveau",
+      "status": "OK"
+    },
+    {
+      "slug": "palaiseau",
+      "status": "OK"
+    },
+    {
+      "slug": "paray-vieille-poste",
+      "status": "OK"
+    },
+    {
+      "slug": "pecqueuse",
+      "status": "OK"
+    },
+    {
+      "slug": "le-plessis-pate",
+      "status": "OK"
+    },
+    {
+      "slug": "plessis-saint-benoist",
+      "status": "OK"
+    },
+    {
+      "slug": "prunay-sur-essonne",
+      "status": "OK"
+    },
+    {
+      "slug": "puiselet-le-marais",
+      "status": "OK"
+    },
+    {
+      "slug": "pussay",
+      "status": "OK"
+    },
+    {
+      "slug": "quincy-sous-senart",
+      "status": "OK"
+    },
+    {
+      "slug": "richarville",
+      "status": "OK"
+    },
+    {
+      "slug": "ris-orangis",
+      "status": "OK"
+    },
+    {
+      "slug": "roinville",
+      "status": "OK"
+    },
+    {
+      "slug": "roinvilliers",
+      "status": "OK"
+    },
+    {
+      "slug": "saclas",
+      "status": "OK"
+    },
+    {
+      "slug": "saclay",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-aubin",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-cheron",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-cyr-la-riviere",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-cyr-sous-dourdan",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-escobille",
+      "status": "OK"
+    },
+    {
+      "slug": "sainte-genevieve-des-bois",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-germain-les-arpajon",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-germain-les-corbeil",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-hilaire",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-jean-de-beauregard",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-maurice-montcouronne",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-michel-sur-orge",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-pierre-du-perray",
+      "status": "OK"
+    },
+    {
+      "slug": "saintry-sur-seine",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-sulpice-de-favieres",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-vrain",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-yon",
+      "status": "OK"
+    },
+    {
+      "slug": "saulx-les-chartreux",
+      "status": "OK"
+    },
+    {
+      "slug": "savigny-sur-orge",
+      "status": "OK"
+    },
+    {
+      "slug": "sermaise",
+      "status": "OK"
+    },
+    {
+      "slug": "soisy-sur-ecole",
+      "status": "OK"
+    },
+    {
+      "slug": "soisy-sur-seine",
+      "status": "OK"
+    },
+    {
+      "slug": "souzy-la-briche",
+      "status": "OK"
+    },
+    {
+      "slug": "congerville-thionville",
+      "status": "OK"
+    },
+    {
+      "slug": "tigery",
+      "status": "OK"
+    },
+    {
+      "slug": "torfou",
+      "status": "OK"
+    },
+    {
+      "slug": "valpuiseaux",
+      "status": "OK"
+    },
+    {
+      "slug": "le-val-saint-germain",
+      "status": "OK"
+    },
+    {
+      "slug": "varennes-jarcy",
+      "status": "OK"
+    },
+    {
+      "slug": "vaugrigneuse",
+      "status": "OK"
+    },
+    {
+      "slug": "vauhallan",
+      "status": "OK"
+    },
+    {
+      "slug": "vayres-sur-essonne",
+      "status": "OK"
+    },
+    {
+      "slug": "verrieres-le-buisson",
+      "status": "OK"
+    },
+    {
+      "slug": "vert-le-grand",
+      "status": "OK"
+    },
+    {
+      "slug": "vert-le-petit",
+      "status": "OK"
+    },
+    {
+      "slug": "videlles",
+      "status": "OK"
+    },
+    {
+      "slug": "vigneux-sur-seine",
+      "status": "OK"
+    },
+    {
+      "slug": "villabe",
+      "status": "OK"
+    },
+    {
+      "slug": "villebon-sur-yvette",
+      "status": "OK"
+    },
+    {
+      "slug": "villeconin",
+      "status": "OK"
+    },
+    {
+      "slug": "la-ville-du-bois",
+      "status": "OK"
+    },
+    {
+      "slug": "villejust",
+      "status": "OK"
+    },
+    {
+      "slug": "villemoisson-sur-orge",
+      "status": "OK"
+    },
+    {
+      "slug": "villeneuve-sur-auvers",
+      "status": "OK"
+    },
+    {
+      "slug": "villiers-le-bacle",
+      "status": "OK"
+    },
+    {
+      "slug": "villiers-sur-orge",
+      "status": "OK"
+    },
+    {
+      "slug": "viry-chatillon",
+      "status": "OK"
+    },
+    {
+      "slug": "wissous",
+      "status": "OK"
+    },
+    {
+      "slug": "yerres",
+      "status": "OK"
+    },
+    {
+      "slug": "les-ulis",
+      "status": "OK"
+    },
+    {
+      "slug": "antony",
+      "status": "OK"
+    },
+    {
+      "slug": "asnieres-sur-seine",
+      "status": "OK"
+    },
+    {
+      "slug": "bagneux",
+      "status": "OK"
+    },
+    {
+      "slug": "bois-colombes",
+      "status": "OK"
+    },
+    {
+      "slug": "boulogne-billancourt",
+      "status": "OK"
+    },
+    {
+      "slug": "bourg-la-reine",
+      "status": "OK"
+    },
+    {
+      "slug": "chatenay-malabry",
+      "status": "OK"
+    },
+    {
+      "slug": "chatillon",
+      "status": "OK"
+    },
+    {
+      "slug": "chaville",
+      "status": "OK"
+    },
+    {
+      "slug": "clamart",
+      "status": "OK"
+    },
+    {
+      "slug": "clichy",
+      "status": "OK"
+    },
+    {
+      "slug": "colombes",
+      "status": "OK"
+    },
+    {
+      "slug": "courbevoie",
+      "status": "OK"
+    },
+    {
+      "slug": "fontenay-aux-roses",
+      "status": "OK"
+    },
+    {
+      "slug": "garches",
+      "status": "OK"
+    },
+    {
+      "slug": "la-garenne-colombes",
+      "status": "OK"
+    },
+    {
+      "slug": "gennevilliers",
+      "status": "OK"
+    },
+    {
+      "slug": "issy-les-moulineaux",
+      "status": "OK"
+    },
+    {
+      "slug": "levallois-perret",
+      "status": "OK"
+    },
+    {
+      "slug": "malakoff",
+      "status": "OK"
+    },
+    {
+      "slug": "marnes-la-coquette",
+      "status": "OK"
+    },
+    {
+      "slug": "meudon",
+      "status": "OK"
+    },
+    {
+      "slug": "montrouge",
+      "status": "OK"
+    },
+    {
+      "slug": "nanterre",
+      "status": "OK"
+    },
+    {
+      "slug": "neuilly-sur-seine",
+      "status": "OK"
+    },
+    {
+      "slug": "le-plessis-robinson",
+      "status": "OK"
+    },
+    {
+      "slug": "puteaux",
+      "status": "OK"
+    },
+    {
+      "slug": "rueil-malmaison",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-cloud",
+      "status": "OK"
+    },
+    {
+      "slug": "sceaux",
+      "status": "OK"
+    },
+    {
+      "slug": "sevres",
+      "status": "OK"
+    },
+    {
+      "slug": "suresnes",
+      "status": "OK"
+    },
+    {
+      "slug": "vanves",
+      "status": "OK"
+    },
+    {
+      "slug": "vaucresson",
+      "status": "OK"
+    },
+    {
+      "slug": "ville-davray",
+      "status": "OK"
+    },
+    {
+      "slug": "villeneuve-la-garenne",
+      "status": "OK"
+    },
+    {
+      "slug": "aubervilliers",
+      "status": "OK"
+    },
+    {
+      "slug": "aulnay-sous-bois",
+      "status": "OK"
+    },
+    {
+      "slug": "bagnolet",
+      "status": "OK"
+    },
+    {
+      "slug": "le-blanc-mesnil",
+      "status": "OK"
+    },
+    {
+      "slug": "bobigny",
+      "status": "OK"
+    },
+    {
+      "slug": "bondy",
+      "status": "OK"
+    },
+    {
+      "slug": "le-bourget",
+      "status": "OK"
+    },
+    {
+      "slug": "clichy-sous-bois",
+      "status": "OK"
+    },
+    {
+      "slug": "coubron",
+      "status": "OK"
+    },
+    {
+      "slug": "la-courneuve",
+      "status": "OK"
+    },
+    {
+      "slug": "drancy",
+      "status": "OK"
+    },
+    {
+      "slug": "dugny",
+      "status": "OK"
+    },
+    {
+      "slug": "epinay-sur-seine",
+      "status": "OK"
+    },
+    {
+      "slug": "gagny",
+      "status": "OK"
+    },
+    {
+      "slug": "gournay-sur-marne",
+      "status": "OK"
+    },
+    {
+      "slug": "lile-saint-denis",
+      "status": "OK"
+    },
+    {
+      "slug": "les-lilas",
+      "status": "OK"
+    },
+    {
+      "slug": "livry-gargan",
+      "status": "OK"
+    },
+    {
+      "slug": "montfermeil",
+      "status": "OK"
+    },
+    {
+      "slug": "montreuil",
+      "status": "OK"
+    },
+    {
+      "slug": "neuilly-plaisance",
+      "status": "OK"
+    },
+    {
+      "slug": "neuilly-sur-marne",
+      "status": "OK"
+    },
+    {
+      "slug": "noisy-le-grand",
+      "status": "OK"
+    },
+    {
+      "slug": "noisy-le-sec",
+      "status": "OK"
+    },
+    {
+      "slug": "pantin",
+      "status": "OK"
+    },
+    {
+      "slug": "les-pavillons-sous-bois",
+      "status": "OK"
+    },
+    {
+      "slug": "le-pre-saint-gervais",
+      "status": "OK"
+    },
+    {
+      "slug": "le-raincy",
+      "status": "OK"
+    },
+    {
+      "slug": "romainville",
+      "status": "OK"
+    },
+    {
+      "slug": "rosny-sous-bois",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-denis",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-ouen-sur-seine",
+      "status": "OK"
+    },
+    {
+      "slug": "sevran",
+      "status": "OK"
+    },
+    {
+      "slug": "stains",
+      "status": "OK"
+    },
+    {
+      "slug": "tremblay-en-france",
+      "status": "OK"
+    },
+    {
+      "slug": "vaujours",
+      "status": "OK"
+    },
+    {
+      "slug": "villemomble",
+      "status": "OK"
+    },
+    {
+      "slug": "villepinte",
+      "status": "OK"
+    },
+    {
+      "slug": "villetaneuse",
+      "status": "OK"
+    },
+    {
+      "slug": "ablon-sur-seine",
+      "status": "OK"
+    },
+    {
+      "slug": "alfortville",
+      "status": "OK"
+    },
+    {
+      "slug": "arcueil",
+      "status": "OK"
+    },
+    {
+      "slug": "boissy-saint-leger",
+      "status": "OK"
+    },
+    {
+      "slug": "bonneuil-sur-marne",
+      "status": "OK"
+    },
+    {
+      "slug": "bry-sur-marne",
+      "status": "OK"
+    },
+    {
+      "slug": "cachan",
+      "status": "OK"
+    },
+    {
+      "slug": "champigny-sur-marne",
+      "status": "OK"
+    },
+    {
+      "slug": "charenton-le-pont",
+      "status": "OK"
+    },
+    {
+      "slug": "chennevieres-sur-marne",
+      "status": "OK"
+    },
+    {
+      "slug": "chevilly-larue",
+      "status": "OK"
+    },
+    {
+      "slug": "choisy-le-roi",
+      "status": "OK"
+    },
+    {
+      "slug": "creteil",
+      "status": "OK"
+    },
+    {
+      "slug": "fontenay-sous-bois",
+      "status": "OK"
+    },
+    {
+      "slug": "fresnes",
+      "status": "OK"
+    },
+    {
+      "slug": "gentilly",
+      "status": "OK"
+    },
+    {
+      "slug": "lhay-les-roses",
+      "status": "OK"
+    },
+    {
+      "slug": "ivry-sur-seine",
+      "status": "OK"
+    },
+    {
+      "slug": "joinville-le-pont",
+      "status": "OK"
+    },
+    {
+      "slug": "le-kremlin-bicetre",
+      "status": "OK"
+    },
+    {
+      "slug": "limeil-brevannes",
+      "status": "OK"
+    },
+    {
+      "slug": "maisons-alfort",
+      "status": "OK"
+    },
+    {
+      "slug": "mandres-les-roses",
+      "status": "OK"
+    },
+    {
+      "slug": "nogent-sur-marne",
+      "status": "OK"
+    },
+    {
+      "slug": "noiseau",
+      "status": "OK"
+    },
+    {
+      "slug": "orly",
+      "status": "OK"
+    },
+    {
+      "slug": "ormesson-sur-marne",
+      "status": "OK"
+    },
+    {
+      "slug": "perigny",
+      "status": "OK"
+    },
+    {
+      "slug": "le-perreux-sur-marne",
+      "status": "OK"
+    },
+    {
+      "slug": "le-plessis-trevise",
+      "status": "OK"
+    },
+    {
+      "slug": "la-queue-en-brie",
+      "status": "OK"
+    },
+    {
+      "slug": "rungis",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-mande",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-maur-des-fosses",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-maurice",
+      "status": "OK"
+    },
+    {
+      "slug": "santeny",
+      "status": "OK"
+    },
+    {
+      "slug": "sucy-en-brie",
+      "status": "OK"
+    },
+    {
+      "slug": "thiais",
+      "status": "OK"
+    },
+    {
+      "slug": "valenton",
+      "status": "OK"
+    },
+    {
+      "slug": "villecresnes",
+      "status": "OK"
+    },
+    {
+      "slug": "villejuif",
+      "status": "OK"
+    },
+    {
+      "slug": "villeneuve-le-roi",
+      "status": "OK"
+    },
+    {
+      "slug": "villeneuve-saint-georges",
+      "status": "OK"
+    },
+    {
+      "slug": "villiers-sur-marne",
+      "status": "OK"
+    },
+    {
+      "slug": "vincennes",
+      "status": "OK"
+    },
+    {
+      "slug": "vitry-sur-seine",
+      "status": "OK"
+    },
+    {
+      "slug": "ableiges",
+      "status": "OK"
+    },
+    {
+      "slug": "aincourt",
+      "status": "OK"
+    },
+    {
+      "slug": "ambleville",
+      "status": "OK"
+    },
+    {
+      "slug": "amenucourt",
+      "status": "OK"
+    },
+    {
+      "slug": "andilly",
+      "status": "OK"
+    },
+    {
+      "slug": "argenteuil",
+      "status": "OK"
+    },
+    {
+      "slug": "arnouville",
+      "status": "OK"
+    },
+    {
+      "slug": "arronville",
+      "status": "OK"
+    },
+    {
+      "slug": "arthies",
+      "status": "OK"
+    },
+    {
+      "slug": "asnieres-sur-oise",
+      "status": "OK"
+    },
+    {
+      "slug": "attainville",
+      "status": "OK"
+    },
+    {
+      "slug": "auvers-sur-oise",
+      "status": "OK"
+    },
+    {
+      "slug": "avernes",
+      "status": "OK"
+    },
+    {
+      "slug": "baillet-en-france",
+      "status": "OK"
+    },
+    {
+      "slug": "banthelu",
+      "status": "OK"
+    },
+    {
+      "slug": "beauchamp",
+      "status": "OK"
+    },
+    {
+      "slug": "beaumont-sur-oise",
+      "status": "OK"
+    },
+    {
+      "slug": "le-bellay-en-vexin",
+      "status": "OK"
+    },
+    {
+      "slug": "bellefontaine",
+      "status": "OK"
+    },
+    {
+      "slug": "belloy-en-france",
+      "status": "OK"
+    },
+    {
+      "slug": "bernes-sur-oise",
+      "status": "OK"
+    },
+    {
+      "slug": "berville",
+      "status": "OK"
+    },
+    {
+      "slug": "bessancourt",
+      "status": "OK"
+    },
+    {
+      "slug": "bethemont-la-foret",
+      "status": "OK"
+    },
+    {
+      "slug": "bezons",
+      "status": "OK"
+    },
+    {
+      "slug": "boisemont",
+      "status": "OK"
+    },
+    {
+      "slug": "boissy-laillerie",
+      "status": "OK"
+    },
+    {
+      "slug": "bonneuil-en-france",
+      "status": "OK"
+    },
+    {
+      "slug": "bouffemont",
+      "status": "OK"
+    },
+    {
+      "slug": "bouqueval",
+      "status": "OK"
+    },
+    {
+      "slug": "bray-et-lu",
+      "status": "OK"
+    },
+    {
+      "slug": "breancon",
+      "status": "OK"
+    },
+    {
+      "slug": "brignancourt",
+      "status": "OK"
+    },
+    {
+      "slug": "bruyeres-sur-oise",
+      "status": "OK"
+    },
+    {
+      "slug": "buhy",
+      "status": "OK"
+    },
+    {
+      "slug": "butry-sur-oise",
+      "status": "OK"
+    },
+    {
+      "slug": "cergy",
+      "status": "OK"
+    },
+    {
+      "slug": "champagne-sur-oise",
+      "status": "OK"
+    },
+    {
+      "slug": "la-chapelle-en-vexin",
+      "status": "OK"
+    },
+    {
+      "slug": "charmont",
+      "status": "OK"
+    },
+    {
+      "slug": "chars",
+      "status": "OK"
+    },
+    {
+      "slug": "chatenay-en-france",
+      "status": "OK"
+    },
+    {
+      "slug": "chaumontel",
+      "status": "OK"
+    },
+    {
+      "slug": "chaussy",
+      "status": "OK"
+    },
+    {
+      "slug": "chauvry",
+      "status": "OK"
+    },
+    {
+      "slug": "chennevieres-les-louvres",
+      "status": "OK"
+    },
+    {
+      "slug": "cherence",
+      "status": "OK"
+    },
+    {
+      "slug": "clery-en-vexin",
+      "status": "OK"
+    },
+    {
+      "slug": "commeny",
+      "status": "OK"
+    },
+    {
+      "slug": "condecourt",
+      "status": "OK"
+    },
+    {
+      "slug": "cormeilles-en-parisis",
+      "status": "OK"
+    },
+    {
+      "slug": "cormeilles-en-vexin",
+      "status": "OK"
+    },
+    {
+      "slug": "courcelles-sur-viosne",
+      "status": "OK"
+    },
+    {
+      "slug": "courdimanche",
+      "status": "OK"
+    },
+    {
+      "slug": "deuil-la-barre",
+      "status": "OK"
+    },
+    {
+      "slug": "domont",
+      "status": "OK"
+    },
+    {
+      "slug": "eaubonne",
+      "status": "OK"
+    },
+    {
+      "slug": "ecouen",
+      "status": "OK"
+    },
+    {
+      "slug": "enghien-les-bains",
+      "status": "OK"
+    },
+    {
+      "slug": "ennery",
+      "status": "OK"
+    },
+    {
+      "slug": "epiais-les-louvres",
+      "status": "OK"
+    },
+    {
+      "slug": "epiais-rhus",
+      "status": "OK"
+    },
+    {
+      "slug": "epinay-champlatreux",
+      "status": "OK"
+    },
+    {
+      "slug": "eragny-sur-oise",
+      "status": "OK"
+    },
+    {
+      "slug": "ermont",
+      "status": "OK"
+    },
+    {
+      "slug": "ezanville",
+      "status": "OK"
+    },
+    {
+      "slug": "fontenay-en-parisis",
+      "status": "OK"
+    },
+    {
+      "slug": "fosses",
+      "status": "OK"
+    },
+    {
+      "slug": "franconville",
+      "status": "OK"
+    },
+    {
+      "slug": "fremainville",
+      "status": "OK"
+    },
+    {
+      "slug": "fremecourt",
+      "status": "OK"
+    },
+    {
+      "slug": "frepillon",
+      "status": "OK"
+    },
+    {
+      "slug": "la-frette-sur-seine",
+      "status": "OK"
+    },
+    {
+      "slug": "frouville",
+      "status": "OK"
+    },
+    {
+      "slug": "garges-les-gonesse",
+      "status": "OK"
+    },
+    {
+      "slug": "genainville",
+      "status": "OK"
+    },
+    {
+      "slug": "genicourt",
+      "status": "OK"
+    },
+    {
+      "slug": "gonesse",
+      "status": "OK"
+    },
+    {
+      "slug": "goussainville",
+      "status": "OK"
+    },
+    {
+      "slug": "grisy-les-platres",
+      "status": "OK"
+    },
+    {
+      "slug": "groslay",
+      "status": "OK"
+    },
+    {
+      "slug": "guiry-en-vexin",
+      "status": "OK"
+    },
+    {
+      "slug": "haravilliers",
+      "status": "OK"
+    },
+    {
+      "slug": "haute-isle",
+      "status": "OK"
+    },
+    {
+      "slug": "le-heaulme",
+      "status": "OK"
+    },
+    {
+      "slug": "hedouville",
+      "status": "OK"
+    },
+    {
+      "slug": "herblay-sur-seine",
+      "status": "OK"
+    },
+    {
+      "slug": "herouville-en-vexin",
+      "status": "OK"
+    },
+    {
+      "slug": "hodent",
+      "status": "OK"
+    },
+    {
+      "slug": "lisle-adam",
+      "status": "OK"
+    },
+    {
+      "slug": "jagny-sous-bois",
+      "status": "OK"
+    },
+    {
+      "slug": "jouy-le-moutier",
+      "status": "OK"
+    },
+    {
+      "slug": "labbeville",
+      "status": "OK"
+    },
+    {
+      "slug": "lassy",
+      "status": "OK"
+    },
+    {
+      "slug": "livilliers",
+      "status": "OK"
+    },
+    {
+      "slug": "longuesse",
+      "status": "OK"
+    },
+    {
+      "slug": "louvres",
+      "status": "OK"
+    },
+    {
+      "slug": "luzarches",
+      "status": "OK"
+    },
+    {
+      "slug": "maffliers",
+      "status": "OK"
+    },
+    {
+      "slug": "magny-en-vexin",
+      "status": "OK"
+    },
+    {
+      "slug": "mareil-en-france",
+      "status": "OK"
+    },
+    {
+      "slug": "margency",
+      "status": "OK"
+    },
+    {
+      "slug": "marines",
+      "status": "OK"
+    },
+    {
+      "slug": "marly-la-ville",
+      "status": "OK"
+    },
+    {
+      "slug": "maudetour-en-vexin",
+      "status": "OK"
+    },
+    {
+      "slug": "menouville",
+      "status": "OK"
+    },
+    {
+      "slug": "menucourt",
+      "status": "OK"
+    },
+    {
+      "slug": "meriel",
+      "status": "OK"
+    },
+    {
+      "slug": "mery-sur-oise",
+      "status": "OK"
+    },
+    {
+      "slug": "le-mesnil-aubry",
+      "status": "OK"
+    },
+    {
+      "slug": "moisselles",
+      "status": "OK"
+    },
+    {
+      "slug": "montgeroult",
+      "status": "OK"
+    },
+    {
+      "slug": "montigny-les-cormeilles",
+      "status": "OK"
+    },
+    {
+      "slug": "montlignon",
+      "status": "OK"
+    },
+    {
+      "slug": "montmagny",
+      "status": "OK"
+    },
+    {
+      "slug": "montmorency",
+      "status": "OK"
+    },
+    {
+      "slug": "montreuil-sur-epte",
+      "status": "OK"
+    },
+    {
+      "slug": "montsoult",
+      "status": "OK"
+    },
+    {
+      "slug": "mours",
+      "status": "OK"
+    },
+    {
+      "slug": "moussy",
+      "status": "OK"
+    },
+    {
+      "slug": "nerville-la-foret",
+      "status": "OK"
+    },
+    {
+      "slug": "nesles-la-vallee",
+      "status": "OK"
+    },
+    {
+      "slug": "neuilly-en-vexin",
+      "status": "OK"
+    },
+    {
+      "slug": "neuville-sur-oise",
+      "status": "OK"
+    },
+    {
+      "slug": "nointel",
+      "status": "OK"
+    },
+    {
+      "slug": "noisy-sur-oise",
+      "status": "OK"
+    },
+    {
+      "slug": "nucourt",
+      "status": "OK"
+    },
+    {
+      "slug": "omerville",
+      "status": "OK"
+    },
+    {
+      "slug": "osny",
+      "status": "OK"
+    },
+    {
+      "slug": "parmain",
+      "status": "OK"
+    },
+    {
+      "slug": "le-perchay",
+      "status": "OK"
+    },
+    {
+      "slug": "persan",
+      "status": "OK"
+    },
+    {
+      "slug": "pierrelaye",
+      "status": "OK"
+    },
+    {
+      "slug": "piscop",
+      "status": "OK"
+    },
+    {
+      "slug": "le-plessis-bouchard",
+      "status": "OK"
+    },
+    {
+      "slug": "le-plessis-gassot",
+      "status": "OK"
+    },
+    {
+      "slug": "le-plessis-luzarches",
+      "status": "OK"
+    },
+    {
+      "slug": "pontoise",
+      "status": "OK"
+    },
+    {
+      "slug": "presles",
+      "status": "OK"
+    },
+    {
+      "slug": "puiseux-en-france",
+      "status": "OK"
+    },
+    {
+      "slug": "puiseux-pontoise",
+      "status": "OK"
+    },
+    {
+      "slug": "la-roche-guyon",
+      "status": "OK"
+    },
+    {
+      "slug": "roissy-en-france",
+      "status": "OK"
+    },
+    {
+      "slug": "ronquerolles",
+      "status": "OK"
+    },
+    {
+      "slug": "sagy",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-brice-sous-foret",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-clair-sur-epte",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-cyr-en-arthies",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-gervais",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-gratien",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-leu-la-foret",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-martin-du-tertre",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-ouen-laumone",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-prix",
+      "status": "OK"
+    },
+    {
+      "slug": "saint-witz",
+      "status": "OK"
+    },
+    {
+      "slug": "sannois",
+      "status": "OK"
+    },
+    {
+      "slug": "santeuil",
+      "status": "OK"
+    },
+    {
+      "slug": "sarcelles",
+      "status": "OK"
+    },
+    {
+      "slug": "seraincourt",
+      "status": "OK"
+    },
+    {
+      "slug": "seugy",
+      "status": "OK"
+    },
+    {
+      "slug": "soisy-sous-montmorency",
+      "status": "OK"
+    },
+    {
+      "slug": "survilliers",
+      "status": "OK"
+    },
+    {
+      "slug": "taverny",
+      "status": "OK"
+    },
+    {
+      "slug": "themericourt",
+      "status": "OK"
+    },
+    {
+      "slug": "theuville",
+      "status": "OK"
+    },
+    {
+      "slug": "le-thillay",
+      "status": "OK"
+    },
+    {
+      "slug": "us",
+      "status": "OK"
+    },
+    {
+      "slug": "vallangoujard",
+      "status": "OK"
+    },
+    {
+      "slug": "valmondois",
+      "status": "OK"
+    },
+    {
+      "slug": "vaudherland",
+      "status": "OK"
+    },
+    {
+      "slug": "vaureal",
+      "status": "OK"
+    },
+    {
+      "slug": "vemars",
+      "status": "OK"
+    },
+    {
+      "slug": "vetheuil",
+      "status": "OK"
+    },
+    {
+      "slug": "viarmes",
+      "status": "OK"
+    },
+    {
+      "slug": "vienne-en-arthies",
+      "status": "OK"
+    },
+    {
+      "slug": "vigny",
+      "status": "OK"
+    },
+    {
+      "slug": "villaines-sous-bois",
+      "status": "OK"
+    },
+    {
+      "slug": "villeron",
+      "status": "OK"
+    },
+    {
+      "slug": "villers-en-arthies",
+      "status": "OK"
+    },
+    {
+      "slug": "villiers-adam",
+      "status": "OK"
+    },
+    {
+      "slug": "villiers-le-bel",
+      "status": "OK"
+    },
+    {
+      "slug": "villiers-le-sec",
+      "status": "OK"
+    },
+    {
+      "slug": "wy-dit-joli-village",
+      "status": "OK"
+    }
+  ]
+}

@@ -16,27 +16,28 @@ export const boulogneBillancourtData: PageData = {
   blocks: [
     {
       type: 'Hero',
-      title: 'Épaviste Agréé Partenaire à Boulogne-Billancourt',
-      subtitle: 'Un enlèvement préparé selon l’accès au véhicule et les informations transmises lors de votre demande.',
+      title: 'Votre épaviste à Boulogne-Billancourt pour enlèvement gratuit de VHU dans le 92100',
+      subtitle: 'Faites retirer votre épave à Boulogne-Billancourt gratuitement. Notre équipe intervient dans le 92100 de Boulogne-Billancourt.',
       badge: 'Boulogne-Billancourt (92100)',
     },
     {
       type: 'Introduction',
       title: 'Votre épaviste de confiance à Boulogne-Billancourt',
-      content: 'Dans une agglomération dynamique comme Boulogne-Billancourt (92100), se débarrasser d\'un véhicule encombrant nécessite une logistique précise. Notre équipe couvre l\'ensemble de la commune pour vous proposer un service d\'enlèvement d\'épave totalement gratuit. Que ce soit du côté de Rue des Abondances ou ailleurs dans la commune, nous intervenons gratuitement. Nous garantissons une prise en charge conforme à la législation avec remise du certificat de destruction. La demande permet de préciser les contraintes de stationnement et les documents disponibles avant l’intervention. Les informations communiquées au moment de la demande facilitent la préparation du retrait. Un point préalable facilite la coordination entre le propriétaire et le professionnel chargé du retrait.',
+      content: 'Ne laissez pas votre épave occuper inutilement l\'espace public à Boulogne-Billancourt. Faire retirer son épave à Boulogne-Billancourt, c\'est aussi participer à la propreté de l\'espace urbain. À Boulogne-Billancourt, le service d\'enlèvement gratuit est organisé avec une logistique de proximité. Un échange préalable permet de prévoir le matériel approprié et le créneau de passage. Chaque détail de l\'intervention à Boulogne-Billancourt est pensé pour votre tranquillité. Notre équipe dessert notamment le secteur de Rue des Tilleuls dans la commune.',
     },
     {
       type: 'VhuCompliance',
-      title: 'Dépollution et Recyclage',
-      content: 'Le véhicule est remis à un partenaire spécialisé pour la suite de son traitement réglementaire. Le partenaire assure les formalités et l’orientation du véhicule vers les filières réglementaires appropriées. Le propriétaire conserve ainsi une information claire sur le parcours réglementaire du véhicule.',
+      title: 'Traitement réglementaire et recyclage',
+      content: 'Le transfert vers l\'opérateur compétent est planifié dès la confirmation de l\'enlèvement. Les obligations applicables aux véhicules hors d\'usage sont respectées tout au long du processus. Chaque intervenant intervient dans son domaine de compétence selon le planning établi.',
     },
     {
       type: 'LocalCoverage',
       title: 'Couverture d\'intervention sur Boulogne-Billancourt',
-      intro: 'Notre équipe intervient dans l\'ensemble de la commune de Boulogne-Billancourt pour procéder à l\'enlèvement de votre véhicule. Le rendez-vous est préparé selon le type d’accès indiqué lors de la demande. Les indications fournies avant le rendez-vous servent à préparer l’itinéraire et l’accès. Nos dépanneuses rayonnent également sur les secteurs limitrophes comme Sèvres et Paris.',
+      intro: 'Pour un enlèvement à Boulogne-Billancourt, notre logistique couvre tous les secteurs sans exception. Le rendez-vous pour Boulogne-Billancourt est fixé après un échange sur les conditions d\'accès. Le secteur 92100 de Boulogne-Billancourt est couvert sans supplément de prix par notre service d\'enlèvement gratuit de véhicules hors d\'usage. Les routes et chemins autour de Boulogne-Billancourt sont parcourus régulièrement par nos véhicules. C\'est le cas notamment vers Sèvres et Paris.',
       zones: [
-        { name: 'Centre-ville & Rues étroites', delay: 'Sous 24h', specificities: 'Matériel adapté aux accès difficiles et parkings.' },
-        { name: 'Secteur Avenue André Morizet / Avenue Edouard Vaillant', delay: 'Sur RDV', specificities: 'Prise en charge rapide sur les grands axes.' }
+        { name: 'Centre-ville & Zones denses', delay: 'Sous 24h', specificities: 'Intervention rapide sur l\'agglomération.' },
+        { name: 'Quartiers résidentiels', delay: '24h', specificities: 'Enlèvement au domicile ou parking.' },
+        { name: 'Zones d\'activité', delay: 'Sur RDV', specificities: 'Retrait sur parkings d\'entreprise.' }
       ],
     },
     {
@@ -55,7 +56,7 @@ export const boulogneBillancourtData: PageData = {
         { q: 'Que se passe-t-il si je n\'ai plus la carte grise de mon véhicule ?', a: 'Une déclaration de perte ou de vol effectuée en préfecture ou gendarmerie suffit. Nous vous guidons dans cette démarche.' },
         { q: 'Mon véhicule est bloqué en sous-sol à Boulogne-Billancourt, est-ce un problème ?', a: 'Pas du tout. Nous disposons de dépanneuses 4x4 extra-basses capables d\'entrer dans la majorité des parkings souterrains.' },
         { q: 'Mon véhicule est accidenté sur la voie publique, pouvez-vous le retirer ?', a: 'Absolument, nous intervenons sur la voie publique à condition que vous soyez présent avec les documents requis.' },
-        { q: 'Délivrez-vous le certificat de destruction immédiatement ?', a: 'Oui, nous vous remettons le certificat de cession pour destruction en main propre le jour de l\'enlèvement.' },
+        { q: 'Quels documents obtenez-vous le jour de l\'enlèvement ?', a: 'Vous recevez un justificatif de prise en charge le jour même, ainsi que tous les documents attestant de la bonne fin de l\'opération.' },
         { q: 'L\'intervention à Boulogne-Billancourt est-elle soumise à des frais de déplacement ?', a: 'Non, si votre véhicule est complet, l\'enlèvement et le déplacement jusqu\'à Boulogne-Billancourt sont entièrement gratuits.' }
       ],
     },

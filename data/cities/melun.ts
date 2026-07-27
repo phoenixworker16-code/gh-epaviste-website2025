@@ -16,27 +16,28 @@ export const melunData: PageData = {
   blocks: [
     {
       type: 'Hero',
-      title: 'Service d\'enlèvement d\'épave à Melun',
-      subtitle: 'Une solution organisée pour retirer un véhicule immobilisé à Melun (77000) dans le respect des démarches requises.',
+      title: 'Votre épaviste de secteur à Melun (77000) pour enlèvement à Melun',
+      subtitle: 'Épaviste gratuit à Melun (77000) : intervention dans tout Melun pour votre véhicule hors d\'usage.',
       badge: 'Melun (77000)',
     },
     {
       type: 'Introduction',
       title: 'Votre épaviste de confiance à Melun',
-      content: 'Dans une agglomération dynamique comme Melun (77000), se débarrasser d\'un véhicule encombrant nécessite une logistique précise. Notre équipe couvre l\'ensemble de la commune pour vous proposer un service d\'enlèvement d\'épave totalement gratuit. Que ce soit du côté de Rue de Belle Ombre ou ailleurs dans la commune, nous intervenons gratuitement. Nous garantissons une prise en charge conforme à la législation avec remise du certificat de destruction. La demande permet de préciser les contraintes de stationnement et les documents disponibles avant l’intervention. Un échange préalable permet de prévoir le matériel approprié et le créneau de passage. Les informations disponibles sont examinées avant de fixer les modalités du retrait.',
+      content: 'Les rues de Melun ne sont pas adaptées au stockage d\'un véhicule hors d\'usage. Dans une grande agglomération comme Melun, il est essentiel de libérer l\'espace public. Le service à Melun garantit un enlèvement gratuit et une orientation vers les filières adaptées. Les informations recueillies permettent de dimensionner l\'intervention au plus juste. Notre connaissance de Melun permet d\'optimiser les déplacements et l\'intervention. Le secteur de Boulevard de l\'Almont est couvert comme l\'ensemble de la commune.',
     },
     {
       type: 'VhuCompliance',
-      title: 'Dépollution et Recyclage',
-      content: 'Après l\'enlèvement, le véhicule est acheminé vers un centre VHU partenaire agréé. Les étapes ultérieures sont réalisées par les professionnels compétents, conformément au cadre applicable. Cette répartition des rôles assure une continuité entre l’enlèvement et les opérations réglementaires ultérieures.',
+      title: 'Traitement réglementaire et recyclage',
+      content: 'L\'organisation comprend un relais vers un établissement habilité pour la suite des opérations. La fin de vie du véhicule est traitée dans le respect des filières autorisées. Les professionnels impliqués travaillent en coordination pour la bonne fin des opérations.',
     },
     {
       type: 'LocalCoverage',
       title: 'Couverture d\'intervention sur Melun',
-      intro: 'Notre équipe intervient dans l\'ensemble de la commune de Melun pour procéder à l\'enlèvement de votre véhicule. Le rendez-vous est préparé selon le type d’accès indiqué lors de la demande. La demande permet d’anticiper les informations pratiques liées au lieu de retrait. Nos dépanneuses rayonnent également sur les secteurs limitrophes comme Le Mée-sur-Seine et Vert-Saint-Denis.',
+      intro: 'À Melun, nous pouvons retirer votre véhicule hors d\'usage en tout point du territoire. Les informations fournies sur la situation à Melun permettent de préparer l\'intervention. Notre service dessert quotidiennement le secteur 77000 de Melun avec des équipes spécialisées dans l\'enlèvement d\'épaves. Les communes proches de Melun sont incluses dans notre zone d\'intervention. C\'est le cas notamment vers Le Mée-sur-Seine et Vert-Saint-Denis.',
       zones: [
-        { name: 'Centre-ville & Rues étroites', delay: 'Sous 24h', specificities: 'Matériel adapté aux accès difficiles et parkings.' },
-        { name: 'Secteur Avenue Alexandre Ribot / Avenue Georges Pompidou', delay: 'Sur RDV', specificities: 'Prise en charge rapide sur les grands axes.' }
+        { name: 'Centre-ville & Zones denses', delay: 'Sous 24h', specificities: 'Intervention rapide sur l\'agglomération.' },
+        { name: 'Quartiers résidentiels', delay: '24h', specificities: 'Enlèvement au domicile ou parking.' },
+        { name: 'Zones d\'activité', delay: 'Sur RDV', specificities: 'Retrait sur parkings d\'entreprise.' }
       ],
     },
     {
@@ -50,7 +51,7 @@ export const melunData: PageData = {
       title: 'Questions fréquentes sur l\'enlèvement à Melun',
       questions: [
         { q: 'L\'intervention à Melun est-elle soumise à des frais de déplacement ?', a: 'Non, si votre véhicule est complet, l\'enlèvement et le déplacement jusqu\'à Melun sont entièrement gratuits.' },
-        { q: 'Délivrez-vous le certificat de destruction immédiatement ?', a: 'Oui, nous vous remettons le certificat de cession pour destruction en main propre le jour de l\'enlèvement.' },
+        { q: 'Quels documents obtenez-vous le jour de l\'enlèvement ?', a: 'Vous recevez un justificatif de prise en charge le jour même, ainsi que tous les documents attestant de la bonne fin de l\'opération.' },
         { q: 'Mon véhicule est accidenté sur la voie publique, pouvez-vous le retirer ?', a: 'Absolument, nous intervenons sur la voie publique à condition que vous soyez présent avec les documents requis.' },
         { q: 'Mon véhicule est bloqué en sous-sol à Melun, est-ce un problème ?', a: 'Pas du tout. Nous disposons de dépanneuses 4x4 extra-basses capables d\'entrer dans la majorité des parkings souterrains.' },
         { q: 'Que se passe-t-il si je n\'ai plus la carte grise de mon véhicule ?', a: 'Une déclaration de perte ou de vol effectuée en préfecture ou gendarmerie suffit. Nous vous guidons dans cette démarche.' },

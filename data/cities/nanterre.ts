@@ -16,27 +16,28 @@ export const nanterreData: PageData = {
   blocks: [
     {
       type: 'Hero',
-      title: 'Épaviste Agréé Partenaire à Nanterre',
-      subtitle: 'Une solution organisée pour retirer un véhicule immobilisé à Nanterre (92000) dans le respect des démarches requises.',
+      title: 'Service rapide d\'enlèvement d\'épave à Nanterre (92000) dans tout Nanterre',
+      subtitle: 'Pour votre épave à Nanterre (92000) : intervention gratuite et professionnelle dans tout Nanterre.',
       badge: 'Nanterre (92000)',
     },
     {
       type: 'Introduction',
       title: 'Votre épaviste de confiance à Nanterre',
-      content: 'Dans une agglomération dynamique comme Nanterre (92000), se débarrasser d\'un véhicule encombrant nécessite une logistique précise. Notre équipe couvre l\'ensemble de la commune pour vous proposer un service d\'enlèvement d\'épave totalement gratuit. Que ce soit du côté de Rue de Garches ou ailleurs dans la commune, nous intervenons gratuitement. Nous garantissons une prise en charge conforme à la législation avec remise du certificat de destruction. La demande permet de préciser les contraintes de stationnement et les documents disponibles avant l’intervention. La préparation du passage vise à éviter les déplacements inutiles et les difficultés d’accès. Les informations disponibles sont examinées avant de fixer les modalités du retrait.',
+      content: 'Vous cherchez à faire enlever gratuitement votre épave à Nanterre simplement et sans frais ? À Nanterre, mieux vaut organiser un enlèvement gratuit avant que la situation ne se complique. À Nanterre, le service d\'enlèvement gratuit est organisé avec une logistique de proximité. La coordination avec le propriétaire permet de caler le meilleur créneau pour l\'enlèvement. Les contraintes urbaines de Nanterre sont intégrées dans la préparation du passage. Le secteur de Rue du Sergent Bobillot est couvert comme l\'ensemble de la commune.',
     },
     {
       type: 'VhuCompliance',
-      title: 'Dépollution et Recyclage',
-      content: 'Le véhicule est remis à un partenaire spécialisé pour la suite de son traitement réglementaire. Le partenaire assure les formalités et l’orientation du véhicule vers les filières réglementaires appropriées. Les responsabilités de chaque intervenant sont distinguées dès l’organisation de l’enlèvement.',
+      title: 'Traitement réglementaire et recyclage',
+      content: 'Dès l\'enlèvement réalisé, le transfert vers l\'installation partenaire appropriée est programmé. Les différentes opérations sont soumises au respect des règles applicables à la filière. Les professionnels impliqués travaillent en coordination pour la bonne fin des opérations.',
     },
     {
       type: 'LocalCoverage',
       title: 'Couverture d\'intervention sur Nanterre',
-      intro: 'Notre équipe intervient dans l\'ensemble de la commune de Nanterre pour procéder à l\'enlèvement de votre véhicule. Le rendez-vous est préparé selon le type d’accès indiqué lors de la demande. Le créneau est défini en fonction des conditions signalées pour le véhicule. Nos dépanneuses rayonnent également sur les secteurs limitrophes comme Bezons et La Garenne-Colombes.',
+      intro: 'Notre équipe intervient dans toute l\'agglomération de Nanterre pour retirer votre épave gratuitement. La logistique à Nanterre est adaptée au type de véhicule et à son environnement. Le code postal 92000 est intégré dans notre tournée d\'enlèvement régulière à Nanterre, ce qui garantit une intervention rapide. Les communes autour de Nanterre sont également parcourues par nos dépanneuses. C\'est le cas notamment vers Bezons et La Garenne-Colombes.',
       zones: [
-        { name: 'Centre-ville & Rues étroites', delay: 'Sous 24h', specificities: 'Matériel adapté aux accès difficiles et parkings.' },
-        { name: 'Secteur Avenue Félix Faure / Avenue Georges Clemenceau', delay: 'Sur RDV', specificities: 'Prise en charge rapide sur les grands axes.' }
+        { name: 'Centre-ville & Zones denses', delay: 'Sous 24h', specificities: 'Intervention rapide sur l\'agglomération.' },
+        { name: 'Quartiers résidentiels', delay: '24h', specificities: 'Enlèvement au domicile ou parking.' },
+        { name: 'Zones d\'activité', delay: 'Sur RDV', specificities: 'Retrait sur parkings d\'entreprise.' }
       ],
     },
     {
@@ -55,7 +56,7 @@ export const nanterreData: PageData = {
         { q: 'Que se passe-t-il si je n\'ai plus la carte grise de mon véhicule ?', a: 'Une déclaration de perte ou de vol effectuée en préfecture ou gendarmerie suffit. Nous vous guidons dans cette démarche.' },
         { q: 'Mon véhicule est bloqué en sous-sol à Nanterre, est-ce un problème ?', a: 'Pas du tout. Nous disposons de dépanneuses 4x4 extra-basses capables d\'entrer dans la majorité des parkings souterrains.' },
         { q: 'Mon véhicule est accidenté sur la voie publique, pouvez-vous le retirer ?', a: 'Absolument, nous intervenons sur la voie publique à condition que vous soyez présent avec les documents requis.' },
-        { q: 'Délivrez-vous le certificat de destruction immédiatement ?', a: 'Oui, nous vous remettons le certificat de cession pour destruction en main propre le jour de l\'enlèvement.' },
+        { q: 'Quels documents obtenez-vous le jour de l\'enlèvement ?', a: 'Vous recevez un justificatif de prise en charge le jour même, ainsi que tous les documents attestant de la bonne fin de l\'opération.' },
         { q: 'L\'intervention à Nanterre est-elle soumise à des frais de déplacement ?', a: 'Non, si votre véhicule est complet, l\'enlèvement et le déplacement jusqu\'à Nanterre sont entièrement gratuits.' }
       ],
     },

@@ -16,23 +16,24 @@ export const antonyData: PageData = {
   blocks: [
     {
       type: 'Hero',
-      title: 'Retrait de véhicule hors d\'usage à Antony',
-      subtitle: 'Une solution organisée pour retirer un véhicule immobilisé à Antony (92160) dans le respect des démarches requises.',
+      title: 'Enlèvement épave Antony (92160) - Service gratuit à Antony',
+      subtitle: 'À Antony (92160) : débarras auto gratuit avec prise en charge complète de votre épave.',
       badge: 'Antony (92160)',
     },
     {
       type: 'LocalCoverage',
       title: 'Couverture d\'intervention sur Antony',
-      intro: 'Notre équipe intervient dans l\'ensemble de la commune de Antony pour procéder à l\'enlèvement de votre véhicule. Le rendez-vous est préparé selon le type d’accès indiqué lors de la demande. Le rendez-vous est préparé pour tenir compte de la situation déclarée par le propriétaire. Nos dépanneuses rayonnent également sur les secteurs limitrophes comme Massy (Essonne) et Bourg-la-Reine.',
+      intro: 'La zone d\'intervention à Antony comprend aussi bien les voies principales que les impasses. Chaque enlèvement à Antony est préparé en étudiant les accès et les contraintes locales. Pour le secteur 92160, nos équipes interviennent régulièrement et connaissent parfaitement les accès et particularités de Antony. Nous étendons notre intervention au-delà de Antony pour couvrir un large secteur. C\'est le cas notamment vers Massy (Essonne) et Bourg-la-Reine.',
       zones: [
         { name: 'Zones pavillonnaires', delay: 'Sous 24h', specificities: 'Enlèvement au domicile ou dans votre allée privée.' },
-        { name: 'Axes vers Bourg-la-Reine', delay: '24h', specificities: 'Dépannage bord de route ou parking.' }
+        { name: 'Centre-ville & Axes principaux', delay: '24h', specificities: 'Retrait d\'épave sur voie publique.' },
+        { name: 'Secteurs d\'activité', delay: 'Sur RDV', specificities: 'Intervention en zone commerciale.' }
       ],
     },
     {
       type: 'Introduction',
       title: 'Votre épaviste de confiance à Antony',
-      content: 'La densité de circulation à Antony (92160) exige une solution professionnelle pour l\'enlèvement de votre épave. Nous mettons à votre disposition nos dépanneuses spécialisées dans les interventions en petite couronne. Fini les soucis de stationnement abusif : nous récupérons votre véhicule hors d\'usage et l\'amenons chez un broyeur agréé VHU partenaire. L’organisation du retrait tient compte de l’emplacement du véhicule, de son état et des conditions d’accès. Les informations communiquées au moment de la demande facilitent la préparation du retrait. La demande permet d’identifier les informations nécessaires avant le déplacement.',
+      content: 'À Antony, nous retirons votre épave gratuitement où qu\'elle se trouve dans la commune. Les riverains de Antony sont rapidement incommodés par la présence d\'une épave dans leur rue. Notre équipe à Antony intervient avec discrétion et efficacité dans les quartiers animés. Le rendez-vous est organisé à partir de la situation du véhicule et des conditions d\'accès indiquées. Les modalités de l\'enlèvement sont adaptées à chaque situation dans Antony. Notre équipe dessert notamment le secteur de Rue des Marguerites dans la commune.',
     },
     {
       type: 'DocsPreparation',
@@ -42,8 +43,8 @@ export const antonyData: PageData = {
     },
     {
       type: 'VhuCompliance',
-      title: 'Dépollution et Recyclage',
-      content: 'Après l\'enlèvement, le véhicule est acheminé vers un centre VHU partenaire agréé. Les étapes ultérieures sont réalisées par les professionnels compétents, conformément au cadre applicable. Le transfert est organisé avec un partenaire spécialisé dans les procédures applicables aux véhicules hors d’usage.',
+      title: 'Traitement réglementaire et recyclage',
+      content: 'Après retrait, le véhicule est pris en relais par un opérateur de la filière de recyclage. Les obligations environnementales sont satisfaites par les partenaires de la filière. Le dispositif assure une répartition claire des tâches entre les différents partenaires.',
     },
     {
       type: 'FaqLocal',
@@ -55,7 +56,7 @@ export const antonyData: PageData = {
         { q: 'Que se passe-t-il si je n\'ai plus la carte grise de mon véhicule ?', a: 'Une déclaration de perte ou de vol effectuée en préfecture ou gendarmerie suffit. Nous vous guidons dans cette démarche.' },
         { q: 'Intervenez-vous rapidement en cas de véhicule gênant la circulation à Antony ?', a: 'Oui, nous priorisons les situations urgentes en petite couronne. Contactez-nous pour un créneau adapté.' },
         { q: 'Mon véhicule est accidenté sur la voie publique, pouvez-vous le retirer ?', a: 'Absolument, nous intervenons sur la voie publique à condition que vous soyez présent avec les documents requis.' },
-        { q: 'Délivrez-vous le certificat de destruction immédiatement ?', a: 'Oui, nous vous remettons le certificat de cession pour destruction en main propre le jour de l\'enlèvement.' },
+        { q: 'Quels documents obtenez-vous le jour de l\'enlèvement ?', a: 'Vous recevez un justificatif de prise en charge le jour même, ainsi que tous les documents attestant de la bonne fin de l\'opération.' },
         { q: 'L\'intervention à Antony est-elle soumise à des frais de déplacement ?', a: 'Non, si votre véhicule est complet, l\'enlèvement et le déplacement jusqu\'à Antony sont entièrement gratuits.' }
       ],
     },
