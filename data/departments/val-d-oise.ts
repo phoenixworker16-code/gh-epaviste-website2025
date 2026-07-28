@@ -1,7 +1,7 @@
 import { PageData } from '../types'
 
 export const valDoiseData: PageData = {
-  slug: 'val-doise',
+  slug: 'val-d-oise',
   entityType: 'Department',
   metaTitle: "Épaviste Val-d'Oise (95) | Enlèvement Épave Gratuit 24h",
   metaDescription: "Faites enlever gratuitement votre épave dans tout le Val-d'Oise (95). De Cergy à Sarcelles, GH Épaviste intervient rapidement et légalement. 07 53 12 07 93.",

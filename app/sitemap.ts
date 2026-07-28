@@ -5,15 +5,26 @@ import servicesData from '@/data/services.json'
 
 interface Ville {
   slug: string
-  departementSlug?: string
+  departement: string
+  depNumber: string
+}
+
+/** Génère un slug URL à partir du nom de département */
+function slugifyDepartement(name: string): string {
+  return name
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/'/g, '-')
+    .replace(/\s+/g, '-')
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://gh-epaviste.fr'
 
-  // Date stable pour éviter les requêtes de recrawl inutiles
-  const stableDate = new Date().toISOString().split('T')[0]
-  const lastModDate = new Date(stableDate)
+  // Date fixe de la dernière modification réelle du contenu
+  // À mettre à jour manuellement lors de modifications significatives
+  const lastModDate = new Date('2026-07-28')
   const blogModDate = new Date('2025-06-01')
 
   // 1. Pages statiques principales
@@ -42,7 +53,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const typedVilles = villes as Ville[]
   const uniqueDepartements = Array.from(
-    new Set(typedVilles.map((v) => v.departementSlug).filter(Boolean))
+    new Set(typedVilles.map((v) => slugifyDepartement(v.departement)).filter(Boolean))
   )
 
   // 2. Pages Départements (8 — priorité haute)

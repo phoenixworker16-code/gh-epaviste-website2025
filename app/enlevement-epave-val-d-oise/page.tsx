@@ -1,5 +1,5 @@
 import { Metadata } from 'next'
-import { valDoiseData } from '@/data/departments/val-doise'
+import { valDoiseData } from '@/data/departments/val-d-oise'
 import { PageBuilder } from '@/components/blocks/PageBuilder'
 import { InternalLinking } from '@/components/internal-linking'
 import BreadcrumbJsonLd from '@/components/breadcrumb-jsonld'

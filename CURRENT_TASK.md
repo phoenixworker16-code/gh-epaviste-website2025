@@ -1,30 +1,32 @@
 # CURRENT TASK
 
-Phase : 4.2
+Phase : 4.3
 
-État : Terminé
+État : En attente de validation production
 
 Objectif :
 
-Poursuivre l'enrichissement éditorial des profils tout en conservant :
+Corriger les problèmes SEO techniques détectés lors de l'audit.
 
-- déterminisme
-- conformité légale
-- SEO
-- similarité < 65 %
+Tâches :
 
-Phase précédente (4.1) : validée et commitée.
+- [x] Corriger la génération des départements dans le sitemap (slugify automatique)
+- [x] Corriger le slug Val-d'Oise (val-doise → val-d-oise)
+- [x] Stabiliser lastModified (constante 2026-07-28)
+- [x] Vérifier canonical et Open Graph des 8 départements
+- [x] Valider le build (0 erreur, 1320 pages)
+- [ ] Déployer sur Vercel
+- [ ] Vérifier les HTTP 200 du sitemap en production
+- [ ] Vérifier robots.txt
+- [ ] Vérifier l'absence d'erreurs dans Google Search Console
 
-Prochaine étape :
+STOP :
+
+Attendre la validation de la production avant de commencer le Batch 80 communes.
+
+Prochaine étape (après validation) :
 
 Batch 80 communes → audit complet → batch 200 communes → audit complet → génération catalogue complet.
-
-À modifier uniquement :
-
-- variants.js
-- data-builder.js
-- detect-duplicates.js
-- similarity-reporter.js
 
 Ne pas modifier :
 
@@ -33,7 +35,4 @@ Ne pas modifier :
 - pipeline
 - Golden Files
 - Snapshots
-
-STOP :
-
-Attendre la validation des rapports avant la phase suivante.
+- stratégie d'indexation (communes majeures indexables, autres en noindex follow)
