@@ -11,7 +11,7 @@ export const brayEtLuData: PageData = {
     'enlevement-voiture-sans-carte-grise'
   ],
   relatedCitiesSlugs: [
-    'enlevement-epave-val-d-oise'
+    'val-d-oise'
   ],
   blocks: [
     {

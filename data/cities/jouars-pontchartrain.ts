@@ -11,7 +11,7 @@ export const jouarsPontchartrainData: PageData = {
     'enlevement-voiture-sans-carte-grise'
   ],
   relatedCitiesSlugs: [
-    'enlevement-epave-yvelines'
+    'yvelines'
   ],
   blocks: [
     {

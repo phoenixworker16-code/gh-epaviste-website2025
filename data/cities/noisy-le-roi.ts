@@ -11,7 +11,7 @@ export const noisyLeRoiData: PageData = {
     'enlevement-voiture-sans-carte-grise'
   ],
   relatedCitiesSlugs: [
-    'enlevement-epave-yvelines'
+    'yvelines'
   ],
   blocks: [
     {

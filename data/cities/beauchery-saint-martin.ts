@@ -11,7 +11,7 @@ export const beaucherySaintMartinData: PageData = {
     'enlevement-voiture-sans-carte-grise'
   ],
   relatedCitiesSlugs: [
-    'enlevement-epave-seine-et-marne'
+    'seine-et-marne'
   ],
   blocks: [
     {

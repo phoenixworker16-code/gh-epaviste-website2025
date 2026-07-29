@@ -11,7 +11,7 @@ export const saintCyrLaRiviereData: PageData = {
     'enlevement-voiture-sans-carte-grise'
   ],
   relatedCitiesSlugs: [
-    'enlevement-epave-essonne'
+    'essonne'
   ],
   blocks: [
     {

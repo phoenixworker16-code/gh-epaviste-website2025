@@ -11,7 +11,7 @@ export const limeilBrevannesData: PageData = {
     'enlevement-voiture-sans-carte-grise'
   ],
   relatedCitiesSlugs: [
-    'enlevement-epave-val-de-marne'
+    'val-de-marne'
   ],
   blocks: [
     {

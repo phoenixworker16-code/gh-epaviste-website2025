@@ -11,7 +11,7 @@ export const parisData: PageData = {
     'enlevement-voiture-sans-carte-grise'
   ],
   relatedCitiesSlugs: [
-    'enlevement-epave-paris'
+    'paris'
   ],
   blocks: [
     {

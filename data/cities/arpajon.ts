@@ -11,7 +11,7 @@ export const arpajonData: PageData = {
     'enlevement-voiture-sans-carte-grise'
   ],
   relatedCitiesSlugs: [
-    'enlevement-epave-essonne'
+    'essonne'
   ],
   blocks: [
     {

@@ -11,7 +11,7 @@ export const romainvilleData: PageData = {
     'enlevement-voiture-sans-carte-grise'
   ],
   relatedCitiesSlugs: [
-    'enlevement-epave-seine-saint-denis'
+    'seine-saint-denis'
   ],
   blocks: [
     {

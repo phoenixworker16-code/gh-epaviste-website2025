@@ -11,7 +11,7 @@ export const boulogneBillancourtData: PageData = {
     'enlevement-voiture-sans-carte-grise'
   ],
   relatedCitiesSlugs: [
-    'enlevement-epave-hauts-de-seine'
+    'hauts-de-seine'
   ],
   blocks: [
     {
