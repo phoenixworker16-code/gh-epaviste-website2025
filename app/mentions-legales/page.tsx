@@ -1,4 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import BreadcrumbJsonLd from "@/components/breadcrumb-jsonld";
 import Link from "next/link";
 import BreadcrumbNav from "@/components/breadcrumb-nav";
 import ScrollToTop from "@/components/scroll-to-top";

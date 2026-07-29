@@ -1,4 +1,5 @@
 import Link from "next/link"
+import BreadcrumbJsonLd from "@/components/breadcrumb-jsonld"
 import { Metadata } from "next"
 import { BookOpen, Clock, ArrowRight } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"

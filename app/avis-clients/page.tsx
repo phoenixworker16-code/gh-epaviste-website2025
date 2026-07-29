@@ -1,4 +1,5 @@
 import Link from "next/link"
+import BreadcrumbJsonLd from "@/components/breadcrumb-jsonld"
 import { Metadata } from "next"
 import { Star, Phone, Quote } from "lucide-react"
 import { Button } from "@/components/ui/button"
