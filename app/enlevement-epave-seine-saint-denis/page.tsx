@@ -25,16 +25,24 @@ export const metadata: Metadata = {
 }
 
 export default function SeineSaintDenisEpavistePage() {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    name: seineSaintDenisData.metaTitle,
-    description: seineSaintDenisData.metaDescription,
-    provider: { "@type": "LocalBusiness", name: "GH Épaviste", telephone: "+33753120793" },
-    areaServed: { "@type": "AdministrativeArea", name: "Seine-Saint-Denis (93)" },
-    serviceType: "Enlèvement d'épaves automobiles",
-    offers: { "@type": "Offer", price: "0", priceCurrency: "EUR" },
-  }
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      name: seineSaintDenisData.metaTitle,
+      description: seineSaintDenisData.metaDescription,
+      provider: { "@type": "LocalBusiness", name: "GH Épaviste", telephone: "+33753120793" },
+      areaServed: { "@type": "AdministrativeArea", name: "Seine-Saint-Denis (93)" },
+      serviceType: "Enlèvement d'épaves automobiles",
+      offers: { "@type": "Offer", price: "0", priceCurrency: "EUR" },
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "AdministrativeArea",
+      name: "Seine-Saint-Denis", // to remove (91) if it exists
+      url: "https://gh-epaviste.fr/enlevement-epave-seine-saint-denis"
+    }
+  ]
 
   return (
     <div className="min-h-screen bg-white">

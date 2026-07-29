@@ -26,16 +26,24 @@ export const metadata: Metadata = {
 }
 
 export default function ParisEpavistePage() {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    name: parisData.metaTitle,
-    description: parisData.metaDescription,
-    provider: { "@type": "LocalBusiness", name: "GH Épaviste", telephone: "+33753120793" },
-    areaServed: { "@type": "AdministrativeArea", name: "Paris (75)" },
-    serviceType: "Enlèvement d'épaves automobiles",
-    offers: { "@type": "Offer", price: "0", priceCurrency: "EUR" },
-  }
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      name: parisData.metaTitle,
+      description: parisData.metaDescription,
+      provider: { "@type": "LocalBusiness", name: "GH Épaviste", telephone: "+33753120793" },
+      areaServed: { "@type": "AdministrativeArea", name: "Paris (75)" },
+      serviceType: "Enlèvement d'épaves automobiles",
+      offers: { "@type": "Offer", price: "0", priceCurrency: "EUR" },
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "AdministrativeArea",
+      name: "Paris", // to remove (91) if it exists
+      url: "https://gh-epaviste.fr/enlevement-epave-paris"
+    }
+  ]
 
   return (
     <div className="min-h-screen bg-white">

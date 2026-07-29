@@ -28,3 +28,18 @@
 - Téléphone : [07 53 12 07 93](tel:+33753120793)
 - Email : [contact@gh-epaviste.fr](mailto:contact@gh-epaviste.fr)
 - Site web : [https://gh-epaviste.fr](https://gh-epaviste.fr)
+
+## Informations techniques et légales
+
+- [Sitemap](https://gh-epaviste.fr/sitemap.xml)
+- [Robots](https://gh-epaviste.fr/robots.txt)
+- [Mentions légales](https://gh-epaviste.fr/mentions-legales)
+- [Confidentialité](https://gh-epaviste.fr/confidentialite)
+
+## Copyright
+
+© GH Épaviste — Tous droits réservés.
+
+## Données structurées
+
+Le site utilise des données structurées Schema.org (LocalBusiness, FAQPage, Service, BreadcrumbList, Organization, WebSite) afin d'améliorer la compréhension par les moteurs de recherche et les assistants IA.

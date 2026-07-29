@@ -25,16 +25,24 @@ export const metadata: Metadata = {
 }
 
 export default function EssonneEpavistePage() {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    name: essonneData.metaTitle,
-    description: essonneData.metaDescription,
-    provider: { "@type": "LocalBusiness", name: "GH Épaviste", telephone: "+33753120793" },
-    areaServed: { "@type": "AdministrativeArea", name: "Essonne (91)" },
-    serviceType: "Enlèvement d'épaves automobiles",
-    offers: { "@type": "Offer", price: "0", priceCurrency: "EUR" },
-  }
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      name: essonneData.metaTitle,
+      description: essonneData.metaDescription,
+      provider: { "@type": "LocalBusiness", name: "GH Épaviste", telephone: "+33753120793" },
+      areaServed: { "@type": "AdministrativeArea", name: "Essonne (91)" },
+      serviceType: "Enlèvement d'épaves automobiles",
+      offers: { "@type": "Offer", price: "0", priceCurrency: "EUR" },
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "AdministrativeArea",
+      name: "Essonne", // to remove (91) if it exists
+      url: "https://gh-epaviste.fr/enlevement-epave-essonne"
+    }
+  ]
 
   return (
     <div className="min-h-screen bg-white">

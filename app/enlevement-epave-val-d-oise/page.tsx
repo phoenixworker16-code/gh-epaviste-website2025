@@ -25,16 +25,24 @@ export const metadata: Metadata = {
 }
 
 export default function ValDoiseEpavistePage() {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    name: valDoiseData.metaTitle,
-    description: valDoiseData.metaDescription,
-    provider: { "@type": "LocalBusiness", name: "GH Épaviste", telephone: "+33753120793" },
-    areaServed: { "@type": "AdministrativeArea", name: "Val-d'Oise (95)" },
-    serviceType: "Enlèvement d'épaves automobiles",
-    offers: { "@type": "Offer", price: "0", priceCurrency: "EUR" },
-  }
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      name: valDoiseData.metaTitle,
+      description: valDoiseData.metaDescription,
+      provider: { "@type": "LocalBusiness", name: "GH Épaviste", telephone: "+33753120793" },
+      areaServed: { "@type": "AdministrativeArea", name: "Val-d'Oise (95)" },
+      serviceType: "Enlèvement d'épaves automobiles",
+      offers: { "@type": "Offer", price: "0", priceCurrency: "EUR" },
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "AdministrativeArea",
+      name: "Val-d'Oise", // to remove (91) if it exists
+      url: "https://gh-epaviste.fr/enlevement-epave-val-d-oise"
+    }
+  ]
 
   return (
     <div className="min-h-screen bg-white">

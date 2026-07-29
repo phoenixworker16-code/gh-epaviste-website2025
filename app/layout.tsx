@@ -133,6 +133,7 @@ export default function RootLayout({
         { "@type": "AdministrativeArea", "name": "Val-de-Marne", "identifier": "94" },
         { "@type": "AdministrativeArea", "name": "Val-d'Oise", "identifier": "95" }
       ],
+      "openingHours": "Mo-Su 00:00-23:59",
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
@@ -156,8 +157,7 @@ export default function RootLayout({
           { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Enlèvement sans carte grise" } },
           { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Démarches administratives VHU" } }
         ]
-      },
-      "sameAs": ["https://gh-epaviste.fr"]
+      }
     },
     {
       "@context": "https://schema.org",
@@ -190,11 +190,7 @@ export default function RootLayout({
       "@type": "WebSite",
       "name": "GH Épaviste",
       "url": "https://gh-epaviste.fr",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://gh-epaviste.fr/?s={search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
+      "inLanguage": "fr-FR"
     }
   ]
 

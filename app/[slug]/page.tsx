@@ -159,26 +159,9 @@ export default async function CityPage({ params }: { params: { slug: string } })
       },
       {
         '@context': 'https://schema.org',
-        '@type': 'LocalBusiness',
-        '@id': 'https://gh-epaviste.fr/#localbusiness',
-        name: 'GH Épaviste',
-        telephone: '+33753120793',
-        url: 'https://gh-epaviste.fr',
-        address: {
-          '@type': 'PostalAddress',
-          addressCountry: 'FR'
-        }
-      },
-      {
-        '@context': 'https://schema.org',
-        '@type': 'Organization',
-        name: 'GH Épaviste',
-        url: 'https://gh-epaviste.fr',
-        contactPoint: {
-          '@type': 'ContactPoint',
-          telephone: '+33753120793',
-          contactType: 'customer service'
-        }
+        '@type': 'City',
+        name: data.badge || data.name || data.slug,
+        url: `https://gh-epaviste.fr/epaviste-gratuit-${data.slug || params.slug.replace('epaviste-gratuit-', '')}`
       }
     ];
 

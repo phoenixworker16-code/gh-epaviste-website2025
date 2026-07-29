@@ -5,6 +5,8 @@ User-agent: *
 Allow: /
 Disallow: /api/
 Disallow: /_next/
+Allow: /_next/static/
+Allow: /_next/image/
 
 # Googlebot : autorisations spécifiques
 User-agent: Googlebot

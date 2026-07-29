@@ -25,16 +25,24 @@ export const metadata: Metadata = {
 }
 
 export default function SeineEtMarneEpavistePage() {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    name: seineEtMarneData.metaTitle,
-    description: seineEtMarneData.metaDescription,
-    provider: { "@type": "LocalBusiness", name: "GH Épaviste", telephone: "+33753120793" },
-    areaServed: { "@type": "AdministrativeArea", name: "Seine-et-Marne (77)" },
-    serviceType: "Enlèvement d'épaves automobiles",
-    offers: { "@type": "Offer", price: "0", priceCurrency: "EUR" },
-  }
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      name: seineEtMarneData.metaTitle,
+      description: seineEtMarneData.metaDescription,
+      provider: { "@type": "LocalBusiness", name: "GH Épaviste", telephone: "+33753120793" },
+      areaServed: { "@type": "AdministrativeArea", name: "Seine-et-Marne (77)" },
+      serviceType: "Enlèvement d'épaves automobiles",
+      offers: { "@type": "Offer", price: "0", priceCurrency: "EUR" },
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "AdministrativeArea",
+      name: "Seine-et-Marne", // to remove (91) if it exists
+      url: "https://gh-epaviste.fr/enlevement-epave-seine-et-marne"
+    }
+  ]
 
   return (
     <div className="min-h-screen bg-white">
