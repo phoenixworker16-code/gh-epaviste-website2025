@@ -1,0 +1,136 @@
+{
+  "batch": "phase4-1",
+  "pipelineVersion": "4.2",
+  "concurrency": 1,
+  "retries": 2,
+  "timeout": 180000,
+  "processed": 20,
+  "success": 19,
+  "failed": 1,
+  "skipped": 0,
+  "duration": "3058.4s",
+  "startedAt": "2026-07-13T17:44:07.703Z",
+  "finishedAt": "2026-07-13T18:35:06.118Z",
+  "communes": [
+    {
+      "slug": "paris",
+      "status": "SUCCESS",
+      "quality": "PARTIAL",
+      "duration": 161.4
+    },
+    {
+      "slug": "chelles",
+      "status": "SUCCESS",
+      "quality": "PARTIAL",
+      "duration": 160.8
+    },
+    {
+      "slug": "fontainebleau",
+      "status": "SUCCESS",
+      "quality": "PARTIAL",
+      "duration": 160.6
+    },
+    {
+      "slug": "meaux",
+      "status": "SUCCESS",
+      "quality": "PARTIAL",
+      "duration": 159.8
+    },
+    {
+      "slug": "melun",
+      "status": "SUCCESS",
+      "quality": "PARTIAL",
+      "duration": 161.1
+    },
+    {
+      "slug": "poissy",
+      "status": "SUCCESS",
+      "quality": "PARTIAL",
+      "duration": 161.5
+    },
+    {
+      "slug": "versailles",
+      "status": "SUCCESS",
+      "quality": "MINIMAL",
+      "duration": 163
+    },
+    {
+      "slug": "massy",
+      "status": "SUCCESS",
+      "quality": "PARTIAL",
+      "duration": 160.3
+    },
+    {
+      "slug": "antony",
+      "status": "SUCCESS",
+      "quality": "PARTIAL",
+      "duration": 160.9
+    },
+    {
+      "slug": "boulogne-billancourt",
+      "status": "SUCCESS",
+      "quality": "PARTIAL",
+      "duration": 159.7
+    },
+    {
+      "slug": "courbevoie",
+      "status": "SUCCESS",
+      "quality": "PARTIAL",
+      "duration": 160.1
+    },
+    {
+      "slug": "issy-les-moulineaux",
+      "status": "SUCCESS",
+      "quality": "PARTIAL",
+      "duration": 161.2
+    },
+    {
+      "slug": "nanterre",
+      "status": "SUCCESS",
+      "quality": "PARTIAL",
+      "duration": 160.9
+    },
+    {
+      "slug": "drancy",
+      "status": "SUCCESS",
+      "quality": "PARTIAL",
+      "duration": 160.6
+    },
+    {
+      "slug": "saint-denis",
+      "status": "SUCCESS",
+      "quality": "MINIMAL",
+      "duration": 160.3
+    },
+    {
+      "slug": "creteil",
+      "status": "ERROR",
+      "error": "JSON file not generated",
+      "duration": 1.5
+    },
+    {
+      "slug": "ivry-sur-seine",
+      "status": "SUCCESS",
+      "quality": "PARTIAL",
+      "duration": 161.7
+    },
+    {
+      "slug": "vitry-sur-seine",
+      "status": "SUCCESS",
+      "quality": "PARTIAL",
+      "duration": 100.3
+    },
+    {
+      "slug": "argenteuil",
+      "status": "SUCCESS",
+      "quality": "PARTIAL",
+      "duration": 89.5
+    },
+    {
+      "slug": "cergy",
+      "status": "SUCCESS",
+      "quality": "PARTIAL",
+      "duration": 131.1
+    }
+  ]
+}

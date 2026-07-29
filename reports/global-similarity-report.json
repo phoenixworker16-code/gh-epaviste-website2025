@@ -1,0 +1,717 @@
+{
+  "status": "PASS",
+  "thresholds": {
+    "warning": 65,
+    "fail": 80
+  },
+  "analysisDate": "2026-07-27T16:41:15.179Z",
+  "totalPages": 1262,
+  "totalPairs": 795691,
+  "durationSeconds": 640.56,
+  "statistics": {
+    "maxSimilarity": 47.8,
+    "minSimilarity": 12.1,
+    "averageSimilarity": 23.8,
+    "pass": 795691,
+    "warning": 0,
+    "fail": 0
+  },
+  "blocks": {
+    "Hero": {
+      "pairsAnalyzed": 795691,
+      "average": 22.9,
+      "max": 88.2,
+      "min": 2.9,
+      "pass": 794803,
+      "warning": 869,
+      "fail": 19
+    },
+    "Introduction": {
+      "pairsAnalyzed": 795691,
+      "average": 18,
+      "max": 80,
+      "min": 4.7,
+      "pass": 795678,
+      "warning": 12,
+      "fail": 1
+    },
+    "LocalCoverage": {
+      "pairsAnalyzed": 795691,
+      "average": 17,
+      "max": 90.5,
+      "min": 4.2,
+      "pass": 795596,
+      "warning": 89,
+      "fail": 6
+    },
+    "VhuCompliance": {
+      "pairsAnalyzed": 795691,
+      "average": 19.5,
+      "max": 100,
+      "min": 7.1,
+      "pass": 795444,
+      "warning": 237,
+      "fail": 10
+    },
+    "FaqLocal": {
+      "pairsAnalyzed": 0,
+      "average": 0,
+      "max": 0,
+      "min": 0,
+      "pass": 0,
+      "warning": 0,
+      "fail": 0
+    },
+    "Cta": {
+      "pairsAnalyzed": 0,
+      "average": 0,
+      "max": 0,
+      "min": 0,
+      "pass": 0,
+      "warning": 0,
+      "fail": 0
+    }
+  },
+  "topWorstPairs": [
+    {
+      "pageA": "blennes",
+      "pageB": "champagne-sur-seine",
+      "similarity": 47.8,
+      "status": "PASS",
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 30.4,
+          "sharedTokens": 7,
+          "contribution": 9.7
+        },
+        {
+          "block": "Introduction",
+          "similarity": 48.2,
+          "sharedTokens": 27,
+          "contribution": 37.5
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 54.5,
+          "sharedTokens": 24,
+          "contribution": 33.3
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 31.1,
+          "sharedTokens": 14,
+          "contribution": 19.4
+        }
+      ]
+    },
+    {
+      "pageA": "vieille-eglise-en-yvelines",
+      "pageB": "montmagny",
+      "similarity": 47.7,
+      "status": "PASS",
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 21.7,
+          "sharedTokens": 5,
+          "contribution": 7.2
+        },
+        {
+          "block": "Introduction",
+          "similarity": 57.4,
+          "sharedTokens": 31,
+          "contribution": 44.9
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 30.4,
+          "sharedTokens": 17,
+          "contribution": 24.6
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 45.7,
+          "sharedTokens": 16,
+          "contribution": 23.2
+        }
+      ]
+    },
+    {
+      "pageA": "poligny",
+      "pageB": "dannemarie",
+      "similarity": 47.3,
+      "status": "PASS",
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 47.4,
+          "sharedTokens": 9,
+          "contribution": 12.3
+        },
+        {
+          "block": "Introduction",
+          "similarity": 52.5,
+          "sharedTokens": 31,
+          "contribution": 42.5
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 48.1,
+          "sharedTokens": 25,
+          "contribution": 34.2
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 15.7,
+          "sharedTokens": 8,
+          "contribution": 11
+        }
+      ]
+    },
+    {
+      "pageA": "marchemoret",
+      "pageB": "les-breviaires",
+      "similarity": 46.4,
+      "status": "PASS",
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 17.4,
+          "sharedTokens": 4,
+          "contribution": 6.8
+        },
+        {
+          "block": "Introduction",
+          "similarity": 44.2,
+          "sharedTokens": 23,
+          "contribution": 39
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 30.4,
+          "sharedTokens": 17,
+          "contribution": 28.8
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 34.9,
+          "sharedTokens": 15,
+          "contribution": 25.4
+        }
+      ]
+    },
+    {
+      "pageA": "jaulnes",
+      "pageB": "vicq",
+      "similarity": 46.1,
+      "status": "PASS",
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 18.5,
+          "sharedTokens": 5,
+          "contribution": 8.1
+        },
+        {
+          "block": "Introduction",
+          "similarity": 40,
+          "sharedTokens": 22,
+          "contribution": 35.5
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 34,
+          "sharedTokens": 17,
+          "contribution": 27.4
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 46.2,
+          "sharedTokens": 18,
+          "contribution": 29
+        }
+      ]
+    },
+    {
+      "pageA": "amponville",
+      "pageB": "saint-illiers-la-ville",
+      "similarity": 46,
+      "status": "PASS",
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 30.4,
+          "sharedTokens": 7,
+          "contribution": 11.1
+        },
+        {
+          "block": "Introduction",
+          "similarity": 40.4,
+          "sharedTokens": 23,
+          "contribution": 36.5
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 39.2,
+          "sharedTokens": 20,
+          "contribution": 31.7
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 32.5,
+          "sharedTokens": 13,
+          "contribution": 20.6
+        }
+      ]
+    },
+    {
+      "pageA": "arrancourt",
+      "pageB": "breancon",
+      "similarity": 46,
+      "status": "PASS",
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 19.2,
+          "sharedTokens": 5,
+          "contribution": 7.7
+        },
+        {
+          "block": "Introduction",
+          "similarity": 24.6,
+          "sharedTokens": 17,
+          "contribution": 26.2
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 48.9,
+          "sharedTokens": 22,
+          "contribution": 33.8
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 65.6,
+          "sharedTokens": 21,
+          "contribution": 32.3
+        }
+      ]
+    },
+    {
+      "pageA": "donnemarie-dontilly",
+      "pageB": "rampillon",
+      "similarity": 45.9,
+      "status": "PASS",
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 25,
+          "sharedTokens": 6,
+          "contribution": 9.2
+        },
+        {
+          "block": "Introduction",
+          "similarity": 18.8,
+          "sharedTokens": 12,
+          "contribution": 18.5
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 65,
+          "sharedTokens": 26,
+          "contribution": 40
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 60,
+          "sharedTokens": 21,
+          "contribution": 32.3
+        }
+      ]
+    },
+    {
+      "pageA": "savins",
+      "pageB": "guyancourt",
+      "similarity": 45.9,
+      "status": "PASS",
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 55,
+          "sharedTokens": 11,
+          "contribution": 16.7
+        },
+        {
+          "block": "Introduction",
+          "similarity": 29.2,
+          "sharedTokens": 19,
+          "contribution": 28.8
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 45.8,
+          "sharedTokens": 22,
+          "contribution": 33.3
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 36.8,
+          "sharedTokens": 14,
+          "contribution": 21.2
+        }
+      ]
+    },
+    {
+      "pageA": "vert-saint-denis",
+      "pageB": "vetheuil",
+      "similarity": 45.7,
+      "status": "PASS",
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 20.8,
+          "sharedTokens": 5,
+          "contribution": 8.1
+        },
+        {
+          "block": "Introduction",
+          "similarity": 80,
+          "sharedTokens": 36,
+          "contribution": 58.1
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 17.2,
+          "sharedTokens": 10,
+          "contribution": 16.1
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 24.4,
+          "sharedTokens": 11,
+          "contribution": 17.7
+        }
+      ]
+    },
+    {
+      "pageA": "saint-martin-des-champs",
+      "pageB": "neuilly-en-vexin",
+      "similarity": 45.5,
+      "status": "PASS",
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 44.4,
+          "sharedTokens": 8,
+          "contribution": 12.1
+        },
+        {
+          "block": "Introduction",
+          "similarity": 29.2,
+          "sharedTokens": 19,
+          "contribution": 28.8
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 42.3,
+          "sharedTokens": 22,
+          "contribution": 33.3
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 40.5,
+          "sharedTokens": 17,
+          "contribution": 25.8
+        }
+      ]
+    },
+    {
+      "pageA": "charmentray",
+      "pageB": "saint-lambert",
+      "similarity": 45.3,
+      "status": "PASS",
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 26.3,
+          "sharedTokens": 5,
+          "contribution": 7.8
+        },
+        {
+          "block": "Introduction",
+          "similarity": 35.5,
+          "sharedTokens": 22,
+          "contribution": 34.4
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 26.3,
+          "sharedTokens": 15,
+          "contribution": 23.4
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 57.9,
+          "sharedTokens": 22,
+          "contribution": 34.4
+        }
+      ]
+    },
+    {
+      "pageA": "brueil-en-vexin",
+      "pageB": "sagy",
+      "similarity": 45,
+      "status": "PASS",
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 16,
+          "sharedTokens": 4,
+          "contribution": 6.1
+        },
+        {
+          "block": "Introduction",
+          "similarity": 70.8,
+          "sharedTokens": 34,
+          "contribution": 51.5
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 29.6,
+          "sharedTokens": 16,
+          "contribution": 24.2
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 27.9,
+          "sharedTokens": 12,
+          "contribution": 18.2
+        }
+      ]
+    },
+    {
+      "pageA": "sucy-en-brie",
+      "pageB": "noisy-sur-oise",
+      "similarity": 44.9,
+      "status": "PASS",
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 16,
+          "sharedTokens": 4,
+          "contribution": 6.9
+        },
+        {
+          "block": "Introduction",
+          "similarity": 20,
+          "sharedTokens": 14,
+          "contribution": 24.1
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 50,
+          "sharedTokens": 23,
+          "contribution": 39.7
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 44.7,
+          "sharedTokens": 17,
+          "contribution": 29.3
+        }
+      ]
+    },
+    {
+      "pageA": "cessoy-en-montois",
+      "pageB": "fontenay-le-fleury",
+      "similarity": 44.4,
+      "status": "PASS",
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 15.4,
+          "sharedTokens": 4,
+          "contribution": 6.1
+        },
+        {
+          "block": "Introduction",
+          "similarity": 63.6,
+          "sharedTokens": 35,
+          "contribution": 53
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 42.2,
+          "sharedTokens": 19,
+          "contribution": 28.8
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 17.4,
+          "sharedTokens": 8,
+          "contribution": 12.1
+        }
+      ]
+    },
+    {
+      "pageA": "dampmart",
+      "pageB": "saint-aubin",
+      "similarity": 44.4,
+      "status": "PASS",
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 28,
+          "sharedTokens": 7,
+          "contribution": 10.8
+        },
+        {
+          "block": "Introduction",
+          "similarity": 38.6,
+          "sharedTokens": 22,
+          "contribution": 33.8
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 32.1,
+          "sharedTokens": 17,
+          "contribution": 26.2
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 51.4,
+          "sharedTokens": 19,
+          "contribution": 29.2
+        }
+      ]
+    },
+    {
+      "pageA": "nandy",
+      "pageB": "chaumontel",
+      "similarity": 44.4,
+      "status": "PASS",
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 20,
+          "sharedTokens": 5,
+          "contribution": 7.7
+        },
+        {
+          "block": "Introduction",
+          "similarity": 40.7,
+          "sharedTokens": 24,
+          "contribution": 36.9
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 39.3,
+          "sharedTokens": 22,
+          "contribution": 33.8
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 41.2,
+          "sharedTokens": 14,
+          "contribution": 21.5
+        }
+      ]
+    },
+    {
+      "pageA": "roissy-en-brie",
+      "pageB": "saint-prix",
+      "similarity": 44.4,
+      "status": "PASS",
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 47.4,
+          "sharedTokens": 9,
+          "contribution": 13.4
+        },
+        {
+          "block": "Introduction",
+          "similarity": 37.3,
+          "sharedTokens": 22,
+          "contribution": 32.8
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 41.1,
+          "sharedTokens": 23,
+          "contribution": 34.3
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 31,
+          "sharedTokens": 13,
+          "contribution": 19.4
+        }
+      ]
+    },
+    {
+      "pageA": "saint-mesmes",
+      "pageB": "roissy-en-france",
+      "similarity": 44.4,
+      "status": "PASS",
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 21.7,
+          "sharedTokens": 5,
+          "contribution": 7.9
+        },
+        {
+          "block": "Introduction",
+          "similarity": 60.4,
+          "sharedTokens": 32,
+          "contribution": 50.8
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 32,
+          "sharedTokens": 16,
+          "contribution": 25.4
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 20.8,
+          "sharedTokens": 10,
+          "contribution": 15.9
+        }
+      ]
+    },
+    {
+      "pageA": "seine-port",
+      "pageB": "voulangis",
+      "similarity": 44.4,
+      "status": "PASS",
+      "breakdown": [
+        {
+          "block": "Hero",
+          "similarity": 78.9,
+          "sharedTokens": 15,
+          "contribution": 21.7
+        },
+        {
+          "block": "Introduction",
+          "similarity": 29.6,
+          "sharedTokens": 21,
+          "contribution": 30.4
+        },
+        {
+          "block": "LocalCoverage",
+          "similarity": 26.4,
+          "sharedTokens": 14,
+          "contribution": 20.3
+        },
+        {
+          "block": "VhuCompliance",
+          "similarity": 57.6,
+          "sharedTokens": 19,
+          "contribution": 27.5
+        }
+      ]
+    }
+  ]
+}

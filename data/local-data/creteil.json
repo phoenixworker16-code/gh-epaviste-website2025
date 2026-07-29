@@ -1,0 +1,264 @@
+{
+  "city": "Créteil",
+  "department": "94",
+  "quartiers": [],
+  "rues": [
+    "Allee de la Toison d’Or",
+    "Allée Centrale",
+    "Allée Parmentier",
+    "Av du General Pierre Billotte",
+    "Av du Mal de Lattre de Tassigny",
+    "Avenue François Mitterrand",
+    "Avenue Jean-baptiste Champeval",
+    "Avenue Laferrière",
+    "Avenue Magellan",
+    "Avenue Pierre Brossolette",
+    "Avenue de Ceinture",
+    "Avenue de Verdun",
+    "Avenue de la République",
+    "Avenue des Peupliers",
+    "Avenue du Chemin-de-mesly",
+    "Avenue du Docteur Paul Casalis",
+    "Avenue du Général de Gaulle",
+    "Boulevard John Kennedy",
+    "Boulevard Montaigut",
+    "Chemin du Bras du Chapitre",
+    "Rue Chéret",
+    "Rue Eugène Dupuis",
+    "Rue Henri",
+    "Rue Jean Jaurès",
+    "Rue Juliette Savar",
+    "Rue Louise",
+    "Rue Monfray",
+    "Rue Robert Legeay",
+    "Rue Saint-simon",
+    "Rue de Belle Vue",
+    "Rue de Bonne",
+    "Rue de Brie",
+    "Rue de Falkirk",
+    "Rue de Mayenne",
+    "Rue de Mesly",
+    "Rue de Plaisance",
+    "Rue de l'Espérance",
+    "Rue de la Terrasse",
+    "Rue des Bleuets",
+    "Rue des Ecoles",
+    "Rue des Pinsons",
+    "Rue du Cap",
+    "Rue du General Lacharriere",
+    "Rue du Général Leclerc",
+    "Rue du Général Sarrail",
+    "Rue du Général de Marbot",
+    "Rue du Moulin",
+    "Rue du Porte-diner",
+    "Voie Communale Centre Cial Regional Ccr"
+  ],
+  "stations_metro": [
+    "Créteil - L'Échat",
+    "Créteil - Préfecture",
+    "Créteil - Université"
+  ],
+  "gares": [
+    "Créteil-Pompadour",
+    "Noisy - Champs",
+    "Saint-Maur - Créteil"
+  ],
+  "parcs": [],
+  "hopitaux": [
+    "Centre hospitalier universitaire",
+    "Centre hospitalier universitaire Henri-Mondor"
+  ],
+  "cliniques": [],
+  "centres_commerciaux": [
+    "Centre commercial"
+  ],
+  "zones_activites": [],
+  "ponts": [],
+  "quais": [],
+  "monuments": [],
+  "batiments_publics": [
+    "Bibliothèque universitaire"
+  ],
+  "communes_limitrophes": [
+    "Alfortville",
+    "Bonneuil-sur-Marne",
+    "Choisy-le-Roi",
+    "Limeil-Brévannes",
+    "Maisons-Alfort",
+    "Saint-Maur-des-Fossés",
+    "Valenton"
+  ],
+  "sources": {
+    "Overpass API": {
+      "quartiers": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "stations_metro": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "gares": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "parcs": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "hopitaux": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "cliniques": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "centres_commerciaux": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "zones_activites": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "ponts": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "quais": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "monuments": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "batiments_publics": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      }
+    },
+    "Overpass Géométrie": {
+      "communes_limitrophes": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      }
+    },
+    "Wikipedia HTML": {
+      "communes_limitrophes": {
+        "trouves": 7,
+        "retenus": 7,
+        "ignores": 0,
+        "exclusions": []
+      }
+    },
+    "Data.gouv.fr BAN": {
+      "rues": {
+        "trouves": 50,
+        "retenus": 49,
+        "ignores": 1,
+        "exclusions": [
+          {
+            "nom": "Boulevard de Créteil",
+            "raison": "Commune différente: Saint-Maur-des-Fossés"
+          }
+        ]
+      }
+    },
+    "Wikipedia API": {
+      "stations_metro": {
+        "trouves": 3,
+        "retenus": 3,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "gares": {
+        "trouves": 3,
+        "retenus": 3,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "hopitaux": {
+        "trouves": 2,
+        "retenus": 2,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "centres_commerciaux": {
+        "trouves": 1,
+        "retenus": 1,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "batiments_publics": {
+        "trouves": 1,
+        "retenus": 1,
+        "ignores": 0,
+        "exclusions": []
+      }
+    }
+  },
+  "timing": {
+    "overpass_poi": {
+      "durationSec": 77.5,
+      "status": "EMPTY"
+    },
+    "overpass_geo": {
+      "durationSec": 78.9,
+      "status": "EMPTY"
+    },
+    "wikipedia_html": {
+      "durationSec": 1.2,
+      "status": "OK"
+    },
+    "ban": {
+      "durationSec": 0.3,
+      "status": "OK"
+    },
+    "wikipedia_api": {
+      "durationSec": 0.3,
+      "status": "OK"
+    }
+  },
+  "validation": {
+    "status": "SUCCESS",
+    "quality": "PARTIAL",
+    "schemaVersion": "1.0",
+    "fetched": true,
+    "sources": {
+      "overpass_poi": false,
+      "overpass_geo": false,
+      "wikipedia_html": true,
+      "wikipedia_api": true,
+      "ban": true
+    },
+    "totalDurationSec": 158.3
+  }
+}

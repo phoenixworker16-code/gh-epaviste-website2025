@@ -1,4 +1,5 @@
 import Link from "next/link"
+import BreadcrumbJsonLd from "@/components/breadcrumb-jsonld"
 import { Metadata } from "next"
 import { Star, Phone, Quote } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -94,6 +95,10 @@ const jsonLd = {
 export default function AvisClientsPage() {
   return (
     <div className="min-h-screen bg-white">
+      <BreadcrumbJsonLd items={[
+        { name: "Accueil", url: "https://gh-epaviste.fr/" },
+        { name: "Avis Clients", url: "https://gh-epaviste.fr/avis-clients" },
+      ]} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       {/* Hero */}

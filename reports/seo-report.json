@@ -1,0 +1,316 @@
+{
+  "auditorVersion": "1.0.0",
+  "rulesVersion": "1.0.0",
+  "timestamp": "2026-07-12T17:47:16.166Z",
+  "url": "http://localhost:3000/epaviste-gratuit-saint-denis",
+  "durationMs": 789,
+  "score": 100,
+  "verdict": "PASS",
+  "summary": {
+    "passed": 33,
+    "failed": 0,
+    "skipped": 0,
+    "info": 0,
+    "warning": 0,
+    "error": 0
+  },
+  "checks": [
+    {
+      "id": "S04",
+      "category": "STRUCTURE",
+      "severity": "INFO",
+      "status": "PASS",
+      "observed": "Présente",
+      "expected": "Présente",
+      "message": "Balise <main> trouvée."
+    },
+    {
+      "id": "S05",
+      "category": "HEAD_META",
+      "severity": "INFO",
+      "status": "PASS",
+      "observed": "1",
+      "expected": "1",
+      "message": "La balise <title> est présente."
+    },
+    {
+      "id": "S06",
+      "category": "HEAD_META",
+      "severity": "INFO",
+      "status": "PASS",
+      "observed": "Présente",
+      "expected": "Texte",
+      "message": "Meta description présente."
+    },
+    {
+      "id": "S07",
+      "category": "HEAD_META",
+      "severity": "INFO",
+      "status": "PASS",
+      "observed": "146",
+      "expected": "50-160",
+      "message": "La meta description a une bonne longueur."
+    },
+    {
+      "id": "S08",
+      "category": "HEAD_META",
+      "severity": "INFO",
+      "status": "PASS",
+      "observed": "Présente",
+      "expected": "Présente",
+      "message": "Balise canonical présente."
+    },
+    {
+      "id": "S09",
+      "category": "HEAD_META",
+      "severity": "INFO",
+      "status": "PASS",
+      "observed": "Non vide",
+      "expected": "URL valide",
+      "message": "Balise canonical non vide."
+    },
+    {
+      "id": "S10",
+      "category": "HEAD_META",
+      "severity": "INFO",
+      "status": "PASS",
+      "observed": "https://gh-epaviste.fr/epaviste-gratuit-saint-denis",
+      "expected": "URL valide",
+      "message": "Balise canonical correctement formatée."
+    },
+    {
+      "id": "S11",
+      "category": "HEAD_META",
+      "severity": "INFO",
+      "status": "PASS",
+      "observed": "index, follow",
+      "expected": "index,follow",
+      "message": "Balise meta robots présente."
+    },
+    {
+      "id": "S12",
+      "category": "HEAD_META",
+      "severity": "INFO",
+      "status": "PASS",
+      "observed": "index, follow",
+      "expected": "index,follow",
+      "message": "La page ne bloque pas l'indexation."
+    },
+    {
+      "id": "S01",
+      "category": "STRUCTURE",
+      "severity": "INFO",
+      "status": "PASS",
+      "observed": "1",
+      "expected": "1",
+      "message": "Un seul H1 détecté."
+    },
+    {
+      "id": "S02",
+      "category": "STRUCTURE",
+      "severity": "INFO",
+      "status": "PASS",
+      "observed": "10",
+      "expected": ">= 6",
+      "message": "Nombre de H2 conforme."
+    },
+    {
+      "id": "S03",
+      "category": "STRUCTURE",
+      "severity": "INFO",
+      "status": "PASS",
+      "observed": "16",
+      "expected": ">= 10",
+      "message": "Nombre de H3 conforme."
+    },
+    {
+      "id": "S13",
+      "category": "CONTENT",
+      "severity": "INFO",
+      "status": "PASS",
+      "observed": "1299",
+      "expected": ">= 1200",
+      "message": "Volume éditorial suffisant."
+    },
+    {
+      "id": "S14",
+      "category": "CONTENT",
+      "severity": "INFO",
+      "status": "PASS",
+      "observed": "1299",
+      "expected": "<= 1800",
+      "message": "Volume éditorial optimal."
+    },
+    {
+      "id": "S15",
+      "category": "CONTENT",
+      "severity": "INFO",
+      "status": "PASS",
+      "observed": "1299",
+      "expected": "> 0",
+      "message": "Le contenu n'est pas vide."
+    },
+    {
+      "id": "S16",
+      "category": "CONTENT",
+      "severity": "INFO",
+      "status": "PASS",
+      "observed": "Absent",
+      "expected": "Absent",
+      "message": "Aucun lorem ipsum."
+    },
+    {
+      "id": "S17",
+      "category": "CONTENT",
+      "severity": "INFO",
+      "status": "PASS",
+      "observed": "Absent",
+      "expected": "Absent",
+      "message": "Aucun TODO détecté."
+    },
+    {
+      "id": "S18",
+      "category": "LINKS",
+      "severity": "INFO",
+      "status": "PASS",
+      "observed": "Non vide",
+      "expected": "URL",
+      "message": "Aucun href vide."
+    },
+    {
+      "id": "S19",
+      "category": "LINKS",
+      "severity": "INFO",
+      "status": "PASS",
+      "observed": "Valide",
+      "expected": "URL",
+      "message": "Aucun lien vers #."
+    },
+    {
+      "id": "S20",
+      "category": "LINKS",
+      "severity": "INFO",
+      "status": "PASS",
+      "observed": "Valide",
+      "expected": "URL",
+      "message": "Aucun lien javascript:"
+    },
+    {
+      "id": "S21",
+      "category": "LINKS",
+      "severity": "INFO",
+      "status": "PASS",
+      "observed": "37",
+      "expected": ">= 4",
+      "message": "Maillage interne suffisant."
+    },
+    {
+      "id": "S22",
+      "category": "IMAGES",
+      "severity": "INFO",
+      "status": "PASS",
+      "observed": "0",
+      "expected": "0",
+      "message": "Toutes les images ont un attribut alt."
+    },
+    {
+      "id": "S23",
+      "category": "IMAGES",
+      "severity": "INFO",
+      "status": "PASS",
+      "observed": "0",
+      "expected": "0",
+      "message": "Aucun alt vide détecté."
+    },
+    {
+      "id": "S24",
+      "category": "COMPONENTS",
+      "severity": "INFO",
+      "status": "PASS",
+      "observed": "1",
+      "expected": ">= 1",
+      "message": "Tableau présent."
+    },
+    {
+      "id": "S25",
+      "category": "COMPONENTS",
+      "severity": "INFO",
+      "status": "PASS",
+      "observed": "5",
+      "expected": ">= 1",
+      "message": "Liste présente."
+    },
+    {
+      "id": "S26",
+      "category": "COMPONENTS",
+      "severity": "INFO",
+      "status": "PASS",
+      "observed": "6",
+      "expected": ">= 5",
+      "message": "Blocs FAQ détectés structurellement."
+    },
+    {
+      "id": "S27",
+      "category": "COMPONENTS",
+      "severity": "INFO",
+      "status": "PASS",
+      "observed": "9",
+      "expected": ">= 1",
+      "message": "Call-To-Action détecté structurellement."
+    },
+    {
+      "id": "S28",
+      "category": "JSON_LD",
+      "severity": "INFO",
+      "status": "PASS",
+      "observed": "5",
+      "expected": "> 0",
+      "message": "Script JSON-LD présent."
+    },
+    {
+      "id": "S29",
+      "category": "JSON_LD",
+      "severity": "INFO",
+      "status": "PASS",
+      "observed": "Valide",
+      "expected": "JSON valide",
+      "message": "JSON-LD correctement parsé."
+    },
+    {
+      "id": "S30",
+      "category": "JSON_LD",
+      "severity": "INFO",
+      "status": "PASS",
+      "observed": "Présent",
+      "expected": "Présent",
+      "message": "Schéma JSON-LD LocalBusiness présent."
+    },
+    {
+      "id": "S31",
+      "category": "JSON_LD",
+      "severity": "INFO",
+      "status": "PASS",
+      "observed": "Présent",
+      "expected": "Présent",
+      "message": "Schéma JSON-LD Organization présent."
+    },
+    {
+      "id": "S32",
+      "category": "JSON_LD",
+      "severity": "INFO",
+      "status": "PASS",
+      "observed": "Présent",
+      "expected": "Présent",
+      "message": "Schéma JSON-LD FAQPage présent."
+    },
+    {
+      "id": "S33",
+      "category": "JSON_LD",
+      "severity": "INFO",
+      "status": "PASS",
+      "observed": "Présent",
+      "expected": "Présent",
+      "message": "Schéma JSON-LD BreadcrumbList présent."
+    }
+  ]
+}

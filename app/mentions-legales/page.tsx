@@ -1,4 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import BreadcrumbJsonLd from "@/components/breadcrumb-jsonld";
 import Link from "next/link";
 import BreadcrumbNav from "@/components/breadcrumb-nav";
 import ScrollToTop from "@/components/scroll-to-top";
@@ -8,7 +9,7 @@ export const metadata: Metadata = {
   title: "Mentions Légales",
   description: "Consultez les mentions légales de GH Épaviste. Informations sur l'éditeur du site, l'hébergement et la propriété intellectuelle.",
   alternates: { canonical: "https://gh-epaviste.fr/mentions-legales" },
-  robots: { index: false, follow: true },
+  robots: { index: true, follow: true },
   openGraph: {
     title: "Mentions Légales",
     description: "Mentions légales et informations éditoriales pour le site de GH Épaviste.",
@@ -27,13 +28,17 @@ export const metadata: Metadata = {
 export default function MentionsLegalesPage() {
   return (
     <div className="min-h-screen bg-gray-50">
+      <BreadcrumbJsonLd items={[
+        { name: "Accueil", url: "https://gh-epaviste.fr/" },
+        { name: "Mentions Légales", url: "https://gh-epaviste.fr/mentions-legales" },
+      ]} />
       <BreadcrumbNav />
 
       <main className="py-12" id="main-content">
         <div className="container mx-auto px-4 max-w-4xl">
           <Card>
             <CardHeader>
-              <CardTitle id="mentions-legales-heading" className="text-3xl font-bold text-black">Mentions Légales</CardTitle>
+              <h1></h1>
               <p className="text-gray-600">Informations légales concernant GH Épaviste</p>
             </CardHeader>
             <CardContent className="prose max-w-none">

@@ -1,0 +1,242 @@
+{
+  "city": "Melun",
+  "department": "77",
+  "quartiers": [],
+  "rues": [
+    "Avenue Alexandre Ribot",
+    "Avenue Georges Pompidou",
+    "Avenue Thiers",
+    "Avenue de Corbeil",
+    "Avenue de Meaux",
+    "Avenue de la Libération",
+    "Avenue du Général Patton",
+    "Boulevard Aristide Briand",
+    "Boulevard Chamblain",
+    "Boulevard de l'Almont",
+    "Route de Montereau",
+    "Route de Voisenon",
+    "Rue Albert Moreau",
+    "Rue Bancel",
+    "Rue Camille Flammarion",
+    "Rue Claude Debussy",
+    "Rue Crévoulin",
+    "Rue Dajot",
+    "Rue Daubigny",
+    "Rue Delaunoy",
+    "Rue Doré",
+    "Rue Eugene Gonon",
+    "Rue Gatelliet",
+    "Rue Georges Clémenceau",
+    "Rue Georges Louis Buffon",
+    "Rue Jacques Oudot",
+    "Rue Louis Charles Vernin",
+    "Rue Marc - Antoine Charpentier",
+    "Rue René Pouteau",
+    "Rue Saint Ambroise",
+    "Rue Saint Aspais",
+    "Rue Saint Barthélémy",
+    "Rue Saint Liesne",
+    "Rue de Belle Ombre",
+    "Rue de Dammarie",
+    "Rue de l'Ecluse",
+    "Rue de la Fontaine la Reine",
+    "Rue de la Rochette",
+    "Rue de la Varenne",
+    "Rue des 3 Moulins",
+    "Rue des Castors",
+    "Rue des Mézereaux",
+    "Rue du Docteur Pouillot",
+    "Rue du Gatinais",
+    "Rue du Général de Gaulle",
+    "Rue du President Despatys",
+    "Rue du Prieuré Saint Sauveur",
+    "Rue la Fontaine"
+  ],
+  "stations_metro": [],
+  "gares": [],
+  "parcs": [],
+  "hopitaux": [],
+  "cliniques": [],
+  "centres_commerciaux": [],
+  "zones_activites": [],
+  "ponts": [],
+  "quais": [],
+  "monuments": [
+    "Château de Fontainebleau",
+    "Château de Vaux-le-Pénil",
+    "Château de Vaux-le-Vicomte",
+    "Château fort"
+  ],
+  "batiments_publics": [
+    "Bibliothèque nationale de France"
+  ],
+  "communes_limitrophes": [
+    "Dammarie-les-Lys",
+    "La Rochette (Seine-et-Marne)",
+    "Le Mée-sur-Seine",
+    "Maincy",
+    "Rubelles",
+    "Vaux-le-Pénil",
+    "Vert-Saint-Denis",
+    "Voisenon (Seine-et-Marne)"
+  ],
+  "sources": {
+    "Overpass API": {
+      "quartiers": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "stations_metro": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "gares": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "parcs": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "hopitaux": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "cliniques": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "centres_commerciaux": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "zones_activites": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "ponts": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "quais": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "monuments": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "batiments_publics": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      }
+    },
+    "Overpass Géométrie": {
+      "communes_limitrophes": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      }
+    },
+    "Wikipedia HTML": {
+      "communes_limitrophes": {
+        "trouves": 8,
+        "retenus": 8,
+        "ignores": 0,
+        "exclusions": []
+      }
+    },
+    "Data.gouv.fr BAN": {
+      "rues": {
+        "trouves": 50,
+        "retenus": 48,
+        "ignores": 2,
+        "exclusions": [
+          {
+            "nom": "Rue de Melun",
+            "raison": "Commune différente: Pontault-Combault"
+          },
+          {
+            "nom": "Passage de Melun",
+            "raison": "Commune différente: Paris"
+          }
+        ]
+      }
+    },
+    "Wikipedia API": {
+      "monuments": {
+        "trouves": 4,
+        "retenus": 4,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "batiments_publics": {
+        "trouves": 1,
+        "retenus": 1,
+        "ignores": 0,
+        "exclusions": []
+      }
+    }
+  },
+  "timing": {
+    "overpass_poi": {
+      "durationSec": 77.5,
+      "status": "EMPTY"
+    },
+    "overpass_geo": {
+      "durationSec": 78.9,
+      "status": "EMPTY"
+    },
+    "wikipedia_html": {
+      "durationSec": 1.6,
+      "status": "OK"
+    },
+    "ban": {
+      "durationSec": 1,
+      "status": "OK"
+    },
+    "wikipedia_api": {
+      "durationSec": 0.3,
+      "status": "OK"
+    }
+  },
+  "validation": {
+    "status": "SUCCESS",
+    "quality": "PARTIAL",
+    "schemaVersion": "1.0",
+    "fetched": true,
+    "sources": {
+      "overpass_poi": false,
+      "overpass_geo": false,
+      "wikipedia_html": true,
+      "wikipedia_api": true,
+      "ban": true
+    },
+    "totalDurationSec": 159.3
+  }
+}

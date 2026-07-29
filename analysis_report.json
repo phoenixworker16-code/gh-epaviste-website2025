@@ -1,0 +1,652 @@
+[
+  {
+    "file": "alfortville.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "antony.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "argenteuil.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "arpajon.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "asnieres-sur-seine.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "athis-mons.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "aubervilliers.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "aulnay-sous-bois.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "bagnolet.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "bezons.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "bobigny.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "boissy-saint-leger.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "bondy.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "boulogne-billancourt.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "brie-comte-robert.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "cergy.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "champigny-sur-marne.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "charenton-le-pont.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "chatenay-malabry.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "chatou.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "chelles.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "choisy-le-roi.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "clamart.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "clichy-sous-bois.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "clichy.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "colombes.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "conflans-sainte-honorine.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "corbeil-essonnes.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "coubron.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "coulommiers.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "courbevoie.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "creteil.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "drancy.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "draveil.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "dugny.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "enghien-les-bains.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "epinay-sur-seine.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "eragny-sur-oise.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "ermont.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "etampes.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "evry-courcouronnes.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "fontainebleau.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "fontenay-sous-bois.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "gagny.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "garches.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "garges-les-gonesse.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "gif-sur-yvette.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "gonesse.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "gournay-sur-marne.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "guyancourt.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "herblay-sur-seine.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "houilles.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "issy-les-moulineaux.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "ivry-sur-seine.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "joinville-le-pont.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "juvisy-sur-orge.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "la-courneuve.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "le-blanc-mesnil.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "le-bourget.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "le-pre-saint-gervais.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "le-raincy.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "le-vesinet.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "les-lilas.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "les-pavillons-sous-bois.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "les-ulis.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "levallois-perret.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "lile-saint-denis.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "livry-gargan.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "lognes.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "longjumeau.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "maisons-alfort.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "maisons-laffitte.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "mantes-la-jolie.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "marines.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "massy.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "meaux.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "melun.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "moissy-cramayel.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "montereau-fault-yonne.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "montfermeil.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "montigny-le-bretonneux.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "montmorency.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "montreuil.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "montrouge.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "nanterre.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "neuilly-plaisance.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "neuilly-sur-marne.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "nogent-sur-marne.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "noisiel.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "noisy-le-grand.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "noisy-le-sec.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "ozoir-la-ferriere.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "palaiseau.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "pantin.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "paris.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "poissy.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "pontault-combault.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "pontoise.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "provins.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "rambouillet.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "ris-orangis.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "romainville.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "rosny-sous-bois.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "rueil-malmaison.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "saint-denis.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "saint-germain-en-laye.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "saint-maur-des-fosses.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "saint-ouen-laumone.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "saint-ouen-sur-seine.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "sainte-genevieve-des-bois.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "sarcelles.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "sartrouville.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "savigny-le-temple.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "sceaux.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "sevran.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "stains.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "taverny.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "torcy.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "trappes.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "tremblay-en-france.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "vaujours.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "velizy-villacoublay.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "versailles.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "villemomble.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "villeneuve-saint-georges.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "villepinte.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "villetaneuse.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "vincennes.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "viry-chatillon.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  },
+  {
+    "file": "vitry-sur-seine.ts",
+    "hasCityName": false,
+    "hasSlugConst": false
+  }
+]

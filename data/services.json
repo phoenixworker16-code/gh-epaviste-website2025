@@ -1,0 +1,694 @@
+[
+  {
+    "slug": "enlevement-epave-gratuit",
+    "title": "Enlèvement d'épave gratuit",
+    "metaTitle": "Enlèvement d'Épave Gratuit en Île-de-France | GH Épaviste",
+    "metaDescription": "Enlèvement d'épave 100% gratuit en Île-de-France. GH Épaviste retire votre véhicule hors d'usage sans frais en 24h, 7j/7. Appelez le 07 53 12 07 93.",
+    "h1": "Enlèvement d'épave gratuit en Île-de-France",
+    "intro": "GH Épaviste propose l'enlèvement gratuit de votre véhicule hors d'usage dans les 8 départements d'Île-de-France. Pas de frais de déplacement, pas de frais de remorquage : notre service est entièrement pris en charge. Nous intervenons sous 24h, 7 jours sur 7, quelle que soit l'état ou la localisation du véhicule.",
+    "icon": "Truck",
+    "badge": "Service phare",
+    "color": "yellow",
+    "sections": [
+      {
+        "title": "Pourquoi l'enlèvement est-il gratuit ?",
+        "content": "La gratuité de notre service repose sur la valorisation des matériaux issus du recyclage automobile. Les métaux, plastiques et fluides récupérés lors du traitement du véhicule permettent de financer intégralement l'opération d'enlèvement. Vous n'avez donc rien à payer."
+      },
+      {
+        "title": "Quels véhicules acceptons-nous ?",
+        "content": "Nous acceptons tous les types de véhicules légers hors d'usage : voitures particulières, motos, scooters, fourgonnettes, utilitaires légers. Le véhicule peut être accidenté, brûlé, en panne définitive, rouillé ou simplement inutilisable."
+      },
+      {
+        "title": "Comment se déroule l'enlèvement ?",
+        "content": "1. Vous nous contactez via le formulaire ou par téléphone. 2. Nous planifions l'intervention (souvent le jour même). 3. Nos opérateurs arrivent avec une dépanneuse professionnelle. 4. Co-signature du certificat de cession sur place. 5. Enlèvement du véhicule. 6. Le certificat de destruction vous est transmis dès émission par le centre VHU agréé partenaire."
+      }
+    ],
+    "faq": [
+      {
+        "q": "L'enlèvement d'épave est-il vraiment gratuit ?",
+        "a": "Oui, entièrement gratuit. GH Épaviste prend en charge tous les frais : déplacement, remorquage et formalités administratives. Aucun frais caché."
+      },
+      {
+        "q": "Quels documents faut-il préparer ?",
+        "a": "Vous avez besoin de la carte grise originale, d'une pièce d'identité valide et d'un certificat de non-gage de moins de 15 jours (gratuit sur histovec.interieur.gouv.fr)."
+      },
+      {
+        "q": "Intervenez-vous le week-end ?",
+        "a": "Oui, nous intervenons 7 jours sur 7, y compris les samedis, dimanches et jours fériés, de 8h à 22h."
+      },
+      {
+        "q": "Que se passe-t-il si le véhicule est sur une propriété privée ?",
+        "a": "Nous intervenons sur votre propriété privée, parking, garage ou cour. La seule condition est un accès possible pour notre dépanneuse."
+      }
+    ],
+    "relatedDepts": ["paris", "seine-et-marne", "yvelines", "essonne", "hauts-de-seine", "seine-saint-denis", "val-de-marne", "val-d-oise"]
+  },
+  {
+    "slug": "enlevement-voiture-accidentee",
+    "title": "Enlèvement voiture accidentée",
+    "metaTitle": "Enlèvement Voiture Accidentée Gratuit en Île-de-France | GH Épaviste",
+    "metaDescription": "Voiture accidentée à enlever en Île-de-France ? GH Épaviste intervient gratuitement sous 24h pour les voitures accidentées, épaves de sinistre, véhicules endommagés. 07 53 12 07 93.",
+    "h1": "Enlèvement de voiture accidentée gratuit en Île-de-France",
+    "intro": "Votre voiture a subi un accident et n'est plus en état de rouler ? GH Épaviste intervient rapidement pour retirer gratuitement votre véhicule accidenté. Nous prenons en charge les véhicules tous états, même fortement endommagés, dans les 8 départements d'Île-de-France.",
+    "icon": "AlertTriangle",
+    "badge": null,
+    "color": "red",
+    "sections": [
+      {
+        "title": "Véhicules accidentés : tous profils acceptés",
+        "content": "Nous acceptons les voitures accidentées quelle que soit la nature du sinistre : collision frontale, tonneau, choc latéral, véhicule sur le toit, accident avec déformation importante de la carrosserie. L'état du véhicule n'influe pas sur la gratuité du service."
+      },
+      {
+        "title": "Après un sinistre : nos conseils",
+        "content": "Après un accident, si votre assurance déclare le véhicule en perte totale (VEI ou VRADE), vous pouvez choisir de céder le véhicule plutôt que d'accepter la valeur résiduelle. GH Épaviste prend en charge le véhicule gratuitement et effectue les formalités de cession en votre nom."
+      },
+      {
+        "title": "Intervention rapide après sinistre",
+        "content": "Nous pouvons intervenir le jour même de votre appel pour les situations urgentes. Nos dépanneuses sont équipées de systèmes de treuillage pour les véhicules immobilisés ou en position difficile."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Peut-on enlever une voiture accidentée sans carte grise ?",
+        "a": "C'est possible dans certaines situations. Consultez notre guide dédié ou appelez-nous pour étudier votre cas spécifique."
+      },
+      {
+        "q": "La voiture est encore sous assurance : puis-je quand même faire appel à vous ?",
+        "a": "Oui. Si votre assurance a déclaré le véhicule en perte totale, vous pouvez mandater GH Épaviste pour l'enlèvement. Nous vous conseillons de vérifier les termes de votre contrat au préalable."
+      },
+      {
+        "q": "Intervenez-vous sur les lieux d'un accident (voirie, parking) ?",
+        "a": "Oui, sous réserve que l'intervention soit coordonnée avec les forces de l'ordre si le véhicule est sur la voie publique et que la scène d'accident est sécurisée."
+      }
+    ],
+    "relatedDepts": ["paris", "seine-saint-denis", "hauts-de-seine", "val-de-marne"]
+  },
+  {
+    "slug": "enlevement-voiture-brulee",
+    "title": "Enlèvement voiture brûlée",
+    "metaTitle": "Enlèvement Voiture Brûlée Gratuit Île-de-France | GH Épaviste",
+    "metaDescription": "Voiture brûlée à enlever ? GH Épaviste intervient gratuitement pour le retrait de véhicules incendiés en Île-de-France. Intervention 24h/7j. 07 53 12 07 93.",
+    "h1": "Enlèvement de voiture brûlée gratuit en Île-de-France",
+    "intro": "Un véhicule incendié représente un danger environnemental et une nuisance visuelle majeure. GH Épaviste intervient rapidement pour retirer gratuitement les voitures brûlées, quelle qu'en soit la cause (incendie accidentel, incendie criminel, feu de moteur). Service disponible 24h/7j dans toute l'Île-de-France.",
+    "icon": "Flame",
+    "badge": null,
+    "color": "orange",
+    "sections": [
+      {
+        "title": "Spécificités de l'enlèvement de véhicules incendiés",
+        "content": "Les véhicules brûlés nécessitent une manipulation spéciale : nos opérateurs utilisent des équipements de protection adaptés et des dépanneuses dédiées pour le transport sécurisé de ces véhicules. Les résidus de combustion (huiles, plastiques fondus, métaux déformés) sont traités conformément à la réglementation ICPE."
+      },
+      {
+        "title": "Que faire en cas de véhicule incendié sur voie publique ?",
+        "content": "Sur voie publique, contactez d'abord les pompiers si le feu est actif, puis la police ou la gendarmerie pour constater les faits. Une fois l'intervention des secours terminée, GH Épaviste peut enlever le véhicule, que vous en soyez propriétaire ou que la commune souhaite dégager la voirie."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Peut-on enlever une voiture brûlée sans papiers ?",
+        "a": "Dans le cas d'un véhicule fortement endommagé ou dont les documents ont brûlé, des procédures alternatives existent. Appelez-nous pour évaluer votre situation."
+      },
+      {
+        "q": "Qui doit signaler un véhicule brûlé sur la voie publique ?",
+        "a": "Le propriétaire ou la commune peut signaler le véhicule. Si vous êtes propriétaire, nous recommandons de déposer une plainte pour incendie criminel avant l'enlèvement pour vos démarches d'assurance."
+      },
+      {
+        "q": "L'enlèvement d'une voiture brûlée est-il aussi gratuit ?",
+        "a": "Oui, entièrement gratuit, comme pour tous nos enlèvements. L'état du véhicule (brûlé, rouillé, accidenté) ne change pas la gratuité du service."
+      }
+    ],
+    "relatedDepts": ["paris", "seine-saint-denis", "val-de-marne", "essonne"]
+  },
+  {
+    "slug": "enlevement-voiture-en-panne",
+    "title": "Enlèvement voiture en panne",
+    "metaTitle": "Enlèvement Voiture en Panne Définitive Île-de-France | GH Épaviste",
+    "metaDescription": "Voiture en panne irréparable à enlever ? GH Épaviste retire gratuitement votre véhicule en panne définitive en Île-de-France. Intervention rapide, 07 53 12 07 93.",
+    "h1": "Enlèvement de voiture en panne définitive en Île-de-France",
+    "intro": "Votre véhicule est en panne irréparable — moteur grillé, boîte de vitesses hors d'usage, châssis corrodé — et vous souhaitez vous en débarrasser sans frais ? GH Épaviste enlève gratuitement votre voiture en panne dans toute l'Île-de-France, même si elle ne démarre plus et ne roule plus.",
+    "icon": "Wrench",
+    "badge": null,
+    "color": "blue",
+    "sections": [
+      {
+        "title": "Panne mécanique irréparable : nos solutions",
+        "content": "Un devis de réparation trop élevé par rapport à la valeur du véhicule ? Un moteur HS, une transmission défaillante ou une carrosserie trop endommagée pour être économiquement réparable ? Ces situations justifient la mise au rebut du véhicule. GH Épaviste intervient gratuitement et gère toutes les formalités."
+      },
+      {
+        "title": "Véhicules immobilisés depuis longtemps",
+        "content": "Même si votre véhicule est immobilisé depuis des mois ou des années (pneus à plat, batteries mortes, prise de rouille avancée), nos équipes disposent du matériel pour le remorquer sans dommages supplémentaires sur votre propriété."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Peut-on enlever une voiture dont le moteur est en panne ?",
+        "a": "Oui, c'est même notre spécialité. Nous utilisons des dépanneuses professionnelles qui ne nécessitent pas que le véhicule soit en état de rouler."
+      },
+      {
+        "q": "Ma voiture est garée dans un garage souterrain en panne : intervenez-vous ?",
+        "a": "Oui, sous réserve de hauteur suffisante pour notre matériel. Contactez-nous pour évaluer la faisabilité selon les dimensions de l'accès."
+      },
+      {
+        "q": "La voiture est en panne depuis 2 ans et rouillée : acceptez-vous quand même ?",
+        "a": "Oui. L'état d'usure ou de rouille du véhicule n'a pas d'incidence sur la gratuité ni la faisabilité de l'enlèvement."
+      }
+    ],
+    "relatedDepts": ["paris", "hauts-de-seine", "yvelines", "val-d-oise"]
+  },
+  {
+    "slug": "enlevement-moto-epave",
+    "title": "Enlèvement moto épave",
+    "metaTitle": "Enlèvement Moto Épave Gratuit Île-de-France | GH Épaviste",
+    "metaDescription": "Enlèvement gratuit de moto épave, scooter ou deux-roues hors d'usage en Île-de-France. GH Épaviste intervient rapidement. Appelez le 07 53 12 07 93.",
+    "h1": "Enlèvement de moto épave gratuit en Île-de-France",
+    "intro": "GH Épaviste enlève gratuitement les motos et scooters hors d'usage en Île-de-France. Deux-roues accidentés, brûlés, en panne ou abandonnés : nous prenons en charge tous les deux-roues motorisés, quelle que soit la cylindrée.",
+    "icon": "Bike",
+    "badge": null,
+    "color": "gray",
+    "sections": [
+      {
+        "title": "Deux-roues acceptés",
+        "content": "Nous acceptons toutes les motos (125cc, moyenne et grande cylindrée), scooters, cyclomoteurs, maxiscooters, side-cars et trikes hors d'usage. Les marques et modèles ne constituent pas de critère de sélection."
+      },
+      {
+        "title": "Spécificités de l'enlèvement des deux-roues",
+        "content": "L'enlèvement d'une moto requiert un équipement spécifique différent des voitures. Nos opérateurs utilisent des rampes et sangles adaptées. Le véhicule est chargé sur plateau ou remorque spécialisée pour éviter tout dommage supplémentaire."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Enlevez-vous les scooters électriques hors d'usage ?",
+        "a": "Oui. Les scooters électriques nécessitent une attention particulière pour la batterie lithium, que nos opérateurs sont formés à gérer conformément à la réglementation."
+      },
+      {
+        "q": "Ma moto est dans ma cave ou au sous-sol : intervenez-vous ?",
+        "a": "Oui, si l'accès est possible pour notre matériel. Nous évaluons la faisabilité lors de la prise de rendez-vous."
+      },
+      {
+        "q": "L'enlèvement de moto est-il vraiment gratuit aussi ?",
+        "a": "Oui, comme pour tous nos enlèvements. La gratuité s'applique aux deux-roues comme aux voitures."
+      }
+    ],
+    "relatedDepts": ["paris", "seine-saint-denis", "hauts-de-seine", "val-de-marne"]
+  },
+  {
+    "slug": "enlevement-utilitaire-epave",
+    "title": "Enlèvement utilitaire épave",
+    "metaTitle": "Enlèvement Utilitaire Épave Gratuit Île-de-France | GH Épaviste",
+    "metaDescription": "Enlèvement gratuit d'utilitaire épave, fourgon ou camionnette hors d'usage en Île-de-France. GH Épaviste enlève vos véhicules utilitaires légers. 07 53 12 07 93.",
+    "h1": "Enlèvement d'utilitaire épave gratuit en Île-de-France",
+    "intro": "Fourgonnette, van, camionnette ou véhicule utilitaire léger hors d'usage à enlever ? GH Épaviste prend en charge gratuitement l'enlèvement de vos utilitaires légers (jusqu'à 3,5T) en Île-de-France. Intervention rapide pour les professionnels comme les particuliers.",
+    "icon": "Truck",
+    "badge": null,
+    "color": "green",
+    "sections": [
+      {
+        "title": "Utilitaires légers acceptés",
+        "content": "Nous intervenons pour l'enlèvement des fourgonnettes (Renault Trafic, Citroën Berlingo, Ford Transit, etc.), vans aménagés, camionnettes de livraison et pick-up légers, pour autant que le PTAC soit inférieur ou égal à 3,5 tonnes."
+      },
+      {
+        "title": "Procédure spécifique pour les véhicules d'entreprise",
+        "content": "Pour les utilitaires appartenant à une entreprise ou une société, des documents supplémentaires peuvent être requis : extrait Kbis, mandat du représentant légal pour la signature du certificat de cession. Contactez-nous pour préparer votre dossier."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Enlevez-vous les utilitaires de plus de 3,5T ?",
+        "a": "Non, notre service concerne les véhicules légers jusqu'à 3,5T de PTAC. Pour les poids lourds, contactez un prestataire spécialisé en VHU poids lourds."
+      },
+      {
+        "q": "L'utilitaire appartient à mon entreprise : qui signe le certificat de cession ?",
+        "a": "Le représentant légal de l'entreprise ou toute personne mandatée par lui peut signer le certificat de cession."
+      },
+      {
+        "q": "Le véhicule utilitaire est encore en leasing : puis-je le faire enlever ?",
+        "a": "Non, vous devez d'abord vous rapprocher de la société de leasing pour restituer le véhicule ou obtenir leur accord écrit. GH Épaviste ne peut enlever que les véhicules dont vous êtes légalement propriétaire."
+      }
+    ],
+    "relatedDepts": ["paris", "seine-et-marne", "yvelines", "essonne"]
+  },
+  {
+    "slug": "enlevement-voiture-sans-carte-grise",
+    "title": "Enlèvement sans carte grise",
+    "metaTitle": "Enlèvement Épave Sans Carte Grise Île-de-France | GH Épaviste",
+    "metaDescription": "Vous avez perdu la carte grise de votre épave ? GH Épaviste vous explique les solutions pour enlever votre véhicule sans carte grise en Île-de-France. 07 53 12 07 93.",
+    "h1": "Enlèvement d'épave sans carte grise en Île-de-France",
+    "intro": "La carte grise est-elle obligatoire pour faire enlever une épave ? Dans la plupart des cas, oui. Mais des solutions existent si vous l'avez perdue, si le véhicule a été acheté sans papiers, ou si la carte grise a brûlé avec le véhicule. GH Épaviste vous guide dans les démarches adaptées.",
+    "icon": "FileText",
+    "badge": "Guide pratique",
+    "color": "purple",
+    "sections": [
+      {
+        "title": "Pourquoi la carte grise est-elle nécessaire ?",
+        "content": "La carte grise (certificat d'immatriculation) prouve que vous êtes le propriétaire légal du véhicule. Sans elle, le centre de traitement VHU agréé ne peut pas réaliser la procédure de destruction dans les conditions réglementaires."
+      },
+      {
+        "title": "Solutions si vous n'avez plus la carte grise",
+        "content": "Option 1 : Demandez un duplicata de carte grise sur le site de l'ANTS (service en ligne, délai 5 à 10 jours ouvrés). Option 2 : Si le véhicule a plus de 25 ans et est considéré comme abandon, des procédures spécifiques existent via la mairie. Option 3 : Si la carte grise a brûlé avec le véhicule, un certificat de perte peut être établi auprès de la préfecture. Contactez-nous pour être guidé dans votre situation spécifique."
+      },
+      {
+        "title": "Cas particulier : véhicule acheté sans papiers",
+        "content": "Un véhicule acheté de particulier à particulier sans carte grise ne peut légalement pas être cédé ni mis au rebut sans régularisation préalable. GH Épaviste ne peut pas enlever ces véhicules sans justificatif de propriété valable."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Puis-je faire enlever mon épave avec seulement la carte d'identité ?",
+        "a": "Non, la carte grise est obligatoire. Sans elle, la procédure VHU réglementaire ne peut pas être finalisée. Des alternatives existent si vous l'avez perdue."
+      },
+      {
+        "q": "Combien de temps prend l'obtention d'un duplicata de carte grise ?",
+        "a": "La demande en ligne via l'ANTS prend généralement 5 à 10 jours ouvrés. Une fois obtenu, vous pouvez planifier l'enlèvement immédiatement."
+      },
+      {
+        "q": "La carte grise est au nom de l'ancien propriétaire : est-ce un problème ?",
+        "a": "Oui. La carte grise doit être à votre nom pour que vous puissiez légalement céder le véhicule. Si vous avez acheté ce véhicule, régularisez d'abord le transfert de propriété."
+      }
+    ],
+    "relatedDepts": ["paris", "seine-et-marne", "yvelines", "essonne", "hauts-de-seine", "seine-saint-denis", "val-de-marne", "val-d-oise"]
+  },
+  {
+    "slug": "enlevement-epave-parking-souterrain",
+    "title": "Enlèvement épave parking souterrain",
+    "metaTitle": "Enlèvement Épave Parking Souterrain Île-de-France | GH Épaviste",
+    "metaDescription": "Épave dans un parking souterrain, une cave ou un garage en sous-sol ? GH Épaviste enlève gratuitement les véhicules en sous-sol en Île-de-France. 07 53 12 07 93.",
+    "h1": "Enlèvement d'épave en parking souterrain en Île-de-France",
+    "intro": "Votre épave est coincée dans un parking souterrain, une cave ou un box de garage ? Cette situation requiert un équipement spécifique. GH Épaviste dispose du matériel adapté pour intervenir en milieu contraint (hauteur réduite, manœuvrabilité limitée) dans les parkings souterrains d'Île-de-France.",
+    "icon": "Building",
+    "badge": null,
+    "color": "dark",
+    "sections": [
+      {
+        "title": "Contraintes spécifiques des parkings souterrains",
+        "content": "Les parkings souterrains imposent des contraintes particulières : hauteur sous plafond limitée (souvent 1,90m à 2,10m), rampes d'accès, larges de manœuvre réduits. Nos opérateurs évaluent chaque situation avant l'intervention pour adapter le matériel (plateforme basse, treuil, chariot de transfert)."
+      },
+      {
+        "title": "Procédure pour les copropriétés",
+        "content": "Pour les parkings de copropriété, la démarche peut nécessiter l'accord du syndic. Nous pouvons vous accompagner dans les démarches si le véhicule est considéré comme abandonné. Un accord écrit du syndic facilite l'intervention."
+      },
+      {
+        "title": "Véhicule en épave dans un box privatif",
+        "content": "Si le véhicule est dans votre box ou garage privatif, l'enlèvement est plus simple. Il vous suffit de nous fournir les accès nécessaires (badges de parking, télécommande de porte). Nous nous chargeons du reste."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Intervenez-vous si la hauteur du parking est inférieure à 2m ?",
+        "a": "Nous évaluons au cas par cas selon les dimensions de l'accès et du véhicule. Appelez-nous avec les mesures précises pour confirmer la faisabilité."
+      },
+      {
+        "q": "Le véhicule appartient à quelqu'un d'autre et est abandonné dans mon parking : que faire ?",
+        "a": "Vous devez suivre la procédure d'abandon de véhicule (mise en demeure, constat d'huissier, autorisation préfectorale). GH Épaviste peut intervenir une fois cette procédure complétée."
+      },
+      {
+        "q": "L'intervention en parking souterrain est-elle aussi gratuite ?",
+        "a": "Oui, dans la mesure où l'accès est techniquement possible avec notre matériel. L'évaluation préalable est gratuite."
+      }
+    ],
+    "relatedDepts": ["paris", "hauts-de-seine", "seine-saint-denis", "val-de-marne"]
+  },
+  {
+    "slug": "reprise-vehicule-hors-usage",
+    "title": "Reprise véhicule hors d'usage",
+    "metaTitle": "Reprise Véhicule Hors d'Usage (VHU) en Île-de-France | GH Épaviste",
+    "metaDescription": "GH Épaviste assure la reprise de votre véhicule hors d'usage (VHU) en Île-de-France. Service gratuit, conforme à la réglementation. Appelez le 07 53 12 07 93.",
+    "h1": "Reprise de véhicule hors d'usage (VHU) en Île-de-France",
+    "intro": "La reprise de véhicule hors d'usage (VHU) désigne la procédure réglementaire de remise d'un véhicule à la filière de recyclage officielle. GH Épaviste organise cette reprise gratuitement et s'assure que toutes les étapes administratives sont correctement effectuées.",
+    "icon": "RotateCcw",
+    "badge": null,
+    "color": "teal",
+    "sections": [
+      {
+        "title": "Qu'est-ce qu'un véhicule hors d'usage (VHU) ?",
+        "content": "Selon la réglementation française (Code de l'environnement), un VHU est un véhicule dont le propriétaire souhaite se débarrasser ou tout véhicule destiné à la ferraille. Cette définition couvre les voitures accidentées, en panne irréparable, brûlées ou trop vieilles pour être rentablement réparées."
+      },
+      {
+        "title": "Obligations légales du propriétaire",
+        "content": "Le propriétaire d'un VHU est légalement tenu de le remettre à un opérateur habilité (centre VHU agréé ou prestataire de collecte partenaire comme GH Épaviste). L'abandon d'un VHU sur la voie publique ou dans la nature est passible d'une amende pouvant atteindre 75 000€ et 2 ans d'emprisonnement."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Quelle est la différence entre 'enlèvement d'épave' et 'reprise VHU' ?",
+        "a": "Ces termes désignent la même opération. 'Enlèvement d'épave' est l'usage courant, 'reprise VHU' est le terme réglementaire officiel. La procédure est identique."
+      },
+      {
+        "q": "Puis-je être sanctionné si je ne déclare pas ma voiture hors d'usage ?",
+        "a": "Oui. Si votre véhicule reste immatriculé mais non utilisé sans être déclaré en VHU, vous continuez à en être responsable légalement. La déclaration de cession officialise la fin de votre responsabilité."
+      }
+    ],
+    "relatedDepts": ["paris", "seine-et-marne", "yvelines", "essonne", "hauts-de-seine", "seine-saint-denis", "val-de-marne", "val-d-oise"]
+  },
+  {
+    "slug": "remorquage-epave-urgence",
+    "title": "Remorquage épave urgence",
+    "metaTitle": "Remorquage Épave Urgence Île-de-France | GH Épaviste — Intervention Rapide",
+    "metaDescription": "Besoin d'un remorquage d'épave en urgence en Île-de-France ? GH Épaviste intervient rapidement 7j/7 pour le remorquage gratuit de votre véhicule hors d'usage. 07 53 12 07 93.",
+    "h1": "Remorquage d'épave en urgence en Île-de-France",
+    "intro": "Une situation nécessite l'enlèvement rapide de votre épave ? Véhicule gênant la circulation, arrêté municipal de mise en fourrière, sinistre récent ? GH Épaviste peut intervenir en urgence pour le remorquage gratuit de votre épave dans toute l'Île-de-France.",
+    "icon": "Zap",
+    "badge": "Urgence",
+    "color": "red",
+    "sections": [
+      {
+        "title": "Situations nécessitant une intervention urgente",
+        "content": "Nous intervenons en priorité pour : véhicule bloquant une entrée ou un accès privé, véhicule gênant la circulation sur voie publique, mise en demeure de la mairie ou de la copropriété, après un incendie ou accident récent nécessitant de dégager la zone."
+      },
+      {
+        "title": "Délais d'intervention en urgence",
+        "content": "En cas d'urgence déclarée, nous faisons notre maximum pour intervenir dans la demi-journée. Les délais varient selon la disponibilité de nos équipes et votre localisation en Île-de-France. Appelez directement le 07 53 12 07 93 pour une réponse immédiate."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Intervenez-vous la nuit pour les urgences ?",
+        "a": "Nos interventions sont disponibles de 8h à 22h, 7j/7. Pour les vraies urgences de nuit (accident, véhicule en feu), contactez les services d'urgence en premier lieu."
+      },
+      {
+        "q": "Une intervention urgente coûte-t-elle plus cher ?",
+        "a": "Non, le service reste gratuit même pour les interventions urgentes."
+      }
+    ],
+    "relatedDepts": ["paris", "hauts-de-seine", "seine-saint-denis", "val-de-marne"]
+  },
+  {
+    "slug": "rachat-epave-gratuit",
+    "title": "Rachat épave gratuit",
+    "metaTitle": "Rachat Épave Gratuit en Île-de-France | GH Épaviste",
+    "metaDescription": "GH Épaviste propose le rachat gratuit de votre épave en Île-de-France. Service sans frais, enlèvement inclus. Contactez-nous au 07 53 12 07 93.",
+    "h1": "Rachat d'épave gratuit en Île-de-France",
+    "intro": "Le 'rachat d'épave' décrit souvent ce que fait GH Épaviste : prendre en charge votre véhicule hors d'usage sans vous facturer quoi que ce soit. En pratique, nous ne versons pas de liquidités pour votre épave, mais le service d'enlèvement et toutes les formalités sont entièrement gratuits.",
+    "icon": "DollarSign",
+    "badge": null,
+    "color": "green",
+    "sections": [
+      {
+        "title": "Comprendre le 'rachat d'épave gratuit'",
+        "content": "Contrairement à certains particuliers qui achètent des pièces détachées, GH Épaviste organise la filière de recyclage réglementaire. Notre modèle : nous enlevons gratuitement votre véhicule et le confions au centre VHU agréé partenaire qui valorise les matières premières. Vous ne payez rien et vous êtes dégagé de toute responsabilité."
+      },
+      {
+        "title": "Attention aux arnaques",
+        "content": "Méfiez-vous des prestataires qui proposent de 'racheter' votre épave à prix symbolique (quelques dizaines d'euros) mais facturent ensuite le transport ou les formalités. Avec GH Épaviste, tout est gratuit et transparent dès le départ."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Peut-on vraiment enlever une épave sans rien payer ?",
+        "a": "Oui. GH Épaviste prend en charge tous les frais (déplacement, remorquage, formalités). Le service est 100% gratuit pour vous."
+      },
+      {
+        "q": "Vais-je recevoir de l'argent pour mon épave ?",
+        "a": "GH Épaviste n'achète pas les véhicules. Le service est gratuit mais sans rachat en numéraire. La valeur de recyclage est utilisée pour couvrir nos coûts opérationnels."
+      }
+    ],
+    "relatedDepts": ["paris", "seine-et-marne", "yvelines", "essonne", "hauts-de-seine", "seine-saint-denis", "val-de-marne", "val-d-oise"]
+  },
+  {
+    "slug": "demarches-administratives-vhu",
+    "title": "Démarches administratives VHU",
+    "metaTitle": "Démarches Administratives VHU Île-de-France | GH Épaviste",
+    "metaDescription": "GH Épaviste vous accompagne dans toutes les démarches administratives VHU : certificat de cession, non-gage, déclaration ANTS. Guide complet. 07 53 12 07 93.",
+    "h1": "Démarches administratives pour la mise au rebut d'un véhicule (VHU)",
+    "intro": "La mise au rebut d'un véhicule implique plusieurs formalités administratives obligatoires. GH Épaviste vous accompagne dans l'ensemble de ces démarches et gère une grande partie des formalités à votre place lors de l'enlèvement.",
+    "icon": "ClipboardList",
+    "badge": "Guide complet",
+    "color": "indigo",
+    "sections": [
+      {
+        "title": "Le certificat de cession (Cerfa n°15776)",
+        "content": "Document clé de la transaction, le certificat de cession doit être co-signé par le cédant (vous) et le cessionnaire (GH Épaviste, au nom du centre VHU partenaire). Il doit mentionner l'identité des deux parties, la description du véhicule (immatriculation, VIN), la date et l'heure de cession."
+      },
+      {
+        "title": "Le certificat de non-gage (Histovec)",
+        "content": "L'attestation de situation administrative (non-gage) prouve que le véhicule n'est pas gagé (hypothéqué) et ne fait l'objet d'aucune opposition. Elle est gratuite et disponible en ligne sur histovec.interieur.gouv.fr. Elle doit dater de moins de 15 jours au moment de la cession."
+      },
+      {
+        "title": "La déclaration de cession sur l'ANTS",
+        "content": "Après la signature du certificat de cession, vous devez déclarer la cession en ligne sur le site de l'ANTS (immatriculation.ants.gouv.fr) dans les 15 jours. Cette étape officialise la fin de votre responsabilité sur le véhicule. GH Épaviste vous explique cette démarche lors de l'enlèvement."
+      },
+      {
+        "title": "Le certificat de destruction",
+        "content": "Une fois votre véhicule remis au centre VHU agréé partenaire, ce dernier émet le certificat de destruction officiel. Ce document prouve que votre véhicule a bien été traité dans la filière légale. GH Épaviste vous le transmet par voie électronique dès réception."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Qui doit effectuer la déclaration de cession sur l'ANTS ?",
+        "a": "Le cédant (vous) doit effectuer la déclaration en ligne. GH Épaviste ne peut pas effectuer cette démarche à votre place, mais vous guide dans le processus."
+      },
+      {
+        "q": "Combien de temps après la cession dois-je déclarer sur l'ANTS ?",
+        "a": "Vous disposez de 15 jours après la signature du certificat de cession pour effectuer la déclaration en ligne sur l'ANTS."
+      },
+      {
+        "q": "GH Épaviste peut-il m'aider à obtenir le non-gage ?",
+        "a": "Nous vous indiquons comment l'obtenir gratuitement sur histovec.interieur.gouv.fr. La démarche prend environ 5 minutes."
+      }
+    ],
+    "relatedDepts": ["paris", "seine-et-marne", "yvelines", "essonne", "hauts-de-seine", "seine-saint-denis", "val-de-marne", "val-d-oise"]
+  },
+  {
+    "slug": "enlevement-vehicule-electrique",
+    "title": "Enlèvement véhicule électrique",
+    "metaTitle": "Enlèvement Véhicule Électrique Épave Île-de-France | GH Épaviste",
+    "metaDescription": "Enlèvement gratuit de véhicule électrique hors d'usage en Île-de-France. GH Épaviste gère les spécificités des batteries lithium. Appelez le 07 53 12 07 93.",
+    "h1": "Enlèvement de véhicule électrique hors d'usage en Île-de-France",
+    "intro": "Le nombre de véhicules électriques hors d'usage est en forte croissance. GH Épaviste propose l'enlèvement gratuit des voitures, scooters et utilitaires électriques en Île-de-France, avec une attention particulière aux spécificités techniques des batteries lithium-ion.",
+    "icon": "Zap",
+    "badge": "Nouveau",
+    "color": "electric",
+    "sections": [
+      {
+        "title": "Spécificités des véhicules électriques hors d'usage",
+        "content": "Les véhicules électriques contiennent des batteries lithium-ion classifiées comme matières dangereuses. Leur transport et leur traitement sont soumis à des réglementations spécifiques (ADR pour le transport, DEEE pour le traitement). Nos centres partenaires agréés disposent des certifications requises."
+      },
+      {
+        "title": "Véhicule électrique accidenté ou en feu",
+        "content": "Un véhicule électrique impliqué dans un accident ou un incendie présente des risques spécifiques (risque de remise à feu de la batterie, dégagement de gaz toxiques). Nos opérateurs suivent des protocoles stricts pour ces situations. En cas d'incendie actif, contactez d'abord les pompiers."
+      },
+      {
+        "title": "Batterie défaillante : nos solutions",
+        "content": "Une batterie lithium hors d'usage (dégradation de capacité, BMS défaillant) peut être la raison principale de mise hors d'usage. Même dans ce cas, nous pouvons enlever le véhicule gratuitement — la batterie sera traitée séparément dans la filière DEEE agréée."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Peut-on enlever une voiture électrique sans la déconnecter ?",
+        "a": "Nos opérateurs sont formés aux procédures de sécurité pour les VE. La déconnexion sécurisée est effectuée avant le chargement si nécessaire."
+      },
+      {
+        "q": "Le traitement d'un VE coûte-t-il plus cher ?",
+        "a": "Non, le service reste gratuit pour vous, même pour les véhicules électriques, malgré les contraintes spécifiques liées à la batterie."
+      },
+      {
+        "q": "Que devient la batterie de mon véhicule électrique ?",
+        "a": "La batterie est traitée dans la filière DEEE (Déchets d'Équipements Électriques et Électroniques) par notre centre partenaire certifié. Les matériaux sont recyclés (lithium, cobalt, nickel)."
+      }
+    ],
+    "relatedDepts": ["paris", "hauts-de-seine", "yvelines", "essonne"]
+  },
+  {
+    "slug": "enlevement-vehicule-hybride",
+    "title": "Enlèvement véhicule hybride",
+    "metaTitle": "Enlèvement Véhicule Hybride Épave Île-de-France | GH Épaviste",
+    "metaDescription": "Enlèvement gratuit de véhicule hybride hors d'usage en Île-de-France. GH Épaviste gère les hybrides thermique/électrique avec expertise. 07 53 12 07 93.",
+    "h1": "Enlèvement de véhicule hybride hors d'usage en Île-de-France",
+    "intro": "Les véhicules hybrides (hybride simple, hybride rechargeable, micro-hybride) présentent une combinaison de motorisations thermique et électrique. GH Épaviste enlève gratuitement ces véhicules en Île-de-France avec les précautions adaptées à chaque type de motorisation.",
+    "icon": "Battery",
+    "badge": null,
+    "color": "green",
+    "sections": [
+      {
+        "title": "Types de véhicules hybrides concernés",
+        "content": "Nous intervenons pour tous les types de véhicules hybrides : hybrides full (Toyota Prius, Honda Jazz), hybrides rechargeables (PHEV), micro-hybrides (mild hybrid) et hybrides série. Les contraintes liées à la batterie haute tension (48V ou 200-400V) sont prises en compte."
+      },
+      {
+        "title": "Précautions spécifiques aux hybrides",
+        "content": "Les véhicules hybrides disposent de deux systèmes électriques : le 12V conventionnel et le haute tension (parfois jusqu'à 400V). Nos opérateurs appliquent les procédures constructeur pour neutraliser le système haute tension avant toute manipulation."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Mon hybride est en panne de batterie HT : est-ce un problème pour l'enlèvement ?",
+        "a": "Non. Une batterie HT défaillante n'empêche pas l'enlèvement. Nos équipes disposent du matériel pour remorquer un véhicule hybride non fonctionnel."
+      },
+      {
+        "q": "L'enlèvement d'un véhicule hybride est-il gratuit comme les thermiques ?",
+        "a": "Oui, entièrement gratuit. Hybride ou thermique, notre service reste sans frais."
+      }
+    ],
+    "relatedDepts": ["paris", "hauts-de-seine", "yvelines", "val-de-marne"]
+  },
+  {
+    "slug": "enlevement-vehicule-sans-assurance",
+    "title": "Enlèvement véhicule sans assurance",
+    "metaTitle": "Enlèvement Épave Sans Assurance Île-de-France | GH Épaviste",
+    "metaDescription": "Voiture sans assurance à enlever en Île-de-France ? GH Épaviste clarifie la procédure et enlève gratuitement votre véhicule non assuré hors d'usage. 07 53 12 07 93.",
+    "h1": "Enlèvement de véhicule hors d'usage sans assurance en Île-de-France",
+    "intro": "Votre véhicule n'est plus assuré et vous souhaitez vous en débarrasser ? L'absence d'assurance ne complique pas l'enlèvement d'une épave. GH Épaviste peut prendre en charge votre véhicule non assuré gratuitement, à condition que les documents de propriété soient en règle.",
+    "icon": "ShieldOff",
+    "badge": null,
+    "color": "gray",
+    "sections": [
+      {
+        "title": "Assurance et mise au rebut : ce que vous devez savoir",
+        "content": "L'assurance n'est pas nécessaire pour procéder à l'enlèvement d'une épave. Ce qui compte, c'est votre titre de propriété (carte grise à votre nom). En revanche, si le véhicule circule encore sur la voie publique sans assurance, vous êtes en infraction — la mise au rebut est alors la meilleure solution."
+      },
+      {
+        "title": "Résiliation de l'assurance après l'enlèvement",
+        "content": "Après l'enlèvement et la signature du certificat de cession, informez votre assureur de la cession du véhicule. Vous recevrez un remboursement au prorata si votre prime était annuelle. Fournissez la copie du certificat de cession à votre assureur."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Peut-on faire enlever une voiture non assurée sans problème ?",
+        "a": "Oui, l'absence d'assurance ne pose aucun problème pour l'enlèvement, à condition que la carte grise soit à votre nom."
+      },
+      {
+        "q": "Dois-je résilier l'assurance avant ou après l'enlèvement ?",
+        "a": "Il est recommandé d'attendre d'avoir le certificat de cession signé avant de résilier. L'assurance reste valable jusqu'à la cession officielle."
+      }
+    ],
+    "relatedDepts": ["paris", "seine-et-marne", "seine-saint-denis", "val-de-marne"]
+  },
+  {
+    "slug": "enlevement-vehicule-sans-controle-technique",
+    "title": "Enlèvement sans contrôle technique",
+    "metaTitle": "Enlèvement Épave Sans Contrôle Technique Île-de-France | GH Épaviste",
+    "metaDescription": "Voiture sans contrôle technique à enlever ? GH Épaviste clarifie les règles et enlève gratuitement votre épave sans CT en Île-de-France. 07 53 12 07 93.",
+    "h1": "Enlèvement d'épave sans contrôle technique valide en Île-de-France",
+    "intro": "L'absence de contrôle technique n'est pas un obstacle à l'enlèvement d'une épave. GH Épaviste peut prendre en charge votre véhicule hors d'usage même si le contrôle technique est périmé ou inexistant, dès lors que la procédure de cession est correctement effectuée.",
+    "icon": "ClipboardX",
+    "badge": null,
+    "color": "gray",
+    "sections": [
+      {
+        "title": "Contrôle technique et mise au rebut",
+        "content": "Le contrôle technique n'est pas une condition pour la mise au rebut d'un véhicule. Il n'est nécessaire que pour faire circuler le véhicule sur la voie publique. Pour un enlèvement d'épave, seule la carte grise (à votre nom) est obligatoire."
+      },
+      {
+        "title": "Véhicule refusé au contrôle technique",
+        "content": "Si votre véhicule a été soumis à une contre-visite avec résultat 'refusé' et que vous ne souhaitez pas engager les réparations nécessaires, la mise au rebut est souvent la solution la plus économique. GH Épaviste prend en charge l'enlèvement gratuitement dans ce cas."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Faut-il un contrôle technique pour faire enlever une épave ?",
+        "a": "Non. Le contrôle technique n'est pas requis pour la mise au rebut. Seule la carte grise est nécessaire."
+      },
+      {
+        "q": "Mon véhicule a échoué au CT il y a 3 ans : puis-je quand même le faire enlever ?",
+        "a": "Oui. La péremption du CT ou l'échec à une contre-visite ne crée aucun obstacle à l'enlèvement d'épave."
+      }
+    ],
+    "relatedDepts": ["paris", "seine-et-marne", "yvelines", "essonne", "hauts-de-seine", "seine-saint-denis", "val-de-marne", "val-d-oise"]
+  },
+  {
+    "slug": "enlevement-vehicule-accidente-non-roulant",
+    "title": "Enlèvement véhicule non roulant",
+    "metaTitle": "Enlèvement Véhicule Accidenté Non Roulant Île-de-France | GH Épaviste",
+    "metaDescription": "Véhicule accidenté non roulant à enlever en Île-de-France ? GH Épaviste dispose du matériel adapté pour tous les véhicules immobilisés. Gratuit. 07 53 12 07 93.",
+    "h1": "Enlèvement de véhicule accidenté non roulant en Île-de-France",
+    "intro": "Votre véhicule ne roule plus suite à un accident ou une panne grave ? GH Épaviste dispose des équipements spécialisés (plaques de remorquage, dépanneuses plateau, treuils) pour enlever gratuitement les véhicules totalement immobilisés, quelle que soit leur position.",
+    "icon": "Car",
+    "badge": null,
+    "color": "dark",
+    "sections": [
+      {
+        "title": "Matériel adapté aux véhicules non roulants",
+        "content": "Nos dépanneuses sont équipées de plateaux inclinables et de treuils permettant de charger des véhicules sans utiliser leurs roues. Même un véhicule sur le côté, à plat ou avec des roues bloquées peut être pris en charge."
+      },
+      {
+        "title": "Véhicules en position difficile",
+        "content": "Certains véhicules accidentés se retrouvent dans des positions inhabituelles : dans un fossé, contre un mur, ou avec des roues dans le vide. Nous évaluons chaque situation avant l'intervention et adaptons notre équipement en conséquence."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Ma voiture est coincée dans un fossé : intervenez-vous ?",
+        "a": "Oui, selon la profondeur et l'accessibilité. Nous évaluons la situation par téléphone d'abord, puis sur place si nécessaire."
+      },
+      {
+        "q": "Le véhicule a les 4 roues à plat : est-ce un problème ?",
+        "a": "Non. Nos dépanneuses plateau peuvent charger un véhicule sans nécessiter que les roues soient gonflées."
+      }
+    ],
+    "relatedDepts": ["paris", "seine-saint-denis", "val-de-marne", "essonne"]
+  },
+  {
+    "slug": "enlevement-epave-ile-de-france",
+    "title": "Épaviste Île-de-France",
+    "metaTitle": "Épaviste Île-de-France — Enlèvement Gratuit dans les 8 Départements | GH Épaviste",
+    "metaDescription": "GH Épaviste : épaviste couvrant toute l'Île-de-France (75, 77, 78, 91, 92, 93, 94, 95). Enlèvement gratuit de véhicules hors d'usage, 24h/7j. 07 53 12 07 93.",
+    "h1": "Épaviste Île-de-France — Service gratuit dans les 8 départements",
+    "intro": "GH Épaviste est votre épaviste de référence pour toute l'Île-de-France. Nous intervenons dans les 8 départements — Paris (75), Seine-et-Marne (77), Yvelines (78), Essonne (91), Hauts-de-Seine (92), Seine-Saint-Denis (93), Val-de-Marne (94) et Val-d'Oise (95) — pour l'enlèvement gratuit de vos véhicules hors d'usage.",
+    "icon": "MapPin",
+    "badge": "Zone complète",
+    "color": "yellow",
+    "sections": [
+      {
+        "title": "Couverture géographique complète",
+        "content": "GH Épaviste couvre l'intégralité de l'Île-de-France grâce à son réseau d'opérateurs répartis stratégiquement dans la région. Nous desservons plus de 1 200 communes, des grandes villes aux zones péri-urbaines."
+      },
+      {
+        "title": "Axes routiers et zones desservies",
+        "content": "Nos équipes circulent quotidiennement sur les grands axes (A1, A4, A6, A10, A13, A86, Francilienne) pour garantir des délais d'intervention courts. Zones urbaines denses, péri-urbaines et rurales sont toutes desservies."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Intervenez-vous dans les zones rurales de Seine-et-Marne ou de l'Essonne ?",
+        "a": "Oui, nous couvrons l'ensemble des communes des 8 départements, y compris les zones les moins densément peuplées."
+      },
+      {
+        "q": "Quel est le délai d'intervention le plus long en Île-de-France ?",
+        "a": "Même pour les communes les plus éloignées, nous visons une intervention sous 24h à 48h maximum."
+      }
+    ],
+    "relatedDepts": ["paris", "seine-et-marne", "yvelines", "essonne", "hauts-de-seine", "seine-saint-denis", "val-de-marne", "val-d-oise"]
+  },
+  {
+    "slug": "certificat-cession-vehicule",
+    "title": "Certificat de cession véhicule",
+    "metaTitle": "Certificat de Cession Véhicule VHU — Guide Complet | GH Épaviste",
+    "metaDescription": "Tout savoir sur le certificat de cession de véhicule pour une mise au rebut VHU : démarches, formulaire Cerfa, déclaration ANTS. Guide GH Épaviste. 07 53 12 07 93.",
+    "h1": "Certificat de cession de véhicule pour mise au rebut — Guide complet",
+    "intro": "Le certificat de cession est le document central de toute mise au rebut de véhicule. GH Épaviste vous guide à travers cette formalité obligatoire et prend en charge sa co-signature lors de l'enlèvement.",
+    "icon": "FileCheck",
+    "badge": "Guide officiel",
+    "color": "blue",
+    "sections": [
+      {
+        "title": "Qu'est-ce que le certificat de cession (Cerfa 15776) ?",
+        "content": "Le certificat de cession (anciennement Cerfa 13754, maintenant formulaire 15776) est le document officiel qui acte le transfert de propriété d'un véhicule. Pour une mise au rebut, il est co-signé entre vous (le cédant) et GH Épaviste représentant le centre VHU partenaire (le cessionnaire)."
+      },
+      {
+        "title": "Comment remplir le certificat de cession ?",
+        "content": "Le certificat comprend plusieurs sections : informations sur le véhicule (immatriculation, numéro VIN, marque, modèle), informations du cédant (nom, prénom, adresse), informations du cessionnaire, date et heure de cession, et signatures des deux parties. GH Épaviste vous assiste dans le remplissage lors de l'enlèvement."
+      },
+      {
+        "title": "Déclaration obligatoire sur l'ANTS",
+        "content": "Dans les 15 jours suivant la signature, vous devez déclarer la cession en ligne sur immatriculation.ants.gouv.fr. Cette déclaration officialise la fin de votre responsabilité sur le véhicule (amendes, assurance, taxes)."
+      },
+      {
+        "title": "Après la cession : le certificat de destruction",
+        "content": "Une fois votre véhicule remis au centre VHU agréé partenaire, ce dernier émet le certificat de destruction (document prouvant la mise au rebut légale). GH Épaviste vous le fait parvenir par voie électronique dans les jours suivant l'enlèvement."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Où trouver le formulaire de certificat de cession ?",
+        "a": "Sur le site officiel service-public.fr ou immatriculation.ants.gouv.fr. GH Épaviste peut également fournir le formulaire lors de l'enlèvement."
+      },
+      {
+        "q": "Le certificat de cession doit-il être tamponné ?",
+        "a": "Non, depuis 2017 le cachet n'est plus obligatoire pour les particuliers. La signature des deux parties suffit."
+      },
+      {
+        "q": "Que se passe-t-il si je ne déclare pas la cession sur l'ANTS ?",
+        "a": "Vous restez légalement propriétaire du véhicule et donc responsable de toute amende ou infraction commise avec le véhicule après la cession. La déclaration est fortement recommandée."
+      }
+    ],
+    "relatedDepts": ["paris", "seine-et-marne", "yvelines", "essonne", "hauts-de-seine", "seine-saint-denis", "val-de-marne", "val-d-oise"]
+  }
+]

@@ -34,6 +34,9 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://gh-epaviste.fr"),
   alternates: {
     canonical: "/",
+    languages: {
+      "fr-FR": "https://gh-epaviste.fr",
+    },
   },
 
   // ─── Robots (Indexation) ───────────────────────────────
@@ -96,65 +99,104 @@ export default function RootLayout({
   const headersList = headers()
   const nonce = headersList.get('x-nonce') || undefined
 
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "AutomotiveBusiness",
-    "@id": "https://gh-epaviste.fr/#business",
-    "name": "GH Épaviste",
-    "description": "Service professionnel d'enlèvement d'épave gratuit en Île-de-France. Intervention rapide 24h/24 et 7j/7.",
-    "url": "https://gh-epaviste.fr",
-    "telephone": "+33753120793",
-    "priceRange": "0€",
-    "image": "https://gh-epaviste.fr/images/gh-logo.png",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://gh-epaviste.fr/images/gh-logo.png"
-    },
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Villeneuve-Saint-Georges",
-      "postalCode": "94190",
-      "addressLocality": "Villeneuve-Saint-Georges",
-      "addressRegion": "Île-de-France",
-      "addressCountry": "FR"
-    },
-    "geo": {
-      "@type": "GeoCircle",
-      "geoMidpoint": {
-        "@type": "GeoCoordinates",
-        "latitude": "48.8566",
-        "longitude": "2.3522"
-      },
-      "geoRadius": "100000"
-    },
-    "areaServed": [
-      { "@type": "AdministrativeArea", "name": "Paris (75)" },
-      { "@type": "AdministrativeArea", "name": "Seine-et-Marne (77)" },
-      { "@type": "AdministrativeArea", "name": "Yvelines (78)" },
-      { "@type": "AdministrativeArea", "name": "Essonne (91)" },
-      { "@type": "AdministrativeArea", "name": "Hauts-de-Seine (92)" },
-      { "@type": "AdministrativeArea", "name": "Seine-Saint-Denis (93)" },
-      { "@type": "AdministrativeArea", "name": "Val-de-Marne (94)" },
-      { "@type": "AdministrativeArea", "name": "Val-d'Oise (95)" }
-    ],
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-      "opens": "00:00",
-      "closes": "23:59"
-    },
-    "contactPoint": {
-      "@type": "ContactPoint",
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": ["Organization", "LocalBusiness"],
+      "@id": "https://gh-epaviste.fr/#organization",
+      "name": "GH Épaviste",
+      "description": "Service professionnel d'enlèvement et de remorquage de véhicules hors d'usage en Île-de-France. Chaque véhicule est confié à un centre de traitement agréé partenaire conformément à la réglementation VHU.",
+      "url": "https://gh-epaviste.fr",
       "telephone": "+33753120793",
-      "contactType": "customer service",
-      "contactOption": "TollFree",
-      "availableLanguage": "French",
-      "areaServed": ["75","77","78","91","92","93","94","95"]
+      "priceRange": "0€",
+      "image": "https://gh-epaviste.fr/images/gh-logo.png",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://gh-epaviste.fr/images/gh-logo.png",
+        "width": 292,
+        "height": 422
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Villeneuve-Saint-Georges",
+        "postalCode": "94190",
+        "addressRegion": "Île-de-France",
+        "addressCountry": "FR"
+      },
+      "areaServed": [
+        { "@type": "AdministrativeArea", "name": "Paris", "identifier": "75" },
+        { "@type": "AdministrativeArea", "name": "Seine-et-Marne", "identifier": "77" },
+        { "@type": "AdministrativeArea", "name": "Yvelines", "identifier": "78" },
+        { "@type": "AdministrativeArea", "name": "Essonne", "identifier": "91" },
+        { "@type": "AdministrativeArea", "name": "Hauts-de-Seine", "identifier": "92" },
+        { "@type": "AdministrativeArea", "name": "Seine-Saint-Denis", "identifier": "93" },
+        { "@type": "AdministrativeArea", "name": "Val-de-Marne", "identifier": "94" },
+        { "@type": "AdministrativeArea", "name": "Val-d'Oise", "identifier": "95" }
+      ],
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+33753120793",
+        "contactType": "customer service",
+        "availableLanguage": "French",
+        "areaServed": ["75","77","78","91","92","93","94","95"]
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Services d'enlèvement de véhicules hors d'usage",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Enlèvement épave gratuit" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Remorquage voiture accidentée" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Enlèvement véhicule électrique" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Enlèvement sans carte grise" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Démarches administratives VHU" } }
+        ]
+      },
+      "sameAs": ["https://gh-epaviste.fr"]
     },
-    "sameAs": [
-      "https://gh-epaviste.fr"
-    ]
-  }
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "L'enlèvement d'épave est-il vraiment gratuit ?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Oui, le service d'enlèvement est 100% gratuit. GH Épaviste prend en charge le déplacement et le remorquage de votre véhicule hors d'usage sans aucun frais." }
+        },
+        {
+          "@type": "Question",
+          "name": "Quels documents faut-il pour l'enlèvement d'épave ?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Vous devez préparer la carte grise originale, une pièce d'identité valide et un certificat de non-gage de moins de 15 jours. Nous gérons la co-signature du certificat de cession." }
+        },
+        {
+          "@type": "Question",
+          "name": "Qui émet le certificat de destruction du véhicule ?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Le certificat de destruction est émis par le centre de traitement agréé VHU partenaire auquel votre véhicule est confié. GH Épaviste vous le transmet dès réception." }
+        },
+        {
+          "@type": "Question",
+          "name": "Dans quels départements intervenez-vous ?",
+          "acceptedAnswer": { "@type": "Answer", "text": "GH Épaviste intervient dans les 8 départements d'Île-de-France : Paris (75), Seine-et-Marne (77), Yvelines (78), Essonne (91), Hauts-de-Seine (92), Seine-Saint-Denis (93), Val-de-Marne (94) et Val-d'Oise (95)." }
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "GH Épaviste",
+      "url": "https://gh-epaviste.fr",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://gh-epaviste.fr/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+  ]
 
   return (
     <html lang="fr" className={inter.variable}>
@@ -164,7 +206,17 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           nonce={nonce}
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd[0]) }}
+        />
+        <script
+          type="application/ld+json"
+          nonce={nonce}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd[1]) }}
+        />
+        <script
+          type="application/ld+json"
+          nonce={nonce}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd[2]) }}
         />
         <header className="bg-white border-b border-gray-200 sticky top-0 z-50">
           <div className="container mx-auto px-4 py-4 flex items-center justify-between">

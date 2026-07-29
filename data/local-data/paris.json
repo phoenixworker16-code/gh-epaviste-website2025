@@ -1,0 +1,409 @@
+{
+  "city": "Paris",
+  "department": "75",
+  "quartiers": [],
+  "rues": [
+    "Allée Paris-Ivry"
+  ],
+  "stations_metro": [],
+  "gares": [],
+  "parcs": [],
+  "hopitaux": [
+    "Centre hospitalier régional",
+    "Centre hospitalier universitaire Henri-Mondor"
+  ],
+  "cliniques": [],
+  "centres_commerciaux": [],
+  "zones_activites": [],
+  "ponts": [],
+  "quais": [],
+  "monuments": [],
+  "batiments_publics": [
+    "Bibliothèque Mazarine",
+    "Bibliothèque Sainte-Geneviève",
+    "Bibliothèque de la Sorbonne",
+    "Bibliothèque des Arts décoratifs",
+    "Bibliothèque du cinéma François-Truffaut",
+    "Bibliothèque historique de la ville de Paris",
+    "Bibliothèque nationale de France",
+    "Bibliothèque publique d'information"
+  ],
+  "communes_limitrophes": [
+    "Aubervilliers",
+    "Bagnolet",
+    "Boulogne-Billancourt",
+    "Charenton-le-Pont",
+    "Clichy",
+    "Fontenay-sous-Bois",
+    "Gentilly (Val-de-Marne)",
+    "Issy-les-Moulineaux",
+    "Ivry-sur-Seine",
+    "Joinville-le-Pont",
+    "Le Kremlin-Bicêtre",
+    "Le Pré-Saint-Gervais",
+    "Les Lilas",
+    "Levallois-Perret",
+    "Malakoff (Hauts-de-Seine)",
+    "Montreuil (Seine-Saint-Denis)",
+    "Montrouge",
+    "Neuilly-sur-Seine",
+    "Nogent-sur-Marne",
+    "Pantin",
+    "Puteaux",
+    "Saint-Cloud",
+    "Saint-Denis (Seine-Saint-Denis)",
+    "Saint-Mandé",
+    "Saint-Maurice (Val-de-Marne)",
+    "Saint-Ouen-sur-Seine",
+    "Suresnes",
+    "Vanves",
+    "Vincennes"
+  ],
+  "sources": {
+    "Overpass API": {
+      "quartiers": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "stations_metro": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "gares": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "parcs": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "hopitaux": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "cliniques": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "centres_commerciaux": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "zones_activites": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "ponts": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "quais": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "monuments": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "batiments_publics": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      }
+    },
+    "Overpass Géométrie": {
+      "communes_limitrophes": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      }
+    },
+    "Wikipedia HTML": {
+      "communes_limitrophes": {
+        "trouves": 29,
+        "retenus": 29,
+        "ignores": 0,
+        "exclusions": []
+      }
+    },
+    "Data.gouv.fr BAN": {
+      "rues": {
+        "trouves": 50,
+        "retenus": 1,
+        "ignores": 49,
+        "exclusions": [
+          {
+            "nom": "Paris",
+            "raison": "Commune différente: Saint-Caprais-de-Bordeaux"
+          },
+          {
+            "nom": "Paris",
+            "raison": "Commune différente: Tessy-Bocage"
+          },
+          {
+            "nom": "Paris",
+            "raison": "Commune différente: Saint-Léon"
+          },
+          {
+            "nom": "Paris",
+            "raison": "Commune différente: Sainte-Colombe-sur-l'Hers"
+          },
+          {
+            "nom": "Paris",
+            "raison": "Commune différente: Jeu-les-Bois"
+          },
+          {
+            "nom": "Paris",
+            "raison": "Commune différente: Le Leuy"
+          },
+          {
+            "nom": "Paris",
+            "raison": "Commune différente: Cazaugitat"
+          },
+          {
+            "nom": "Paris",
+            "raison": "Commune différente: Rocé"
+          },
+          {
+            "nom": "Paris Buton",
+            "raison": "Commune différente: Bourgueil"
+          },
+          {
+            "nom": "Rue de Paris",
+            "raison": "Commune différente: Amiens"
+          },
+          {
+            "nom": "Rue de Paris",
+            "raison": "Commune différente: Rennes"
+          },
+          {
+            "nom": "Avenue de Paris",
+            "raison": "Commune différente: Niort"
+          },
+          {
+            "nom": "Rue de Paris",
+            "raison": "Commune différente: Montreuil"
+          },
+          {
+            "nom": "Rue de Paris",
+            "raison": "Commune différente: Boulogne-Billancourt"
+          },
+          {
+            "nom": "Rue de Paris",
+            "raison": "Commune différente: Le Havre"
+          },
+          {
+            "nom": "Rue de Paris",
+            "raison": "Commune différente: Saint-Quentin"
+          },
+          {
+            "nom": "Avenue de Paris",
+            "raison": "Commune différente: Reims"
+          },
+          {
+            "nom": "Rue de Paris",
+            "raison": "Commune différente: Tourcoing"
+          },
+          {
+            "nom": "rue de Paris",
+            "raison": "Commune différente: Brest"
+          },
+          {
+            "nom": "Rue de Paris",
+            "raison": "Commune différente: Palaiseau"
+          },
+          {
+            "nom": "Avenue de Paris",
+            "raison": "Commune différente: Versailles"
+          },
+          {
+            "nom": "Rue de Paris",
+            "raison": "Commune différente: Nice"
+          },
+          {
+            "nom": "Rue de Paris",
+            "raison": "Commune différente: Saint-Denis"
+          },
+          {
+            "nom": "Rue de Paris",
+            "raison": "Commune différente: Beauvais"
+          },
+          {
+            "nom": "Avenue de Paris",
+            "raison": "Commune différente: Poitiers"
+          },
+          {
+            "nom": "Rue de Paris",
+            "raison": "Commune différente: Taverny"
+          },
+          {
+            "nom": "Avenue de Paris",
+            "raison": "Commune différente: Chalon-sur-Saône"
+          },
+          {
+            "nom": "Avenue de Paris",
+            "raison": "Commune différente: Villejuif"
+          },
+          {
+            "nom": "Rue de Paris",
+            "raison": "Commune différente: Saint-Denis"
+          },
+          {
+            "nom": "Allée de Paris",
+            "raison": "Commune différente: Montpellier"
+          },
+          {
+            "nom": "Rue de Paris",
+            "raison": "Commune différente: Meudon"
+          },
+          {
+            "nom": "Rue de Paris",
+            "raison": "Commune différente: Villeneuve-Saint-Georges"
+          },
+          {
+            "nom": "Rue de Paris",
+            "raison": "Commune différente: Clichy"
+          },
+          {
+            "nom": "Rue de Paris",
+            "raison": "Commune différente: Angoulême"
+          },
+          {
+            "nom": "Rue de Paris",
+            "raison": "Commune différente: Compiègne"
+          },
+          {
+            "nom": "Avenue de Paris",
+            "raison": "Commune différente: Cambrai"
+          },
+          {
+            "nom": "Avenue de Paris",
+            "raison": "Commune différente: Cherbourg-en-Cotentin"
+          },
+          {
+            "nom": "Rue de Paris",
+            "raison": "Commune différente: Saint-Étienne-du-Rouvray"
+          },
+          {
+            "nom": "Rue Pierre Paris",
+            "raison": "Commune différente: Bordeaux"
+          },
+          {
+            "nom": "Rue Paulin Paris",
+            "raison": "Commune différente: Reims"
+          },
+          {
+            "nom": "Route de Paris",
+            "raison": "Commune différente: Nantes"
+          },
+          {
+            "nom": "Rue de Paris",
+            "raison": "Commune différente: Laval"
+          },
+          {
+            "nom": "Avenue de Paris",
+            "raison": "Commune différente: Vincennes"
+          },
+          {
+            "nom": "Rue de Paris",
+            "raison": "Commune différente: Épinay-sur-Seine"
+          },
+          {
+            "nom": "Rue de Paris",
+            "raison": "Commune différente: Sotteville-lès-Rouen"
+          },
+          {
+            "nom": "Rue de Paris",
+            "raison": "Commune différente: Charenton-le-Pont"
+          },
+          {
+            "nom": "Avenue de Paris",
+            "raison": "Commune différente: Châlons-en-Champagne"
+          },
+          {
+            "nom": "Rue de Paris",
+            "raison": "Commune différente: Valenciennes"
+          },
+          {
+            "nom": "Avenue de Paris",
+            "raison": "Commune différente: Roanne"
+          }
+        ]
+      }
+    },
+    "Wikipedia API": {
+      "hopitaux": {
+        "trouves": 2,
+        "retenus": 2,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "batiments_publics": {
+        "trouves": 8,
+        "retenus": 8,
+        "ignores": 0,
+        "exclusions": []
+      }
+    }
+  },
+  "timing": {
+    "overpass_poi": {
+      "durationSec": 77.5,
+      "status": "EMPTY"
+    },
+    "overpass_geo": {
+      "durationSec": 78.9,
+      "status": "EMPTY"
+    },
+    "wikipedia_html": {
+      "durationSec": 2.7,
+      "status": "OK"
+    },
+    "ban": {
+      "durationSec": 0.4,
+      "status": "OK"
+    },
+    "wikipedia_api": {
+      "durationSec": 0.3,
+      "status": "OK"
+    }
+  },
+  "validation": {
+    "status": "SUCCESS",
+    "quality": "PARTIAL",
+    "schemaVersion": "1.0",
+    "fetched": true,
+    "sources": {
+      "overpass_poi": false,
+      "overpass_geo": false,
+      "wikipedia_html": true,
+      "wikipedia_api": true,
+      "ban": true
+    },
+    "totalDurationSec": 159.9
+  }
+}

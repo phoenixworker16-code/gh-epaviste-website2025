@@ -5,6 +5,7 @@ import { Truck, Shield, Phone, Car, CheckCircle, FileText, MapPin } from "lucide
 import Image from "next/image";
 import Link from "next/link";
 import BreadcrumbNav from "@/components/breadcrumb-nav";
+import BreadcrumbJsonLd from "@/components/breadcrumb-jsonld";
 import ScrollToTop from "@/components/scroll-to-top";
 import { StructuredData } from "@/components/structured-data";
 import { Metadata } from "next";
@@ -43,6 +44,10 @@ export default function ServicesPage() {
           url: "https://gh-epaviste.fr/services"
         }}
       />
+      <BreadcrumbJsonLd items={[
+        { name: "Accueil", url: "https://gh-epaviste.fr/" },
+        { name: "Services", url: "https://gh-epaviste.fr/services" },
+      ]} />
       <BreadcrumbNav aria-label="Chemin de navigation" />
 
       <main id="main-content">
@@ -331,7 +336,7 @@ export default function ServicesPage() {
                   DEMANDER UN ENLÈVEMENT
                 </Link>
               </Button>
-              <Button size="lg" className="bg-black hover:bg-gray-800 text-yellow-500 font-bold w-full sm:w-auto shadow-lg hover:shadow-xl transition-all" asChild>
+              <Button size="lg" className="bg-transparent text-yellow-400 border-2 border-yellow-400 hover:bg-[#ca8a04] hover:border-[#ca8a04] hover:text-black font-bold w-full sm:w-auto shadow-lg transition-all duration-200" asChild>
                 <a href="tel:+33753120793" aria-label="Appeler GH Épaviste au 00 33 7 53 12 07 93" className="flex justify-center items-center">
                   <Phone className="w-5 h-5 mr-2" aria-hidden="true" />
                   00 33 7 53 12 07 93

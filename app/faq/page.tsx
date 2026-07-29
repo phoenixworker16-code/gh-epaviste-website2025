@@ -1,4 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import BreadcrumbJsonLd from "@/components/breadcrumb-jsonld"
 import { HelpCircle } from "lucide-react"
 import BreadcrumbNav from "@/components/breadcrumb-nav"
 import ScrollToTop from "@/components/scroll-to-top"
@@ -28,6 +29,10 @@ export const metadata: Metadata = {
 export default function FaqPage() {
   return (
     <div className="min-h-screen bg-gray-50">
+      <BreadcrumbJsonLd items={[
+        { name: "Accueil", url: "https://gh-epaviste.fr/" },
+        { name: "FAQ", url: "https://gh-epaviste.fr/faq" },
+      ]} />
       <BreadcrumbNav />
 
       <main className="py-12 pb-24" id="main-content">

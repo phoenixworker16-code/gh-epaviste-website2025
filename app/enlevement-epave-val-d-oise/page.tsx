@@ -1,41 +1,35 @@
-import Link from "next/link"
-import { Metadata } from "next"
-import { Phone, CheckCircle, MapPin } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { CitiesList } from "@/components/cities-list"
-import villes from "@/data/villes.json"
-import BreadcrumbJsonLd from "@/components/breadcrumb-jsonld"
+import { Metadata } from 'next'
+import { valDoiseData } from '@/data/departments/val-d-oise'
+import { PageBuilder } from '@/components/blocks/PageBuilder'
+import { InternalLinking } from '@/components/internal-linking'
+import BreadcrumbJsonLd from '@/components/breadcrumb-jsonld'
+
 export const metadata: Metadata = {
-  title: "Enlèvement d'épave gratuit dans le Val-d'Oise (95) - Épaviste Professionnel",
-  description:
-    "Ne laissez plus un véhicule hors d'usage occuper inutilement votre espace privé ou public dans le 95. GH Épaviste déploie ses dépanneuses dans tout le Val-d'Oise pour retirer gratuitement vos autos, motos ou camionnettes usagées.",
-  alternates: { canonical: "https://gh-epaviste.fr/enlevement-epave-val-d-oise" },
+  title: valDoiseData.metaTitle,
+  description: valDoiseData.metaDescription,
+  alternates: { canonical: `https://gh-epaviste.fr/enlevement-epave-val-d-oise` },
   robots: { index: true, follow: true },
   openGraph: {
-    title: "Enlèvement d'épave gratuit dans le Val-d'Oise (95) - Épaviste Professionnel",
-    description: "Ne laissez plus un véhicule hors d'usage occuper inutilement votre espace privé ou public dans le 95. GH Épaviste déploie ses dépanneuses dans tout le Val-d'Oise pour retirer gratuitement vos autos, motos ou camionnettes usagées.",
-    url: "https://gh-epaviste.fr/enlevement-epave-val-d-oise",
+    title: valDoiseData.metaTitle,
+    description: valDoiseData.metaDescription,
+    url: `https://gh-epaviste.fr/enlevement-epave-val-d-oise`,
     type: "website",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Enlèvement d'épave gratuit dans le Val-d'Oise (95)" }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: valDoiseData.metaTitle }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Enlèvement d'épave gratuit dans le Val-d'Oise (95) - Épaviste Professionnel",
-    description:
-      "Ne laissez plus un véhicule hors d'usage occuper inutilement votre espace privé ou public dans le 95. GH Épaviste déploie ses dépanneuses dans tout le Val-d'Oise pour retirer gratuitement vos autos, motos ou camionnettes usagées.",
+    title: valDoiseData.metaTitle,
+    description: valDoiseData.metaDescription,
     images: ["/og-image.jpg"],
   },
 }
 
-const cities = ["Cergy", "Argenteuil", "Sarcelles", "Pontoise", "Garges-lès-Gonesse", "Villiers-le-Bel", "Goussainville", "Taverny", "Ermont", "Saint-Gratien"]
-
-export default function EpavisteValDOise() {
+export default function ValDoiseEpavistePage() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Service",
-    name: "Enlèvement d'épave gratuit dans le Val-d'Oise",
-    description: "Service professionnel d'enlèvement d'épaves dans le Val-d'Oise (95). Intervention rapide 24h/24.",
+    name: valDoiseData.metaTitle,
+    description: valDoiseData.metaDescription,
     provider: { "@type": "LocalBusiness", name: "GH Épaviste", telephone: "+33753120793" },
     areaServed: { "@type": "AdministrativeArea", name: "Val-d'Oise (95)" },
     serviceType: "Enlèvement d'épaves automobiles",
@@ -49,76 +43,15 @@ export default function EpavisteValDOise() {
         { name: "Enlèvement épave Val-d'Oise (95)", url: "https://gh-epaviste.fr/enlevement-epave-val-d-oise" },
       ]} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <section className="bg-black text-white py-20">
-        <div className="container mx-auto px-4 max-w-4xl text-center">
-          <div className="inline-flex items-center gap-2 bg-yellow-500/20 text-yellow-400 px-4 py-2 rounded-full text-sm font-medium mb-6">
-            <MapPin className="w-4 h-4" /> Val-d&apos;Oise — Département 95
-          </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
-            <span className="text-yellow-500">Enlèvement d&apos;épave gratuit dans le Val-d&apos;Oise (95)</span><br />
-            Épaviste Professionnel
-          </h1>
-          <p className="text-xl text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed">
-            Ne laissez plus un véhicule hors d&apos;usage occuper inutilement votre espace privé ou public dans le 95. GH Épaviste déploie ses dépanneuses dans tout le Val-d&apos;Oise pour retirer gratuitement vos autos, motos ou camionnettes usagées. Nos équipes se déplacent quotidiennement sur Argenteuil, Sarcelles, Cergy, Garges-lès-Gonesse et Franconville. Nous nous chargeons de confier votre ancien véhicule à notre filière de recyclage automobile partenaire, le tout sans débourser un seul centime.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/formulaire"><Button size="lg" className="bg-yellow-500 hover:bg-yellow-400 text-black font-bold px-8">Demander un Enlèvement Gratuit</Button></Link>
-            <a href="tel:+33753120793"><Button size="lg" className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-black font-bold px-8"><Phone className="w-4 h-4 mr-2" /> 07 53 12 07 93</Button></a>
-          </div>
-        </div>
-      </section>
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl font-bold text-center mb-12 text-black">Notre service dans le <span className="text-yellow-500">Val-d&apos;Oise</span></h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            {[
-              { title: "Grand département couvert", desc: "Du plateau du Vexin aux rives de la Seine, nous intervenons partout dans le 95." },
-              { title: "Enlèvement gratuit", desc: "Aucun frais de déplacement ni d'enlèvement dans tout le Val-d'Oise." },
-              { title: "Disponible 7j/7", desc: "Toujours disponible, week-ends et jours fériés inclus." },
-            ].map((item, i) => (
-              <Card key={i} className="text-center border-2 border-yellow-100 hover:border-yellow-400 transition-colors">
-                <CardContent className="p-6">
-                  <CheckCircle className="w-10 h-10 text-yellow-500 mx-auto mb-4" />
-                  <h3 className="font-bold text-black text-lg mb-2">{item.title}</h3>
-                  <p className="text-gray-600 text-sm">{item.desc}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-      {/* Variables passées en props (calculées côté serveur) */}
-      <CitiesList 
-        cities={villes.filter(v => v.depNumber === "95").map(v => ({ slug: v.slug, ville: v.ville }))} 
-        departementName="Val-d'Oise" 
+      
+      <PageBuilder blocks={valDoiseData.blocks} />
+
+      <InternalLinking 
+        relatedServicesSlugs={valDoiseData.relatedServicesSlugs}
+        relatedCitiesSlugs={valDoiseData.relatedCitiesSlugs}
+        currentSlug={valDoiseData.slug}
+        entityType={valDoiseData.entityType}
       />
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4 max-w-3xl">
-          <h2 className="text-3xl font-bold text-center mb-10 text-black">Questions fréquentes — Val-d&apos;Oise (95)</h2>
-          <div className="space-y-6">
-            {[
-              { q: "Intervenez-vous dans les zones rurales du Val-d'Oise ?", a: "Oui, nous couvrons les zones rurales du Val-d'Oise comme le Vexin français, sans frais supplémentaires." },
-              { q: "Peut-on faire enlever une épave près de Roissy CDG ?", a: "Oui, nous intervenons dans toutes les communes autour de l'aéroport de Roissy : Goussainville, Garges, Sarcelles, etc." },
-              { q: "Quel document faut-il pour l'enlèvement dans le 95 ?", a: "La carte grise barrée et signée, un certificat de non-gage (moins de 15 jours) et une pièce d'identité en cours de validité." },
-            ].map((faq, i) => (
-              <div key={i} className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
-                <h3 className="font-bold text-black mb-3">{faq.q}</h3>
-                <p className="text-gray-600">{faq.a}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-      <section className="py-16 bg-yellow-500">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-black mb-4">Épave dans le Val-d&apos;Oise ? Contactez-nous !</h2>
-          <p className="text-black/80 mb-8 text-lg">Enlèvement gratuit dans tout le département 95</p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/formulaire"><Button size="lg" className="bg-black hover:bg-gray-800 text-white font-bold px-8">Formulaire en Ligne</Button></Link>
-            <a href="tel:+33753120793"><Button size="lg" className="bg-black hover:bg-gray-800 text-yellow-500 font-bold px-8"><Phone className="w-4 h-4 mr-2" /> 07 53 12 07 93</Button></a>
-          </div>
-        </div>
-      </section>
     </div>
   )
 }

@@ -1,7 +1,7 @@
 // Server component: outputs raw JSON-LD script without client runtime
 
 interface StructuredDataProps {
-  type: 'LocalBusiness' | 'Service' | 'WebPage' | 'Organization'
+  type: 'LocalBusiness' | 'Service' | 'WebPage' | 'Organization' | 'FAQPage'
   data?: any
 }
 
@@ -103,6 +103,21 @@ export function StructuredData({ type, data }: StructuredDataProps) {
           sameAs: [
             // Ajouter les réseaux sociaux si disponibles
           ],
+          ...data
+        }
+
+      case 'FAQPage':
+        return {
+          ...baseData,
+          '@type': 'FAQPage',
+          mainEntity: (data?.faqs || []).map((faq: { q: string; a: string }) => ({
+            '@type': 'Question',
+            name: faq.q,
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: faq.a
+            }
+          })),
           ...data
         }
 

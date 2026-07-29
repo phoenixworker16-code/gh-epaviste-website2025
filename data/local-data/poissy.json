@@ -1,0 +1,267 @@
+{
+  "city": "Poissy",
+  "department": "78",
+  "quartiers": [],
+  "rues": [
+    "Avenue Anatole France",
+    "Avenue Blanche de Castille",
+    "Avenue Emile Zola",
+    "Avenue Fernand Lefèbvre",
+    "Avenue Maurice Berteaux",
+    "Avenue de la Maladrerie",
+    "Avenue de l’Ile de Migneaux",
+    "Avenue des Champs Fleuris",
+    "Avenue du Cep",
+    "Avenue du Maréchal Foch",
+    "Avenue du Maréchal Lyautey",
+    "Boulevard Devaux",
+    "Boulevard Gambetta",
+    "Boulevard Louis Lemelle",
+    "Boulevard Pirmasens",
+    "Boulevard Robespierre",
+    "Boulevard Rose",
+    "Boulevard Victor Hugo",
+    "Boulevard de la Paix",
+    "Boulevard des Loges",
+    "Cours du 14 Juillet",
+    "Rue Adrienne Bolland",
+    "Rue Charles Edouard Jeanneret",
+    "Rue Charles Maréchal",
+    "Rue Georges Guynemer",
+    "Rue Jean Moulin",
+    "Rue Jules Jourdain",
+    "Rue Maurice Courtan",
+    "Rue Pasteur",
+    "Rue Paul Poret",
+    "Rue Pierre et Marie Curie",
+    "Rue Roger Salengro",
+    "Rue Saint Barthelemy",
+    "Rue Saint Sébastien",
+    "Rue de Beauregard",
+    "Rue de Chambourcy",
+    "Rue de Migneaux",
+    "Rue de Villiers",
+    "Rue de la Bidonnière",
+    "Rue de la Bruyère",
+    "Rue de la Justice",
+    "Rue des Capucines",
+    "Rue des Grands Champs",
+    "Rue du Docteur Labarrière",
+    "Rue du Général de Gaulle",
+    "Rue d’Aigremont"
+  ],
+  "stations_metro": [
+    "Loi de modernisation de l'action publique territoriale et d'affirmation des métropoles"
+  ],
+  "gares": [
+    "Paris-Saint-Lazare",
+    "Poissy",
+    "Poissy-Grande-Ceinture",
+    "Poissy-Quai-Talbot"
+  ],
+  "parcs": [
+    "Jardin à l'anglaise"
+  ],
+  "hopitaux": [
+    "Centre hospitalier intercommunal de Poissy-Saint-Germain-en-Laye",
+    "Hôpital en France"
+  ],
+  "cliniques": [],
+  "centres_commerciaux": [],
+  "zones_activites": [],
+  "ponts": [],
+  "quais": [],
+  "monuments": [
+    "Château d'eau",
+    "Château d'Ô (Orne)",
+    "Château de Bethemont",
+    "Château de Villiers (Poissy)"
+  ],
+  "batiments_publics": [
+    "Hôtel de ville"
+  ],
+  "communes_limitrophes": [],
+  "sources": {
+    "Overpass API": {
+      "quartiers": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "stations_metro": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "gares": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "parcs": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "hopitaux": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "cliniques": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "centres_commerciaux": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "zones_activites": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "ponts": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "quais": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "monuments": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "batiments_publics": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      }
+    },
+    "Overpass Géométrie": {
+      "communes_limitrophes": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      }
+    },
+    "Data.gouv.fr BAN": {
+      "rues": {
+        "trouves": 50,
+        "retenus": 46,
+        "ignores": 4,
+        "exclusions": [
+          {
+            "nom": "Rue de Poissy",
+            "raison": "Commune différente: Saint-Germain-en-Laye"
+          },
+          {
+            "nom": "Avenue de Poissy",
+            "raison": "Commune différente: Achères"
+          },
+          {
+            "nom": "Rue de Poissy",
+            "raison": "Commune différente: Paris"
+          },
+          {
+            "nom": "Rue de Poissy",
+            "raison": "Commune différente: Les Mureaux"
+          }
+        ]
+      }
+    },
+    "Wikipedia API": {
+      "stations_metro": {
+        "trouves": 1,
+        "retenus": 1,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "gares": {
+        "trouves": 4,
+        "retenus": 4,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "parcs": {
+        "trouves": 1,
+        "retenus": 1,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "hopitaux": {
+        "trouves": 2,
+        "retenus": 2,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "monuments": {
+        "trouves": 4,
+        "retenus": 4,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "batiments_publics": {
+        "trouves": 1,
+        "retenus": 1,
+        "ignores": 0,
+        "exclusions": []
+      }
+    }
+  },
+  "timing": {
+    "overpass_poi": {
+      "durationSec": 77.5,
+      "status": "EMPTY"
+    },
+    "overpass_geo": {
+      "durationSec": 78.9,
+      "status": "EMPTY"
+    },
+    "wikipedia_html": {
+      "durationSec": 2.3,
+      "status": "OK"
+    },
+    "ban": {
+      "durationSec": 0.3,
+      "status": "OK"
+    },
+    "wikipedia_api": {
+      "durationSec": 0.3,
+      "status": "OK"
+    }
+  },
+  "validation": {
+    "status": "SUCCESS",
+    "quality": "PARTIAL",
+    "schemaVersion": "1.0",
+    "fetched": true,
+    "sources": {
+      "overpass_poi": false,
+      "overpass_geo": false,
+      "wikipedia_html": true,
+      "wikipedia_api": true,
+      "ban": true
+    },
+    "totalDurationSec": 159.4
+  }
+}

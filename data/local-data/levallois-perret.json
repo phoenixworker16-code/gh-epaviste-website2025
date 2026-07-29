@@ -1,0 +1,204 @@
+{
+  "city": "Levallois-Perret",
+  "department": "92",
+  "quartiers": [],
+  "rues": [
+    "Allée Claude Monet",
+    "Avenue Georges Pompidou",
+    "Avenue de l'Europe",
+    "Place Georges Pompidou",
+    "Place du General Leclerc",
+    "Quai Charles Pasqua",
+    "Rue Anatole France",
+    "Rue Antonin Raynaud",
+    "Rue Aristide Briand",
+    "Rue Barbès",
+    "Rue Baudin",
+    "Rue Bellanger",
+    "Rue Camille Desmoulins",
+    "Rue Camille Pelletan",
+    "Rue Carnot",
+    "Rue Chaptal",
+    "Rue Collange",
+    "Rue Danton",
+    "Rue Deguingand",
+    "Rue Edouard Vaillant",
+    "Rue Ernest Cognacq",
+    "Rue Gabriel Péri",
+    "Rue Greffülhe",
+    "Rue Henri Barbusse",
+    "Rue Jean Jaurès",
+    "Rue Jules Guesde",
+    "Rue Kléber",
+    "Rue Louis Rouquier",
+    "Rue Louise Michel",
+    "Rue Marcel Cerdan",
+    "Rue Marius Aufan",
+    "Rue Marjolin",
+    "Rue Pasteur",
+    "Rue Paul Vaillant Couturier",
+    "Rue Pierre Brossolette",
+    "Rue Raspail",
+    "Rue Rivay",
+    "Rue Trébois",
+    "Rue Trézel",
+    "Rue Vergniaud",
+    "Rue Victor Hugo",
+    "Rue Voltaire",
+    "Rue d'Alsace",
+    "Rue de Lorraine",
+    "Rue de Villiers",
+    "Rue de l'Aspirant Dargent",
+    "Rue de la Gare",
+    "Rue du Parc",
+    "Rue du President Wilson",
+    "Villa Chaptal"
+  ],
+  "stations_metro": [],
+  "gares": [],
+  "parcs": [],
+  "hopitaux": [],
+  "cliniques": [],
+  "centres_commerciaux": [],
+  "zones_activites": [],
+  "ponts": [],
+  "quais": [],
+  "monuments": [],
+  "batiments_publics": [],
+  "communes_limitrophes": [
+    "Asnières-sur-Seine",
+    "Clichy",
+    "Courbevoie",
+    "Neuilly-sur-Seine",
+    "Paris",
+    "Paris 17e"
+  ],
+  "sources": {
+    "Overpass API": {
+      "quartiers": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "stations_metro": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "gares": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "parcs": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "hopitaux": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "cliniques": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "centres_commerciaux": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "zones_activites": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "ponts": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "quais": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "monuments": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "batiments_publics": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      }
+    },
+    "Overpass Géométrie": {
+      "communes_limitrophes": {
+        "trouves": 7,
+        "retenus": 6,
+        "ignores": 1,
+        "exclusions": [
+          {
+            "nom": "Levallois-Perret",
+            "raison": "Commune cible elle-même"
+          }
+        ]
+      }
+    },
+    "Wikipedia HTML": {
+      "communes_limitrophes": {
+        "trouves": 5,
+        "retenus": 0,
+        "ignores": 5,
+        "exclusions": [
+          {
+            "nom": "Courbevoie",
+            "raison": "Déjà trouvé"
+          },
+          {
+            "nom": "Asnières-sur-Seine",
+            "raison": "Déjà trouvé"
+          },
+          {
+            "nom": "Clichy",
+            "raison": "Déjà trouvé"
+          },
+          {
+            "nom": "Neuilly-sur-Seine",
+            "raison": "Déjà trouvé"
+          },
+          {
+            "nom": "Paris",
+            "raison": "Déjà trouvé"
+          }
+        ]
+      }
+    },
+    "Data.gouv.fr BAN": {
+      "rues": {
+        "trouves": 50,
+        "retenus": 50,
+        "ignores": 0,
+        "exclusions": []
+      }
+    }
+  },
+  "validated": true,
+  "generatedAt": "2026-07-08T17:48:10.233Z"
+}

@@ -1,0 +1,210 @@
+{
+  "city": "Ivry-Sur-Seine",
+  "department": "94",
+  "quartiers": [],
+  "rues": [
+    "Allée de la Chocolaterie",
+    "Avenue Danielle Casanova",
+    "Avenue Georges Gosnat",
+    "Avenue Jean Jaurès",
+    "Avenue Maurice Thorez",
+    "Avenue Pierre Sémard",
+    "Avenue de Verdun",
+    "Avenue de la République",
+    "Avenue de l’Industrie",
+    "Boulevard Paul Vaillant Couturier",
+    "Boulevard de Brandebourg",
+    "Boulevard de Stalingrad",
+    "Centre Commercial Ivry Grand Ciel",
+    "Promenee Marat",
+    "Rue Ampère",
+    "Rue Antoine Thomas",
+    "Rue Barbès",
+    "Rue Berthelot",
+    "Rue Ernest Renan",
+    "Rue Gabriel Péri",
+    "Rue Gaston Picard",
+    "Rue Gustave Simonet",
+    "Rue Henri Martin",
+    "Rue Hoche",
+    "Rue Jean le Galleu",
+    "Rue Jean-Jacques Rousseau",
+    "Rue Jules Ferry",
+    "Rue Jules Vanzuppe",
+    "Rue Ledru-Rollin",
+    "Rue Louis Bertrand",
+    "Rue Lénine",
+    "Rue Marat",
+    "Rue Marceau",
+    "Rue Marcel Hartmann",
+    "Rue Maurice Berteaux",
+    "Rue Maurice Gunsbourg",
+    "Rue Mirabeau",
+    "Rue Molière",
+    "Rue Pierre Brossolette",
+    "Rue Pierre et Marie Curie",
+    "Rue Raspail",
+    "Rue René Villars",
+    "Rue Robert Degert",
+    "Rue Robert Witchitz",
+    "Rue Roger Buessard",
+    "Rue Saint-Just",
+    "Rue de Châteaudun",
+    "Rue de la Révolution",
+    "Rue des Freres Blais",
+    "Rue du Quartier Parisien"
+  ],
+  "stations_metro": [],
+  "gares": [],
+  "parcs": [],
+  "hopitaux": [],
+  "cliniques": [],
+  "centres_commerciaux": [],
+  "zones_activites": [],
+  "ponts": [],
+  "quais": [],
+  "monuments": [],
+  "batiments_publics": [],
+  "communes_limitrophes": [],
+  "sources": {
+    "Overpass API": {
+      "quartiers": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "stations_metro": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "gares": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "parcs": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "hopitaux": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "cliniques": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "centres_commerciaux": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "zones_activites": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "ponts": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "quais": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "monuments": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      },
+      "batiments_publics": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      }
+    },
+    "Overpass Géométrie": {
+      "communes_limitrophes": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": []
+      }
+    },
+    "Wikipedia HTML": {
+      "communes_limitrophes": {
+        "trouves": 0,
+        "retenus": 0,
+        "ignores": 0,
+        "exclusions": [
+          {
+            "nom": "-",
+            "raison": "Request failed with status code 404"
+          }
+        ]
+      }
+    },
+    "Data.gouv.fr BAN": {
+      "rues": {
+        "trouves": 50,
+        "retenus": 50,
+        "ignores": 0,
+        "exclusions": []
+      }
+    }
+  },
+  "timing": {
+    "overpass_poi": {
+      "durationSec": 91.2,
+      "status": "EMPTY"
+    },
+    "overpass_geo": {
+      "durationSec": 67.9,
+      "status": "EMPTY"
+    },
+    "wikipedia_html": {
+      "durationSec": 0.5,
+      "status": "FAIL"
+    },
+    "ban": {
+      "durationSec": 0.5,
+      "status": "OK"
+    },
+    "wikipedia_api": {
+      "durationSec": 0.2,
+      "status": "FAIL"
+    }
+  },
+  "validation": {
+    "status": "SUCCESS",
+    "quality": "PARTIAL",
+    "schemaVersion": "1.0",
+    "fetched": true,
+    "sources": {
+      "overpass_poi": false,
+      "overpass_geo": false,
+      "wikipedia_html": false,
+      "wikipedia_api": false,
+      "ban": true
+    },
+    "totalDurationSec": 160.3
+  }
+}

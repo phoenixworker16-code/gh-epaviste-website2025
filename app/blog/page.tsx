@@ -1,4 +1,5 @@
 import Link from "next/link"
+import BreadcrumbJsonLd from "@/components/breadcrumb-jsonld"
 import { Metadata } from "next"
 import { BookOpen, Clock, ArrowRight } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
@@ -27,50 +28,71 @@ export const metadata: Metadata = {
 const articles = [
   {
     slug: "comment-faire-enlever-une-epave-gratuitement",
-    title: "Comment faire enlever une épave gratuitement ?",
-    excerpt: "Tout ce que vous devez savoir pour faire enlever votre véhicule hors d'usage sans débourser un centime en Île-de-France.",
+    title: "Comment se déroule un enlèvement d'épave gratuit en Île-de-France ?",
+    excerpt: "Tout ce que vous devez savoir pour faire enlever votre véhicule hors d'usage sans débourser un centime, étape par étape.",
     readTime: "5 min",
     category: "Guide pratique",
   },
   {
-    slug: "documents-necessaires-enlevement-epave",
-    title: "Documents nécessaires pour l'enlèvement d'une épave",
-    excerpt: "Carte grise, certificat de non-gage, pièce d'identité... Voici la liste complète des documents à préparer avant l'enlèvement.",
+    slug: "enlever-voiture-sans-carte-grise",
+    title: "Comment faire enlever une voiture sans carte grise ?",
+    excerpt: "Vous avez perdu la carte grise de votre véhicule ? Découvrez les documents de remplacement acceptés pour un enlèvement légal.",
     readTime: "4 min",
     category: "Administratif",
   },
   {
-    slug: "enlever-voiture-sans-carte-grise",
-    title: "Peut-on enlever une voiture sans carte grise ?",
-    excerpt: "Vous avez perdu la carte grise de votre véhicule ? Découvrez les démarches possibles pour faire quand même enlever votre épave.",
+    slug: "enlevement-vehicule-accidente-brule-immobilise",
+    title: "Enlèvement d'un véhicule accidenté, brûlé ou immobilisé",
+    excerpt: "Que faire de votre véhicule accidenté, incendié ou en panne définitive ? Les solutions de remorquage vers un centre VHU partenaire.",
+    readTime: "5 min",
+    category: "Conseils",
+  },
+  {
+    slug: "enlevement-parking-souterrain",
+    title: "Enlèvement d'épave en parking souterrain : comment faire ?",
+    excerpt: "Extraction difficile ? GH Épaviste remorque votre véhicule depuis votre sous-sol avec du matériel spécialisé.",
     readTime: "4 min",
     category: "Guide pratique",
   },
   {
-    slug: "combien-vaut-voiture-accidentee",
-    title: "Combien vaut une voiture accidentée ?",
-    excerpt: "Valeur vénale, rachat par l'assurance, vente à un épaviste... Comment évaluer la valeur de votre véhicule accidenté.",
-    readTime: "6 min",
+    slug: "enlevement-vehicule-utilitaire-societe",
+    title: "Enlèvement d'un véhicule utilitaire ou de société",
+    excerpt: "Artisans et professionnels, découvrez les démarches pour faire enlever un fourgon ou une flotte d'entreprise hors d'usage.",
+    readTime: "4 min",
+    category: "Professionnels",
+  },
+  {
+    slug: "documents-necessaires-enlevement-epave",
+    title: "Quels documents pour faire enlever une épave ?",
+    excerpt: "Carte grise, certificat de non-gage, pièce d'identité : la liste complète des documents à fournir pour le remorquage.",
+    readTime: "4 min",
+    category: "Administratif",
+  },
+  {
+    slug: "comment-obtenir-certificat-non-gage",
+    title: "Comment obtenir un certificat de non-gage pour votre voiture ?",
+    excerpt: "Démarches pour télécharger rapidement et gratuitement votre certificat de situation administrative, obligatoire pour la destruction.",
+    readTime: "3 min",
+    category: "Administratif",
+  },
+  {
+    slug: "demarches-ants-apres-enlevement",
+    title: "Cession pour destruction : Les démarches sur l'ANTS",
+    excerpt: "Comment déclarer la cession de son véhicule pour destruction sur le site de l'ANTS après l'enlèvement.",
+    readTime: "4 min",
+    category: "Administratif",
+  },
+  {
+    slug: "resilier-assurance-auto-apres-destruction",
+    title: "Résilier son assurance auto après la destruction d'une épave",
+    excerpt: "Les démarches pour informer votre assureur de la destruction de votre véhicule par un centre VHU et clôturer votre contrat.",
+    readTime: "3 min",
     category: "Conseils",
   },
   {
-    slug: "comment-vendre-voiture-en-panne",
-    title: "Comment vendre une voiture en panne ?",
-    excerpt: "Votre voiture est en panne et ne démarre plus ? Plusieurs solutions s'offrent à vous. On vous explique tout.",
-    readTime: "5 min",
-    category: "Conseils",
-  },
-  {
-    slug: "epave-brulee-que-faire",
-    title: "Épave brûlée : que faire ?",
-    excerpt: "Votre véhicule a été incendié ? Démarches administratives, déclaration à l'assurance et enlèvement : le guide complet.",
-    readTime: "5 min",
-    category: "Guide pratique",
-  },
-  {
-    slug: "vehicule-immobilise-solutions",
-    title: "Véhicule immobilisé : quelles solutions ?",
-    excerpt: "Voiture en panne, accidentée ou qui ne peut plus rouler ? Découvrez toutes les options pour vous en débarrasser.",
+    slug: "abandon-voiture-rue-risques",
+    title: "Peut-on abandonner une voiture dans la rue ? Les risques",
+    excerpt: "Quels sont les risques et sanctions encourus en cas d'abandon de véhicule sur la voie publique ? Découvrez l'alternative légale.",
     readTime: "4 min",
     category: "Conseils",
   },
@@ -80,11 +102,16 @@ const categoryColors: Record<string, string> = {
   "Guide pratique": "bg-blue-100 text-blue-700",
   "Administratif": "bg-purple-100 text-purple-700",
   "Conseils": "bg-green-100 text-green-700",
+  "Professionnels": "bg-gray-800 text-white",
 }
 
 export default function BlogPage() {
   return (
     <div className="min-h-screen bg-white">
+      <BreadcrumbJsonLd items={[
+        { name: "Accueil", url: "https://gh-epaviste.fr/" },
+        { name: "Blog", url: "https://gh-epaviste.fr/blog" },
+      ]} />
       {/* Hero */}
       <section className="bg-black text-white py-20">
         <div className="container mx-auto px-4 max-w-4xl text-center">

@@ -1,0 +1,122 @@
+[
+  {
+    "slug": "paris",
+    "name": "Paris",
+    "zipCode": "75000",
+    "department": "75",
+    "intro": "GH Épaviste intervient dans tous les arrondissements de Paris pour l'enlèvement gratuit de votre véhicule hors d'usage. Notre équipement nous permet de gérer les accès difficiles et les parkings souterrains typiques de la capitale.",
+    "points": [
+      "Intervention dans les 20 arrondissements",
+      "Dépanneuses extra-basses pour parkings parisiens",
+      "Conformité avec la ZFE de Paris"
+    ]
+  },
+  {
+    "slug": "boulogne-billancourt",
+    "name": "Boulogne-Billancourt",
+    "zipCode": "92100",
+    "department": "92",
+    "intro": "Épaviste de proximité à Boulogne-Billancourt. Nous retirons gratuitement votre voiture en panne ou accidentée rapidement, vous évitant ainsi les coûteuses amendes de stationnement de la ville.",
+    "points": [
+      "Retrait rapide à Boulogne-Billancourt",
+      "Enlèvement en sous-sol possible",
+      "Démarches ANTS simplifiées"
+    ]
+  },
+  {
+    "slug": "saint-denis",
+    "name": "Saint-Denis",
+    "zipCode": "93200",
+    "department": "93",
+    "intro": "À Saint-Denis et dans toute la zone de Plaine Commune, GH Épaviste déploie ses équipes pour un enlèvement d'épave rapide et gratuit, qu'il s'agisse d'un véhicule accidenté ou en fin de vie.",
+    "points": [
+      "Intervention express à Saint-Denis",
+      "Prise en charge de tout type de VHU",
+      "Centre de dépollution partenaire"
+    ]
+  },
+  {
+    "slug": "versailles",
+    "name": "Versailles",
+    "zipCode": "78000",
+    "department": "78",
+    "intro": "Besoin d'un épaviste à Versailles ? Nous intervenons gratuitement dans tous les quartiers de la ville royale pour l'enlèvement de votre épave, avec un accompagnement administratif complet.",
+    "points": [
+      "Enlèvement gratuit à Versailles",
+      "Prise en charge des démarches",
+      "Remorquage sécurisé"
+    ]
+  },
+  {
+    "slug": "nanterre",
+    "name": "Nanterre",
+    "zipCode": "92000",
+    "department": "92",
+    "intro": "Pour l'enlèvement de votre épave à Nanterre, faites appel à GH Épaviste. Service 100% gratuit, rapide et professionnel, y compris aux abords de La Défense.",
+    "points": [
+      "Proximité de La Défense",
+      "Enlèvement sous 24h",
+      "Service 100% gratuit"
+    ]
+  },
+  {
+    "slug": "creteil",
+    "name": "Créteil",
+    "zipCode": "94000",
+    "department": "94",
+    "intro": "GH Épaviste est votre solution à Créteil pour vous débarrasser d'un véhicule gênant. Nous enlevons gratuitement votre épave et nous assurons de son recyclage dans la filière légale.",
+    "points": [
+      "Couverture de tout Créteil",
+      "Dépollution réglementaire",
+      "Certificat de destruction garanti"
+    ]
+  },
+  {
+    "slug": "argenteuil",
+    "name": "Argenteuil",
+    "zipCode": "95100",
+    "department": "95",
+    "intro": "À Argenteuil, GH Épaviste propose l'enlèvement d'épave sans aucun frais. Que votre voiture soit sur la voirie ou dans un jardin, nos dépanneuses sont équipées pour intervenir efficacement.",
+    "points": [
+      "Intervention dans tout Argenteuil",
+      "Assistance pour le Cerfa 15776",
+      "Enlèvement d'utilitaires possible"
+    ]
+  },
+  {
+    "slug": "montreuil",
+    "name": "Montreuil",
+    "zipCode": "93100",
+    "department": "93",
+    "intro": "Faites appel à GH Épaviste pour un enlèvement d'épave gratuit à Montreuil. Nous gérons rapidement le retrait de votre VHU en respectant strictement les normes environnementales.",
+    "points": [
+      "Service rapide à Montreuil",
+      "Remise du certificat de cession",
+      "Recyclage écologique"
+    ]
+  },
+  {
+    "slug": "evry-courcouronnes",
+    "name": "Évry-Courcouronnes",
+    "zipCode": "91000",
+    "department": "91",
+    "intro": "À Évry-Courcouronnes, GH Épaviste vous débarrasse de votre ancienne voiture sans frais. Nous intervenons rapidement pour libérer votre espace de stationnement.",
+    "points": [
+      "Intervention sur Évry et Courcouronnes",
+      "Évacuation sous 24h",
+      "Démarches VHU incluses"
+    ]
+  },
+  {
+    "slug": "meaux",
+    "name": "Meaux",
+    "zipCode": "77100",
+    "department": "77",
+    "intro": "Pour l'enlèvement de votre véhicule hors d'usage à Meaux et ses environs, GH Épaviste est votre partenaire de confiance. Un service gratuit qui couvre l'ensemble de la commune.",
+    "points": [
+      "Enlèvement gratuit à Meaux",
+      "Service 7j/7",
+      "Prise en charge de tous véhicules"
+    ]
+  }
+]
