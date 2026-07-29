@@ -1,38 +1,86 @@
-# CURRENT TASK
+# CURRENT_TASK.md
 
-Phase : 4.3
+# Tâche actuelle
 
-État : En attente de validation production
+Ce document est la seule source de vérité concernant la tâche en cours.
 
-Objectif :
+L'assistant ne doit jamais commencer une autre phase tant que celle-ci n'est pas validée.
 
-Corriger les problèmes SEO techniques détectés lors de l'audit.
+---
 
-Tâches :
+Phase :
 
-- [x] Corriger la génération des départements dans le sitemap (slugify automatique)
-- [x] Corriger le slug Val-d'Oise (val-doise → val-d-oise)
-- [x] Stabiliser lastModified (constante 2026-07-28)
-- [x] Vérifier canonical et Open Graph des 8 départements
-- [x] Valider le build (0 erreur, 1320 pages)
-- [ ] Déployer sur Vercel
-- [ ] Vérifier les HTTP 200 du sitemap en production
-- [ ] Vérifier robots.txt
-- [ ] Vérifier l'absence d'erreurs dans Google Search Console
+4.3 validée localement / Transition vers 4.4
 
-STOP :
+État :
 
-Attendre la validation de la production avant de commencer le Batch 80 communes.
+En attente de validation finale en production (Déploiement Vercel, Search Console, PageSpeed).
 
-Prochaine étape (après validation) :
+---
 
-Batch 80 communes → audit complet → batch 200 communes → audit complet → génération catalogue complet.
+Objectif
 
-Ne pas modifier :
+Vérifier la bonne santé SEO en production avant de générer massivement le Batch 80 communes.
 
-- architecture
+---
+
+Tâches terminées
+
+- [x] Correction des slugs des départements
+- [x] Correction du sitemap
+- [x] Correction des routes internes
+- [x] Correction des liens 404
+- [x] Validation du build
+- [x] Création de validate-batch.js
+- [x] Création de test-jsonld.js
+- [x] Vérifier test-jsonld.js
+- [x] Vérifier validate-batch.js et intégration stricte des erreurs (H1 multiples)
+- [x] Correction des balises H1 vides dans les pages statiques
+- [x] Validation technique locale (lint, tsc, build, validate-batch) 100% PASS ✅
+
+---
+
+Tâches en cours
+
+- [ ] Déploiement GitHub
+- [ ] Déploiement Vercel
+- [ ] Vérification robots.txt en prod
+- [ ] Vérification sitemap.xml en prod
+- [ ] Vérification Google Search Console
+- [ ] Vérification PageSpeed Insights
+
+---
+
+STOP
+
+Ne pas commencer la génération des communes.
+
+Ne pas commencer le Batch 80.
+
+Attendre que l'utilisateur déploie en production, vérifie sur la Google Search Console et PageSpeed, et donne le feu vert.
+
+---
+
+Prochaine étape
+
+L'utilisateur doit effectuer :
+
+- Commit
+- Push GitHub
+- Déploiement Vercel
+
+Ensuite seulement (après validation en prod) :
+
+Commencer le Batch 80 communes.
+
+---
+
+Ne jamais modifier
+
+- Architecture
+- Pipeline V4
 - PageBuilder
-- pipeline
 - Golden Files
 - Snapshots
-- stratégie d'indexation (communes majeures indexables, autres en noindex follow)
+- Routing
+- SEO validé

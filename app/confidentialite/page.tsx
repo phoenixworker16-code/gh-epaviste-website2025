@@ -38,10 +38,10 @@ export default function ConfidentialitePage() {
         <div className="container mx-auto px-4 max-w-4xl">
           <Card>
             <CardHeader>
-              <CardTitle className="text-3xl text-black flex items-center">
+              <h1 className="text-3xl text-black flex items-center font-semibold leading-none tracking-tight">
                 <Shield className="w-8 h-8 text-yellow-500 mr-3" aria-hidden="true" />
                 Politique de Confidentialité
-              </CardTitle>
+              </h1>
               <p className="text-gray-600">Protection et traitement de vos données personnelles.</p>
             </CardHeader>
             <CardContent className="prose max-w-none">
@@ -92,7 +92,7 @@ export default function ConfidentialitePage() {
                   <div className="grid md:grid-cols-2 gap-4">
                     <Card className="border-yellow-200">
                       <CardHeader>
-                        <h1></h1>
+                        <CardTitle className="text-lg text-black">Données d'identité</CardTitle>
                       </CardHeader>
                       <CardContent>
                         <ul className="list-disc list-inside space-y-1 text-sm text-gray-700">

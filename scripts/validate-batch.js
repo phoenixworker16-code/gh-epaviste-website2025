@@ -26,7 +26,7 @@ async function waitForServer() {
     try {
       const res = await fetchUrl('/');
       if (res.status === 200) return true;
-    } catch (e) {}
+    } catch (e) { }
     await sleep(1000);
     retries--;
   }
@@ -43,6 +43,39 @@ async function runBuild() {
       else reject(new Error(`Build failed with code ${code}`));
     });
   });
+}
+
+// Extract main content for similarity checking
+function extractMainText(html) {
+  let mainMatch = /<main[^>]*>([\s\S]*?)<\/main>/i.exec(html);
+  let text = mainMatch ? mainMatch[1] : html;
+
+  // Remove scripts and styles
+  text = text.replace(/<script[^>]*>[\s\S]*?<\/script>/gi, ' ');
+  text = text.replace(/<style[^>]*>[\s\S]*?<\/style>/gi, ' ');
+  // Remove HTML tags
+  text = text.replace(/<[^>]+>/g, ' ');
+  // Normalize whitespace and lowercase
+  return text.toLowerCase().replace(/\s+/g, ' ').trim();
+}
+
+// Jaccard similarity using bigrams
+function getBigrams(text) {
+  const words = text.split(' ');
+  const bigrams = new Set();
+  for (let i = 0; i < words.length - 1; i++) {
+    bigrams.add(words[i] + ' ' + words[i + 1]);
+  }
+  return bigrams;
+}
+
+function calculateSimilarity(setA, setB) {
+  let intersection = 0;
+  setA.forEach(item => {
+    if (setB.has(item)) intersection++;
+  });
+  const union = setA.size + setB.size - intersection;
+  return union === 0 ? 0 : intersection / union;
 }
 
 async function runCrawler() {
@@ -82,16 +115,14 @@ async function runCrawler() {
     urls.push(path || '/');
   }
   console.log(`✅ Trouvé ${urls.length} URLs dans le sitemap.`);
-  
-  console.log('⏳ Analyse stricte SEO On-Page (H1, Meta, Canonical, OG, JSON-LD, Alt, Taille)...');
+
+  console.log('⏳ Analyse stricte SEO On-Page et Content Similarity...');
   const allInternalLinksFound = new Set();
   let sitemapValid = 0;
   let oldFormatLinks = 0;
-  
-  // Nouveaux compteurs stricts
+
   const errors = {
     missingH1: 0,
-    multipleH1: 0,
     missingMetaDesc: 0,
     missingCanonical: 0,
     multipleCanonical: 0,
@@ -100,7 +131,8 @@ async function runCrawler() {
     missingRobots: 0,
     invalidJsonLd: 0,
     missingImgAlt: 0,
-    tooLargeHtml: 0
+    tooLargeHtml: 0,
+    multipleH1: 0
   };
 
   const schemaStats = {
@@ -111,12 +143,20 @@ async function runCrawler() {
     FAQPage: 0,
     Article: 0
   };
-  
-  // Pour détecter les doublons de Titles et Canonicals sur l'ensemble du site
-  const allTitles = new Map(); // title -> url
-  const allCanonicals = new Map(); // canonical -> url
+
+  const allTitles = new Map();
+  const allCanonicals = new Map();
+  const allMetaDescs = new Map();
+  const allH1s = new Map();
+
   const duplicateTitles = new Set();
   const duplicateCanonicals = new Set();
+  const duplicateMetaDescs = new Set();
+  const duplicateH1s = new Set();
+
+  // Similarity Check stores
+  const pageBigrams = new Map(); // url -> Set of bigrams
+  const highSimilarityPairs = [];
 
   for (let i = 0; i < urls.length; i += 50) {
     const batch = urls.slice(i, i + 50);
@@ -126,58 +166,58 @@ async function runCrawler() {
         if (res.status === 200) {
           sitemapValid++;
           const html = res.data;
-          
-          // Poids du HTML (limite 300 Ko = 307200 octets)
-          if (Buffer.byteLength(html, 'utf8') > 307200) {
-            errors.tooLargeHtml++;
-          }
 
-          // Liens
+          if (Buffer.byteLength(html, 'utf8') > 307200) errors.tooLargeHtml++;
+
           const linkRegex = /href=["'](\/[^"']+)["']/gi;
           let linkMatch;
           while ((linkMatch = linkRegex.exec(html)) !== null) {
             let link = linkMatch[1].split('?')[0].split('#')[0];
             if (link.startsWith('/_next/') || link.match(/\.(jpg|jpeg|png|svg|ico|css|js)$/)) continue;
             if (link !== '/' && link.endsWith('/')) link = link.slice(0, -1);
-            
             allInternalLinksFound.add(link);
             if (link.includes('epaviste-gratuit-enlevement-epave-')) oldFormatLinks++;
           }
-          
-          // H1
+
           const h1Regex = /<h1[^>]*>([\s\S]*?)<\/h1>/gi;
           const h1Matches = html.match(h1Regex);
           if (!h1Matches) errors.missingH1++;
           else if (h1Matches.length > 1) errors.multipleH1++;
+          else {
+            const h1TextMatch = /<h1[^>]*>([\s\S]*?)<\/h1>/i.exec(h1Matches[0]);
+            const h1Text = h1TextMatch ? h1TextMatch[1].replace(/<[^>]+>/g, '').trim() : '';
+            if (allH1s.has(h1Text)) {
+              duplicateH1s.add(`H1 en double : "${h1Text}" sur ${url} et ${allH1s.get(h1Text)}`);
+            } else {
+              allH1s.set(h1Text, url);
+            }
+          }
 
-          // Meta Description
-          const metaDescRegex = /<meta[^>]*name=["']description["'][^>]*>/i;
-          if (!metaDescRegex.test(html)) errors.missingMetaDesc++;
+          const metaDescTagMatch = /<meta[^>]+name=["']description["'][^>]*>/i.exec(html);
+          if (!metaDescTagMatch) errors.missingMetaDesc++;
+          else {
+            const contentMatch = /content=["']([^"']+)["']/i.exec(metaDescTagMatch[0]);
+            const desc = contentMatch ? contentMatch[1].trim() : '';
+            if (allMetaDescs.has(desc)) {
+              duplicateMetaDescs.add(`Meta Desc en double : "${desc}" sur ${url} et ${allMetaDescs.get(desc)}`);
+            } else {
+              allMetaDescs.set(desc, url);
+            }
+          }
 
-          // Robots
-          const metaRobotsRegex = /<meta[^>]*name=["']robots["'][^>]*>/i;
-          if (!metaRobotsRegex.test(html)) errors.missingRobots++;
-          
-          // OpenGraph
-          const ogRegex = /<meta[^>]*property=["']og:title["'][^>]*>/i;
-          if (!ogRegex.test(html)) errors.missingOG++;
-          
-          // Twitter Card
-          const twitterRegex = /<meta[^>]*name=["']twitter:card["'][^>]*>/i;
-          if (!twitterRegex.test(html)) errors.missingTwitter++;
-          
-          // Images Alt
+          if (!/<meta[^>]*name=["']robots["'][^>]*>/i.test(html)) errors.missingRobots++;
+          if (!/<meta[^>]*property=["']og:title["'][^>]*>/i.test(html)) errors.missingOG++;
+          if (!/<meta[^>]*name=["']twitter:card["'][^>]*>/i.test(html)) errors.missingTwitter++;
+
           const imgRegex = /<img([^>]+)>/gi;
           let imgMatch;
           while ((imgMatch = imgRegex.exec(html)) !== null) {
-             const attrs = imgMatch[1];
-             if (!/alt=["'][^"']*["']/i.test(attrs)) {
-                errors.missingImgAlt++;
-                break; // Compte 1 erreur par page contenant au moins une image sans alt
-             }
+            if (!/alt=["'][^"']*["']/i.test(imgMatch[1])) {
+              errors.missingImgAlt++;
+              break;
+            }
           }
 
-          // Title uniqueness
           const titleMatch = /<title[^>]*>([\s\S]*?)<\/title>/i.exec(html);
           if (titleMatch) {
             const title = titleMatch[1].trim();
@@ -188,27 +228,24 @@ async function runCrawler() {
             }
           }
 
-          // Canonical
           const canonicalRegex = /<link[^>]*rel=["']canonical["'][^>]*href=["']([^"']+)["'][^>]*>/gi;
           let canonicalsFound = 0;
           let canMatch;
           while ((canMatch = canonicalRegex.exec(html)) !== null) {
-             canonicalsFound++;
-             const canUrl = canMatch[1];
-             if (allCanonicals.has(canUrl)) {
-               duplicateCanonicals.add(`Canonical en double : "${canUrl}" sur ${url} et ${allCanonicals.get(canUrl)}`);
-             } else {
-               allCanonicals.set(canUrl, url);
-             }
+            canonicalsFound++;
+            const canUrl = canMatch[1];
+            if (allCanonicals.has(canUrl)) {
+              duplicateCanonicals.add(`Canonical en double : "${canUrl}" sur ${url} et ${allCanonicals.get(canUrl)}`);
+            } else {
+              allCanonicals.set(canUrl, url);
+            }
           }
           if (canonicalsFound === 0) errors.missingCanonical++;
           else if (canonicalsFound > 1) errors.multipleCanonical++;
-          
-          // Schema.org (JSON-LD)
+
           const jsonldRegex = /<script[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi;
           let jsonldMatch;
           let pageSchemas = new Set();
-          
           while ((jsonldMatch = jsonldRegex.exec(html)) !== null) {
             try {
               const data = JSON.parse(jsonldMatch[1]);
@@ -223,21 +260,41 @@ async function runCrawler() {
               errors.invalidJsonLd++;
             }
           }
-          
+
           if (pageSchemas.has('Organization')) schemaStats.Organization++;
           if (pageSchemas.has('LocalBusiness')) schemaStats.LocalBusiness++;
           if (pageSchemas.has('BreadcrumbList')) schemaStats.BreadcrumbList++;
           if (pageSchemas.has('WebSite')) schemaStats.WebSite++;
           if (pageSchemas.has('FAQPage')) schemaStats.FAQPage++;
           if (pageSchemas.has('Article')) schemaStats.Article++;
+
+          // Extract text for similarity check (only for city pages to save time)
+          if (url.includes('enlevement-epave-')) {
+            const mainText = extractMainText(html);
+            pageBigrams.set(url, getBigrams(mainText));
+          }
         }
       } catch (e) { }
     });
     await Promise.all(promises);
     process.stdout.write(`\rProgression : ${Math.min(i + 50, urls.length)} / ${urls.length}`);
   }
-  
-  console.log('\n\n⏳ Vérification des liens internes extraits...');
+
+  // Cross-check similarities
+  console.log('\n\n⏳ Calcul de la similarité de contenu (> 65% = Alerte)...');
+  const cityUrls = Array.from(pageBigrams.keys());
+  for (let i = 0; i < cityUrls.length; i++) {
+    for (let j = i + 1; j < cityUrls.length; j++) {
+      const urlA = cityUrls[i];
+      const urlB = cityUrls[j];
+      const sim = calculateSimilarity(pageBigrams.get(urlA), pageBigrams.get(urlB));
+      if (sim > 0.65) {
+        highSimilarityPairs.push({ urlA, urlB, sim: Math.round(sim * 100) });
+      }
+    }
+  }
+
+  console.log('\n⏳ Vérification des liens internes extraits...');
   const totalLinksChecked = allInternalLinksFound.size;
   let okLinks = 0;
   let brokenLinks = 0;
@@ -250,8 +307,8 @@ async function runCrawler() {
     const promises = batch.map(async (link) => {
       try {
         if (validRoutes.has(link) && sitemapValid > 0) {
-           okLinks++;
-           return;
+          okLinks++;
+          return;
         }
         const res = await fetchUrl(link);
         if (res.status === 200) {
@@ -271,34 +328,26 @@ async function runCrawler() {
   console.log('\n========== RAPPORT FINAL D\'AUDIT ==========');
   console.log(`Pages explorées : ${urls.length}`);
   console.log(`Liens internes uniques vérifiés : ${totalLinksChecked}\n`);
-  
+
   console.log('--- STATUT HTTP DES LIENS ---');
   console.log(`HTTP 200 : ${okLinks}`);
   console.log(`HTTP 404/Erreurs : ${brokenLinks}`);
   console.log(`Préfixe erroné (epaviste-gratuit-enlevement-epave) : ${oldFormatLinks}\n`);
-  
+
   console.log('--- SEO ON-PAGE STRICT ---');
   console.log(`Pages sans H1 : ${errors.missingH1}`);
-  console.log(`Pages avec multiples H1 : ${errors.multipleH1}`);
   console.log(`Pages sans Meta Description : ${errors.missingMetaDesc}`);
   console.log(`Pages sans Canonical : ${errors.missingCanonical}`);
-  console.log(`Pages avec multiples Canonical : ${errors.multipleCanonical}`);
-  console.log(`Pages sans OpenGraph (og:title) : ${errors.missingOG}`);
+  console.log(`Pages sans OpenGraph : ${errors.missingOG}`);
   console.log(`Pages sans Twitter Card : ${errors.missingTwitter}`);
-  console.log(`Pages sans Meta Robots : ${errors.missingRobots}`);
-  console.log(`Pages avec images sans attribut alt : ${errors.missingImgAlt}`);
-  console.log(`Pages dépassant 300 Ko HTML : ${errors.tooLargeHtml}`);
+  console.log(`Pages avec images sans alt : ${errors.missingImgAlt}`);
+
+  console.log('\n--- DUPLICATIONS DE CONTENU ---');
   console.log(`Titres (Title) en double : ${duplicateTitles.size}`);
-  console.log(`Canonicals en double : ${duplicateCanonicals.size}\n`);
-  
-  console.log('--- STRUCTURE SCHEMA.ORG ---');
-  console.log(`JSON-LD Invalides : ${errors.invalidJsonLd}`);
-  console.log(`WebSite : ${schemaStats.WebSite}`);
-  console.log(`Organization : ${schemaStats.Organization}`);
-  console.log(`LocalBusiness : ${schemaStats.LocalBusiness}`);
-  console.log(`BreadcrumbList : ${schemaStats.BreadcrumbList}`);
-  console.log(`FAQPage : ${schemaStats.FAQPage}`);
-  console.log(`Article : ${schemaStats.Article}\n`);
+  console.log(`Meta Descriptions en double : ${duplicateMetaDescs.size}`);
+  console.log(`H1 en double : ${duplicateH1s.size}`);
+  console.log(`Canonicals en double : ${duplicateCanonicals.size}`);
+  console.log(`Paires de pages > 65% similarité : ${highSimilarityPairs.length}\n`);
 
   let hasError = false;
   const criticalErrors = [
@@ -306,15 +355,20 @@ async function runCrawler() {
     errors.missingMetaDesc, errors.missingCanonical, errors.multipleCanonical,
     errors.missingOG, errors.missingTwitter, errors.missingRobots,
     errors.invalidJsonLd, errors.missingImgAlt, errors.tooLargeHtml,
-    duplicateTitles.size, duplicateCanonicals.size
+    duplicateTitles.size, duplicateCanonicals.size, duplicateMetaDescs.size,
+    duplicateH1s.size, highSimilarityPairs.length
   ].reduce((a, b) => a + b, 0);
 
   if (criticalErrors > 0) {
-    console.log('❌ ÉCHEC DE LA VALIDATION : Le batch contient des erreurs strictes SEO.');
+    console.log('❌ ÉCHEC DE LA VALIDATION : Le batch contient des erreurs strictes ou du duplicate content.');
     if (brokenLinks > 0) missingTargets.forEach(t => console.log(' -> Lien cassé :', t));
     if (duplicateTitles.size > 0) duplicateTitles.forEach(t => console.log(' ->', t));
+    if (duplicateMetaDescs.size > 0) duplicateMetaDescs.forEach(t => console.log(' ->', t));
+    if (duplicateH1s.size > 0) duplicateH1s.forEach(t => console.log(' ->', t));
     if (duplicateCanonicals.size > 0) duplicateCanonicals.forEach(t => console.log(' ->', t));
-    // D'autres détails pourraient être logués si besoin
+    if (highSimilarityPairs.length > 0) {
+      highSimilarityPairs.forEach(p => console.log(` -> ⚠️ Similarité ${p.sim}% entre ${p.urlA} et ${p.urlB}`));
+    }
     hasError = true;
   }
 
@@ -326,26 +380,24 @@ async function runCrawler() {
 
 async function main() {
   try {
-    // await runBuild(); // Commenté temporairement pour un test rapide, décommentez pour la prod
-    
     console.log('\n⏳ Démarrage du serveur de production...');
     const cmd = process.platform === 'win32' ? 'npm.cmd' : 'npm';
-    const serverProcess = spawn(cmd, ['run', 'start'], { stdio: 'ignore' });
-    
+    const serverProcess = spawn(cmd, ['run', 'start'], { stdio: 'ignore', shell: true });
+
     const isReady = await waitForServer();
     if (!isReady) {
       console.error('❌ Le serveur n\'a pas démarré à temps.');
       serverProcess.kill();
       process.exit(1);
     }
-    
+
     console.log('✅ Serveur en ligne sur http://localhost:3000');
-    
+
     const success = await runCrawler();
-    
+
     console.log('\n🛑 Arrêt du serveur...');
     serverProcess.kill();
-    
+
     if (success) {
       process.exit(0);
     } else {

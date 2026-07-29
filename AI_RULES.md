@@ -368,11 +368,18 @@ Créer les meilleures pages SEO locales possibles sans contenu dupliqué, sans h
 
 # ÉCONOMIE DE CONTEXTE
 
-Avant chaque réponse :
+Avant toute action, lire obligatoirement dans cet ordre :
 
-- Lire AI_RULES.md
-- Lire PROJECT_CONTEXT.md
-- Lire WORKFLOW.md
+1. AI_RULES.md
+2. PROJECT_CONTEXT.md
+3. WORKFLOW.md
+4. HANDOVER.md
+5. CURRENT_TASK.md
+
+Aucune modification de code avant cette lecture.
+
+Ces fichiers constituent la mémoire officielle du projet.
+Ils permettent à un nouvel agent IA de reprendre exactement le travail sans repartir de zéro.
 
 Ne jamais recopier leur contenu.
 
@@ -498,7 +505,34 @@ commandes appartenant à la même phase.
 
 Il ne s'arrête qu'à un point STOP défini dans le plan.
 
+Les modifications SEO importantes
+(sitemap, robots, canonical, redirects)
+
+doivent être vérifiées
+en production
+avant toute nouvelle génération de contenu.
+
 ---
+
+# VALIDATION
+
+Après chaque génération de communes :
+
+obligatoire :
+
+npm run build
+
+npm run validate-batch
+
+Si validate-batch échoue :
+
+STOP
+
+Aucun commit.
+
+Aucun push.
+
+Attendre validation.
 
 ## Import Safety
 
@@ -537,9 +571,12 @@ Il est interdit de corriger manuellement un fichier généré automatiquement.
 Lorsqu'un nouveau modèle d'IA prend le relais :
 
 1. Lire obligatoirement :
-   - AI_RULES.md
-   - PROJECT_CONTEXT.md
-   - CURRENT_TASK.md
+
+- AI_RULES.md
+- PROJECT_CONTEXT.md
+- WORKFLOW.md
+- HANDOVER.md
+- CURRENT_TASK.md
 
 2. Ne faire aucune supposition.
 
@@ -654,3 +691,45 @@ Levallois-Perret est la référence qualité.
 Paris est le Golden File officiel.
 
 Aucun Golden File ne doit être modifié automatiquement.
+
+Paris est le Golden File officiel.
+
+Aucun Golden File ne doit être modifié automatiquement.
+
+# REPRISE DE SESSION
+
+Lorsqu'un nouvel assistant IA prend le relais :
+
+1. Lire obligatoirement dans cet ordre :
+   - AI_RULES.md
+   - PROJECT_CONTEXT.md
+   - WORKFLOW.md
+   - HANDOVER.md
+   - CURRENT_TASK.md
+
+2. Identifier le dernier STOP atteint.
+
+3. Lire les logs des commandes exécutées depuis ce STOP.
+
+4. Comprendre l'état actuel du projet.
+
+5. Ne jamais recommencer une phase précédente.
+
+6. Ne jamais refaire un travail déjà validé.
+
+7. Ne jamais repartir de zéro.
+
+8. Identifier la prochaine commande manquante.
+
+9. Exécuter uniquement la tâche indiquée dans CURRENT_TASK.md jusqu'au prochain STOP défini.
+   Si aucun STOP n'est défini ou si une ambiguïté existe, demander une clarification.
+
+# CRÉATION DE SCRIPTS ET COMMANDES
+
+Avant de créer une nouvelle commande ou un nouveau script :
+
+- vérifier qu'une commande ou un script équivalent n'existe pas déjà ;
+- réutiliser l'existant lorsqu'il est adapté ;
+- ne créer une nouvelle commande ou un nouveau script que si cela est réellement nécessaire.
+
+Toute nouvelle commande ou tout nouveau script doit être testé avant d'être considéré comme valide.

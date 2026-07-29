@@ -38,7 +38,7 @@ export default function MentionsLegalesPage() {
         <div className="container mx-auto px-4 max-w-4xl">
           <Card>
             <CardHeader>
-              <h1></h1>
+              <h1 className="text-3xl font-semibold leading-none tracking-tight text-black">Mentions Légales</h1>
               <p className="text-gray-600">Informations légales concernant GH Épaviste</p>
             </CardHeader>
             <CardContent className="prose max-w-none">
