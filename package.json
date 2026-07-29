@@ -23,7 +23,8 @@
     "compatibility": "node scripts/pipeline-v4/compatibility-report.js",
     "test": "node scripts/pipeline-v4/tests/runner.js",
     "benchmark": "node scripts/pipeline-v4/benchmark.js",
-    "stress": "node scripts/pipeline-v4/stress.js"
+    "stress": "node scripts/pipeline-v4/stress.js",
+    "validate-batch": "node scripts/validate-batch.js"
   },
   "browserslist": [
     "last 2 Chrome versions",
