@@ -5,6 +5,7 @@ import { Truck, Shield, Phone, Car, CheckCircle, FileText, MapPin } from "lucide
 import Image from "next/image";
 import Link from "next/link";
 import BreadcrumbNav from "@/components/breadcrumb-nav";
+import BreadcrumbJsonLd from "@/components/breadcrumb-jsonld";
 import ScrollToTop from "@/components/scroll-to-top";
 import { StructuredData } from "@/components/structured-data";
 import { Metadata } from "next";
@@ -43,6 +44,10 @@ export default function ServicesPage() {
           url: "https://gh-epaviste.fr/services"
         }}
       />
+      <BreadcrumbJsonLd items={[
+        { name: "Accueil", url: "https://gh-epaviste.fr/" },
+        { name: "Services", url: "https://gh-epaviste.fr/services" },
+      ]} />
       <BreadcrumbNav aria-label="Chemin de navigation" />
 
       <main id="main-content">

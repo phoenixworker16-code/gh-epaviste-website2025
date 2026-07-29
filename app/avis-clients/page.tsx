@@ -94,6 +94,10 @@ const jsonLd = {
 export default function AvisClientsPage() {
   return (
     <div className="min-h-screen bg-white">
+      <BreadcrumbJsonLd items={[
+        { name: "Accueil", url: "https://gh-epaviste.fr/" },
+        { name: "Avis Clients", url: "https://gh-epaviste.fr/avis-clients" },
+      ]} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       {/* Hero */}

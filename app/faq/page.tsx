@@ -28,6 +28,10 @@ export const metadata: Metadata = {
 export default function FaqPage() {
   return (
     <div className="min-h-screen bg-gray-50">
+      <BreadcrumbJsonLd items={[
+        { name: "Accueil", url: "https://gh-epaviste.fr/" },
+        { name: "FAQ", url: "https://gh-epaviste.fr/faq" },
+      ]} />
       <BreadcrumbNav />
 
       <main className="py-12 pb-24" id="main-content">

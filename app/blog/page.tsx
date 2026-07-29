@@ -107,6 +107,10 @@ const categoryColors: Record<string, string> = {
 export default function BlogPage() {
   return (
     <div className="min-h-screen bg-white">
+      <BreadcrumbJsonLd items={[
+        { name: "Accueil", url: "https://gh-epaviste.fr/" },
+        { name: "Blog", url: "https://gh-epaviste.fr/blog" },
+      ]} />
       {/* Hero */}
       <section className="bg-black text-white py-20">
         <div className="container mx-auto px-4 max-w-4xl text-center">

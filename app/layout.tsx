@@ -34,6 +34,9 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://gh-epaviste.fr"),
   alternates: {
     canonical: "/",
+    languages: {
+      "fr-FR": "https://gh-epaviste.fr",
+    },
   },
 
   // ─── Robots (Indexation) ───────────────────────────────
@@ -181,6 +184,17 @@ export default function RootLayout({
           "acceptedAnswer": { "@type": "Answer", "text": "GH Épaviste intervient dans les 8 départements d'Île-de-France : Paris (75), Seine-et-Marne (77), Yvelines (78), Essonne (91), Hauts-de-Seine (92), Seine-Saint-Denis (93), Val-de-Marne (94) et Val-d'Oise (95)." }
         }
       ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "GH Épaviste",
+      "url": "https://gh-epaviste.fr",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://gh-epaviste.fr/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
     }
   ]
 
@@ -198,6 +212,11 @@ export default function RootLayout({
           type="application/ld+json"
           nonce={nonce}
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd[1]) }}
+        />
+        <script
+          type="application/ld+json"
+          nonce={nonce}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd[2]) }}
         />
         <header className="bg-white border-b border-gray-200 sticky top-0 z-50">
           <div className="container mx-auto px-4 py-4 flex items-center justify-between">

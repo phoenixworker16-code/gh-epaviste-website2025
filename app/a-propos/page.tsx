@@ -1,4 +1,5 @@
 import Link from "next/link"
+import BreadcrumbJsonLd from "@/components/breadcrumb-jsonld";
 import { Metadata } from "next"
 import {
   Phone,
@@ -68,6 +69,10 @@ const jsonLd = {
 export default function AProposPage() {
   return (
     <div className="min-h-screen bg-white">
+      <BreadcrumbJsonLd items={[
+        { name: "Accueil", url: "https://gh-epaviste.fr/" },
+        { name: "À Propos", url: "https://gh-epaviste.fr/a-propos" },
+      ]} />
       {/* JSON-LD */}
       <script
         type="application/ld+json"

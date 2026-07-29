@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "Politique de Confidentialité",
   description: "Consultez la politique de confidentialité de GH Épaviste. Découvrez comment nous protégeons et traitons vos données personnelles.",
   alternates: { canonical: "https://gh-epaviste.fr/confidentialite" },
-  robots: { index: false, follow: true },
+  robots: { index: true, follow: true },
   openGraph: {
     title: "Politique de Confidentialité",
     description: "Protection et traitement de vos données personnelles par GH Épaviste.",
@@ -27,6 +27,10 @@ export const metadata: Metadata = {
 export default function ConfidentialitePage() {
   return (
     <div className="min-h-screen bg-gray-50">
+      <BreadcrumbJsonLd items={[
+        { name: "Accueil", url: "https://gh-epaviste.fr/" },
+        { name: "Politique de Confidentialité", url: "https://gh-epaviste.fr/confidentialite" },
+      ]} />
       <BreadcrumbNav />
 
       <main className="py-12" id="main-content">
@@ -87,7 +91,7 @@ export default function ConfidentialitePage() {
                   <div className="grid md:grid-cols-2 gap-4">
                     <Card className="border-yellow-200">
                       <CardHeader>
-                        <CardTitle className="text-lg text-black">Données d&apos;identification</CardTitle>
+                        <h1></h1>
                       </CardHeader>
                       <CardContent>
                         <ul className="list-disc list-inside space-y-1 text-sm text-gray-700">
