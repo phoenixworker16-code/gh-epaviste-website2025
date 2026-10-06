@@ -2,49 +2,53 @@
 
 # Tâche actuelle
 
-Ce document est la seule source de vérité concernant la tâche en cours.
+Ce document est la source de vérité concernant la mission et l'état courant.
 
 L'assistant ne doit jamais commencer une autre phase tant que celle-ci n'est pas validée.
 
 ---
 
-Phase :
+## Phase
 
 En attente d'indexation et validation Google (Phase 4.3 terminée).
 
-État :
+## État
 
-**EN PAUSE STRATÉGIQUE.** Ne générer aucune nouvelle page.
+**EN PAUSE STRATÉGIQUE.**
 
----
-
-Objectif
-
-Vérifier la bonne santé SEO en production sur le long terme avant de générer massivement le Batch 80 communes. Laisser le temps à Google de crawler et d'indexer la structure actuelle (176 URLs).
+Ne générer aucune nouvelle page.
 
 ---
 
-Tâches terminées
+## Objectif
+
+Vérifier la bonne santé SEO en production sur le long terme avant de générer massivement le Batch 80 communes.
+
+Laisser le temps à Google de crawler et d'indexer la structure actuelle (176 URLs).
+
+---
+
+## Tâches terminées
 
 - [x] Optimisations SEO (H1, Meta, etc.)
 - [x] Injection et correction de l'intégralité du Schema.org (JSON-LD)
-- [x] Validation technique locale (lint, tsc, build, validate-batch) 100% PASS ✅
+- [x] Validation technique locale (lint, tsc, build, validate-batch) 100% PASS
 - [x] Phase 4.3 officiellement terminée
 
 ---
 
-Tâches en cours (Côté Utilisateur)
+## Tâches en cours
 
-- [ ] Déploiement GitHub / Vercel
-- [ ] Soumission du sitemap.xml dans Google Search Console
-- [ ] Vérification sans erreurs dans Rich Results Test
-- [ ] Vérification Google PageSpeed Insights (Mobile & Desktop)
-- [ ] Création et validation de la fiche Google Business Profile
-- [ ] Attendre quelques semaines pour indexation
+- [ ] Vérifier le déploiement actuel sur GitHub / Vercel
+- [ ] Soumettre le sitemap.xml dans Google Search Console
+- [ ] Vérifier l'absence d'erreurs dans Rich Results Test
+- [ ] Vérifier Google PageSpeed Insights (Mobile & Desktop)
+- [ ] Créer et valider la fiche Google Business Profile
+- [ ] Attendre la période d'observation et l'indexation Google
 
 ---
 
-STOP
+## STOP
 
 Ne pas lancer la Phase 4.4.
 
@@ -52,20 +56,21 @@ Ne pas commencer la génération des communes.
 
 Ne pas commencer le Batch 80.
 
-Aucune nouvelle page ne doit être générée tant que les vérifications externes (Google Search Console, PageSpeed, Rich Results) ne sont pas concluantes et que la période d'observation n'est pas écoulée.
+Aucune nouvelle page ne doit être générée tant que les vérifications externes nécessaires (Google Search Console, PageSpeed, Rich Results) ne sont pas concluantes et que la période d'observation n'est pas écoulée.
 
 ---
 
-Prochaine étape
+## Prochaine étape
 
-Lorsque le feu vert sera donné par l'utilisateur (après indexation Google) :
+Lorsque le feu vert sera donné par l'utilisateur après les vérifications externes et la période d'observation :
 
-1. Ajouter l'URL Google Business Profile dans le `sameAs` des schémas `LocalBusiness` / `Organization`.
-2. Reprendre la génération des communes en procédant par **lots de 80** maximum (Batch 80) et avec une pause de vérification d'indexation entre chaque lot.
+1. Ajouter l'URL Google Business Profile dans le `sameAs` des schémas `LocalBusiness` / `Organization`, si cette modification est toujours nécessaire.
+2. Reprendre la génération des communes en procédant par **lots de 80 maximum** (Batch 80).
+3. Appliquer la procédure de validation prévue dans `docs/WORKFLOW.md` entre chaque lot.
 
 ---
 
-Ne jamais modifier
+## Ne jamais modifier sans autorisation explicite
 
 - Architecture
 - Pipeline V4
