@@ -7,7 +7,7 @@
 **Prêt pour mise en production** : ❌ Non
 
 ## Avertissements
-- cities-content.json encore référencé – reports/architecture-inventory.md, scripts/validate-all.js
+- cities-content.json encore référencé – reports/architecture-inventory.md, scripts/validate-all.js, validation-report.json, validation-summary.md
 
 ---
 _Rapport généré automatiquement._

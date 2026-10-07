@@ -228,7 +228,7 @@ export default function RootLayout({
                 fetchPriority="high"
               />
             </div>
-            <nav className="hidden md:flex items-center space-x-8">
+            <nav className="hidden xl:flex items-center space-x-6 xl:space-x-8">
               <Link href="/" className="text-black hover:text-yellow-500 font-medium transition-colors p-2 min-h-[44px] flex items-center">
                 ACCUEIL
               </Link>
@@ -251,10 +251,13 @@ export default function RootLayout({
                 CONTACT
               </Link>
             </nav>
-            <div className="flex items-center gap-3">
-              <Link href="tel:+33753120793" aria-label="Appeler l'épaviste au 07 53 12 07 93" className="hidden md:flex bg-yellow-500 hover:bg-yellow-600 text-black font-bold px-4 py-2 min-h-[44px] rounded items-center transition">
+            <div className="flex items-center gap-2 sm:gap-3">
+              <Link href="tel:+33753120793" aria-label="Appeler l'épaviste au 07 53 12 07 93" className="hidden xl:flex bg-yellow-500 hover:bg-yellow-600 text-black font-bold px-4 py-2 min-h-[44px] rounded items-center transition">
                 <Phone className="w-4 h-4 mr-2" />
                 APPELER MAINTENANT
+              </Link>
+              <Link href="tel:+33753120793" aria-label="Appeler l'épaviste au 07 53 12 07 93" className="xl:hidden flex items-center justify-center bg-yellow-500 hover:bg-yellow-600 text-black min-w-[44px] min-h-[44px] rounded-lg transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-yellow-500">
+                <Phone className="w-5 h-5" />
               </Link>
               <MobileNav />
             </div>
@@ -264,7 +267,7 @@ export default function RootLayout({
         <WhatsAppFloat />
         <ScrollToTop />
         <SiteFooter />
-        <AnalyticsLoader gaId="G-0SF8DFE0VW" />
+        <AnalyticsLoader gaId="G-0SF8DFE0VW" nonce={nonce} />
       </body>
     </html>
   )

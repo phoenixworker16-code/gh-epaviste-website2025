@@ -269,7 +269,7 @@ export default function FormulaireContent() {
                     <Button
                       type="submit"
                       size="lg"
-                      className="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-bold text-lg py-6 rounded-lg shadow-lg shadow-yellow-500/20 hover:shadow-yellow-500/30 transition-all"
+                      className="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-bold text-lg py-6 rounded-lg shadow-lg shadow-yellow-500/20 hover:shadow-yellow-500/30 transition-all whitespace-normal text-center"
                       disabled={isSubmitting}
                       aria-live="polite"
                       aria-label={isSubmitting ? "Envoi de votre demande en cours" : "Envoyer votre demande d'enlèvement"}

@@ -6,7 +6,9 @@
       "message": "cities-content.json encore référencé",
       "files": [
         "reports/architecture-inventory.md",
-        "scripts/validate-all.js"
+        "scripts/validate-all.js",
+        "validation-report.json",
+        "validation-summary.md"
       ]
     }
   ],

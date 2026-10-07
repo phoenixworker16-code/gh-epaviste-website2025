@@ -195,7 +195,29 @@ function LocalCoverageBlockComponent({ block }: { block: any }) {
         <h2 className="text-3xl font-bold mb-6 text-gray-900 text-center">{block.title}</h2>
         <p className="text-center text-gray-600 mb-10 max-w-2xl mx-auto text-lg">{block.intro}</p>
         
-        <div className="overflow-x-auto">
+        {/* Version Mobile: Cartes */}
+        <div className="md:hidden flex flex-col gap-4">
+          {block.zones.map((zone: any, idx: number) => (
+            <div key={idx} className="bg-white border border-gray-200 rounded-xl p-4 shadow-sm">
+              <div className="font-semibold text-gray-900 flex items-center gap-2 mb-3">
+                <MapPin className="w-5 h-5 text-yellow-500" />
+                {zone.name}
+              </div>
+              <div className="mb-3">
+                <span className="inline-block bg-yellow-100 text-yellow-800 text-sm font-semibold px-3 py-1 rounded-full">
+                  {zone.delay}
+                </span>
+              </div>
+              <div className="text-sm text-gray-600 leading-relaxed">
+                <span className="font-semibold text-gray-700 mr-1">Spécificités :</span>
+                {zone.specificities || '-'}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Version Desktop: Tableau */}
+        <div className="hidden md:block overflow-x-auto">
           <table className="w-full text-left border-collapse bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm">
             <thead className="bg-gray-50 border-b border-gray-200">
               <tr>

@@ -4,7 +4,7 @@ import { Phone, MapPin, Globe } from "lucide-react"
 
 export default function SiteFooter() {
   return (
-    <footer className="bg-[#0a0a0a] text-white pt-8 pb-4 border-t border-gray-800 relative overflow-hidden">
+    <footer className="bg-[#0a0a0a] text-white pt-8 pb-24 lg:pb-8 border-t border-gray-800 relative overflow-hidden">
       {/* Lueur de fond décorative subtile */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-[1px] bg-gradient-to-r from-transparent via-yellow-500/50 to-transparent"></div>
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[300px] bg-yellow-500/5 blur-[120px] rounded-full pointer-events-none"></div>
@@ -28,14 +28,14 @@ export default function SiteFooter() {
               Intervention rapide, service professionnel, et recyclage respectueux de l&apos;environnement.
             </p>
             {/* Icônes réseaux sociaux — Facebook & Instagram uniquement (WhatsApp est géré par le bouton flottant) */}
-            <div className="flex items-center gap-3 mt-2">
+            <div className="flex items-center gap-3 mt-4">
               {/* Facebook */}
               <a
                 href="https://facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook GH Épaviste"
-                className="w-9 h-9 rounded-full bg-[#1877F2] flex items-center justify-center hover:opacity-80 transition-opacity"
+                className="w-11 h-11 rounded-full bg-[#1877F2] flex items-center justify-center hover:opacity-80 transition-opacity"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" className="w-5 h-5">
                   <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
@@ -47,7 +47,7 @@ export default function SiteFooter() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram GH Épaviste"
-                className="w-9 h-9 rounded-full flex items-center justify-center hover:opacity-80 transition-opacity"
+                className="w-11 h-11 rounded-full flex items-center justify-center hover:opacity-80 transition-opacity"
                 style={{ background: "radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%)" }}
               >
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" className="w-5 h-5">
@@ -78,7 +78,7 @@ export default function SiteFooter() {
                 <li key={idx}>
                   <Link
                     href={link.href}
-                    className="py-1 text-gray-300 hover:text-yellow-500 transition-all duration-300 flex items-center group"
+                    className="py-2 min-h-[44px] text-gray-300 hover:text-yellow-500 transition-all duration-300 flex items-center group"
                   >
                     <span className="w-0 overflow-hidden text-yellow-500 transition-all duration-300 group-hover:w-3 group-hover:mr-1.5">
                       ▸
@@ -136,7 +136,7 @@ export default function SiteFooter() {
               <li>
                 <Link
                   href="/mentions-legales"
-                  className="py-1 block text-gray-300 hover:text-white transition-colors underline-offset-4 hover:underline"
+                  className="py-2 min-h-[44px] flex items-center text-gray-300 hover:text-white transition-colors underline-offset-4 hover:underline"
                 >
                   Mentions Légales
                 </Link>
@@ -144,7 +144,7 @@ export default function SiteFooter() {
               <li>
                 <Link
                   href="/confidentialite"
-                  className="py-1 block text-gray-300 hover:text-white transition-colors underline-offset-4 hover:underline"
+                  className="py-2 min-h-[44px] flex items-center text-gray-300 hover:text-white transition-colors underline-offset-4 hover:underline"
                 >
                   Politique de Confidentialité
                 </Link>
@@ -152,7 +152,7 @@ export default function SiteFooter() {
               <li>
                 <Link
                   href="/faq"
-                  className="py-1 block text-gray-300 hover:text-white transition-colors underline-offset-4 hover:underline"
+                  className="py-2 min-h-[44px] flex items-center text-gray-300 hover:text-white transition-colors underline-offset-4 hover:underline"
                 >
                   Foire Aux Questions
                 </Link>
@@ -166,14 +166,14 @@ export default function SiteFooter() {
         <div className="border-t border-gray-800/60 pt-4 mt-4 mb-2">
           <nav className="flex flex-wrap justify-center items-center gap-x-2 gap-y-2 text-gray-300 text-xs sm:text-sm text-center" aria-label="Nos zones d'intervention">
             <span className="py-2 font-semibold text-[#FFC42B]">Nos zones d&apos;intervention en Île-de-France :</span>
-            <Link href="/enlevement-epave-paris" prefetch={false} className="whitespace-nowrap px-2 py-1 rounded transition-colors hover:bg-white hover:text-black">Épaviste Paris 75</Link> <span className="hidden sm:inline text-gray-600">|</span>
-            <Link href="/enlevement-epave-seine-et-marne" prefetch={false} className="whitespace-nowrap px-2 py-1 rounded transition-colors hover:bg-white hover:text-black">Épaviste Seine-et-Marne 77</Link> <span className="hidden sm:inline text-gray-600">|</span>
-            <Link href="/enlevement-epave-yvelines" prefetch={false} className="whitespace-nowrap px-2 py-1 rounded transition-colors hover:bg-white hover:text-black">Épaviste Yvelines 78</Link> <span className="hidden sm:inline text-gray-600">|</span>
-            <Link href="/enlevement-epave-essonne" prefetch={false} className="whitespace-nowrap px-2 py-1 rounded transition-colors hover:bg-white hover:text-black">Épaviste Essonne 91</Link> <span className="hidden sm:inline text-gray-600">|</span>
-            <Link href="/enlevement-epave-hauts-de-seine" prefetch={false} className="whitespace-nowrap px-2 py-1 rounded transition-colors hover:bg-white hover:text-black">Épaviste Hauts-de-Seine 92</Link> <span className="hidden sm:inline text-gray-600">|</span>
-            <Link href="/enlevement-epave-seine-saint-denis" prefetch={false} className="whitespace-nowrap px-2 py-1 rounded transition-colors hover:bg-white hover:text-black">Épaviste Seine-Saint-Denis 93</Link> <span className="hidden sm:inline text-gray-600">|</span>
-            <Link href="/enlevement-epave-val-de-marne" prefetch={false} className="whitespace-nowrap px-2 py-1 rounded transition-colors hover:bg-white hover:text-black">Épaviste Val-de-Marne 94</Link> <span className="hidden sm:inline text-gray-600">|</span>
-            <Link href="/enlevement-epave-val-d-oise" prefetch={false} className="whitespace-nowrap px-2 py-1 rounded transition-colors hover:bg-white hover:text-black">Épaviste Val-d&apos;Oise 95</Link>
+            <Link href="/enlevement-epave-paris" prefetch={false} className="inline-flex items-center min-h-[44px] whitespace-nowrap px-3 py-2 rounded transition-colors hover:bg-white hover:text-black">Épaviste Paris 75</Link> <span className="hidden sm:inline text-gray-600">|</span>
+            <Link href="/enlevement-epave-seine-et-marne" prefetch={false} className="inline-flex items-center min-h-[44px] whitespace-nowrap px-3 py-2 rounded transition-colors hover:bg-white hover:text-black">Épaviste Seine-et-Marne 77</Link> <span className="hidden sm:inline text-gray-600">|</span>
+            <Link href="/enlevement-epave-yvelines" prefetch={false} className="inline-flex items-center min-h-[44px] whitespace-nowrap px-3 py-2 rounded transition-colors hover:bg-white hover:text-black">Épaviste Yvelines 78</Link> <span className="hidden sm:inline text-gray-600">|</span>
+            <Link href="/enlevement-epave-essonne" prefetch={false} className="inline-flex items-center min-h-[44px] whitespace-nowrap px-3 py-2 rounded transition-colors hover:bg-white hover:text-black">Épaviste Essonne 91</Link> <span className="hidden sm:inline text-gray-600">|</span>
+            <Link href="/enlevement-epave-hauts-de-seine" prefetch={false} className="inline-flex items-center min-h-[44px] whitespace-nowrap px-3 py-2 rounded transition-colors hover:bg-white hover:text-black">Épaviste Hauts-de-Seine 92</Link> <span className="hidden sm:inline text-gray-600">|</span>
+            <Link href="/enlevement-epave-seine-saint-denis" prefetch={false} className="inline-flex items-center min-h-[44px] whitespace-nowrap px-3 py-2 rounded transition-colors hover:bg-white hover:text-black">Épaviste Seine-Saint-Denis 93</Link> <span className="hidden sm:inline text-gray-600">|</span>
+            <Link href="/enlevement-epave-val-de-marne" prefetch={false} className="inline-flex items-center min-h-[44px] whitespace-nowrap px-3 py-2 rounded transition-colors hover:bg-white hover:text-black">Épaviste Val-de-Marne 94</Link> <span className="hidden sm:inline text-gray-600">|</span>
+            <Link href="/enlevement-epave-val-d-oise" prefetch={false} className="inline-flex items-center min-h-[44px] whitespace-nowrap px-3 py-2 rounded transition-colors hover:bg-white hover:text-black">Épaviste Val-d&apos;Oise 95</Link>
           </nav>
         </div>
 

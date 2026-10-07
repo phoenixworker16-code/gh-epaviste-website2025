@@ -35,14 +35,14 @@ export default function HomePage() {
 
               {/* Title */}
               <h1 className="hero-animate-2 font-bold mb-8 drop-shadow-xl">
-                <span className="block text-yellow-500 text-5xl md:text-6xl mb-4">GH Épaviste</span>
+                <span className="block text-yellow-500 text-4xl md:text-5xl lg:text-6xl mb-4">GH Épaviste</span>
                 <span className="block text-white text-2xl sm:text-3xl md:text-3xl lg:text-[2.2rem] xl:text-[2.5rem] leading-tight lg:whitespace-nowrap">
                   Enlèvement Gratuit d&apos;Épaves <span className="whitespace-nowrap">en Île-de-France</span>
                 </span>
               </h1>
 
               {/* Arguments rapides */}
-              <div className="hero-animate-4 flex flex-row items-center justify-between w-full max-w-[95%] sm:max-w-full gap-2 sm:gap-6 mb-12">
+              <div className="hero-animate-4 flex flex-col sm:flex-row items-center justify-center sm:justify-between w-full max-w-[95%] sm:max-w-full gap-4 sm:gap-6 mb-12">
                 <div className="flex flex-col sm:flex-row items-center gap-2 text-gray-100 flex-1 justify-center sm:justify-start">
                   <span className="flex items-center justify-center bg-yellow-500/20 rounded-full p-2">
                     <CheckCircle className="w-5 h-5 text-yellow-500 flex-shrink-0" />
@@ -68,7 +68,7 @@ export default function HomePage() {
                 <Link href="/formulaire" className="w-full sm:w-auto">
                   <Button
                     size="lg"
-                    className="bg-yellow-500 hover:bg-yellow-400 text-black font-bold text-lg rounded-lg shadow-lg shadow-yellow-500/25 hover:shadow-yellow-500/40 transition-all duration-300 hover:-translate-y-1 w-full sm:w-auto"
+                    className="bg-yellow-500 hover:bg-yellow-400 text-black font-bold text-lg rounded-lg shadow-lg shadow-yellow-500/25 hover:shadow-yellow-500/40 transition-all duration-300 hover:-translate-y-1 w-full sm:w-auto whitespace-normal text-center"
                   >
                     DEMANDER UN ENLÈVEMENT GRATUIT
                   </Button>
@@ -264,10 +264,11 @@ export default function HomePage() {
         <section className="py-16 bg-white border-t border-gray-100">
           <div className="container mx-auto px-4 max-w-5xl">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-black">
-              Ils nous ont fait confiance
+              Exemples de retours clients
             </h2>
             <p className="text-center text-gray-600 mb-12 text-lg">
-              Découvrez les retours de nos clients suite à l'enlèvement de leur épave.
+              Découvrez le type de témoignages que notre équipe reçoit régulièrement. <br/>
+              <span className="text-sm text-gray-500 italic">(Témoignages présentés à titre indicatif)</span>
             </p>
             <div className="grid md:grid-cols-3 gap-6 mb-10">
               {[
@@ -357,7 +358,7 @@ export default function HomePage() {
                 fill
                 className="object-cover object-[80%_center]"
                 loading="lazy"
-                sizes="100vw"
+                sizes="(max-width: 1024px) 90vw, 50vw"
               />
             </div>
           </div>

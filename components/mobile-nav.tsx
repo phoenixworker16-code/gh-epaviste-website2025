@@ -21,7 +21,7 @@ export default function MobileNav() {
   const closeMenu = () => setIsOpen(false)
 
   return (
-    <div className="md:hidden">
+    <div className="xl:hidden">
       {/* Bouton hamburger */}
       <button
         onClick={() => setIsOpen(!isOpen)}
@@ -42,7 +42,7 @@ export default function MobileNav() {
         <>
           {/* Overlay semi-transparent */}
           <div
-            className="fixed inset-0 bg-black/40 z-40"
+            className="fixed inset-0 bg-black/40 z-[90]"
             onClick={closeMenu}
             aria-hidden="true"
           />
@@ -52,7 +52,7 @@ export default function MobileNav() {
             id="mobile-menu"
             role="navigation"
             aria-label="Menu mobile"
-            className="fixed top-0 right-0 h-full w-72 bg-white shadow-2xl z-50 flex flex-col"
+            className="fixed top-0 right-0 h-full w-72 bg-white shadow-2xl z-[100] flex flex-col"
           >
             {/* En-tête du menu */}
             <div className="flex items-center justify-between px-6 py-5 border-b border-gray-200">
